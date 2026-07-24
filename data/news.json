@@ -1,111 +1,224 @@
 {
-  "generated_at": "2026-07-24T18:43:06.130475+00:00",
-  "item_count": 24,
+  "generated_at": "2026-07-24T20:04:25.939304+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 8
+    "normal": 10
   },
-  "superseded_count": 5,
+  "superseded_count": 6,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1519
+        "ms": 1522
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 21730
+        "ms": 64445
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3909
+        "ms": 2304
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 334
+        "ms": 460
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 622
+        "ms": 365
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 231
+        "ms": 117
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1088
+        "ms": 923
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 93
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 169
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 764
+        "ms": 617
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 285
+        "ms": 153
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 412
+        "ms": 521
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 23,
+        "count": 24,
         "error": null,
-        "ms": 171
+        "ms": 148
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 142
+        "ms": 224
       }
     ]
   },
   "items": [
+    {
+      "title": "Russia's Biggest Black Sea Oil Port Goes Quiet as Drone Threat Grows",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russias-Biggest-Black-Sea-Oil-Port-Goes-Quiet-as-Drone-Threat-Grows.html",
+      "snippet": "Russia's largest Black Sea oil export terminal has effectively gone offline just days after drone attacks shut down the neighboring Caspian Pipeline Consortium terminal, tightening another artery that moves crude onto the global market. The Sheskharis terminal at Novorossiysk hasn’t loaded a crude t",
+      "published_at": "2026-07-24T18:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 69,
+      "tags": [
+        "infrastructure",
+        "geopolitics",
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 72.4,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "infrastructure": [
+          "pipeline",
+          "terminal"
+        ],
+        "geopolitics": [
+          "drone"
+        ],
+        "supply_disruption": [
+          "offline"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "russia"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-07-24T16:08:51+00:00"
+    },
+    {
+      "title": "The Red Sea Is Becoming Saudi Arabia's Biggest Oil Bottleneck",
+      "url": "https://oilprice.com/Energy/Crude-Oil/The-Red-Sea-Is-Becoming-Saudi-Arabias-Biggest-Oil-Bottleneck.html",
+      "snippet": "For years, Saudi Arabia's strategic answer to any disruption in the Strait of Hormuz has been remarkably straightforward. If volumes via the Persian Gulf were threatened, the answer was to pump west through the East-West Pipeline to Yanbu on the Red Sea. Markets have always seen this as reassuring, ",
+      "published_at": "2026-07-24T19:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 39.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 64.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "red sea",
+          "persian gulf"
+        ],
+        "supply_disruption": [
+          "disruption"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Saudi Red Sea Crude Exports Have Sank 41% Since March Peak",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Red-Sea-Crude-Exports-Have-Sank-41-Since-March-Peak.html",
@@ -117,13 +230,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 67,
+      "score": 63,
       "tags": [
         "geopolitics",
         "oil_macro",
         "infrastructure"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -135,7 +248,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 70.1,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.89
       },
       "matched": {
         "geopolitics": [
@@ -167,7 +280,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 53,
       "tags": [
         "geopolitics",
         "lng",
@@ -185,7 +298,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 78.7,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
@@ -221,7 +334,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 52,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -239,7 +352,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 53.1,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -261,48 +374,6 @@
         ],
         "speculative": [
           "may"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Energia Costa Azul, Mexico's second LNG terminal, shipped first cargo",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67884",
-      "snippet": "Energia Costa Azul, the second liquefied natural gas (LNG) export facility in Mexico, shipped its initial cargo from Phase 1 of the terminal on July 8, according to the project developer. The completion of the project adds 0.4 billion cubic feet per day (Bcf/d) of nominal export capacity from a sing",
-      "published_at": "2026-07-24T14:00:00+00:00",
-      "type": "news",
-      "source": "eia_today",
-      "source_name": "EIA Today in Energy",
-      "authority": 20,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 52,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 14.6,
-        "themes": 30.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 56.6,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargo",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal"
         ]
       },
       "duplicate_count": 0,
@@ -352,134 +423,90 @@
       "also_reported_by": []
     },
     {
-      "title": "World chess chief faces endgame after EU announces Russia war sanctions",
-      "url": "https://www.bbc.co.uk/news/articles/cewrk58k2k4o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Arkady Dvorkovich, a former Russian deputy prime minister, now faces an EU travel ban and asset freeze.",
-      "published_at": "2026-07-24T16:08:51+00:00",
+      "title": "Energia Costa Azul, Mexico's second LNG terminal, shipped first cargo",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67884",
+      "snippet": "Energia Costa Azul, the second liquefied natural gas (LNG) export facility in Mexico, shipped its initial cargo from Phase 1 of the terminal on July 8, according to the project developer. The completion of the project adds 0.4 billion cubic feet per day (Bcf/d) of nominal export capacity from a sing",
+      "published_at": "2026-07-24T14:00:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 48,
-      "tags": [
-        "geopolitics",
-        "weather"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 21.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.8,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "war"
-        ],
-        "weather": [
-          "freeze"
-        ],
-        "geography": [
-          "eu"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "WTI Explodes Higher as Middle East Shipping Risks Multiply",
-      "url": "https://oilprice.com/Energy/Energy-General/WTI-Explodes-Higher-as-Middle-East-Shipping-Risks-Multiply.html",
-      "snippet": "September WTI crude oil futures were trading at $92.31 late Thursday, up $10.54 or 12.89% for the week. The contract posted a weekly low at $79.58 before climbing to a weekly high at $92.31. This was not a normal risk-premium rally. WTI started the week with the Strait of Hormuz already impaired, th",
-      "published_at": "2026-07-24T11:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
       "tier": 2,
       "has_magnitude": true,
-      "score": 46,
+      "score": 49,
       "tags": [
-        "geopolitics",
-        "oil_macro"
+        "lng",
+        "infrastructure"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 22.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 14.6,
+        "themes": 30.0,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 58.8,
-        "recency_multiplier": 0.64
+        "raw": 56.6,
+        "recency_multiplier": 0.73
       },
       "matched": {
-        "geopolitics": [
-          "strait of hormuz"
+        "lng": [
+          "lng",
+          "cargo",
+          "lng terminal"
         ],
-        "oil_macro": [
-          "crude",
-          "wti"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
+        "infrastructure": [
+          "terminal"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Loviisa Block 2",
-      "url": "https://umm.nordpoolgroup.com/#/messages/97607983-8bc5-4f2d-8db0-e51ce897e007/1",
-      "snippet": "Published: 24.07.2026 11:39:48 Publisher: Fortum Power and Heat Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Main circulation pump failure. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity F",
-      "published_at": "2026-07-24T09:39:48+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
+      "title": "Harbour Energy’s US arm advances repair plan after riser leak at Gulf of America oil & gas asset",
+      "url": "https://www.offshore-energy.biz/harbour-energys-us-arm-advances-repair-plan-after-riser-leak-at-gulf-of-america-oil-gas-asset/",
+      "snippet": "U.S.-headquartered LLOG Exploration, a subsidiary of Harbour Energy, has seen a drop in output at its asset in the Gulf of America (U.S. Gulf of Mexico) following a riser leak; however, the start-up of a sidetrack well is supporting near-term production, as the company and its joint venture (JV) par",
+      "published_at": "2026-07-24T12:18:59+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 47,
       "tags": [
-        "supply_disruption"
+        "supply_disruption",
+        "infrastructure"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
+        "authority": 12.4,
+        "themes": 24.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.58
+        "raw": 61.7,
+        "recency_multiplier": 0.64
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "leak",
+          "repair"
+        ],
+        "infrastructure": [
+          "start-up"
+        ],
+        "geography": [
+          "gulf"
         ],
         "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
+          "leak"
         ]
       },
       "duplicate_count": 0,
@@ -528,10 +555,99 @@
       "thread_started_at": "2026-07-24T12:30:00+00:00"
     },
     {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Loviisa Block 2",
+      "url": "https://umm.nordpoolgroup.com/#/messages/97607983-8bc5-4f2d-8db0-e51ce897e007/1",
+      "snippet": "Published: 24.07.2026 11:39:48 Publisher: Fortum Power and Heat Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Main circulation pump failure. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity F",
+      "published_at": "2026-07-24T09:39:48+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 0.52
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "WTI Explodes Higher as Middle East Shipping Risks Multiply",
+      "url": "https://oilprice.com/Energy/Energy-General/WTI-Explodes-Higher-as-Middle-East-Shipping-Risks-Multiply.html",
+      "snippet": "September WTI crude oil futures were trading at $92.31 late Thursday, up $10.54 or 12.89% for the week. The contract posted a weekly low at $79.58 before climbing to a weekly high at $92.31. This was not a normal risk-premium rally. WTI started the week with the Strait of Hormuz already impaired, th",
+      "published_at": "2026-07-24T11:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 42,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 58.8,
+        "recency_multiplier": 0.58
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "wti"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Ten killed in Russian attack on drone exhibition near Kyiv",
       "url": "https://www.bbc.co.uk/news/articles/cj637zd1k1ko?at_medium=RSS&at_campaign=rss",
       "snippet": "The event, attended by prominent members of the Ukrainian defence industry, was hit by ballistic missiles in the middle of the day.",
-      "published_at": "2026-07-24T18:02:44+00:00",
+      "published_at": "2026-07-24T18:51:17+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -571,6 +687,45 @@
       "thread_started_at": "2026-07-24T16:53:55+00:00"
     },
     {
+      "title": "FPSO efficiency at Brazilian oil field surpasses target range to hit 97%",
+      "url": "https://www.offshore-energy.biz/fpso-efficiency-at-brazilian-oil-field-surpasses-target-range-to-hit-97/",
+      "snippet": "Karoon Energy, an ASX-listed oil and gas exploration and production company, has confirmed an uptick in operating efficiency at a floating production, storage, and offloading (FPSO) unit deployed on an oil field off the coast of Brazil. The post FPSO efficiency at Brazilian oil field surpasses targe",
+      "published_at": "2026-07-24T13:29:55+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 6.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 47.1,
+        "recency_multiplier": 0.7
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "How the U.S. Became the World's LNG Superpower",
       "url": "https://oilprice.com/Energy/Energy-General/How-the-US-Became-the-Worlds-LNG-Superpower.html",
       "snippet": "Global liquefied natural gas exports grew by about 1.2 trillion cubic feet in 2025. The United States supplied approximately 1.10 trillion cubic feet of that increase. Put another way, roughly 93% of the world’s additional LNG came from the United States. The scale of that contribution is even more ",
@@ -581,7 +736,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 36,
       "tags": [
         "lng"
       ],
@@ -597,7 +752,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 33.0,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.82
       },
       "matched": {
         "lng": [
@@ -605,52 +760,6 @@
         ],
         "geography": [
           "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "The Middle East War Has Entered Its Most Dangerous Phase Yet",
-      "url": "https://oilprice.com/Geopolitics/Middle-East/The-Middle-East-War-Has-Entered-Its-Most-Dangerous-Phase-Yet.html",
-      "snippet": "Politics, Geopolitics & Conflict Iran has spent the week attacking the military infrastructure that allows the U.S. to wage war across the Middle East. After 12 consecutive nights of U.S. strikes on Iranian command centers, missile sites, air defenses and nuclear-linked facilities, Tehran hit Americ",
-      "published_at": "2026-07-24T11:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics",
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 31.2,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.0,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "conflict",
-          "war"
-        ],
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "middle east"
         ]
       },
       "duplicate_count": 0,
@@ -667,7 +776,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "regulation"
       ],
@@ -683,7 +792,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.5,
-        "recency_multiplier": 0.5
+        "recency_multiplier": 0.45
       },
       "matched": {
         "regulation": [
@@ -711,7 +820,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 31,
       "tags": [
         "nuclear"
       ],
@@ -727,7 +836,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.4,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.61
       },
       "matched": {
         "nuclear": [
@@ -752,7 +861,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 32,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -768,7 +877,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 37.4,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.58
       },
       "matched": {
         "lng": [
@@ -776,169 +885,6 @@
         ],
         "geography": [
           "russian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Santos Narrows 2026 Production Forecast",
-      "url": "https://www.rigzone.com/news/santos_narrows_2026_production_forecast-24-jul-2026-184212-article/?rss=true",
-      "snippet": "The Australian company narrowed its output guidance for the year from 101-111 million barrels of oil equivalent to 99-105 MMboe, despite ramp-up at the Barossa and Pikka oil and gas projects.",
-      "published_at": "2026-07-24T13:50:12+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "infrastructure",
-        "weather",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 17.7,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.7,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "infrastructure": [
-          "ramp-up"
-        ],
-        "weather": [
-          "forecast"
-        ],
-        "oil_macro": [
-          "barrels"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US LNG exports reach 34 shipments",
-      "url": "https://lngprime.com/lng-terminals/us-lng-exports-reach-34-shipments/193035/",
-      "snippet": "US liquefied natural gas (LNG) plants sent 34 cargoes during the week ending July 22, the same as in the week before, according to the Energy Information Administration.",
-      "published_at": "2026-07-24T06:32:02+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.46
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "lng exports"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Nigeria's president approves largest military expansion in recent times",
-      "url": "https://www.bbc.co.uk/news/articles/cwymjx3nrxvo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The government is under intense pressure to tackle a slew of armed groups, many of whom attack civilians.",
-      "published_at": "2026-07-24T15:22:56+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "geography": [
-          "nigeria"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Approval of the modified Access Rules for the Nemo Link interconnector pursuant to SLC 11A of the Electricity Interconnector Licence",
-      "url": "https://www.ofgem.gov.uk/decision/approval-modified-access-rules-nemo-link-interconnector-pursuant-slc-11a-electricity-interconnector-licence",
-      "snippet": "Ofgem's approval of the modified Access Rules for the Nemo Link interconnector pursuant to SLC 11A of the Electricity Interconnector Licence.",
-      "published_at": "2026-07-24T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "regulation",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 16.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "regulation": [
-          "ofgem",
-          "licence"
-        ],
-        "infrastructure": [
-          "interconnector"
         ]
       },
       "duplicate_count": 0,
@@ -955,7 +901,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 17,
+      "score": 16,
       "tags": [
         "geopolitics"
       ],
@@ -971,7 +917,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -992,7 +938,7 @@
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cj637zd1k1ko?at_medium=RSS&at_campaign=rss",
         "title": "Ten killed in Russian attack on drone exhibition near Kyiv",
-        "published_at": "2026-07-24T18:02:44+00:00"
+        "published_at": "2026-07-24T18:51:17+00:00"
       },
       "hidden": true
     },
@@ -1007,7 +953,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 17,
+      "score": 16,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -1024,7 +970,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.1,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -1051,63 +997,54 @@
       "hidden": true
     },
     {
-      "title": "Hormuz Tanker Crossings Sink to Lowest Level Since May as War Risk Spikes",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Crossings-Sink-to-Lowest-Level-Since-May-as-War-Risk-Spikes.html",
-      "snippet": "Only one oil tanker transited the Strait of Hormuz on Thursday, the lowest number of crossings since May 7, as war risks spiked this week to hike crude oil prices above $100 per barrel again. Three tankers transited the Strait of Hormuz on Wednesday, but this number crumbled to just one on Thursday,",
-      "published_at": "2026-07-24T12:30:00+00:00",
+      "title": "World chess chief faces endgame after EU announces Russia war sanctions",
+      "url": "https://www.bbc.co.uk/news/articles/cewrk58k2k4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Arkady Dvorkovich, a former Russian deputy prime minister, now faces an EU travel ban and asset freeze.",
+      "published_at": "2026-07-24T16:08:51+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
       "score": 13,
       "tags": [
         "geopolitics",
-        "oil_macro",
-        "lng"
+        "weather"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 33.5,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 10.2,
+        "themes": 21.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 46.3,
-        "recency_multiplier": 0.72
+        "speculative": 0.0,
+        "raw": 41.8,
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
-          "war",
-          "strait of hormuz"
+          "sanctions",
+          "war"
         ],
-        "oil_macro": [
-          "crude",
-          "barrel"
-        ],
-        "lng": [
-          "tanker"
+        "weather": [
+          "freeze"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "speculative": [
-          "may"
+          "eu"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/24/oman-talking-with-tehran-on-hormuz-as-us-and-iran-continue-strikes?traffic_source=rss",
-        "title": "Oman talking with Tehran on Hormuz as US and Iran continue strikes",
-        "published_at": "2026-07-24T18:15:01+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Russias-Biggest-Black-Sea-Oil-Port-Goes-Quiet-as-Drone-Threat-Grows.html",
+        "title": "Russia's Biggest Black Sea Oil Port Goes Quiet as Drone Threat Grows",
+        "published_at": "2026-07-24T18:00:00+00:00"
       },
       "hidden": true
     },
@@ -1160,6 +1097,67 @@
       "hidden": true
     },
     {
+      "title": "Hormuz Tanker Crossings Sink to Lowest Level Since May as War Risk Spikes",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Crossings-Sink-to-Lowest-Level-Since-May-as-War-Risk-Spikes.html",
+      "snippet": "Only one oil tanker transited the Strait of Hormuz on Thursday, the lowest number of crossings since May 7, as war risks spiked this week to hike crude oil prices above $100 per barrel again. Three tankers transited the Strait of Hormuz on Wednesday, but this number crumbled to just one on Thursday,",
+      "published_at": "2026-07-24T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 33.5,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 46.3,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrel"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "may"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/7/24/oman-talking-with-tehran-on-hormuz-as-us-and-iran-continue-strikes?traffic_source=rss",
+        "title": "Oman talking with Tehran on Hormuz as US and Iran continue strikes",
+        "published_at": "2026-07-24T18:15:01+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "Netanyahu to meet Trump at White House next week amid Iran war escalation",
       "url": "https://www.aljazeera.com/news/2026/7/24/netanyahu-to-meet-trump-at-white-house-next-week-amid-iran-war-escalation?traffic_source=rss",
       "snippet": "Visit will be Netanyahu&#039;s seventh to White House, underscoring US commitment during war with Iran, genocide in Gaza.",
@@ -1170,7 +1168,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 9,
       "tags": [
         "geopolitics"
       ],
@@ -1185,7 +1183,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
