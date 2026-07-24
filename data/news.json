@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-24T20:04:25.939304+00:00",
-  "item_count": 23,
+  "generated_at": "2026-07-24T21:18:03.200832+00:00",
+  "item_count": 24,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 10
+    "high": 0,
+    "normal": 9
   },
   "superseded_count": 6,
   "sources": {
@@ -17,95 +17,143 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1522
+        "ms": 1447
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 64445
+        "ms": 30993
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2304
+        "ms": 23242
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 460
+        "ms": 409
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 365
+        "ms": 506
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 117
+        "ms": 130
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 923
+        "ms": 905
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 169
+        "ms": 332
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 617
+        "ms": 602
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 153
+        "ms": 249
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 521
+        "ms": 616
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 148
+        "ms": 137
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 224
+        "ms": 191
       }
     ]
   },
   "items": [
+    {
+      "title": "Brent Pulls Back From $100",
+      "url": "https://www.rigzone.com/news/wire/brent_pulls_back_from_100-24-jul-2026-184215-article/?rss=true",
+      "snippet": "Crude declined after reports on US-Iran diplomacy and continued Red Sea oil flows reduced immediate supply concerns.",
+      "published_at": "2026-07-24T20:29:29+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 65,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 22.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 65.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "red sea"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ],
+        "geography": [
+          "red sea"
+        ],
+        "urgency": [
+          "immediate"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Russia's Biggest Black Sea Oil Port Goes Quiet as Drone Threat Grows",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Russias-Biggest-Black-Sea-Oil-Port-Goes-Quiet-as-Drone-Threat-Grows.html",
@@ -117,14 +165,14 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 69,
+      "score": 65,
       "tags": [
         "infrastructure",
         "geopolitics",
         "supply_disruption",
         "oil_macro"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -136,7 +184,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 72.4,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.9
       },
       "matched": {
         "infrastructure": [
@@ -196,7 +244,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 64.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -230,7 +278,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 63,
+      "score": 60,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -248,7 +296,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 70.1,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -280,7 +328,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 50,
       "tags": [
         "geopolitics",
         "lng",
@@ -298,7 +346,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 78.7,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
@@ -334,7 +382,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 49,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -352,7 +400,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 53.1,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -380,38 +428,34 @@
       "also_reported_by": []
     },
     {
-      "title": "Four Palestinians and two Israelis killed in West Bank shooting",
-      "url": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers.",
-      "published_at": "2026-07-24T18:19:23+00:00",
+      "title": "Israeli settlers escalate attacks on Palestinians near Nablus",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/israeli-settlers-escalate-attacks-on-palestinians-near-nablus?traffic_source=rss",
+      "snippet": "Israeli settlers have set fire to Palestinian homes and vehicles in villages near Nablus",
+      "published_at": "2026-07-24T20:40:27+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 46,
       "tags": [
-        "geopolitics",
         "supply_disruption"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 10.2,
-        "themes": 14.0,
+        "authority": 9.5,
+        "themes": 8.4,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 44.2,
+        "raw": 37.9,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "attack"
-        ],
         "supply_disruption": [
           "fire"
         ],
@@ -420,7 +464,9 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-07-24T18:19:23+00:00"
     },
     {
       "title": "Energia Costa Azul, Mexico's second LNG terminal, shipped first cargo",
@@ -433,7 +479,7 @@
       "authority": 20,
       "tier": 2,
       "has_magnitude": true,
-      "score": 49,
+      "score": 46,
       "tags": [
         "lng",
         "infrastructure"
@@ -449,7 +495,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.6,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.66
       },
       "matched": {
         "lng": [
@@ -475,7 +521,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 44,
       "tags": [
         "supply_disruption",
         "infrastructure"
@@ -492,7 +538,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.7,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.58
       },
       "matched": {
         "supply_disruption": [
@@ -513,6 +559,49 @@
       "also_reported_by": []
     },
     {
+      "title": "Ten killed in Russian attack on drone exhibition near Kyiv",
+      "url": "https://www.bbc.co.uk/news/articles/cj637zd1k1ko?at_medium=RSS&at_campaign=rss",
+      "snippet": "The event, attended by prominent members of the Ukrainian defence industry, was hit by ballistic missiles in the middle of the day.",
+      "published_at": "2026-07-24T18:51:17+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.1,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "attack"
+        ],
+        "geography": [
+          "russian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-07-24T16:53:55+00:00"
+    },
+    {
       "title": "Oman talking with Tehran on Hormuz as US and Iran continue strikes",
       "url": "https://www.aljazeera.com/news/2026/7/24/oman-talking-with-tehran-on-hormuz-as-us-and-iran-continue-strikes?traffic_source=rss",
       "snippet": "Omani delegation in Iran to discuss managing traffic in the strait, which has become the main focus of the US conflict.",
@@ -523,11 +612,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -539,7 +628,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -551,7 +640,7 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 4,
+      "update_count": 3,
       "thread_started_at": "2026-07-24T12:30:00+00:00"
     },
     {
@@ -565,11 +654,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 43,
+      "score": 40,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -580,7 +669,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.48
       },
       "matched": {
         "supply_disruption": [
@@ -598,6 +687,45 @@
       "also_reported_by": []
     },
     {
+      "title": "FPSO efficiency at Brazilian oil field surpasses target range to hit 97%",
+      "url": "https://www.offshore-energy.biz/fpso-efficiency-at-brazilian-oil-field-surpasses-target-range-to-hit-97/",
+      "snippet": "Karoon Energy, an ASX-listed oil and gas exploration and production company, has confirmed an uptick in operating efficiency at a floating production, storage, and offloading (FPSO) unit deployed on an oil field off the coast of Brazil. The post FPSO efficiency at Brazilian oil field surpasses targe",
+      "published_at": "2026-07-24T13:29:55+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 39,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 6.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 47.1,
+        "recency_multiplier": 0.64
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "WTI Explodes Higher as Middle East Shipping Risks Multiply",
       "url": "https://oilprice.com/Energy/Energy-General/WTI-Explodes-Higher-as-Middle-East-Shipping-Risks-Multiply.html",
       "snippet": "September WTI crude oil futures were trading at $92.31 late Thursday, up $10.54 or 12.89% for the week. The contract posted a weekly low at $79.58 before climbing to a weekly high at $92.31. This was not a normal risk-premium rally. WTI started the week with the Strait of Hormuz already impaired, th",
@@ -608,12 +736,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 39,
       "tags": [
         "geopolitics",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -625,7 +753,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 58.8,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.53
       },
       "matched": {
         "geopolitics": [
@@ -644,82 +772,41 @@
       "also_reported_by": []
     },
     {
-      "title": "Ten killed in Russian attack on drone exhibition near Kyiv",
-      "url": "https://www.bbc.co.uk/news/articles/cj637zd1k1ko?at_medium=RSS&at_campaign=rss",
-      "snippet": "The event, attended by prominent members of the Ukrainian defence industry, was hit by ballistic missiles in the middle of the day.",
-      "published_at": "2026-07-24T18:51:17+00:00",
+      "title": "Spanish police accuse tractor driver of sparking wildfire as blazes spread",
+      "url": "https://www.aljazeera.com/news/2026/7/24/spanish-police-accuse-tractor-driver-of-sparking-wildfire-as-blazes-spread?traffic_source=rss",
+      "snippet": "The number of people forced to flee the heatwave-induced fires in Spain and France has now passed the 100,000 mark.",
+      "published_at": "2026-07-24T20:51:52+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 34,
       "tags": [
-        "geopolitics"
+        "weather"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 9.5,
+        "themes": 6.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 33.1,
+        "raw": 25.6,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
+        "weather": [
+          "heatwave"
         ],
         "geography": [
-          "russian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-07-24T16:53:55+00:00"
-    },
-    {
-      "title": "FPSO efficiency at Brazilian oil field surpasses target range to hit 97%",
-      "url": "https://www.offshore-energy.biz/fpso-efficiency-at-brazilian-oil-field-surpasses-target-range-to-hit-97/",
-      "snippet": "Karoon Energy, an ASX-listed oil and gas exploration and production company, has confirmed an uptick in operating efficiency at a floating production, storage, and offloading (FPSO) unit deployed on an oil field off the coast of Brazil. The post FPSO efficiency at Brazilian oil field surpasses targe",
-      "published_at": "2026-07-24T13:29:55+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 41,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 6.7,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 47.1,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "gas_storage": [
-          "storage"
-        ],
-        "urgency": [
-          "confirmed"
+          "france",
+          "spain"
         ]
       },
       "duplicate_count": 0,
@@ -736,7 +823,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 36,
+      "score": 33,
       "tags": [
         "lng"
       ],
@@ -752,7 +839,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 33.0,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.75
       },
       "matched": {
         "lng": [
@@ -760,6 +847,46 @@
         ],
         "geography": [
           "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "SLB Sees Growth Broadening Beyond Mideast",
+      "url": "https://www.rigzone.com/news/wire/slb_sees_growth_broadening_beyond_mideast-24-jul-2026-184209-article/?rss=true",
+      "snippet": "The company, which helps clients drill oil wells and map underground pockets of crude, said the conflict is encouraging customers to spread investment across more regions.",
+      "published_at": "2026-07-24T20:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 11.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict"
+        ],
+        "oil_macro": [
+          "crude"
         ]
       },
       "duplicate_count": 0,
@@ -776,7 +903,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "regulation"
       ],
@@ -792,7 +919,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.5,
-        "recency_multiplier": 0.45
+        "recency_multiplier": 0.41
       },
       "matched": {
         "regulation": [
@@ -810,87 +937,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Approval for VVER fuel production in Germany",
-      "url": "https://www.world-nuclear-news.org/articles/approval-for-vver-fuel-production-in-germany",
-      "snippet": "The Lower Saxony Ministry for the Environment, Energy and Climate Protection, acting on behalf of the federal government, has approved an application from Framatome subsidiary Advanced Nuclear Fuels to expand its facility in Lingen for the production of fuel for VVER-1000 reactors. The approval is s",
-      "published_at": "2026-07-24T11:38:09+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 14.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.4,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactors"
-        ],
-        "geography": [
-          "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russian LNG production up 10.7 percent in January-June",
-      "url": "https://lngprime.com/asia/russian-lng-production-up-10-7-percent-in-january-june/193113/",
-      "snippet": "Russian liquefied natural gas (LNG) production rose 10.7 percent in the first six months of this year, according to the Russian statistics agency Rosstat.",
-      "published_at": "2026-07-24T11:05:13+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 37.4,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "russian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Romanian jet fighter shoots down suspected Russian drone",
       "url": "https://www.aljazeera.com/news/2026/7/24/romanian-jet-fighter-shoots-down-suspected-russian-drone?traffic_source=rss",
       "snippet": "The incident adds to concern that Moscow’s war on Ukraine risks spilling over to entangle neighbouring NATO states.",
@@ -901,7 +947,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 16,
+      "score": 15,
       "tags": [
         "geopolitics"
       ],
@@ -917,7 +963,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.4,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -953,7 +999,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 16,
+      "score": 15,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -970,7 +1016,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.1,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
@@ -997,54 +1043,52 @@
       "hidden": true
     },
     {
-      "title": "World chess chief faces endgame after EU announces Russia war sanctions",
-      "url": "https://www.bbc.co.uk/news/articles/cewrk58k2k4o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Arkady Dvorkovich, a former Russian deputy prime minister, now faces an EU travel ban and asset freeze.",
-      "published_at": "2026-07-24T16:08:51+00:00",
+      "title": "Four Palestinians and two Israelis killed in West Bank shooting",
+      "url": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers.",
+      "published_at": "2026-07-24T18:19:23+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 14,
       "tags": [
         "geopolitics",
-        "weather"
+        "supply_disruption"
       ],
       "alert": "low",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
         "authority": 10.2,
-        "themes": 21.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
+        "themes": 14.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 41.8,
-        "recency_multiplier": 0.86
+        "raw": 44.2,
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
-          "sanctions",
-          "war"
+          "attack"
         ],
-        "weather": [
-          "freeze"
+        "supply_disruption": [
+          "fire"
         ],
-        "geography": [
-          "eu"
+        "unplanned": [
+          "fire"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Russias-Biggest-Black-Sea-Oil-Port-Goes-Quiet-as-Drone-Threat-Grows.html",
-        "title": "Russia's Biggest Black Sea Oil Port Goes Quiet as Drone Threat Grows",
-        "published_at": "2026-07-24T18:00:00+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/israeli-settlers-escalate-attacks-on-palestinians-near-nablus?traffic_source=rss",
+        "title": "Israeli settlers escalate attacks on Palestinians near Nablus",
+        "published_at": "2026-07-24T20:40:27+00:00"
       },
       "hidden": true
     },
@@ -1075,7 +1119,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -1093,6 +1137,58 @@
         "url": "https://www.aljazeera.com/news/2026/7/24/oman-talking-with-tehran-on-hormuz-as-us-and-iran-continue-strikes?traffic_source=rss",
         "title": "Oman talking with Tehran on Hormuz as US and Iran continue strikes",
         "published_at": "2026-07-24T18:15:01+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "World chess chief faces endgame after EU announces Russia war sanctions",
+      "url": "https://www.bbc.co.uk/news/articles/cewrk58k2k4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Arkady Dvorkovich, a former Russian deputy prime minister, now faces an EU travel ban and asset freeze.",
+      "published_at": "2026-07-24T16:08:51+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 12,
+      "tags": [
+        "geopolitics",
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 21.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.8,
+        "recency_multiplier": 0.78
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "war"
+        ],
+        "weather": [
+          "freeze"
+        ],
+        "geography": [
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Russias-Biggest-Black-Sea-Oil-Port-Goes-Quiet-as-Drone-Threat-Grows.html",
+        "title": "Russia's Biggest Black Sea Oil Port Goes Quiet as Drone Threat Grows",
+        "published_at": "2026-07-24T18:00:00+00:00"
       },
       "hidden": true
     },
@@ -1125,7 +1221,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 46.3,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.59
       },
       "matched": {
         "geopolitics": [
@@ -1145,50 +1241,6 @@
         ],
         "speculative": [
           "may"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/24/oman-talking-with-tehran-on-hormuz-as-us-and-iran-continue-strikes?traffic_source=rss",
-        "title": "Oman talking with Tehran on Hormuz as US and Iran continue strikes",
-        "published_at": "2026-07-24T18:15:01+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Netanyahu to meet Trump at White House next week amid Iran war escalation",
-      "url": "https://www.aljazeera.com/news/2026/7/24/netanyahu-to-meet-trump-at-white-house-next-week-amid-iran-war-escalation?traffic_source=rss",
-      "snippet": "Visit will be Netanyahu&#039;s seventh to White House, underscoring US commitment during war with Iran, genocide in Gaza.",
-      "published_at": "2026-07-24T16:01:18+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "geopolitics": [
-          "escalation",
-          "war"
         ]
       },
       "duplicate_count": 0,
