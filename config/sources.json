@@ -1,0 +1,315 @@
+{
+  "_readme": [
+    "Every source has a 'confidence' field. This is deliberate and important.",
+    "",
+    "  verified   = URL shape confirmed at build time",
+    "  likely     = standard pattern for that publisher, expected to work, untested",
+    "  unverified = needs an account or a UI step to obtain the real URL",
+    "",
+    "Run `python src/ingest.py --check` to test every source and get a live report.",
+    "Anything that fails, set active=false or fix the url. Nothing else breaks.",
+    "",
+    "tier 1 = operational / regulatory disclosure. Fastest, highest signal, poll hardest.",
+    "tier 2 = trade press and publisher RSS. Middle ground.",
+    "tier 3 = broad news search. Widest net, slowest, noisiest.",
+    "",
+    "authority = base score every item from this source starts with (0-30).",
+    "A REMIT outage notice deserves a head start over a general news wire."
+  ],
+  "sources": [
+    {
+      "id": "nordpool_umm",
+      "name": "Nord Pool REMIT UMM",
+      "type": "rss",
+      "tier": 1,
+      "authority": 30,
+      "active": true,
+      "confidence": "verified",
+      "url": "https://ummrss.nordpoolgroup.com/messages/?unavailabilityType=1&fuelTypes=14&fuelTypes=16&fuelTypes=4&limit=100",
+      "note": "URL from Alex's UI-generated RSS link with the hard-coded eventStartDate/eventStopDate window REMOVED - the copied link froze a rolling 7-day filter that would have gone stale within the week. Verified 2026-07-24: the date-stripped URL returns HTTP 200 with 100 items (the dated one returned 10).",
+      "default_type": "outage"
+    },
+    {
+      "id": "eex_transparency_umm",
+      "name": "EEX Transparency UMM",
+      "type": "rss",
+      "tier": 1,
+      "authority": 30,
+      "active": false,
+      "confidence": "unverified",
+      "url": "",
+      "note": "EEX Transparency (eex-transparency.com, NOT eex.com) is the largest IIP: 200+ market participants across 20+ countries. Unavailability reportable from 10 MW / 15 minutes upward, published immediately. Strongest for continental POWER plus German and Dutch gas. ACTION: build a filter in the UI and copy the RSS URL it generates. There is no single 'all UMMs' URL because that would be every asset in Europe.",
+      "default_type": "outage"
+    },
+    {
+      "id": "gie_iip_umm",
+      "name": "GIE Inside Information Platform",
+      "type": "rss",
+      "tier": 1,
+      "authority": 30,
+      "active": false,
+      "confidence": "unverified",
+      "url": "",
+      "note": "Consolidated IIP for gas STORAGE, LNG and TRANSMISSION UMMs. Offers RSS, ATOM and JSON webfeeds, filterable by content type; all timings UTC. Production at https://iip.gie.eu. ACTION: build the filter, copy the feed URL, prefer JSON over RSS if offered. GIE's contractual requirement is for PUBLISHING data, not reading the public disclosure. NOTE: GIE use threaded reporting, linking related UMM status updates. If the feed carries a thread/event id, key supersession off that for these items instead of inferring it from headline text: it is authoritative at source.",
+      "default_type": "outage"
+    },
+    {
+      "id": "entsoe_outages",
+      "name": "ENTSO-E Transparency outages",
+      "type": "entsoe",
+      "tier": 1,
+      "authority": 28,
+      "active": false,
+      "confidence": "likely",
+      "url": "https://web-api.tp.entsoe.eu/api",
+      "api_key_env": "ENTSOE_TOKEN",
+      "params": {
+        "domains": [
+          "10YFR-RTE------C",
+          "10YGB----------A",
+          "10YBE----------2",
+          "10YNL----------L",
+          "10Y1001A1001A83F"
+        ],
+        "document_types": [
+          "A80",
+          "A77",
+          "A78"
+        ],
+        "lookback_hours": 24
+      },
+      "note": "A80 generation unavailability, A77 production unavailability, A78 transmission unavailability. Domains listed are FR, GB, BE, NL, DE. Token is free: register at transparency.entsoe.eu then email transparency@entsoe.eu.",
+      "default_type": "outage"
+    },
+    {
+      "id": "elexon_remit",
+      "name": "Elexon Insights REMIT",
+      "type": "elexon",
+      "tier": 1,
+      "authority": 28,
+      "active": false,
+      "confidence": "likely",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/remit/list/by-publish",
+      "note": "GB REMIT messages. Free, no key required. Verify the exact path on the Insights developer portal, Elexon have moved endpoints before.",
+      "default_type": "outage"
+    },
+    {
+      "id": "gie_agsi",
+      "name": "GIE AGSI+ gas storage",
+      "type": "agsi",
+      "tier": 1,
+      "authority": 26,
+      "active": false,
+      "confidence": "likely",
+      "url": "https://agsi.gie.eu/api",
+      "api_key_env": "AGSI_KEY",
+      "params": {
+        "countries": [
+          "EU",
+          "GB",
+          "DE",
+          "NL",
+          "FR",
+          "IT",
+          "AT"
+        ]
+      },
+      "note": "Free key from agsi.gie.eu. This adapter does not just mirror the numbers, it generates a synthetic item ONLY when the fill level moves abnormally vs the trailing pattern. Otherwise it stays quiet.",
+      "default_type": "storage"
+    },
+    {
+      "id": "gassco_flow",
+      "name": "Gassco Norwegian flows",
+      "type": "html_watch",
+      "tier": 1,
+      "authority": 27,
+      "active": false,
+      "confidence": "unverified",
+      "url": "https://flow.gassco.no/",
+      "note": "Norwegian outages and maintenance. No public RSS. Gassco also publish to an IIP, so the EEX or GIE UMM feed may pick these up already, which would be the cleaner route. Check that first before scraping.",
+      "default_type": "outage"
+    },
+    {
+      "id": "national_gas_ops",
+      "name": "National Gas operational data",
+      "type": "rss",
+      "tier": 1,
+      "authority": 26,
+      "active": false,
+      "confidence": "unverified",
+      "url": "",
+      "note": "GB gas system messages and margin notices. Find the current feed on the National Gas data publisher.",
+      "default_type": "outage"
+    },
+    {
+      "id": "ofgem",
+      "name": "Ofgem",
+      "type": "rss",
+      "tier": 2,
+      "authority": 22,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://www.ofgem.gov.uk/rss.xml",
+      "default_type": "regulation"
+    },
+    {
+      "id": "ec_energy",
+      "name": "European Commission energy",
+      "type": "rss",
+      "tier": 2,
+      "authority": 22,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://energy.ec.europa.eu/node/2/rss_en",
+      "default_type": "regulation"
+    },
+    {
+      "id": "eia_today",
+      "name": "EIA Today in Energy",
+      "type": "rss",
+      "tier": 2,
+      "authority": 20,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "default_type": "news"
+    },
+    {
+      "id": "world_nuclear_news",
+      "name": "World Nuclear News",
+      "type": "rss",
+      "tier": 2,
+      "authority": 19,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://www.world-nuclear-news.org/rss",
+      "default_type": "news"
+    },
+    {
+      "id": "offshore_energy",
+      "name": "Offshore Energy",
+      "type": "rss",
+      "tier": 2,
+      "authority": 17,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://www.offshore-energy.biz/feed/",
+      "default_type": "news"
+    },
+    {
+      "id": "lng_prime",
+      "name": "LNG Prime",
+      "type": "rss",
+      "tier": 2,
+      "authority": 18,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://lngprime.com/feed/",
+      "default_type": "news"
+    },
+    {
+      "id": "energy_voice",
+      "name": "Energy Voice",
+      "type": "rss",
+      "tier": 2,
+      "authority": 16,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://www.energyvoice.com/feed/",
+      "default_type": "news"
+    },
+    {
+      "id": "rigzone",
+      "name": "Rigzone",
+      "type": "rss",
+      "tier": 2,
+      "authority": 15,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://www.rigzone.com/news/rss/rigzone_latest.aspx",
+      "default_type": "news"
+    },
+    {
+      "id": "oilprice",
+      "name": "OilPrice.com",
+      "type": "rss",
+      "tier": 2,
+      "authority": 12,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://oilprice.com/rss/main",
+      "note": "Noisy and headline-hungry. Low authority on purpose, the scorer will suppress most of it.",
+      "default_type": "news"
+    },
+    {
+      "id": "bbc_world",
+      "name": "BBC World",
+      "type": "rss",
+      "tier": 2,
+      "authority": 14,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "note": "Geopolitics catch-all. Relies entirely on theme scoring to filter, most items will score near zero and be dropped.",
+      "default_type": "news"
+    },
+    {
+      "id": "aljazeera",
+      "name": "Al Jazeera",
+      "type": "rss",
+      "tier": 2,
+      "authority": 13,
+      "active": true,
+      "confidence": "likely",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "note": "Strong Middle East coverage, useful for chokepoint stories.",
+      "default_type": "news"
+    },
+    {
+      "id": "gdelt",
+      "name": "GDELT global monitor",
+      "type": "gdelt",
+      "tier": 3,
+      "authority": 10,
+      "active": false,
+      "confidence": "likely",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc",
+      "note": "Free, global, 15-minute update cycle, excellent geopolitical reach. LICENCE CHECK NEEDED: GDELT is free but some sources describe the free tier as non-commercial. Confirm before switching on for PES use.",
+      "queries_from_themes": true,
+      "default_type": "news",
+      "requires_review": true
+    },
+    {
+      "id": "google_news",
+      "name": "Google News search",
+      "type": "google_news",
+      "tier": 3,
+      "authority": 8,
+      "active": false,
+      "confidence": "verified",
+      "url": "https://news.google.com/rss/search",
+      "note": "WORKS but two real caveats. 1) Slow: median item age around 6.6 days in a July 2026 sample, only ~7.6% under six hours old. 2) Google News terms of service say you may not scrape or display the content on another site without permission. Left OFF by default. Treat as a discovery tool for your own reading rather than a feed to republish on the terminal.",
+      "params": {
+        "hl": "en-GB",
+        "gl": "GB",
+        "ceid": "GB:en",
+        "when": "1d"
+      },
+      "queries_from_themes": true,
+      "default_type": "news",
+      "requires_review": true
+    }
+  ],
+  "polling": {
+    "_readme": "Minutes between fetches per tier. The ingest job reads these and skips sources not yet due.",
+    "tier_1_minutes": 5,
+    "tier_2_minutes": 10,
+    "tier_3_minutes": 30
+  },
+  "retention": {
+    "_readme": "How much history the API keeps. Longer costs nothing but page weight.",
+    "days": 14,
+    "max_items": 1200
+  },
+  "_iip_directory": "ACER keeps the canonical list of registered Inside Information Platforms at https://www.acer-remit.eu/portal/list-inside-platforms. Check there before adding any new UMM source."
+}

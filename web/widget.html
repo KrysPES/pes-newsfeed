@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PES News Drawer</title>
+<style>
+:root{
+  /* These four should be swapped for the terminal's own CSS variables on
+     integration. Everything else here is local to the drawer. */
+  --bg-app:#0d1117;
+  --bg-panel:#161d27;
+  --bg-row:#111823;
+  --elec:#3f96c6;
+  --gas:#c95480;
+
+  --text:#d7dee7;
+  --text-dim:#7d8896;
+  --text-faint:#59636f;
+  --line:#232c38;
+  --amber:#d99a2b;
+  --red:#d6455b;
+  --green:#3fa66a;
+
+  --drawer-w:392px;
+  --tab-w:34px;
+}
+
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;background:var(--bg-app);color:var(--text);
+  font-family:"Segoe UI",Roboto,system-ui,sans-serif;
+  font-size:12px;-webkit-font-smoothing:antialiased;
+}
+
+/* ---- demo backdrop only, not part of the widget --------------------- */
+.stage{position:fixed;inset:0;padding:22px 26px;}
+.stage h1{font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-faint);font-weight:600;margin:0 0 4px;}
+.stage p{color:var(--text-faint);max-width:520px;line-height:1.65;font-size:12px;}
+.stage code{background:var(--bg-panel);padding:1px 5px;border-radius:2px;color:var(--elec);}
+
+/* ---- drawer --------------------------------------------------------- */
+.drawer{
+  position:fixed;top:0;right:0;height:100%;width:var(--drawer-w);
+  background:var(--bg-panel);border-left:1px solid var(--line);
+  display:flex;flex-direction:column;
+  transform:translateX(0);transition:transform .22s cubic-bezier(.4,0,.2,1);
+  z-index:40;
+}
+.drawer.collapsed{transform:translateX(calc(var(--drawer-w) - var(--tab-w)));}
+
+/* the vertical tab that stays visible when collapsed */
+.tab{
+  position:absolute;left:0;top:0;height:100%;width:var(--tab-w);
+  background:var(--bg-panel);border-right:1px solid var(--line);
+  display:flex;flex-direction:column;align-items:center;gap:9px;
+  padding-top:11px;cursor:pointer;opacity:0;pointer-events:none;
+  transition:opacity .16s;
+}
+.drawer.collapsed .tab{opacity:1;pointer-events:auto;}
+.tab-label{
+  writing-mode:vertical-rl;text-orientation:mixed;
+  letter-spacing:.2em;font-size:10px;font-weight:700;
+  color:var(--text-dim);text-transform:uppercase;margin-top:5px;
+}
+.tab-count{
+  font-size:10px;font-weight:700;color:var(--bg-app);background:var(--text-dim);
+  border-radius:2px;padding:1px 4px;min-width:18px;text-align:center;
+}
+.tab.alerting .tab-count{background:var(--red);color:#fff;}
+.tab.alerting .tab-label{color:var(--red);}
+
+/* the red flash Alex asked for: fires only on an unseen critical */
+@keyframes edgePulse{
+  0%,100%{box-shadow:inset 3px 0 0 var(--red),0 0 0 rgba(214,69,91,0);}
+  50%{box-shadow:inset 3px 0 0 var(--red),0 0 15px rgba(214,69,91,.55);}
+}
+.drawer.alerting{animation:edgePulse 1.25s ease-in-out infinite;}
+@media (prefers-reduced-motion:reduce){
+  .drawer,.drawer.alerting{transition:none;animation:none;}
+  .drawer.alerting{box-shadow:inset 3px 0 0 var(--red);}
+}
+
+.head{
+  display:flex;align-items:center;gap:8px;padding:9px 11px;
+  border-bottom:1px solid var(--line);flex-shrink:0;
+}
+.head h2{
+  margin:0;font-size:11px;letter-spacing:.15em;text-transform:uppercase;
+  font-weight:700;color:var(--text);
+}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;}
+.dot.stale{background:var(--red);}
+.stamp{font-size:10px;color:var(--text-faint);margin-right:auto;}
+.stamp.stale{color:var(--red);}
+
+.iconbtn{
+  background:none;border:1px solid var(--line);color:var(--text-dim);
+  width:22px;height:20px;border-radius:2px;cursor:pointer;font-size:10px;
+  display:flex;align-items:center;justify-content:center;padding:0;
+}
+.iconbtn:hover{color:var(--text);border-color:var(--text-faint);}
+.iconbtn.on{color:var(--elec);border-color:var(--elec);}
+.iconbtn:focus-visible{outline:2px solid var(--elec);outline-offset:1px;}
+
+.filters{
+  display:flex;flex-wrap:wrap;gap:3px;padding:7px 11px;
+  border-bottom:1px solid var(--line);flex-shrink:0;
+}
+.chip{
+  background:transparent;border:1px solid var(--line);color:var(--text-dim);
+  font-size:10px;padding:2px 7px;border-radius:2px;cursor:pointer;
+  font-family:inherit;letter-spacing:.03em;
+}
+.chip:hover{color:var(--text);}
+.chip.on{background:var(--elec);border-color:var(--elec);color:#07121a;font-weight:600;}
+.chip:focus-visible{outline:2px solid var(--elec);outline-offset:1px;}
+
+.sortbar{
+  display:flex;align-items:center;gap:4px;padding:5px 11px;
+  border-bottom:1px solid var(--line);flex-shrink:0;
+}
+.sortlabel{
+  font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-faint);margin-right:3px;
+}
+.sortbtn{
+  background:transparent;border:1px solid var(--line);color:var(--text-dim);
+  font-size:10px;padding:2px 9px;border-radius:2px;cursor:pointer;
+  font-family:inherit;letter-spacing:.03em;
+}
+.sortbtn:hover{color:var(--text);}
+.sortbtn.on{background:var(--elec);border-color:var(--elec);color:#07121a;font-weight:600;}
+.sortbtn:focus-visible{outline:2px solid var(--elec);outline-offset:1px;}
+
+.list{overflow-y:auto;flex:1;scrollbar-width:thin;
+  scrollbar-color:var(--line) transparent;}
+.list::-webkit-scrollbar{width:8px;}
+.list::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px;}
+
+.row{
+  border-bottom:1px solid var(--line);border-left:2px solid transparent;
+  padding:8px 11px 8px 9px;cursor:pointer;background:var(--bg-row);
+}
+.row:hover{background:#182130;}
+.row.critical{border-left-color:var(--red);background:rgba(214,69,91,.07);}
+.row.high{border-left-color:var(--amber);}
+.row.normal{border-left-color:var(--line);}
+.row.unseen .headline::after{
+  content:"";display:inline-block;width:5px;height:5px;border-radius:50%;
+  background:var(--elec);margin-left:6px;vertical-align:middle;
+}
+@keyframes slideIn{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
+.row.fresh{animation:slideIn .28s ease-out;}
+
+.meta{display:flex;align-items:center;gap:6px;margin-bottom:3px;}
+.time{font-variant-numeric:tabular-nums;color:var(--text-faint);font-size:10px;}
+.src{color:var(--text-dim);font-size:10px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:135px;}
+.score{
+  margin-left:auto;font-size:9px;font-weight:700;font-variant-numeric:tabular-nums;
+  color:var(--text-faint);border:1px solid var(--line);border-radius:2px;padding:0 3px;
+}
+.row.critical .score{color:var(--red);border-color:rgba(214,69,91,.45);}
+.row.high .score{color:var(--amber);border-color:rgba(217,154,43,.4);}
+
+.headline{line-height:1.4;font-size:12px;color:var(--text);margin:0 0 4px;}
+.row.critical .headline{font-weight:600;}
+
+.tags{display:flex;flex-wrap:wrap;gap:3px;align-items:center;}
+.tag{font-size:9px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--text-faint);border:1px solid var(--line);border-radius:2px;padding:0 4px;}
+.tag.nature-unplanned{color:var(--amber);border-color:rgba(217,154,43,.35);}
+.tag.nature-planned{color:var(--text-faint);}
+.dupes{font-size:9px;color:var(--text-faint);margin-left:auto;}
+
+.why{
+  display:none;margin-top:7px;padding:7px 8px;background:var(--bg-app);
+  border:1px solid var(--line);border-radius:2px;
+  font-size:10px;color:var(--text-dim);line-height:1.6;
+}
+.row.open .why{display:block;}
+.snippet{color:var(--text-dim);line-height:1.65;margin-bottom:7px;}
+.thread{color:var(--text-faint);margin-bottom:5px;}
+.thread.warnline{color:var(--amber);}
+.tag.updated{color:var(--elec);border-color:rgba(63,150,198,.4);}
+.retired-toggle{margin-left:auto;cursor:pointer;color:var(--text-faint);
+  background:none;border:none;font-size:10px;font-family:inherit;padding:0;}
+.retired-toggle:hover{color:var(--text-dim);}
+.retired-toggle.on{color:var(--elec);}
+.row.superseded{opacity:.5;}
+
+.empty{padding:26px 14px;text-align:center;color:var(--text-faint);line-height:1.7;}
+.foot{
+  padding:6px 11px;border-top:1px solid var(--line);
+  font-size:10px;color:var(--text-faint);display:flex;gap:9px;flex-shrink:0;
+}
+.foot .warn{color:var(--amber);}
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <h1>Demo backdrop</h1>
+  <p>This grey area stands in for the trading terminal. The drawer on the right is
+     the widget. Click the vertical <code>NEWS</code> tab to collapse and reopen it.
+     Click any headline row to see why it scored where it did; click the source
+     link inside to open the article.</p>
+  <p style="color:var(--amber);">Headlines below are synthetic test fixtures, not real news.
+     They exist to exercise the scoring, deduplication and alert logic.</p>
+</div>
+
+<aside class="drawer" id="drawer" aria-label="Market news">
+  <div class="tab" id="tab" role="button" tabindex="0" aria-label="Open news drawer">
+    <span class="tab-count" id="tabCount">0</span>
+    <span class="tab-label">News</span>
+  </div>
+
+  <div class="head">
+    <span class="dot" id="freshDot"></span>
+    <h2>News</h2>
+    <span class="stamp" id="stamp">--:--</span>
+    <button class="iconbtn" id="pauseBtn" title="Pause live updates" aria-label="Pause live updates">II</button>
+    <button class="iconbtn" id="closeBtn" title="Collapse" aria-label="Collapse drawer">&rsaquo;</button>
+  </div>
+
+  <div class="filters" id="filters"></div>
+
+  <div class="sortbar">
+    <span class="sortlabel">Sort</span>
+    <button class="sortbtn" id="sortPriority" data-sort="priority">Priority</button>
+    <button class="sortbtn" id="sortRecent" data-sort="recent">Recent</button>
+  </div>
+  <div class="list" id="list"></div>
+
+  <div class="foot">
+    <span id="srcHealth">sources --/--</span>
+    <button class="retired-toggle" id="retiredBtn"></button>
+    <span id="pausedNote" style="display:none;" class="warn">paused</span>
+  </div>
+</aside>
+
+<script>
+/* ────────────────────────────────────────────────────────────────
+   INTEGRATION: this is the only line that changes on deployment.
+
+   Local testing:  "../data/news.json"
+   Live:           "https://raw.githubusercontent.com/<user>/<repo>/main/data/news.json"
+
+   raw.githubusercontent.com serves access-control-allow-origin: *
+   and cache-control: max-age=300, so the terminal can read it
+   cross-origin with no proxy, and the 5 minute cache lines up with
+   the 5 minute ingest cron. Do NOT redeploy this file to Netlify on
+   every feed update: production deploys are credit-metered and a
+   5 minute schedule would exhaust the free tier inside a day.
+   ──────────────────────────────────────────────────────────────── */
+const FEED_URL = "../data/news.json";
+
+/* Every string from the feed passes through esc() before touching innerHTML.
+   Feed content is external: headlines arrive from third-party RSS, and a
+   title containing markup must render as text, never execute. The server
+   strips tags too, but the widget's contract is the JSON, not any particular
+   adapter's hygiene. safeUrl() additionally refuses non-http(s) hrefs. */
+function esc(v){
+  return String(v ?? "").replace(/[&<>"']/g,
+    c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function safeUrl(u){
+  u = String(u ?? "");
+  return /^https?:\/\//i.test(u) ? esc(u) : "#";
+}
+
+const TAG_LABELS = {
+  supply_disruption:"Supply", geopolitics:"Geopol", lng:"LNG",
+  gas_storage:"Storage", nuclear:"Nuclear", weather:"Weather",
+  regulation:"Reg", carbon:"Carbon", infrastructure:"Infra",
+  oil_macro:"Macro", power_system:"Power"
+};
+
+const FILTERS = ["all","supply_disruption","geopolitics","lng","gas_storage",
+                 "nuclear","weather","regulation","infrastructure","power_system"];
+
+/* Read-state persists in localStorage so a page refresh does not re-flash
+   criticals that were already dismissed. This widget lives on a normal
+   website; localStorage is available and appropriate here. The set is pruned
+   to URLs still present in the feed, so it stays bounded by the feed's own
+   retention (max 1,200 items). If storage is unavailable (private browsing,
+   locked-down profiles) everything still works, read-state just resets on
+   reload, which is the old behaviour. */
+const SEEN_KEY = "pesNewsSeen_v1";
+
+function loadSeen(target){
+  try{
+    const raw = localStorage.getItem(SEEN_KEY);
+    if(raw) JSON.parse(raw).forEach(u => target.add(u));
+  }catch(err){ /* storage unavailable: in-memory only */ }
+}
+
+function saveSeen(){
+  try{
+    const live = new Set((state.feed.items || []).map(i => i.url));
+    let keep = [...state.seen];
+    if(live.size) keep = keep.filter(u => live.has(u));
+    localStorage.setItem(SEEN_KEY, JSON.stringify(keep.slice(-2000)));
+  }catch(err){ /* storage unavailable: in-memory only */ }
+}
+
+const state = {
+  feed:{items:[],generated_at:null,sources:{healthy:0,total:0}},
+  filter:"all",
+  sort:"priority",        // "priority" (score) or "recent" (time)
+  paused:false,
+  showRetired:false,
+  seen:new Set(),
+  freshOpen:new Set(),     // unseen at the moment the drawer was opened;
+                           // keeps the blue dots visible while reading even
+                           // though the badge has already been cleared
+  open:new Set(),
+  firstRender:true
+};
+
+/* ------------------------------------------------------------------ */
+
+function timeAgo(iso){
+  if(!iso) return "--";
+  const mins = Math.floor((Date.now() - new Date(iso).getTime())/60000);
+  if(mins < 1)  return "now";
+  if(mins < 60) return mins + "m";
+  const h = Math.floor(mins/60);
+  if(h < 24) return h + "h";
+  return Math.floor(h/24) + "d";
+}
+
+function dayOf(iso){
+  if(!iso) return "";
+  const d = new Date(iso);
+  return d.toLocaleDateString("en-GB",{day:"numeric",month:"short"});
+}
+
+function clockOf(iso){
+  if(!iso) return "--:--";
+  const d = new Date(iso);
+  return String(d.getHours()).padStart(2,"0") + ":" + String(d.getMinutes()).padStart(2,"0");
+}
+
+function visibleItems(){
+  let items = (state.feed.items || []).filter(i => !i.hidden || state.showRetired);
+  if(state.filter !== "all") items = items.filter(i => (i.tags||[]).includes(state.filter));
+
+  // The feed arrives sorted by score. Re-sorting by time is a display choice
+  // and never changes the scores or the alert levels: a critical stays
+  // critical wherever it happens to sit in the list.
+  if(state.sort === "recent"){
+    items = items.slice().sort((a,b) => {
+      const ta = a.published_at ? Date.parse(a.published_at) : 0;
+      const tb = b.published_at ? Date.parse(b.published_at) : 0;
+      if(tb !== ta) return tb - ta;
+      return (b.score||0) - (a.score||0);   // tie-break on score
+    });
+  }
+  return items;
+}
+
+function retiredCount(){
+  return (state.feed.items || []).filter(i => i.hidden).length;
+}
+
+function unseenCriticals(){
+  return (state.feed.items||[]).filter(
+    i => i.alert === "critical" && !i.hidden && !state.seen.has(i.url)
+  );
+}
+
+function unreadCount(){
+  return (state.feed.items||[]).filter(
+    i => !i.hidden && !state.seen.has(i.url)
+  ).length;
+}
+
+/* ------------------------------------------------------------------ */
+
+function renderFilters(){
+  const box = document.getElementById("filters");
+  box.innerHTML = "";
+  FILTERS.forEach(key => {
+    const btn = document.createElement("button");
+    btn.className = "chip" + (state.filter === key ? " on" : "");
+    btn.textContent = key === "all" ? "All" : (TAG_LABELS[key] || key);
+    btn.setAttribute("aria-pressed", state.filter === key);
+    btn.onclick = () => { state.filter = key; renderFilters(); renderList(); };
+    box.appendChild(btn);
+  });
+}
+
+function renderList(){
+  const list = document.getElementById("list");
+  const items = visibleItems();
+  list.innerHTML = "";
+
+  if(!items.length){
+    list.innerHTML = '<div class="empty">Nothing matching this filter.<br>' +
+                     'Try All, or widen the theme.</div>';
+    return;
+  }
+
+  items.forEach(it => {
+    const row = document.createElement("article");
+    const unseen = !state.seen.has(it.url) || state.freshOpen.has(it.url);
+    row.className = "row " + it.alert + (it.superseded ? " superseded" : "") +
+                    (unseen ? " unseen" : "") +
+                    (state.open.has(it.url) ? " open" : "") +
+                    (!state.firstRender && !state.seen.has(it.url) ? " fresh" : "");
+
+    const tags = (it.tags||[]).slice(0,3)
+      .map(t => `<span class="tag">${esc(TAG_LABELS[t]||t)}</span>`).join("");
+    const nature = it.nature
+      ? `<span class="tag nature-${it.nature}">${it.nature}</span>` : "";
+    const dupes = it.duplicate_count
+      ? `<span class="dupes">+${it.duplicate_count} source${it.duplicate_count>1?"s":""}</span>` : "";
+    const updated = it.update_count
+      ? `<span class="tag updated">updated</span>` : "";
+
+    // The expanded panel shows the story, not the maths. The score breakdown
+    // still travels in the JSON for tuning, it is just not what a reader wants
+    // when they click a headline.
+    const snippet = it.snippet
+      ? `<div class="snippet">${esc(it.snippet)}</div>` : "";
+
+    const thread = it.update_count
+      ? `<div class="thread">Updated ${it.update_count} time${it.update_count>1?"s":""}` +
+        (it.thread_started_at ? ` &middot; story began ${clockOf(it.thread_started_at)} ${dayOf(it.thread_started_at)}` : "") +
+        `</div>` : "";
+
+    const others = (it.also_reported_by||[]).length
+      ? `<div class="thread">Also reported by ${it.also_reported_by.map(esc).join(", ")}</div>` : "";
+
+    const retired = it.superseded_by
+      ? `<div class="thread warnline">Superseded by: ${esc(it.superseded_by.title)}</div>` : "";
+
+    row.innerHTML = `
+      <div class="meta">
+        <span class="time">${timeAgo(it.published_at)}</span>
+        <span class="src">${esc(it.source_name)}</span>
+        <span class="score">${it.score}</span>
+      </div>
+      <p class="headline">${esc(it.title)}</p>
+      <div class="tags">${nature}${updated}${tags}${dupes}</div>
+      <div class="why">
+        ${snippet}${thread}${others}${retired}
+        <a href="${safeUrl(it.url)}" target="_blank" rel="noopener"
+           style="color:var(--elec);">Open source &rarr;</a>
+      </div>`;
+
+    row.onclick = (e) => {
+      if(e.target.tagName === "A") return;
+      state.seen.add(it.url);
+      state.freshOpen.delete(it.url);
+      saveSeen();
+      if(state.open.has(it.url)) state.open.delete(it.url);
+      else state.open.add(it.url);
+      renderList(); renderAlertState();
+    };
+
+    list.appendChild(row);
+  });
+
+  state.firstRender = false;
+}
+
+function renderAlertState(){
+  const drawer = document.getElementById("drawer");
+  const tab = document.getElementById("tab");
+  const criticals = unseenCriticals().length;
+  const unread = unreadCount();
+
+  /* The badge always means one thing: unread items. An earlier version
+     showed the critical count, then switched to the total item count once
+     read, so the number silently changed meaning from "1" to "14". */
+  const badge = document.getElementById("tabCount");
+  badge.textContent = unread;
+  badge.style.display = unread ? "" : "none";
+
+  const collapsed = drawer.classList.contains("collapsed");
+  drawer.classList.toggle("alerting", criticals > 0 && collapsed);
+  tab.classList.toggle("alerting", criticals > 0);
+}
+
+function renderHeader(){
+  const gen = state.feed.generated_at;
+  const stamp = document.getElementById("stamp");
+  const dot = document.getElementById("freshDot");
+
+  stamp.textContent = clockOf(gen);
+
+  // same freshness rule as the terminal's LAST SYNC stamp: red over an hour old
+  const stale = !gen || (Date.now() - new Date(gen).getTime()) > 3600000;
+  dot.classList.toggle("stale", stale);
+  stamp.classList.toggle("stale", stale);
+
+  const s = state.feed.sources || {};
+  const health = document.getElementById("srcHealth");
+  health.textContent = `sources ${s.healthy||0}/${s.total||0}`;
+  health.className = s.degraded ? "warn" : "";
+}
+
+function renderSort(){
+  document.querySelectorAll(".sortbtn").forEach(btn => {
+    const on = btn.dataset.sort === state.sort;
+    btn.classList.toggle("on", on);
+    btn.setAttribute("aria-pressed", on);
+  });
+}
+
+function renderRetiredToggle(){
+  const btn = document.getElementById("retiredBtn");
+  const n = retiredCount();
+  btn.style.display = n ? "inline" : "none";
+  btn.textContent = (state.showRetired ? "hide" : "show") + ` ${n} superseded`;
+  btn.classList.toggle("on", state.showRetired);
+}
+
+function render(){ renderHeader(); renderSort(); renderList(); renderAlertState(); renderRetiredToggle(); }
+
+/* ------------------------------------------------------------------ */
+
+async function refresh(){
+  if(state.paused) return;
+  try{
+    const res = await fetch(FEED_URL, {cache:"no-store"});
+    if(!res.ok) throw new Error(res.status);
+    state.feed = await res.json();
+  }catch(err){
+    // opened straight from disk, or the feed is not deployed yet
+    if(window.__PES_NEWS__) state.feed = window.__PES_NEWS__;
+  }
+  render();
+}
+
+document.getElementById("closeBtn").onclick = () => {
+  document.getElementById("drawer").classList.add("collapsed");
+  state.freshOpen.clear();
+  renderAlertState();
+};
+const openDrawer = () => {
+  const d = document.getElementById("drawer");
+  d.classList.remove("collapsed");
+  /* Opening clears the badge (everything visible becomes "read") but the
+     blue dots stay for this viewing via freshOpen, so you can still see
+     what is new while scanning. Collapse resets the dots. */
+  state.freshOpen = new Set(
+    (state.feed.items||[]).filter(i => !i.hidden && !state.seen.has(i.url)).map(i => i.url));
+  (state.feed.items||[]).forEach(i => { if(!i.hidden) state.seen.add(i.url); });
+  saveSeen();
+  render();
+};
+document.getElementById("tab").onclick = openDrawer;
+document.getElementById("tab").onkeydown = e => {
+  if(e.key === "Enter" || e.key === " "){ e.preventDefault(); openDrawer(); }
+};
+
+document.querySelectorAll(".sortbtn").forEach(btn => {
+  btn.onclick = () => {
+    state.sort = btn.dataset.sort;
+    state.firstRender = true;      // suppress the slide-in on a manual re-sort
+    renderSort(); renderList();
+  };
+});
+
+document.getElementById("retiredBtn").onclick = () => {
+  state.showRetired = !state.showRetired;
+  renderList(); renderRetiredToggle();
+};
+
+document.getElementById("pauseBtn").onclick = (e) => {
+  state.paused = !state.paused;
+  e.currentTarget.classList.toggle("on", state.paused);
+  e.currentTarget.title = state.paused ? "Resume live updates" : "Pause live updates";
+  document.getElementById("pausedNote").style.display = state.paused ? "inline" : "none";
+};
+
+loadSeen(state.seen);
+renderFilters();
+renderSort();
+refresh();
+setInterval(refresh, 60000);        // widget polls its own API once a minute
+setInterval(renderHeader, 30000);   // keeps the freshness dot honest
+</script>
+
+<!-- Embedded snapshot so the file also opens straight from disk with no server.
+     Same pattern as the terminal demo build. -->
+<script>window.__PES_NEWS__ = /*__DATA__*/ null /*__ENDDATA__*/;</script>
+<script>if(!state.feed.items.length && window.__PES_NEWS__){ state.feed = window.__PES_NEWS__; render(); }</script>
+
+</body>
+</html>

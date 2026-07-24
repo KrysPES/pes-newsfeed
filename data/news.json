@@ -1,0 +1,760 @@
+{
+  "generated_at": "2026-07-23T15:08:23.549713+00:00",
+  "item_count": 14,
+  "alert_counts": {
+    "critical": 1,
+    "high": 2,
+    "normal": 6
+  },
+  "superseded_count": 1,
+  "sources": {
+    "healthy": 1,
+    "total": 1,
+    "degraded": false,
+    "detail": [
+      {
+        "id": "fixtures",
+        "ok": true,
+        "count": 27,
+        "error": null,
+        "ms": 0
+      }
+    ]
+  },
+  "items": [
+    {
+      "title": "Interconnector cable fault cuts capacity between GB and Belgium",
+      "url": "https://example-fixture.test/interconnector-fault",
+      "snippet": "A cable fault has reduced interconnector capacity by 500 MW. National Grid confirmed repairs are under way with return to service uncertain.",
+      "published_at": "2026-07-23T10:30:00+00:00",
+      "type": "outage",
+      "source": "elexon_remit",
+      "source_name": "Elexon Insights REMIT",
+      "authority": 28,
+      "tier": 1,
+      "has_magnitude": true,
+      "score": 82,
+      "tags": [
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "critical",
+      "nature": "unplanned",
+      "why": {
+        "authority": 20.4,
+        "themes": 44.4,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 128.8,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "supply_disruption": [
+          "fault",
+          "repairs",
+          "return to service"
+        ],
+        "infrastructure": [
+          "interconnector",
+          "grid",
+          "cable",
+          "cable fault"
+        ],
+        "geography": [
+          "national grid"
+        ],
+        "unplanned": [
+          "fault"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Kollsnes returns to full capacity after unplanned outage",
+      "url": "https://example-fixture.test/kollsnes-resolved",
+      "snippet": "Gassco confirmed Kollsnes is back at full capacity. Norwegian flows to Easington have normalised.",
+      "published_at": "2026-07-23T11:30:00+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 77,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 30.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 103.9,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "supply_disruption": [
+          "outage",
+          "unplanned",
+          "unplanned outage"
+        ],
+        "geography": [
+          "easington"
+        ],
+        "unplanned": [
+          "unplanned"
+        ],
+        "urgency": [
+          "unplanned",
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-07-23T09:12:00+00:00"
+    },
+    {
+      "title": "GB REMIT: Heysham 2 unavailable 610 MW",
+      "url": "https://example-fixture.test/elexon-heysham",
+      "snippet": "Unplanned technical fault, active. Nuclear reactor offline from 2026-07-23T06:14:00Z to 2026-07-29T00:00:00Z.",
+      "published_at": "2026-07-23T06:20:00+00:00",
+      "type": "outage",
+      "source": "elexon_remit",
+      "source_name": "Elexon Insights REMIT",
+      "authority": 28,
+      "tier": 1,
+      "has_magnitude": true,
+      "score": 66,
+      "tags": [
+        "supply_disruption",
+        "nuclear"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 20.4,
+        "themes": 45.6,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 114.0,
+        "recency_multiplier": 0.59
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "offline",
+          "fault",
+          "technical fault"
+        ],
+        "nuclear": [
+          "nuclear",
+          "reactor",
+          "reactor offline"
+        ],
+        "unplanned": [
+          "unplanned",
+          "fault"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Tanker attacked in the Strait of Hormuz, shipping insurers raise war risk premiums",
+      "url": "https://example-fixture.test/hormuz-tanker",
+      "snippet": "A vessel was attacked in the Strait of Hormuz overnight. Escalation fears lifted crude by 4% and freight rates jumped. Naval escort arrangements are under discussion.",
+      "published_at": "2026-07-23T05:50:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 62,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 47.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 105.1,
+        "recency_multiplier": 0.57
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "war",
+          "attacked",
+          "strait of hormuz",
+          "naval escort"
+        ],
+        "lng": [
+          "tanker",
+          "freight rates"
+        ],
+        "oil_macro": [
+          "crude",
+          "rates"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Freeport LNG train 2 halted by compressor failure, feedgas drops 30%",
+      "url": "https://example-fixture.test/freeport-train2",
+      "snippet": "A compressor failure has halted liquefaction train 2. Feedgas nominations fell by roughly 30 per cent. Cargo loading suspended at the jetty.",
+      "published_at": "2026-07-23T04:15:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 60,
+      "tags": [
+        "supply_disruption",
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 13.1,
+        "themes": 48.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 114.1,
+        "recency_multiplier": 0.5
+      },
+      "matched": {
+        "supply_disruption": [
+          "halted",
+          "suspended",
+          "compressor failure"
+        ],
+        "lng": [
+          "lng",
+          "liquefaction",
+          "feedgas",
+          "cargo",
+          "liquefaction train",
+          "loading suspended"
+        ],
+        "infrastructure": [
+          "compressor"
+        ],
+        "geography": [
+          "freeport"
+        ],
+        "unplanned": [
+          "failure",
+          "halted",
+          "suspended"
+        ],
+        "urgency": [
+          "halted",
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Reactor restart delayed at Belgian nuclear plant after weld inspection",
+      "url": "https://example-fixture.test/belgian-reactor",
+      "snippet": "The restart has been delayed by three weeks following a weld inspection. 1040 MW remains offline.",
+      "published_at": "2026-07-23T03:40:00+00:00",
+      "type": "outage",
+      "source": "entsoe_outages",
+      "source_name": "ENTSO-E Transparency outages",
+      "authority": 28,
+      "tier": 1,
+      "has_magnitude": true,
+      "score": 57,
+      "tags": [
+        "supply_disruption",
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 20.4,
+        "themes": 45.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 108.0,
+        "recency_multiplier": 0.48
+      },
+      "matched": {
+        "supply_disruption": [
+          "offline",
+          "inspection",
+          "restart delayed"
+        ],
+        "nuclear": [
+          "nuclear",
+          "reactor",
+          "reactor restart",
+          "restart delayed",
+          "weld inspection"
+        ],
+        "geography": [
+          "belgian"
+        ],
+        "unplanned": [
+          "delayed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Bacton terminal maintenance extended by four days",
+      "url": "https://example-fixture.test/bacton-maintenance",
+      "snippet": "Planned maintenance at the Bacton entry point has been extended, reducing UK entry capacity by 12 mcm/day until Friday.",
+      "published_at": "2026-07-23T11:00:00+00:00",
+      "type": "outage",
+      "source": "national_gas_ops",
+      "source_name": "National Gas operational data",
+      "authority": 26,
+      "tier": 1,
+      "has_magnitude": true,
+      "score": 56,
+      "tags": [
+        "infrastructure",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "planned",
+      "why": {
+        "authority": 19.0,
+        "themes": 24.2,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": -12.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 59.2,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "infrastructure": [
+          "terminal",
+          "entry point"
+        ],
+        "supply_disruption": [
+          "maintenance"
+        ],
+        "geography": [
+          "uk",
+          "bacton"
+        ],
+        "planned": [
+          "planned maintenance"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Unavailability: PALUEL 2 (1330 MW)",
+      "url": "https://example-fixture.test/entsoe-paluel",
+      "snippet": "10YFR-RTE------C A80 stress corrosion inspection extended from 2026-07-23 to 2026-09-14. French nuclear reactor offline.",
+      "published_at": "2026-07-23T07:30:00+00:00",
+      "type": "outage",
+      "source": "entsoe_outages",
+      "source_name": "ENTSO-E Transparency outages",
+      "authority": 28,
+      "tier": 1,
+      "has_magnitude": true,
+      "score": 56,
+      "tags": [
+        "nuclear",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 20.4,
+        "themes": 36.1,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 78.5,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactor",
+          "reactor offline",
+          "stress corrosion"
+        ],
+        "supply_disruption": [
+          "offline",
+          "inspection"
+        ],
+        "geography": [
+          "french"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "EU gas storage: unusual withdrawal, now 62.4% full",
+      "url": "https://example-fixture.test/agsi-eu",
+      "snippet": "Net withdrawal of 0.41 against a 14-day average of 0.18. Storage at 62.4 per cent full on 2026-07-22, below the five-year average for the date.",
+      "published_at": "2026-07-23T08:00:00+00:00",
+      "type": "storage",
+      "source": "gie_agsi",
+      "source_name": "GIE AGSI+ gas storage",
+      "authority": 26,
+      "tier": 1,
+      "has_magnitude": true,
+      "score": 51,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 19.0,
+        "themes": 24.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 65.0,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "withdrawal",
+          "per cent full",
+          "below the five-year average",
+          "five-year average"
+        ],
+        "geography": [
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Dunkelflaute conditions forecast for northern Europe next week",
+      "url": "https://example-fixture.test/dunkelflaute",
+      "snippet": "Low wind and still conditions are forecast across Germany and the Netherlands, with wind output expected to fall sharply. Tight margins possible.",
+      "published_at": "2026-07-23T05:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "weather",
+        "infrastructure",
+        "power_system"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 33.1,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 57.7,
+        "recency_multiplier": 0.53
+      },
+      "matched": {
+        "weather": [
+          "forecast",
+          "low wind",
+          "dunkelflaute",
+          "still conditions"
+        ],
+        "infrastructure": [
+          "tight margins"
+        ],
+        "power_system": [
+          "wind output"
+        ],
+        "geography": [
+          "europe",
+          "netherlands",
+          "germany"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ofgem opens consultation on network charging methodology reform",
+      "url": "https://example-fixture.test/ofgem-consultation",
+      "snippet": "Ofgem has launched a consultation on changes to the network charges methodology, with a code modification expected to enter into force in April 2027.",
+      "published_at": "2026-07-23T08:45:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "regulation",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.1,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "regulation": [
+          "ofgem",
+          "consultation",
+          "reform",
+          "network charges",
+          "code modification",
+          "charging methodology"
+        ],
+        "infrastructure": [
+          "network"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Subsea cable damage reported in the Baltic, investigation under way",
+      "url": "https://example-fixture.test/baltic-cable",
+      "snippet": "Authorities are investigating damage to a subsea cable. Sabotage has not been ruled out. Critical infrastructure protection measures have been stepped up.",
+      "published_at": "2026-07-23T02:15:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 36.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 65.5,
+        "recency_multiplier": 0.43
+      },
+      "matched": {
+        "geopolitics": [
+          "sabotage",
+          "critical infrastructure",
+          "subsea cable",
+          "cable damage"
+        ],
+        "infrastructure": [
+          "cable"
+        ],
+        "unplanned": [
+          "damage",
+          "sabotage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Prolonged heatwave forecast across southern Europe, cooling demand to surge",
+      "url": "https://example-fixture.test/heatwave-europe",
+      "snippet": "Weather models point to extreme heat across Spain, Italy and France for the next fortnight, well above seasonal norms. Cooling demand is expected to lift power burn.",
+      "published_at": "2026-07-23T06:00:00+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "weather",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 24.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 44.9,
+        "recency_multiplier": 0.58
+      },
+      "matched": {
+        "weather": [
+          "heatwave",
+          "forecast",
+          "seasonal norms",
+          "cooling demand",
+          "extreme heat"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "europe",
+          "france",
+          "italy",
+          "spain"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Unplanned outage at Kollsnes processing plant cuts 18 mcm/day, Gassco confirms",
+      "url": "https://example-fixture.test/kollsnes-outage",
+      "snippet": "Norwegian gas system operator Gassco said an unplanned outage at the Kollsnes processing plant has reduced capacity by 18 mcm per day with an uncertain end time. Flows to Easington were affected.",
+      "published_at": "2026-07-23T09:12:00+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": true,
+      "score": 24,
+      "tags": [
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 44.4,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 130.3,
+        "recency_multiplier": 0.74
+      },
+      "matched": {
+        "supply_disruption": [
+          "outage",
+          "unplanned",
+          "unplanned outage",
+          "reduced capacity"
+        ],
+        "infrastructure": [
+          "processing plant",
+          "system operator"
+        ],
+        "geography": [
+          "easington"
+        ],
+        "unplanned": [
+          "unplanned"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [
+        "Energy Voice",
+        "LNG Prime"
+      ],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://example-fixture.test/kollsnes-resolved",
+        "title": "Kollsnes returns to full capacity after unplanned outage",
+        "published_at": "2026-07-23T11:30:00+00:00"
+      },
+      "hidden": true
+    }
+  ]
+}

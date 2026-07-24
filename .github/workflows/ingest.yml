@@ -1,0 +1,84 @@
+name: news feed ingest
+
+# Why GitHub Actions and not Netlify scheduled functions:
+#
+# Netlify's 2026 free plan is credit-metered (300 credits/month shared across
+# bandwidth, builds and function compute) and when the credits run out the free
+# plan STOPS SERVING TRAFFIC. A job running every few minutes burning function
+# compute against that shared pool is a live risk to pesomnia.com itself.
+# Not worth it for a news widget.
+#
+# GitHub Actions on a PUBLIC repo has unlimited minutes. The repo holds only
+# public feed URLs and scoring config; every credential lives in Actions
+# Secrets and is never committed.
+#
+# Note the cadence floor: GitHub's scheduled workflows run at a 5 minute
+# minimum and can be delayed at peak times. That is fine here. The feeds that
+# genuinely need sub-5-minute latency are the REMIT ones, and they publish on
+# their own schedule anyway.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:        # lets Alex trigger a run by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run ingestion
+        env:
+          ENTSOE_TOKEN: ${{ secrets.ENTSOE_TOKEN }}
+          AGSI_KEY: ${{ secrets.AGSI_KEY }}
+        run: python src/ingest.py
+
+      - name: Commit the feed if it changed
+        run: |
+          git config user.name  "pes-newsfeed"
+          git config user.email "actions@github.com"
+          git add data/news.json
+          if git diff --staged --quiet; then
+            echo "no change, nothing to commit"
+          else
+            git commit -m "feed update $(date -u +'%Y-%m-%dT%H:%MZ')"
+            # the schedule is tighter than a push takes, so rebase on any
+            # concurrent run rather than failing the job
+            git pull --rebase --autostash origin ${{ github.ref_name }} || true
+            git push
+          fi
+
+  # Runs once a day and fails loudly if sources have gone dark. Feeds rot
+  # silently otherwise: a dead URL just means fewer items, which looks like
+  # a quiet news day rather than a broken pipeline.
+  healthcheck:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          ENTSOE_TOKEN: ${{ secrets.ENTSOE_TOKEN }}
+          AGSI_KEY: ${{ secrets.AGSI_KEY }}
+        run: python src/ingest.py --check
