@@ -1,177 +1,392 @@
 {
-  "generated_at": "2026-07-23T15:08:23.549713+00:00",
-  "item_count": 14,
+  "generated_at": "2026-07-24T14:12:31.699639+00:00",
+  "item_count": 32,
   "alert_counts": {
-    "critical": 1,
-    "high": 2,
-    "normal": 6
+    "critical": 0,
+    "high": 1,
+    "normal": 15
   },
-  "superseded_count": 1,
+  "superseded_count": 3,
   "sources": {
-    "healthy": 1,
-    "total": 1,
-    "degraded": false,
+    "healthy": 11,
+    "total": 12,
+    "degraded": true,
     "detail": [
       {
-        "id": "fixtures",
+        "id": "nordpool_umm",
         "ok": true,
-        "count": 27,
+        "count": 80,
         "error": null,
-        "ms": 0
+        "ms": 1628
+      },
+      {
+        "id": "ofgem",
+        "ok": true,
+        "count": 1,
+        "error": null,
+        "ms": 308
+      },
+      {
+        "id": "ec_energy",
+        "ok": true,
+        "count": 30,
+        "error": null,
+        "ms": 671
+      },
+      {
+        "id": "eia_today",
+        "ok": true,
+        "count": 21,
+        "error": null,
+        "ms": 202
+      },
+      {
+        "id": "world_nuclear_news",
+        "ok": true,
+        "count": 45,
+        "error": null,
+        "ms": 1151
+      },
+      {
+        "id": "offshore_energy",
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 221
+      },
+      {
+        "id": "lng_prime",
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 546
+      },
+      {
+        "id": "energy_voice",
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.energyvoice.com/feed/",
+        "ms": 181
+      },
+      {
+        "id": "rigzone",
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 225
+      },
+      {
+        "id": "oilprice",
+        "ok": true,
+        "count": 15,
+        "error": null,
+        "ms": 452
+      },
+      {
+        "id": "bbc_world",
+        "ok": true,
+        "count": 36,
+        "error": null,
+        "ms": 219
+      },
+      {
+        "id": "aljazeera",
+        "ok": true,
+        "count": 25,
+        "error": null,
+        "ms": 233
       }
     ]
   },
   "items": [
     {
-      "title": "Interconnector cable fault cuts capacity between GB and Belgium",
-      "url": "https://example-fixture.test/interconnector-fault",
-      "snippet": "A cable fault has reduced interconnector capacity by 500 MW. National Grid confirmed repairs are under way with return to service uncertain.",
-      "published_at": "2026-07-23T10:30:00+00:00",
-      "type": "outage",
-      "source": "elexon_remit",
-      "source_name": "Elexon Insights REMIT",
-      "authority": 28,
-      "tier": 1,
-      "has_magnitude": true,
-      "score": 82,
+      "title": "Saudi Crude Tanker Goes Dark to Slip Through Bab el-Mandeb",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Crude-Tanker-Goes-Dark-to-Slip-Through-Bab-el-Mandeb.html",
+      "snippet": "At least one oil tanker carrying Saudi crude oil has transited the Bab al-Mandeb Strait with its transponder switched off as risks to vessels in the Red Sea spiked this week after the Houthis announced a blockade on Saudi shipments and targeted vessels offshore Yemen. The Merbabu tanker, owned by a ",
+      "published_at": "2026-07-24T11:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 70,
       "tags": [
-        "supply_disruption",
-        "infrastructure"
+        "geopolitics",
+        "lng",
+        "oil_macro"
       ],
-      "alert": "critical",
-      "nature": "unplanned",
+      "alert": "high",
+      "nature": "",
       "why": {
-        "authority": 20.4,
-        "themes": 44.4,
-        "geo_band": "primary",
+        "authority": 8.8,
+        "themes": 37.9,
+        "geo_band": "chokepoint",
         "geography": 16.0,
-        "event_nature": 20.0,
+        "event_nature": 0.0,
         "urgency": 16.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 128.8,
-        "recency_multiplier": 0.82
+        "raw": 78.7,
+        "recency_multiplier": 0.95
       },
       "matched": {
-        "supply_disruption": [
-          "fault",
-          "repairs",
-          "return to service"
+        "geopolitics": [
+          "blockade",
+          "bab el-mandeb",
+          "red sea"
         ],
-        "infrastructure": [
-          "interconnector",
-          "grid",
-          "cable",
-          "cable fault"
+        "lng": [
+          "tanker"
+        ],
+        "oil_macro": [
+          "crude"
         ],
         "geography": [
-          "national grid"
-        ],
-        "unplanned": [
-          "fault"
+          "bab el-mandeb",
+          "red sea"
         ],
         "urgency": [
-          "confirmed"
+          "announced"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Kollsnes returns to full capacity after unplanned outage",
-      "url": "https://example-fixture.test/kollsnes-resolved",
-      "snippet": "Gassco confirmed Kollsnes is back at full capacity. Norwegian flows to Easington have normalised.",
-      "published_at": "2026-07-23T11:30:00+00:00",
+      "title": "Harbour Energy’s US arm advances repair plan after riser leak at Gulf of America oil & gas asset",
+      "url": "https://www.offshore-energy.biz/harbour-energys-us-arm-advances-repair-plan-after-riser-leak-at-gulf-of-america-oil-gas-asset/",
+      "snippet": "U.S.-headquartered LLOG Exploration, a subsidiary of Harbour Energy, has seen a drop in output at its asset in the Gulf of America (U.S. Gulf of Mexico) following a riser leak; however, the start-up of a sidetrack well is supporting near-term production, as the company and its joint venture (JV) par",
+      "published_at": "2026-07-24T12:18:59+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 63,
+      "tags": [
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 12.4,
+        "themes": 24.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 61.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "leak",
+          "repair"
+        ],
+        "infrastructure": [
+          "start-up"
+        ],
+        "geography": [
+          "gulf"
+        ],
+        "unplanned": [
+          "leak"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Tops $100 as Supply Crisis Deepens",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Tops-100-as-Supply-Crisis-Deepens.html",
+      "snippet": "Crude oil prices were on course for a sizable weekly gain today, as the Strait of Hormuz remains almost entirely paralysed and the Yemeni Houthis target tankers in the Bab el-Mandeb Strait in the Red Sea. To make matters worse, Kazakhstan has suspended oil flows via the Caspian Pipeline Consortium s",
+      "published_at": "2026-07-24T05:40:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 63,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 40.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 101.0,
+        "recency_multiplier": 0.6
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "bab el-mandeb",
+          "red sea"
+        ],
+        "supply_disruption": [
+          "suspended"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "bab el-mandeb",
+          "red sea"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Energia Costa Azul, Mexico's second LNG terminal, shipped first cargo",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67884",
+      "snippet": "Energia Costa Azul, the second liquefied natural gas (LNG) export facility in Mexico, shipped its initial cargo from Phase 1 of the terminal on July 8, according to the project developer. The completion of the project adds 0.4 billion cubic feet per day (Bcf/d) of nominal export capacity from a sing",
+      "published_at": "2026-07-24T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 60,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 30.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 56.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargo",
+          "lng terminal"
+        ],
+        "infrastructure": [
+          "terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "WTI Explodes Higher as Middle East Shipping Risks Multiply",
+      "url": "https://oilprice.com/Energy/Energy-General/WTI-Explodes-Higher-as-Middle-East-Shipping-Risks-Multiply.html",
+      "snippet": "September WTI crude oil futures were trading at $92.31 late Thursday, up $10.54 or 12.89% for the week. The contract posted a weekly low at $79.58 before climbing to a weekly high at $92.31. This was not a normal risk-premium rally. WTI started the week with the Strait of Hormuz already impaired, th",
+      "published_at": "2026-07-24T11:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 58,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 58.8,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "wti"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Loviisa Block 2",
+      "url": "https://umm.nordpoolgroup.com/#/messages/97607983-8bc5-4f2d-8db0-e51ce897e007/1",
+      "snippet": "Published: 24.07.2026 11:39:48 Publisher: Fortum Power and Heat Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Main circulation pump failure. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity F",
+      "published_at": "2026-07-24T09:39:48+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 77,
+      "score": 58,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 30.0,
-        "geo_band": "primary",
-        "geography": 16.0,
+        "themes": 8.4,
+        "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 103.9,
-        "recency_multiplier": 0.88
+        "raw": 66.3,
+        "recency_multiplier": 0.82
       },
       "matched": {
         "supply_disruption": [
-          "outage",
-          "unplanned",
-          "unplanned outage"
-        ],
-        "geography": [
-          "easington"
-        ],
-        "unplanned": [
           "unplanned"
         ],
-        "urgency": [
-          "unplanned",
-          "confirmed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-07-23T09:12:00+00:00"
-    },
-    {
-      "title": "GB REMIT: Heysham 2 unavailable 610 MW",
-      "url": "https://example-fixture.test/elexon-heysham",
-      "snippet": "Unplanned technical fault, active. Nuclear reactor offline from 2026-07-23T06:14:00Z to 2026-07-29T00:00:00Z.",
-      "published_at": "2026-07-23T06:20:00+00:00",
-      "type": "outage",
-      "source": "elexon_remit",
-      "source_name": "Elexon Insights REMIT",
-      "authority": 28,
-      "tier": 1,
-      "has_magnitude": true,
-      "score": 66,
-      "tags": [
-        "supply_disruption",
-        "nuclear"
-      ],
-      "alert": "high",
-      "nature": "unplanned",
-      "why": {
-        "authority": 20.4,
-        "themes": 45.6,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 114.0,
-        "recency_multiplier": 0.59
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "offline",
-          "fault",
-          "technical fault"
-        ],
-        "nuclear": [
-          "nuclear",
-          "reactor",
-          "reactor offline"
-        ],
         "unplanned": [
           "unplanned",
-          "fault"
+          "failure"
         ],
         "urgency": [
           "unplanned"
@@ -181,313 +396,755 @@
       "also_reported_by": []
     },
     {
-      "title": "Tanker attacked in the Strait of Hormuz, shipping insurers raise war risk premiums",
-      "url": "https://example-fixture.test/hormuz-tanker",
-      "snippet": "A vessel was attacked in the Strait of Hormuz overnight. Escalation fears lifted crude by 4% and freight rates jumped. Naval escort arrangements are under discussion.",
-      "published_at": "2026-07-23T05:50:00+00:00",
+      "title": "Tens of thousands evacuated from French tourist spot and near Madrid as wildfires spread",
+      "url": "https://www.bbc.co.uk/news/articles/cdx82rl5g0do?at_medium=RSS&at_campaign=rss",
+      "snippet": "The fire has raged in the region for several days with officials now ordering the evacuation of the entire Cap Ferret peninsula.",
+      "published_at": "2026-07-24T11:50:17+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 62,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 47.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 105.1,
-        "recency_multiplier": 0.57
-      },
-      "matched": {
-        "geopolitics": [
-          "escalation",
-          "war",
-          "attacked",
-          "strait of hormuz",
-          "naval escort"
-        ],
-        "lng": [
-          "tanker",
-          "freight rates"
-        ],
-        "oil_macro": [
-          "crude",
-          "rates"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Freeport LNG train 2 halted by compressor failure, feedgas drops 30%",
-      "url": "https://example-fixture.test/freeport-train2",
-      "snippet": "A compressor failure has halted liquefaction train 2. Feedgas nominations fell by roughly 30 per cent. Cargo loading suspended at the jetty.",
-      "published_at": "2026-07-23T04:15:00+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 60,
+      "has_magnitude": false,
+      "score": 56,
       "tags": [
         "supply_disruption",
-        "lng",
-        "infrastructure"
+        "regulation"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 13.1,
-        "themes": 48.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 114.1,
-        "recency_multiplier": 0.5
-      },
-      "matched": {
-        "supply_disruption": [
-          "halted",
-          "suspended",
-          "compressor failure"
-        ],
-        "lng": [
-          "lng",
-          "liquefaction",
-          "feedgas",
-          "cargo",
-          "liquefaction train",
-          "loading suspended"
-        ],
-        "infrastructure": [
-          "compressor"
-        ],
-        "geography": [
-          "freeport"
-        ],
-        "unplanned": [
-          "failure",
-          "halted",
-          "suspended"
-        ],
-        "urgency": [
-          "halted",
-          "suspended"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Reactor restart delayed at Belgian nuclear plant after weld inspection",
-      "url": "https://example-fixture.test/belgian-reactor",
-      "snippet": "The restart has been delayed by three weeks following a weld inspection. 1040 MW remains offline.",
-      "published_at": "2026-07-23T03:40:00+00:00",
-      "type": "outage",
-      "source": "entsoe_outages",
-      "source_name": "ENTSO-E Transparency outages",
-      "authority": 28,
-      "tier": 1,
-      "has_magnitude": true,
-      "score": 57,
-      "tags": [
-        "supply_disruption",
-        "nuclear"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 20.4,
-        "themes": 45.6,
+        "authority": 10.2,
+        "themes": 12.1,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 20.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 108.0,
-        "recency_multiplier": 0.48
+        "raw": 52.3,
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
-          "offline",
-          "inspection",
-          "restart delayed"
+          "fire"
         ],
-        "nuclear": [
-          "nuclear",
-          "reactor",
-          "reactor restart",
-          "restart delayed",
-          "weld inspection"
-        ],
-        "geography": [
-          "belgian"
-        ],
-        "unplanned": [
-          "delayed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Bacton terminal maintenance extended by four days",
-      "url": "https://example-fixture.test/bacton-maintenance",
-      "snippet": "Planned maintenance at the Bacton entry point has been extended, reducing UK entry capacity by 12 mcm/day until Friday.",
-      "published_at": "2026-07-23T11:00:00+00:00",
-      "type": "outage",
-      "source": "national_gas_ops",
-      "source_name": "National Gas operational data",
-      "authority": 26,
-      "tier": 1,
-      "has_magnitude": true,
-      "score": 56,
-      "tags": [
-        "infrastructure",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "planned",
-      "why": {
-        "authority": 19.0,
-        "themes": 24.2,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": -12.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 59.2,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "infrastructure": [
-          "terminal",
-          "entry point"
-        ],
-        "supply_disruption": [
-          "maintenance"
-        ],
-        "geography": [
-          "uk",
-          "bacton"
-        ],
-        "planned": [
-          "planned maintenance"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unavailability: PALUEL 2 (1330 MW)",
-      "url": "https://example-fixture.test/entsoe-paluel",
-      "snippet": "10YFR-RTE------C A80 stress corrosion inspection extended from 2026-07-23 to 2026-09-14. French nuclear reactor offline.",
-      "published_at": "2026-07-23T07:30:00+00:00",
-      "type": "outage",
-      "source": "entsoe_outages",
-      "source_name": "ENTSO-E Transparency outages",
-      "authority": 28,
-      "tier": 1,
-      "has_magnitude": true,
-      "score": 56,
-      "tags": [
-        "nuclear",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 20.4,
-        "themes": 36.1,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 78.5,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor",
-          "reactor offline",
-          "stress corrosion"
-        ],
-        "supply_disruption": [
-          "offline",
-          "inspection"
+        "regulation": [
+          "cap"
         ],
         "geography": [
           "french"
+        ],
+        "unplanned": [
+          "fire"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "EU gas storage: unusual withdrawal, now 62.4% full",
-      "url": "https://example-fixture.test/agsi-eu",
-      "snippet": "Net withdrawal of 0.41 against a 14-day average of 0.18. Storage at 62.4 per cent full on 2026-07-22, below the five-year average for the date.",
-      "published_at": "2026-07-23T08:00:00+00:00",
-      "type": "storage",
-      "source": "gie_agsi",
-      "source_name": "GIE AGSI+ gas storage",
-      "authority": 26,
-      "tier": 1,
+      "title": "FPSO efficiency at Brazilian oil field surpasses target range to hit 97%",
+      "url": "https://www.offshore-energy.biz/fpso-efficiency-at-brazilian-oil-field-surpasses-target-range-to-hit-97/",
+      "snippet": "Karoon Energy, an ASX-listed oil and gas exploration and production company, has confirmed an uptick in operating efficiency at a floating production, storage, and offloading (FPSO) unit deployed on an oil field off the coast of Brazil. The post FPSO efficiency at Brazilian oil field surpasses targe",
+      "published_at": "2026-07-24T13:29:55+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 53,
       "tags": [
         "gas_storage"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 19.0,
-        "themes": 24.0,
+        "authority": 12.4,
+        "themes": 6.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 47.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Hormuz Tanker Crossings Sink to Lowest Level Since May as War Risk Spikes",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Crossings-Sink-to-Lowest-Level-Since-May-as-War-Risk-Spikes.html",
+      "snippet": "Only one oil tanker transited the Strait of Hormuz on Thursday, the lowest number of crossings since May 7, as war risks spiked this week to hike crude oil prices above $100 per barrel again. Three tankers transited the Strait of Hormuz on Wednesday, but this number crumbled to just one on Thursday,",
+      "published_at": "2026-07-24T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 33.5,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 46.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrel"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "may"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Four Palestinians and two Israelis killed in West Bank shooting",
+      "url": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers.",
+      "published_at": "2026-07-24T13:21:15+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 14.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 44.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "The Middle East War Has Entered Its Most Dangerous Phase Yet",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/The-Middle-East-War-Has-Entered-Its-Most-Dangerous-Phase-Yet.html",
+      "snippet": "Politics, Geopolitics & Conflict Iran has spent the week attacking the military infrastructure that allows the U.S. to wage war across the Middle East. After 12 consecutive nights of U.S. strikes on Iranian command centers, missile sites, air defenses and nuclear-linked facilities, Tehran hit Americ",
+      "published_at": "2026-07-24T11:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "geopolitics",
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 31.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.0,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "geopolitics": [
+          "missile",
+          "conflict",
+          "war"
+        ],
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Major fire after Ukrainian strike on St Petersburg warehouse",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/major-fire-after-ukrainian-strike-on-st-petersburg-warehouse?traffic_source=rss",
+      "snippet": "A major fire broke out at a Wildberries e-commerce warehouse in St Petersburg after a Ukrainian drone attack.",
+      "published_at": "2026-07-24T08:42:07+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 23.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 52.5,
+        "recency_multiplier": 0.76
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "attack"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China Rushes to Secure Russian Oil as Middle East Supply Risks Escalate",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Rushes-to-Secure-Russian-Oil-as-Middle-East-Supply-Risks-Escalate.html",
+      "snippet": "Chinese refiners have bought up all crude oil cargoes set to load from Russia’s Far East port of Kozmino in August weeks earlier than usual, traders with knowledge of the market told Bloomberg on Friday, as risks to Middle Eastern supply spiked this week with attacks on tankers in the Red Sea. China",
+      "published_at": "2026-07-24T09:45:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.3,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "geopolitics": [
+          "red sea"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Coordination Group confirms no immediate supply concerns in the EU",
+      "url": "https://energy.ec.europa.eu/news/oil-coordination-group-confirms-no-immediate-supply-concerns-eu-2026-07-24_en",
+      "snippet": "Experts from the European Commission, EU countries, industry, the International Energy Agency (IEA) and NATO met in the Oil Coordination Group yesterday.",
+      "published_at": "2026-07-24T07:48:17+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 11.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.5,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "regulation": [
+          "european commission"
+        ],
+        "geography": [
+          "european",
+          "eu"
+        ],
+        "urgency": [
+          "immediate"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Approval for VVER fuel production in Germany",
+      "url": "https://www.world-nuclear-news.org/articles/approval-for-vver-fuel-production-in-germany",
+      "snippet": "The Lower Saxony Ministry for the Environment, Energy and Climate Protection, acting on behalf of the federal government, has approved an application from Framatome subsidiary Advanced Nuclear Fuels to expand its facility in Lingen for the production of fuel for VVER-1000 reactors. The approval is s",
+      "published_at": "2026-07-24T11:38:09+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 14.6,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 65.0,
-        "recency_multiplier": 0.67
+        "raw": 38.4,
+        "recency_multiplier": 0.96
       },
       "matched": {
-        "gas_storage": [
-          "storage",
-          "withdrawal",
-          "per cent full",
-          "below the five-year average",
-          "five-year average"
+        "nuclear": [
+          "nuclear",
+          "reactors"
+        ],
+        "geography": [
+          "germany"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Russian LNG production up 10.7 percent in January-June",
+      "url": "https://lngprime.com/asia/russian-lng-production-up-10-7-percent-in-january-june/193113/",
+      "snippet": "Russian liquefied natural gas (LNG) production rose 10.7 percent in the first six months of this year, according to the Russian statistics agency Rosstat.",
+      "published_at": "2026-07-24T11:05:13+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 43,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.4,
+        "recency_multiplier": 0.92
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "russian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US LNG exports reach 34 shipments",
+      "url": "https://lngprime.com/lng-terminals/us-lng-exports-reach-34-shipments/193035/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 34 cargoes during the week ending July 22, the same as in the week before, according to the Energy Information Administration.",
+      "published_at": "2026-07-24T06:32:02+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Approval of the modified Access Rules for the Nemo Link interconnector pursuant to SLC 11A of the Electricity Interconnector Licence",
+      "url": "https://www.ofgem.gov.uk/decision/approval-modified-access-rules-nemo-link-interconnector-pursuant-slc-11a-electricity-interconnector-licence",
+      "snippet": "Ofgem's approval of the modified Access Rules for the Nemo Link interconnector pursuant to SLC 11A of the Electricity Interconnector Licence.",
+      "published_at": "2026-07-24T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "regulation",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 16.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "regulation": [
+          "ofgem",
+          "licence"
+        ],
+        "infrastructure": [
+          "interconnector"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oklo cleared to start up test reactor",
+      "url": "https://www.world-nuclear-news.org/articles/oklo-cleared-to-start-up-test-reactor",
+      "snippet": "The US Department of Energy has granted authorisation to nuclear technology company Oklo to start up its Groves Isotope Test Reactor, located near Lockhart in Caldwell County, Texas.",
+      "published_at": "2026-07-24T12:57:47+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactor"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Viewpoint: IAEA's non-proliferation safeguards and industry's role",
+      "url": "https://www.world-nuclear-news.org/articles/viewpoint-how-can-industry-help-iaeas-non-proliferation-safeguards",
+      "snippet": "This year the International Atomic Energy Agency's Symposium on International Safeguards will have its own dedicated evening to showcase how the nuclear industry works with IAEA Safeguards. There will also be a training day on the application of safeguards to new nuclear reactor designs and technolo",
+      "published_at": "2026-07-24T12:14:39+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactor"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Novatek’s H1 net profit down",
+      "url": "https://lngprime.com/asia/novateks-h1-net-profit-down/193097/",
+      "snippet": "Russian LNG producer Novatek reported a 3.1 percent drop in its net profit in the first half of this year.",
+      "published_at": "2026-07-24T08:50:58+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 37,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.4,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "russian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US and Iran trade more strikes in Gulf as fears of escalation mount",
+      "url": "https://www.bbc.co.uk/news/articles/c05ql5llj4do?at_medium=RSS&at_campaign=rss",
+      "snippet": "It comes as Iran condemned the US plan to use frozen Iranian assets to pay for war damages.",
+      "published_at": "2026-07-24T09:20:07+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.1,
+        "recency_multiplier": 0.8
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "war"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-07-24T06:45:00+00:00"
+    },
+    {
+      "title": "TotalEnergies CEO: Mozambique LNG project 45 percent complete",
+      "url": "https://lngprime.com/africa/totalenergies-ceo-mozambique-lng-project-45-percent-complete/193104/",
+      "snippet": "The TotalEnergies-led Mozambique LNG project is 45 percent complete, with TotalEnergies and its partners increasing the workforce on the project in Cabo Delgado province, according to TotalEnergies CEO Patrick Pouyanne.",
+      "published_at": "2026-07-24T09:23:57+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 34,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 0.81
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "New ecodesign rules for industrial fans apply from 24 July",
+      "url": "https://energy.ec.europa.eu/news/new-ecodesign-rules-industrial-fans-apply-24-july-2026-07-24_en",
+      "snippet": "New harmonised EU rules to reduce the energy consumption and facilitate repair of industrial fans start to apply on 24 July 2026.",
+      "published_at": "2026-07-24T08:00:38+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 8.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 0.72
+      },
+      "matched": {
+        "supply_disruption": [
+          "repair"
         ],
         "geography": [
           "eu"
@@ -497,262 +1154,357 @@
       "also_reported_by": []
     },
     {
-      "title": "Dunkelflaute conditions forecast for northern Europe next week",
-      "url": "https://example-fixture.test/dunkelflaute",
-      "snippet": "Low wind and still conditions are forecast across Germany and the Netherlands, with wind output expected to fall sharply. Tight margins possible.",
-      "published_at": "2026-07-23T05:00:00+00:00",
+      "title": "Shipbuilding takes digital leap with virtual platform to connect entire process",
+      "url": "https://www.offshore-energy.biz/shipbuilding-takes-digital-leap-with-virtual-platform-to-connect-entire-process/",
+      "snippet": "HD Korea Shipbuilding &#38; Offshore Engineering (HD KSOE), the intermediary holding company for HD [&#8230;] The post Shipbuilding takes digital leap with virtual platform to connect entire process appeared first on Offshore Energy .",
+      "published_at": "2026-07-24T13:01:47+00:00",
       "type": "news",
-      "source": "eia_today",
-      "source_name": "EIA Today in Energy",
-      "authority": 20,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 32,
       "tags": [
-        "weather",
-        "infrastructure",
-        "power_system"
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 14.6,
-        "themes": 33.1,
+        "authority": 12.4,
+        "themes": 6.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "platform"
+        ],
+        "geography": [
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Trump’s latest ‘forced labour tariffs’: Who’s been hit, how badly?",
+      "url": "https://www.aljazeera.com/economy/2026/7/24/trumps-latest-forced-labour-tariffs-whos-been-hit-how-badly?traffic_source=rss",
+      "snippet": "Countries accounting for almost all of the US&#039;s trade have been hit with tariffs between 10 and 12.5 percent.",
+      "published_at": "2026-07-24T09:13:45+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 32,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 30.5,
+        "recency_multiplier": 0.79
+      },
+      "matched": {
+        "geopolitics": [
+          "tariffs"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "U.S. Prioritizes Small Nuclear Reactors Across Southeast Asia",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Prioritizes-Small-Nuclear-Reactors-Across-Southeast-Asia.html",
+      "snippet": "The U.S. has identified cooperation on small modular nuclear reactors (SMRs) as a key priority in its engagement with Southeast Asia as regional electricity demand continues to climb. Speaking after Secretary of State Marco Rubio attended the ASEAN Foreign Ministers' Meeting in Manila, U.S. Ambassad",
+      "published_at": "2026-07-24T08:45:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "nuclear",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.0,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactors"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "asia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "EU adopts 21st package of sanctions against Russia",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1680",
+      "snippet": "The measures focus on the sectors with the greatest impact: energy; financial services, including crypto; trade; and the Russian military-industrial complex.",
+      "published_at": "2026-07-24T07:15:23+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 9.0,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 57.7,
-        "recency_multiplier": 0.53
+        "raw": 35.0,
+        "recency_multiplier": 0.68
       },
       "matched": {
-        "weather": [
-          "forecast",
-          "low wind",
-          "dunkelflaute",
-          "still conditions"
-        ],
-        "infrastructure": [
-          "tight margins"
-        ],
-        "power_system": [
-          "wind output"
+        "geopolitics": [
+          "sanctions"
         ],
         "geography": [
-          "europe",
-          "netherlands",
-          "germany"
+          "eu"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Ofgem opens consultation on network charging methodology reform",
-      "url": "https://example-fixture.test/ofgem-consultation",
-      "snippet": "Ofgem has launched a consultation on changes to the network charges methodology, with a code modification expected to enter into force in April 2027.",
-      "published_at": "2026-07-23T08:45:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
+      "title": "No Breakthrough as Top U.S. and Russian Diplomats Meet Over Ukraine",
+      "url": "https://oilprice.com/Geopolitics/Europe/No-Breakthrough-as-Top-US-and-Russian-Diplomats-Meet-Over-Ukraine.html",
+      "snippet": "The top US and Russian diplomats met in a new push to find an end to Moscow's more-than-four-year-old war on Ukraine, but both sides signaled no new breakthroughs or cause for optimism. The July 23 meeting between US Secretary of State Marco Rubio and Russian Foreign Minister Sergei Lavrov came with",
+      "published_at": "2026-07-24T14:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 31,
       "tags": [
-        "regulation",
-        "infrastructure"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 16.1,
-        "themes": 26.0,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 0.71
+        "raw": 22.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "regulation": [
-          "ofgem",
-          "consultation",
-          "reform",
-          "network charges",
-          "code modification",
-          "charging methodology"
+        "geopolitics": [
+          "war"
         ],
-        "infrastructure": [
-          "network"
+        "geography": [
+          "russian",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-07-24T11:45:04+00:00"
     },
     {
-      "title": "Subsea cable damage reported in the Baltic, investigation under way",
-      "url": "https://example-fixture.test/baltic-cable",
-      "snippet": "Authorities are investigating damage to a subsea cable. Sabotage has not been ruled out. Critical infrastructure protection measures have been stepped up.",
-      "published_at": "2026-07-23T02:15:00+00:00",
+      "title": "US attacks Iran as Houthis allow Chinese ships to pass: What’s the latest?",
+      "url": "https://www.aljazeera.com/news/2026/7/24/us-attacks-iran-as-houthis-allow-chinese-ships-to-pass-whats-the-latest?traffic_source=rss",
+      "snippet": "The number of tanker crossings in the Strait of Hormuz dropped to lowest levels in two months on Thursday.",
+      "published_at": "2026-07-24T07:59:01+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 13,
       "tags": [
         "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 36.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 65.5,
-        "recency_multiplier": 0.43
-      },
-      "matched": {
-        "geopolitics": [
-          "sabotage",
-          "critical infrastructure",
-          "subsea cable",
-          "cable damage"
-        ],
-        "infrastructure": [
-          "cable"
-        ],
-        "unplanned": [
-          "damage",
-          "sabotage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Prolonged heatwave forecast across southern Europe, cooling demand to surge",
-      "url": "https://example-fixture.test/heatwave-europe",
-      "snippet": "Weather models point to extreme heat across Spain, Italy and France for the next fortnight, well above seasonal norms. Cooling demand is expected to lift power burn.",
-      "published_at": "2026-07-23T06:00:00+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "weather",
-        "oil_macro"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 24.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "authority": 9.5,
+        "themes": 21.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 44.9,
-        "recency_multiplier": 0.58
+        "raw": 46.5,
+        "recency_multiplier": 0.72
       },
       "matched": {
-        "weather": [
-          "heatwave",
-          "forecast",
-          "seasonal norms",
-          "cooling demand",
-          "extreme heat"
+        "geopolitics": [
+          "strait of hormuz"
         ],
-        "oil_macro": [
-          "demand"
+        "lng": [
+          "tanker"
         ],
         "geography": [
-          "europe",
-          "france",
-          "italy",
-          "spain"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned outage at Kollsnes processing plant cuts 18 mcm/day, Gassco confirms",
-      "url": "https://example-fixture.test/kollsnes-outage",
-      "snippet": "Norwegian gas system operator Gassco said an unplanned outage at the Kollsnes processing plant has reduced capacity by 18 mcm per day with an uncertain end time. Flows to Easington were affected.",
-      "published_at": "2026-07-23T09:12:00+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": true,
-      "score": 24,
-      "tags": [
-        "supply_disruption",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 44.4,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 130.3,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "supply_disruption": [
-          "outage",
-          "unplanned",
-          "unplanned outage",
-          "reduced capacity"
-        ],
-        "infrastructure": [
-          "processing plant",
-          "system operator"
-        ],
-        "geography": [
-          "easington"
-        ],
-        "unplanned": [
-          "unplanned"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [
-        "Energy Voice",
-        "LNG Prime"
-      ],
+      "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://example-fixture.test/kollsnes-resolved",
-        "title": "Kollsnes returns to full capacity after unplanned outage",
-        "published_at": "2026-07-23T11:30:00+00:00"
+        "url": "https://www.bbc.co.uk/news/articles/c05ql5llj4do?at_medium=RSS&at_campaign=rss",
+        "title": "US and Iran trade more strikes in Gulf as fears of escalation mount",
+        "published_at": "2026-07-24T09:20:07+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Trump Threatens Iran After Houthi Tanker Attacks",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Threatens-Iran-After-Houthi-Tanker-Attacks.html",
+      "snippet": "President Trump has threatened to “punish” Iran for the Yemeni Houthis’ recent attacks on tankers in the Bab el-Mandeb Strait, saying, “If they do this again, the U.S. will hold Iran responsible, in that the Houthis are a Surrogate and/or Proxy of Iran, and major military punishment will be inflicte",
+      "published_at": "2026-07-24T06:45:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.8,
+        "recency_multiplier": 0.66
+      },
+      "matched": {
+        "geopolitics": [
+          "bab el-mandeb"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "bab el-mandeb"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/c05ql5llj4do?at_medium=RSS&at_campaign=rss",
+        "title": "US and Iran trade more strikes in Gulf as fears of escalation mount",
+        "published_at": "2026-07-24T09:20:07+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "At least 11 killed in Ukraine as Moscow and Kyiv continue to trade attacks",
+      "url": "https://www.aljazeera.com/news/2026/7/24/at-least-11-killed-in-ukraine-as-moscow-and-kyiv-continue-to-trade-attacks?traffic_source=rss",
+      "snippet": "Six people also killed in Ukrainian attack on Russia’s Kirov, and Wildberries warehouses hit again.",
+      "published_at": "2026-07-24T11:45:04+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Geopolitics/Europe/No-Breakthrough-as-Top-US-and-Russian-Diplomats-Meet-Over-Ukraine.html",
+        "title": "No Breakthrough as Top U.S. and Russian Diplomats Meet Over Ukraine",
+        "published_at": "2026-07-24T14:00:00+00:00"
       },
       "hidden": true
     }
