@@ -49,7 +49,13 @@ jobs:
         env:
           ENTSOE_TOKEN: ${{ secrets.ENTSOE_TOKEN }}
           AGSI_KEY: ${{ secrets.AGSI_KEY }}
-        run: python src/ingest.py
+        # touch .env first: on a machine with no .env the script creates a
+        # template and exits 0 so a human can fill it in - a desktop
+        # convenience that turns every CI run into a green no-op. An empty
+        # file satisfies the check; real env vars (the secrets above) win.
+        run: |
+          touch .env
+          python src/ingest.py
 
       - name: Commit the feed if it changed
         run: |
@@ -81,4 +87,6 @@ jobs:
       - env:
           ENTSOE_TOKEN: ${{ secrets.ENTSOE_TOKEN }}
           AGSI_KEY: ${{ secrets.AGSI_KEY }}
-        run: python src/ingest.py --check
+        run: |
+          touch .env
+          python src/ingest.py --check
