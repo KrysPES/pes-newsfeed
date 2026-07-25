@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-07-25T08:37:35.812983+00:00",
-  "item_count": 10,
+  "generated_at": "2026-07-25T10:15:58.031644+00:00",
+  "item_count": 7,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 4
+    "normal": 3
   },
-  "superseded_count": 2,
+  "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1991
+        "ms": 1778
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 27660
+        "ms": 44379
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 6314
+        "ms": 16198
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 828
+        "ms": 541
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 815
+        "ms": 631
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 204
+        "ms": 211
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1278
+        "ms": 1171
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 813
+        "ms": 528
       },
       {
         "id": "lng_prime",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 806
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://lngprime.com/feed/",
+        "ms": 341
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 3288
+        "ms": 273
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 541
+        "ms": 433
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 26,
+        "count": 25,
         "error": null,
-        "ms": 109
+        "ms": 310
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 131
+        "ms": 185
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 47,
       "tags": [
         "supply_disruption"
       ],
@@ -133,7 +133,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.3,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.64
       },
       "matched": {
         "supply_disruption": [
@@ -163,7 +163,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 44,
       "tags": [
         "geopolitics",
         "lng"
@@ -179,7 +179,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -193,54 +193,8 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-07-24T16:30:00+00:00"
-    },
-    {
-      "title": "More than 220,000 evacuated in France and Spain due to wildfires",
-      "url": "https://www.bbc.co.uk/news/articles/czjlenp0xk8o?at_medium=RSS&at_campaign=rss",
-      "snippet": "French firefighters battle a blaze heading towards Bordeaux while officials in Madrid say they face the \"worst fire in the history of the region\".",
-      "published_at": "2026-07-25T02:29:36+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 49,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 16.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 57.0,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire",
-          "blaze"
-        ],
-        "geography": [
-          "france",
-          "french",
-          "spain"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "update_count": 1,
+      "thread_started_at": "2026-07-24T19:00:00+00:00"
     },
     {
       "title": "‘The show must go on’: Trump returns to rescheduled White House press gala",
@@ -253,7 +207,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 44,
       "tags": [
         "supply_disruption"
       ],
@@ -268,7 +222,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.9,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.67
       },
       "matched": {
         "supply_disruption": [
@@ -295,7 +249,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 34,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -312,7 +266,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 65.0,
-        "recency_multiplier": 0.46
+        "recency_multiplier": 0.4
       },
       "matched": {
         "geopolitics": [
@@ -343,7 +297,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -359,7 +313,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.4,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.49
       },
       "matched": {
         "geopolitics": [
@@ -385,7 +339,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 32,
       "tags": [
         "infrastructure",
         "geopolitics",
@@ -404,7 +358,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 72.4,
-        "recency_multiplier": 0.38
+        "recency_multiplier": 0.33
       },
       "matched": {
         "infrastructure": [
@@ -434,49 +388,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Four Palestinians and two Israelis killed in West Bank shooting",
-      "url": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers.",
-      "published_at": "2026-07-24T22:49:59+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 14.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 44.2,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "The Red Sea Is Becoming Saudi Arabia's Biggest Oil Bottleneck",
       "url": "https://oilprice.com/Energy/Crude-Oil/The-Red-Sea-Is-Becoming-Saudi-Arabias-Biggest-Oil-Bottleneck.html",
       "snippet": "For years, Saudi Arabia's strategic answer to any disruption in the Strait of Hormuz has been remarkably straightforward. If volumes via the Persian Gulf were threatened, the answer was to pump west through the East-West Pipeline to Yanbu on the Red Sea. Markets have always seen this as reassuring, ",
@@ -487,7 +398,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 9,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -505,7 +416,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 64.2,
-        "recency_multiplier": 0.41
+        "recency_multiplier": 0.36
       },
       "matched": {
         "geopolitics": [
@@ -522,63 +433,6 @@
         "geography": [
           "strait of hormuz",
           "hormuz",
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cj9d27v70j1o?at_medium=RSS&at_campaign=rss",
-        "title": "Iran-backed Houthis claim missile attack on Saudi Arabia",
-        "published_at": "2026-07-25T06:34:40+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Saudi Red Sea Crude Exports Have Sank 41% Since March Peak",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Red-Sea-Crude-Exports-Have-Sank-41-Since-March-Peak.html",
-      "snippet": "Saudi Arabia, which at the start of the Iran war redirected virtually all crude exports through its East-West pipeline to Yanbu on the Red Sea, has seen crude exports from Yanbu crumble by 41% to about 2.39 million barrels per day (bpd) by June, from a peak of 4.07 million bpd in March, Wood Mackenz",
-      "published_at": "2026-07-24T16:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 10,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 33.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 70.1,
-        "recency_multiplier": 0.34
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "red sea"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
           "red sea"
         ]
       },
