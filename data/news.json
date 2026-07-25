@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-25T12:43:33.621950+00:00",
-  "item_count": 5,
+  "generated_at": "2026-07-25T14:20:02.841540+00:00",
+  "item_count": 6,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 0
+    "high": 1,
+    "normal": 1
   },
   "superseded_count": 0,
   "sources": {
@@ -17,95 +17,178 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1586
+        "ms": 1389
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 12860
+        "ms": 13616
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18485
+        "ms": 2668
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 390
+        "ms": 155
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 729
+        "ms": 570
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 128
+        "ms": 102
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1045
+        "ms": 893
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 186
+        "ms": 160
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 461
+        "ms": 643
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 230
+        "ms": 182
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 417
+        "ms": 894
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 25,
+        "count": 24,
         "error": null,
-        "ms": 50
+        "ms": 141
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 197
+        "ms": 85
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
+      "url": "https://umm.nordpoolgroup.com/#/messages/785b94f6-6e77-492c-8580-3d4461481a4b/1",
+      "snippet": "Published: 25.07.2026 16:11:57 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Environmental constraint Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or ",
+      "published_at": "2026-07-25T14:11:57+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-07-25T14:11:22+00:00"
+    },
+    {
+      "title": "Baby rescued after Israeli settlers set home on fire amid raids",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/baby-rescued-after-israeli-settlers-set-home-on-fire-amid-raids?traffic_source=rss",
+      "snippet": "A baby was rescued by her family after her home was set on fire by Israeli settlers in the occupied West Bank.",
+      "published_at": "2026-07-25T12:41:14+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Firefighters battle fire after fertiliser explosion in England",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/firefighters-battle-fire-after-fertiliser-explosion-in-england?traffic_source=rss",
@@ -117,7 +200,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "supply_disruption"
       ],
@@ -133,7 +216,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.3,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.47
       },
       "matched": {
         "supply_disruption": [
@@ -163,7 +246,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 35,
       "tags": [
         "geopolitics",
         "lng"
@@ -179,7 +262,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.5,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.64
       },
       "matched": {
         "geopolitics": [
@@ -205,7 +288,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 34,
       "tags": [
         "supply_disruption"
       ],
@@ -220,7 +303,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.9,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.49
       },
       "matched": {
         "supply_disruption": [
@@ -247,7 +330,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -263,7 +346,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 22.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -271,54 +354,6 @@
         ],
         "oil_macro": [
           "inflation"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Brent Pulls Back From $100",
-      "url": "https://www.rigzone.com/news/wire/brent_pulls_back_from_100-24-jul-2026-184215-article/?rss=true",
-      "snippet": "Crude declined after reports on US-Iran diplomacy and continued Red Sea oil flows reduced immediate supply concerns.",
-      "published_at": "2026-07-24T20:29:29+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 22.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 65.0,
-        "recency_multiplier": 0.33
-      },
-      "matched": {
-        "geopolitics": [
-          "red sea"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent"
-        ],
-        "geography": [
-          "red sea"
-        ],
-        "urgency": [
-          "immediate"
         ]
       },
       "duplicate_count": 0,
