@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-26T19:40:03.740948+00:00",
+  "generated_at": "2026-07-26T20:37:20.831036+00:00",
   "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 2,
-    "normal": 2
+    "high": 1,
+    "normal": 5
   },
   "superseded_count": 0,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1376
+        "ms": 1500
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19937
+        "ms": 34805
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3000
+        "ms": 25889
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 449
+        "ms": 341
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 546
+        "ms": 579
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 185
+        "ms": 118
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 882
+        "ms": 1005
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 155
+        "ms": 420
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 523
+        "ms": 623
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 143
+        "ms": 265
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 505
+        "ms": 424
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 26,
+        "count": 27,
         "error": null,
-        "ms": 46
+        "ms": 103
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 80
+        "ms": 99
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 73,
+      "score": 71,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -135,7 +135,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 84.6,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -174,11 +174,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 64,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -189,7 +189,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
@@ -208,6 +208,52 @@
       "first_seen_at": "2026-07-26T04:38:17+00:00"
     },
     {
+      "title": "What we know so far about the Berlin Pride ramming attack",
+      "url": "https://www.bbc.co.uk/news/articles/cevmdxz4872o?at_medium=RSS&at_campaign=rss",
+      "snippet": "German Chancellor Friedrich Merz condemned the incident as a \"heinous\" attack after a suspect rammed a car into a crowd.",
+      "published_at": "2026-07-26T20:34:23+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 49.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "geography": [
+          "german"
+        ],
+        "unplanned": [
+          "incident"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "first_seen_at": "2026-07-26T17:51:37+00:00"
+    },
+    {
       "title": "Oil Market's Glut Narrative Just Blew Up",
       "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Markets-Glut-Narrative-Just-Blew-Up.html",
       "snippet": "Less than a month ago, analysts were warning of a looming glut of crude oil as tanker traffic via the Strait of Hormuz began to recover amid a U.S.-Iran ceasefire. Within days of these warnings, the ceasefire was a painful memory, missiles were flying again, and now Yemen’s Houthis are striking tank",
@@ -218,7 +264,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 52,
       "tags": [
         "geopolitics",
         "lng",
@@ -236,7 +282,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 56.3,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -294,11 +340,48 @@
           "damage"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "BBC World"
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "What lies ahead for Iran’s economy as scope of US war grows beyond Hormuz?",
+      "url": "https://www.aljazeera.com/news/2026/7/26/what-lies-ahead-for-iran-as-scope-of-us-war-grows-beyond-hormuz?traffic_source=rss",
+      "snippet": "Mediation efforts continue but uncertainty remains as risks of further disruptions in international waterways grow.",
+      "published_at": "2026-07-26T19:31:58+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
       ],
-      "first_seen_at": "2026-07-26T10:26:05+00:00"
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Romania summons Russian envoy as it shoots down third intruding drone",
@@ -311,7 +394,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
@@ -327,7 +410,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -344,10 +427,10 @@
       "also_reported_by": []
     },
     {
-      "title": "‘New education minister can’t bring my dead daughter back’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/new-education-minister-cant-bring-my-dead-daughter?traffic_source=rss",
-      "snippet": "Parents of students who died by suicide following a paper leak in India say nothing can bring their loved ones back.",
-      "published_at": "2026-07-26T13:26:17+00:00",
+      "title": "46 people rescued from sunken ship in South China Sea",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/46-people-rescued-from-sunken-ship-in-south-china-sea?traffic_source=rss",
+      "snippet": "Footage shows rescuers pulling survivors from a Vietnamese vessel that sank in the South China Sea.",
+      "published_at": "2026-07-26T19:22:45+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
@@ -356,77 +439,32 @@
       "has_magnitude": false,
       "score": 39,
       "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.9,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "supply_disruption": [
-          "leak"
-        ],
-        "geography": [
-          "india"
-        ],
-        "unplanned": [
-          "leak"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "What we know so far about the Berlin Pride ramming attack",
-      "url": "https://www.bbc.co.uk/news/articles/cevmdxz4872o?at_medium=RSS&at_campaign=rss",
-      "snippet": "A police manhunt is under way after a suspect rammed a car into a crowd at a Pride event in the German capital on Saturday night.",
-      "published_at": "2026-07-26T17:45:30+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "authority": 9.5,
+        "themes": 16.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 29.2,
+        "raw": 31.1,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "attack"
+          "south china sea"
         ],
         "geography": [
-          "german"
+          "china"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ]
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Heatwave drives major wildfires across North Africa",
@@ -439,7 +477,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 36,
       "tags": [
         "weather"
       ],
@@ -455,7 +493,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.1,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.86
       },
       "matched": {
         "weather": [
@@ -480,7 +518,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -495,49 +533,12 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
           "sanctions",
           "incursion"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Molten Salt Reactors Just Cleared A Major U.S. Regulatory Hurdle",
-      "url": "https://oilprice.com/Energy/Energy-General/Molten-Salt-Reactors-Just-Cleared-A-Major-US-Regulatory-Hurdle.html",
-      "snippet": "domestic nuclear energy sector is set to bounce back as the technology finds favor among the public and policymakers alike for its ability to provide round-the-clock clean energy. At a time when data center hyperscalers are driving up energy insecurity and climate deadlines are drawing ever closer, ",
-      "published_at": "2026-07-26T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.3,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactors"
         ]
       },
       "duplicate_count": 0,
