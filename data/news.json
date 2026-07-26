@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-26T15:12:03.327332+00:00",
+  "generated_at": "2026-07-26T16:15:23.274699+00:00",
   "item_count": 7,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 1
+    "high": 0,
+    "normal": 3
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1636
+        "ms": 1964
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 36188
+        "ms": 34861
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18376
+        "ms": 3574
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 625
+        "ms": 470
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 622
+        "ms": 141
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 220
+        "ms": 151
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1063
+        "ms": 1258
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 404
+        "ms": 494
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 692
+        "ms": 802
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 317
+        "ms": 336
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 714
+        "ms": 583
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 171
+        "ms": 67
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 133
+        "ms": 70
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 64,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "supply_disruption": [
@@ -151,6 +151,56 @@
       "first_seen_at": "2026-07-26T04:38:17+00:00"
     },
     {
+      "title": "Oil Market's Glut Narrative Just Blew Up",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Markets-Glut-Narrative-Just-Blew-Up.html",
+      "snippet": "Less than a month ago, analysts were warning of a looming glut of crude oil as tanker traffic via the Strait of Hormuz began to recover amid a U.S.-Iran ceasefire. Within days of these warnings, the ceasefire was a painful memory, missiles were flying again, and now Yemen’s Houthis are striking tank",
+      "published_at": "2026-07-26T16:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 60,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 31.5,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "ceasefire",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "‘New education minister can’t bring my dead daughter back’",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/new-education-minister-cant-bring-my-dead-daughter?traffic_source=rss",
       "snippet": "Parents of students who died by suicide following a paper leak in India say nothing can bring their loved ones back.",
@@ -161,7 +211,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 48,
       "tags": [
         "supply_disruption"
       ],
@@ -177,7 +227,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.94
       },
       "matched": {
         "supply_disruption": [
@@ -204,7 +254,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 38,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -221,7 +271,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -235,9 +285,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-07-26T10:45:23+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Israeli settlers set fire to mosques, cars and farm land in West Bank, Palestinians say",
@@ -250,7 +298,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 37,
       "tags": [
         "supply_disruption"
       ],
@@ -265,7 +313,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.75
       },
       "matched": {
         "supply_disruption": [
@@ -273,46 +321,6 @@
         ],
         "unplanned": [
           "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Eighteen people missing in South China Sea after Vietnamese ship sank",
-      "url": "https://www.aljazeera.com/news/2026/7/26/eighteen-people-missing-in-south-china-sea-after-vietnamese-ship-sank?traffic_source=rss",
-      "snippet": "There were 62 people aboard the vessel when it sank, all of them Vietnamese nationals.",
-      "published_at": "2026-07-26T12:50:26+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.1,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "geopolitics": [
-          "south china sea"
-        ],
-        "geography": [
-          "china"
         ]
       },
       "duplicate_count": 0,
@@ -329,7 +337,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
@@ -345,7 +353,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -359,17 +367,17 @@
       "also_reported_by": []
     },
     {
-      "title": "After Strait of Hormuz and Red Sea, has Iran war now reached Caspian Sea?",
-      "url": "https://www.aljazeera.com/news/2026/7/26/after-strait-of-hormuz-and-red-sea-has-iran-war-now-reached-caspian-sea?traffic_source=rss",
-      "snippet": "Iran condemns what it calls a &#039;hostile and criminal&#039; Ukrainian attack on commercial vessel. How will it affect the war?",
-      "published_at": "2026-07-26T10:45:23+00:00",
+      "title": "Eighteen people missing in South China Sea after Vietnamese ship sank",
+      "url": "https://www.aljazeera.com/news/2026/7/26/eighteen-people-missing-in-south-china-sea-after-vietnamese-ship-sank?traffic_source=rss",
+      "snippet": "There were 62 people aboard the vessel when it sank, all of them Vietnamese nationals.",
+      "published_at": "2026-07-26T12:50:26+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 16,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
@@ -377,38 +385,26 @@
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 32.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 16.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 57.5,
-        "recency_multiplier": 0.83
+        "raw": 31.1,
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
-          "war",
-          "attack",
-          "strait of hormuz",
-          "red sea"
+          "south china sea"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz",
-          "red sea"
+          "china"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/anti-war-protesters-demand-end-to-us-use-of-uk-airbase-to-strike-iran?traffic_source=rss",
-        "title": "Anti-war protesters demand end to US use of UK airbase to strike Iran",
-        "published_at": "2026-07-26T11:18:00+00:00"
-      },
-      "hidden": true
+      "also_reported_by": []
     }
   ]
 }
