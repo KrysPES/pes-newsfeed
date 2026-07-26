@@ -1,116 +1,116 @@
 {
-  "generated_at": "2026-07-26T04:43:39.993156+00:00",
-  "item_count": 5,
+  "generated_at": "2026-07-26T07:23:16.585647+00:00",
+  "item_count": 8,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 2
+    "normal": 4
   },
-  "superseded_count": 0,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1592
+        "ms": 1950
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 11606
+        "ms": 37492
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2645
+        "ms": 5771
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 377
+        "ms": 1049
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 366
+        "ms": 441
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 71
+        "ms": 192
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 923
+        "ms": 1402
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 327
+        "ms": 565
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 637
+        "ms": 478
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20076
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 330
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 365
+        "ms": 811
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 88
+        "ms": 152
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 175
+        "ms": 111
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/4ee4448b-a32f-4bf6-b5db-b3facebf9b6c/1",
-      "snippet": "Published: 26.07.2026 06:38:18 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Environmental constraint Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or ",
-      "published_at": "2026-07-26T04:38:18+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Aghada - GU_400850 (AD2)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/d8703c76-e191-4be0-b9f5-7a42ddbabd12/1",
+      "snippet": "Published: 26.07.2026 08:12:10 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Steam turbine issue - high bearing temp Remarks: Steam turbine issue - high bearing temp Production Units Unit Name Unit EIC Area Installed Capac",
+      "published_at": "2026-07-26T06:12:10+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -146,9 +146,61 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 3,
       "also_reported_by": [],
-      "first_seen_at": "2026-07-26T03:59:01+00:00"
+      "first_seen_at": "2026-07-26T04:38:17+00:00"
+    },
+    {
+      "title": "New front in US-Iran war escalates as Houthis fire at Saudi oil facilities",
+      "url": "https://www.aljazeera.com/news/2026/7/26/new-front-in-us-iran-war-escalates-as-houthis-fire-at-saudi-oil-facilities?traffic_source=rss",
+      "snippet": "Conflict also spreads to Caspian Sea as Tehran accuses Ukraine of a deadly attack on an Iranian vessel.",
+      "published_at": "2026-07-26T04:40:17+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 31.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.4,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war",
+          "attack"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "ukraine"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-07-26T00:49:12+00:00",
+      "update_count": 2,
+      "thread_started_at": "2026-07-26T00:00:25+00:00"
     },
     {
       "title": "Tunisians mark fifth year of emergency rule with calls for Saied to go",
@@ -161,7 +213,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 55,
       "tags": [
         "supply_disruption"
       ],
@@ -176,7 +228,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "supply_disruption": [
@@ -195,40 +247,87 @@
       "also_reported_by": []
     },
     {
-      "title": "Yemen’s Houthis target Saudi oil facilities along the Red Sea",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/yemens-houthis-target-saudi-oil-facilities-along-the-red-sea?traffic_source=rss",
-      "snippet": "Yemen&#039;s Houthis say they have targeted oil facilities in Saudi Arabia owned by Aramco.",
-      "published_at": "2026-07-26T00:49:12+00:00",
+      "title": "France battles fire 'whirlwinds' as another 55,000 evacuated",
+      "url": "https://www.bbc.co.uk/news/articles/clyj8k4nn5jo?at_medium=RSS&at_campaign=rss",
+      "snippet": "More than 340,000 people have now been evacuated from wildfires in France and Spain.",
+      "published_at": "2026-07-26T07:21:11+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 54,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 48.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "france",
+          "spain"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "https://drive.google.com/drive/folders/17KZlAAj-H_rMiqJSrup6WfcERG75cAjR?us",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/https-drive-google-com-drive-folders-17kzlaaj?traffic_source=rss",
+      "snippet": "At least 14 people have died as wildfires continue to devastate Spain. Two blazes merged into one massive fire.",
+      "published_at": "2026-07-26T05:14:32+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 53,
       "tags": [
-        "geopolitics"
+        "supply_disruption"
       ],
       "alert": "normal",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
         "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
+        "themes": 8.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 0.86
+        "raw": 47.9,
+        "recency_multiplier": 0.99
       },
       "matched": {
-        "geopolitics": [
-          "red sea"
+        "supply_disruption": [
+          "fire"
         ],
         "geography": [
-          "red sea"
+          "spain"
+        ],
+        "unplanned": [
+          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -245,7 +344,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 32,
       "tags": [
         "supply_disruption"
       ],
@@ -260,7 +359,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.62
       },
       "matched": {
         "supply_disruption": [
@@ -274,7 +373,57 @@
       "also_reported_by": []
     },
     {
-      "title": "Iran war live: Tehran summons Ukraine diplomats over Caspian Sea attack",
+      "title": "US military disables tanker accused of breaking the Iran blockade",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/us-military-disables-tanker-accused-of-breaking-the-iran-blockade?traffic_source=rss",
+      "snippet": "The US military has released footage it says shows forces boarding one tanker.",
+      "published_at": "2026-07-26T04:33:16+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 13,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 13.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.8,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "urgency": [
+          "breaking"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/7/26/new-front-in-us-iran-war-escalates-as-houthis-fire-at-saudi-oil-facilities?traffic_source=rss",
+        "title": "New front in US-Iran war escalates as Houthis fire at Saudi oil facilities",
+        "published_at": "2026-07-26T04:40:17+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Iran war live: Tehran slams Ukraine attack; West Bank unrest continues",
       "url": "https://www.aljazeera.com/news/liveblog/2026/7/26/iran-war-live-tehran-summons-ukraine-diplomats-over-caspian-sea-attack?traffic_source=rss",
       "snippet": "Tehran says the Ukranian attack killed at least one sailor and wounded another.",
       "published_at": "2026-07-26T00:00:25+00:00",
@@ -284,7 +433,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 11,
       "tags": [
         "geopolitics"
       ],
@@ -292,19 +441,20 @@
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 17.9,
+        "themes": 26.9,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.81
+        "raw": 41.4,
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
           "war",
+          "unrest",
           "attack"
         ],
         "geography": [
@@ -312,7 +462,14 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/7/26/new-front-in-us-iran-war-escalates-as-houthis-fire-at-saudi-oil-facilities?traffic_source=rss",
+        "title": "New front in US-Iran war escalates as Houthis fire at Saudi oil facilities",
+        "published_at": "2026-07-26T04:40:17+00:00"
+      },
+      "hidden": true
     }
   ]
 }
