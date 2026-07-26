@@ -1,127 +1,127 @@
 {
-  "generated_at": "2026-07-26T01:12:03.482162+00:00",
-  "item_count": 4,
+  "generated_at": "2026-07-26T04:43:39.993156+00:00",
+  "item_count": 5,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "normal": 2
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1555
+        "ms": 1592
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 16336
+        "ms": 11606
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3185
+        "ms": 2645
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 417
+        "ms": 377
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 435
+        "ms": 366
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 145
+        "ms": 71
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 887
+        "ms": 923
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 154
+        "ms": 327
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 362
+        "ms": 637
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 139
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20076
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 574
+        "ms": 365
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 149
+        "ms": 88
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 60
+        "ms": 175
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
-      "url": "https://umm.nordpoolgroup.com/#/messages/785b94f6-6e77-492c-8580-3d4461481a4b/3",
-      "snippet": "Published: 25.07.2026 23:24:47 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Environmental constraint Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown ",
-      "published_at": "2026-07-25T21:24:47+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/4ee4448b-a32f-4bf6-b5db-b3facebf9b6c/1",
+      "snippet": "Published: 26.07.2026 06:38:18 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Environmental constraint Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or ",
+      "published_at": "2026-07-26T04:38:18+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 61,
+      "score": 66,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -146,9 +146,93 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 2,
       "also_reported_by": [],
-      "first_seen_at": "2026-07-25T21:24:31+00:00"
+      "first_seen_at": "2026-07-26T03:59:01+00:00"
+    },
+    {
+      "title": "Tunisians mark fifth year of emergency rule with calls for Saied to go",
+      "url": "https://www.aljazeera.com/news/2026/7/26/tunisians-mark-fifth-year-of-emergency-rule-with-calls-for-saied-to-go?traffic_source=rss",
+      "snippet": "Thousands rally in Tunis calling for &#039;fall of the regime&#039; five years since President Kais Saied suspended parliament.",
+      "published_at": "2026-07-26T04:14:23+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 58,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "unplanned": [
+          "emergency",
+          "suspended"
+        ],
+        "urgency": [
+          "emergency",
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Yemen’s Houthis target Saudi oil facilities along the Red Sea",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/yemens-houthis-target-saudi-oil-facilities-along-the-red-sea?traffic_source=rss",
+      "snippet": "Yemen&#039;s Houthis say they have targeted oil facilities in Saudi Arabia owned by Aramco.",
+      "published_at": "2026-07-26T00:49:12+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.1,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "geopolitics": [
+          "red sea"
+        ],
+        "geography": [
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Fire tears through Indonesian village in West Java",
@@ -161,11 +245,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 37,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -176,7 +260,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.76
       },
       "matched": {
         "supply_disruption": [
@@ -200,7 +284,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -216,7 +300,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -225,48 +309,6 @@
         ],
         "geography": [
           "ukraine"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-07-25T23:16:45+00:00"
-    },
-    {
-      "title": "Can an AI Black Box Be Trusted to Run a Nuclear Reactor?",
-      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Can-an-AI-Black-Box-Be-Trusted-to-Run-a-Nuclear-Reactor.html",
-      "snippet": "China has unveiled a daring new plan to integrate artificial intelligence throughout the nuclear energy life cycle. This week, at the World Artificial Intelligence Conference (WAIC) in Shanghai, researchers at the Chinese Academy of Sciences (CAS) revealed a new plan for safely integrating artificia",
-      "published_at": "2026-07-25T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.3,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor"
-        ],
-        "geography": [
-          "china"
         ]
       },
       "duplicate_count": 0,
