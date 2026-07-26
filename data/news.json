@@ -1,111 +1,162 @@
 {
-  "generated_at": "2026-07-26T22:38:29.535601+00:00",
+  "generated_at": "2026-07-26T23:40:28.269444+00:00",
   "item_count": 11,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 5
+    "normal": 6
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 2260
+        "ms": 1485
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 15658
+        "ms": 10517
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18105
+        "ms": 2635
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 446
+        "ms": 438
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 246
+        "ms": 307
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 148
+        "ms": 560
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1344
+        "ms": 903
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 209
+        "ms": 168
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 730
+        "ms": 579
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 327
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20171
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 655
+        "ms": 373
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 89
+        "ms": 142
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 107
+        "ms": 91
       }
     ]
   },
   "items": [
+    {
+      "title": "Standard Chartered: Oil Markets Must Now Price Two Middle East Chokepoints",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Standard-Chartered-Oil-Markets-Must-Now-Price-Two-Middle-East-Chokepoints.html",
+      "snippet": "Oil prices gave up earlier gains on Friday after reports that Pakistan is trying to broker a return to U.S.-Iran nuclear negotiations. China is strongly backing the effort as the conflict and the closure of the Strait of Hormuz continue to threaten its energy security and weigh on its economy. Brent",
+      "published_at": "2026-07-26T23:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "geopolitics",
+        "nuclear",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "negotiations",
+          "strait of hormuz"
+        ],
+        "nuclear": [
+          "nuclear"
+        ],
+        "oil_macro": [
+          "brent"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "‘Freeze the conflict’: Drones slow Kazakh oil flow amid Russia-Ukraine war",
       "url": "https://www.aljazeera.com/news/2026/7/26/freeze-the-conflict-drones-slow-kazakh-oil-flow-amid-russia-ukraine-war?traffic_source=rss",
@@ -117,7 +168,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 65,
+      "score": 62,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -135,7 +186,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 84.6,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.71
       },
       "matched": {
         "geopolitics": [
@@ -174,7 +225,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 59,
+      "score": 56,
       "tags": [
         "supply_disruption"
       ],
@@ -189,7 +240,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.76
       },
       "matched": {
         "supply_disruption": [
@@ -208,6 +259,48 @@
       "first_seen_at": "2026-07-26T08:54:28+00:00"
     },
     {
+      "title": "Israeli settlers set fire to mosques, cars and farm land in West Bank, Palestinians say",
+      "url": "https://www.bbc.co.uk/news/articles/cjrv77gl4deo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The latest attacks come two days after a clash between settlers and Palestinians near the village of Tal, which left four Palestinians and two Israelis dead.",
+      "published_at": "2026-07-26T21:23:53+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.6,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "first_seen_at": "2026-07-26T18:51:34+00:00"
+    },
+    {
       "title": "U.S. Jet Fuel Costs Soar as Iran War Hits Airlines Again",
       "url": "https://oilprice.com/Energy/Energy-General/US-Jet-Fuel-Costs-Soar-as-Iran-War-Hits-Airlines-Again.html",
       "snippet": "U.S. airlines are grappling with soaring jet fuel costs again after the return of hostilities in the Middle East shattered the three-week-long U.S.-Iran ‘deal to make a deal’ and sent Brent crude oil prices soaring past $100 per barrel again. The U.S. jet fuel market has been tightening since March,",
@@ -218,7 +311,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 46,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -235,7 +328,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "geopolitics": [
@@ -265,7 +358,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 44,
       "tags": [
         "geopolitics",
         "lng",
@@ -283,7 +376,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 56.3,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.65
       },
       "matched": {
         "geopolitics": [
@@ -305,48 +398,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Israeli settlers set fire to mosques, cars and farm land in West Bank, Palestinians say",
-      "url": "https://www.bbc.co.uk/news/articles/cjrv77gl4deo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The latest attacks come two days after a clash between settlers and Palestinians near the village of Tal, which left four Palestinians and two Israelis dead.",
-      "published_at": "2026-07-26T21:23:53+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 46,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.6,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ],
-      "first_seen_at": "2026-07-26T18:51:34+00:00"
-    },
-    {
       "title": "What lies ahead for Iran’s economy as scope of US war grows beyond Hormuz?",
       "url": "https://www.aljazeera.com/news/2026/7/26/what-lies-ahead-for-iran-as-scope-of-us-war-grows-beyond-hormuz?traffic_source=rss",
       "snippet": "Mediation efforts continue but uncertainty remains as risks of further disruptions in international waterways grow.",
@@ -357,7 +408,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 38,
       "tags": [
         "geopolitics"
       ],
@@ -373,7 +424,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -397,7 +448,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -413,7 +464,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.2,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -423,11 +474,8 @@
           "german"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ],
-      "first_seen_at": "2026-07-26T17:51:37+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "46 people rescued from sunken ship in South China Sea",
@@ -440,7 +488,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -456,7 +504,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.1,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -480,7 +528,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -496,7 +544,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -523,7 +571,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "weather"
       ],
@@ -539,7 +587,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.1,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.68
       },
       "matched": {
         "weather": [
@@ -548,43 +596,6 @@
         ],
         "geography": [
           "algeria"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Israel launches military incursion into Syria amid UN condemnation",
-      "url": "https://www.aljazeera.com/news/2026/7/26/israel-launches-military-incursion-into-syria-amid-un-condemnation?traffic_source=rss",
-      "snippet": "The UN&#039;s Guterres condemned violations of Syria&#039;s sovereignty as he visited and called for sanctions to be lifted.",
-      "published_at": "2026-07-26T17:40:15+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "incursion"
         ]
       },
       "duplicate_count": 0,
