@@ -1,111 +1,164 @@
 {
-  "generated_at": "2026-07-26T23:40:28.269444+00:00",
+  "generated_at": "2026-07-27T01:19:00.896465+00:00",
   "item_count": 11,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 6
+    "high": 1,
+    "normal": 5
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1485
+        "ms": 1677
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 10517
+        "ms": 26746
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2635
+        "ms": 7630
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 438
+        "ms": 435
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 307
+        "ms": 136
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 560
+        "ms": 199
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 903
+        "ms": 1293
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 168
+        "ms": 515
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 579
+        "ms": 665
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20171
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 412
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 373
+        "ms": 495
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 142
+        "ms": 50
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 91
+        "ms": 80
       }
     ]
   },
   "items": [
+    {
+      "title": "Oil Prices Plunge 5% After U.S. and Iran Halt Attacks",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-5-After-US-and-Iran-Halt-Attacks.html",
+      "snippet": "Oil prices plunged by more than 5% in early Asian trade on Monday as the U.S. and Iran halted attacks after two weeks of escalation that had driven Brent above $100. At the time of writing, WTI crude was trading at $84.47, down 5.39%, while Brent crude had fallen to $91.80, a decline of 5.15%. The r",
+      "published_at": "2026-07-27T01:06:14+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 75,
+      "tags": [
+        "supply_disruption",
+        "oil_macro",
+        "geopolitics"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 28.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 84.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "halted",
+          "halt"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "wti"
+        ],
+        "geopolitics": [
+          "escalation"
+        ],
+        "unplanned": [
+          "halted"
+        ],
+        "urgency": [
+          "halted"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Standard Chartered: Oil Markets Must Now Price Two Middle East Chokepoints",
       "url": "https://oilprice.com/Energy/Crude-Oil/Standard-Chartered-Oil-Markets-Must-Now-Price-Two-Middle-East-Chokepoints.html",
@@ -117,7 +170,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 64,
+      "score": 63,
       "tags": [
         "geopolitics",
         "nuclear",
@@ -135,7 +188,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -168,7 +221,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 62,
+      "score": 57,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -186,7 +239,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 84.6,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.63
       },
       "matched": {
         "geopolitics": [
@@ -225,7 +278,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 56,
+      "score": 51,
       "tags": [
         "supply_disruption"
       ],
@@ -240,7 +293,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.67
       },
       "matched": {
         "supply_disruption": [
@@ -269,7 +322,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 42,
       "tags": [
         "supply_disruption"
       ],
@@ -284,7 +337,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.86
       },
       "matched": {
         "supply_disruption": [
@@ -311,7 +364,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 42,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -328,7 +381,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.7,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -358,13 +411,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 40,
       "tags": [
         "geopolitics",
         "lng",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -376,7 +429,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 56.3,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.57
       },
       "matched": {
         "geopolitics": [
@@ -408,7 +461,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -424,7 +477,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
@@ -448,7 +501,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
@@ -464,7 +517,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.2,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -488,7 +541,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
@@ -504,7 +557,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.1,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -528,7 +581,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -544,7 +597,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
@@ -555,47 +608,6 @@
           "russia",
           "russian",
           "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Heatwave drives major wildfires across North Africa",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/heatwave-drives-major-wildfires-across-north-africa?traffic_source=rss",
-      "snippet": "Extreme heat is fuelling wildfires across North Africa, with major fires burning in Tunisia, Algeria and Morocco.",
-      "published_at": "2026-07-26T16:39:06+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.1,
-        "recency_multiplier": 0.68
-      },
-      "matched": {
-        "weather": [
-          "heatwave",
-          "extreme heat"
-        ],
-        "geography": [
-          "algeria"
         ]
       },
       "duplicate_count": 0,
