@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-27T04:57:35.963000+00:00",
+  "generated_at": "2026-07-27T08:34:26.231949+00:00",
   "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 2
+    "high": 0,
+    "normal": 4
   },
   "superseded_count": 0,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1632
+        "ms": 1819
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 14962
+        "ms": 46007
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3647
+        "ms": 33876
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 578
+        "ms": 273
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 866
+        "ms": 537
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 217
+        "ms": 114
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 45,
+        "count": 44,
         "error": null,
-        "ms": 1453
+        "ms": 885
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 581
+        "ms": 163
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 683
+        "ms": 579
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 364
+        "ms": 209
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 565
+        "ms": 420
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 25,
+        "count": 28,
         "error": null,
-        "ms": 268
+        "ms": 85
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 144
+        "ms": 291
       }
     ]
   },
@@ -117,13 +117,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 69,
+      "score": 59,
       "tags": [
         "supply_disruption",
         "oil_macro",
         "geopolitics"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -134,7 +134,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 84.8,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.66
       },
       "matched": {
         "supply_disruption": [
@@ -160,6 +160,96 @@
       "also_reported_by": []
     },
     {
+      "title": "European Natural Gas Prices Plunge 8% as U.S.-Iran Tensions Ease",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Natural-Gas-Prices-Plunge-8-as-US-Iran-Tensions-Ease.html",
+      "snippet": "European natural gas prices plunged by 8.6% at the open in Amsterdam on Monday as the United States paused strikes on Iran over the weekend and Tehran signaled a halt to retaliatory attacks across the Middle East. Hopes of de-escalation sank oil prices on Monday in Asian trade, too, with Brent Crude",
+      "published_at": "2026-07-27T08:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 54,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 48.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ],
+        "supply_disruption": [
+          "halt"
+        ],
+        "geography": [
+          "european"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Lull in Fighting as Iran Holds Hormuz Talks with Oman",
+      "url": "https://www.rigzone.com/news/wire/lull_in_fighting_as_iran_holds_hormuz_talks_with_oman-27-jul-2026-184216-article/?rss=true",
+      "snippet": "The U.S. paused an almost two-week run of strikes against Iran for a second night while the Islamic Republic signaled it was refraining from any retaliatory attacks and held talks with Oman over the Strait of Hormuz.",
+      "published_at": "2026-07-27T07:10:13+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Standard Chartered: Oil Markets Must Now Price Two Middle East Chokepoints",
       "url": "https://oilprice.com/Energy/Crude-Oil/Standard-Chartered-Oil-Markets-Must-Now-Price-Two-Middle-East-Chokepoints.html",
       "snippet": "Oil prices gave up earlier gains on Friday after reports that Pakistan is trying to broker a return to U.S.-Iran nuclear negotiations. China is strongly backing the effort as the conflict and the closure of the Strait of Hormuz continue to threaten its energy security and weigh on its economy. Brent",
@@ -170,7 +260,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 43,
       "tags": [
         "geopolitics",
         "nuclear",
@@ -188,7 +278,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.56
       },
       "matched": {
         "geopolitics": [
@@ -211,60 +301,17 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 3",
-      "url": "https://umm.nordpoolgroup.com/#/messages/d6386185-f6ab-4287-abd1-d06b654ff5c4/2",
-      "snippet": "Published: 26.07.2026 20:10:17 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Washing Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; p",
-      "published_at": "2026-07-26T18:10:17+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.51
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Why Mali’s northern conflict has entered a dangerous new phase",
-      "url": "https://www.aljazeera.com/news/2026/7/27/why-malis-northern-conflict-has-entered-a-dangerous-new-phase?traffic_source=rss",
-      "snippet": "A separatist–al-Qaeda alliance has shifted the balance of power in northern Mali and complicated efforts to end the war.",
-      "published_at": "2026-07-27T02:49:45+00:00",
+      "title": "Iran warns Ukraine of retaliation after deadly Caspian Sea strike",
+      "url": "https://www.aljazeera.com/news/2026/7/27/iran-warns-ukraine-of-retaliation-after-deadly-caspian-sea-strike?traffic_source=rss",
+      "snippet": "Abbas Araghchi says the Ukrainian attack on the Iranian vessel in the Caspian Sea &#039;cannot go unanswered&#039;.",
+      "published_at": "2026-07-27T06:15:01+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
@@ -273,18 +320,105 @@
       "why": {
         "authority": 9.5,
         "themes": 17.9,
-        "geography": 0.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.99
+        "raw": 32.4,
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
-          "conflict",
-          "war"
+          "retaliation",
+          "attack"
+        ],
+        "geography": [
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Santos ships first Barossa condensate cargo to South Korea",
+      "url": "https://lngprime.com/australia-and-oceania/santos-ships-first-barossa-condensate-cargo-to-south-korea/193486/",
+      "snippet": "Australian LNG player Santos and Prism Energy International Australia have jointly sold and shipped the first condensate cargo from the Barossa gas project, located approximately 285 km north of Darwin, to South Korea.",
+      "published_at": "2026-07-27T04:19:54+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.7,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargo"
+        ],
+        "geography": [
+          "australia",
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "DSIC hands over latest LNG carrier to CMES",
+      "url": "https://lngprime.com/asia/dsic-hands-over-latest-lng-carrier-to-cmes/193509/",
+      "snippet": "China’s Dalian Shipbuilding Industry (DSIC) has delivered another LNG carrier to compatriot China Merchants Energy Shipping (CMES), a unit of China Merchants Group.",
+      "published_at": "2026-07-27T04:17:29+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.7,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
@@ -294,7 +428,7 @@
       "title": "Netherlands was top destination for US LNG in May",
       "url": "https://lngprime.com/americas/netherlands-was-top-destination-for-us-lng-in-may/193140/",
       "snippet": "LNG import terminals in the Netherlands were the top destinations for US liquefied natural gas cargoes in May this year, according to the Department of Energy’s LNG monthly report.",
-      "published_at": "2026-07-27T04:20:00+00:00",
+      "published_at": "2026-07-27T06:40:00+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
@@ -335,216 +469,86 @@
       "also_reported_by": []
     },
     {
-      "title": "Argent LNG gets FTA approval from DOE",
-      "url": "https://lngprime.com/americas/argent-lng-gets-fta-approval-from-doe/193129/",
-      "snippet": "Argent LNG has received approval from the US DOE to export LNG to free trade agreement (FTA) countries from its planned LNG export terminal in Port Fourchon, Louisiana.",
-      "published_at": "2026-07-27T04:18:00+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 3",
+      "url": "https://umm.nordpoolgroup.com/#/messages/d6386185-f6ab-4287-abd1-d06b654ff5c4/2",
+      "snippet": "Published: 26.07.2026 20:10:17 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Washing Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; p",
+      "published_at": "2026-07-26T18:10:17+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
       "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 11.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Top 5 news of the week July 20-26",
-      "url": "https://lngprime.com/americas/top-5-news-of-the-week-july-20-26/193119/",
-      "snippet": "LNG Prime brings you the five most popular news stories on our platform during the week of July 20-26, 2026.",
-      "published_at": "2026-07-27T04:16:00+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 11.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "platform"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Israeli settlers set fire to mosques, cars and farm land in West Bank, Palestinians say",
-      "url": "https://www.bbc.co.uk/news/articles/cjrv77gl4deo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The latest attacks come two days after a clash between settlers and Palestinians near the village of Tal, which left four Palestinians and two Israelis dead.",
-      "published_at": "2026-07-26T21:23:53+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
+      "score": 34,
       "tags": [
         "supply_disruption"
       ],
       "alert": "low",
       "nature": "unplanned",
       "why": {
-        "authority": 10.2,
+        "authority": 21.9,
         "themes": 8.4,
         "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 38.6,
-        "recency_multiplier": 0.65
+        "raw": 66.3,
+        "recency_multiplier": 0.38
       },
       "matched": {
         "supply_disruption": [
-          "fire"
+          "unplanned"
         ],
         "unplanned": [
-          "fire"
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "U.S. Jet Fuel Costs Soar as Iran War Hits Airlines Again",
-      "url": "https://oilprice.com/Energy/Energy-General/US-Jet-Fuel-Costs-Soar-as-Iran-War-Hits-Airlines-Again.html",
-      "snippet": "U.S. airlines are grappling with soaring jet fuel costs again after the return of hostilities in the Middle East shattered the three-week-long U.S.-Iran ‘deal to make a deal’ and sent Brent crude oil prices soaring past $100 per barrel again. The U.S. jet fuel market has been tightening since March,",
-      "published_at": "2026-07-26T21:00:00+00:00",
+      "title": "China’s Crude Oil Imports Surge",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Crude-Oil-Imports-Surge.html",
+      "snippet": "China is likely to have increased its crude oil imports this month, with the daily average at 7.8 million barrels, according to calculations by Kpler, as cited by Bloomberg. Refiners have been buying more Russian crude and have seen more tankers arrive from the Middle East, the report noted. The fig",
+      "published_at": "2026-07-27T06:45:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
-        "geopolitics",
         "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 26.0,
+        "themes": 9.0,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 39.7,
-        "recency_multiplier": 0.63
+        "raw": 22.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "hostilities",
-          "war"
-        ],
         "oil_macro": [
           "crude",
-          "brent",
-          "barrel"
+          "barrels"
         ],
         "geography": [
+          "russian",
+          "china",
           "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Market's Glut Narrative Just Blew Up",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Markets-Glut-Narrative-Just-Blew-Up.html",
-      "snippet": "Less than a month ago, analysts were warning of a looming glut of crude oil as tanker traffic via the Strait of Hormuz began to recover amid a U.S.-Iran ceasefire. Within days of these warnings, the ceasefire was a painful memory, missiles were flying again, and now Yemen’s Houthis are striking tank",
-      "published_at": "2026-07-26T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 31.5,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 56.3,
-        "recency_multiplier": 0.43
-      },
-      "matched": {
-        "geopolitics": [
-          "ceasefire",
-          "strait of hormuz"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
         ]
       },
       "duplicate_count": 0,
