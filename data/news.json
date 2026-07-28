@@ -1,116 +1,116 @@
 {
-  "generated_at": "2026-07-28T17:09:11.525590+00:00",
-  "item_count": 25,
+  "generated_at": "2026-07-28T18:43:31.411974+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 8
+    "normal": 5
   },
   "superseded_count": 2,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1775
+        "ms": 1264
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 29206
+        "ms": 13626
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 23467
+        "ms": 2662
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 268
+        "ms": 434
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 588
+        "ms": 316
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 213
+        "ms": 151
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 896
+        "ms": 892
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 183
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 49
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 590
+        "ms": 555
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 233
+        "ms": 89
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 270
+        "ms": 462
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 29,
+        "count": 30,
         "error": null,
-        "ms": 132
+        "ms": 184
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 139
+        "ms": 140
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
-      "url": "https://umm.nordpoolgroup.com/#/messages/bf301b57-a38e-41ae-9575-ffdcc89760f5/1",
-      "snippet": "Published: 28.07.2026 18:07:15 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Test Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type",
-      "published_at": "2026-07-28T16:07:15+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, AMERCOEUR 1R",
+      "url": "https://umm.nordpoolgroup.com/#/messages/53604731-a5af-4016-9557-2a8f536acd2c/2",
+      "snippet": "Published: 28.07.2026 20:23:14 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfil",
+      "published_at": "2026-07-28T18:23:14+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -140,13 +140,14 @@
         ],
         "unplanned": [
           "unplanned",
-          "failure"
+          "failure",
+          "delay"
         ],
         "urgency": [
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 3,
       "also_reported_by": [],
       "first_seen_at": "2026-07-28T14:37:30+00:00"
     },
@@ -161,7 +162,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 52,
       "tags": [
         "lng",
         "supply_disruption",
@@ -179,7 +180,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 75.7,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.59
       },
       "matched": {
         "lng": [
@@ -203,6 +204,54 @@
       "also_reported_by": []
     },
     {
+      "title": "Saudi Aramco Shuts 400,000-Bpd Refinery After Houthi Strike",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Aramco-Shuts-400000-Bpd-Refinery-After-Houthi-Strike.html",
+      "snippet": "Saudi Aramco shut its 400,000-barrel-per-day Jazan refinery on July 27 after a Houthi attack damaged the facility, according to an IIR note seen by Reuters. IIR said the strike damaged the refinery’s Integrated Gasification Combined Cycle complex and tank farm. Repairs are tentatively expected to be",
+      "published_at": "2026-07-28T18:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "oil_macro": [
+          "refinery",
+          "barrel"
+        ],
+        "supply_disruption": [
+          "repairs"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Red Sea Tanker Traffic Hits Multi-Month Low as Houthi Threat Holds",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Red-Sea-Tanker-Traffic-Hits-Multi-Month-Low-as-Houthi-Threat-Holds.html",
       "snippet": "More than half a dozen empty supertankers are currently en route to Egypt’s Sidi Kerir port to pick up Saudi crude as the world’s top crude oil exporter is re-routing – again – its export tactics to avoid the new threat for the Middle East’s chokepoints, the Bab el-Mandeb in the Red Sea. Since the I",
@@ -213,7 +262,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 49,
       "tags": [
         "geopolitics",
         "lng",
@@ -231,7 +280,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -263,7 +312,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 47,
       "tags": [
         "nuclear"
       ],
@@ -279,7 +328,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.1,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.84
       },
       "matched": {
         "nuclear": [
@@ -296,51 +345,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Senators Announce Deal on New Russia, Iran Sanctions Bill",
-      "url": "https://www.rigzone.com/news/wire/senators_announce_deal_on_new_russia_iran_sanctions_bill-28-jul-2026-184234-article/?rss=true",
-      "snippet": "A bipartisan group of senators announced a deal Tuesday.",
-      "published_at": "2026-07-28T14:41:09+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 47,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 40.9,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "russia"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-07-28T12:30:18+00:00"
-    },
-    {
       "title": "Oil Prices Retreat, But the Strait of Hormuz Remains the Wild Card",
       "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Retreat-But-the-Strait-of-Hormuz-Remains-the-Wild-Card.html",
       "snippet": "Trump's latest comments cooled oil prices, but talks over ending the Strait of Hormuz blockade could prove far more consequential. Hedge Funds Pile Back into Oil as Chokepoint Risks Return - The signing of the US-Iran Memorandum of Understanding triggered one of the largest hedge fund sell-offs for ",
@@ -351,7 +355,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -367,7 +371,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 38.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -386,94 +390,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Economists Cut India’s GDP Growth Forecast on Oil Price Shock",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Economists-Cut-Indias-GDP-Growth-Forecast-on-Oil-Price-Shock.html",
-      "snippet": "The spike in oil prices and slowing private investments have been weighing on India’s economic growth, which is now seen at 6.6% in the fiscal year to March 2027, a full percentage-point drop from the 7.7% GDP growth in the prior fiscal year, a Reuters poll of economists showed on Tuesday. Nearly th",
-      "published_at": "2026-07-28T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 42,
-      "tags": [
-        "oil_macro",
-        "weather"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 12.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 37.8,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "oil_macro": [
-          "gdp"
-        ],
-        "weather": [
-          "forecast"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Sempra Infrastructure extends ECA LNG commissioning due to compressor damage",
-      "url": "https://lngprime.com/americas/sempra-infrastructure-extends-eca-lng-commissioning-due-to-compressor-damage/193584/",
-      "snippet": "US LNG exporter Sempra Infrastructure, a subsidiary of Sempra, said it is extending the commissioning phase of the ECA LNG Phase 1 project in Ensenada, Mexico, after it found damage in the plant's refrigerant compressors.",
-      "published_at": "2026-07-28T09:46:34+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "infrastructure",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 13.1,
-        "themes": 17.8,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 50.9,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "infrastructure": [
-          "compressor",
-          "commissioning"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "unplanned": [
-          "damage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Cyprus Launches First Gas Project with Eni and TotalEnergies Backing",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Cyprus-Launches-First-Gas-Project-with-Eni-and-TotalEnergies-Backing.html",
       "snippet": "Eni and TotalEnergies have taken the final investment decision to develop the Cronos gas field in deep waters offshore Cyprus, in the Mediterranean country’s first hydrocarbon development expected to bring first gas to market in 2028. The Cronos project, operated by Eni with a 50% stake, with partne",
@@ -484,12 +400,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 39,
       "tags": [
         "infrastructure",
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -500,7 +416,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 52.9,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.57
       },
       "matched": {
         "infrastructure": [
@@ -528,7 +444,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "lng",
         "power_system",
@@ -546,7 +462,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 32.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "lng": [
@@ -572,47 +488,132 @@
       "also_reported_by": []
     },
     {
-      "title": "Authorities open fire amid election unrest in Pakistan-administered Kashmir",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/28/authorities-open-fire-amid-election-unrest-in-pakistan-administered-kashmir?traffic_source=rss",
-      "snippet": "Deadly clashes have erupted in Pakistan-administered Kashmir after weeks of protests and road blockades.",
-      "published_at": "2026-07-28T11:29:18+00:00",
+      "title": "Economists Cut India’s GDP Growth Forecast on Oil Price Shock",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Economists-Cut-Indias-GDP-Growth-Forecast-on-Oil-Price-Shock.html",
+      "snippet": "The spike in oil prices and slowing private investments have been weighing on India’s economic growth, which is now seen at 6.6% in the fiscal year to March 2027, a full percentage-point drop from the 7.7% GDP growth in the prior fiscal year, a Reuters poll of economists showed on Tuesday. Nearly th",
+      "published_at": "2026-07-28T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 38,
+      "tags": [
+        "oil_macro",
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 12.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.8,
+        "recency_multiplier": 0.78
+      },
+      "matched": {
+        "oil_macro": [
+          "gdp"
+        ],
+        "weather": [
+          "forecast"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Sempra Infrastructure extends ECA LNG commissioning due to compressor damage",
+      "url": "https://lngprime.com/americas/sempra-infrastructure-extends-eca-lng-commissioning-due-to-compressor-damage/193584/",
+      "snippet": "US LNG exporter Sempra Infrastructure, a subsidiary of Sempra, said it is extending the commissioning phase of the ECA LNG Phase 1 project in Ensenada, Mexico, after it found damage in the plant's refrigerant compressors.",
+      "published_at": "2026-07-28T09:46:34+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "infrastructure",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 13.1,
+        "themes": 17.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 50.9,
+        "recency_multiplier": 0.59
+      },
+      "matched": {
+        "infrastructure": [
+          "compressor",
+          "commissioning"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "unplanned": [
+          "damage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Lindsey Graham ‘almost cried’ tears of joy over war on Iran, footage shows",
+      "url": "https://www.aljazeera.com/news/2026/7/28/lindsey-graham-almost-cried-tears-of-joy-over-war-on-iran-footage-shows?traffic_source=rss",
+      "snippet": "Excerpts from a planned documentary show the hawkish senator claiming credit for persuading Donald Trump to attack Iran.",
+      "published_at": "2026-07-28T18:01:03+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 36,
       "tags": [
-        "geopolitics",
-        "supply_disruption"
+        "geopolitics"
       ],
       "alert": "low",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 14.0,
+        "themes": 17.9,
         "geography": 0.0,
-        "event_nature": 20.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.5,
-        "recency_multiplier": 0.75
+        "raw": 27.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "unrest"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
+          "war",
+          "attack"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-07-28T17:15:20+00:00",
+      "update_count": 2,
+      "thread_started_at": "2026-07-28T13:06:02+00:00"
     },
     {
       "title": "Oil Tankers Reroute to Egypt amid Houthi Threat",
@@ -625,7 +626,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 36,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -642,7 +643,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.2,
-        "recency_multiplier": 0.57
+        "recency_multiplier": 0.5
       },
       "matched": {
         "geopolitics": [
@@ -654,228 +655,6 @@
         ],
         "geography": [
           "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Reganosa secures Irish FSRU gig",
-      "url": "https://lngprime.com/contracts-and-tenders/reganosa-secures-irish-fsru-gig/193563/",
-      "snippet": "Spain’s Reganosa has secured a contract from state-owned gas system operator Gas Networks Ireland (GNI) for the latter's planned FSRU-based LNG import project.",
-      "published_at": "2026-07-28T09:45:43+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 22.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.2,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "fsru"
-        ],
-        "infrastructure": [
-          "system operator"
-        ],
-        "geography": [
-          "spain",
-          "ireland"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "German investigators find apparent motive after Berlin Pride attack",
-      "url": "https://www.aljazeera.com/news/2026/7/28/german-investigators-find-apparent-motive-after-berlin-pride-attack?traffic_source=rss",
-      "snippet": "Prosecutors say they uncover video of accused Berlin Pride attacker pledging allegiance to ISIL (ISIS).",
-      "published_at": "2026-07-28T15:20:43+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "geography": [
-          "german"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Barossa Ships First Condensate Cargo to South Korea",
-      "url": "https://www.rigzone.com/news/barossa_ships_first_condensate_cargo_to_south_korea-28-jul-2026-184230-article/?rss=true",
-      "snippet": "The shipment of about 300,000 barrels will be delivered to a refinery in Incheon.",
-      "published_at": "2026-07-28T10:36:23+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 37,
-      "tags": [
-        "oil_macro",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 13.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 41.3,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "oil_macro": [
-          "refinery",
-          "barrels"
-        ],
-        "lng": [
-          "cargo"
-        ],
-        "geography": [
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "MT Group bags contract for German LNG terminal",
-      "url": "https://lngprime.com/contracts-and-tenders/mt-group-bags-contract-for-german-lng-terminal/193592/",
-      "snippet": "Lithuanian EPC contractor MT Group has secured a contract for the German government-backed onshore LNG import terminal in Brunsbuttel.",
-      "published_at": "2026-07-28T06:32:28+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 32.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 55.5,
-        "recency_multiplier": 0.52
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal",
-          "import terminal"
-        ],
-        "geography": [
-          "german"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Japan Backs Overseas Oil Pipelines to Reduce Hormuz Dependence",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Japan-Backs-Overseas-Oil-Pipelines-to-Reduce-Hormuz-Dependence.html",
-      "snippet": "Japan is planning to join the rush to diversify oil export routes away from the Strait of Hormuz by investing in pipeline projects abroad, notably in the Middle East. Citing a document produced by the country’s economy ministry, Bloomberg reported the investment will be made through Japanese compani",
-      "published_at": "2026-07-28T08:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 20.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.4,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -922,6 +701,183 @@
       "also_reported_by": []
     },
     {
+      "title": "Reganosa secures Irish FSRU gig",
+      "url": "https://lngprime.com/contracts-and-tenders/reganosa-secures-irish-fsru-gig/193563/",
+      "snippet": "Spain’s Reganosa has secured a contract from state-owned gas system operator Gas Networks Ireland (GNI) for the latter's planned FSRU-based LNG import project.",
+      "published_at": "2026-07-28T09:45:43+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 22.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.2,
+        "recency_multiplier": 0.58
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "fsru"
+        ],
+        "infrastructure": [
+          "system operator"
+        ],
+        "geography": [
+          "spain",
+          "ireland"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "German investigators find apparent motive after Berlin Pride attack",
+      "url": "https://www.aljazeera.com/news/2026/7/28/german-investigators-find-apparent-motive-after-berlin-pride-attack?traffic_source=rss",
+      "snippet": "Prosecutors say they uncover video of accused Berlin Pride attacker pledging allegiance to ISIL (ISIS).",
+      "published_at": "2026-07-28T15:20:43+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.5,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "geography": [
+          "german"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Barossa Ships First Condensate Cargo to South Korea",
+      "url": "https://www.rigzone.com/news/barossa_ships_first_condensate_cargo_to_south_korea-28-jul-2026-184230-article/?rss=true",
+      "snippet": "The shipment of about 300,000 barrels will be delivered to a refinery in Incheon.",
+      "published_at": "2026-07-28T10:36:23+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 34,
+      "tags": [
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 13.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 41.3,
+        "recency_multiplier": 0.62
+      },
+      "matched": {
+        "oil_macro": [
+          "refinery",
+          "barrels"
+        ],
+        "lng": [
+          "cargo"
+        ],
+        "geography": [
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "MT Group bags contract for German LNG terminal",
+      "url": "https://lngprime.com/contracts-and-tenders/mt-group-bags-contract-for-german-lng-terminal/193592/",
+      "snippet": "Lithuanian EPC contractor MT Group has secured a contract for the German government-backed onshore LNG import terminal in Brunsbuttel.",
+      "published_at": "2026-07-28T06:32:28+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 32.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 55.5,
+        "recency_multiplier": 0.46
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal"
+        ],
+        "infrastructure": [
+          "terminal",
+          "import terminal"
+        ],
+        "geography": [
+          "german"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Baker Hughes Posts Nearly 50 Percent YoY Increase in Orders",
       "url": "https://www.rigzone.com/news/baker_hughes_posts_nearly_50_percent_yoy_increase_in_orders-28-jul-2026-184232-article/?rss=true",
       "snippet": "Baker Hughes saw 'robust demand across Power Systems and LNG, with particularly strong momentum in power generation'.",
@@ -932,7 +888,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 35,
+      "score": 32,
       "tags": [
         "lng",
         "oil_macro"
@@ -948,7 +904,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 32.9,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.73
       },
       "matched": {
         "lng": [
@@ -972,7 +928,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "nuclear",
         "infrastructure"
@@ -988,7 +944,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.7,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.61
       },
       "matched": {
         "nuclear": [
@@ -1003,54 +959,45 @@
       "also_reported_by": []
     },
     {
-      "title": "Saudi Arabia Weighs Higher Asia Crude Prices as Red Sea Shipping Costs Rise",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Weighs-Higher-Asia-Crude-Prices-as-Red-Sea-Shipping-Costs-Rise.html",
-      "snippet": "Saudi Arabia may raise the price of the crude it ships to Asia via the Suez Canal, Reuters has reported, to reflect higher shipping costs due to the Houthi maritime blockade in the Red Sea. The price hike could reach $5 per barrel of crude. Citing unnamed sources, the publication said Aramco was res",
-      "published_at": "2026-07-28T06:30:00+00:00",
+      "title": "Japan Backs Overseas Oil Pipelines to Reduce Hormuz Dependence",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Japan-Backs-Overseas-Oil-Pipelines-to-Reduce-Hormuz-Dependence.html",
+      "snippet": "Japan is planning to join the rush to diversify oil export routes away from the Strait of Hormuz by investing in pipeline projects abroad, notably in the Middle East. Citing a document produced by the country’s economy ministry, Bloomberg reported the investment will be made through Japanese compani",
+      "published_at": "2026-07-28T08:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "geopolitics",
-        "oil_macro"
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 37.4,
+        "themes": 20.7,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 50.1,
-        "recency_multiplier": 0.51
+        "speculative": 0.0,
+        "raw": 45.4,
+        "recency_multiplier": 0.53
       },
       "matched": {
         "geopolitics": [
-          "blockade",
-          "suez canal",
-          "red sea"
+          "strait of hormuz"
         ],
-        "oil_macro": [
-          "crude",
-          "barrel"
+        "infrastructure": [
+          "pipeline"
         ],
         "geography": [
-          "suez",
-          "suez canal",
-          "red sea"
-        ],
-        "speculative": [
-          "could",
-          "may",
-          "weighs"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -1067,7 +1014,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 30,
       "tags": [
         "lng",
         "geopolitics"
@@ -1084,7 +1031,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.1,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.58
       },
       "matched": {
         "lng": [
@@ -1102,48 +1049,54 @@
       "also_reported_by": []
     },
     {
-      "title": "Peer review of floating nuclear plant 'ranks it on par with Russia's top units'",
-      "url": "https://www.world-nuclear-news.org/articles/peer-review-of-floating-nuclear-plant-ranks-it-on-par-with-russias-top-units",
-      "snippet": "Rosatom has said that a two-week World Association of Nuclear Operators peer review mission to the Akademik Lomonosov floating power unit assessed it for compliance with global best practices.",
-      "published_at": "2026-07-28T11:26:16+00:00",
+      "title": "Senators Announce Deal on New Russia, Iran Sanctions Bill",
+      "url": "https://www.rigzone.com/news/wire/senators_announce_deal_on_new_russia_iran_sanctions_bill-28-jul-2026-184234-article/?rss=true",
+      "snippet": "A bipartisan group of senators announced a deal Tuesday.",
+      "published_at": "2026-07-28T14:41:09+00:00",
       "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 13,
       "tags": [
-        "nuclear",
-        "regulation"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.9,
-        "themes": 11.0,
+        "authority": 10.9,
+        "themes": 9.0,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 29.8,
-        "recency_multiplier": 0.75
+        "raw": 40.9,
+        "recency_multiplier": 0.85
       },
       "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "regulation": [
-          "compliance"
+        "geopolitics": [
+          "sanctions"
         ],
         "geography": [
           "russia"
+        ],
+        "urgency": [
+          "announced"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/7/28/lindsey-graham-almost-cried-tears-of-joy-over-war-on-iran-footage-shows?traffic_source=rss",
+        "title": "Lindsey Graham ‘almost cried’ tears of joy over war on Iran, footage shows",
+        "published_at": "2026-07-28T18:01:03+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Trump says ‘good chance’ of progress in Iran talks. What we know",
@@ -1156,7 +1109,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 12,
       "tags": [
         "geopolitics"
       ],
@@ -1172,7 +1125,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -1187,53 +1140,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/senators_announce_deal_on_new_russia_iran_sanctions_bill-28-jul-2026-184234-article/?rss=true",
-        "title": "Senators Announce Deal on New Russia, Iran Sanctions Bill",
-        "published_at": "2026-07-28T14:41:09+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Why has Iran’s economy not collapsed under US war pressure?",
-      "url": "https://www.aljazeera.com/economy/2026/7/28/why-has-irans-economy-not-collapsed-under-us-war-pressure?traffic_source=rss",
-      "snippet": "Millions in sanctions-hit country keep absorbing economic shockwaves, with analysts saying trend looks set to continue.",
-      "published_at": "2026-07-28T12:30:18+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/senators_announce_deal_on_new_russia_iran_sanctions_bill-28-jul-2026-184234-article/?rss=true",
-        "title": "Senators Announce Deal on New Russia, Iran Sanctions Bill",
-        "published_at": "2026-07-28T14:41:09+00:00"
+        "url": "https://www.aljazeera.com/news/2026/7/28/lindsey-graham-almost-cried-tears-of-joy-over-war-on-iran-footage-shows?traffic_source=rss",
+        "title": "Lindsey Graham ‘almost cried’ tears of joy over war on Iran, footage shows",
+        "published_at": "2026-07-28T18:01:03+00:00"
       },
       "hidden": true
     }
