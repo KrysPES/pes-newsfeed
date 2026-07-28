@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-28T13:17:17.199310+00:00",
-  "item_count": 23,
+  "generated_at": "2026-07-28T15:39:09.749568+00:00",
+  "item_count": 24,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 13
+    "normal": 11
   },
-  "superseded_count": 3,
+  "superseded_count": 1,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,138 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1266
+        "ms": 2094
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 29214
+        "ms": 26514
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3058
+        "ms": 23953
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 486
+        "ms": 315
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 386
+        "ms": 669
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 112
+        "ms": 152
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 43,
+        "count": 46,
         "error": null,
-        "ms": 925
+        "ms": 1284
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 174
+        "ms": 217
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 551
+        "ms": 706
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 103
+        "ms": 402
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 342
+        "ms": 521
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 23,
+        "count": 26,
         "error": null,
-        "ms": 85
+        "ms": 50
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 108
+        "ms": 65
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, HERDERSBRUG 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/c1839525-0cbb-4571-9393-ce0452905adf/2",
+      "snippet": "Published: 28.07.2026 16:02:53 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
+      "published_at": "2026-07-28T14:02:53+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": []
+    },
     {
       "title": "Edison says QatarEnergy extends force majeure until end of September",
       "url": "https://lngprime.com/lng-terminals/edison-says-qatarenergy-extends-force-majeure-until-end-of-september/193740/",
@@ -117,13 +160,13 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 67,
+      "score": 60,
       "tags": [
         "lng",
         "supply_disruption",
         "infrastructure"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 13.1,
@@ -135,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 75.7,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.75
       },
       "matched": {
         "lng": [
@@ -169,7 +212,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 64,
+      "score": 58,
       "tags": [
         "geopolitics",
         "lng",
@@ -187,7 +230,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -209,46 +252,134 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, HERDERSBRUG 1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/c1839525-0cbb-4571-9393-ce0452905adf/1",
-      "snippet": "Published: 28.07.2026 11:47:14 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
-      "published_at": "2026-07-28T09:47:14+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
+      "title": "EDF teams up with Technip Energies for EPR2 delivery",
+      "url": "https://www.world-nuclear-news.org/articles/edf-teams-up-with-technip-energies-for-epr2-delivery",
+      "snippet": "French engineering and technology company Technip Energies announced it has signed a strategic framework agreement with EDF to support execution, construction management, and delivery of EDF's EPR2 reactor construction programme.",
+      "published_at": "2026-07-28T14:23:30+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
       "has_magnitude": false,
-      "score": 61,
+      "score": 53,
       "tags": [
-        "supply_disruption"
+        "nuclear"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
+        "authority": 13.9,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.89
+        "raw": 47.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "unplanned"
+        "nuclear": [
+          "reactor"
         ],
-        "unplanned": [
-          "unplanned",
-          "failure"
+        "geography": [
+          "french"
         ],
         "urgency": [
-          "unplanned"
+          "announced"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Trump says ‘good chance’ of progress in Iran talks. What we know",
+      "url": "https://www.aljazeera.com/news/2026/7/28/trump-says-good-chance-of-progress-in-iran-talks-what-we-know?traffic_source=rss",
+      "snippet": "Negotiators are trying to break the deadlock over transit fees and management of the Strait of Hormuz.",
+      "published_at": "2026-07-28T13:06:02+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.1,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-07-28T12:30:18+00:00"
+    },
+    {
+      "title": "Oil Prices Retreat, But the Strait of Hormuz Remains the Wild Card",
+      "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Retreat-But-the-Strait-of-Hormuz-Remains-the-Wild-Card.html",
+      "snippet": "Trump's latest comments cooled oil prices, but talks over ending the Strait of Hormuz blockade could prove far more consequential. Hedge Funds Pile Back into Oil as Chokepoint Risks Return - The signing of the US-Iran Memorandum of Understanding triggered one of the largest hedge fund sell-offs for ",
+      "published_at": "2026-07-28T15:20:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 38.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
       "also_reported_by": []
     },
     {
@@ -262,7 +393,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 46,
       "tags": [
         "infrastructure",
         "lng"
@@ -278,7 +409,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.9,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.74
       },
       "matched": {
         "infrastructure": [
@@ -306,7 +437,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 52,
+      "score": 46,
       "tags": [
         "infrastructure",
         "lng"
@@ -322,7 +453,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 52.9,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.73
       },
       "matched": {
         "infrastructure": [
@@ -333,12 +464,55 @@
           "final investment decision"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 1,
       "also_reported_by": [
-        "LNG Prime",
-        "Offshore Energy"
+        "LNG Prime"
       ],
-      "first_seen_at": "2026-07-28T07:25:00+00:00"
+      "first_seen_at": "2026-07-28T06:30:26+00:00"
+    },
+    {
+      "title": "Economists Cut India’s GDP Growth Forecast on Oil Price Shock",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Economists-Cut-Indias-GDP-Growth-Forecast-on-Oil-Price-Shock.html",
+      "snippet": "The spike in oil prices and slowing private investments have been weighing on India’s economic growth, which is now seen at 6.6% in the fiscal year to March 2027, a full percentage-point drop from the 7.7% GDP growth in the prior fiscal year, a Reuters poll of economists showed on Tuesday. Nearly th",
+      "published_at": "2026-07-28T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 45,
+      "tags": [
+        "oil_macro",
+        "weather"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 12.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.8,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "oil_macro": [
+          "gdp"
+        ],
+        "weather": [
+          "forecast"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Authorities open fire amid election unrest in Pakistan-administered Kashmir",
@@ -351,7 +525,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 45,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -367,7 +541,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -384,49 +558,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump says ‘good chance’ of progress in Iran talks. What we know",
-      "url": "https://www.aljazeera.com/news/2026/7/28/trump-says-good-chance-of-progress-in-iran-talks-what-we-know?traffic_source=rss",
-      "snippet": "Negotiators are trying to break the deadlock over transit fees and management of the Strait of Hormuz.",
-      "published_at": "2026-07-28T13:06:02+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 49,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 3,
-      "thread_started_at": "2026-07-28T07:34:38+00:00"
-    },
-    {
       "title": "Oil Tankers Reroute to Egypt amid Houthi Threat",
       "url": "https://www.rigzone.com/news/wire/oil_tankers_reroute_to_egypt_amid_houthi_threat-28-jul-2026-184227-article/?rss=true",
       "snippet": "Empty supertankers are heading to Egypt's Mediterranean port of Sidi Kerir to collect Saudi crude as observable traffic at the kingdom's key Red Sea export hub dwindles following threats from Houthi militants.",
@@ -437,7 +568,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 43,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -454,7 +585,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.2,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.64
       },
       "matched": {
         "geopolitics": [
@@ -482,7 +613,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 42,
       "tags": [
         "lng",
         "infrastructure"
@@ -499,7 +630,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.2,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.74
       },
       "matched": {
         "lng": [
@@ -518,6 +649,60 @@
       "also_reported_by": []
     },
     {
+      "title": "Hitting EU Renewables Targets Could Slash Gas Demand a Quarter by 2030",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hitting-EU-Renewables-Targets-Could-Slash-Gas-Demand-a-Quarter-by-2030.html",
+      "snippet": "The European Union could save a lot on LNG imports by 2030 if it achieves its heat pump, solar, and wind installation targets…so much so that the bloc could save twice the gas it imports from Qatar, the Institute for Energy Economics and Financial Analysis (IEEFA) said on Tuesday. IEEFA, which advoc",
+      "published_at": "2026-07-28T15:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "lng",
+        "power_system",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 32.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng imports"
+        ],
+        "power_system": [
+          "renewables"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "european",
+          "eu"
+        ],
+        "speculative": [
+          "could",
+          "analysis"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Barossa Ships First Condensate Cargo to South Korea",
       "url": "https://www.rigzone.com/news/barossa_ships_first_condensate_cargo_to_south_korea-28-jul-2026-184230-article/?rss=true",
       "snippet": "The shipment of about 300,000 barrels will be delivered to a refinery in Incheon.",
@@ -528,12 +713,12 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 47,
+      "score": 41,
       "tags": [
         "oil_macro",
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -545,7 +730,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.3,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.79
       },
       "matched": {
         "oil_macro": [
@@ -573,12 +758,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 40,
       "tags": [
         "lng",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -590,7 +775,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.5,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.58
       },
       "matched": {
         "lng": [
@@ -609,6 +794,46 @@
       "also_reported_by": []
     },
     {
+      "title": "Baker Hughes Posts Nearly 50 Percent YoY Increase in Orders",
+      "url": "https://www.rigzone.com/news/baker_hughes_posts_nearly_50_percent_yoy_increase_in_orders-28-jul-2026-184232-article/?rss=true",
+      "snippet": "Baker Hughes saw 'robust demand across Power Systems and LNG, with particularly strong momentum in power generation'.",
+      "published_at": "2026-07-28T12:39:35+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 39,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 10.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 32.9,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "demand"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Japan Backs Overseas Oil Pipelines to Reduce Hormuz Dependence",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Japan-Backs-Overseas-Oil-Pipelines-to-Reduce-Hormuz-Dependence.html",
       "snippet": "Japan is planning to join the rush to diversify oil export routes away from the Strait of Hormuz by investing in pipeline projects abroad, notably in the Middle East. Citing a document produced by the country’s economy ministry, Bloomberg reported the investment will be made through Japanese compani",
@@ -619,12 +844,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 39,
       "tags": [
         "geopolitics",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -636,7 +861,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.4,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -654,6 +879,47 @@
       "also_reported_by": []
     },
     {
+      "title": "Argentina's Nucleoeléctrica signs MoU relating to life extension project in Romania",
+      "url": "https://www.world-nuclear-news.org/articles/argentinas-nucleoelectrica-signs-mou-relating-to-life-extension-project-in-romania",
+      "snippet": "Nucleoel ctrica Argentina SA says the memorandum of understanding signed with Romania's nuclear power plant operator Nuclearelectrica is part of transforming the capabilities accumulated over decades of operating and executing complex projects into a service platform for the global market .",
+      "published_at": "2026-07-28T10:14:01+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "nuclear",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 24.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.7,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "life extension"
+        ],
+        "infrastructure": [
+          "platform"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Saudi Arabia Weighs Higher Asia Crude Prices as Red Sea Shipping Costs Rise",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Weighs-Higher-Asia-Crude-Prices-as-Red-Sea-Shipping-Costs-Rise.html",
       "snippet": "Saudi Arabia may raise the price of the crude it ships to Asia via the Suez Canal, Reuters has reported, to reflect higher shipping costs due to the Houthi maritime blockade in the Red Sea. The price hike could reach $5 per barrel of crude. Citing unnamed sources, the publication said Aramco was res",
@@ -664,12 +930,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 37,
       "tags": [
         "geopolitics",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -681,7 +947,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 50.1,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.58
       },
       "matched": {
         "geopolitics": [
@@ -718,12 +984,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 36,
       "tags": [
         "lng",
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -735,7 +1001,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.1,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.74
       },
       "matched": {
         "lng": [
@@ -753,90 +1019,10 @@
       "also_reported_by": []
     },
     {
-      "title": "Baker Hughes Posts Nearly 50 Percent YoY Increase in Orders",
-      "url": "https://www.rigzone.com/news/baker_hughes_posts_nearly_50_percent_yoy_increase_in_orders-28-jul-2026-184232-article/?rss=true",
-      "snippet": "Baker Hughes saw 'robust demand across Power Systems and LNG, with particularly strong momentum in power generation'.",
-      "published_at": "2026-07-28T12:39:35+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 41,
-      "tags": [
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 10.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 32.9,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "oil_macro": [
-          "demand"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Singapore-flagged diving support vessel on duty in Arabian Gulf",
-      "url": "https://www.offshore-energy.biz/singapore-flagged-diving-support-vessel-on-duty-in-arabian-gulf/",
-      "snippet": "Singapore’s offshore marine solutions company PACC Offshore Services Holdings (POSH) has secured a long-term [&#8230;] The post Singapore-flagged diving support vessel on duty in Arabian Gulf appeared first on Offshore Energy .",
-      "published_at": "2026-07-28T09:15:29+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 16.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.0,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "geopolitics": [
-          "arabian gulf"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "'It's a hell of a situation': Spain grapples with devastating wildfires",
       "url": "https://www.bbc.co.uk/news/articles/c235m71mrreo?at_medium=RSS&at_campaign=rss",
       "snippet": "Three fires in the Madrid region have caused special concerns, with a new heatwave expected to hit Spain from Wednesday.",
-      "published_at": "2026-07-28T13:03:38+00:00",
+      "published_at": "2026-07-28T15:07:17+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -873,227 +1059,88 @@
       "also_reported_by": []
     },
     {
-      "title": "Escalating Protests in Libya Threaten Oil and Gas Supply",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Escalating-Protests-in-Libya-Threaten-Oil-and-Gas-Supply.html",
-      "snippet": "The anti-government protests in Libya over power cuts and high electricity bills over the past few days escalated on Tuesday, with protesters entering the Mellitah Oil and Gas complex and threatening to halt gas and fuel supplies for both the domestic and international markets. Libya’s capital Tripo",
-      "published_at": "2026-07-28T12:30:00+00:00",
+      "title": "Peer review of floating nuclear plant 'ranks it on par with Russia's top units'",
+      "url": "https://www.world-nuclear-news.org/articles/peer-review-of-floating-nuclear-plant-ranks-it-on-par-with-russias-top-units",
+      "snippet": "Rosatom has said that a two-week World Association of Nuclear Operators peer review mission to the Akademik Lomonosov floating power unit assessed it for compliance with global best practices.",
+      "published_at": "2026-07-28T11:26:16+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 33,
       "tags": [
-        "geopolitics",
-        "supply_disruption"
+        "nuclear",
+        "regulation"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 14.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.8,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "escalated"
-        ],
-        "supply_disruption": [
-          "halt"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Several dead in Japan after magnitude 7.1 earthquake causes blast at mall",
-      "url": "https://www.aljazeera.com/news/2026/7/28/magnitude-7-1-earthquake-shakes-southern-japan-tsunami-warning-issued?traffic_source=rss",
-      "snippet": "PM Sanae Takaichi urges people to &#039;remain vigilant for the possibility of another earthquake&#039; in Kumamoto prefecture.",
-      "published_at": "2026-07-28T11:02:03+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
+        "authority": 13.9,
+        "themes": 11.0,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 22.9,
-        "recency_multiplier": 0.98
+        "raw": 29.8,
+        "recency_multiplier": 0.84
       },
       "matched": {
-        "supply_disruption": [
-          "blast"
+        "nuclear": [
+          "nuclear"
+        ],
+        "regulation": [
+          "compliance"
         ],
         "geography": [
-          "japan"
+          "russia"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Oil Prices Extend Losses as U.S.-Iran Calm Holds for Another Night",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Extend-Losses-as-US-Iran-Calm-Holds-for-Another-Night.html",
-      "snippet": "Oil prices continued to trend lower in early Asian trade on Tuesday as a fourth night passed without any attacks from either Iran or the United States. At the time of writing, WTI crude was trading at $80.98 per barrel, down 1.97% on the session, while Brent crude had slipped to $86.80 per barrel, a",
-      "published_at": "2026-07-28T03:00:00+00:00",
+      "title": "Singapore-flagged diving support vessel on duty in Arabian Gulf",
+      "url": "https://www.offshore-energy.biz/singapore-flagged-diving-support-vessel-on-duty-in-arabian-gulf/",
+      "snippet": "Singapore’s offshore marine solutions company PACC Offshore Services Holdings (POSH) has secured a long-term [&#8230;] The post Singapore-flagged diving support vessel on duty in Arabian Gulf appeared first on Offshore Energy .",
+      "published_at": "2026-07-28T09:15:29+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 41.8,
-        "recency_multiplier": 0.53
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "wti",
-          "barrel"
-        ],
-        "geography": [
-          "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Zelensky to press Trump on air defences while in Washington",
-      "url": "https://www.bbc.co.uk/news/articles/c9v4g7e047zo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Ukraine's leader is hoping to firm up US commitments to bolstering Kyiv's anti-ballistic missile defences, as Russia has escalated deadly attacks.",
-      "published_at": "2026-07-28T10:41:41+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 17.9,
+        "authority": 12.4,
+        "themes": 16.6,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 33.1,
-        "recency_multiplier": 0.96
+        "raw": 34.0,
+        "recency_multiplier": 0.71
       },
       "matched": {
         "geopolitics": [
-          "missile",
-          "escalated"
+          "arabian gulf"
         ],
         "geography": [
-          "russia",
-          "ukraine"
+          "gulf"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/28/trump-says-good-chance-of-progress-in-iran-talks-what-we-know?traffic_source=rss",
-        "title": "Trump says ‘good chance’ of progress in Iran talks. What we know",
-        "published_at": "2026-07-28T13:06:02+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Ukraine’s ‘volunteer army’ helps rebuild what Russia destroys",
-      "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-volunteer-army-helps-rebuild-what-russia-destroys?traffic_source=rss",
-      "snippet": "Made up of mostly locals and some foreign visitors, a large group of volunteers step in to fix war damage.",
-      "published_at": "2026-07-28T07:34:38+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 12,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.5,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ],
-        "unplanned": [
-          "damage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/28/trump-says-good-chance-of-progress-in-iran-talks-what-we-know?traffic_source=rss",
-        "title": "Trump says ‘good chance’ of progress in Iran talks. What we know",
-        "published_at": "2026-07-28T13:06:02+00:00"
-      },
-      "hidden": true
+      "also_reported_by": []
     },
     {
       "title": "Why has Iran’s economy not collapsed under US war pressure?",
@@ -1106,7 +1153,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
@@ -1121,7 +1168,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
