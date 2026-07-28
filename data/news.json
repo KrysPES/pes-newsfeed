@@ -1,111 +1,212 @@
 {
-  "generated_at": "2026-07-28T04:18:26.117731+00:00",
-  "item_count": 12,
+  "generated_at": "2026-07-28T06:46:32.781093+00:00",
+  "item_count": 9,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 3
+    "normal": 4
   },
-  "superseded_count": 4,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1697
+        "ms": 1300
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 40037
+        "ms": 93524
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3784
+        "ms": 2017
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 616
+        "ms": 372
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 225
+        "ms": 445
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 140
+        "ms": 102
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1286
+        "ms": 948
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 203
+        "ms": 154
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 692
+        "ms": 627
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20374
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 189
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 611
+        "ms": 576
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 29,
+        "count": 31,
         "error": null,
-        "ms": 204
+        "ms": 322
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 120
+        "ms": 150
       }
     ]
   },
   "items": [
+    {
+      "title": "Eni, TotalEnergies take FID on Cyprus gas project to supply LNG to Europe",
+      "url": "https://lngprime.com/europe/eni-totalenergies-take-fid-on-cyprus-gas-project-to-supply-lng-to-europe/193578/",
+      "snippet": "France's TotalEnergies and Italy's Eni have taken the final investment decision (FID) for the development of the Cronos gas field to supply Europe through existing LNG infrastructure in Egypt.",
+      "published_at": "2026-07-28T06:30:26+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 56,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 28.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 51.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "final investment decision"
+        ],
+        "infrastructure": [
+          "gas field"
+        ],
+        "geography": [
+          "europe",
+          "france",
+          "italy"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Saudi Arabia Weighs Higher Asia Crude Prices as Red Sea Shipping Costs Rise",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Weighs-Higher-Asia-Crude-Prices-as-Red-Sea-Shipping-Costs-Rise.html",
+      "snippet": "Saudi Arabia may raise the price of the crude it ships to Asia via the Suez Canal, Reuters has reported, to reflect higher shipping costs due to the Houthi maritime blockade in the Red Sea. The price hike could reach $5 per barrel of crude. Citing unnamed sources, the publication said Aramco was res",
+      "published_at": "2026-07-28T06:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 50.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "suez canal",
+          "red sea"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrel"
+        ],
+        "geography": [
+          "suez",
+          "suez canal",
+          "red sea"
+        ],
+        "speculative": [
+          "could",
+          "may",
+          "weighs"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Ukraine’s Zelenskyy set to meet Trump as Iran and Ukraine wars converge",
       "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-set-to-meet-trump-as-iran-and-ukraine-wars-converge?traffic_source=rss",
@@ -117,7 +218,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 53,
       "tags": [
         "geopolitics"
       ],
@@ -133,7 +234,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.89
       },
       "matched": {
         "geopolitics": [
@@ -150,8 +251,8 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 4,
-      "thread_started_at": "2026-07-27T14:30:00+00:00"
+      "update_count": 2,
+      "thread_started_at": "2026-07-27T21:04:09+00:00"
     },
     {
       "title": "Oil Prices Extend Losses as U.S.-Iran Calm Holds for Another Night",
@@ -164,7 +265,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 49,
+      "score": 44,
       "tags": [
         "oil_macro"
       ],
@@ -180,7 +281,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.87
       },
       "matched": {
         "oil_macro": [
@@ -207,11 +308,11 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 10.2,
@@ -222,7 +323,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.2,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -246,7 +347,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 39,
+      "score": 33,
       "tags": [
         "supply_disruption"
       ],
@@ -261,7 +362,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.46
+        "recency_multiplier": 0.38
       },
       "matched": {
         "supply_disruption": [
@@ -289,7 +390,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 35,
+      "score": 30,
       "tags": [
         "lng",
         "geopolitics"
@@ -306,7 +407,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 57.1,
-        "recency_multiplier": 0.47
+        "recency_multiplier": 0.39
       },
       "matched": {
         "lng": [
@@ -325,137 +426,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Jet Fuel Spike Blows a Hole in Airline Profit Forecasts",
-      "url": "https://oilprice.com/Energy/Energy-General/Jet-Fuel-Spike-Blows-a-Hole-in-Airline-Profit-Forecasts.html",
-      "snippet": "The fresh spike in jet fuel prices in July upended the profit guidance of U.S. airlines, whose management teams had to readjust earnings estimates for the year just days ahead of reporting second-quarter results. The re-escalation in the Middle East earlier this month resulted in a 20% spike in jet ",
-      "published_at": "2026-07-27T22:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 34.7,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "geopolitics": [
-          "escalation"
-        ],
-        "geography": [
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Leaked UK Grid Report Warns Net Zero Push Raises Blackout Risks",
-      "url": "https://oilprice.com/Energy/Energy-General/Leaked-UK-Grid-Report-Warns-Net-Zero-Push-Raises-Blackout-Risks.html",
-      "snippet": "The UK’s net zero push risks leaving the country with higher electricity bills and more susceptible to blackouts, according to a leaked report commissioned by the national grid system. The report, produced by energy consultancy firm Cornwall Insight for the National Energy System Operator (Neso) and",
-      "published_at": "2026-07-27T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "infrastructure",
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 25.4,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 50.2,
-        "recency_multiplier": 0.45
-      },
-      "matched": {
-        "infrastructure": [
-          "grid",
-          "system operator"
-        ],
-        "power_system": [
-          "blackout"
-        ],
-        "geography": [
-          "uk",
-          "national grid"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "UK start-up Nuclear Turbines unveils novel reactor concept",
-      "url": "https://www.world-nuclear-news.org/articles/uk-start-up-nuclear-turbines-unveils-novel-reactor-concept",
-      "snippet": "The spin-off from BAE Systems has raised GBP15 million (USD19.9 million) funding and emerged from stealth with a nuclear reactor design combined with high-temperature turbine technology, which it says will lead to lower energy costs.",
-      "published_at": "2026-07-27T12:19:32+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "nuclear",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 22.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 63.9,
-        "recency_multiplier": 0.34
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor"
-        ],
-        "infrastructure": [
-          "start-up"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
       "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
       "snippet": "Speaking in Riyadh, Yemen&#039;s internationally recognised government warns global complacency has emboldened the Houthis.",
@@ -466,7 +436,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 12,
       "tags": [
         "geopolitics"
       ],
@@ -482,7 +452,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -514,7 +484,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 12,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -531,7 +501,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.5,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
@@ -546,123 +516,6 @@
         ],
         "unplanned": [
           "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-set-to-meet-trump-as-iran-and-ukraine-wars-converge?traffic_source=rss",
-        "title": "Ukraine’s Zelenskyy set to meet Trump as Iran and Ukraine wars converge",
-        "published_at": "2026-07-28T03:16:30+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Indian Refinery MRPL Bars Crude Suppliers From Hormuz, Red Sea Routes",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Refinery-MRPL-Bars-Crude-Suppliers-From-Hormuz-Red-Sea-Routes.html",
-      "snippet": "India’s Mangalore Refinery and Petrochemicals Ltd. (MRPL) has become the first Indian refinery to tell crude suppliers to avoid both the Strait of Hormuz and the Red Sea, inserting the restriction into a spot tender for up to 1 million barrels of crude. The tender seeks cargoes for delivery between ",
-      "published_at": "2026-07-27T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 11,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 44.5,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 69.2,
-        "recency_multiplier": 0.4
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz",
-          "red sea"
-        ],
-        "oil_macro": [
-          "crude",
-          "refinery",
-          "barrels"
-        ],
-        "supply_disruption": [
-          "restriction"
-        ],
-        "lng": [
-          "cargoes"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz",
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-set-to-meet-trump-as-iran-and-ukraine-wars-converge?traffic_source=rss",
-        "title": "Ukraine’s Zelenskyy set to meet Trump as Iran and Ukraine wars converge",
-        "published_at": "2026-07-28T03:16:30+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Oil price dives as US and Iran pause attacks",
-      "url": "https://www.bbc.co.uk/news/articles/clyj834jn5lo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The US says attacks on Iran have been halted to give \"talks some space\", raising hopes of a resolution to the conflict.",
-      "published_at": "2026-07-27T15:08:37+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 14.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 60.2,
-        "recency_multiplier": 0.42
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict"
-        ],
-        "supply_disruption": [
-          "halted"
-        ],
-        "unplanned": [
-          "halted"
-        ],
-        "urgency": [
-          "halted"
         ]
       },
       "duplicate_count": 0,
