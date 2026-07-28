@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-28T11:36:58.675037+00:00",
-  "item_count": 19,
+  "generated_at": "2026-07-28T13:17:17.199310+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
-    "high": 2,
-    "normal": 10
+    "high": 1,
+    "normal": 13
   },
-  "superseded_count": 1,
+  "superseded_count": 3,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1676
+        "ms": 1266
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 32043
+        "ms": 29214
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4286
+        "ms": 3058
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 848
+        "ms": 486
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 439
+        "ms": 386
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 202
+        "ms": 112
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 44,
+        "count": 43,
         "error": null,
-        "ms": 1118
+        "ms": 925
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 473
+        "ms": 174
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 655
+        "ms": 551
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 251
+        "ms": 103
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 540
+        "ms": 342
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 26,
+        "count": 23,
         "error": null,
-        "ms": 297
+        "ms": 85
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 210
+        "ms": 108
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 70,
+      "score": 67,
       "tags": [
         "lng",
         "supply_disruption",
@@ -135,7 +135,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 75.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.9
       },
       "matched": {
         "lng": [
@@ -153,49 +153,6 @@
         ],
         "unplanned": [
           "force majeure"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, HERDERSBRUG 1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/c1839525-0cbb-4571-9393-ce0452905adf/1",
-      "snippet": "Published: 28.07.2026 11:47:14 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
-      "published_at": "2026-07-28T09:47:14+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 66,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "high",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
         ]
       },
       "duplicate_count": 0,
@@ -252,6 +209,93 @@
       "also_reported_by": []
     },
     {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, HERDERSBRUG 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/c1839525-0cbb-4571-9393-ce0452905adf/1",
+      "snippet": "Published: 28.07.2026 11:47:14 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
+      "published_at": "2026-07-28T09:47:14+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 61,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": []
+    },
+    {
+      "title": "Sempra Infrastructure extends ECA LNG commissioning due to compressor damage",
+      "url": "https://lngprime.com/americas/sempra-infrastructure-extends-eca-lng-commissioning-due-to-compressor-damage/193584/",
+      "snippet": "US LNG exporter Sempra Infrastructure, a subsidiary of Sempra, said it is extending the commissioning phase of the ECA LNG Phase 1 project in Ensenada, Mexico, after it found damage in the plant's refrigerant compressors.",
+      "published_at": "2026-07-28T09:46:34+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "infrastructure",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 13.1,
+        "themes": 17.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 50.9,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "infrastructure": [
+          "compressor",
+          "commissioning"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "unplanned": [
+          "damage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Cyprus Launches First Gas Project with Eni and TotalEnergies Backing",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Cyprus-Launches-First-Gas-Project-with-Eni-and-TotalEnergies-Backing.html",
       "snippet": "Eni and TotalEnergies have taken the final investment decision to develop the Cronos gas field in deep waters offshore Cyprus, in the Mediterranean country’s first hydrocarbon development expected to bring first gas to market in 2028. The Cronos project, operated by Eni with a 50% stake, with partne",
@@ -262,7 +306,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 57,
+      "score": 52,
       "tags": [
         "infrastructure",
         "lng"
@@ -278,7 +322,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 52.9,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.87
       },
       "matched": {
         "infrastructure": [
@@ -297,48 +341,90 @@
       "first_seen_at": "2026-07-28T07:25:00+00:00"
     },
     {
-      "title": "Sempra Infrastructure extends ECA LNG commissioning due to compressor damage",
-      "url": "https://lngprime.com/americas/sempra-infrastructure-extends-eca-lng-commissioning-due-to-compressor-damage/193584/",
-      "snippet": "US LNG exporter Sempra Infrastructure, a subsidiary of Sempra, said it is extending the commissioning phase of the ECA LNG Phase 1 project in Ensenada, Mexico, after it found damage in the plant's refrigerant compressors.",
-      "published_at": "2026-07-28T09:46:34+00:00",
+      "title": "Authorities open fire amid election unrest in Pakistan-administered Kashmir",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/28/authorities-open-fire-amid-election-unrest-in-pakistan-administered-kashmir?traffic_source=rss",
+      "snippet": "Deadly clashes have erupted in Pakistan-administered Kashmir after weeks of protests and road blockades.",
+      "published_at": "2026-07-28T11:29:18+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 50,
       "tags": [
-        "infrastructure",
-        "lng"
+        "geopolitics",
+        "supply_disruption"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 13.1,
-        "themes": 17.8,
+        "authority": 9.5,
+        "themes": 14.0,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 50.9,
+        "raw": 43.5,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "infrastructure": [
-          "compressor",
-          "commissioning"
+        "geopolitics": [
+          "unrest"
         ],
-        "lng": [
-          "lng"
+        "supply_disruption": [
+          "fire"
         ],
         "unplanned": [
-          "damage"
+          "fire"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Trump says ‘good chance’ of progress in Iran talks. What we know",
+      "url": "https://www.aljazeera.com/news/2026/7/28/trump-says-good-chance-of-progress-in-iran-talks-what-we-know?traffic_source=rss",
+      "snippet": "Negotiators are trying to break the deadlock over transit fees and management of the Strait of Hormuz.",
+      "published_at": "2026-07-28T13:06:02+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-07-28T07:34:38+00:00"
     },
     {
       "title": "Oil Tankers Reroute to Egypt amid Houthi Threat",
@@ -351,7 +437,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 49,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -368,7 +454,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.2,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -396,7 +482,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 48,
       "tags": [
         "lng",
         "infrastructure"
@@ -413,7 +499,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.89
       },
       "matched": {
         "lng": [
@@ -432,6 +518,51 @@
       "also_reported_by": []
     },
     {
+      "title": "Barossa Ships First Condensate Cargo to South Korea",
+      "url": "https://www.rigzone.com/news/barossa_ships_first_condensate_cargo_to_south_korea-28-jul-2026-184230-article/?rss=true",
+      "snippet": "The shipment of about 300,000 barrels will be delivered to a refinery in Incheon.",
+      "published_at": "2026-07-28T10:36:23+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 47,
+      "tags": [
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 13.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 41.3,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "oil_macro": [
+          "refinery",
+          "barrels"
+        ],
+        "lng": [
+          "cargo"
+        ],
+        "geography": [
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "MT Group bags contract for German LNG terminal",
       "url": "https://lngprime.com/contracts-and-tenders/mt-group-bags-contract-for-german-lng-terminal/193592/",
       "snippet": "Lithuanian EPC contractor MT Group has secured a contract for the German government-backed onshore LNG import terminal in Brunsbuttel.",
@@ -442,7 +573,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 46,
       "tags": [
         "lng",
         "infrastructure"
@@ -459,7 +590,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.5,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.69
       },
       "matched": {
         "lng": [
@@ -488,7 +619,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 45,
       "tags": [
         "geopolitics",
         "infrastructure"
@@ -505,7 +636,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.4,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -533,7 +664,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 43,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -550,7 +681,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 50.1,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
@@ -587,7 +718,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 42,
       "tags": [
         "lng",
         "geopolitics"
@@ -604,7 +735,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "lng": [
@@ -622,92 +753,44 @@
       "also_reported_by": []
     },
     {
-      "title": "Ukraine’s ‘volunteer army’ helps rebuild what Russia destroys",
-      "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-volunteer-army-helps-rebuild-what-russia-destroys?traffic_source=rss",
-      "snippet": "Made up of mostly locals and some foreign visitors, a large group of volunteers step in to fix war damage.",
-      "published_at": "2026-07-28T07:34:38+00:00",
+      "title": "Baker Hughes Posts Nearly 50 Percent YoY Increase in Orders",
+      "url": "https://www.rigzone.com/news/baker_hughes_posts_nearly_50_percent_yoy_increase_in_orders-28-jul-2026-184232-article/?rss=true",
+      "snippet": "Baker Hughes saw 'robust demand across Power Systems and LNG, with particularly strong momentum in power generation'.",
+      "published_at": "2026-07-28T12:39:35+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.5,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ],
-        "unplanned": [
-          "damage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Zelensky to press Trump on air defences while in Washington",
-      "url": "https://www.bbc.co.uk/news/articles/c9v4g7e047zo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Ukraine's leader is hoping to firm up US commitments to bolstering Kyiv's anti-ballistic missile defences, as Russia has escalated deadly attacks.",
-      "published_at": "2026-07-28T10:41:41+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
+      "has_magnitude": true,
       "score": 41,
       "tags": [
-        "geopolitics"
+        "lng",
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 10.9,
+        "themes": 10.0,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 33.1,
+        "raw": 32.9,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "missile",
-          "escalated"
+        "lng": [
+          "lng"
         ],
-        "geography": [
-          "russia",
-          "ukraine"
+        "oil_macro": [
+          "demand"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-07-28T03:16:30+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Singapore-flagged diving support vessel on duty in Arabian Gulf",
@@ -720,7 +803,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -736,7 +819,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.0,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -750,40 +833,120 @@
       "also_reported_by": []
     },
     {
-      "title": "Hong Kong activist allowed to stay in UK after deportation threat",
-      "url": "https://www.bbc.co.uk/news/articles/cpd74e0yy12o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Wu was detained for hours at London's Heathrow Airport last week and refused entry, he told the BBC.",
-      "published_at": "2026-07-28T04:59:36+00:00",
+      "title": "'It's a hell of a situation': Spain grapples with devastating wildfires",
+      "url": "https://www.bbc.co.uk/news/articles/c235m71mrreo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Three fires in the Madrid region have caused special concerns, with a new heatwave expected to hit Spain from Wednesday.",
+      "published_at": "2026-07-28T13:03:38+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 35,
       "tags": [
-        "geopolitics"
+        "weather"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
+        "themes": 6.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 35.2,
-        "recency_multiplier": 0.7
+        "raw": 26.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "heatwave"
+        ],
+        "geography": [
+          "spain"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Escalating Protests in Libya Threaten Oil and Gas Supply",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Escalating-Protests-in-Libya-Threaten-Oil-and-Gas-Supply.html",
+      "snippet": "The anti-government protests in Libya over power cuts and high electricity bills over the past few days escalated on Tuesday, with protesters entering the Mellitah Oil and Gas complex and threatening to halt gas and fuel supplies for both the domestic and international markets. Libya’s capital Tripo",
+      "published_at": "2026-07-28T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 14.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.8,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "detained"
+          "escalated"
+        ],
+        "supply_disruption": [
+          "halt"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Several dead in Japan after magnitude 7.1 earthquake causes blast at mall",
+      "url": "https://www.aljazeera.com/news/2026/7/28/magnitude-7-1-earthquake-shakes-southern-japan-tsunami-warning-issued?traffic_source=rss",
+      "snippet": "PM Sanae Takaichi urges people to &#039;remain vigilant for the possibility of another earthquake&#039; in Kumamoto prefecture.",
+      "published_at": "2026-07-28T11:02:03+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.9,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "supply_disruption": [
+          "blast"
         ],
         "geography": [
-          "uk"
+          "japan"
         ]
       },
       "duplicate_count": 0,
@@ -800,7 +963,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 33,
+      "score": 30,
       "tags": [
         "oil_macro"
       ],
@@ -816,7 +979,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.8,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.53
       },
       "matched": {
         "oil_macro": [
@@ -833,90 +996,59 @@
       "also_reported_by": []
     },
     {
-      "title": "Yangzijiang hands over another LNG-powered giant to CMA CGM",
-      "url": "https://lngprime.com/asia/yangzijiang-hands-over-another-lng-powered-giant-to-cma-cgm/193745/",
-      "snippet": "China’s Yangzijiang Shipbuilding has delivered the second of ten ultra-large LNG dual-fuel container vessels to French shipping giant CMA CGM.",
-      "published_at": "2026-07-28T06:25:35+00:00",
+      "title": "Zelensky to press Trump on air defences while in Washington",
+      "url": "https://www.bbc.co.uk/news/articles/c9v4g7e047zo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ukraine's leader is hoping to firm up US commitments to bolstering Kyiv's anti-ballistic missile defences, as Russia has escalated deadly attacks.",
+      "published_at": "2026-07-28T10:41:41+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 12,
       "tags": [
-        "lng"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.4,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "french"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "First condensate cargo from Australian project en route to South Korea",
-      "url": "https://www.offshore-energy.biz/first-condensate-cargo-from-australian-project-en-route-to-south-korea/",
-      "snippet": "Australian energy player Santos has marketed, sold and loaded the first condensate cargo from [&#8230;] The post First condensate cargo from Australian project en route to South Korea appeared first on Offshore Energy .",
-      "published_at": "2026-07-28T08:25:48+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 7.3,
+        "authority": 10.2,
+        "themes": 17.9,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.7,
-        "recency_multiplier": 0.91
+        "raw": 33.1,
+        "recency_multiplier": 0.96
       },
       "matched": {
-        "lng": [
-          "cargo"
+        "geopolitics": [
+          "missile",
+          "escalated"
         ],
         "geography": [
-          "korea"
+          "russia",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/7/28/trump-says-good-chance-of-progress-in-iran-talks-what-we-know?traffic_source=rss",
+        "title": "Trump says ‘good chance’ of progress in Iran talks. What we know",
+        "published_at": "2026-07-28T13:06:02+00:00"
+      },
+      "hidden": true
     },
     {
-      "title": "Ukraine’s Zelenskyy set to meet Trump as Iran and Ukraine wars converge",
-      "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-set-to-meet-trump-as-iran-and-ukraine-wars-converge?traffic_source=rss",
-      "snippet": "The US Senate will vote Tuesday on Russian sanctions, days after Ukraine attacked an Iranian vessel in the Caspian Sea.",
-      "published_at": "2026-07-28T03:16:30+00:00",
+      "title": "Ukraine’s ‘volunteer army’ helps rebuild what Russia destroys",
+      "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-volunteer-army-helps-rebuild-what-russia-destroys?traffic_source=rss",
+      "snippet": "Made up of mostly locals and some foreign visitors, a large group of volunteers step in to fix war damage.",
+      "published_at": "2026-07-28T07:34:38+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
@@ -931,36 +1063,79 @@
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
-        "themes": 17.9,
+        "themes": 9.0,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 52.4,
-        "recency_multiplier": 0.61
+        "raw": 43.5,
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
-          "sanctions",
-          "attacked"
+          "war"
         ],
         "geography": [
-          "russian",
+          "russia",
           "ukraine"
         ],
         "unplanned": [
-          "attacked"
+          "damage"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/c9v4g7e047zo?at_medium=RSS&at_campaign=rss",
-        "title": "Zelensky to press Trump on air defences while in Washington",
-        "published_at": "2026-07-28T10:41:41+00:00"
+        "url": "https://www.aljazeera.com/news/2026/7/28/trump-says-good-chance-of-progress-in-iran-talks-what-we-know?traffic_source=rss",
+        "title": "Trump says ‘good chance’ of progress in Iran talks. What we know",
+        "published_at": "2026-07-28T13:06:02+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Why has Iran’s economy not collapsed under US war pressure?",
+      "url": "https://www.aljazeera.com/economy/2026/7/28/why-has-irans-economy-not-collapsed-under-us-war-pressure?traffic_source=rss",
+      "snippet": "Millions in sanctions-hit country keep absorbing economic shockwaves, with analysts saying trend looks set to continue.",
+      "published_at": "2026-07-28T12:30:18+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "war"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/7/28/trump-says-good-chance-of-progress-in-iran-talks-what-we-know?traffic_source=rss",
+        "title": "Trump says ‘good chance’ of progress in Iran talks. What we know",
+        "published_at": "2026-07-28T13:06:02+00:00"
       },
       "hidden": true
     }
