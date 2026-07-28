@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-28T01:00:04.861692+00:00",
-  "item_count": 16,
+  "generated_at": "2026-07-28T04:18:26.117731+00:00",
+  "item_count": 12,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 4
+    "normal": 3
   },
   "superseded_count": 4,
   "sources": {
@@ -17,137 +17,184 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1552
+        "ms": 1697
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 11571
+        "ms": 40037
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4145
+        "ms": 3784
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 413
+        "ms": 616
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 1036
+        "ms": 225
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 213
+        "ms": 140
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1190
+        "ms": 1286
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 102
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 203
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 617
+        "ms": 692
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 329
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20374
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 660
+        "ms": 611
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 515
+        "ms": 204
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 221
+        "ms": 120
       }
     ]
   },
   "items": [
     {
-      "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
-      "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
-      "snippet": "Speaking in Riyadh, Yemen&#039;s internationally recognised government warns global complacency has emboldened the Houthis.",
-      "published_at": "2026-07-28T00:51:50+00:00",
+      "title": "Ukraine’s Zelenskyy set to meet Trump as Iran and Ukraine wars converge",
+      "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-set-to-meet-trump-as-iran-and-ukraine-wars-converge?traffic_source=rss",
+      "snippet": "The US Senate will vote Tuesday on Russian sanctions, days after Ukraine attacked an Iranian vessel in the Caspian Sea.",
+      "published_at": "2026-07-28T03:16:30+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 57,
       "tags": [
         "geopolitics"
       ],
       "alert": "normal",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
         "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 42.1,
+        "raw": 52.4,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "red sea"
+          "sanctions",
+          "attacked"
         ],
         "geography": [
-          "hormuz",
-          "red sea"
+          "russian",
+          "ukraine"
+        ],
+        "unplanned": [
+          "attacked"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "update_count": 4,
-      "thread_started_at": "2026-07-27T14:00:00+00:00"
+      "thread_started_at": "2026-07-27T14:30:00+00:00"
+    },
+    {
+      "title": "Oil Prices Extend Losses as U.S.-Iran Calm Holds for Another Night",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Extend-Losses-as-US-Iran-Calm-Holds-for-Another-Night.html",
+      "snippet": "Oil prices continued to trend lower in early Asian trade on Tuesday as a fourth night passed without any attacks from either Iran or the United States. At the time of writing, WTI crude was trading at $80.98 per barrel, down 1.97% on the session, while Brent crude had slipped to $86.80 per barrel, a",
+      "published_at": "2026-07-28T03:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 49,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 41.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "wti",
+          "barrel"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Shots fired at US consulate in Toronto for a second time this year",
@@ -160,7 +207,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -175,7 +222,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -199,11 +246,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 47,
+      "score": 39,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -214,7 +261,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.46
       },
       "matched": {
         "supply_disruption": [
@@ -242,12 +289,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 35,
       "tags": [
         "lng",
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -259,7 +306,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 57.1,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.47
       },
       "matched": {
         "lng": [
@@ -288,7 +335,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 40,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -304,7 +351,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.7,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.72
       },
       "matched": {
         "geopolitics": [
@@ -328,7 +375,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 31,
       "tags": [
         "infrastructure",
         "power_system"
@@ -345,7 +392,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.2,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.45
       },
       "matched": {
         "infrastructure": [
@@ -364,46 +411,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Has Burnham kept his promise to do better on Israel’s war on Gaza?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/27/has-burnham-kept-his-promise-to-do-better-on-israels-war-on-gaza?traffic_source=rss",
-      "snippet": "Will Britain&#039;s new cabinet change the country’s role in Israel’s war on Gaza?",
-      "published_at": "2026-07-27T20:12:45+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "britain"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "UK start-up Nuclear Turbines unveils novel reactor concept",
       "url": "https://www.world-nuclear-news.org/articles/uk-start-up-nuclear-turbines-unveils-novel-reactor-concept",
       "snippet": "The spin-off from BAE Systems has raised GBP15 million (USD19.9 million) funding and emerged from stealth with a nuclear reactor design combined with high-temperature turbine technology, which it says will lead to lower energy costs.",
@@ -414,7 +421,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": true,
-      "score": 36,
+      "score": 30,
       "tags": [
         "nuclear",
         "infrastructure"
@@ -431,7 +438,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 63.9,
-        "recency_multiplier": 0.44
+        "recency_multiplier": 0.34
       },
       "matched": {
         "nuclear": [
@@ -449,180 +456,52 @@
       "also_reported_by": []
     },
     {
-      "title": "British court dismisses Bahrain’s bid to block activists’ spyware lawsuit",
-      "url": "https://www.aljazeera.com/news/2026/7/27/british-court-dismisses-bahrains-bid-to-block-activists-spyware-lawsuit?traffic_source=rss",
-      "snippet": "Ruling establishes that countries using spyware on people in the UK can be sued.",
-      "published_at": "2026-07-27T20:32:59+00:00",
+      "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
+      "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
+      "snippet": "Speaking in Riyadh, Yemen&#039;s internationally recognised government warns global complacency has emboldened the Houthis.",
+      "published_at": "2026-07-28T00:51:50+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 14,
       "tags": [
-        "regulation"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 6.2,
-        "geo_band": "primary",
+        "themes": 16.6,
+        "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 31.6,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "regulation": [
-          "ruling"
-        ],
-        "geography": [
-          "uk",
-          "british"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "$100 Oil Puts Big Tech’s $725 Billion AI Bet at Risk",
-      "url": "https://oilprice.com/Energy/Energy-General/100-Oil-Puts-Big-Techs-725-Billion-AI-Bet-at-Risk.html",
-      "snippet": "Crude oil prices are retreating after Brent hit $100 again last week as the United States and Iran took a break from hostilities over the weekend. Yet with the outcome of the war still highly uncertain, the outlook for stock markets has dimmed. Add to that Big Tech’s AI spending binge and fresh warn",
-      "published_at": "2026-07-27T23:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 25.1,
-        "recency_multiplier": 1.0
+        "raw": 42.1,
+        "recency_multiplier": 0.89
       },
       "matched": {
         "geopolitics": [
-          "hostilities",
-          "war"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent"
+          "red sea"
         ],
         "geography": [
-          "united states"
-        ],
-        "speculative": [
-          "outlook for"
+          "hormuz",
+          "red sea"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Kazakhstan Restarts CPC Oil Exports After Week-Long Black Sea Shutdown",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Kazakhstan-Restarts-CPC-Oil-Exports-After-Week-Long-Black-Sea-Shutdown.html",
-      "snippet": "Kazakhstan resumed crude exports through the Caspian Pipeline Consortium (CPC) on Monday after the operator reopened its Black Sea marine terminal and resumed accepting crude from producers following a week-long suspension triggered by drone attacks, Kazakhstan’s Astana Times reported. Two tankers w",
-      "published_at": "2026-07-27T17:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "supply_disruption",
-        "infrastructure",
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 28.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.7,
-        "recency_multiplier": 0.65
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-set-to-meet-trump-as-iran-and-ukraine-wars-converge?traffic_source=rss",
+        "title": "Ukraine’s Zelenskyy set to meet Trump as Iran and Ukraine wars converge",
+        "published_at": "2026-07-28T03:16:30+00:00"
       },
-      "matched": {
-        "supply_disruption": [
-          "shutdown",
-          "suspension"
-        ],
-        "infrastructure": [
-          "pipeline",
-          "terminal"
-        ],
-        "geopolitics": [
-          "drone"
-        ],
-        "oil_macro": [
-          "crude"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Brent Tumbles Nearly 9% on Diplomacy",
-      "url": "https://www.rigzone.com/news/wire/brent_tumbles_nearly_9_on_diplomacy-27-jul-2026-184226-article/?rss=true",
-      "snippet": "Oil prices plunged as the US paused strikes on Iran and supply concerns eased with resumed Kazakh exports.",
-      "published_at": "2026-07-27T20:20:21+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 4.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "oil_macro": [
-          "brent"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "hidden": true
     },
     {
       "title": "Hopes of return to diplomacy as US-Iran hold fire for third day",
@@ -635,7 +514,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 16,
+      "score": 14,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -652,7 +531,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.5,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -673,9 +552,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
-        "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
-        "published_at": "2026-07-28T00:51:50+00:00"
+        "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-set-to-meet-trump-as-iran-and-ukraine-wars-converge?traffic_source=rss",
+        "title": "Ukraine’s Zelenskyy set to meet Trump as Iran and Ukraine wars converge",
+        "published_at": "2026-07-28T03:16:30+00:00"
       },
       "hidden": true
     },
@@ -690,7 +569,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 11,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -709,7 +588,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 69.2,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.4
       },
       "matched": {
         "geopolitics": [
@@ -737,67 +616,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
-        "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
-        "published_at": "2026-07-28T00:51:50+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Temporary Calm in Iran Conflict Masks Risk of Broader Middle East War",
-      "url": "https://oilprice.com/Energy/Energy-General/Temporary-Calm-in-Iran-Conflict-Masks-Risk-of-Broader-Middle-East-War.html",
-      "snippet": "Tehran said it had halted retaliatory attacks against US allies in the Middle East as Washington refrained from attacking Iran for the second night in a row. A top military official in Tehran, meanwhile, threatened to widen Iran’s attacks across the region, suggesting that Iran-allied Houthi rebels ",
-      "published_at": "2026-07-27T14:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 13,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 72.7,
-        "recency_multiplier": 0.5
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "war"
-        ],
-        "supply_disruption": [
-          "halted"
-        ],
-        "geography": [
-          "middle east"
-        ],
-        "unplanned": [
-          "halted"
-        ],
-        "urgency": [
-          "halted"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
-        "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
-        "published_at": "2026-07-28T00:51:50+00:00"
+        "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-set-to-meet-trump-as-iran-and-ukraine-wars-converge?traffic_source=rss",
+        "title": "Ukraine’s Zelenskyy set to meet Trump as Iran and Ukraine wars converge",
+        "published_at": "2026-07-28T03:16:30+00:00"
       },
       "hidden": true
     },
@@ -812,7 +633,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 10,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -828,7 +649,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 60.2,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.42
       },
       "matched": {
         "geopolitics": [
@@ -848,9 +669,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
-        "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
-        "published_at": "2026-07-28T00:51:50+00:00"
+        "url": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-set-to-meet-trump-as-iran-and-ukraine-wars-converge?traffic_source=rss",
+        "title": "Ukraine’s Zelenskyy set to meet Trump as Iran and Ukraine wars converge",
+        "published_at": "2026-07-28T03:16:30+00:00"
       },
       "hidden": true
     }
