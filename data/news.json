@@ -1,160 +1,192 @@
 {
-  "generated_at": "2026-07-27T23:31:51.546850+00:00",
-  "item_count": 17,
+  "generated_at": "2026-07-28T01:00:04.861692+00:00",
+  "item_count": 16,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 5
+    "normal": 4
   },
-  "superseded_count": 3,
+  "superseded_count": 4,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1633
+        "ms": 1552
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 45545
+        "ms": 11571
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2282
+        "ms": 4145
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 275
+        "ms": 413
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 295
+        "ms": 1036
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 181
+        "ms": 213
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 724
+        "ms": 1190
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 343
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 102
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 567
+        "ms": 617
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 92
+        "ms": 329
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 416
+        "ms": 660
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 29,
         "error": null,
-        "ms": 91
+        "ms": 515
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 156
+        "ms": 221
       }
     ]
   },
   "items": [
     {
-      "title": "Hopes of return to diplomacy as US-Iran hold fire for third day",
-      "url": "https://www.aljazeera.com/news/2026/7/27/hopes-of-return-to-diplomacy-as-us-iran-hold-fire-for-third-day?traffic_source=rss",
-      "snippet": "Mediators from Qatar and Pakistan work to restart ceasefire talks amid fragile pause in hostilities.",
-      "published_at": "2026-07-27T21:04:09+00:00",
+      "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
+      "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
+      "snippet": "Speaking in Riyadh, Yemen&#039;s internationally recognised government warns global complacency has emboldened the Houthis.",
+      "published_at": "2026-07-28T00:51:50+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 59,
+      "score": 49,
       "tags": [
-        "geopolitics",
-        "supply_disruption"
+        "geopolitics"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 23.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 57.5,
-        "recency_multiplier": 0.97
+        "raw": 42.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "ceasefire",
-          "hostilities"
-        ],
-        "supply_disruption": [
-          "fire"
+          "red sea"
         ],
         "geography": [
-          "qatar"
-        ],
-        "unplanned": [
-          "fire"
+          "hormuz",
+          "red sea"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 2,
+      "update_count": 4,
       "thread_started_at": "2026-07-27T14:00:00+00:00"
+    },
+    {
+      "title": "Shots fired at US consulate in Toronto for a second time this year",
+      "url": "https://www.bbc.co.uk/news/articles/ckgvnw44rz9o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Police said they engaged in a high-speed car chase but failed to arrest the suspect, who remains at large. Three people were arrested in June after a similar attack.",
+      "published_at": "2026-07-28T00:36:16+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "unplanned": [
+          "failed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Whitegate Power Station - Whitegate Power Station",
@@ -167,7 +199,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 51,
+      "score": 47,
       "tags": [
         "supply_disruption"
       ],
@@ -182,7 +214,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.59
       },
       "matched": {
         "supply_disruption": [
@@ -200,63 +232,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Indian Refinery MRPL Bars Crude Suppliers From Hormuz, Red Sea Routes",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Refinery-MRPL-Bars-Crude-Suppliers-From-Hormuz-Red-Sea-Routes.html",
-      "snippet": "India’s Mangalore Refinery and Petrochemicals Ltd. (MRPL) has become the first Indian refinery to tell crude suppliers to avoid both the Strait of Hormuz and the Red Sea, inserting the restriction into a spot tender for up to 1 million barrels of crude. The tender seeks cargoes for delivery between ",
-      "published_at": "2026-07-27T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 48,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 44.5,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 69.2,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz",
-          "red sea"
-        ],
-        "oil_macro": [
-          "crude",
-          "refinery",
-          "barrels"
-        ],
-        "supply_disruption": [
-          "restriction"
-        ],
-        "lng": [
-          "cargoes"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz",
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "China to Resell First US LNG Cargo in a Year Instead of Importing It",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/China-to-Resell-First-US-LNG-Cargo-in-a-Year-Instead-of-Importing-It.html",
       "snippet": "Chinese buyers that received the first U.S. LNG cargo in over a year plan to resell it on another market to profit from higher prices elsewhere and avoid paying a 25% tariff, sources familiar with the plans told Bloomberg on Monday. The Yangpu port in south China earlier this month received a cargo ",
@@ -267,7 +242,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 47,
+      "score": 43,
       "tags": [
         "lng",
         "geopolitics"
@@ -284,7 +259,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 57.1,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.61
       },
       "matched": {
         "lng": [
@@ -313,11 +288,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -329,7 +304,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -353,7 +328,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "infrastructure",
         "power_system"
@@ -370,7 +345,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.2,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.58
       },
       "matched": {
         "infrastructure": [
@@ -389,6 +364,46 @@
       "also_reported_by": []
     },
     {
+      "title": "Has Burnham kept his promise to do better on Israel’s war on Gaza?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/27/has-burnham-kept-his-promise-to-do-better-on-israels-war-on-gaza?traffic_source=rss",
+      "snippet": "Will Britain&#039;s new cabinet change the country’s role in Israel’s war on Gaza?",
+      "published_at": "2026-07-27T20:12:45+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 0.81
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "britain"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "UK start-up Nuclear Turbines unveils novel reactor concept",
       "url": "https://www.world-nuclear-news.org/articles/uk-start-up-nuclear-turbines-unveils-novel-reactor-concept",
       "snippet": "The spin-off from BAE Systems has raised GBP15 million (USD19.9 million) funding and emerged from stealth with a nuclear reactor design combined with high-temperature turbine technology, which it says will lead to lower energy costs.",
@@ -399,7 +414,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": true,
-      "score": 40,
+      "score": 36,
       "tags": [
         "nuclear",
         "infrastructure"
@@ -416,7 +431,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 63.9,
-        "recency_multiplier": 0.49
+        "recency_multiplier": 0.44
       },
       "matched": {
         "nuclear": [
@@ -434,48 +449,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Has Burnham kept his promise to do better on Israel’s war on Gaza?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/27/has-burnham-kept-his-promise-to-do-better-on-israels-war-on-gaza?traffic_source=rss",
-      "snippet": "Will Britain&#039;s new cabinet change the country’s role in Israel’s war on Gaza?",
-      "published_at": "2026-07-27T20:12:45+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "britain"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-07-27T17:41:46+00:00"
-    },
-    {
       "title": "British court dismisses Bahrain’s bid to block activists’ spyware lawsuit",
       "url": "https://www.aljazeera.com/news/2026/7/27/british-court-dismisses-bahrains-bid-to-block-activists-spyware-lawsuit?traffic_source=rss",
       "snippet": "Ruling establishes that countries using spyware on people in the UK can be sued.",
@@ -486,7 +459,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 34,
       "tags": [
         "regulation"
       ],
@@ -502,7 +475,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.6,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.83
       },
       "matched": {
         "regulation": [
@@ -511,95 +484,6 @@
         "geography": [
           "uk",
           "british"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Kazakhstan Restarts CPC Oil Exports After Week-Long Black Sea Shutdown",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Kazakhstan-Restarts-CPC-Oil-Exports-After-Week-Long-Black-Sea-Shutdown.html",
-      "snippet": "Kazakhstan resumed crude exports through the Caspian Pipeline Consortium (CPC) on Monday after the operator reopened its Black Sea marine terminal and resumed accepting crude from producers following a week-long suspension triggered by drone attacks, Kazakhstan’s Astana Times reported. Two tankers w",
-      "published_at": "2026-07-27T17:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "supply_disruption",
-        "infrastructure",
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 28.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.7,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "supply_disruption": [
-          "shutdown",
-          "suspension"
-        ],
-        "infrastructure": [
-          "pipeline",
-          "terminal"
-        ],
-        "geopolitics": [
-          "drone"
-        ],
-        "oil_macro": [
-          "crude"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Shots fired at US consulate in Toronto for a second time this year",
-      "url": "https://www.bbc.co.uk/news/articles/ckgvnw44rz9o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Police said they engaged in a high-speed car chase but failed to arrest the suspect, who remains at large. Three people were arrested in June after a similar attack.",
-      "published_at": "2026-07-27T16:56:57+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 39.2,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "unplanned": [
-          "failed"
         ]
       },
       "duplicate_count": 0,
@@ -655,6 +539,56 @@
       "also_reported_by": []
     },
     {
+      "title": "Kazakhstan Restarts CPC Oil Exports After Week-Long Black Sea Shutdown",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Kazakhstan-Restarts-CPC-Oil-Exports-After-Week-Long-Black-Sea-Shutdown.html",
+      "snippet": "Kazakhstan resumed crude exports through the Caspian Pipeline Consortium (CPC) on Monday after the operator reopened its Black Sea marine terminal and resumed accepting crude from producers following a week-long suspension triggered by drone attacks, Kazakhstan’s Astana Times reported. Two tankers w",
+      "published_at": "2026-07-27T17:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "supply_disruption",
+        "infrastructure",
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 28.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.7,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "supply_disruption": [
+          "shutdown",
+          "suspension"
+        ],
+        "infrastructure": [
+          "pipeline",
+          "terminal"
+        ],
+        "geopolitics": [
+          "drone"
+        ],
+        "oil_macro": [
+          "crude"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Brent Tumbles Nearly 9% on Diplomacy",
       "url": "https://www.rigzone.com/news/wire/brent_tumbles_nearly_9_on_diplomacy-27-jul-2026-184226-article/?rss=true",
       "snippet": "Oil prices plunged as the US paused strikes on Iran and supply concerns eased with resumed Kazakh exports.",
@@ -665,7 +599,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 33,
+      "score": 30,
       "tags": [
         "oil_macro"
       ],
@@ -680,7 +614,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.81
       },
       "matched": {
         "oil_macro": [
@@ -691,54 +625,17 @@
       "also_reported_by": []
     },
     {
-      "title": "Asyad sells stake in LNG carrier duo",
-      "url": "https://lngprime.com/middle-east/asyad-sells-stake-in-lng-carrier-duo/193554/",
-      "snippet": "Oman LNG Development Foundation and Mars Development and Investment have each purchased a 10 percent stake in Asyad Shipping's two newbuild liquefied natural gas (LNG) carriers.",
-      "published_at": "2026-07-27T13:44:52+00:00",
+      "title": "Hopes of return to diplomacy as US-Iran hold fire for third day",
+      "url": "https://www.aljazeera.com/news/2026/7/27/hopes-of-return-to-diplomacy-as-us-iran-hold-fire-for-third-day?traffic_source=rss",
+      "snippet": "Mediators from Qatar and Pakistan work to restart ceasefire talks amid fragile pause in hostilities.",
+      "published_at": "2026-07-27T21:04:09+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 39.7,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil price dives as US and Iran pause attacks",
-      "url": "https://www.bbc.co.uk/news/articles/clyj834jn5lo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The US says attacks on Iran have been halted to give \"talks some space\", raising hopes of a resolution to the conflict.",
-      "published_at": "2026-07-27T15:08:37+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 16,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -746,37 +643,103 @@
       "alert": "low",
       "nature": "unplanned",
       "why": {
-        "authority": 10.2,
-        "themes": 14.0,
-        "geography": 0.0,
+        "authority": 9.5,
+        "themes": 23.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 60.2,
-        "recency_multiplier": 0.61
+        "raw": 57.5,
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
-          "conflict"
+          "ceasefire",
+          "hostilities"
         ],
         "supply_disruption": [
-          "halted"
+          "fire"
+        ],
+        "geography": [
+          "qatar"
         ],
         "unplanned": [
-          "halted"
-        ],
-        "urgency": [
-          "halted"
+          "fire"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/27/hopes-of-return-to-diplomacy-as-us-iran-hold-fire-for-third-day?traffic_source=rss",
-        "title": "Hopes of return to diplomacy as US-Iran hold fire for third day",
-        "published_at": "2026-07-27T21:04:09+00:00"
+        "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
+        "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
+        "published_at": "2026-07-28T00:51:50+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Indian Refinery MRPL Bars Crude Suppliers From Hormuz, Red Sea Routes",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Refinery-MRPL-Bars-Crude-Suppliers-From-Hormuz-Red-Sea-Routes.html",
+      "snippet": "India’s Mangalore Refinery and Petrochemicals Ltd. (MRPL) has become the first Indian refinery to tell crude suppliers to avoid both the Strait of Hormuz and the Red Sea, inserting the restriction into a spot tender for up to 1 million barrels of crude. The tender seeks cargoes for delivery between ",
+      "published_at": "2026-07-27T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 13,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 44.5,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 69.2,
+        "recency_multiplier": 0.52
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "red sea"
+        ],
+        "oil_macro": [
+          "crude",
+          "refinery",
+          "barrels"
+        ],
+        "supply_disruption": [
+          "restriction"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
+        "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
+        "published_at": "2026-07-28T00:51:50+00:00"
       },
       "hidden": true
     },
@@ -791,7 +754,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -808,7 +771,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 72.7,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.5
       },
       "matched": {
         "geopolitics": [
@@ -832,57 +795,62 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/27/hopes-of-return-to-diplomacy-as-us-iran-hold-fire-for-third-day?traffic_source=rss",
-        "title": "Hopes of return to diplomacy as US-Iran hold fire for third day",
-        "published_at": "2026-07-27T21:04:09+00:00"
+        "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
+        "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
+        "published_at": "2026-07-28T00:51:50+00:00"
       },
       "hidden": true
     },
     {
-      "title": "New UK PM Burnham assures Zelenskyy of continuing Ukraine support",
-      "url": "https://www.aljazeera.com/news/2026/7/27/new-uk-pm-burnham-assures-zelenskyy-of-continuing-ukraine-support?traffic_source=rss",
-      "snippet": "Burnham is the fifth British prime minister to deal with President Zelenskyy since the war on Ukraine started in 2022.",
-      "published_at": "2026-07-27T17:41:46+00:00",
+      "title": "Oil price dives as US and Iran pause attacks",
+      "url": "https://www.bbc.co.uk/news/articles/clyj834jn5lo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The US says attacks on Iran have been halted to give \"talks some space\", raising hopes of a resolution to the conflict.",
+      "published_at": "2026-07-27T15:08:37+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 12,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "supply_disruption"
       ],
       "alert": "low",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
+        "authority": 10.2,
+        "themes": 14.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.74
+        "raw": 60.2,
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
-          "war"
+          "conflict"
         ],
-        "geography": [
-          "uk",
-          "british"
+        "supply_disruption": [
+          "halted"
+        ],
+        "unplanned": [
+          "halted"
+        ],
+        "urgency": [
+          "halted"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/7/27/has-burnham-kept-his-promise-to-do-better-on-israels-war-on-gaza?traffic_source=rss",
-        "title": "Has Burnham kept his promise to do better on Israel’s war on Gaza?",
-        "published_at": "2026-07-27T20:12:45+00:00"
+        "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss",
+        "title": "Houthis want to copy Iran’s Hormuz control in the Red Sea: Yemeni FM",
+        "published_at": "2026-07-28T00:51:50+00:00"
       },
       "hidden": true
     }
