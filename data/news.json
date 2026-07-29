@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-29T01:04:13.339933+00:00",
-  "item_count": 15,
+  "generated_at": "2026-07-29T04:24:37.963682+00:00",
+  "item_count": 8,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 4
+    "normal": 2
   },
-  "superseded_count": 3,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,368 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1852
+        "ms": 1599
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 41157
+        "ms": 11069
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3163
+        "ms": 2876
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 348
+        "ms": 336
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 661
+        "ms": 680
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 108
+        "ms": 77
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 994
+        "ms": 954
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 189
+        "ms": 153
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 643
+        "ms": 546
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 209
+        "ms": 81
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 312
+        "ms": 501
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 34,
         "error": null,
-        "ms": 66
+        "ms": 148
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 154
+        "ms": 168
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, AMERCOEUR 1R",
+      "url": "https://umm.nordpoolgroup.com/#/messages/a45be536-242d-4ff8-897d-80d85b26653f/1",
+      "snippet": "Published: 29.07.2026 03:04:05 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Grid connection failure Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-07-29T01:04:05+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 68,
+      "tags": [
+        "nuclear",
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 20.9,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 78.8,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "nuclear": [
+          "grid connection"
+        ],
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "infrastructure": [
+          "grid"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 5,
+      "also_reported_by": [],
+      "first_seen_at": "2026-07-28T14:02:53+00:00"
+    },
+    {
+      "title": "Oil Prices Surge on Fresh Middle East Strikes and API Crude Draw",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-on-Fresh-Middle-East-Strikes-and-API-Crude-Draw.html",
+      "snippet": "Oil prices spiked in early Asian trade on Wednesday, erasing a significant portion of Tuesday's selloff on the back of renewed hostilities in the Middle East and a bullish U.S. inventory report from the API. At the time of writing, Brent crude had climbed to $87.95 per barrel, up 4.59%, while West T",
+      "published_at": "2026-07-29T03:01:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 53,
+      "tags": [
+        "oil_macro",
+        "geopolitics",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 46.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "geopolitics": [
+          "hostilities"
+        ],
+        "gas_storage": [
+          "inventory"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran war live: US, Saudi forces attack Tehran-aligned groups in Iraq",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/7/29/iran-war-live-us-accuses-irgc-of-surprise-ballistic-missile-attacks?traffic_source=rss",
+      "snippet": "Attacks come as Saudi Arabia intercepts drones and Iran warns of &#039;any action&#039; to maintain its control of Hormuz.",
+      "published_at": "2026-07-29T00:00:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.4,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "attack"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-07-28T18:00:00+00:00"
+    },
+    {
+      "title": "Australia to Study First New Oil Refinery Since 60s",
+      "url": "https://www.rigzone.com/news/wire/australia_to_study_first_new_oil_refinery_since_60s-28-jul-2026-184235-article/?rss=true",
+      "snippet": "Prime Minister Anthony Albanese Tuesday announced a study for a new refinery in Karratha in Western Australia, backed by A$4 million ($2.8 million) of government funds.",
+      "published_at": "2026-07-28T21:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 40,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 48.4,
+        "recency_multiplier": 0.66
+      },
+      "matched": {
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "australia"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran and Oman exchange proposals to manage Strait of Hormuz",
+      "url": "https://www.aljazeera.com/news/2026/7/28/iran-and-oman-exchange-proposals-to-manage-strait-of-hormuz?traffic_source=rss",
+      "snippet": "Omani proposal is based on the Strait of Malacca model, where ships that use the strait provide voluntary fees.",
+      "published_at": "2026-07-28T21:01:19+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.1,
+        "recency_multiplier": 0.66
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "malacca"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "OPEC+ Prepares to Stop Raising Oil Output Targets",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Prepares-to-Stop-Raising-Oil-Output-Targets.html",
+      "snippet": "OPEC+ is preparing to approve one more production increase for September and then put the monthly quota parade on hold through the end of the year. Saudi Arabia, Russia, Iraq, Kuwait, Algeria, Kazakhstan, and Oman are expected to raise their combined September target by about 188,000 barrels per day",
+      "published_at": "2026-07-28T19:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 30,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 39.2,
+        "recency_multiplier": 0.57
+      },
+      "matched": {
+        "oil_macro": [
+          "opec",
+          "opec+",
+          "barrels"
+        ],
+        "geography": [
+          "russia",
+          "algeria"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Yemen’s Houthis claim missile attack on Saudi Arabia oil tanker",
       "url": "https://www.aljazeera.com/news/2026/7/28/yemens-houthis-claim-missile-attack-on-saudi-arabia-oil-tanker?traffic_source=rss",
@@ -117,12 +390,12 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 72,
+      "score": 19,
       "tags": [
         "geopolitics",
         "lng"
       ],
-      "alert": "high",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -134,7 +407,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 77.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -155,530 +428,10 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-07-28T18:00:00+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, AMERCOEUR 1R",
-      "url": "https://umm.nordpoolgroup.com/#/messages/5a4145de-10e0-49b6-b688-9ebd35b87a8f/1",
-      "snippet": "Published: 29.07.2026 00:02:09 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; ",
-      "published_at": "2026-07-28T22:02:09+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 63,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "delay"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 4,
-      "also_reported_by": [],
-      "first_seen_at": "2026-07-28T14:02:53+00:00"
-    },
-    {
-      "title": "Iran war live: US accuses IRGC of ‘surprise’ ballistic missile attacks",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/7/29/iran-war-live-us-accuses-irgc-of-surprise-ballistic-missile-attacks?traffic_source=rss",
-      "snippet": "US claim comes as Saudi Arabia intercepts drones and Iran warns of &#039;any action&#039; to maintain its control of Hormuz.",
-      "published_at": "2026-07-29T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 50,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "war"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-07-28T20:29:42+00:00"
-    },
-    {
-      "title": "Australia to Study First New Oil Refinery Since 60s",
-      "url": "https://www.rigzone.com/news/wire/australia_to_study_first_new_oil_refinery_since_60s-28-jul-2026-184235-article/?rss=true",
-      "snippet": "Prime Minister Anthony Albanese Tuesday announced a study for a new refinery in Karratha in Western Australia, backed by A$4 million ($2.8 million) of government funds.",
-      "published_at": "2026-07-28T21:00:00+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 49,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 4.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 48.4,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "australia"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US Crude Oil Inventories Build Again Despite Hormuz Disruption",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Build-Again-Despite-Hormuz-Disruption.html",
-      "snippet": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States rose by 3.296 million barrels in the week ending July 24. In the week prior, US crude oil inventories grew by 2.603 million barrels. Commercial crude oil inventories excluding the SPR have lost just over",
-      "published_at": "2026-07-28T20:58:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "oil_macro",
-        "supply_disruption",
-        "gas_storage"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.4,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.1,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "supply_disruption": [
-          "disruption"
-        ],
-        "gas_storage": [
-          "inventories"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "OPEC+ Prepares to Stop Raising Oil Output Targets",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Prepares-to-Stop-Raising-Oil-Output-Targets.html",
-      "snippet": "OPEC+ is preparing to approve one more production increase for September and then put the monthly quota parade on hold through the end of the year. Saudi Arabia, Russia, Iraq, Kuwait, Algeria, Kazakhstan, and Oman are expected to raise their combined September target by about 188,000 barrels per day",
-      "published_at": "2026-07-28T19:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 37,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 39.2,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "oil_macro": [
-          "opec",
-          "opec+",
-          "barrels"
-        ],
-        "geography": [
-          "russia",
-          "algeria"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "‘The dream I carried is gone’: Miscarriages rise amid trauma of Gaza’s war",
-      "url": "https://www.aljazeera.com/features/2026/7/28/the-dream-i-carried-is-gone-miscarriages-rise-amid-trauma-of-gazas-war?traffic_source=rss",
-      "snippet": "At al-Awda Hospital, doctors say about 70% of pregnancy losses they see are linked to Israel&#039;s genocide and blockade.",
-      "published_at": "2026-07-28T18:46:57+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 37,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 39.4,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade",
-          "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "New Solar Cell Design Solves A Problem That's Plagued Panels for Decades",
-      "url": "https://oilprice.com/Alternative-Energy/Solar-Energy/New-Solar-Cell-Design-Solves-A-Problem-Thats-Plagued-Panels-for-Decades.html",
-      "snippet": "Solar power is far and away the cheapest form of new energy to install in nearly every context around the world. Even in the United States, where the cost of solar additions has jumped up 18 percent since Trump’s tariffs took hold, solar remains the most affordable option for energy capacity expansi",
-      "published_at": "2026-07-28T20:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 34.7,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "geopolitics": [
-          "tariffs"
-        ],
-        "geography": [
-          "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Edison says QatarEnergy extends force majeure until end of September",
-      "url": "https://lngprime.com/lng-terminals/edison-says-qatarenergy-extends-force-majeure-until-end-of-september/193740/",
-      "snippet": "Italian energy firm Edison, a unit of EDF, said it had received a new force majeure notification from state-owned LNG giant QatarEnergy, affecting supplies scheduled for delivery at the Adriatic LNG terminal in Italy until end of September.",
-      "published_at": "2026-07-28T09:57:56+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "lng",
-        "supply_disruption",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 13.1,
-        "themes": 32.5,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 75.7,
-        "recency_multiplier": 0.36
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "supply_disruption": [
-          "force majeure"
-        ],
-        "infrastructure": [
-          "terminal"
-        ],
-        "geography": [
-          "italy"
-        ],
-        "unplanned": [
-          "force majeure"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Refined Fuels, Not Crude, Are Driving the Oil Market Crunch",
-      "url": "https://oilprice.com/Energy/Energy-General/Refined-Fuels-Not-Crude-Are-Driving-the-Oil-Market-Crunch.html",
-      "snippet": "Oil prices have just come off a fresh two-month high as the crude oil market has tumbled this week amid signals of de-escalation in the U.S.-Iran conflict. Despite the slump in crude prices and the extreme volatility in the past five months, the refined product market continues to tighten with refin",
-      "published_at": "2026-07-28T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 20.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.4,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "geopolitics": [
-          "escalation",
-          "conflict"
-        ],
-        "oil_macro": [
-          "crude"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "EDF teams up with Technip Energies for EPR2 delivery",
-      "url": "https://www.world-nuclear-news.org/articles/edf-teams-up-with-technip-energies-for-epr2-delivery",
-      "snippet": "French engineering and technology company Technip Energies announced it has signed a strategic framework agreement with EDF to support execution, construction management, and delivery of EDF's EPR2 reactor construction programme.",
-      "published_at": "2026-07-28T14:23:30+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.1,
-        "recency_multiplier": 0.51
-      },
-      "matched": {
-        "nuclear": [
-          "reactor"
-        ],
-        "geography": [
-          "french"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "The U.S. Army Just Called China’s Bluff in the Rare Earth War",
-      "url": "https://oilprice.com/Energy/Energy-General/The-US-Army-Just-Called-Chinas-Bluff-in-the-Rare-Earth-War.html",
-      "snippet": "Just recently, in a span of about six weeks, one impressive company was selected by the U.S. Army to build and operate rare earth processing facilities on an American military base…the first time the Army has ever done this. That same company closed $100 million in institutional financing, giving it",
-      "published_at": "2026-07-29T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran and Oman exchange proposals to manage Strait of Hormuz",
-      "url": "https://www.aljazeera.com/news/2026/7/28/iran-and-oman-exchange-proposals-to-manage-strait-of-hormuz?traffic_source=rss",
-      "snippet": "Omani proposal is based on the Strait of Malacca model, where ships that use the strait provide voluntary fees.",
-      "published_at": "2026-07-28T21:01:19+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 13,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz",
-          "malacca"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
         "url": "https://www.aljazeera.com/news/liveblog/2026/7/29/iran-war-live-us-accuses-irgc-of-surprise-ballistic-missile-attacks?traffic_source=rss",
-        "title": "Iran war live: US accuses IRGC of ‘surprise’ ballistic missile attacks",
+        "title": "Iran war live: US, Saudi forces attack Tehran-aligned groups in Iraq",
         "published_at": "2026-07-29T00:00:00+00:00"
       },
       "hidden": true
@@ -694,7 +447,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 9,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -711,7 +464,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.0,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.52
       },
       "matched": {
         "geopolitics": [
@@ -732,57 +485,8 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/7/28/yemens-houthis-claim-missile-attack-on-saudi-arabia-oil-tanker?traffic_source=rss",
-        "title": "Yemen’s Houthis claim missile attack on Saudi Arabia oil tanker",
-        "published_at": "2026-07-28T23:16:44+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Kyiv warns Iran against escalation after Ukraine’s Caspian Sea attack",
-      "url": "https://www.aljazeera.com/news/2026/7/28/kyiv-warns-iran-against-escalation-after-ukraines-caspian-sea-attack?traffic_source=rss",
-      "snippet": "Kyiv claims its Caspian Sea strike targeted Russian warships, denying intent to harm civilian vessels or individuals.",
-      "published_at": "2026-07-28T20:29:42+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "geopolitics": [
-          "escalation",
-          "attack"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
         "url": "https://www.aljazeera.com/news/liveblog/2026/7/29/iran-war-live-us-accuses-irgc-of-surprise-ballistic-missile-attacks?traffic_source=rss",
-        "title": "Iran war live: US accuses IRGC of ‘surprise’ ballistic missile attacks",
+        "title": "Iran war live: US, Saudi forces attack Tehran-aligned groups in Iraq",
         "published_at": "2026-07-29T00:00:00+00:00"
       },
       "hidden": true
