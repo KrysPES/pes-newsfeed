@@ -1,0 +1,29 @@
+name: Chart annotations
+
+# Daily detection + attribution for the trading terminal's chart annotations
+# (PES_Annotations pack). Runs once a day: an episode needs five trading days
+# to form, so nothing here is time critical. The checkout carries the latest
+# committed news.json (the ingest cron commits every 5 minutes), so the news
+# is fresh when attribution reads it. A run that publishes nothing is the
+# normal outcome, not a failure.
+on:
+  schedule:
+    - cron: "45 6 * * *"    # 06:45 UTC daily, after the morning ingest runs
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  annotate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Detect and attribute
+        env:
+          ANNOTATIONS_JOB_KEY: ${{ secrets.ANNOTATIONS_JOB_KEY }}
+        run: python annotations/job.py
