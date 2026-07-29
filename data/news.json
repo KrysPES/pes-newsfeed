@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-29T10:05:47.112338+00:00",
-  "item_count": 21,
+  "generated_at": "2026-07-29T12:12:10.340947+00:00",
+  "item_count": 27,
   "alert_counts": {
     "critical": 0,
-    "high": 2,
-    "normal": 7
+    "high": 1,
+    "normal": 8
   },
-  "superseded_count": 4,
+  "superseded_count": 5,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,146 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1440
+        "ms": 1602
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 302744
+        "ms": 125080
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 12534
+        "ms": 3782
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 406
+        "ms": 317
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 319
+        "ms": 153
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 193
+        "ms": 291
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 46,
+        "count": 45,
         "error": null,
-        "ms": 898
+        "ms": 1346
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 162
+        "ms": 471
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 512
+        "ms": 736
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 135
+        "ms": 342
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 374
+        "ms": 602
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 25,
+        "count": 28,
         "error": null,
-        "ms": 142
+        "ms": 47
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 215
+        "ms": 100
       }
     ]
   },
   "items": [
+    {
+      "title": "Houthis Claim Attack on Saudi Oil Tanker in Red Sea",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Houthis-Claim-Attack-on-Saudi-Oil-Tanker-in-Red-Sea.html",
+      "snippet": "Yemen’s Houthis late on Tuesday claimed an attack on a Saudi oil tanker in the Red Sea, saying that the vessel had violated the blockade the Iran-aligned group announced last week on Saudi shipments in the Red Sea and Bab el-Mandeb Strait. “The Yemeni armed forces carried out a military operation ta",
+      "published_at": "2026-07-29T10:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 71,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "high",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 36.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 77.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "attack",
+          "bab el-mandeb",
+          "red sea"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "bab el-mandeb",
+          "red sea"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, BE, AMERCOEUR 1R",
       "url": "https://umm.nordpoolgroup.com/#/messages/a45be536-242d-4ff8-897d-80d85b26653f/4",
@@ -117,13 +168,13 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 71,
+      "score": 65,
       "tags": [
         "nuclear",
         "supply_disruption",
         "infrastructure"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -134,7 +185,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 78.8,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.83
       },
       "matched": {
         "nuclear": [
@@ -169,12 +220,12 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 68,
+      "score": 63,
       "tags": [
         "geopolitics",
         "lng"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -186,7 +237,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 71.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -207,51 +258,50 @@
       "also_reported_by": []
     },
     {
-      "title": "U.S.-Saudi Consortium Plans $5 Billion Gulf Refinery Outside Hormuz",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Saudi-Consortium-Plans-5-Billion-Gulf-Refinery-Outside-Hormuz.html",
-      "snippet": "A consortium of U.S. and Saudi companies is set to build a new refinery in the Persian Gulf despite the current situation in the region. The facility will have a price tag of $5 billion and a capacity of 200,000 barrels of crude oil daily, Reuters has reported. The consortium, dubbed MERA Oil, inclu",
-      "published_at": "2026-07-29T08:30:00+00:00",
+      "title": "Iran Rejects Oman’s Proposal to Evenly Divide Hormuz Control",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Rejects-Omans-Proposal-to-Evenly-Divide-Hormuz-Control.html",
+      "snippet": "Iran has rejected a proposal from Oman to evenly share control of the lanes in the Strait of Hormuz, as Tehran demands it control most of the critical oil and LNG chokepoint, a senior Iranian official told Reuters on Wednesday, as strikes in the region reignited and dashed hopes for a quick return t",
+      "published_at": "2026-07-29T11:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 63,
+      "has_magnitude": false,
+      "score": 52,
       "tags": [
         "geopolitics",
-        "oil_macro"
+        "lng"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 24.7,
+        "themes": 21.0,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 61.5,
+        "raw": 45.8,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "persian gulf"
+          "strait of hormuz"
         ],
-        "oil_macro": [
-          "crude",
-          "refinery",
-          "barrels"
+        "lng": [
+          "lng"
         ],
         "geography": [
+          "strait of hormuz",
           "hormuz"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 2,
+      "update_count": 3,
       "thread_started_at": "2026-07-29T07:30:00+00:00"
     },
     {
@@ -265,7 +315,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 54,
+      "score": 49,
       "tags": [
         "lng"
       ],
@@ -280,7 +330,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 48.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.86
       },
       "matched": {
         "lng": [
@@ -304,7 +354,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 48,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -321,7 +371,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.5,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -342,6 +392,45 @@
       "also_reported_by": []
     },
     {
+      "title": "Five potential states selected to host US nuclear innovation campuses",
+      "url": "https://www.world-nuclear-news.org/articles/five-potential-states-selected-to-host-us-nuclear-innovation-campuses",
+      "snippet": "Following record levels of interest , the US Department of Energy has announced the selection of Utah, Tennessee, Oklahoma, Louisiana, and Idaho as potential host states for Nuclear Lifecycle Innovation Campuses.",
+      "published_at": "2026-07-29T11:15:35+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "GTT secured orders for 56 LNG carriers in H1",
       "url": "https://lngprime.com/corporate/gtt-secured-orders-for-56-lng-carriers-in-h1/193945/",
       "snippet": "French LNG containment giant GTT received orders for 56 liquefied natural gas carriers, two very large ethane carriers, one FSRU, and five LNG storage tanks in the first half of this year, while its revenue decreased 0.4 percent compared to the same period last year.",
@@ -352,7 +441,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 49,
+      "score": 43,
       "tags": [
         "lng",
         "gas_storage"
@@ -369,7 +458,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 53.7,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.66
       },
       "matched": {
         "lng": [
@@ -397,7 +486,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 42,
       "tags": [
         "lng",
         "infrastructure"
@@ -413,7 +502,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.6,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.73
       },
       "matched": {
         "lng": [
@@ -423,6 +512,42 @@
         ],
         "infrastructure": [
           "first gas"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Investment guide targets nuclear's USD6 trillion challenge",
+      "url": "https://www.world-nuclear-news.org/articles/investment-guide-targets-nuclears-usd6-trillion-challenge",
+      "snippet": "Annual investment in nuclear energy needs to triple to USD250 billion a year to meet projections of a more than tripling of capacity by 2050, according to figures in the inaugural World Nuclear Investment Guide .",
+      "published_at": "2026-07-29T17:09:31+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 33.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
         ]
       },
       "duplicate_count": 0,
@@ -439,11 +564,11 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 39,
       "tags": [
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 12.4,
@@ -455,7 +580,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.87
       },
       "matched": {
         "infrastructure": [
@@ -479,11 +604,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 38,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -495,7 +620,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.71
       },
       "matched": {
         "geopolitics": [
@@ -510,6 +635,43 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-07-29T03:01:00+00:00"
+    },
+    {
+      "title": "Iran hits US in Jordan, US-Saudi strikes on Iraq: Is war spreading?",
+      "url": "https://www.aljazeera.com/news/2026/7/29/iran-hits-us-in-jordan-us-saudi-strikes-on-iraq-is-war-spreading?traffic_source=rss",
+      "snippet": "The US says it intercepts an Iranian &#039;surprise attack&#039; on US forces as fears rise of wider war.",
+      "published_at": "2026-07-29T11:34:58+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "attack"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Ofgem acts to free up grid capacity by tackling speculative data centre projects",
@@ -546,6 +708,47 @@
         ],
         "regulation": [
           "ofgem"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Thousands in Spain return home but new heatwave raises wildfire fears",
+      "url": "https://www.bbc.co.uk/news/articles/cwyjgwg8jddo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Spain and France are both braced for the start of the fourth heatwave so far this summer and some fires have continued to burn.",
+      "published_at": "2026-07-29T11:42:05+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 6.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "heatwave"
+        ],
+        "geography": [
+          "france",
+          "spain"
         ]
       },
       "duplicate_count": 0,
@@ -592,6 +795,46 @@
       "also_reported_by": []
     },
     {
+      "title": "Canada: Allseas to install critical subsea section of remote natural gas pipeline",
+      "url": "https://www.offshore-energy.biz/canada-allseas-to-install-critical-subsea-section-of-remote-natural-gas-pipeline/",
+      "snippet": "Allseas has secured a contract with Western LNG to install the critical subsea section [&#8230;] The post Canada: Allseas to install critical subsea section of remote natural gas pipeline appeared first on Offshore Energy .",
+      "published_at": "2026-07-29T10:20:28+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 11.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Petronas, Hokuriku Electric to renew LNG supply deal",
       "url": "https://lngprime.com/asia/petronas-hokuriku-electric-to-renew-lng-supply-deal/194032/",
       "snippet": "A unit of Malaysia’s energy giant Petronas has signed a heads of agreement with Japan’s utility Hokuriku Electric to negotiate the renewal of a long-term liquefied natural gas (LNG) supply agreement.",
@@ -602,7 +845,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "lng"
       ],
@@ -618,7 +861,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.94
       },
       "matched": {
         "lng": [
@@ -630,129 +873,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Rotterdam LNG bunkering volumes rise in Q2",
-      "url": "https://lngprime.com/europe/rotterdam-lng-bunkering-volumes-rise-in-q2/193964/",
-      "snippet": "LNG bunkering volumes in the Dutch port of Rotterdam rose in the second quarter of this year compared to the previous year.",
-      "published_at": "2026-07-29T05:44:02+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.4,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "dutch"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Cheniere gets OK to introduce feed gas to seventh Corpus Christi expansion train",
-      "url": "https://lngprime.com/lng-terminals/cheniere-gets-ok-to-introduce-feed-gas-to-seventh-corpus-christi-expansion-train/193958/",
-      "snippet": "US LNG exporter Cheniere has won approval from the US FERC to introduce feed gas to the seventh and final train of the Corpus Christi Stage 3 expansion project in Texas.",
-      "published_at": "2026-07-29T05:01:57+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.7,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "feed gas"
-        ],
-        "geography": [
-          "corpus christi"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Northern Lights fleet ready for phase one as fourth LCO2 carrier arrives from China",
-      "url": "https://www.offshore-energy.biz/northern-lights-fleet-ready-for-phase-one-as-fourth-lco2-carrier-arrives-from-china/",
-      "snippet": "The vessel fleet required for first phase operations of the Northern Lights CO2 project [&#8230;] The post Northern Lights fleet ready for phase one as fourth LCO2 carrier arrives from China appeared first on Offshore Energy .",
-      "published_at": "2026-07-29T09:10:03+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "carrier"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-07-29T05:43:50+00:00"
     },
     {
       "title": "Administration of the Bill Discount Scheme",
@@ -791,41 +911,180 @@
       "also_reported_by": []
     },
     {
-      "title": "New Zealand Awards First Offshore Oil License Since Ending Drilling Ban",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/New-Zealand-Awards-First-Offshore-Oil-License-Since-Ending-Drilling-Ban.html",
-      "snippet": "New Zealand’s government has awarded the first offshore oil and gas exploration license after last year lifting a ban on drilling, put in place by the previous government that wanted to focus on a transition from hydrocarbons to electricity from low-carbon sources. The new government, however, is fo",
-      "published_at": "2026-07-29T06:30:00+00:00",
+      "title": "Northern Lights fleet ready for phase one as fourth LCO2 carrier arrives from China",
+      "url": "https://www.offshore-energy.biz/northern-lights-fleet-ready-for-phase-one-as-fourth-lco2-carrier-arrives-from-china/",
+      "snippet": "The vessel fleet required for first phase operations of the Northern Lights CO2 project [&#8230;] The post Northern Lights fleet ready for phase one as fourth LCO2 carrier arrives from China appeared first on Offshore Energy .",
+      "published_at": "2026-07-29T09:10:03+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
       "score": 31,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.7,
+        "recency_multiplier": 0.92
+      },
+      "matched": {
+        "lng": [
+          "carrier"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-07-29T05:43:50+00:00"
+    },
+    {
+      "title": "New Zealand Grants 1st Exploration Permit since Ardern-Era Ban",
+      "url": "https://www.rigzone.com/news/new_zealand_grants_1st_exploration_permit_since_ardernera_ban-29-jul-2026-184240-article/?rss=true",
+      "snippet": "Australia's EnZed Energy won the first oil and gas exploration license issued in New Zealand after the government last year reversed a 2018 ban.",
+      "published_at": "2026-07-29T10:18:52+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
       "tags": [
         "regulation"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 17.6,
-        "geography": 0.0,
+        "authority": 10.9,
+        "themes": 6.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 26.4,
-        "recency_multiplier": 0.88
+        "raw": 22.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "regulation": [
-          "license",
-          "ban on"
+          "license"
+        ],
+        "geography": [
+          "australia"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Cheniere gets OK to introduce feed gas to seventh Corpus Christi expansion train",
+      "url": "https://lngprime.com/lng-terminals/cheniere-gets-ok-to-introduce-feed-gas-to-seventh-corpus-christi-expansion-train/193958/",
+      "snippet": "US LNG exporter Cheniere has won approval from the US FERC to introduce feed gas to the seventh and final train of the Corpus Christi Stage 3 expansion project in Texas.",
+      "published_at": "2026-07-29T05:01:57+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.7,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "feed gas"
+        ],
+        "geography": [
+          "corpus christi"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "U.S.-Saudi Consortium Plans $5 Billion Gulf Refinery Outside Hormuz",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Saudi-Consortium-Plans-5-Billion-Gulf-Refinery-Outside-Hormuz.html",
+      "snippet": "A consortium of U.S. and Saudi companies is set to build a new refinery in the Persian Gulf despite the current situation in the region. The facility will have a price tag of $5 billion and a capacity of 200,000 barrels of crude oil daily, Reuters has reported. The consortium, dubbed MERA Oil, inclu",
+      "published_at": "2026-07-29T08:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 17,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 24.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 61.5,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "geopolitics": [
+          "persian gulf"
+        ],
+        "oil_macro": [
+          "crude",
+          "refinery",
+          "barrels"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Rejects-Omans-Proposal-to-Evenly-Divide-Hormuz-Control.html",
+        "title": "Iran Rejects Oman’s Proposal to Evenly Divide Hormuz Control",
+        "published_at": "2026-07-29T11:30:00+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "ADNOC Defies Hormuz Risks as UAE LNG Exports Continue",
@@ -838,7 +1097,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 18,
+      "score": 16,
       "tags": [
         "geopolitics",
         "lng"
@@ -855,7 +1114,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 60.4,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -879,9 +1138,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Saudi-Consortium-Plans-5-Billion-Gulf-Refinery-Outside-Hormuz.html",
-        "title": "U.S.-Saudi Consortium Plans $5 Billion Gulf Refinery Outside Hormuz",
-        "published_at": "2026-07-29T08:30:00+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Rejects-Omans-Proposal-to-Evenly-Divide-Hormuz-Control.html",
+        "title": "Iran Rejects Oman’s Proposal to Evenly Divide Hormuz Control",
+        "published_at": "2026-07-29T11:30:00+00:00"
       },
       "hidden": true
     },
@@ -896,7 +1155,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 13,
       "tags": [
         "geopolitics"
       ],
@@ -912,7 +1171,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -927,9 +1186,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Saudi-Consortium-Plans-5-Billion-Gulf-Refinery-Outside-Hormuz.html",
-        "title": "U.S.-Saudi Consortium Plans $5 Billion Gulf Refinery Outside Hormuz",
-        "published_at": "2026-07-29T08:30:00+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Rejects-Omans-Proposal-to-Evenly-Divide-Hormuz-Control.html",
+        "title": "Iran Rejects Oman’s Proposal to Evenly Divide Hormuz Control",
+        "published_at": "2026-07-29T11:30:00+00:00"
       },
       "hidden": true
     },
@@ -944,7 +1203,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 12,
+      "score": 10,
       "tags": [
         "oil_macro",
         "geopolitics",
@@ -962,7 +1221,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 46.9,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.57
       },
       "matched": {
         "oil_macro": [
@@ -1001,7 +1260,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 9,
       "tags": [
         "lng"
       ],
@@ -1017,7 +1276,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.71
       },
       "matched": {
         "lng": [
