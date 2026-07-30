@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-30T15:21:39.173497+00:00",
-  "item_count": 26,
+  "generated_at": "2026-07-30T16:56:39.994994+00:00",
+  "item_count": 28,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 7
+    "high": 1,
+    "normal": 9
   },
   "superseded_count": 5,
   "sources": {
@@ -17,111 +17,111 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1494
+        "ms": 1755
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 13736
+        "ms": 14108
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2412
+        "ms": 6362
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 5,
         "error": null,
-        "ms": 277
+        "ms": 1117
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 626
+        "ms": 1014
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 87
+        "ms": 207
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 44,
+        "count": 45,
         "error": null,
-        "ms": 831
+        "ms": 1286
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 402
+        "ms": 407
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 572
+        "ms": 667
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 213
+        "ms": 291
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 581
+        "ms": 566
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 200
+        "ms": 397
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 153
+        "ms": 134
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, GU_504120 (GT7)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/0b73e7e6-28ee-4612-b41c-2d2dd32fd68c/2",
-      "snippet": "Published: 30.07.2026 13:07:08 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Generator Issues Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power F",
-      "published_at": "2026-07-30T11:07:08+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
+      "url": "https://umm.nordpoolgroup.com/#/messages/dde433af-b1be-4ffa-88ab-1b073fd50632/2",
+      "snippet": "Published: 30.07.2026 18:53:10 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-07-30T16:53:10+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 59,
+      "score": 66,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -146,9 +146,52 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 3,
       "also_reported_by": [],
       "first_seen_at": "2026-07-30T07:53:49+00:00"
+    },
+    {
+      "title": "Danube's record low leads to Hungary, Romania nuclear shutdowns",
+      "url": "https://www.world-nuclear-news.org/articles/danubes-record-low-leads-to-hungary-romania-nuclear-shutdowns",
+      "snippet": "The operator of the Paks nuclear power plant in Hungary has announced it will have to be fully shut down within the next 72 hours because of record-low water levels in the River Danube. Romania's Cernavoda has also shut down one of its two units.",
+      "published_at": "2026-07-30T15:09:55+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 60,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 57.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "announced",
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Shell CEO: LNG Canada Phase 2 FID likely by end of this year",
@@ -161,7 +204,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 53,
       "tags": [
         "lng"
       ],
@@ -176,7 +219,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "lng": [
@@ -193,6 +236,88 @@
       "thread_started_at": "2026-07-30T13:30:01+00:00"
     },
     {
+      "title": "Iraq Leader’s Successful Visit to Washington Shows New Path Forward with U.S.",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/Iraq-Leaders-Successful-Visit-to-Washington-Shows-New-Path-Forward-with-US.html",
+      "snippet": "Iraq’s new prime minister, Ali Al-Zaidi, was first regarded as a political newcomer with no prior experience in government or political office, but he understood enough about Iraq’s interests to insist his first overseas trip be to the United States, unlike his predecessors, whose first official vis",
+      "published_at": "2026-07-30T16:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "trip"
+        ],
+        "geography": [
+          "united states"
+        ],
+        "unplanned": [
+          "trip"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Republicans delay vote on Trump’s US attorney general pick amid concerns",
+      "url": "https://www.aljazeera.com/news/2026/7/30/republicans-delay-vote-on-trumps-us-attorney-general-pick-amid-concerns?traffic_source=rss",
+      "snippet": "Senate committee postpones vote as key Republican says he has not received information on &#039;anti-weaponisation&#039; fund.",
+      "published_at": "2026-07-30T15:36:35+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 11.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 40.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "vote on"
+        ],
+        "unplanned": [
+          "delay"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Energy price cap: proposed changes to the Contracts for Difference cost allowance",
       "url": "https://www.ofgem.gov.uk/consultation/energy-price-cap-proposed-changes-contracts-difference-cost-allowance",
       "snippet": "Our proposal to adjust the Contracts for Difference allowance in the energy price cap.",
@@ -203,7 +328,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 47,
       "tags": [
         "regulation",
         "geopolitics",
@@ -220,7 +345,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.8,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.8
       },
       "matched": {
         "regulation": [
@@ -249,7 +374,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 47,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -266,7 +391,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 65.7,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
@@ -299,7 +424,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 46,
       "tags": [
         "lng",
         "infrastructure"
@@ -315,7 +440,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "lng": [
@@ -342,7 +467,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 45,
       "tags": [
         "lng",
         "geopolitics"
@@ -359,7 +484,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.1,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.56
       },
       "matched": {
         "lng": [
@@ -381,6 +506,84 @@
       "also_reported_by": []
     },
     {
+      "title": "US GDP growth dips as inflation and trade deficits pressure economy",
+      "url": "https://www.aljazeera.com/economy/2026/7/30/us-gdp-growth-dips-as-inflation-and-trade-deficits-pressure-economy?traffic_source=rss",
+      "snippet": "GDP grew by 1.5 percent in the second quarter following a 2.1 percent increase in the first quarter.",
+      "published_at": "2026-07-30T15:52:47+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 42,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 12.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "inflation",
+          "gdp"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "BP Starts Up US Gulf Expansion Project",
+      "url": "https://www.rigzone.com/news/bp_starts_up_us_gulf_expansion_project-30-jul-2026-184258-article/?rss=true",
+      "snippet": "BP has raised the production capacity of the Atlantis deepwater field by 10,000 barrels of oil equivalent a day.",
+      "published_at": "2026-07-30T15:16:11+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "us gulf",
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Hormuz Traffic Shows Defiance",
       "url": "https://www.rigzone.com/news/wire/hormuz_traffic_shows_defiance-30-jul-2026-184249-article/?rss=true",
       "snippet": "Shipping across the crucial Strait of Hormuz has picked up in recent days despite a continuation of hostilities in the Middle East, with the U.S. claiming its navy escorted some tankers across the waterway.",
@@ -391,11 +594,11 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -407,7 +610,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.5,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.61
       },
       "matched": {
         "geopolitics": [
@@ -423,17 +626,17 @@
       "also_reported_by": []
     },
     {
-      "title": "At least five members of same family killed in Russian missile attack, Zelensky says",
-      "url": "https://www.bbc.co.uk/news/articles/cy8mk59l5jzo?at_medium=RSS&at_campaign=rss",
-      "snippet": "A six-year-old girl and two boys, aged 11 and 17, were among six killed in a village near the central city of Kryvyi Rih.",
-      "published_at": "2026-07-30T15:20:19+00:00",
+      "title": "Missile that left crater deep inside Poland was probably Russian - Polish PM",
+      "url": "https://www.bbc.co.uk/news/articles/cwymkgenv2ro?at_medium=RSS&at_campaign=rss",
+      "snippet": "The missile left a 10m-wide (33ft) crater a short distance from the village of Tarnawa Kolonia, about 100km from the border with Ukraine.",
+      "published_at": "2026-07-30T15:35:50+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "geopolitics"
       ],
@@ -441,29 +644,70 @@
       "nature": "",
       "why": {
         "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 33.1,
+        "raw": 29.2,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "missile",
-          "attack"
+          "missile"
         ],
         "geography": [
-          "russian"
+          "poland"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "update_count": 1,
+      "thread_started_at": "2026-07-30T15:20:19+00:00"
+    },
+    {
+      "title": "Oil Price Shock Fuels 35% Surge in Global EV Sales",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Price-Shock-Fuels-35-Surge-in-Global-EV-Sales.html",
+      "snippet": "Following a subdued start to the year, sales of electric vehicles (EVs) jumped in the second quarter after the Middle East crisis slashed crude supply and hiked oil and fuel prices, the International Energy Agency (IEA) said in a report on Thursday. Global sales of electric cars fell in the first qu",
+      "published_at": "2026-07-30T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 38,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 30.2,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "middle east"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-07-30T13:38:50+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Oil Prices Slip Despite New Attacks Across the Middle East",
@@ -476,7 +720,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 36,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -494,7 +738,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 64.7,
-        "recency_multiplier": 0.49
+        "recency_multiplier": 0.43
       },
       "matched": {
         "geopolitics": [
@@ -511,221 +755,6 @@
         ],
         "geography": [
           "bab el-mandeb"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Price Shock Fuels 35% Surge in Global EV Sales",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Price-Shock-Fuels-35-Surge-in-Global-EV-Sales.html",
-      "snippet": "Following a subdued start to the year, sales of electric vehicles (EVs) jumped in the second quarter after the Middle East crisis slashed crude supply and hiked oil and fuel prices, the International Energy Agency (IEA) said in a report on Thursday. Global sales of electric cars fell in the first qu",
-      "published_at": "2026-07-30T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 39,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 30.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Modifications to the carbon dioxide transport and storage Price Control Financial Instruments",
-      "url": "https://www.ofgem.gov.uk/decision/modifications-carbon-dioxide-transport-and-storage-price-control-financial-instruments",
-      "snippet": "We have determined to modify the carbon dioxide transport and storage Price Control Financial Model, Handbook and Guidance.",
-      "published_at": "2026-07-30T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "regulation",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 15.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.5,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "regulation": [
-          "price control"
-        ],
-        "gas_storage": [
-          "storage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Carbon Storage Industry Given 'Significant Boost', NSTA Says",
-      "url": "https://www.rigzone.com/news/carbon_storage_industry_given_significant_boost_nsta_says-30-jul-2026-184250-article/?rss=true",
-      "snippet": "The UK's North Sea Transition Authority announced that the carbon storage industry 'has been given a significant boost' with the publication of two NSTA commissioned studies.",
-      "published_at": "2026-07-30T09:46:24+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 6.7,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 37.7,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "urgency": [
-          "announced"
-        ],
-        "speculative": [
-          "studies"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Shell Maintains Bumper Buyback as Profit Surges",
-      "url": "https://oilprice.com/Energy/Energy-General/Shell-Maintains-Bumper-Buyback-as-Profit-Surges.html",
-      "snippet": "Shell has said it will continue its bumper share buyback programme after revealing the Iran war’s effect on oil prices and trading volumes helped it book a near-record profit. The Anglo-Dutch giant’s net profit spiked to $9.8bn between April and July, more than double the same period last year and b",
-      "published_at": "2026-07-30T14:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "dutch"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Goldman Sachs: Diesel Crunch Is Now the Biggest Threat in Oil Markets",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Diesel-Crunch-Is-Now-the-Biggest-Threat-in-Oil-Markets.html",
-      "snippet": "The biggest oil supply squeeze is currently in diesel markets amid the lowest global refining activity for this time of year since the 2020 pandemic, Goldman Sachs says. War-induced refinery outages in the Middle East and Russia have collapsed global fuel supply, especially of diesel, while increase",
-      "published_at": "2026-07-30T12:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 15.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.3,
-        "recency_multiplier": 0.94
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "supply_disruption": [
-          "outages"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "russia",
-          "middle east"
         ]
       },
       "duplicate_count": 0,
@@ -774,7 +803,7 @@
       "title": "Chinese helium turbine test facility completes hot testing",
       "url": "https://www.world-nuclear-news.org/articles/chinese-helium-turbine-test-facility-completes-hot-testing",
       "snippet": "China's first megawatt-class helium turbine test facility, constructed by China National Nuclear Corporation subsidiary CNNC Huaxing, has successfully completed its hot power generation test.",
-      "published_at": "2026-07-30T13:04:49+00:00",
+      "published_at": "2026-07-30T16:04:49+00:00",
       "type": "news",
       "source": "world_nuclear_news",
       "source_name": "World Nuclear News",
@@ -797,7 +826,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.1,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 1.0
       },
       "matched": {
         "nuclear": [
@@ -805,6 +834,181 @@
         ],
         "geography": [
           "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Shell Maintains Bumper Buyback as Profit Surges",
+      "url": "https://oilprice.com/Energy/Energy-General/Shell-Maintains-Bumper-Buyback-as-Profit-Surges.html",
+      "snippet": "Shell has said it will continue its bumper share buyback programme after revealing the Iran war’s effect on oil prices and trading volumes helped it book a near-record profit. The Anglo-Dutch giant’s net profit spiked to $9.8bn between April and July, more than double the same period last year and b",
+      "published_at": "2026-07-30T14:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.7,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "dutch"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Carbon Storage Industry Given 'Significant Boost', NSTA Says",
+      "url": "https://www.rigzone.com/news/carbon_storage_industry_given_significant_boost_nsta_says-30-jul-2026-184250-article/?rss=true",
+      "snippet": "The UK's North Sea Transition Authority announced that the carbon storage industry 'has been given a significant boost' with the publication of two NSTA commissioned studies.",
+      "published_at": "2026-07-30T09:46:24+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 6.7,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 37.7,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "uk"
+        ],
+        "urgency": [
+          "announced"
+        ],
+        "speculative": [
+          "studies"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Modifications to the carbon dioxide transport and storage Price Control Financial Instruments",
+      "url": "https://www.ofgem.gov.uk/decision/modifications-carbon-dioxide-transport-and-storage-price-control-financial-instruments",
+      "snippet": "We have determined to modify the carbon dioxide transport and storage Price Control Financial Model, Handbook and Guidance.",
+      "published_at": "2026-07-30T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "regulation",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 15.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.5,
+        "recency_multiplier": 0.8
+      },
+      "matched": {
+        "regulation": [
+          "price control"
+        ],
+        "gas_storage": [
+          "storage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Goldman Sachs: Diesel Crunch Is Now the Biggest Threat in Oil Markets",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Diesel-Crunch-Is-Now-the-Biggest-Threat-in-Oil-Markets.html",
+      "snippet": "The biggest oil supply squeeze is currently in diesel markets amid the lowest global refining activity for this time of year since the 2020 pandemic, Goldman Sachs says. War-induced refinery outages in the Middle East and Russia have collapsed global fuel supply, especially of diesel, while increase",
+      "published_at": "2026-07-30T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 15.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.3,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "supply_disruption": [
+          "outages"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "russia",
+          "middle east"
         ]
       },
       "duplicate_count": 0,
@@ -821,7 +1025,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 31,
       "tags": [
         "nuclear"
       ],
@@ -837,7 +1041,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.1,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.74
       },
       "matched": {
         "nuclear": [
@@ -861,7 +1065,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 30,
       "tags": [
         "infrastructure",
         "regulation",
@@ -878,7 +1082,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.0,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.8
       },
       "matched": {
         "infrastructure": [
@@ -895,127 +1099,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Why is Saudi Arabia forming a coalition to protect the Red Sea?",
-      "url": "https://www.aljazeera.com/news/2026/7/30/why-is-saudi-arabia-forming-a-coalition-to-protect-the-red-sea?traffic_source=rss",
-      "snippet": "The alliance aims to defend shipping from attacks by Iran-backed Houthis in Yemen.",
-      "published_at": "2026-07-30T10:18:53+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 30.1,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "geopolitics": [
-          "red sea"
-        ],
-        "geography": [
-          "red sea"
-        ],
-        "speculative": [
-          "aims to"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Market Facilitator and Flexibility Market Asset Registration annual performance assessment: 2025 to 2026",
-      "url": "https://www.ofgem.gov.uk/transparency-document/market-facilitator-and-flexibility-market-asset-registration-annual-performance-assessment-2025-2026",
-      "snippet": "Our first annual assessment of Elexon’s performance as Market Facilitator and Flexibility Market Asset Registration (FMAR) delivery body.",
-      "published_at": "2026-07-30T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "regulation",
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 9.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.6,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "regulation": [
-          "elexon"
-        ],
-        "power_system": [
-          "flexibility"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "CCEC bags new LNG carrier charter deal",
-      "url": "https://lngprime.com/europe/ccec-bags-new-lng-carrier-charter-deal/194111/",
-      "snippet": "LNG carrier owner Capital Clean Energy Carriers (CCEC) has secured a time charter deal for one of its newbuild liquefied natural gas carriers.",
-      "published_at": "2026-07-30T07:48:02+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 21.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.0,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier",
-          "charter"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Iran Says Two Oil Tankers Ditched Attempt to Transit Hormuz",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Says-Two-Oil-Tankers-Ditched-Attempt-to-Transit-Hormuz.html",
       "snippet": "Two oil tankers that had attempted to transit the Strait of Hormuz with U.S. support via the southern lane close to Oman have turned back after one of them caught fire, Iran’s Islamic Revolutionary Guard Corps (IRGC) said on Thursday, as the war in the Middle East shows no signs of abating. “Last ni",
@@ -1026,7 +1109,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 20,
+      "score": 18,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -1043,7 +1126,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 75.4,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -1082,7 +1165,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 16,
+      "score": 14,
       "tags": [
         "lng",
         "geopolitics"
@@ -1099,7 +1182,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 45.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.89
       },
       "matched": {
         "lng": [
@@ -1126,10 +1209,10 @@
       "hidden": true
     },
     {
-      "title": "US launches 'heavy' strikes on Iran after attempted attack on American troops",
-      "url": "https://www.bbc.co.uk/news/articles/c74gwdzywmeo?at_medium=RSS&at_campaign=rss",
-      "snippet": "After a short period of relative calm when hostilities were paused, both sides have now restarted missile attacks.",
-      "published_at": "2026-07-30T10:49:14+00:00",
+      "title": "At least five members of same family killed in Russian missile attack, Zelensky says",
+      "url": "https://www.bbc.co.uk/news/articles/cy8mk59l5jzo?at_medium=RSS&at_campaign=rss",
+      "snippet": "A six-year-old girl and two boys, aged 11 and 17, were among six killed in a village near the central city of Kryvyi Rih.",
+      "published_at": "2026-07-30T15:20:19+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -1144,79 +1227,32 @@
       "nature": "",
       "why": {
         "authority": 10.2,
-        "themes": 26.9,
-        "geography": 0.0,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 37.1,
-        "recency_multiplier": 0.82
+        "raw": 33.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
           "missile",
-          "hostilities",
           "attack"
+        ],
+        "geography": [
+          "russian"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Geopolitics/Middle-East/Irans-Strike-on-Jordan-Signals-a-More-Aggressive-Military-Strategy.html",
-        "title": "Iran's Strike on Jordan Signals a More Aggressive Military Strategy",
-        "published_at": "2026-07-30T15:00:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Missile that left crater deep inside Poland was probably Russian - Polish PM",
-      "url": "https://www.bbc.co.uk/news/articles/cwymkgenv2ro?at_medium=RSS&at_campaign=rss",
-      "snippet": "The missile left a 10m-wide (33ft) crater a short distance from the village of Tarnawa Kolonia, about 100km from the border with Ukraine.",
-      "published_at": "2026-07-30T13:38:50+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 11,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "missile"
-        ],
-        "geography": [
-          "poland"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ],
-      "first_seen_at": "2026-07-30T10:13:52+00:00",
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cy8mk59l5jzo?at_medium=RSS&at_campaign=rss",
-        "title": "At least five members of same family killed in Russian missile attack, Zelensky says",
-        "published_at": "2026-07-30T15:20:19+00:00"
+        "url": "https://www.bbc.co.uk/news/articles/cwymkgenv2ro?at_medium=RSS&at_campaign=rss",
+        "title": "Missile that left crater deep inside Poland was probably Russian - Polish PM",
+        "published_at": "2026-07-30T15:35:50+00:00"
       },
       "hidden": true
     },
@@ -1231,7 +1267,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 10,
       "tags": [
         "lng"
       ],
@@ -1247,7 +1283,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.89
       },
       "matched": {
         "lng": [
@@ -1264,6 +1300,51 @@
         "url": "https://lngprime.com/americas/shell-ceo-lng-canada-phase-2-fid-likely-by-end-of-this-year/194157/",
         "title": "Shell CEO: LNG Canada Phase 2 FID likely by end of this year",
         "published_at": "2026-07-30T14:00:59+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "US launches 'heavy' strikes on Iran after attempted attack on American troops",
+      "url": "https://www.bbc.co.uk/news/articles/c74gwdzywmeo?at_medium=RSS&at_campaign=rss",
+      "snippet": "After a short period of relative calm when hostilities were paused, both sides have now restarted missile attacks.",
+      "published_at": "2026-07-30T10:49:14+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 10,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 26.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.1,
+        "recency_multiplier": 0.73
+      },
+      "matched": {
+        "geopolitics": [
+          "missile",
+          "hostilities",
+          "attack"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Geopolitics/Middle-East/Irans-Strike-on-Jordan-Signals-a-More-Aggressive-Military-Strategy.html",
+        "title": "Iran's Strike on Jordan Signals a More Aggressive Military Strategy",
+        "published_at": "2026-07-30T15:00:00+00:00"
       },
       "hidden": true
     }
