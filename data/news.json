@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-30T23:29:57.287413+00:00",
-  "item_count": 16,
+  "generated_at": "2026-07-31T01:08:02.480152+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 5
+    "normal": 4
   },
   "superseded_count": 0,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1341
+        "ms": 2136
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18551
+        "ms": 22661
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4097
+        "ms": 3715
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 5,
         "error": null,
-        "ms": 721
+        "ms": 319
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 870
+        "ms": 143
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 257
+        "ms": 132
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1079
+        "ms": 1337
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 259
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 43
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 625
+        "ms": 683
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20175
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 390
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 654
+        "ms": 687
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 252
+        "ms": 267
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 292
+        "ms": 61
       }
     ]
   },
@@ -178,7 +178,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 58.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -197,52 +197,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Viral cricket scandal sees ‘Clicky Ponting’ suspended from UK team",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/30/amateur-cricketer-accused-of-faking-an-edge-with-a-finger-snap?traffic_source=rss",
-      "snippet": "Viral cricket scandal sees &#039;Clicky Ponting&#039; suspended from UK team",
-      "published_at": "2026-07-30T18:12:02+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 58,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 69.9,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "supply_disruption": [
-          "suspended"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "unplanned": [
-          "suspended"
-        ],
-        "urgency": [
-          "suspended"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Gulf Oil Exports Struggle to Recover Despite Higher Hormuz Traffic",
       "url": "https://oilprice.com/Energy/Energy-General/Gulf-Oil-Exports-Struggle-to-Recover-Despite-Higher-Hormuz-Traffic.html",
       "snippet": "Shipping traffic through the Strait of Hormuz slightly increased as US-Iran negotiations remained ongoing in an effort to restore peace after the memorandum of understanding collapsed amid two weeks of tit-for-tat strikes, according to Pakistan's Foreign Ministry spokesperson Tahir Andrabi, who prov",
@@ -253,7 +207,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 45,
       "tags": [
         "geopolitics"
       ],
@@ -269,7 +223,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.4,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -279,6 +233,91 @@
         "geography": [
           "strait of hormuz",
           "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Drops Amid Mixed Supply Signals",
+      "url": "https://www.rigzone.com/news/wire/oil_drops_amid_mixed_supply_signals-30-jul-2026-184259-article/?rss=true",
+      "snippet": "Oil prices fell as increased shipping through the Strait of Hormuz offset escalating geopolitical tensions.",
+      "published_at": "2026-07-30T19:47:12+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics",
+        "carbon"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 19.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 46.6,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "carbon": [
+          "offset"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UK left-wing MP Diane Abbott reinstated by Labour Party after suspension",
+      "url": "https://www.aljazeera.com/news/2026/7/30/uk-left-wing-mp-diane-abbott-reinstated-by-labour-party-after-suspension?traffic_source=rss",
+      "snippet": "Diane Abbott returns to Labour, a year after her suspension over comments about racism.",
+      "published_at": "2026-07-30T23:29:09+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspension"
+        ],
+        "geography": [
+          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -295,11 +334,11 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 39,
       "tags": [
         "nuclear"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 13.9,
@@ -310,7 +349,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.1,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.54
       },
       "matched": {
         "nuclear": [
@@ -328,7 +367,7 @@
       "also_reported_by": []
     },
     {
-      "title": "Pakistan coal mine explosion kills at least 11, traps dozens",
+      "title": "Pakistan coal mine explosion kills at least 32 miners",
       "url": "https://www.aljazeera.com/news/2026/7/30/pakistan-coal-mine-explosion-kills-at-least-11-traps-dozens?traffic_source=rss",
       "snippet": "Accidents common in Pakistan’s coal mining industry, particularly in Balochistan, where many mines lack basic safety.",
       "published_at": "2026-07-30T20:07:56+00:00",
@@ -338,11 +377,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 38,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -353,7 +392,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.79
       },
       "matched": {
         "supply_disruption": [
@@ -361,6 +400,46 @@
         ],
         "unplanned": [
           "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Saudi Gulf Oil Loadings Still Subdued",
+      "url": "https://www.rigzone.com/news/wire/saudi_gulf_oil_loadings_still_subdued-30-jul-2026-184256-article/?rss=true",
+      "snippet": "Oil loadings by Saudi Arabia and other major producers inside the Persian Gulf remained subdued.",
+      "published_at": "2026-07-30T21:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 16.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.6,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "geopolitics": [
+          "persian gulf"
+        ],
+        "geography": [
+          "gulf"
         ]
       },
       "duplicate_count": 0,
@@ -377,7 +456,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -392,7 +471,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.2,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.65
       },
       "matched": {
         "geopolitics": [
@@ -416,7 +495,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 33,
       "tags": [
         "lng"
       ],
@@ -431,7 +510,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.9,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.5
       },
       "matched": {
         "lng": [
@@ -456,7 +535,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
@@ -472,7 +551,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.5,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -496,7 +575,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "nuclear"
       ],
@@ -512,7 +591,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.0,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.58
       },
       "matched": {
         "nuclear": [
@@ -539,7 +618,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 30,
       "tags": [
         "weather"
       ],
@@ -555,7 +634,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.6,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.85
       },
       "matched": {
         "weather": [
@@ -563,222 +642,6 @@
         ],
         "geography": [
           "europe"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "U.S. GDP Growth Slows to 1.5% in Second Quarter, Missing Forecasts",
-      "url": "https://oilprice.com/Finance/the-Economy/US-GDP-Growth-Slows-to-15-in-Second-Quarter-Missing-Forecasts.html",
-      "snippet": "The US economy grew at a far weaker than expected pace in the second quarter despite a pickup in consumer spending and solid business investment. According to the BEA, GDP (inflation adjusted) rose just 1.5% in the period, according to the first estimate issued Thursday by the Bureau of Economic Ana",
-      "published_at": "2026-07-30T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 32,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 12.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 33.6,
-        "recency_multiplier": 0.71
-      },
-      "matched": {
-        "oil_macro": [
-          "inflation",
-          "gdp"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Energy price cap: proposed changes to the Contracts for Difference cost allowance",
-      "url": "https://www.ofgem.gov.uk/consultation/energy-price-cap-proposed-changes-contracts-difference-cost-allowance",
-      "snippet": "Our proposal to adjust the Contracts for Difference allowance in the energy price cap.",
-      "published_at": "2026-07-30T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "regulation",
-        "geopolitics",
-        "carbon"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 33.7,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.8,
-        "recency_multiplier": 0.48
-      },
-      "matched": {
-        "regulation": [
-          "cap",
-          "price cap",
-          "contracts for difference"
-        ],
-        "geopolitics": [
-          "price cap"
-        ],
-        "carbon": [
-          "allowance"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Egypt confirms drone caused Damietta FSRU fire",
-      "url": "https://lngprime.com/africa/egypt-confirms-drone-caused-damietta-fsru-fire/194120/",
-      "snippet": "Egypt’s government confirmed on Thursday that a drone caused the fire on board the 138,350-cbm FSRU Energos Winter in Damietta on Wednesday.",
-      "published_at": "2026-07-30T08:16:50+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 13.1,
-        "themes": 16.5,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 65.7,
-        "recency_multiplier": 0.36
-      },
-      "matched": {
-        "geopolitics": [
-          "drone"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "lng": [
-          "fsru"
-        ],
-        "unplanned": [
-          "fire"
-        ],
-        "urgency": [
-          "confirmed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Why is US GDP growth slowing, and how can it be reversed?",
-      "url": "https://www.aljazeera.com/economy/2026/7/30/why-is-us-gdp-growth-slowing-and-how-can-it-be-reversed?traffic_source=rss",
-      "snippet": "Tariffs and oil price hikes create a supply shock, dragging down US economic growth in the second quarter of 2026.",
-      "published_at": "2026-07-30T21:39:37+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 14.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "tariffs"
-        ],
-        "oil_macro": [
-          "gdp"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "NextDecade inks deal with Baker Hughes to secure equipment for sixth Rio Grande LNG train",
-      "url": "https://lngprime.com/americas/nextdecade-inks-deal-with-baker-hughes-to-secure-equipment-for-sixth-train/194146/",
-      "snippet": "US LNG developer NextDecade has signed a reservation agreement with compatriot Baker Hughes to secure main refrigeration compressors for the planned sixth liquefaction train at its Rio Grande LNG terminal in the Port of Brownsville, Texas, according to Matt Schatzman, NextDecade chairman and CEO.",
-      "published_at": "2026-07-30T13:21:21+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 30.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.2,
-        "recency_multiplier": 0.53
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "liquefaction",
-          "lng terminal",
-          "liquefaction train"
-        ],
-        "infrastructure": [
-          "terminal"
         ]
       },
       "duplicate_count": 0,
