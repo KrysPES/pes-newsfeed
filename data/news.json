@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-07-31T21:51:23.767506+00:00",
-  "item_count": 12,
+  "generated_at": "2026-07-31T22:46:40.764975+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 2,
-    "normal": 7
+    "high": 1,
+    "normal": 6
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1536
+        "ms": 1929
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 25070
+        "ms": 40080
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3361
+        "ms": 18890
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 670
+        "ms": 540
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 294
+        "ms": 623
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 171
+        "ms": 179
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 841
+        "ms": 1522
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 46
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 233
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 576
+        "ms": 791
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 78
+        "ms": 448
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 494
+        "ms": 520
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 39,
         "error": null,
-        "ms": 355
+        "ms": 47
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 198
+        "ms": 64
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 76,
+      "score": 74,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -135,7 +135,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 118.0,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.71
       },
       "matched": {
         "geopolitics": [
@@ -176,11 +176,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 65,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -191,7 +191,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -208,53 +208,6 @@
       "duplicate_count": 4,
       "also_reported_by": [],
       "first_seen_at": "2026-07-31T09:16:48+00:00"
-    },
-    {
-      "title": "Spain's PM blames traffickers after 60,000 migrants reach Ceuta from Morocco",
-      "url": "https://www.bbc.co.uk/news/articles/cx2kp639yx4o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Spain said most had returned to Morocco by Friday evening, as Italy suspended its Schengen agreement on free movement with Madrid.",
-      "published_at": "2026-07-31T17:03:47+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 57,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 64.6,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "supply_disruption": [
-          "suspended"
-        ],
-        "geography": [
-          "italy",
-          "spain"
-        ],
-        "unplanned": [
-          "suspended"
-        ],
-        "urgency": [
-          "suspended"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "Powerful El Nino to intensify heat on ‘a planet already on fire’: UN",
@@ -283,7 +236,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -301,6 +254,53 @@
       "also_reported_by": []
     },
     {
+      "title": "Spain's PM blames traffickers after 60,000 migrants reach Ceuta from Morocco",
+      "url": "https://www.bbc.co.uk/news/articles/cx2kp639yx4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Spain said most had returned to Morocco by Friday evening, as Italy suspended its Schengen agreement on free movement with Madrid.",
+      "published_at": "2026-07-31T17:03:47+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 54,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 64.6,
+        "recency_multiplier": 0.75
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "geography": [
+          "italy",
+          "spain"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Why Trump’s Trade Threat Puts Spain’s Energy Security on the Line",
       "url": "https://oilprice.com/Energy/Energy-General/Why-Trumps-Trade-Threat-Puts-Spains-Energy-Security-on-the-Line.html",
       "snippet": "Donald Trump’s July 8 order to halt trade with Spain has yet to become an energy embargo, but Madrid can no longer dismiss it as political theatre. It was the second such threat since March 2026, this time delivered directly to Treasury Secretary Scott Bessent after Spain refused to commit 5% of GDP",
@@ -311,7 +311,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 49,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -329,7 +329,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 47.7,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -359,7 +359,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -375,7 +375,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -400,7 +400,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 45,
+      "score": 42,
       "tags": [
         "lng"
       ],
@@ -416,7 +416,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 60.0,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.57
       },
       "matched": {
         "lng": [
@@ -433,6 +433,56 @@
       "also_reported_by": []
     },
     {
+      "title": "China's crude oil imports fell in the second quarter",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67905",
+      "snippet": "China, the world's largest importer of crude oil, imported less crude oil in the second quarter of 2026 (2Q26) following higher crude oil prices that resulted from disrupted flows through the Strait of Hormuz. China's lower imports reduced global demand, softening the upward price effects from the d",
+      "published_at": "2026-07-31T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 25.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 55.6,
+        "recency_multiplier": 0.59
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "demand"
+        ],
+        "supply_disruption": [
+          "disrupted"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Ukraine Strikes Lukoil's Volgograd Refinery as Drone Attacks Resume",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Strikes-Lukoils-Volgograd-Refinery-as-Drone-Attacks-Resume.html",
       "snippet": "Ukraine has struck one of Russia’s biggest refineries, Lukoil’s Volgograd processing facility, the Ukrainian forces said on Friday as they resumed attacks on Russian refining capacity. The Volgograd refinery, which has the capacity to process 300,000 barrels per day (bpd) of crude, produces gasoline",
@@ -443,12 +493,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 40,
       "tags": [
         "oil_macro",
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -460,7 +510,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.6,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.72
       },
       "matched": {
         "oil_macro": [
@@ -484,56 +534,6 @@
       "first_seen_at": "2026-07-31T14:00:00+00:00"
     },
     {
-      "title": "China's crude oil imports fell in the second quarter",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67905",
-      "snippet": "China, the world's largest importer of crude oil, imported less crude oil in the second quarter of 2026 (2Q26) following higher crude oil prices that resulted from disrupted flows through the Strait of Hormuz. China's lower imports reduced global demand, softening the upward price effects from the d",
-      "published_at": "2026-07-31T14:00:00+00:00",
-      "type": "news",
-      "source": "eia_today",
-      "source_name": "EIA Today in Energy",
-      "authority": 20,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 14.6,
-        "themes": 25.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 55.6,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "demand"
-        ],
-        "supply_disruption": [
-          "disrupted"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "World reacts with cautious optimism to Hamas disarmament agreement",
       "url": "https://www.aljazeera.com/news/2026/7/31/world-reacts-with-cautious-optimism-to-hamas-disarmament-agreement?traffic_source=rss",
       "snippet": "Deal for Hamas to disarm in stages in return for Israeli withdrawal has been announced, but implementation will be key.",
@@ -544,7 +544,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 36,
       "tags": [
         "gas_storage"
       ],
@@ -559,7 +559,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.2,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.86
       },
       "matched": {
         "gas_storage": [
@@ -567,89 +567,6 @@
         ],
         "urgency": [
           "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hormuz Uncertainty Keeps Oil Markets on Edge",
-      "url": "https://oilprice.com/Energy/Energy-General/Hormuz-Uncertainty-Keeps-Oil-Markets-on-Edge.html",
-      "snippet": "September WTI crude oil futures were trading at $84.12 late Thursday, down $6.35, or 7.02%, for the week. With Friday’s session still ahead, the weekly result is not final. But the week’s main story is clear: crude sold off hard when traders thought diplomacy could restore a workable route through t",
-      "published_at": "2026-07-31T12:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 45.7,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "wti"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Abqaiq Is a Warning That Oil Markets May Be Misreading",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Abqaiq-Is-a-Warning-That-Oil-Markets-May-Be-Misreading.html",
-      "snippet": "While the dust is settling and facts emerge, it is clear that the latest attack on Saudi Aramco's Abqaiq oil-processing complex is rapidly becoming one of the most consequential energy developments of 2026. The event should not be assessed on the basis that it has immediately removed millions of bar",
-      "published_at": "2026-07-31T20:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 21.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "urgency": [
-          "immediately"
-        ],
-        "speculative": [
-          "may"
         ]
       },
       "duplicate_count": 0,
