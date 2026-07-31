@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-07-31T20:47:42.007318+00:00",
-  "item_count": 11,
+  "generated_at": "2026-07-31T21:51:23.767506+00:00",
+  "item_count": 12,
   "alert_counts": {
     "critical": 0,
     "high": 2,
-    "normal": 6
+    "normal": 7
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1677
+        "ms": 1536
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 27610
+        "ms": 25070
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3674
+        "ms": 3361
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 868
+        "ms": 670
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 733
+        "ms": 294
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 180
+        "ms": 171
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1367
+        "ms": 841
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 229
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 46
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 802
+        "ms": 576
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 348
+        "ms": 78
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 724
+        "ms": 494
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 39,
         "error": null,
-        "ms": 107
+        "ms": 355
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 104
+        "ms": 198
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 79,
+      "score": 76,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -135,7 +135,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 118.0,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -220,7 +220,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 57,
       "tags": [
         "supply_disruption"
       ],
@@ -236,7 +236,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 64.6,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.81
       },
       "matched": {
         "supply_disruption": [
@@ -257,6 +257,50 @@
       "also_reported_by": []
     },
     {
+      "title": "Powerful El Nino to intensify heat on ‘a planet already on fire’: UN",
+      "url": "https://www.aljazeera.com/news/2026/7/31/powerful-el-nino-to-intensify-heat-on-a-planet-already-on-fire-un?traffic_source=rss",
+      "snippet": "UN chief Guterres calls for halt to new fossil fuels as El Nino induces heatwaves, floods, and drought worldwide",
+      "published_at": "2026-07-31T20:38:56+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "supply_disruption",
+        "weather"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 20.5,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 50.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "halt",
+          "fire"
+        ],
+        "weather": [
+          "drought"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Why Trump’s Trade Threat Puts Spain’s Energy Security on the Line",
       "url": "https://oilprice.com/Energy/Energy-General/Why-Trumps-Trade-Threat-Puts-Spains-Energy-Security-on-the-Line.html",
       "snippet": "Donald Trump’s July 8 order to halt trade with Spain has yet to become an energy embargo, but Madrid can no longer dismiss it as political theatre. It was the second such threat since March 2026, this time delivered directly to Treasury Secretary Scott Bessent after Spain refused to commit 5% of GDP",
@@ -267,7 +311,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 54,
+      "score": 51,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -285,7 +329,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 47.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -299,99 +343,6 @@
         ],
         "geography": [
           "spain"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Shell Sells Cyprus Gas Stake to MOL for $720 Million",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Shell-Sells-Cyprus-Gas-Stake-to-MOL-for-720-Million.html",
-      "snippet": "Shell has agreed to sell its wholly-owned subsidiary BG Cyprus Ltd to MOL Group of Hungary for $720 million, as the UK-based oil and gas supermajor targets to grow its LNG value chain. Shell on Friday announced the agreement with MOL Group for the sale of BG Cyprus, which holds a 35% non-operated in",
-      "published_at": "2026-07-31T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 47,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 7.3,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 60.0,
-        "recency_multiplier": 0.67
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "China's crude oil imports fell in the second quarter",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67905",
-      "snippet": "China, the world's largest importer of crude oil, imported less crude oil in the second quarter of 2026 (2Q26) following higher crude oil prices that resulted from disrupted flows through the Strait of Hormuz. China's lower imports reduced global demand, softening the upward price effects from the d",
-      "published_at": "2026-07-31T14:00:00+00:00",
-      "type": "news",
-      "source": "eia_today",
-      "source_name": "EIA Today in Energy",
-      "authority": 20,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 46,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 14.6,
-        "themes": 25.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 55.6,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "demand"
-        ],
-        "supply_disruption": [
-          "disrupted"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -439,6 +390,49 @@
       "also_reported_by": []
     },
     {
+      "title": "Shell Sells Cyprus Gas Stake to MOL for $720 Million",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Shell-Sells-Cyprus-Gas-Stake-to-MOL-for-720-Million.html",
+      "snippet": "Shell has agreed to sell its wholly-owned subsidiary BG Cyprus Ltd to MOL Group of Hungary for $720 million, as the UK-based oil and gas supermajor targets to grow its LNG value chain. Shell on Friday announced the agreement with MOL Group for the sale of BG Cyprus, which holds a 35% non-operated in",
+      "published_at": "2026-07-31T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 45,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 7.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 60.0,
+        "recency_multiplier": 0.61
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "uk"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Ukraine Strikes Lukoil's Volgograd Refinery as Drone Attacks Resume",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Strikes-Lukoils-Volgograd-Refinery-as-Drone-Attacks-Resume.html",
       "snippet": "Ukraine has struck one of Russia’s biggest refineries, Lukoil’s Volgograd processing facility, the Ukrainian forces said on Friday as they resumed attacks on Russian refining capacity. The Volgograd refinery, which has the capacity to process 300,000 barrels per day (bpd) of crude, produces gasoline",
@@ -449,7 +443,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 45,
+      "score": 43,
       "tags": [
         "oil_macro",
         "geopolitics"
@@ -466,7 +460,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.6,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.77
       },
       "matched": {
         "oil_macro": [
@@ -490,6 +484,56 @@
       "first_seen_at": "2026-07-31T14:00:00+00:00"
     },
     {
+      "title": "China's crude oil imports fell in the second quarter",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67905",
+      "snippet": "China, the world's largest importer of crude oil, imported less crude oil in the second quarter of 2026 (2Q26) following higher crude oil prices that resulted from disrupted flows through the Strait of Hormuz. China's lower imports reduced global demand, softening the upward price effects from the d",
+      "published_at": "2026-07-31T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 25.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 55.6,
+        "recency_multiplier": 0.64
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "demand"
+        ],
+        "supply_disruption": [
+          "disrupted"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "World reacts with cautious optimism to Hamas disarmament agreement",
       "url": "https://www.aljazeera.com/news/2026/7/31/world-reacts-with-cautious-optimism-to-hamas-disarmament-agreement?traffic_source=rss",
       "snippet": "Deal for Hamas to disarm in stages in return for Israeli withdrawal has been announced, but implementation will be key.",
@@ -500,7 +544,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "gas_storage"
       ],
@@ -515,7 +559,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "gas_storage": [
@@ -539,7 +583,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 35,
+      "score": 33,
       "tags": [
         "oil_macro"
       ],
@@ -555,7 +599,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 45.7,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.55
       },
       "matched": {
         "oil_macro": [
