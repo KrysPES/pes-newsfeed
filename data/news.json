@@ -1,116 +1,175 @@
 {
-  "generated_at": "2026-07-31T14:41:32.441036+00:00",
-  "item_count": 18,
+  "generated_at": "2026-07-31T16:25:08.262489+00:00",
+  "item_count": 13,
   "alert_counts": {
-    "critical": 0,
+    "critical": 1,
     "high": 1,
-    "normal": 8
+    "normal": 5
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 11,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1817
+        "ms": 2000
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 11629
+        "ms": 19232
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3001
+        "ms": 3182
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 534
+        "ms": 714
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 663
+        "ms": 109
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 126
+        "ms": 199
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 903
+        "ms": 1720
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 155
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 86
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 559
+        "ms": 700
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 125
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20263
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 377
+        "ms": 546
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 38,
+        "count": 39,
         "error": null,
-        "ms": 78
+        "ms": 55
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 209
+        "ms": 102
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
-      "url": "https://umm.nordpoolgroup.com/#/messages/6a47b90a-d6c4-497d-87f3-98cf4a1e8765/2",
-      "snippet": "Published: 31.07.2026 16:37:22 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
-      "published_at": "2026-07-31T14:37:22+00:00",
+      "title": "Saudis Push Maritime Coalition as Oil Finds Support",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Saudis-Push-Maritime-Coalition-as-Oil-Finds-Support.html",
+      "snippet": "Brent is set for an 8% weekly loss, but ongoing disruptions in the Strait of Hormuz and the Red Sea continue to support oil prices near $90 a barrel. Friday, July 31, 2026 Oil prices are set for an 8% weekly loss after the sell-off earlier this week was halted by the reality of two disrupted waterwa",
+      "published_at": "2026-07-31T16:15:56+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 85,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "critical",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 45.2,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 118.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "red sea"
+        ],
+        "supply_disruption": [
+          "halted",
+          "disrupted"
+        ],
+        "oil_macro": [
+          "brent",
+          "barrel"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ],
+        "unplanned": [
+          "halted"
+        ],
+        "urgency": [
+          "halted"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ballylumford CCGT - GU_503730(B32)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/3dee7cab-bae0-4c58-9d38-2d6984ba2635/1",
+      "snippet": "Published: 31.07.2026 17:01:45 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Exhaust Thermocouple Failure Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel ",
+      "published_at": "2026-07-31T15:01:45+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -146,7 +205,7 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 3,
       "also_reported_by": [],
       "first_seen_at": "2026-07-31T09:16:48+00:00"
     },
@@ -161,7 +220,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 62,
+      "score": 59,
       "tags": [
         "lng"
       ],
@@ -177,7 +236,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 60.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "lng": [
@@ -204,7 +263,7 @@
       "authority": 20,
       "tier": 2,
       "has_magnitude": false,
-      "score": 59,
+      "score": 58,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -222,7 +281,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -254,7 +313,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 54,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -271,7 +330,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.4,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -290,56 +349,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Ukraine Says It Attacked Lukoil Refinery",
-      "url": "https://www.rigzone.com/news/wire/ukraine_says_it_attacked_lukoil_refinery-31-jul-2026-184265-article/?rss=true",
-      "snippet": "Ukraine struck one of Russia's largest oil refineries.",
-      "published_at": "2026-07-31T14:00:00+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 54,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.9,
-        "themes": 11.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.6,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-07-31T13:14:29+00:00"
-    },
-    {
       "title": "The Drone Attack That Exposed Egypt’s Energy Defenses",
       "url": "https://oilprice.com/Energy/Energy-General/The-Drone-Attack-That-Exposed-Egypts-Energy-Defenses.html",
       "snippet": "Politics, Geopolitics & Conflict A drone attack reached Egypt’s Mediterranean gas infrastructure for the first time in the war. At least two drones struck the US-owned Energos Winter floating storage and regasification unit and a second gas-processing vessel at Damietta port on Wednesday, setting bo",
@@ -350,7 +359,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 47,
       "tags": [
         "geopolitics",
         "lng",
@@ -367,7 +376,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.5,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -387,57 +396,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Caspian Oil Pipeline Shuts Down Again After Black Sea Drone Attack",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Caspian-Oil-Pipeline-Shuts-Down-Again-After-Black-Sea-Drone-Attack.html",
-      "snippet": "The Caspian Pipeline Consortium has shut down again, following Ukrainian drone attacks on two tankers at the Russian Black Sea port of Novorossiysk, Reuters reported, citing the company operating the pipeline. According to the operator of the pipeline, the drone attacks hit two tankers loading at No",
-      "published_at": "2026-07-31T06:20:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 51,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 22.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 71.7,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "russian"
-        ],
-        "unplanned": [
-          "shut down"
-        ],
-        "urgency": [
-          "shut"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Hormuz Uncertainty Keeps Oil Markets on Edge",
       "url": "https://oilprice.com/Energy/Energy-General/Hormuz-Uncertainty-Keeps-Oil-Markets-on-Edge.html",
       "snippet": "September WTI crude oil futures were trading at $84.12 late Thursday, down $6.35, or 7.02%, for the week. With Friday’s session still ahead, the weekly result is not final. But the week’s main story is clear: crude sold off hard when traders thought diplomacy could restore a workable route through t",
@@ -448,7 +406,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 50,
+      "score": 46,
       "tags": [
         "oil_macro"
       ],
@@ -464,7 +422,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 45.7,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.83
       },
       "matched": {
         "oil_macro": [
@@ -489,11 +447,11 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 38,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -505,7 +463,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.0,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.75
       },
       "matched": {
         "lng": [
@@ -515,85 +473,6 @@
         ],
         "geography": [
           "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Floating wind turbine that will power UK gas platform ready for tow to offshore site",
-      "url": "https://www.offshore-energy.biz/floating-wind-turbine-that-will-power-uk-gas-platform-ready-for-tow-to-offshore-site/",
-      "snippet": "The Culzean floating wind turbine, which will supply electricity to the Culzean gas platform [&#8230;] The post Floating wind turbine that will power UK gas platform ready for tow to offshore site appeared first on Offshore Energy .",
-      "published_at": "2026-07-31T10:47:14+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 6.7,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.1,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "infrastructure": [
-          "platform"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US weekly LNG exports reach 35 cargoes",
-      "url": "https://lngprime.com/americas/us-weekly-lng-exports-reach-35-cargoes/194166/",
-      "snippet": "US liquefied natural gas (LNG) plants sent 35 cargoes during the week ending July 29, one cargo more than the week before, according to the Energy Information Administration.",
-      "published_at": "2026-07-31T05:56:16+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 39,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.59
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargo",
-          "cargoes",
-          "lng exports"
         ]
       },
       "duplicate_count": 0,
@@ -610,7 +489,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -626,7 +505,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -634,6 +513,45 @@
         ],
         "geography": [
           "spain"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US weekly LNG exports reach 35 cargoes",
+      "url": "https://lngprime.com/americas/us-weekly-lng-exports-reach-35-cargoes/194166/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 35 cargoes during the week ending July 29, one cargo more than the week before, according to the Energy Information Administration.",
+      "published_at": "2026-07-31T05:56:16+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 35,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.52
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargo",
+          "cargoes",
+          "lng exports"
         ]
       },
       "duplicate_count": 0,
@@ -650,7 +568,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -665,7 +583,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -677,10 +595,10 @@
       "also_reported_by": []
     },
     {
-      "title": "ADNOC Buys Five Supertankers as Hormuz Crisis Tightens Shipping",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Buys-Five-Supertankers-as-Hormuz-Crisis-Tightens-Shipping.html",
-      "snippet": "Amid tightened vessel supply due to the Middle East crisis, Abu Dhabi’s national oil company ADNOC has paid about $590 million to buy five supertankers to better manage its crude deliveries, Reuters reported on Friday, quoting sources with knowledge of the deal. ADNOC has acquired the five very larg",
-      "published_at": "2026-07-31T09:45:00+00:00",
+      "title": "Ukraine Is Now Targeting Iranian Shipping in the Caspian Sea",
+      "url": "https://oilprice.com/Geopolitics/Europe/Ukraine-Is-Now-Targeting-Iranian-Shipping-in-the-Caspian-Sea.html",
+      "snippet": "Iranian-designed drones have wreaked havoc for Ukrainian forces battling Russian troops as Moscow took Tehran's technology and ran with it, supercharging production and deploying drones in devastating droves in its all-out war against Kyiv. As far as Ukraine is concerned, that makes Iran an indirect",
+      "published_at": "2026-07-31T16:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
@@ -689,72 +607,29 @@
       "has_magnitude": false,
       "score": 31,
       "tags": [
-        "oil_macro"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 4.5,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.2,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Site preparations under way for planned Kola units",
-      "url": "https://www.world-nuclear-news.org/articles/site-preparations-under-way-for-planned-kola-units",
-      "snippet": "The start of site preparation works for the Kola II nuclear power units follows the granting of a site licence by Russian regulator Rostekhnadzor earlier this month.",
-      "published_at": "2026-07-31T09:27:55+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "nuclear",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 11.0,
+        "themes": 9.0,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 29.8,
-        "recency_multiplier": 0.78
+        "raw": 22.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "regulation": [
-          "licence"
+        "geopolitics": [
+          "war"
         ],
         "geography": [
-          "russian"
+          "russian",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
@@ -801,99 +676,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Gasunie and Vopak to launch fourth Gate LNG tank in Q3",
-      "url": "https://lngprime.com/europe/gasunie-and-vopak-to-launch-fourth-gate-lng-tank-in-q3/194186/",
-      "snippet": "Dutch partners Gasunie and Vopak expect to launch the fourth LNG tank at their Gate terminal in the third quarter of this year, according to Vopak CEO Dick Richelle.",
-      "published_at": "2026-07-31T07:11:26+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 11.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "terminal"
-        ],
-        "geography": [
-          "dutch",
-          "gate terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russia appears to infiltrate first ‘fortress city’ as Ukraine changes guard",
-      "url": "https://www.aljazeera.com/features/2026/7/31/russia-appears-to-infiltrate-first-fortress-city-as-ukraine-changes-guard?traffic_source=rss",
-      "snippet": "Reports emerge from the front that Russia has infiltrated most of Kostiantynivka as it tries to regain the offensive.",
-      "published_at": "2026-07-31T13:14:29+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "offensive"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/ukraine_says_it_attacked_lukoil_refinery-31-jul-2026-184265-article/?rss=true",
-        "title": "Ukraine Says It Attacked Lukoil Refinery",
-        "published_at": "2026-07-31T14:00:00+00:00"
-      },
-      "hidden": true
     }
   ]
 }
