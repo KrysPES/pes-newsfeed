@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-07-31T16:25:08.262489+00:00",
-  "item_count": 13,
+  "generated_at": "2026-07-31T18:02:24.647665+00:00",
+  "item_count": 15,
   "alert_counts": {
     "critical": 1,
     "high": 1,
-    "normal": 5
+    "normal": 7
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 11,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 2000
+        "ms": 1978
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19232
+        "ms": 48110
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3182
+        "ms": 5947
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 714
+        "ms": 805
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 109
+        "ms": 231
       },
       {
         "id": "eia_today",
@@ -59,49 +59,49 @@
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1720
+        "ms": 1459
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 86
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 424
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 700
+        "ms": 902
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20263
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 401
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 546
+        "ms": 652
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 39,
         "error": null,
-        "ms": 55
+        "ms": 412
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 102
+        "ms": 258
       }
     ]
   },
@@ -167,9 +167,9 @@
     },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ballylumford CCGT - GU_503730(B32)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/3dee7cab-bae0-4c58-9d38-2d6984ba2635/1",
-      "snippet": "Published: 31.07.2026 17:01:45 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Exhaust Thermocouple Failure Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel ",
-      "published_at": "2026-07-31T15:01:45+00:00",
+      "url": "https://umm.nordpoolgroup.com/#/messages/3dee7cab-bae0-4c58-9d38-2d6984ba2635/2",
+      "snippet": "Published: 31.07.2026 19:23:38 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Exhaust Thermocouple Failure Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel ",
+      "published_at": "2026-07-31T17:23:38+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -210,6 +210,53 @@
       "first_seen_at": "2026-07-31T09:16:48+00:00"
     },
     {
+      "title": "Spain's PM blames traffickers after 60,000 migrants reach Ceuta from Morocco",
+      "url": "https://www.bbc.co.uk/news/articles/cx2kp639yx4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Spain said most of the migrants had returned to Morocco by Friday evening, as Italy suspended its Schengen agreement on free movement with Spain.",
+      "published_at": "2026-07-31T17:03:47+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 65,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 64.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "geography": [
+          "italy",
+          "spain"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Shell Sells Cyprus Gas Stake to MOL for $720 Million",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Shell-Sells-Cyprus-Gas-Stake-to-MOL-for-720-Million.html",
       "snippet": "Shell has agreed to sell its wholly-owned subsidiary BG Cyprus Ltd to MOL Group of Hungary for $720 million, as the UK-based oil and gas supermajor targets to grow its LNG value chain. Shell on Friday announced the agreement with MOL Group for the sale of BG Cyprus, which holds a 35% non-operated in",
@@ -220,7 +267,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 59,
+      "score": 55,
       "tags": [
         "lng"
       ],
@@ -236,7 +283,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 60.0,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.82
       },
       "matched": {
         "lng": [
@@ -263,7 +310,7 @@
       "authority": 20,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 54,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -281,7 +328,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.6,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -303,6 +350,57 @@
       "also_reported_by": []
     },
     {
+      "title": "Ukraine Strikes Lukoil's Volgograd Refinery as Drone Attacks Resume",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Strikes-Lukoils-Volgograd-Refinery-as-Drone-Attacks-Resume.html",
+      "snippet": "Ukraine has struck one of Russia’s biggest refineries, Lukoil’s Volgograd processing facility, the Ukrainian forces said on Friday as they resumed attacks on Russian refining capacity. The Volgograd refinery, which has the capacity to process 300,000 barrels per day (bpd) of crude, produces gasoline",
+      "published_at": "2026-07-31T16:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 51,
+      "tags": [
+        "oil_macro",
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 18.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 44.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "refinery",
+          "barrels"
+        ],
+        "geopolitics": [
+          "drone"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Rigzone"
+      ],
+      "first_seen_at": "2026-07-31T14:00:00+00:00"
+    },
+    {
       "title": "Six Saudi Oil Tankers Reroute Around Africa to Dodge Houthi Threat",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Six-Saudi-Oil-Tankers-Reroute-Around-Africa-to-Dodge-Houthi-Threat.html",
       "snippet": "Half a dozen empty Saudi oil tankers have turned away in the Arabian Sea from the Red Sea chokepoint Bab el-Mandeb and headed south around Africa in the western direction, in highly unusual moves for tankers loading crude from the Middle East. All six tankers turned away from Bab el-Mandeb after the",
@@ -313,7 +411,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 49,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -330,7 +428,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.4,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -359,7 +457,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 43,
       "tags": [
         "geopolitics",
         "lng",
@@ -376,7 +474,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.5,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -406,7 +504,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 46,
+      "score": 42,
       "tags": [
         "oil_macro"
       ],
@@ -422,7 +520,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 45.7,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.73
       },
       "matched": {
         "oil_macro": [
@@ -447,7 +545,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 35,
       "tags": [
         "lng"
       ],
@@ -463,7 +561,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.0,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.66
       },
       "matched": {
         "lng": [
@@ -473,46 +571,6 @@
         ],
         "geography": [
           "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "About 60,000 migrants arrive in Ceuta in 24 hours, Spanish territory's leader says",
-      "url": "https://www.bbc.co.uk/news/articles/cx2kp639yx4o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Spain's prime minister described the situation as an \"attack\" on its North African territory and said all illegal migrants would be returned to Morocco.",
-      "published_at": "2026-07-31T14:20:18+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.2,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "geography": [
-          "spain"
         ]
       },
       "duplicate_count": 0,
@@ -529,7 +587,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 35,
+      "score": 32,
       "tags": [
         "lng"
       ],
@@ -544,7 +602,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.46
       },
       "matched": {
         "lng": [
@@ -558,37 +616,41 @@
       "also_reported_by": []
     },
     {
-      "title": "Palestinians in Gaza react to latest ceasefire deal",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/31/31-07-sv-gazans-react-to-latest-deal-ps?traffic_source=rss",
-      "snippet": "‘Enough is enough’, Palestinians in Gaza express little hope that the latest ceasefire deal will end the war.",
-      "published_at": "2026-07-31T12:59:48+00:00",
+      "title": "US Oil Drillers Turn Cautious as WTI Holds Near $85 per Barrel",
+      "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Drillers-Turn-Cautious-as-WTI-Holds-Near-85-per-Barrel.html",
+      "snippet": "The total number of active drilling rigs for oil and gas in the United States rose this week, according to new data that Baker Hughes published on Friday, bringing the total rig count in the US to 588, up 48 from this same time last year. The number of active oil rigs rose by 1, reaching 451 during ",
+      "published_at": "2026-07-31T17:20:31+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
-        "geopolitics"
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.9
+        "raw": 22.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "ceasefire",
-          "war"
+        "oil_macro": [
+          "wti",
+          "barrel"
+        ],
+        "geography": [
+          "united states"
         ]
       },
       "duplicate_count": 0,
@@ -636,10 +698,50 @@
       "also_reported_by": []
     },
     {
-      "title": "Russia and Ukraine report casualties as they continue to trade attacks",
-      "url": "https://www.aljazeera.com/news/2026/7/31/russia-and-ukraine-report-casualties-as-they-continue-to-trade-attacks?traffic_source=rss",
-      "snippet": "Ukraine hit Russian oil refineries several times, while Russia struck Dnipropetrovsk and a cargo vessel near Odesa.",
-      "published_at": "2026-07-31T14:22:51+00:00",
+      "title": "Floating wind turbine that will power UK gas platform ready for tow to offshore site",
+      "url": "https://www.offshore-energy.biz/floating-wind-turbine-that-will-power-uk-gas-platform-ready-for-tow-to-offshore-site/",
+      "snippet": "The Culzean floating wind turbine, which will supply electricity to the Culzean gas platform [&#8230;] The post Floating wind turbine that will power UK gas platform ready for tow to offshore site appeared first on Offshore Energy .",
+      "published_at": "2026-07-31T10:47:14+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 6.7,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.1,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "infrastructure": [
+          "platform"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Palestinians in Gaza react to latest ceasefire deal",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/31/31-07-sv-gazans-react-to-latest-deal-ps?traffic_source=rss",
+      "snippet": "‘Enough is enough’, Palestinians in Gaza express little hope that the latest ceasefire deal will end the war.",
+      "published_at": "2026-07-31T12:59:48+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
@@ -648,30 +750,25 @@
       "has_magnitude": false,
       "score": 30,
       "tags": [
-        "lng"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 17.9,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 21.8,
-        "recency_multiplier": 1.0
+        "raw": 27.4,
+        "recency_multiplier": 0.79
       },
       "matched": {
-        "lng": [
-          "cargo"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "ukraine"
+        "geopolitics": [
+          "ceasefire",
+          "war"
         ]
       },
       "duplicate_count": 0,
