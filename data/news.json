@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-01T09:26:18.614555+00:00",
+  "generated_at": "2026-08-01T10:58:22.829272+00:00",
   "item_count": 7,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 1
+    "high": 0,
+    "normal": 3
   },
   "superseded_count": 0,
   "sources": {
@@ -17,95 +17,143 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1601
+        "ms": 1856
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 23132
+        "ms": 26400
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2884
+        "ms": 2483
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 180
+        "ms": 346
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 482
+        "ms": 337
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 208
+        "ms": 342
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 962
+        "ms": 1094
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 185
+        "ms": 435
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 500
+        "ms": 622
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 102
+        "ms": 296
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 377
+        "ms": 640
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 177
+        "ms": 222
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 183
+        "ms": 232
       }
     ]
   },
   "items": [
+    {
+      "title": "Spain attacks 'selfish' response of some EU countries to Ceuta migrant crossings",
+      "url": "https://www.bbc.co.uk/news/articles/cx2v91xn1z9o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Italy has temporarily suspended the Schengen arrangement with Spain as Prime Minister Giorgia Meloni called scenes in Ceuta \"shocking\".",
+      "published_at": "2026-08-01T10:11:39+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 65,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 64.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "geography": [
+          "eu",
+          "italy",
+          "spain"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Coolkeeragh - GU_500040 (C30)",
       "url": "https://umm.nordpoolgroup.com/#/messages/6028da30-530b-4757-ae25-68be1d942124/4",
@@ -117,11 +165,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 61,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +180,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "supply_disruption": [
@@ -146,9 +194,49 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-07-31T17:23:38+00:00"
+      "first_seen_at": "2026-08-01T06:40:08+00:00"
+    },
+    {
+      "title": "Iranian Kurdish parties in Iraq face a delicate balance amid Iran attacks",
+      "url": "https://www.aljazeera.com/news/2026/8/1/iranian-kurdish-parties-in-iraq-face-a-delicate-balance-amid-iran-attacks?traffic_source=rss",
+      "snippet": "Iranian Kurdish groups based in Iraq have been heavily attacked in the war, but most deny US assistance.",
+      "published_at": "2026-08-01T09:47:39+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "attacked"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Saudis Push Maritime Coalition as Oil Finds Support",
@@ -161,13 +249,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 45,
+      "score": 41,
       "tags": [
         "geopolitics",
         "supply_disruption",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -179,7 +267,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 118.0,
-        "recency_multiplier": 0.31
+        "recency_multiplier": 0.28
       },
       "matched": {
         "geopolitics": [
@@ -220,7 +308,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
@@ -236,7 +324,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -265,7 +353,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
@@ -281,7 +369,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
@@ -305,7 +393,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 30,
       "tags": [
         "supply_disruption"
       ],
@@ -321,7 +409,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.5
       },
       "matched": {
         "supply_disruption": [
@@ -329,89 +417,6 @@
         ],
         "geography": [
           "india"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Trump administration drops Reflecting Pool vandalism charge and admits 'botched' repairs",
-      "url": "https://www.bbc.co.uk/news/articles/cz05yx5dd7yo?at_medium=RSS&at_campaign=rss",
-      "snippet": "President Donald Trump had blamed \"sick\" vandals, and a former Olympian had been charged, but prosecutors now say contractors caused the damage.",
-      "published_at": "2026-08-01T00:20:43+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.6,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "supply_disruption": [
-          "repairs"
-        ],
-        "unplanned": [
-          "damage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Powerful El Nino to intensify heat on ‘a planet already on fire’: UN",
-      "url": "https://www.aljazeera.com/news/2026/7/31/powerful-el-nino-to-intensify-heat-on-a-planet-already-on-fire-un?traffic_source=rss",
-      "snippet": "UN chief Guterres calls for halt to new fossil fuels as El Nino induces heatwaves, floods, and drought worldwide",
-      "published_at": "2026-07-31T20:38:56+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "supply_disruption",
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 20.5,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 50.0,
-        "recency_multiplier": 0.44
-      },
-      "matched": {
-        "supply_disruption": [
-          "halt",
-          "fire"
-        ],
-        "weather": [
-          "drought"
         ],
         "unplanned": [
           "fire"
