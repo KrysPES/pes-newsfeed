@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-01T14:49:12.006911+00:00",
-  "item_count": 6,
+  "generated_at": "2026-08-01T15:46:45.450778+00:00",
+  "item_count": 7,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 2
+    "normal": 3
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1846
+        "ms": 1349
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 22115
+        "ms": 31273
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2863
+        "ms": 2684
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 341
+        "ms": 420
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 317
+        "ms": 596
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 381
+        "ms": 342
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1088
+        "ms": 1063
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 100
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 449
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 609
+        "ms": 692
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 280
+        "ms": 239
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 640
+        "ms": 386
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 308
+        "ms": 143
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 144
+        "ms": 177
       }
     ]
   },
@@ -110,14 +110,14 @@
       "title": "Spain attacks 'selfish' response of some EU countries to Ceuta migrant crossings",
       "url": "https://www.bbc.co.uk/news/articles/cx2v91xn1z9o?at_medium=RSS&at_campaign=rss",
       "snippet": "Italy has temporarily suspended the Schengen arrangement with Spain as Prime Minister Giorgia Meloni called scenes in Ceuta \"shocking\".",
-      "published_at": "2026-08-01T12:43:21+00:00",
+      "published_at": "2026-08-01T15:46:08+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 64,
+      "score": 65,
       "tags": [
         "supply_disruption"
       ],
@@ -133,7 +133,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 64.6,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -155,6 +155,49 @@
       "also_reported_by": []
     },
     {
+      "title": "India's 'cockroach' protesters have wounds consistent with pellet-gun fire, say experts",
+      "url": "https://www.bbc.co.uk/news/articles/c74gwvygkjdo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ballistic experts say the dozens of tiny round punctures are tell-tale signs of pellet gun injuries.",
+      "published_at": "2026-08-01T15:00:07+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "india"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Coolkeeragh - GU_500040 (C30)",
       "url": "https://umm.nordpoolgroup.com/#/messages/6028da30-530b-4757-ae25-68be1d942124/4",
       "snippet": "Published: 01.08.2026 09:23:02 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Valve Issue Remarks: Valve Issue Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Po",
@@ -165,7 +208,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 51,
+      "score": 48,
       "tags": [
         "supply_disruption"
       ],
@@ -180,7 +223,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.61
       },
       "matched": {
         "supply_disruption": [
@@ -225,7 +268,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -251,7 +294,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -266,7 +309,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -291,7 +334,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 32,
+      "score": 30,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -309,7 +352,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 118.0,
-        "recency_multiplier": 0.21
+        "recency_multiplier": 0.19
       },
       "matched": {
         "geopolitics": [
@@ -350,7 +393,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics"
       ],
@@ -365,7 +408,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.4,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
