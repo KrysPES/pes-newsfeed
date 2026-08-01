@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-01T16:41:14.998991+00:00",
-  "item_count": 6,
+  "generated_at": "2026-08-01T17:43:38.411312+00:00",
+  "item_count": 9,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 2
+    "normal": 5
   },
   "superseded_count": 1,
   "sources": {
@@ -17,77 +17,77 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 2003
+        "ms": 1610
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 24243
+        "ms": 24627
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3345
+        "ms": 38384
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 382
+        "ms": 193
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 235
+        "ms": 232
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 285
+        "ms": 297
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1548
+        "ms": 1424
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 512
+        "ms": 196
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 695
+        "ms": 708
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 363
+        "ms": 360
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 575
+        "ms": 662
       },
       {
         "id": "bbc_world",
@@ -101,16 +101,16 @@
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 102
+        "ms": 73
       }
     ]
   },
   "items": [
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
-      "url": "https://umm.nordpoolgroup.com/#/messages/9c5c0525-febd-4ac5-be60-4b29a99891e9/1",
-      "snippet": "Published: 01.08.2026 18:15:48 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
-      "published_at": "2026-08-01T16:15:48+00:00",
+      "url": "https://umm.nordpoolgroup.com/#/messages/9c5c0525-febd-4ac5-be60-4b29a99891e9/2",
+      "snippet": "Published: 01.08.2026 19:21:27 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-01T17:21:27+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -209,7 +209,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 49,
       "tags": [
         "supply_disruption"
       ],
@@ -225,7 +225,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "supply_disruption": [
@@ -242,6 +242,131 @@
       "also_reported_by": []
     },
     {
+      "title": "Finland's Sand Battery Cuts Emissions 70% Without a Single Rare Earth",
+      "url": "https://oilprice.com/Energy/Energy-General/Finlands-Sand-Battery-Cuts-Emissions-70-Without-a-Single-Rare-Earth.html",
+      "snippet": "Europe is falling far behind on energy storage installation exactly when it’s most needed. The continent’s energy security is under significant threat as it contends with its third energy crisis in four years thanks to the region’s over-reliance on imported fossil fuels. While the European Union has",
+      "published_at": "2026-08-01T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 48,
+      "tags": [
+        "gas_storage",
+        "power_system"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 10.1,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 40.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "power_system": [
+          "battery"
+        ],
+        "geography": [
+          "europe",
+          "european"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Trump administration drops Reflecting Pool vandalism charge and admits 'botched' repairs",
+      "url": "https://www.bbc.co.uk/news/articles/cz05yx5dd7yo?at_medium=RSS&at_campaign=rss",
+      "snippet": "President Donald Trump had blamed \"sick\" vandals, and a former Olympian had been charged, but prosecutors now say contractors caused the damage.",
+      "published_at": "2026-08-01T17:16:51+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "repairs"
+        ],
+        "unplanned": [
+          "damage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Turkiye and Iraq sign one-year oil pipeline deal amid global shift",
+      "url": "https://www.aljazeera.com/news/2026/8/1/turkiye-and-iraq-sign-one-year-oil-pipeline-deal-amid-global-shift?traffic_source=rss",
+      "snippet": "The renewed agreement ensures crude flow of 750,000 barrels a day through the Iraq-Turkiye pipeline, officials confirm.",
+      "published_at": "2026-08-01T16:43:34+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 43,
+      "tags": [
+        "oil_macro",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 13.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Nine killed in strikes on Kyiv, as Ukraine sinks Russian container ship",
       "url": "https://www.bbc.co.uk/news/articles/ce973yvk7pko?at_medium=RSS&at_campaign=rss",
       "snippet": "The attack comes as Moscow escalates deadly ballistic missile attacks on the Ukrainian capital.",
@@ -252,7 +377,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
@@ -268,7 +393,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -294,7 +419,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
@@ -309,7 +434,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -334,7 +459,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 11,
       "tags": [
         "geopolitics"
       ],
@@ -349,7 +474,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.4,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.63
       },
       "matched": {
         "geopolitics": [
