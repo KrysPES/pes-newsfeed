@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-01T04:43:33.593515+00:00",
-  "item_count": 9,
+  "generated_at": "2026-08-01T07:17:08.864873+00:00",
+  "item_count": 8,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 4
+    "high": 1,
+    "normal": 3
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,145 +17,138 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1955
+        "ms": 1465
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 31530
+        "ms": 33901
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2596
+        "ms": 2685
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 340
+        "ms": 451
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 622
+        "ms": 279
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 445
+        "ms": 226
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1106
+        "ms": 862
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 435
+        "ms": 423
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 596
+        "ms": 610
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 352
+        "ms": 148
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 636
+        "ms": 490
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 39,
+        "count": 30,
         "error": null,
-        "ms": 394
+        "ms": 259
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 275
+        "ms": 182
       }
     ]
   },
   "items": [
     {
-      "title": "Russian missile attack kills three in Ukraine’s Kyiv",
-      "url": "https://www.aljazeera.com/news/2026/8/1/russian-missile-attack-kills-three-in-ukraines-kyiv?traffic_source=rss",
-      "snippet": "Residents trapped as partially collapsed building catches fire after deadly strike on Ukrainian capital.",
-      "published_at": "2026-08-01T02:06:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
+      "url": "https://umm.nordpoolgroup.com/#/messages/5db296fd-4bde-4265-9f7c-45d555005e2d/3",
+      "snippet": "Published: 01.08.2026 08:40:08 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-01T06:40:08+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
       "has_magnitude": false,
-      "score": 59,
+      "score": 66,
       "tags": [
-        "geopolitics",
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
-        "authority": 9.5,
-        "themes": 23.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 57.5,
-        "recency_multiplier": 0.95
+        "raw": 66.3,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "missile",
-          "attack"
-        ],
         "supply_disruption": [
-          "fire"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
+          "unplanned"
         ],
         "unplanned": [
-          "fire"
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
         ]
       },
-      "duplicate_count": 0,
+      "duplicate_count": 1,
       "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-07-31T19:48:17+00:00"
+      "first_seen_at": "2026-07-31T17:23:38+00:00"
     },
     {
       "title": "Saudis Push Maritime Coalition as Oil Finds Support",
@@ -168,7 +161,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 57,
+      "score": 50,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -186,7 +179,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 118.0,
-        "recency_multiplier": 0.45
+        "recency_multiplier": 0.37
       },
       "matched": {
         "geopolitics": [
@@ -217,6 +210,56 @@
       "also_reported_by": []
     },
     {
+      "title": "Russian missile attacks kill at least nine in Ukraine’s Kyiv",
+      "url": "https://www.aljazeera.com/news/2026/8/1/russian-missile-attack-kills-three-in-ukraines-kyiv?traffic_source=rss",
+      "snippet": "Residents trapped as partially collapsed buildings catch fire after deadly strike on Ukrainian capital.",
+      "published_at": "2026-08-01T02:06:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 14.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 48.5,
+        "recency_multiplier": 0.78
+      },
+      "matched": {
+        "geopolitics": [
+          "missile"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "russian",
+          "ukraine"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "BBC World"
+      ]
+    },
+    {
       "title": "Yemen’s Houthis deny plan to charge ships transiting Red Sea",
       "url": "https://www.aljazeera.com/news/2026/8/1/yemens-houthis-deny-plan-to-charge-ships-transiting-red-sea?traffic_source=rss",
       "snippet": "Houthis say Red Sea route remains free to use, pushing back on report of new shipping fees.",
@@ -227,7 +270,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 45,
       "tags": [
         "geopolitics"
       ],
@@ -243,7 +286,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -257,48 +300,86 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
-      "url": "https://umm.nordpoolgroup.com/#/messages/5db296fd-4bde-4265-9f7c-45d555005e2d/2",
-      "snippet": "Published: 31.07.2026 22:38:27 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-07-31T20:38:27+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
+      "title": "India's 'cockroach' protesters have wounds consistent with pellet-gun fire, say experts",
+      "url": "https://www.bbc.co.uk/news/articles/c74gwvygkjdo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ballistic experts say the dozens of tiny round punctures are tell-tale signs of pellet gun injuries.",
+      "published_at": "2026-07-31T23:58:12+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 37,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
-        "authority": 21.9,
+        "authority": 10.2,
         "themes": 8.4,
-        "geography": 0.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.63
+        "raw": 43.6,
+        "recency_multiplier": 0.66
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "fire"
+        ],
+        "geography": [
+          "india"
         ],
         "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
+          "fire"
         ]
       },
-      "duplicate_count": 2,
-      "also_reported_by": [],
-      "first_seen_at": "2026-07-31T14:37:22+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Trump administration drops Reflecting Pool vandalism charge and admits 'botched' repairs",
+      "url": "https://www.bbc.co.uk/news/articles/cz05yx5dd7yo?at_medium=RSS&at_campaign=rss",
+      "snippet": "President Donald Trump had blamed \"sick\" vandals, and a former Olympian had been charged, but prosecutors now say contractors caused the damage.",
+      "published_at": "2026-08-01T00:20:43+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.6,
+        "recency_multiplier": 0.68
+      },
+      "matched": {
+        "supply_disruption": [
+          "repairs"
+        ],
+        "unplanned": [
+          "damage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Powerful El Nino to intensify heat on ‘a planet already on fire’: UN",
@@ -311,7 +392,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 34,
       "tags": [
         "supply_disruption",
         "weather"
@@ -327,7 +408,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.0,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.51
       },
       "matched": {
         "supply_disruption": [
@@ -355,7 +436,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 33,
       "tags": [
         "supply_disruption"
       ],
@@ -371,7 +452,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 64.6,
-        "recency_multiplier": 0.48
+        "recency_multiplier": 0.39
       },
       "matched": {
         "supply_disruption": [
@@ -390,145 +471,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Why Trump’s Trade Threat Puts Spain’s Energy Security on the Line",
-      "url": "https://oilprice.com/Energy/Energy-General/Why-Trumps-Trade-Threat-Puts-Spains-Energy-Security-on-the-Line.html",
-      "snippet": "Donald Trump’s July 8 order to halt trade with Spain has yet to become an energy embargo, but Madrid can no longer dismiss it as political theatre. It was the second such threat since March 2026, this time delivered directly to Treasury Secretary Scott Bessent after Spain refused to commit 5% of GDP",
-      "published_at": "2026-07-31T19:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 35,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 47.7,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "geopolitics": [
-          "embargo"
-        ],
-        "supply_disruption": [
-          "halt"
-        ],
-        "oil_macro": [
-          "gdp"
-        ],
-        "geography": [
-          "spain"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Shell Sells Cyprus Gas Stake to MOL for $720 Million",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Shell-Sells-Cyprus-Gas-Stake-to-MOL-for-720-Million.html",
-      "snippet": "Shell has agreed to sell its wholly-owned subsidiary BG Cyprus Ltd to MOL Group of Hungary for $720 million, as the UK-based oil and gas supermajor targets to grow its LNG value chain. Shell on Friday announced the agreement with MOL Group for the sale of BG Cyprus, which holds a 35% non-operated in",
-      "published_at": "2026-07-31T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 7.3,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 60.0,
-        "recency_multiplier": 0.36
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Poland protests to Russian ambassador over missile incursion",
-      "url": "https://www.aljazeera.com/news/2026/7/31/poland-protests-to-russian-ambassador-over-missile-incursion?traffic_source=rss",
-      "snippet": "Warsaw asserts missile recently made, illustrating Russia&#039;s nightly barrage against Ukraine is draining arsenal.",
-      "published_at": "2026-07-31T19:48:17+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.4,
-        "recency_multiplier": 0.59
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "incursion"
-        ],
-        "geography": [
-          "poland"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/1/russian-missile-attack-kills-three-in-ukraines-kyiv?traffic_source=rss",
-        "title": "Russian missile attack kills three in Ukraine’s Kyiv",
-        "published_at": "2026-08-01T02:06:00+00:00"
-      },
-      "hidden": true
     }
   ]
 }
