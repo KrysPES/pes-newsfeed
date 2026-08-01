@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-01T15:46:45.450778+00:00",
-  "item_count": 7,
+  "generated_at": "2026-08-01T16:41:14.998991+00:00",
+  "item_count": 6,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 3
+    "high": 1,
+    "normal": 2
   },
   "superseded_count": 1,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1349
+        "ms": 2003
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 31273
+        "ms": 24243
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2684
+        "ms": 3345
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 420
+        "ms": 382
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 596
+        "ms": 235
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 342
+        "ms": 285
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1063
+        "ms": 1548
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 449
+        "ms": 512
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 692
+        "ms": 695
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 239
+        "ms": 363
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 386
+        "ms": 575
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 143
+        "ms": 49
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 177
+        "ms": 102
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
+      "url": "https://umm.nordpoolgroup.com/#/messages/9c5c0525-febd-4ac5-be60-4b29a99891e9/1",
+      "snippet": "Published: 01.08.2026 18:15:48 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
+      "published_at": "2026-08-01T16:15:48+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-01T06:40:08+00:00"
+    },
     {
       "title": "Spain attacks 'selfish' response of some EU countries to Ceuta migrant crossings",
       "url": "https://www.bbc.co.uk/news/articles/cx2v91xn1z9o?at_medium=RSS&at_campaign=rss",
@@ -198,50 +242,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Coolkeeragh - GU_500040 (C30)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/6028da30-530b-4757-ae25-68be1d942124/4",
-      "snippet": "Published: 01.08.2026 09:23:02 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Valve Issue Remarks: Valve Issue Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Po",
-      "published_at": "2026-08-01T07:23:02+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 48,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-01T06:40:08+00:00"
-    },
-    {
       "title": "Nine killed in strikes on Kyiv, as Ukraine sinks Russian container ship",
       "url": "https://www.bbc.co.uk/news/articles/ce973yvk7pko?at_medium=RSS&at_campaign=rss",
       "snippet": "The attack comes as Moscow escalates deadly ballistic missile attacks on the Ukrainian capital.",
@@ -252,7 +252,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "geopolitics"
       ],
@@ -268,7 +268,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -294,7 +294,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -309,7 +309,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.72
       },
       "matched": {
         "geopolitics": [
@@ -324,65 +324,6 @@
       "thread_started_at": "2026-08-01T09:47:39+00:00"
     },
     {
-      "title": "Saudis Push Maritime Coalition as Oil Finds Support",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Saudis-Push-Maritime-Coalition-as-Oil-Finds-Support.html",
-      "snippet": "Brent is set for an 8% weekly loss, but ongoing disruptions in the Strait of Hormuz and the Red Sea continue to support oil prices near $90 a barrel. Friday, July 31, 2026 Oil prices are set for an 8% weekly loss after the sell-off earlier this week was halted by the reality of two disrupted waterwa",
-      "published_at": "2026-07-31T16:15:56+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 45.2,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 118.0,
-        "recency_multiplier": 0.19
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz",
-          "red sea"
-        ],
-        "supply_disruption": [
-          "halted",
-          "disrupted"
-        ],
-        "oil_macro": [
-          "brent",
-          "barrel"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz",
-          "red sea"
-        ],
-        "unplanned": [
-          "halted"
-        ],
-        "urgency": [
-          "halted"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Iranian Kurdish parties in Iraq face a delicate balance amid Iran attacks",
       "url": "https://www.aljazeera.com/news/2026/8/1/iranian-kurdish-parties-in-iraq-face-a-delicate-balance-amid-iran-attacks?traffic_source=rss",
       "snippet": "Iranian Kurdish groups based in Iraq have been heavily attacked in the war, but most deny US assistance.",
@@ -393,7 +334,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 12,
       "tags": [
         "geopolitics"
       ],
@@ -408,7 +349,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.4,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
