@@ -1,111 +1,160 @@
 {
-  "generated_at": "2026-08-02T14:57:51.629872+00:00",
+  "generated_at": "2026-08-02T16:02:57.588752+00:00",
   "item_count": 9,
   "alert_counts": {
     "critical": 0,
     "high": 0,
     "normal": 4
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1970
+        "ms": 1738
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 24951
+        "ms": 78186
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 25373
+        "ms": 2804
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 901
+        "ms": 377
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 738
+        "ms": 658
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 188
+        "ms": 164
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1266
+        "ms": 1056
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 599
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 100
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 724
+        "ms": 605
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 301
+        "ms": 380
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 739
+        "ms": 497
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 23,
+        "count": 24,
         "error": null,
-        "ms": 221
+        "ms": 250
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 110
+        "ms": 147
       }
     ]
   },
   "items": [
+    {
+      "title": "Ukraine says major Russian oil refinery and airfield hit, as Moscow reports eight deaths",
+      "url": "https://www.bbc.co.uk/news/articles/c998gg5pe09o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Russia's military says it attacked Ukraine's ports and vessels in the Black Sea overnight.",
+      "published_at": "2026-08-02T15:48:00+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 11.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 46.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attacked"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "ukraine"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "At least five dead, 41 missing after ferry catches fire off Indonesia",
       "url": "https://www.aljazeera.com/news/2026/8/2/at-least-five-dead-41-missing-after-ferry-catches-fire-off-indonesia?traffic_source=rss",
@@ -117,7 +166,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 49,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +181,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.3,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.89
       },
       "matched": {
         "supply_disruption": [
@@ -160,7 +209,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 48,
       "tags": [
         "supply_disruption"
       ],
@@ -175,7 +224,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.75
       },
       "matched": {
         "supply_disruption": [
@@ -193,60 +242,17 @@
       "also_reported_by": []
     },
     {
-      "title": "Why has Trump halted Iran attacks, and what is the deal he is hinting at?",
-      "url": "https://www.aljazeera.com/news/2026/8/2/why-has-trump-halted-iran-attacks-and-what-is-the-deal-he-is-hinting-at?traffic_source=rss",
-      "snippet": "Trump says &#039;perimeters of a deal has been agreed to&#039; as he pauses attacks. But is there any substance to his claim?",
-      "published_at": "2026-08-02T09:43:10+00:00",
+      "title": "How to end the ‘Hormuz war’",
+      "url": "https://www.aljazeera.com/opinions/2026/8/2/how-to-end-the-hormuz?traffic_source=rss",
+      "snippet": "The least bad option for the US is to let the MoU Article 5 play out.",
+      "published_at": "2026-08-02T15:33:20+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.9,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "supply_disruption": [
-          "halted"
-        ],
-        "unplanned": [
-          "halted"
-        ],
-        "urgency": [
-          "halted"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-02T08:43:15+00:00"
-    },
-    {
-      "title": "No breakthrough on Strait of Hormuz as Trump halts attack on Iran",
-      "url": "https://www.aljazeera.com/news/2026/8/2/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran?traffic_source=rss",
-      "snippet": "Iran says Trump&#039;s comment on pullback from threatened strikes made &#039;within the context of psychological operations&#039;.",
-      "published_at": "2026-08-02T14:11:54+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 47,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -254,33 +260,72 @@
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 25.6,
+        "themes": 9.0,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 39.1,
+        "speculative": 0.0,
+        "raw": 34.5,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "attack",
-          "strait of hormuz"
+          "war"
         ],
         "geography": [
-          "strait of hormuz",
           "hormuz"
-        ],
-        "speculative": [
-          "comment"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 1,
+      "update_count": 2,
       "thread_started_at": "2026-08-02T13:59:49+00:00"
+    },
+    {
+      "title": "Heatwave forces nuclear shutdown in Hungary",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/08-02-2026-hungary-nuclear-plant-sv?traffic_source=rss",
+      "snippet": "Hungary says a heatwave has forced the shutdown of its largest nuclear plant as low Danube levels disrupt cooling.",
+      "published_at": "2026-08-02T14:44:34+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "supply_disruption",
+        "nuclear",
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 14.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "shutdown"
+        ],
+        "nuclear": [
+          "nuclear"
+        ],
+        "weather": [
+          "heatwave"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Woodside Revenue Up QoQ",
@@ -293,7 +338,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 34,
+      "score": 32,
       "tags": [
         "lng"
       ],
@@ -308,7 +353,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.2,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.79
       },
       "matched": {
         "lng": [
@@ -329,7 +374,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
@@ -345,97 +390,13 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.5,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
           "war"
         ],
         "geography": [
-          "spain"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
-      "url": "https://umm.nordpoolgroup.com/#/messages/9c5c0525-febd-4ac5-be60-4b29a99891e9/4",
-      "snippet": "Published: 02.08.2026 01:09:43 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-01T23:09:43+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.35
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "How Spain's migrant crisis created a political storm - whipped up by social media",
-      "url": "https://www.bbc.co.uk/news/articles/c62vl925dqdo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The Ceuta crossings have shaken Europe politically, exposing divisions over the sensitive issue of migration, the BBC's Sarah Rainsford writes.",
-      "published_at": "2026-08-02T10:32:28+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 6.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.4,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "weather": [
-          "storm"
-        ],
-        "geography": [
-          "europe",
           "spain"
         ]
       },
@@ -490,9 +451,61 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/2/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran?traffic_source=rss",
-        "title": "No breakthrough on Strait of Hormuz as Trump halts attack on Iran",
-        "published_at": "2026-08-02T14:11:54+00:00"
+        "url": "https://www.aljazeera.com/opinions/2026/8/2/how-to-end-the-hormuz?traffic_source=rss",
+        "title": "How to end the ‘Hormuz war’",
+        "published_at": "2026-08-02T15:33:20+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "No breakthrough on Strait of Hormuz as Trump halts attack on Iran",
+      "url": "https://www.aljazeera.com/news/2026/8/2/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran?traffic_source=rss",
+      "snippet": "Iran says Trump&#039;s comment on pullback from threatened strikes made &#039;within the context of psychological operations&#039;.",
+      "published_at": "2026-08-02T14:11:54+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 14,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 39.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "comment"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/opinions/2026/8/2/how-to-end-the-hormuz?traffic_source=rss",
+        "title": "How to end the ‘Hormuz war’",
+        "published_at": "2026-08-02T15:33:20+00:00"
       },
       "hidden": true
     }
