@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-02T20:32:25.954098+00:00",
-  "item_count": 9,
+  "generated_at": "2026-08-02T21:29:12.550550+00:00",
+  "item_count": 7,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 2
+    "normal": 3
   },
-  "superseded_count": 2,
+  "superseded_count": 1,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1781
+        "ms": 1595
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 45731
+        "ms": 16673
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4482
+        "ms": 19588
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 317
+        "ms": 333
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 769
+        "ms": 222
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 205
+        "ms": 195
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1450
+        "ms": 1362
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 234
+        "ms": 506
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 737
+        "ms": 721
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 350
+        "ms": 353
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 809
+        "ms": 716
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 67
+        "ms": 47
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 137
+        "ms": 132
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 59,
       "tags": [
         "geopolitics"
       ],
@@ -133,7 +133,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -162,7 +162,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 52,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -178,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.5,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -198,6 +198,55 @@
       "also_reported_by": []
     },
     {
+      "title": "Ukraine says major Russian oil refinery and airfield hit, as Moscow reports eight deaths",
+      "url": "https://www.bbc.co.uk/news/articles/c998gg5pe09o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Russia's military says it attacked Ukraine's ports and vessels in the Black Sea overnight.",
+      "published_at": "2026-08-02T15:48:00+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 11.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 46.9,
+        "recency_multiplier": 0.75
+      },
+      "matched": {
+        "geopolitics": [
+          "attacked"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "ukraine"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Suicide bomber kills 14 outside police station in Pakistan’s Swat",
       "url": "https://www.aljazeera.com/news/2026/8/2/suicide-bomber-kills-14-outside-police-station-in-pakistans-swat?traffic_source=rss",
       "snippet": "Explosion took place near crowd rallying against a surge in violence in northwestern Pakistan.",
@@ -208,7 +257,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "supply_disruption"
       ],
@@ -223,7 +272,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.81
       },
       "matched": {
         "supply_disruption": [
@@ -247,7 +296,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "supply_disruption"
       ],
@@ -262,7 +311,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.49
       },
       "matched": {
         "supply_disruption": [
@@ -280,48 +329,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Deadly ferry fire leaves dozens missing in Indonesia’s Java Sea",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/deadly-ferry-fire-leaves-dozens-missing-in-indonesias-java-sea?traffic_source=rss",
-      "snippet": "Deadly ferry fire leaves dozens missing in Indonesia&#039;s Java Sea",
-      "published_at": "2026-08-02T14:14:25+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "BBC World"
-      ],
-      "first_seen_at": "2026-08-02T11:49:40+00:00"
-    },
-    {
       "title": "Tidal Energy Could Cover 57% of US Electricity Demand, NREL Study Finds",
       "url": "https://oilprice.com/Energy/Energy-General/Tidal-Energy-Could-Cover-57-of-US-Electricity-Demand-NREL-Study-Finds.html",
       "snippet": "An Alaska-based tidal energy company is testing a new kind of small, modular turbine in the waters off of Massachusetts to try to take advantage of the United States’ vast and untapped tidal power potential. The turbine is being piloted in the strong tidal currents of Cape Cod to test the technology",
@@ -332,7 +339,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 35,
+      "score": 33,
       "tags": [
         "oil_macro"
       ],
@@ -348,7 +355,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.2,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.83
       },
       "matched": {
         "oil_macro": [
@@ -362,104 +369,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Ukrainian drone attacks kill eight in response to Russian missiles",
-      "url": "https://www.aljazeera.com/news/2026/8/2/ukrainian-drone-attacks-kill-eight-in-response-to-russian-missiles?traffic_source=rss",
-      "snippet": "Ukrainian strikes target Russian oil hubs and high-rises as Zelenskyy warns of critical Patriot interceptor shortages.",
-      "published_at": "2026-08-02T18:37:23+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "drone"
-        ],
-        "geography": [
-          "russian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-02T15:48:00+00:00"
-    },
-    {
-      "title": "Ukraine says major Russian oil refinery and airfield hit, as Moscow reports eight deaths",
-      "url": "https://www.bbc.co.uk/news/articles/c998gg5pe09o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Russia's military says it attacked Ukraine's ports and vessels in the Black Sea overnight.",
-      "published_at": "2026-08-02T15:48:00+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 14,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 11.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.9,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "ukraine"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/2/ukrainian-drone-attacks-kill-eight-in-response-to-russian-missiles?traffic_source=rss",
-        "title": "Ukrainian drone attacks kill eight in response to Russian missiles",
-        "published_at": "2026-08-02T18:37:23+00:00"
-      },
-      "hidden": true
-    },
-    {
       "title": "How to end the ‘Hormuz war’",
       "url": "https://www.aljazeera.com/opinions/2026/8/2/how-to-end-the-hormuz?traffic_source=rss",
       "snippet": "The least bad option for the US is to let the MoU Article 5 play out.",
@@ -470,7 +379,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
@@ -486,7 +395,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
