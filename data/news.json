@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-08-02T16:02:57.588752+00:00",
-  "item_count": 9,
+  "generated_at": "2026-08-02T17:11:20.634818+00:00",
+  "item_count": 12,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 4
+    "normal": 6
   },
   "superseded_count": 2,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1738
+        "ms": 1595
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 78186
+        "ms": 28623
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2804
+        "ms": 4955
       },
       {
         "id": "ofgem",
@@ -45,67 +45,115 @@
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 658
+        "ms": 409
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 164
+        "ms": 236
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1056
+        "ms": 1182
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 100
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 376
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 605
+        "ms": 637
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 380
+        "ms": 215
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 497
+        "ms": 459
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 250
+        "ms": 104
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 147
+        "ms": 279
       }
     ]
   },
   "items": [
+    {
+      "title": "Saudi Crown Prince MBS urges Trump to ‘prioritise dialogue’ in US-Iran war",
+      "url": "https://www.aljazeera.com/news/2026/8/2/saudi-crown-prince-mbs-urges-trump-to-prioritise-dialogue-in-us-iran-war?traffic_source=rss",
+      "snippet": "US president halted strikes after earlier threatening Iran with unprecedented force.",
+      "published_at": "2026-08-02T16:10:32+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 62,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 14.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 59.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "supply_disruption": [
+          "halted"
+        ],
+        "unplanned": [
+          "halted"
+        ],
+        "urgency": [
+          "halted"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-02T14:11:54+00:00"
+    },
     {
       "title": "Ukraine says major Russian oil refinery and airfield hit, as Moscow reports eight deaths",
       "url": "https://www.bbc.co.uk/news/articles/c998gg5pe09o?at_medium=RSS&at_campaign=rss",
@@ -156,6 +204,45 @@
       "also_reported_by": []
     },
     {
+      "title": "Suicide bomber kills 14 outside police station in Pakistan’s Swat",
+      "url": "https://www.aljazeera.com/news/2026/8/2/suicide-bomber-kills-14-outside-police-station-in-pakistans-swat?traffic_source=rss",
+      "snippet": "Explosion took place near crowd rallying against a surge in violence in northwestern Pakistan.",
+      "published_at": "2026-08-02T16:40:44+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "explosion"
+        ],
+        "unplanned": [
+          "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "At least five dead, 41 missing after ferry catches fire off Indonesia",
       "url": "https://www.aljazeera.com/news/2026/8/2/at-least-five-dead-41-missing-after-ferry-catches-fire-off-indonesia?traffic_source=rss",
       "snippet": "The ship was carrying 271 passengers and crew members when the blaze broke out as it sailed eastwards from Java.",
@@ -166,7 +253,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 46,
       "tags": [
         "supply_disruption"
       ],
@@ -181,7 +268,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.3,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.82
       },
       "matched": {
         "supply_disruption": [
@@ -209,7 +296,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 45,
       "tags": [
         "supply_disruption"
       ],
@@ -224,7 +311,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.69
       },
       "matched": {
         "supply_disruption": [
@@ -280,8 +367,88 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 2,
+      "update_count": 1,
       "thread_started_at": "2026-08-02T13:59:49+00:00"
+    },
+    {
+      "title": "Tidal Energy Could Cover 57% of US Electricity Demand, NREL Study Finds",
+      "url": "https://oilprice.com/Energy/Energy-General/Tidal-Energy-Could-Cover-57-of-US-Electricity-Demand-NREL-Study-Finds.html",
+      "snippet": "An Alaska-based tidal energy company is testing a new kind of small, modular turbine in the waters off of Massachusetts to try to take advantage of the United States’ vast and untapped tidal power potential. The turbine is being piloted in the strong tidal currents of Cape Cod to test the technology",
+      "published_at": "2026-08-02T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 39,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 30.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "At the scene of deadly Moscow bomb blast",
+      "url": "https://www.bbc.co.uk/news/videos/c1719pk0xq8o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Three people have been killed and 21 injured after an explosive device detonated at an Italian restaurant, Russian media reports.",
+      "published_at": "2026-08-02T16:52:35+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "blast"
+        ],
+        "geography": [
+          "russian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Heatwave forces nuclear shutdown in Hungary",
@@ -294,7 +461,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "supply_disruption",
         "nuclear",
@@ -311,7 +478,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
@@ -338,7 +505,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 32,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -353,51 +520,11 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.2,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.72
       },
       "matched": {
         "lng": [
           "lng"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "From Sudan to Spain: Between war and home | Al Jazeera Originals",
-      "url": "https://www.aljazeera.com/video/al-jazeera-documentaries/2026/8/2/aje-onl-aj_or_sdn_war-020826?traffic_source=rss",
-      "snippet": "A young Sudanese refugee rebuilds his life in Spain while war keeps him from the family he left behind.",
-      "published_at": "2026-08-02T11:07:13+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.5,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "spain"
         ]
       },
       "duplicate_count": 0,
@@ -414,7 +541,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 19,
+      "score": 18,
       "tags": [
         "geopolitics",
         "infrastructure"
@@ -431,7 +558,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -468,7 +595,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics"
       ],
@@ -484,7 +611,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -503,9 +630,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/opinions/2026/8/2/how-to-end-the-hormuz?traffic_source=rss",
-        "title": "How to end the ‘Hormuz war’",
-        "published_at": "2026-08-02T15:33:20+00:00"
+        "url": "https://www.aljazeera.com/news/2026/8/2/saudi-crown-prince-mbs-urges-trump-to-prioritise-dialogue-in-us-iran-war?traffic_source=rss",
+        "title": "Saudi Crown Prince MBS urges Trump to ‘prioritise dialogue’ in US-Iran war",
+        "published_at": "2026-08-02T16:10:32+00:00"
       },
       "hidden": true
     }
