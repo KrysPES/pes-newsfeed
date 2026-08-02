@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-02T22:29:57.802864+00:00",
+  "generated_at": "2026-08-02T23:32:41.615217+00:00",
   "item_count": 7,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 2
+    "normal": 3
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1660
+        "ms": 1594
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 15046
+        "ms": 32143
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3440
+        "ms": 10576
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 731
+        "ms": 470
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 4208
+        "ms": 554
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 269
+        "ms": 251
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1006
+        "ms": 923
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 428
+        "ms": 189
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 605
+        "ms": 690
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 205
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20188
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 582
+        "ms": 311
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 211
+        "ms": 384
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 150
+        "ms": 321
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 54,
       "tags": [
         "geopolitics"
       ],
@@ -133,7 +133,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.5,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -162,7 +162,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 47,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -178,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.5,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
@@ -198,6 +198,44 @@
       "also_reported_by": []
     },
     {
+      "title": "Sudan army drone attack on Darfur kills 35, rights group says",
+      "url": "https://www.aljazeera.com/news/2026/8/2/sudan-army-drone-attack-on-darfur-kills-35-rights-group-says?traffic_source=rss",
+      "snippet": "Tens of thousands of people have been killed in the ongoing war between army chief al-Burhan and RSF commander Dagalo.",
+      "published_at": "2026-08-02T22:51:09+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 26.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "war",
+          "attack"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Ukraine says major Russian oil refinery and airfield hit, as Moscow reports eight deaths",
       "url": "https://www.bbc.co.uk/news/articles/c998gg5pe09o?at_medium=RSS&at_campaign=rss",
       "snippet": "Russia's military says it attacked Ukraine's ports and vessels in the Black Sea overnight.",
@@ -208,7 +246,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -225,7 +263,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.9,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.64
       },
       "matched": {
         "geopolitics": [
@@ -257,7 +295,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 34,
       "tags": [
         "supply_disruption"
       ],
@@ -272,7 +310,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.69
       },
       "matched": {
         "supply_disruption": [
@@ -296,7 +334,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
         "supply_disruption"
       ],
@@ -311,7 +349,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.46
+        "recency_multiplier": 0.42
       },
       "matched": {
         "supply_disruption": [
@@ -329,46 +367,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Tidal Energy Could Cover 57% of US Electricity Demand, NREL Study Finds",
-      "url": "https://oilprice.com/Energy/Energy-General/Tidal-Energy-Could-Cover-57-of-US-Electricity-Demand-NREL-Study-Finds.html",
-      "snippet": "An Alaska-based tidal energy company is testing a new kind of small, modular turbine in the waters off of Massachusetts to try to take advantage of the United States’ vast and untapped tidal power potential. The turbine is being piloted in the strong tidal currents of Cape Cod to test the technology",
-      "published_at": "2026-08-02T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 30.2,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "oil_macro": [
-          "demand"
-        ],
-        "geography": [
-          "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "How to end the ‘Hormuz war’",
       "url": "https://www.aljazeera.com/opinions/2026/8/2/how-to-end-the-hormuz?traffic_source=rss",
       "snippet": "The least bad option for the US is to let the MoU Article 5 play out.",
@@ -379,7 +377,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 9,
       "tags": [
         "geopolitics"
       ],
@@ -395,7 +393,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.63
       },
       "matched": {
         "geopolitics": [
