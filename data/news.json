@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-02T13:54:39.406374+00:00",
-  "item_count": 6,
+  "generated_at": "2026-08-02T14:57:51.629872+00:00",
+  "item_count": 9,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 2
+    "normal": 4
   },
-  "superseded_count": 0,
+  "superseded_count": 1,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1615
+        "ms": 1970
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 23609
+        "ms": 24951
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 21677
+        "ms": 25373
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 618
+        "ms": 901
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 265
+        "ms": 738
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 392
+        "ms": 188
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1353
+        "ms": 1266
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 561
+        "ms": 599
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 708
+        "ms": 724
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 304
+        "ms": 301
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 652
+        "ms": 739
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 24,
+        "count": 23,
         "error": null,
-        "ms": 95
+        "ms": 221
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 166
+        "ms": 110
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 52,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
@@ -143,11 +143,54 @@
           "fire"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 2,
       "also_reported_by": [
         "BBC World"
       ],
       "first_seen_at": "2026-08-02T11:49:40+00:00"
+    },
+    {
+      "title": "Wildfires scorch Washington state as thousands evacuated and emergency declared",
+      "url": "https://www.bbc.co.uk/news/videos/cpd7912xyq4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "State officials said wildfires across more than 250,000 acres have led to widespread evacuations and power outages.",
+      "published_at": "2026-08-02T10:20:10+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 54.6,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "supply_disruption": [
+          "outages"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency",
+          "declared"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Why has Trump halted Iran attacks, and what is the deal he is hinting at?",
@@ -160,7 +203,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 49,
       "tags": [
         "supply_disruption"
       ],
@@ -175,7 +218,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.9,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.78
       },
       "matched": {
         "supply_disruption": [
@@ -193,6 +236,53 @@
       "first_seen_at": "2026-08-02T08:43:15+00:00"
     },
     {
+      "title": "No breakthrough on Strait of Hormuz as Trump halts attack on Iran",
+      "url": "https://www.aljazeera.com/news/2026/8/2/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran?traffic_source=rss",
+      "snippet": "Iran says Trump&#039;s comment on pullback from threatened strikes made &#039;within the context of psychological operations&#039;.",
+      "published_at": "2026-08-02T14:11:54+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 39.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "comment"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-02T13:59:49+00:00"
+    },
+    {
       "title": "Woodside Revenue Up QoQ",
       "url": "https://www.rigzone.com/news/woodside_revenue_up_qoq-02-aug-2026-184270-article/?rss=true",
       "snippet": "The Australian LNG-focused producer reported $4.19 billion in revenue for the second quarter, up 28 percent from the prior three-month period on higher prices.",
@@ -203,7 +293,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 37,
+      "score": 34,
       "tags": [
         "lng"
       ],
@@ -218,7 +308,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.2,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.86
       },
       "matched": {
         "lng": [
@@ -239,7 +329,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -255,7 +345,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.5,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -279,7 +369,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
         "supply_disruption"
       ],
@@ -294,7 +384,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.37
+        "recency_multiplier": 0.35
       },
       "matched": {
         "supply_disruption": [
@@ -322,7 +412,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "weather"
       ],
@@ -338,7 +428,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.4,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.83
       },
       "matched": {
         "weather": [
@@ -351,6 +441,60 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Rubio’s bypass plan: Can the world escape the Strait of Hormuz chokepoint?",
+      "url": "https://www.aljazeera.com/economy/2026/8/2/rubios-bypass-plan-can-the-world-escape-the-strait-of-hormuz-chokepoint?traffic_source=rss",
+      "snippet": "Experts warn that Marco Rubio&#039;s Hormuz bypass plan is hindered by pipeline limits and severe Red Sea threats.",
+      "published_at": "2026-08-02T13:59:49+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 19,
+      "tags": [
+        "geopolitics",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 36.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 61.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "red sea"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/2/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran?traffic_source=rss",
+        "title": "No breakthrough on Strait of Hormuz as Trump halts attack on Iran",
+        "published_at": "2026-08-02T14:11:54+00:00"
+      },
+      "hidden": true
     }
   ]
 }
