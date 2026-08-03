@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-03T22:31:58.026136+00:00",
-  "item_count": 14,
+  "generated_at": "2026-08-03T23:41:43.646525+00:00",
+  "item_count": 12,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 5
+    "normal": 4
   },
   "superseded_count": 3,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1715
+        "ms": 1337
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 32211
+        "ms": 10571
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 4823
+        "ms": 2700
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 1122
+        "ms": 393
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 3885
+        "ms": 480
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 12,
         "error": null,
-        "ms": 155
+        "ms": 82
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1227
+        "ms": 908
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 633
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 42
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 749
+        "ms": 545
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 386
+        "ms": 59
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 756
+        "ms": 441
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 102
+        "ms": 55
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 216
+        "ms": 156
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 62,
+      "score": 59,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.83
       },
       "matched": {
         "supply_disruption": [
@@ -161,7 +161,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 53,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -178,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.2,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -207,7 +207,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 45,
       "tags": [
         "geopolitics"
       ],
@@ -223,7 +223,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -251,7 +251,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 44,
       "tags": [
         "geopolitics",
         "lng",
@@ -269,7 +269,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.57
       },
       "matched": {
         "geopolitics": [
@@ -301,11 +301,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 41,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -316,7 +316,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.87
       },
       "matched": {
         "supply_disruption": [
@@ -340,7 +340,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 35,
       "tags": [
         "infrastructure",
         "nuclear"
@@ -357,7 +357,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.8,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.57
       },
       "matched": {
         "infrastructure": [
@@ -386,7 +386,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -402,7 +402,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.7,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -429,7 +429,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -446,7 +446,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -464,50 +464,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Rhine falls to record low levels as drought strains Europe's rivers",
-      "url": "https://www.bbc.co.uk/news/articles/c78gn8zvrx4o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Low water levels in the Rhine, Danube and Po have curtailed the transport of goods and reduced electricity output.",
-      "published_at": "2026-08-03T16:27:43+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "supply_disruption",
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.1,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.3,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "supply_disruption": [
-          "curtailed"
-        ],
-        "weather": [
-          "drought"
-        ],
-        "geography": [
-          "europe"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Hourly peak load in ERCOT set a new record, exceeding 91 GW on July 22",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=67906",
       "snippet": "Hourly peak load in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization serving most of Texas, reached a record 91.1 gigawatts (GW) on July 22, 2026, according to data reported to us for our Hourly Electric Grid Monitor.",
@@ -518,7 +474,7 @@
       "authority": 20,
       "tier": 2,
       "has_magnitude": true,
-      "score": 32,
+      "score": 30,
       "tags": [
         "infrastructure"
       ],
@@ -533,56 +489,12 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 40.0,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.55
       },
       "matched": {
         "infrastructure": [
           "grid",
           "transmission"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukrainian Drone Attacks Push Russia's Largest Online Retailer Abroad",
-      "url": "https://oilprice.com/Geopolitics/Europe/Ukrainian-Drone-Attacks-Push-Russias-Largest-Online-Retailer-Abroad.html",
-      "snippet": "Desperate to blunt the threat posed by Ukrainian drone attacks, the operator of Wildberries, Russia’s leading e-commerce platform, is looking to lease warehouse space in neighboring Kazakhstan. In response to a series of recent Ukrainian drone strikes across Russia that have destroyed at least 10 pe",
-      "published_at": "2026-08-03T18:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.8,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "geopolitics": [
-          "drone"
-        ],
-        "infrastructure": [
-          "platform"
-        ],
-        "geography": [
-          "russia"
         ]
       },
       "duplicate_count": 0,
@@ -599,7 +511,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 12,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -615,7 +527,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.1,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.72
       },
       "matched": {
         "geopolitics": [
@@ -664,7 +576,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -710,7 +622,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 39.7,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.62
       },
       "matched": {
         "geopolitics": [
