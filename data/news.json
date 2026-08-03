@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-03T18:26:15.290059+00:00",
-  "item_count": 23,
+  "generated_at": "2026-08-03T20:10:26.027342+00:00",
+  "item_count": 19,
   "alert_counts": {
     "critical": 0,
     "high": 1,
     "normal": 3
   },
-  "superseded_count": 8,
+  "superseded_count": 7,
   "sources": {
     "healthy": 12,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1900
+        "ms": 1697
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 67715
+        "ms": 41741
       },
       {
         "id": "gie_agsi",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 3611
+        "ms": 3410
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 355
+        "ms": 341
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 534
+        "ms": 635
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 12,
         "error": null,
-        "ms": 295
+        "ms": 598
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 999
+        "ms": 1026
       },
       {
         "id": "offshore_energy",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 105
+        "ms": 103
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 701
+        "ms": 670
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 290
+        "ms": 297
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 1573
+        "ms": 528
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 298
+        "ms": 142
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 177
+        "ms": 252
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 70,
+      "score": 67,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "supply_disruption": [
@@ -153,6 +153,50 @@
       "first_seen_at": "2026-08-03T09:03:13+00:00"
     },
     {
+      "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
+      "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
+      "snippet": "US president demands &#039;Total Surrender&#039; amid escalating naval blockade in the crucial Strait of Hormuz.",
+      "published_at": "2026-08-03T17:38:01+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-08-03T15:30:00+00:00"
+    },
+    {
       "title": "Dark Tanker Transits Surge at Bab el-Mandeb as Houthi Threat Persists",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Dark-Tanker-Transits-Surge-at-Bab-el-Mandeb-as-Houthi-Threat-Persists.html",
       "snippet": "The Houthi threat to shipments of Saudi crude oil from the Red Sea hasn’t abated and more tankers laden with Saudi oil appeared to have made the transit through the Bab el-Mandeb chokepoint in dark mode. Two tankers that had loaded Saudi crude at the Red Sea port of Yanbu have likely exited the Bab ",
@@ -163,7 +207,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 53,
       "tags": [
         "geopolitics",
         "lng",
@@ -181,7 +225,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
@@ -203,50 +247,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
-      "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
-      "snippet": "Trump demands Total Surrender amid escalating naval blockade in the crucial Strait of Hormuz.",
-      "published_at": "2026-08-03T17:38:01+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 56,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 5,
-      "thread_started_at": "2026-08-03T14:00:00+00:00"
-    },
-    {
       "title": "New Chinese reactors reach start-up milestones",
       "url": "https://www.world-nuclear-news.org/articles/chinese-reactors-start-up-milestones",
       "snippet": "Unit 3 of the Changjiang nuclear power plant in China's Hainan province has begun supplying electricity to the grid, while unit 2 of the Taipingling plant in Guangdong has entered commercial operation. Both units feature Hualong One (HPR1000) reactors.",
@@ -257,7 +257,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 43,
       "tags": [
         "infrastructure",
         "nuclear"
@@ -274,7 +274,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.8,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.75
       },
       "matched": {
         "infrastructure": [
@@ -293,51 +293,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Georgia’s Kulevi Refinery Replaces Russian Crude With Kazakh, Libyan Oil",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Georgias-Kulevi-Refinery-Replaces-Russian-Crude-With-Kazakh-Libyan-Oil.html",
-      "snippet": "Georgia’s only oil refinery has begun replacing Russian crude with supplies from Kazakhstan and Libya as owner Black Sea Petroleum races to avoid European Union sanctions that will go into effect in January. The Kulevi refinery received and processed Kazakh crude in July and will continue taking Kaz",
-      "published_at": "2026-08-03T16:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "oil_macro": [
-          "crude",
-          "refinery"
-        ],
-        "geography": [
-          "european"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Rhine falls to record low levels as drought strains Europe's rivers",
       "url": "https://www.bbc.co.uk/news/articles/c78gn8zvrx4o?at_medium=RSS&at_campaign=rss",
       "snippet": "Low water levels in the Rhine, Danube and Po have curtailed the transport of goods and reduced electricity output.",
@@ -348,7 +303,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 37,
       "tags": [
         "supply_disruption",
         "weather"
@@ -365,7 +320,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "supply_disruption": [
@@ -392,7 +347,7 @@
       "authority": 20,
       "tier": 2,
       "has_magnitude": true,
-      "score": 41,
+      "score": 37,
       "tags": [
         "infrastructure"
       ],
@@ -407,207 +362,12 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 40.0,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.73
       },
       "matched": {
         "infrastructure": [
           "grid",
           "transmission"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Nigeria LNG plans more liquefaction trains",
-      "url": "https://lngprime.com/africa/nigeria-lng-plans-more-liquefaction-trains/194360/",
-      "snippet": "LNG producer Nigeria LNG, a joint venture of NNPC, Shell, TotalEnergies, and Eni, is planning to add more liquefaction trains as it nears the completion of Train 7 at its Bonny Island plant, according to managing director and CEO Adeleye Falade.",
-      "published_at": "2026-08-03T14:07:06+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.7,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "liquefaction"
-        ],
-        "geography": [
-          "nigeria"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Indian Oil Subsidiary CPCL Plans 280,000 Bpd Manali Refinery",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Oil-Subsidiary-CPCL-Plans-280000-Bpd-Manali-Refinery.html",
-      "snippet": "Indian refiner Chennai Petroleum Corporation Limited plans to boost the crude oil refining capacity at its Manali refinery by a third to 280,000 barrels per day (bpd), the refiner said in its 2025/2026 report. Chennai Petroleum Corporation Limited (CPCL) is a subsidiary of the country's top state-co",
-      "published_at": "2026-08-03T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 34.2,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "refinery",
-          "barrels"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Detained Myanmar leader Suu Kyi has first foreign visitor in five years",
-      "url": "https://www.aljazeera.com/news/2026/8/3/detained-myanmar-leader-suu-kyi-has-first-foreign-visitor-in-five-years?traffic_source=rss",
-      "snippet": "Aung San Suu Kyi has met a Red Cross representative in her first confirmed contact with a foreign official since 2021.",
-      "published_at": "2026-08-03T12:56:43+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "geopolitics": [
-          "detained"
-        ],
-        "urgency": [
-          "confirmed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Dominion keeps options open for North Anna new build",
-      "url": "https://www.world-nuclear-news.org/articles/dominion-keeps-options-open-for-north-anna",
-      "snippet": "Dominion Energy is taking steps to preserve the Early Site Permit issued to its North Anna site in 2007. The Louisa County site is already home to two operating reactors.",
-      "published_at": "2026-08-03T12:51:59+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 20.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.7,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "nuclear": [
-          "reactors",
-          "new build"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "China approves construction of eight more reactors",
-      "url": "https://www.world-nuclear-news.org/articles/china-approves-construction-of-eight-more-reactors",
-      "snippet": "The construction of three pairs of Hualong One (HPR1000) reactors at the Jinqimen, Taipingling and Zhuanghe sites, as well as two Guohe One (CAP1400) reactors at the Laiyang site was approved during a State Council executive meeting chaired by Chinese Premier Li Qiang on 31 July.",
-      "published_at": "2026-08-03T16:15:26+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.1,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "nuclear": [
-          "reactors"
-        ],
-        "geography": [
-          "china"
         ]
       },
       "duplicate_count": 0,
@@ -640,7 +400,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -656,51 +416,93 @@
       "thread_started_at": "2026-08-03T14:23:07+00:00"
     },
     {
-      "title": "Draft Regulatory Instructions and Guidance: Data Communications Company (DCC) 2026",
-      "url": "https://www.ofgem.gov.uk/consultation/draft-regulatory-instructions-and-guidance-data-communications-company-dcc-2026",
-      "snippet": "Ofgem is seeking views on proposed changes to reporting and guidance for DCC for the second Price Control Period starting 1 April 2028.",
-      "published_at": "2026-08-03T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
+      "title": "Nigeria LNG plans more liquefaction trains",
+      "url": "https://lngprime.com/africa/nigeria-lng-plans-more-liquefaction-trains/194360/",
+      "snippet": "LNG producer Nigeria LNG, a joint venture of NNPC, Shell, TotalEnergies, and Eni, is planning to add more liquefaction trains as it nears the completion of Train 7 at its Bonny Island plant, according to managing director and CEO Adeleye Falade.",
+      "published_at": "2026-08-03T14:07:06+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
       "score": 32,
       "tags": [
-        "regulation"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 16.1,
-        "themes": 17.6,
-        "geography": 0.0,
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 33.7,
-        "recency_multiplier": 0.71
+        "raw": 32.7,
+        "recency_multiplier": 0.73
       },
       "matched": {
-        "regulation": [
-          "ofgem",
-          "price control"
+        "lng": [
+          "lng",
+          "liquefaction"
+        ],
+        "geography": [
+          "nigeria"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Russian anti-war politician says he has fled the country",
-      "url": "https://www.bbc.co.uk/news/articles/c70gjw60033o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Boris Nadezhdin, who was recently designated as a foreign agent, posted a video in front of the Eiffel Tower.",
-      "published_at": "2026-08-03T15:41:08+00:00",
+      "title": "Indian Oil Subsidiary CPCL Plans 280,000 Bpd Manali Refinery",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Oil-Subsidiary-CPCL-Plans-280000-Bpd-Manali-Refinery.html",
+      "snippet": "Indian refiner Chennai Petroleum Corporation Limited plans to boost the crude oil refining capacity at its Manali refinery by a third to 280,000 barrels per day (bpd), the refiner said in its 2025/2026 report. Chennai Petroleum Corporation Limited (CPCL) is a subsidiary of the country's top state-co",
+      "published_at": "2026-08-03T13:30:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 32,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.2,
+        "recency_multiplier": 0.7
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "refinery",
+          "barrels"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Drone slams into Russian beach, killing at least 7 people",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/drone-slams-into-russian-beach-killing-at-least-7-people?traffic_source=rss",
+      "snippet": "Video shows the moment a drone struck a crowded beach near the Russian Black Sea resort of Gelendzhik.",
+      "published_at": "2026-08-03T18:05:23+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
       "score": 31,
@@ -710,7 +512,7 @@
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
+        "authority": 9.5,
         "themes": 9.0,
         "geo_band": "tertiary",
         "geography": 5.0,
@@ -718,15 +520,94 @@
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.94
+        "raw": 23.5,
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
-          "war"
+          "drone"
         ],
         "geography": [
           "russian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-03T16:30:00+00:00"
+    },
+    {
+      "title": "China approves construction of eight more reactors",
+      "url": "https://www.world-nuclear-news.org/articles/china-approves-construction-of-eight-more-reactors",
+      "snippet": "The construction of three pairs of Hualong One (HPR1000) reactors at the Jinqimen, Taipingling and Zhuanghe sites, as well as two Guohe One (CAP1400) reactors at the Laiyang site was approved during a State Council executive meeting chaired by Chinese Premier Li Qiang on 31 July.",
+      "published_at": "2026-08-03T16:15:26+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.1,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "nuclear": [
+          "reactors"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Dominion keeps options open for North Anna new build",
+      "url": "https://www.world-nuclear-news.org/articles/dominion-keeps-options-open-for-north-anna",
+      "snippet": "Dominion Energy is taking steps to preserve the Early Site Permit issued to its North Anna site in 2007. The Louisa County site is already home to two operating reactors.",
+      "published_at": "2026-08-03T12:51:59+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 20.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.7,
+        "recency_multiplier": 0.66
+      },
+      "matched": {
+        "nuclear": [
+          "reactors",
+          "new build"
         ]
       },
       "duplicate_count": 0,
@@ -759,7 +640,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "geopolitics": [
@@ -793,7 +674,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 13,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -810,7 +691,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.5,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
@@ -838,6 +719,51 @@
       "hidden": true
     },
     {
+      "title": "Uncertainty on Iranians’ minds as Trump fluctuates on war and talk",
+      "url": "https://www.aljazeera.com/news/2026/8/3/uncertainty-on-iranians-minds-as-trump-fluctuates-on-war-and-talk?traffic_source=rss",
+      "snippet": "Iranians feeling pressure amid US president&#039;s on-again, off-again comments on conflict and negotiations.",
+      "published_at": "2026-08-03T16:33:08+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 12,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 26.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war",
+          "negotiations"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
+        "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
+        "published_at": "2026-08-03T17:38:01+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "Trump's Iran Reversal Sends European Gas Prices Tumbling",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Trumps-Iran-Reversal-Sends-European-Gas-Prices-Tumbling.html",
       "snippet": "European natural gas prices plunged at opening on Monday after U.S. President Donald Trump said he had called off a planned attack on Iranian energy sites and talks on a deal would begin this week. Europe’s benchmark natural gas prices, the Dutch TTF Natural Gas Futures, sank by 4% at the start of t",
@@ -848,7 +774,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 14,
+      "score": 12,
       "tags": [
         "geopolitics"
       ],
@@ -864,7 +790,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 39.7,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -888,51 +814,6 @@
       "hidden": true
     },
     {
-      "title": "Uncertainty on Iranians’ minds as Trump fluctuates on war and talk",
-      "url": "https://www.aljazeera.com/news/2026/8/3/uncertainty-on-iranians-minds-as-trump-fluctuates-on-war-and-talk?traffic_source=rss",
-      "snippet": "Iranians feeling pressure amid US president&#039;s on-again, off-again comments on conflict and negotiations.",
-      "published_at": "2026-08-03T16:33:08+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 13,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 26.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "war",
-          "negotiations"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
-        "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
-        "published_at": "2026-08-03T17:38:01+00:00"
-      },
-      "hidden": true
-    },
-    {
       "title": "Why Have China and Russia Just Stepped Out Of The Shadows In The U.S.-Iran War?",
       "url": "https://oilprice.com/Geopolitics/Middle-East/Why-Have-China-and-Russia-Just-Stepped-Out-Of-The-Shadows-In-The-US-Iran-War.html",
       "snippet": "As with all wars, particularly in the world’s main oil and gas repository of the Middle East, the U.S./Israel-Iran conflict has long threatened to widen out to include other interested parties aside from the main protagonists. The involvement of Washington’s and Tel Aviv’s allies so far has been lim",
@@ -943,7 +824,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 11,
       "tags": [
         "geopolitics"
       ],
@@ -959,7 +840,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -979,6 +860,58 @@
         "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss",
         "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
         "published_at": "2026-08-03T18:04:30+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Georgia’s Kulevi Refinery Replaces Russian Crude With Kazakh, Libyan Oil",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Georgias-Kulevi-Refinery-Replaces-Russian-Crude-With-Kazakh-Libyan-Oil.html",
+      "snippet": "Georgia’s only oil refinery has begun replacing Russian crude with supplies from Kazakhstan and Libya as owner Black Sea Petroleum races to avoid European Union sanctions that will go into effect in January. The Kulevi refinery received and processed Kazakh crude in July and will continue taking Kaz",
+      "published_at": "2026-08-03T16:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 14.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.1,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "oil_macro": [
+          "crude",
+          "refinery"
+        ],
+        "geography": [
+          "european"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/drone-slams-into-russian-beach-killing-at-least-7-people?traffic_source=rss",
+        "title": "Drone slams into Russian beach, killing at least 7 people",
+        "published_at": "2026-08-03T18:05:23+00:00"
       },
       "hidden": true
     },
@@ -1010,7 +943,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -1030,108 +963,6 @@
         "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss",
         "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
         "published_at": "2026-08-03T18:04:30+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Threat to oil tankers in Middle East worst since start of Iran war, analysts say",
-      "url": "https://www.bbc.co.uk/news/articles/cjrv0dy2e90o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Fresh attacks on alternative shipping routes have left tankers facing an increasingly complex situation, analysts say.",
-      "published_at": "2026-08-03T15:57:27+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
-        "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
-        "published_at": "2026-08-03T17:38:01+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "How the Iran War Will Determine Britain's Economic Growth",
-      "url": "https://oilprice.com/Energy/Energy-General/How-the-Iran-War-Will-Determine-Britains-Economic-Growth.html",
-      "snippet": "The Iran war could “halt growth” in the UK economy as the success of Andy Burnham and John Healey’s economic management largely hinges on President Trump’s decision-making, a City firm has warned. Big Four consultancy EY has said that the UK economy could perform better than first expected this year",
-      "published_at": "2026-08-03T14:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 26.8,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "supply_disruption": [
-          "halt"
-        ],
-        "geography": [
-          "uk",
-          "britain"
-        ],
-        "speculative": [
-          "could"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
-        "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
-        "published_at": "2026-08-03T17:38:01+00:00"
       },
       "hidden": true
     }
