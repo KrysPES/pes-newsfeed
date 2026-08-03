@@ -1,123 +1,123 @@
 {
-  "generated_at": "2026-08-03T16:42:34.820518+00:00",
-  "item_count": 27,
+  "generated_at": "2026-08-03T18:26:15.290059+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 5
+    "normal": 3
   },
-  "superseded_count": 4,
+  "superseded_count": 8,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1621
+        "ms": 1900
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 298876
+        "ms": 67715
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3314
+        "ms": 3611
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 308
+        "ms": 355
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 537
+        "ms": 534
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 12,
         "error": null,
-        "ms": 279
+        "ms": 295
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 893
+        "ms": 999
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 417
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 105
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 555
+        "ms": 701
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 258
+        "ms": 290
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 494
+        "ms": 1573
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 26,
+        "count": 27,
         "error": null,
-        "ms": 165
+        "ms": 298
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 164
+        "ms": 177
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 6",
-      "url": "https://umm.nordpoolgroup.com/#/messages/92e79712-c0cb-4f36-b009-595bf98234e9/1",
-      "snippet": "Published: 03.08.2026 18:14:47 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
-      "published_at": "2026-08-03T16:14:47+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ballylumford CCGT - GU_503730(B32)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/937cf7a4-9963-401b-8b90-4e5cd564f460/2",
+      "snippet": "Published: 03.08.2026 19:03:26 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Suspected tube leak - Investigate&#xa;&#xa;Investigation complete Production Units Unit Name Unit EIC Area Installed Capacity Availabl",
+      "published_at": "2026-08-03T17:03:26+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 70,
       "tags": [
         "supply_disruption"
       ],
@@ -125,28 +125,30 @@
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 16.8,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
+        "raw": 74.7,
         "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "unplanned",
+          "leak"
         ],
         "unplanned": [
           "unplanned",
-          "failure"
+          "failure",
+          "leak"
         ],
         "urgency": [
           "unplanned"
         ]
       },
-      "duplicate_count": 3,
+      "duplicate_count": 4,
       "also_reported_by": [],
       "first_seen_at": "2026-08-03T09:03:13+00:00"
     },
@@ -161,7 +163,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 63,
+      "score": 58,
       "tags": [
         "geopolitics",
         "lng",
@@ -179,7 +181,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -201,52 +203,48 @@
       "also_reported_by": []
     },
     {
-      "title": "More than 17 killed as Russia and Ukraine trade heavy attacks",
-      "url": "https://www.aljazeera.com/news/2026/8/3/more-than-10-killed-as-russia-and-ukraine-trade-heavy-attacks?traffic_source=rss",
-      "snippet": "Exchange of fire intensifies as the war, now in its fifth year, shows no signs of slowing down.",
-      "published_at": "2026-08-03T14:23:07+00:00",
+      "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
+      "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
+      "snippet": "Trump demands Total Surrender amid escalating naval blockade in the crucial Strait of Hormuz.",
+      "published_at": "2026-08-03T17:38:01+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 56,
       "tags": [
-        "geopolitics",
-        "supply_disruption"
+        "geopolitics"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 14.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 48.5,
-        "recency_multiplier": 0.98
+        "raw": 51.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "war"
-        ],
-        "supply_disruption": [
-          "fire"
+          "blockade",
+          "strait of hormuz"
         ],
         "geography": [
-          "russia",
-          "ukraine"
-        ],
-        "unplanned": [
-          "fire"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 5,
+      "thread_started_at": "2026-08-03T14:00:00+00:00"
     },
     {
       "title": "New Chinese reactors reach start-up milestones",
@@ -259,7 +257,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 48,
       "tags": [
         "infrastructure",
         "nuclear"
@@ -276,7 +274,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.8,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.86
       },
       "matched": {
         "infrastructure": [
@@ -295,81 +293,49 @@
       "also_reported_by": []
     },
     {
-      "title": "Hourly peak load in ERCOT set a new record, exceeding 91 GW on July 22",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67906",
-      "snippet": "Hourly peak load in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization serving most of Texas, reached a record 91.1 gigawatts (GW) on July 22, 2026, according to data reported to us for our Hourly Electric Grid Monitor.",
-      "published_at": "2026-08-03T14:00:00+00:00",
+      "title": "Georgia’s Kulevi Refinery Replaces Russian Crude With Kazakh, Libyan Oil",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Georgias-Kulevi-Refinery-Replaces-Russian-Crude-With-Kazakh-Libyan-Oil.html",
+      "snippet": "Georgia’s only oil refinery has begun replacing Russian crude with supplies from Kazakhstan and Libya as owner Black Sea Petroleum races to avoid European Union sanctions that will go into effect in January. The Kulevi refinery received and processed Kazakh crude in July and will continue taking Kaz",
+      "published_at": "2026-08-03T16:30:00+00:00",
       "type": "news",
-      "source": "eia_today",
-      "source_name": "EIA Today in Energy",
-      "authority": 20,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 46,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 14.6,
-        "themes": 13.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 40.0,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "infrastructure": [
-          "grid",
-          "transmission"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Uncertainty on Iranians’ minds as Trump fluctuates on war and talk",
-      "url": "https://www.aljazeera.com/news/2026/8/3/uncertainty-on-iranians-minds-as-trump-fluctuates-on-war-and-talk?traffic_source=rss",
-      "snippet": "Iranians feeling pressure amid US president&#039;s on-again, off-again comments on conflict and negotiations.",
-      "published_at": "2026-08-03T16:33:08+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 41,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 26.9,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 14.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 36.4,
+        "raw": 33.1,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "conflict",
-          "war",
-          "negotiations"
+          "sanctions"
+        ],
+        "oil_macro": [
+          "crude",
+          "refinery"
+        ],
+        "geography": [
+          "european"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-08-03T03:05:00+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Rhine falls to record low levels as drought strains Europe's rivers",
@@ -416,6 +382,43 @@
       "also_reported_by": []
     },
     {
+      "title": "Hourly peak load in ERCOT set a new record, exceeding 91 GW on July 22",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67906",
+      "snippet": "Hourly peak load in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization serving most of Texas, reached a record 91.1 gigawatts (GW) on July 22, 2026, according to data reported to us for our Hourly Electric Grid Monitor.",
+      "published_at": "2026-08-03T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 13.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 40.0,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "infrastructure": [
+          "grid",
+          "transmission"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Nigeria LNG plans more liquefaction trains",
       "url": "https://lngprime.com/africa/nigeria-lng-plans-more-liquefaction-trains/194360/",
       "snippet": "LNG producer Nigeria LNG, a joint venture of NNPC, Shell, TotalEnergies, and Eni, is planning to add more liquefaction trains as it nears the completion of Train 7 at its Bonny Island plant, according to managing director and CEO Adeleye Falade.",
@@ -426,7 +429,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 36,
       "tags": [
         "lng"
       ],
@@ -442,7 +445,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.84
       },
       "matched": {
         "lng": [
@@ -467,7 +470,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 40,
+      "score": 36,
       "tags": [
         "oil_macro"
       ],
@@ -482,7 +485,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.2,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.8
       },
       "matched": {
         "oil_macro": [
@@ -505,7 +508,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -520,7 +523,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -544,7 +547,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 35,
       "tags": [
         "nuclear"
       ],
@@ -559,107 +562,12 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.7,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.76
       },
       "matched": {
         "nuclear": [
           "reactors",
           "new build"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudi Oil Reroutes Hit Capacity and Security Limits",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Oil-Reroutes-Hit-Capacity-and-Security-Limits.html",
-      "snippet": "When Iran shut down the Strait of Hormuz, Saudi Arabia quickly redirected its oil flows to the Red Sea. Now, that route has become dangerous because of the Houthi blockade, so Saudi is rerouting to Egypt—and two LNG tankers in the Egyptian port of Damietta just got struck by drones. OPEC’s number-on",
-      "published_at": "2026-08-02T23:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 37.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 98.7,
-        "recency_multiplier": 0.3
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade",
-          "strait of hormuz",
-          "red sea"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "oil_macro": [
-          "opec"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz",
-          "red sea"
-        ],
-        "unplanned": [
-          "shut down"
-        ],
-        "urgency": [
-          "shut"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Draft Regulatory Instructions and Guidance: Data Communications Company (DCC) 2026",
-      "url": "https://www.ofgem.gov.uk/consultation/draft-regulatory-instructions-and-guidance-data-communications-company-dcc-2026",
-      "snippet": "Ofgem is seeking views on proposed changes to reporting and guidance for DCC for the second Price Control Period starting 1 April 2028.",
-      "published_at": "2026-08-03T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 17.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.7,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "regulation": [
-          "ofgem",
-          "price control"
         ]
       },
       "duplicate_count": 0,
@@ -692,7 +600,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "nuclear": [
@@ -706,50 +614,10 @@
       "also_reported_by": []
     },
     {
-      "title": "Hellenic Cables earns qualification for 525 kV HVDC XLPE cable systems",
-      "url": "https://www.offshore-energy.biz/hellenic-cables-earns-qualification-for-525-kv-hvdc-xlpe-cable-systems/",
-      "snippet": "Greek Hellenic Cables, the cables segment of Belgium-headquartered Cenergy Holdings, has achieved qualification of [&#8230;] The post Hellenic Cables earns qualification for 525 kV HVDC XLPE cable systems appeared first on Offshore Energy .",
-      "published_at": "2026-08-03T12:28:35+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 6.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.1,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "infrastructure": [
-          "cable"
-        ],
-        "geography": [
-          "belgium"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Threat to oil tankers in Middle East worst since start of Iran war, analysts say",
-      "url": "https://www.bbc.co.uk/news/articles/cjrv0dy2e90o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Fresh attacks on alternative shipping routes have left tankers facing an increasingly complex situation, analysts say.",
-      "published_at": "2026-08-03T15:57:27+00:00",
+      "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
+      "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Three children were killed when the drone crashed at a popular resort on the Black Sea.",
+      "published_at": "2026-08-03T18:04:30+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -776,16 +644,53 @@
       },
       "matched": {
         "geopolitics": [
-          "war"
+          "drone"
         ],
         "geography": [
-          "middle east"
+          "russia"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-03T14:00:00+00:00"
+      "update_count": 3,
+      "thread_started_at": "2026-08-03T14:23:07+00:00"
+    },
+    {
+      "title": "Draft Regulatory Instructions and Guidance: Data Communications Company (DCC) 2026",
+      "url": "https://www.ofgem.gov.uk/consultation/draft-regulatory-instructions-and-guidance-data-communications-company-dcc-2026",
+      "snippet": "Ofgem is seeking views on proposed changes to reporting and guidance for DCC for the second Price Control Period starting 1 April 2028.",
+      "published_at": "2026-08-03T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 17.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.7,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "regulation": [
+          "ofgem",
+          "price control"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Russian anti-war politician says he has fled the country",
@@ -798,7 +703,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
@@ -814,7 +719,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -828,245 +733,109 @@
       "also_reported_by": []
     },
     {
-      "title": "Shell Sells European Onshore Renewables Portfolio to TotalEnergies",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Shell-Sells-European-Onshore-Renewables-Portfolio-to-TotalEnergies.html",
-      "snippet": "Shell has signed an agreement to sell its European onshore renewables portfolio to French peer TotalEnergies, the UK-based supermajor said on Monday as it prioritizes capital allocation into high-value businesses. The portfolio included in the transaction comprises 0.5 gigawatts (GW) of combined ren",
-      "published_at": "2026-08-03T11:30:00+00:00",
+      "title": "Trump Orders Oil Companies to Cut Gas Prices, Targets Chevron CEO",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Orders-Oil-Companies-to-Cut-Gas-Prices-Targets-Chevron-CEO.html",
+      "snippet": "President Donald Trump demanded that U.S. oil companies immediately lower gasoline prices on Monday after crude futures plunged following his decision to suspend another planned military strike on Iran. In a Truth Social post, Trump instructed producers to “get your consumer (retail!) Oil Prices DOW",
+      "published_at": "2026-08-03T17:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 15,
       "tags": [
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 5.6,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.4,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "power_system": [
-          "renewables"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "BP Completes Sale of German Refinery as Portfolio Overhaul Accelerates",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/BP-Completes-Sale-of-German-Refinery-as-Portfolio-Overhaul-Accelerates.html",
-      "snippet": "BP has completed the sale of its refinery in Gelsenkirchen, Germany, to Klesch Group, as the UK supermajor continues to streamline its business and high-grade its portfolio under CEO Meg O’Neill. The transaction, whose sum was not disclosed, is part of BP’s continued focus on disciplined capital all",
-      "published_at": "2026-08-03T09:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "supply_disruption",
+        "geopolitics",
         "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 11.1,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.8,
-        "recency_multiplier": 0.67
-      },
-      "matched": {
-        "supply_disruption": [
-          "overhaul"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Golar secures $600 million for FLNG growth",
-      "url": "https://lngprime.com/europe/golar-secures-600-million-for-flng-growth/194373/",
-      "snippet": "Floating LNG player Golar LNG has closed a new $600 million senior secured revolving credit facility to further strengthen its balance sheet flexibility and facilitate further FLNG growth.",
-      "published_at": "2026-08-03T14:06:47+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng",
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 10.6,
+        "themes": 19.3,
         "geography": 0.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 23.8,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "power_system": [
-          "flexibility"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Kuwait Oil Production Surges as OPEC+ Completes Output Cut Reversal",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Kuwait-Oil-Production-Surges-as-OPEC-Completes-Output-Cut-Reversal.html",
-      "snippet": "Kuwait produced 1.971 million barrels of crude oil daily in July, Reuters has reported, citing unnamed sources. That was up from 1.65 million barrels daily in June, the report noted, which in turn was up from just 580,000 barrels daily in May. The report supports earlier coverage suggesting oil is s",
-      "published_at": "2026-08-03T08:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 36.8,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "oil_macro": [
-          "opec",
-          "opec+",
-          "crude",
-          "barrels",
-          "output cut"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hundreds flee fighting in northern Ethiopia as fears rise of return to civil war",
-      "url": "https://www.bbc.co.uk/news/articles/cdrv6r3xgyeo?at_medium=RSS&at_campaign=rss",
-      "snippet": "There are concerns of a full-scale conflict once again as a peace deal has not been fully implemented.",
-      "published_at": "2026-08-03T11:49:48+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.1,
-        "recency_multiplier": 0.8
+        "raw": 44.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "conflict",
-          "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Atlas Maritime secures charter deal for LNG-powered PCTC",
-      "url": "https://lngprime.com/asia/atlas-maritime-secures-charter-deal-for-lng-powered-pctc/194347/",
-      "snippet": "Greece's Atlas Maritime has secured a charter deal for its newly delivered LNG dual-fuel pure car and truck carrier, Clean Star.",
-      "published_at": "2026-08-03T08:50:44+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 21.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.0,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier",
-          "charter"
+          "military strike"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "urgency": [
+          "immediately"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-03T06:30:00+00:00"
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
+        "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
+        "published_at": "2026-08-03T17:38:01+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "At least 17 killed as Russia and Ukraine trade heavy attacks",
+      "url": "https://www.aljazeera.com/news/2026/8/3/more-than-10-killed-as-russia-and-ukraine-trade-heavy-attacks?traffic_source=rss",
+      "snippet": "Exchange of fire intensifies as the war, now in its fifth year, shows no signs of slowing down.",
+      "published_at": "2026-08-03T14:23:07+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 15,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 14.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 48.5,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss",
+        "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
+        "published_at": "2026-08-03T18:04:30+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Trump's Iran Reversal Sends European Gas Prices Tumbling",
@@ -1095,7 +864,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 39.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -1112,80 +881,69 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/3/uncertainty-on-iranians-minds-as-trump-fluctuates-on-war-and-talk?traffic_source=rss",
-        "title": "Uncertainty on Iranians’ minds as Trump fluctuates on war and talk",
-        "published_at": "2026-08-03T16:33:08+00:00"
+        "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
+        "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
+        "published_at": "2026-08-03T17:38:01+00:00"
       },
       "hidden": true
     },
     {
-      "title": "Greek LNG Ship Safely Clears Hormuz After Maritime Incident",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Greek-LNG-Ship-Safely-Clears-Hormuz-After-Maritime-Incident.html",
-      "snippet": "A Greek-owned liquefied natural gas carrier was involved in an “incident” in the Strait of Hormuz at the end of last week while exiting the waterway, the owner company said in a statement, as quoted by Reuters. The vessel is stable, and the crew is safe, Gas Log said, without specifying the nature o",
-      "published_at": "2026-08-03T06:30:00+00:00",
+      "title": "Uncertainty on Iranians’ minds as Trump fluctuates on war and talk",
+      "url": "https://www.aljazeera.com/news/2026/8/3/uncertainty-on-iranians-minds-as-trump-fluctuates-on-war-and-talk?traffic_source=rss",
+      "snippet": "Iranians feeling pressure amid US president&#039;s on-again, off-again comments on conflict and negotiations.",
+      "published_at": "2026-08-03T16:33:08+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
-        "geopolitics",
-        "lng"
+        "geopolitics"
       ],
       "alert": "low",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 25.4,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
+        "authority": 9.5,
+        "themes": 26.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 70.1,
-        "recency_multiplier": 0.53
+        "raw": 36.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "strait of hormuz"
-        ],
-        "lng": [
-          "lng",
-          "carrier"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "unplanned": [
-          "incident"
+          "conflict",
+          "war",
+          "negotiations"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://lngprime.com/asia/atlas-maritime-secures-charter-deal-for-lng-powered-pctc/194347/",
-        "title": "Atlas Maritime secures charter deal for LNG-powered PCTC",
-        "published_at": "2026-08-03T08:50:44+00:00"
+        "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
+        "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
+        "published_at": "2026-08-03T17:38:01+00:00"
       },
       "hidden": true
     },
     {
-      "title": "Oil Prices Plunge 5% as Trump Halts Iran Strike Plans",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-5-as-Trump-Halts-Iran-Strike-Plans.html",
-      "snippet": "Oil prices fell sharply in early Asian trade on Monday after President Trump called off another round of military strikes on Iran, raising hopes that a diplomatic route to reopening the Strait of Hormuz and averting a broader regional conflict could be found. At the time of writing, West Texas Inter",
-      "published_at": "2026-08-03T03:05:00+00:00",
+      "title": "Why Have China and Russia Just Stepped Out Of The Shadows In The U.S.-Iran War?",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/Why-Have-China-and-Russia-Just-Stepped-Out-Of-The-Shadows-In-The-US-Iran-War.html",
+      "snippet": "As with all wars, particularly in the world’s main oil and gas repository of the Middle East, the U.S./Israel-Iran conflict has long threatened to widen out to include other interested parties aside from the main protagonists. The involvement of Washington’s and Tel Aviv’s allies so far has been lim",
+      "published_at": "2026-08-03T17:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 11,
+      "has_magnitude": false,
+      "score": 12,
       "tags": [
         "geopolitics"
       ],
@@ -1193,34 +951,132 @@
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 32.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 68.8,
-        "recency_multiplier": 0.41
+        "raw": 31.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
           "conflict",
-          "diplomatic",
-          "strait of hormuz"
+          "war"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "russia",
+          "china",
+          "middle east"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/3/uncertainty-on-iranians-minds-as-trump-fluctuates-on-war-and-talk?traffic_source=rss",
-        "title": "Uncertainty on Iranians’ minds as Trump fluctuates on war and talk",
-        "published_at": "2026-08-03T16:33:08+00:00"
+        "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss",
+        "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
+        "published_at": "2026-08-03T18:04:30+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Ukrainian Drone Attacks Push Russia's Largest Online Retailer Abroad",
+      "url": "https://oilprice.com/Geopolitics/Europe/Ukrainian-Drone-Attacks-Push-Russias-Largest-Online-Retailer-Abroad.html",
+      "snippet": "Desperate to blunt the threat posed by Ukrainian drone attacks, the operator of Wildberries, Russia’s leading e-commerce platform, is looking to lease warehouse space in neighboring Kazakhstan. In response to a series of recent Ukrainian drone strikes across Russia that have destroyed at least 10 pe",
+      "published_at": "2026-08-03T18:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 10,
+      "tags": [
+        "geopolitics",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone"
+        ],
+        "infrastructure": [
+          "platform"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss",
+        "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
+        "published_at": "2026-08-03T18:04:30+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Threat to oil tankers in Middle East worst since start of Iran war, analysts say",
+      "url": "https://www.bbc.co.uk/news/articles/cjrv0dy2e90o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Fresh attacks on alternative shipping routes have left tankers facing an increasingly complex situation, analysts say.",
+      "published_at": "2026-08-03T15:57:27+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.2,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
+        "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
+        "published_at": "2026-08-03T17:38:01+00:00"
       },
       "hidden": true
     },
@@ -1235,7 +1091,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 9,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -1252,7 +1108,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 26.8,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -1273,9 +1129,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cjrv0dy2e90o?at_medium=RSS&at_campaign=rss",
-        "title": "Threat to oil tankers in Middle East worst since start of Iran war, analysts say",
-        "published_at": "2026-08-03T15:57:27+00:00"
+        "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
+        "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
+        "published_at": "2026-08-03T17:38:01+00:00"
       },
       "hidden": true
     }
