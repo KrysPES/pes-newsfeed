@@ -1,111 +1,169 @@
 {
-  "generated_at": "2026-08-02T23:32:41.615217+00:00",
-  "item_count": 7,
+  "generated_at": "2026-08-03T01:10:45.943342+00:00",
+  "item_count": 6,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 3
+    "high": 1,
+    "normal": 2
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1594
+        "ms": 1721
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 32143
+        "ms": 23776
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 10576
+        "ms": 4779
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 470
+        "ms": 920
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 554
+        "ms": 693
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 251
+        "ms": 176
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 923
+        "ms": 1362
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 189
+        "ms": 574
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 690
+        "ms": 708
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20188
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 428
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 311
+        "ms": 613
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 384
+        "ms": 213
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 321
+        "ms": 130
       }
     ]
   },
   "items": [
+    {
+      "title": "Saudi Oil Reroutes Hit Capacity and Security Limits",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Oil-Reroutes-Hit-Capacity-and-Security-Limits.html",
+      "snippet": "When Iran shut down the Strait of Hormuz, Saudi Arabia quickly redirected its oil flows to the Red Sea. Now, that route has become dangerous because of the Houthi blockade, so Saudi is rerouting to Egypt—and two LNG tankers in the Egyptian port of Damietta just got struck by drones. OPEC’s number-on",
+      "published_at": "2026-08-02T23:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 79,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 98.7,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "strait of hormuz",
+          "red sea"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "opec"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Iran says negotiations with Oman over Strait of Hormuz in final stages",
       "url": "https://www.aljazeera.com/news/2026/8/2/iran-says-negotiations-with-oman-over-strait-of-hormuz-in-final-stages?traffic_source=rss",
@@ -117,7 +175,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 49,
       "tags": [
         "geopolitics"
       ],
@@ -133,7 +191,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.5,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -144,54 +202,6 @@
         "geography": [
           "strait of hormuz",
           "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-02T15:33:20+00:00"
-    },
-    {
-      "title": "Saudi Crown Prince MBS urges Trump to ‘prioritise dialogue’ in US-Iran war",
-      "url": "https://www.aljazeera.com/news/2026/8/2/saudi-crown-prince-mbs-urges-trump-to-prioritise-dialogue-in-us-iran-war?traffic_source=rss",
-      "snippet": "US president halted strikes after earlier threatening Iran with unprecedented force.",
-      "published_at": "2026-08-02T16:10:32+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 47,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 14.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 59.5,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "supply_disruption": [
-          "halted"
-        ],
-        "unplanned": [
-          "halted"
-        ],
-        "urgency": [
-          "halted"
         ]
       },
       "duplicate_count": 0,
@@ -223,13 +233,50 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
           "drone",
           "war",
           "attack"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran war live: Trump says talks to resume; Tehran urges US to honour MoU",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/3/iran-war-live-trump-says-talks-set-to-begin-tehran-urges-us-to-honour-mou?traffic_source=rss",
+      "snippet": "US President Donald Trump says an agreement with Iran is imminent, with negotiations set to begin on Monday.",
+      "published_at": "2026-08-03T00:00:15+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "negotiations"
         ]
       },
       "duplicate_count": 0,
@@ -246,7 +293,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 35,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -263,7 +310,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.9,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.57
       },
       "matched": {
         "geopolitics": [
@@ -295,7 +342,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 31,
       "tags": [
         "supply_disruption"
       ],
@@ -310,7 +357,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.61
       },
       "matched": {
         "supply_disruption": [
@@ -322,96 +369,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Wildfires scorch Washington state as thousands evacuated and emergency declared",
-      "url": "https://www.bbc.co.uk/news/videos/cpd7912xyq4o?at_medium=RSS&at_campaign=rss",
-      "snippet": "State officials said wildfires across more than 250,000 acres have led to widespread evacuations and power outages.",
-      "published_at": "2026-08-02T10:20:10+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.6,
-        "recency_multiplier": 0.42
-      },
-      "matched": {
-        "supply_disruption": [
-          "outages"
-        ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency",
-          "declared"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "How to end the ‘Hormuz war’",
-      "url": "https://www.aljazeera.com/opinions/2026/8/2/how-to-end-the-hormuz?traffic_source=rss",
-      "snippet": "The least bad option for the US is to let the MoU Article 5 play out.",
-      "published_at": "2026-08-02T15:33:20+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/2/iran-says-negotiations-with-oman-over-strait-of-hormuz-in-final-stages?traffic_source=rss",
-        "title": "Iran says negotiations with Oman over Strait of Hormuz in final stages",
-        "published_at": "2026-08-02T19:08:06+00:00"
-      },
-      "hidden": true
     }
   ]
 }
