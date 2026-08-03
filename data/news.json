@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-03T01:10:45.943342+00:00",
-  "item_count": 6,
+  "generated_at": "2026-08-03T04:47:18.837607+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
+    "high": 2,
     "normal": 2
   },
-  "superseded_count": 0,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1721
+        "ms": 1954
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 23776
+        "ms": 36605
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4779
+        "ms": 3257
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 920
+        "ms": 718
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 693
+        "ms": 400
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 176
+        "ms": 188
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1362
+        "ms": 1104
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 574
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 91
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 708
+        "ms": 602
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 428
+        "ms": 251
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 613
+        "ms": 645
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 24,
+        "count": 26,
         "error": null,
-        "ms": 213
+        "ms": 249
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 130
+        "ms": 299
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 79,
+      "score": 70,
       "tags": [
         "geopolitics",
         "lng",
@@ -135,7 +135,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 98.7,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
@@ -165,6 +165,216 @@
       "also_reported_by": []
     },
     {
+      "title": "Oil Prices Plunge 5% as Trump Halts Iran Strike Plans",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-5-as-Trump-Halts-Iran-Strike-Plans.html",
+      "snippet": "Oil prices fell sharply in early Asian trade on Monday after President Trump called off another round of military strikes on Iran, raising hopes that a diplomatic route to reopening the Strait of Hormuz and averting a broader regional conflict could be found. At the time of writing, West Texas Inter",
+      "published_at": "2026-08-03T03:05:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 67,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "high",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 68.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "diplomatic",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-03T00:00:15+00:00"
+    },
+    {
+      "title": "'What was my fault?': How India's exam paper leak ended young lives",
+      "url": "https://www.bbc.co.uk/news/articles/crl7jl1d95eo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Two families reveal the human toll of India's medical entrance examination paper leak.",
+      "published_at": "2026-08-02T23:35:54+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 16.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 52.0,
+        "recency_multiplier": 0.78
+      },
+      "matched": {
+        "supply_disruption": [
+          "fault",
+          "leak"
+        ],
+        "geography": [
+          "india"
+        ],
+        "unplanned": [
+          "fault",
+          "leak"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "ExxonMobil and partners still target Rovuma LNG FID by year-end",
+      "url": "https://lngprime.com/americas/exxonmobil-and-partners-still-target-rovuma-lng-fid-by-year-end/194296/",
+      "snippet": "US energy giant ExxonMobil and its partners in the Rovuma LNG project in Mozambique are still targeting a final investment decision on the Rovuma LNG project by the end of this year, according to ExxonMobil CEO Darren Woods.",
+      "published_at": "2026-08-03T04:18:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 20.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "final investment decision"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Seatrium working on up to nine FSRU opportunities, CEO says",
+      "url": "https://lngprime.com/asia/seatrium-working-on-up-to-nine-fsru-opportunities-ceo-says/194286/",
+      "snippet": "Singapore's Seatrium is looking at six to nine floating storage and regasification unit (FSRU) tenders, according to CEO Chris Ong.",
+      "published_at": "2026-08-03T04:20:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "lng",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 18.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "regasification",
+          "fsru"
+        ],
+        "gas_storage": [
+          "storage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Massive Attack respond after Singapore ban over Palestine display",
+      "url": "https://www.bbc.co.uk/news/articles/cr59qe86yj4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The UK band says they are \"surprised and disappointed\" by their treatment over shouting \"free Palestine\" at a concert there.",
+      "published_at": "2026-08-03T01:31:05+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.2,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-02T22:51:09+00:00"
+    },
+    {
       "title": "Iran says negotiations with Oman over Strait of Hormuz in final stages",
       "url": "https://www.aljazeera.com/news/2026/8/2/iran-says-negotiations-with-oman-over-strait-of-hormuz-in-final-stages?traffic_source=rss",
       "snippet": "Tehran&#039;s announcement comes after Trump said US would hold off on new Iran attack in hope of quick deal.",
@@ -175,11 +385,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -191,7 +401,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.5,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
@@ -208,6 +418,46 @@
       "also_reported_by": []
     },
     {
+      "title": "Top 5 news of the week July 27-August 2",
+      "url": "https://lngprime.com/australia-and-oceania/top-5-news-of-the-week-july-27-august-2/194274/",
+      "snippet": "LNG Prime brings you the five most popular news stories on our platform during the week of July 27-August 2, 2026.",
+      "published_at": "2026-08-03T04:15:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 11.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "platform"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Sudan army drone attack on Darfur kills 35, rights group says",
       "url": "https://www.aljazeera.com/news/2026/8/2/sudan-army-drone-attack-on-darfur-kills-35-rights-group-says?traffic_source=rss",
       "snippet": "Tens of thousands of people have been killed in the ongoing war between army chief al-Burhan and RSF commander Dagalo.",
@@ -218,11 +468,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -233,7 +483,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -243,7 +493,14 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/cr59qe86yj4o?at_medium=RSS&at_campaign=rss",
+        "title": "Massive Attack respond after Singapore ban over Palestine display",
+        "published_at": "2026-08-03T01:31:05+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Iran war live: Trump says talks to resume; Tehran urges US to honour MoU",
@@ -256,7 +513,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 9,
       "tags": [
         "geopolitics"
       ],
@@ -271,7 +528,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -280,95 +537,14 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukraine says major Russian oil refinery and airfield hit, as Moscow reports eight deaths",
-      "url": "https://www.bbc.co.uk/news/articles/c998gg5pe09o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Russia's military says it attacked Ukraine's ports and vessels in the Black Sea overnight.",
-      "published_at": "2026-08-02T15:48:00+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 11.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.9,
-        "recency_multiplier": 0.57
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-5-as-Trump-Halts-Iran-Strike-Plans.html",
+        "title": "Oil Prices Plunge 5% as Trump Halts Iran Strike Plans",
+        "published_at": "2026-08-03T03:05:00+00:00"
       },
-      "matched": {
-        "geopolitics": [
-          "attacked"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "ukraine"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Suicide bomber kills 14 outside police station in Pakistan’s Swat",
-      "url": "https://www.aljazeera.com/news/2026/8/2/suicide-bomber-kills-14-outside-police-station-in-pakistans-swat?traffic_source=rss",
-      "snippet": "Explosion took place near crowd rallying against a surge in violence in northwestern Pakistan.",
-      "published_at": "2026-08-02T16:40:44+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "supply_disruption": [
-          "explosion"
-        ],
-        "unplanned": [
-          "explosion"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "hidden": true
     }
   ]
 }
