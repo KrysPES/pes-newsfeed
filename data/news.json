@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-03T08:16:08.818988+00:00",
-  "item_count": 12,
+  "generated_at": "2026-08-03T11:48:18.832505+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 4
+    "high": 0,
+    "normal": 7
   },
-  "superseded_count": 1,
+  "superseded_count": 3,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,145 +17,227 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1659
+        "ms": 1689
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 75735
+        "ms": 31685
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3307
+        "ms": 3324
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 2,
         "error": null,
-        "ms": 319
+        "ms": 802
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 151
+        "ms": 745
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 814
+        "ms": 209
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 45,
+        "count": 43,
         "error": null,
-        "ms": 1432
+        "ms": 1326
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 503
+        "ms": 538
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 775
+        "ms": 761
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 362
+        "ms": 401
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 809
+        "ms": 749
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 26,
         "error": null,
-        "ms": 56
+        "ms": 97
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 93
+        "ms": 149
       }
     ]
   },
   "items": [
     {
-      "title": "Greek LNG Ship Safely Clears Hormuz After Maritime Incident",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Greek-LNG-Ship-Safely-Clears-Hormuz-After-Maritime-Incident.html",
-      "snippet": "A Greek-owned liquefied natural gas carrier was involved in an “incident” in the Strait of Hormuz at the end of last week while exiting the waterway, the owner company said in a statement, as quoted by Reuters. The vessel is stable, and the crew is safe, Gas Log said, without specifying the nature o",
-      "published_at": "2026-08-03T06:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
+      "url": "https://umm.nordpoolgroup.com/#/messages/d800c6a6-5f91-48e1-b3f0-8500d039350b/2",
+      "snippet": "Published: 03.08.2026 11:03:13 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Test Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel T",
+      "published_at": "2026-08-03T09:03:13+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
       "has_magnitude": false,
-      "score": 68,
+      "score": 64,
       "tags": [
-        "geopolitics",
-        "lng"
+        "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 8.8,
-        "themes": 25.4,
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran denies Trump's claim that new talks will begin on Monday",
+      "url": "https://www.bbc.co.uk/news/articles/c23579jzv08o?at_medium=RSS&at_campaign=rss",
+      "snippet": "While Iran denies that talks with the US are taking place, it is currently in negotiations with Oman over Strait of Hormuz access.",
+      "published_at": "2026-08-03T10:23:35+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 25.6,
         "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 51.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "negotiations",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Rigzone"
+      ],
+      "first_seen_at": "2026-08-03T08:18:46+00:00",
+      "update_count": 2,
+      "thread_started_at": "2026-08-03T03:05:00+00:00"
+    },
+    {
+      "title": "Odfjell Drilling’s 2009-built rig goes back to work after BOP incident-related hiatus",
+      "url": "https://www.offshore-energy.biz/odfjell-drillings-2009-built-rig-goes-back-to-work-after-bop-incident-related-hiatus/",
+      "snippet": "Scotland-headquartered offshore drilling contractor Odfjell Drilling has disclosed the return to work of its 17-year-old semi-submersible, following repairs in the wake of an equipment-handling incident that ended rig activity earlier this year. The post Odfjell Drilling’s 2009-built rig goes back t",
+      "published_at": "2026-08-03T08:19:34+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 56,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 12.4,
+        "themes": 8.4,
+        "geo_band": "primary",
         "geography": 16.0,
         "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 70.1,
-        "recency_multiplier": 1.0
+        "raw": 56.8,
+        "recency_multiplier": 0.89
       },
       "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "lng": [
-          "lng",
-          "carrier"
+        "supply_disruption": [
+          "repairs"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "scotland"
         ],
         "unplanned": [
           "incident"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-02T19:08:06+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Saudi Oil Reroutes Hit Capacity and Security Limits",
@@ -168,7 +250,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 50,
       "tags": [
         "geopolitics",
         "lng",
@@ -186,7 +268,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 98.7,
-        "recency_multiplier": 0.57
+        "recency_multiplier": 0.44
       },
       "matched": {
         "geopolitics": [
@@ -216,47 +298,208 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Prices Plunge 5% as Trump Halts Iran Strike Plans",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-5-as-Trump-Halts-Iran-Strike-Plans.html",
-      "snippet": "Oil prices fell sharply in early Asian trade on Monday after President Trump called off another round of military strikes on Iran, raising hopes that a diplomatic route to reopening the Strait of Hormuz and averting a broader regional conflict could be found. At the time of writing, West Texas Inter",
-      "published_at": "2026-08-03T03:05:00+00:00",
+      "title": "BP Completes Sale of German Refinery as Portfolio Overhaul Accelerates",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/BP-Completes-Sale-of-German-Refinery-as-Portfolio-Overhaul-Accelerates.html",
+      "snippet": "BP has completed the sale of its refinery in Gelsenkirchen, Germany, to Klesch Group, as the UK supermajor continues to streamline its business and high-grade its portfolio under CEO Meg O’Neill. The transaction, whose sum was not disclosed, is part of BP’s continued focus on disciplined capital all",
+      "published_at": "2026-08-03T09:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.1,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.8,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "supply_disruption": [
+          "overhaul"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Draft Regulatory Instructions and Guidance: Data Communications Company (DCC) 2026",
+      "url": "https://www.ofgem.gov.uk/consultation/draft-regulatory-instructions-and-guidance-data-communications-company-dcc-2026",
+      "snippet": "Ofgem is seeking views on proposed changes to reporting and guidance for DCC for the second Price Control Period starting 1 April 2028.",
+      "published_at": "2026-08-03T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 17.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "ofgem",
+          "price control"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Kuwait Oil Production Surges as OPEC+ Completes Output Cut Reversal",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Kuwait-Oil-Production-Surges-as-OPEC-Completes-Output-Cut-Reversal.html",
+      "snippet": "Kuwait produced 1.971 million barrels of crude oil daily in July, Reuters has reported, citing unnamed sources. That was up from 1.65 million barrels daily in June, the report noted, which in turn was up from just 580,000 barrels daily in May. The report supports earlier coverage suggesting oil is s",
+      "published_at": "2026-08-03T08:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 58,
+      "score": 42,
       "tags": [
-        "geopolitics"
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 32.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 16.0,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 68.8,
-        "recency_multiplier": 0.78
+        "raw": 36.8,
+        "recency_multiplier": 0.9
       },
       "matched": {
-        "geopolitics": [
-          "conflict",
-          "diplomatic",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
+        "oil_macro": [
+          "opec",
+          "opec+",
+          "crude",
+          "barrels",
+          "output cut"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Ukraine strikes Russia’s biggest retailer again",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/08-03-2026-ukraine-strikes-wildberies-russia?traffic_source=rss",
+      "snippet": "Ukraine has struck another warehouse belonging to Russian e-commerce giant Wildberries in a long-range drone attack.",
+      "published_at": "2026-08-03T11:03:23+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "attack"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Atlas Maritime secures charter deal for LNG-powered PCTC",
+      "url": "https://lngprime.com/asia/atlas-maritime-secures-charter-deal-for-lng-powered-pctc/194347/",
+      "snippet": "Greece's Atlas Maritime has secured a charter deal for its newly delivered LNG dual-fuel pure car and truck carrier, Clean Star.",
+      "published_at": "2026-08-03T08:50:44+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 21.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.0,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier",
+          "charter"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-03T06:30:00+00:00"
     },
     {
       "title": "Grid failure plunges Cuba into nationwide blackout",
@@ -269,13 +512,13 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 40,
       "tags": [
         "power_system",
         "supply_disruption",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -286,7 +529,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.3,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.67
       },
       "matched": {
         "power_system": [
@@ -306,42 +549,40 @@
       "also_reported_by": []
     },
     {
-      "title": "India Moves to Rescue Renewable Energy Projects Stalled by Grid Shortages",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Moves-to-Rescue-Renewable-Energy-Projects-Stalled-by-Grid-Shortages.html",
-      "snippet": "The Indian government will consider waiving transmission charges for solar and wind energy developers facing delays in the commissioning of their projects due to transmission line shortages. According to a Reuters report citing the country’s power regulator, the relief will only cover projects whose",
-      "published_at": "2026-08-03T07:30:00+00:00",
+      "title": "Shell Sells European Onshore Renewables Portfolio to TotalEnergies",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Shell-Sells-European-Onshore-Renewables-Portfolio-to-TotalEnergies.html",
+      "snippet": "Shell has signed an agreement to sell its European onshore renewables portfolio to French peer TotalEnergies, the UK-based supermajor said on Monday as it prioritizes capital allocation into high-value businesses. The portfolio included in the transaction comprises 0.5 gigawatts (GW) of combined ren",
+      "published_at": "2026-08-03T11:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 39,
       "tags": [
-        "infrastructure"
+        "power_system"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 20.2,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 5.6,
+        "geo_band": "primary",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 33.9,
+        "raw": 30.4,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "infrastructure": [
-          "grid",
-          "transmission",
-          "commissioning"
+        "power_system": [
+          "renewables"
         ],
         "geography": [
-          "india"
+          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -351,14 +592,14 @@
       "title": "Seatrium working on up to nine FSRU opportunities, CEO says",
       "url": "https://lngprime.com/asia/seatrium-working-on-up-to-nine-fsru-opportunities-ceo-says/194286/",
       "snippet": "Singapore's Seatrium is looking at six to nine floating storage and regasification unit (FSRU) tenders, according to CEO Chris Ong.",
-      "published_at": "2026-08-03T07:04:00+00:00",
+      "published_at": "2026-08-03T08:54:00+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 38,
       "tags": [
         "lng",
         "gas_storage"
@@ -374,7 +615,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "lng": [
@@ -383,6 +624,163 @@
         ],
         "gas_storage": [
           "storage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "India Moves to Rescue Renewable Energy Projects Stalled by Grid Shortages",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Moves-to-Rescue-Renewable-Energy-Projects-Stalled-by-Grid-Shortages.html",
+      "snippet": "The Indian government will consider waiving transmission charges for solar and wind energy developers facing delays in the commissioning of their projects due to transmission line shortages. According to a Reuters report citing the country’s power regulator, the relief will only cover projects whose",
+      "published_at": "2026-08-03T07:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 20.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.9,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "infrastructure": [
+          "grid",
+          "transmission",
+          "commissioning"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Sudan army drone strike on court session kills 35, rights group says",
+      "url": "https://www.bbc.co.uk/news/articles/ce85097leydo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The army has not commented on claims that civilians died in the attack on a paramilitary-held village.",
+      "published_at": "2026-08-03T10:29:24+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "attack"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "OPEC+ 7 Decide to Boost Production Quota",
+      "url": "https://www.rigzone.com/news/opec_7_decide_to_boost_production_quota-03-aug-2026-184277-article/?rss=true",
+      "snippet": "'Seven OPEC+ countries ... met virtually on 2 August 2026, to review global market conditions and outlook', a statement posted on OPEC's site highlighted.",
+      "published_at": "2026-08-03T11:14:43+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 16.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "opec",
+          "opec+",
+          "production quota"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "EIG’s MidOcean Energy lines up new investment as NYK spreads its LNG wings",
+      "url": "https://www.offshore-energy.biz/eigs-midocean-energy-lines-up-new-investment-as-nyk-spreads-its-lng-wings/",
+      "snippet": "MidOcean Energy, a liquefied natural gas (LNG) player formed and managed by the U.S.-headquartered investment company EIG Global Energy Partners (EIG), has secured another investment, which enables Nippon Yusen Kabushiki Kaisha (NYK), Japan’s shipping and logistics major, to widen its LNG footprint.",
+      "published_at": "2026-08-03T11:02:10+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "japan"
         ]
       },
       "duplicate_count": 0,
@@ -399,7 +797,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 32,
       "tags": [
         "supply_disruption"
       ],
@@ -415,7 +813,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.0,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.46
       },
       "matched": {
         "supply_disruption": [
@@ -434,6 +832,85 @@
       "also_reported_by": []
     },
     {
+      "title": "India’s Imports of Russian Crude Hit New High in July",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Imports-of-Russian-Crude-Hit-New-High-in-July.html",
+      "snippet": "India keeps buying a lot of Russian oil, with July imports hitting a new all-time high and accounting for more than half of total Indian crude oil imports. India’s crude oil imports from Russia rose to 2.8 million barrels per day (bpd) in July, up from the previous high of 2.7 million bpd in June, f",
+      "published_at": "2026-08-03T10:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Direction on disapplication of Smart Meter Communication Licence conditions",
+      "url": "https://www.ofgem.gov.uk/decision/direction-disapplication-smart-meter-communication-licence-conditions",
+      "snippet": "Direction issued to Smart DCC Ltd to disapply Conditions of the Smart Meter Communication Licence under Condition 43.24 of the Licence.",
+      "published_at": "2026-08-03T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 6.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "licence"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "ExxonMobil and partners still target Rovuma LNG FID by year-end",
       "url": "https://lngprime.com/americas/exxonmobil-and-partners-still-target-rovuma-lng-fid-by-year-end/194296/",
       "snippet": "US energy giant ExxonMobil and its partners in the Rovuma LNG project in Mozambique are still targeting a final investment decision on the LNG project by the end of this year, according to ExxonMobil CEO Darren Woods.",
@@ -444,7 +921,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -459,7 +936,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.9,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.65
       },
       "matched": {
         "lng": [
@@ -471,159 +948,94 @@
       "also_reported_by": []
     },
     {
-      "title": "Massive Attack respond after Singapore ban over Palestine display",
-      "url": "https://www.bbc.co.uk/news/articles/cr59qe86yj4o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The UK band says they are \"surprised and disappointed\" by their treatment over shouting \"free Palestine\" at a concert there.",
-      "published_at": "2026-08-03T01:31:05+00:00",
+      "title": "Greek LNG Ship Safely Clears Hormuz After Maritime Incident",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Greek-LNG-Ship-Safely-Clears-Hormuz-After-Maritime-Incident.html",
+      "snippet": "A Greek-owned liquefied natural gas carrier was involved in an “incident” in the Strait of Hormuz at the end of last week while exiting the waterway, the owner company said in a statement, as quoted by Reuters. The vessel is stable, and the crew is safe, Gas Log said, without specifying the nature o",
+      "published_at": "2026-08-03T06:30:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 17,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "lng"
       ],
       "alert": "low",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "primary",
+        "authority": 8.8,
+        "themes": 25.4,
+        "geo_band": "chokepoint",
         "geography": 16.0,
-        "event_nature": 0.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 35.2,
-        "recency_multiplier": 0.69
+        "raw": 70.1,
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
-          "attack"
+          "strait of hormuz"
         ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Worley scores Inpex services deal",
-      "url": "https://lngprime.com/asia/worley-scores-inpex-services-deal/194318/",
-      "snippet": "Australian engineering firm Worley has secured a framework agreement with a unit of Japan's LNG producer Inpex to support its operations in Australia, building on more than a decade of working together.",
-      "published_at": "2026-08-03T04:17:18+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
         "lng": [
-          "lng"
+          "lng",
+          "carrier"
         ],
         "geography": [
-          "australia",
-          "japan"
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "incident"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://lngprime.com/asia/atlas-maritime-secures-charter-deal-for-lng-powered-pctc/194347/",
+        "title": "Atlas Maritime secures charter deal for LNG-powered PCTC",
+        "published_at": "2026-08-03T08:50:44+00:00"
+      },
+      "hidden": true
     },
     {
-      "title": "Shanghai hits LNG bunkering milestone",
-      "url": "https://lngprime.com/asia/shanghai-hits-lng-bunkering-milestone/194311/",
-      "snippet": "China's Port of Shanghai has reached a new LNG bunkering milestone as the global fleet of LNG-powered vessels continues to expand.",
-      "published_at": "2026-08-03T04:16:51+00:00",
+      "title": "Oil Prices Plunge 5% as Trump Halts Iran Strike Plans",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-5-as-Trump-Halts-Iran-Strike-Plans.html",
+      "snippet": "Oil prices fell sharply in early Asian trade on Monday after President Trump called off another round of military strikes on Iran, raising hopes that a diplomatic route to reopening the Strait of Hormuz and averting a broader regional conflict could be found. At the time of writing, West Texas Inter",
+      "published_at": "2026-08-03T03:05:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran says negotiations with Oman over Strait of Hormuz in final stages",
-      "url": "https://www.aljazeera.com/news/2026/8/2/iran-says-negotiations-with-oman-over-strait-of-hormuz-in-final-stages?traffic_source=rss",
-      "snippet": "Tehran&#039;s announcement comes after Trump said US would hold off on new Iran attack in hope of quick deal.",
-      "published_at": "2026-08-02T19:08:06+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
+      "has_magnitude": true,
+      "score": 14,
       "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
+        "authority": 8.8,
         "themes": 32.0,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 57.5,
-        "recency_multiplier": 0.42
+        "raw": 68.8,
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
-          "attack",
-          "negotiations",
+          "conflict",
+          "diplomatic",
           "strait of hormuz"
         ],
         "geography": [
@@ -635,9 +1047,59 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Greek-LNG-Ship-Safely-Clears-Hormuz-After-Maritime-Incident.html",
-        "title": "Greek LNG Ship Safely Clears Hormuz After Maritime Incident",
-        "published_at": "2026-08-03T06:30:00+00:00"
+        "url": "https://www.bbc.co.uk/news/articles/c23579jzv08o?at_medium=RSS&at_campaign=rss",
+        "title": "Iran denies Trump's claim that new talks will begin on Monday",
+        "published_at": "2026-08-03T10:23:35+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Trump says new Iran negotiations starting: What we know",
+      "url": "https://www.aljazeera.com/news/2026/8/3/trump-says-new-iran-negotiations-starting-what-we-know?traffic_source=rss",
+      "snippet": "Analysts say deal on Hormuz might be achievable but lasting peace agreement still far off.",
+      "published_at": "2026-08-03T09:44:53+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 22.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "negotiations"
+        ],
+        "geography": [
+          "hormuz"
+        ],
+        "speculative": [
+          "might"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/c23579jzv08o?at_medium=RSS&at_campaign=rss",
+        "title": "Iran denies Trump's claim that new talks will begin on Monday",
+        "published_at": "2026-08-03T10:23:35+00:00"
       },
       "hidden": true
     }
