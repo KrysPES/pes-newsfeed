@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-03T23:41:43.646525+00:00",
-  "item_count": 12,
+  "generated_at": "2026-08-04T01:07:50.280529+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
     "high": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 3,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1337
+        "ms": 1763
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 10571
+        "ms": 29521
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 2700
+        "ms": 3902
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 393
+        "ms": 325
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 480
+        "ms": 641
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 12,
         "error": null,
-        "ms": 82
+        "ms": 288
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 908
+        "ms": 965
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 42
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 228
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 545
+        "ms": 715
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 59
+        "ms": 253
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 441
+        "ms": 486
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 55
+        "ms": 313
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 156
+        "ms": 245
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 59,
+      "score": 55,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.74
       },
       "matched": {
         "supply_disruption": [
@@ -151,6 +151,49 @@
       "first_seen_at": "2026-08-03T09:03:13+00:00"
     },
     {
+      "title": "Two workers who died in quake-hit Japan mall were sent in to get cash",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/two-workers-who-died-in-quake-hit-japan-mall-were-sent-in-to-get-cash?traffic_source=rss",
+      "snippet": "A Japanese company has admitted that two workers, who died in a shopping mall explosion following powerful earthquake.",
+      "published_at": "2026-08-03T23:52:02+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "explosion"
+        ],
+        "geography": [
+          "japan"
+        ],
+        "unplanned": [
+          "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Crude Sinks as Tensions Ease",
       "url": "https://www.rigzone.com/news/wire/crude_sinks_as_tensions_ease-03-aug-2026-184284-article/?rss=true",
       "snippet": "Oil prices fell sharply as renewed optimism over Strait of Hormuz negotiations eased fears of prolonged supply disruptions.",
@@ -161,7 +204,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 49,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -178,7 +221,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.2,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -207,7 +250,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 42,
       "tags": [
         "geopolitics"
       ],
@@ -223,7 +266,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.65
       },
       "matched": {
         "geopolitics": [
@@ -235,7 +278,7 @@
           "hormuz"
         ]
       },
-      "duplicate_count": 0,
+      "duplicate_count": 1,
       "also_reported_by": [],
       "update_count": 3,
       "thread_started_at": "2026-08-03T15:30:00+00:00"
@@ -251,13 +294,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 41,
       "tags": [
         "geopolitics",
         "lng",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -269,7 +312,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 0.57
+        "recency_multiplier": 0.51
       },
       "matched": {
         "geopolitics": [
@@ -301,7 +344,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "supply_disruption"
       ],
@@ -316,7 +359,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.78
       },
       "matched": {
         "supply_disruption": [
@@ -340,7 +383,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "infrastructure",
         "nuclear"
@@ -357,7 +400,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.8,
-        "recency_multiplier": 0.57
+        "recency_multiplier": 0.51
       },
       "matched": {
         "infrastructure": [
@@ -376,131 +419,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Why Have China and Russia Just Stepped Out Of The Shadows In The U.S.-Iran War?",
-      "url": "https://oilprice.com/Geopolitics/Middle-East/Why-Have-China-and-Russia-Just-Stepped-Out-Of-The-Shadows-In-The-US-Iran-War.html",
-      "snippet": "As with all wars, particularly in the world’s main oil and gas repository of the Middle East, the U.S./Israel-Iran conflict has long threatened to widen out to include other interested parties aside from the main protagonists. The involvement of Washington’s and Tel Aviv’s allies so far has been lim",
-      "published_at": "2026-08-03T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.7,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "war"
-        ],
-        "geography": [
-          "russia",
-          "china",
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Georgia’s Kulevi Refinery Replaces Russian Crude With Kazakh, Libyan Oil",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Georgias-Kulevi-Refinery-Replaces-Russian-Crude-With-Kazakh-Libyan-Oil.html",
-      "snippet": "Georgia’s only oil refinery has begun replacing Russian crude with supplies from Kazakhstan and Libya as owner Black Sea Petroleum races to avoid European Union sanctions that will go into effect in January. The Kulevi refinery received and processed Kazakh crude in July and will continue taking Kaz",
-      "published_at": "2026-08-03T16:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.1,
-        "recency_multiplier": 0.67
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "oil_macro": [
-          "crude",
-          "refinery"
-        ],
-        "geography": [
-          "european"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hourly peak load in ERCOT set a new record, exceeding 91 GW on July 22",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67906",
-      "snippet": "Hourly peak load in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization serving most of Texas, reached a record 91.1 gigawatts (GW) on July 22, 2026, according to data reported to us for our Hourly Electric Grid Monitor.",
-      "published_at": "2026-08-03T14:00:00+00:00",
-      "type": "news",
-      "source": "eia_today",
-      "source_name": "EIA Today in Energy",
-      "authority": 20,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 14.6,
-        "themes": 13.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 40.0,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "infrastructure": [
-          "grid",
-          "transmission"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Trump Orders Oil Companies to Cut Gas Prices, Targets Chevron CEO",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Orders-Oil-Companies-to-Cut-Gas-Prices-Targets-Chevron-CEO.html",
       "snippet": "President Donald Trump demanded that U.S. oil companies immediately lower gasoline prices on Monday after crude futures plunged following his decision to suspend another planned military strike on Iran. In a Truth Social post, Trump instructed producers to “get your consumer (retail!) Oil Prices DOW",
@@ -511,7 +429,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 11,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -527,7 +445,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.1,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.65
       },
       "matched": {
         "geopolitics": [
@@ -561,7 +479,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 9,
       "tags": [
         "geopolitics"
       ],
@@ -576,7 +494,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
@@ -606,7 +524,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 10,
+      "score": 9,
       "tags": [
         "geopolitics"
       ],
@@ -622,7 +540,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 39.7,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.56
       },
       "matched": {
         "geopolitics": [
