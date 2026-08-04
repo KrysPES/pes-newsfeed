@@ -1,0 +1,42 @@
+name: Market calendar
+
+# Weekly refresh of the terminal's market calendar (Bannon's calendar pack).
+# The scanner re-resolves upcoming release dates from the 10 working sources
+# (the other 25 are recorded in forward-scanner/registry.json with reasons),
+# build_data.py merges historic + forward into one chronological feed, and the
+# result is published as data/calendar_events.json for the drawer to fetch —
+# the same raw-URL pattern as news.json. The historic calendar.csv is
+# immutable and the scanner never touches it. A partial scan is normal: the
+# lifecycle keeps last-known dates for sources that fail to resolve.
+on:
+  schedule:
+    - cron: "20 5 * * 1"    # Mondays 05:20 UTC, weekly full refresh
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Scan forward sources
+        working-directory: calendar/forward-scanner
+        run: python -m scanner.run || echo "partial scan - lifecycle keeps last-known dates"
+      - name: Rebuild the merged feed
+        run: |
+          python calendar/build_data.py
+          cp calendar/data/events.json data/calendar_events.json
+      - name: Commit if changed
+        run: |
+          git config user.name "pes-calendar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add calendar/data data/calendar_events.json calendar/forward-scanner/registry.json calendar/forward-scanner/scan_log.jsonl
+          git diff --cached --quiet || git commit -m "calendar refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
