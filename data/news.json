@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-04T04:28:51.349710+00:00",
-  "item_count": 11,
+  "generated_at": "2026-08-04T07:17:10.527742+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 3
+    "high": 1,
+    "normal": 2
   },
   "superseded_count": 2,
   "sources": {
@@ -17,100 +17,144 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1971
+        "ms": 1273
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19197
+        "ms": 65030
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 4269
+        "ms": 2752
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 694
+        "ms": 353
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 884
+        "ms": 295
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 12,
         "error": null,
-        "ms": 213
+        "ms": 127
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1036
+        "ms": 889
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 570
+        "ms": 326
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 670
+        "ms": 577
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 286
+        "ms": 97
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 634
+        "ms": 433
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 119
+        "ms": 174
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 211
+        "ms": 54
       }
     ]
   },
   "items": [
     {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 6",
+      "url": "https://umm.nordpoolgroup.com/#/messages/92e79712-c0cb-4f36-b009-595bf98234e9/3",
+      "snippet": "Published: 04.08.2026 07:52:37 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-04T05:52:37+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-03T15:10:27+00:00"
+    },
+    {
       "title": "US states sue to block Trump tariffs impacting dozens of countries",
       "url": "https://www.bbc.co.uk/news/articles/cy4kp8jd0ppo?at_medium=RSS&at_campaign=rss",
       "snippet": "The duties were imposed over claims that 60 US trading partners have failed to tackle forced labour.",
-      "published_at": "2026-08-04T02:53:00+00:00",
+      "published_at": "2026-08-04T07:11:35+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -145,51 +189,138 @@
       "duplicate_count": 0,
       "also_reported_by": [],
       "update_count": 2,
-      "thread_started_at": "2026-08-03T17:30:00+00:00"
+      "thread_started_at": "2026-08-04T00:00:00+00:00"
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 6",
-      "url": "https://umm.nordpoolgroup.com/#/messages/92e79712-c0cb-4f36-b009-595bf98234e9/2",
-      "snippet": "Published: 03.08.2026 21:13:11 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-03T19:13:11+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
+      "title": "Why are the Washington wildfires so severe? Spokane fires explained",
+      "url": "https://www.aljazeera.com/news/2026/8/4/why-are-the-washington-wildfires-so-severe-spokane-fires-explained?traffic_source=rss",
+      "snippet": "Why Spokane&#039;s wildfires spread so fast, what caused them and why Washington is facing a major fire crisis.",
+      "published_at": "2026-08-04T05:03:44+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 45,
       "tags": [
         "supply_disruption"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 21.9,
+        "authority": 9.5,
         "themes": 8.4,
         "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.57
+        "raw": 37.9,
+        "recency_multiplier": 0.98
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "fire"
         ],
         "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
+          "fire"
         ]
       },
-      "duplicate_count": 3,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-03T15:10:27+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Venezuela’s Oil Exports Fall Even as U.S. Shipments Hit Seven-Year High",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Venezuelas-Oil-Exports-Fall-Even-as-US-Shipments-Hit-Seven-Year-High.html",
+      "snippet": "Venezuela exported 1.16 million barrels of crude oil daily last month, a slight decline from June’s 1.2 million barrels daily, on lower withdrawals from storage, Reuters has reported, noting that exports to the United States during that month increased. July exports to Venezuela’s biggest oil destin",
+      "published_at": "2026-08-04T05:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "gas_storage",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 18.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "withdrawals"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "QatarEnergy progresses commissioning of first NFE LNG train",
+      "url": "https://lngprime.com/lng-terminals/qatarenergy-progresses-commissioning-of-first-nfe-lng-train/194386/",
+      "snippet": "State-owned LNG giant QatarEnergy is progressing with commissioning activities at the first train of the North Field East LNG project in Qatar despite the ongoing Middle East crisis, according to EPC contractor Technip Energies.",
+      "published_at": "2026-08-04T06:55:14+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 11.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "commissioning"
+        ],
+        "geography": [
+          "qatar",
+          "middle east",
+          "north field"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Two workers who died in quake-hit Japan mall were sent in to get cash",
@@ -202,11 +333,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 37,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -218,7 +349,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.9,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.66
       },
       "matched": {
         "supply_disruption": [
@@ -235,6 +366,43 @@
       "also_reported_by": []
     },
     {
+      "title": "Williams to buy Momentum Midstream for $5.5 billion",
+      "url": "https://lngprime.com/americas/williams-to-buy-momentum-midstream-for-5-5-billion/194380/",
+      "snippet": "US natural gas pipeline operator Williams said it had agreed to acquire Momentum Midstream in a strategic Haynesville growth transaction valued at up to $5.5 billion, further expanding the company’s fully integrated natural gas infrastructure platform in one of the nation’s most important supply bas",
+      "published_at": "2026-08-04T06:12:55+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 13.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "pipeline",
+          "platform"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Crude Sinks as Tensions Ease",
       "url": "https://www.rigzone.com/news/wire/crude_sinks_as_tensions_ease-03-aug-2026-184284-article/?rss=true",
       "snippet": "Oil prices fell sharply as renewed optimism over Strait of Hormuz negotiations eased fears of prolonged supply disruptions.",
@@ -245,7 +413,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 34,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -262,7 +430,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.2,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.47
       },
       "matched": {
         "geopolitics": [
@@ -281,210 +449,59 @@
       "also_reported_by": []
     },
     {
-      "title": "Does the US blockade on Cuba make America safer?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/4/does-the-us-blockade-on-cuba-make-america-safer?traffic_source=rss",
-      "snippet": "Trump just escalated restrictions on Havana warning that Cuba remains a ‘threat to national security’.",
-      "published_at": "2026-08-04T01:58:17+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade",
-          "escalated"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Dark Tanker Transits Surge at Bab el-Mandeb as Houthi Threat Persists",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Dark-Tanker-Transits-Surge-at-Bab-el-Mandeb-as-Houthi-Threat-Persists.html",
-      "snippet": "The Houthi threat to shipments of Saudi crude oil from the Red Sea hasn’t abated and more tankers laden with Saudi oil appeared to have made the transit through the Bab el-Mandeb chokepoint in dark mode. Two tankers that had loaded Saudi crude at the Red Sea port of Yanbu have likely exited the Bab ",
-      "published_at": "2026-08-03T14:30:00+00:00",
+      "title": "Tanker Traffic Remains Subdued Despite Trump’s Talk of Peace",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Tanker-Traffic-Remains-Subdued-Despite-Trumps-Talk-of-Peace.html",
+      "snippet": "Tanker crossings in the Strait of Hormuz and Bab el-Mandeb remained subdued at the start of this week despite reports about potential renewal of peace talks based on statements made by President Donald Trump. A dozen tankers crossed the Bab el-Mandeb Strait on Monday, Kpler data cited by Reuters sho",
+      "published_at": "2026-08-04T06:45:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 19,
       "tags": [
         "geopolitics",
-        "lng",
-        "oil_macro"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 37.9,
+        "themes": 36.4,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 62.7,
-        "recency_multiplier": 0.4
-      },
-      "matched": {
-        "geopolitics": [
-          "bab el-mandeb",
-          "red sea"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "bab el-mandeb",
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
-      "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Three children were killed when the drone crashed at a popular resort on the Black Sea.",
-      "published_at": "2026-08-04T03:37:14+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
+        "raw": 61.1,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "drone"
+          "peace talks",
+          "strait of hormuz",
+          "bab el-mandeb"
+        ],
+        "lng": [
+          "tanker"
         ],
         "geography": [
-          "russia"
+          "strait of hormuz",
+          "hormuz",
+          "bab el-mandeb"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "There's a reason child vaccination rates are falling - and it's not social media",
-      "url": "https://www.bbc.co.uk/news/articles/c0qvlw2dd0no?at_medium=RSS&at_campaign=rss",
-      "snippet": "As child immunisation rates fall across the UK, one clinic in west Yorkshire is taking aggressive steps to boost immunisations",
-      "published_at": "2026-08-03T23:10:05+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 4.5,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.7,
-        "recency_multiplier": 0.77
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/cy4kp8jd0ppo?at_medium=RSS&at_campaign=rss",
+        "title": "US states sue to block Trump tariffs impacting dozens of countries",
+        "published_at": "2026-08-04T07:11:35+00:00"
       },
-      "matched": {
-        "oil_macro": [
-          "rates"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Survivors reach port after deadly Indonesia ferry fire",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/survivors-reach-port-after-deadly-indonesia-ferry-fire?traffic_source=rss",
-      "snippet": "Survivors reach port after deadly Indonesia ferry fire",
-      "published_at": "2026-08-03T19:55:36+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "hidden": true
     },
     {
       "title": "Iran war live: Tehran slams US blockade as Trump warns of ‘last chance’",
@@ -497,7 +514,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
@@ -512,7 +529,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -527,57 +544,7 @@
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cy4kp8jd0ppo?at_medium=RSS&at_campaign=rss",
         "title": "US states sue to block Trump tariffs impacting dozens of countries",
-        "published_at": "2026-08-04T02:53:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Trump Orders Oil Companies to Cut Gas Prices, Targets Chevron CEO",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Orders-Oil-Companies-to-Cut-Gas-Prices-Targets-Chevron-CEO.html",
-      "snippet": "President Donald Trump demanded that U.S. oil companies immediately lower gasoline prices on Monday after crude futures plunged following his decision to suspend another planned military strike on Iran. In a Truth Social post, Trump instructed producers to “get your consumer (retail!) Oil Prices DOW",
-      "published_at": "2026-08-03T17:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 19.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 44.1,
-        "recency_multiplier": 0.5
-      },
-      "matched": {
-        "geopolitics": [
-          "military strike"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "urgency": [
-          "immediately"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cy4kp8jd0ppo?at_medium=RSS&at_campaign=rss",
-        "title": "US states sue to block Trump tariffs impacting dozens of countries",
-        "published_at": "2026-08-04T02:53:00+00:00"
+        "published_at": "2026-08-04T07:11:35+00:00"
       },
       "hidden": true
     }
