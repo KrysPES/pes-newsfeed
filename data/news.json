@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T12:10:22.169195+00:00",
-  "item_count": 23,
+  "generated_at": "2026-08-04T14:38:35.241512+00:00",
+  "item_count": 25,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 10
+    "high": 1,
+    "normal": 11
   },
-  "superseded_count": 2,
+  "superseded_count": 4,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,100 +17,191 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1565
+        "ms": 1302
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 55968
+        "ms": 20211
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 3685
+        "ms": 3425
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 315
+        "ms": 476
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 563
+        "ms": 200
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 12,
         "error": null,
-        "ms": 159
+        "ms": 89
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 46,
+        "count": 45,
         "error": null,
-        "ms": 1353
+        "ms": 899
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 484
+        "ms": 153
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 669
+        "ms": 588
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 332
+        "ms": 119
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 715
+        "ms": 452
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 31,
+        "count": 30,
         "error": null,
-        "ms": 51
+        "ms": 52
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 72
+        "ms": 141
       }
     ]
   },
   "items": [
     {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 6",
+      "url": "https://umm.nordpoolgroup.com/#/messages/92e79712-c0cb-4f36-b009-595bf98234e9/4",
+      "snippet": "Published: 04.08.2026 15:16:40 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-04T13:16:40+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Why are oil companies posting record profits amid Iran war disruption?",
+      "url": "https://www.aljazeera.com/features/2026/8/4/why-are-oil-companies-posting-record-profits-amid-iran-war-disruption?traffic_source=rss",
+      "snippet": "Big Oil companies have bagged astronomical profits as the critical Strait of Hormuz remains closed.",
+      "published_at": "2026-08-04T14:04:28+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 60,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 30.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "disruption"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-04T12:21:41+00:00"
+    },
+    {
       "title": "More than 150 migrants rescued after boat catches fire in Channel",
       "url": "https://www.bbc.co.uk/news/articles/c4gkpeppjyqo?at_medium=RSS&at_campaign=rss",
       "snippet": "The boat was attempting to cross to the UK when its engine caught fire, according to French authorities.",
-      "published_at": "2026-08-04T11:19:08+00:00",
+      "published_at": "2026-08-04T14:37:42+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -146,6 +237,152 @@
           "fire"
         ]
       },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "first_seen_at": "2026-08-04T12:47:59+00:00"
+    },
+    {
+      "title": "India's HPCL Snaps Up Nigerian Crude To Dodge The Hormuz Bottleneck",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-HPCL-Snaps-Up-Nigerian-Crude-To-Dodge-The-Hormuz-Bottleneck.html",
+      "snippet": "Indian state-owned refiner Hindustan Petroleum Corporation Limited (HPCL) has bought 2 million barrels of crude from Nigeria, trading sources told Reuters on Tuesday, as India looks to offset the loss of supply from the Middle East with deliveries from producers farther away. HPCL has acquired Okwui",
+      "published_at": "2026-08-04T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 54,
+      "tags": [
+        "supply_disruption",
+        "oil_macro",
+        "carbon"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "loss of supply"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "carbon": [
+          "offset"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-08-04T09:21:17+00:00"
+    },
+    {
+      "title": "Aramco Plans to Boost Oil Export Capacity",
+      "url": "https://www.rigzone.com/news/wire/aramco_plans_to_boost_oil_export_capacity-04-aug-2026-184285-article/?rss=true",
+      "snippet": "Saudi Aramco said it is looking at options to expand its oil export capacity as the Iran war disrupts flows through the Strait of Hormuz and Houthi rebels threaten shipments in the Red Sea.",
+      "published_at": "2026-08-04T13:11:38+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 47.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz",
+          "red sea"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ],
+        "speculative": [
+          "plans to"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Hormuz Tanker Traffic Stalls at Two-Month Low as Attacks Escalate",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Stalls-at-Two-Month-Low-as-Attacks-Escalate.html",
+      "snippet": "Traffic at the Strait of Hormuz remains at the lowest in more than two months as security concerns have intensified with recent attacks on ships and persistent threats to shipping in the region. After a brief respite between the middle of June and early July, when traffic at Hormuz rose with the ten",
+      "published_at": "2026-08-04T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
       "duplicate_count": 0,
       "also_reported_by": []
     },
@@ -160,7 +397,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 59,
+      "score": 52,
       "tags": [
         "geopolitics",
         "carbon",
@@ -178,7 +415,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 58.0,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -209,7 +446,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 51,
       "tags": [
         "lng",
         "infrastructure"
@@ -225,7 +462,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.86
       },
       "matched": {
         "lng": [
@@ -243,95 +480,6 @@
       "also_reported_by": []
     },
     {
-      "title": "CEO Plays Down Impact of Attacks on Aramco",
-      "url": "https://www.rigzone.com/news/wire/ceo_plays_down_impact_of_attacks_on_aramco-04-aug-2026-184285-article/?rss=true",
-      "snippet": "Aramco said attacks on its assets last month have had no material impact on its operations, and the company is working to expand its oil export capacity as the Strait of Hormuz remains disrupted by the Iran war.",
-      "published_at": "2026-08-04T08:16:05+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 55,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 30.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 57.6,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz"
-        ],
-        "supply_disruption": [
-          "disrupted"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 6",
-      "url": "https://umm.nordpoolgroup.com/#/messages/92e79712-c0cb-4f36-b009-595bf98234e9/3",
-      "snippet": "Published: 04.08.2026 07:52:37 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-04T05:52:37+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 54,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Energy price cap: earnings before interest and taxes (EBIT) allowance methodology update",
       "url": "https://www.ofgem.gov.uk/policy/energy-price-cap-earnings-interest-and-taxes-ebit-allowance-methodology-update",
       "snippet": "We are proposing to update an input used in the EBIT allowance calculation to reflect planned reforms to the Retail Prices Index from 2030.",
@@ -342,7 +490,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 50,
       "tags": [
         "regulation",
         "geopolitics",
@@ -359,7 +507,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "regulation": [
@@ -387,7 +535,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 45,
       "tags": [
         "supply_disruption",
         "oil_macro"
@@ -403,7 +551,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.0,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.75
       },
       "matched": {
         "supply_disruption": [
@@ -421,60 +569,42 @@
       "also_reported_by": []
     },
     {
-      "title": "India Expands Oil Storage Sites After Shock Supply Disruption",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Expands-Oil-Storage-Sites-After-Shock-Supply-Disruption.html",
-      "snippet": "India’s state-owned Oil and Natural Gas Corporation (ONGC), the top explorer in the country, will build a new storage site at Mangaluru to hold about 13 million barrels of oil as the world’s third-largest crude oil importer looks to boost its resilience to supply shocks. In the wake of the Iran war ",
-      "published_at": "2026-08-04T11:30:00+00:00",
+      "title": "Peru LNG sent five shipments in July",
+      "url": "https://lngprime.com/americas/peru-lng-sent-five-shipments-in-july/194433/",
+      "snippet": "Peru LNG’s liquefaction plant at Pampa Melchorita shipped five liquefied natural gas cargoes in July, the same as in the previous two months, according to shipment data by state-owned Perupetro.",
+      "published_at": "2026-08-04T14:28:37+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 43,
       "tags": [
-        "gas_storage",
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption"
+        "lng"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 29.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 13.1,
+        "themes": 21.8,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.2,
+        "raw": 35.0,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "gas_storage": [
-          "storage",
-          "storage site"
-        ],
-        "geopolitics": [
-          "war"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "supply_disruption": [
-          "disruption"
-        ],
-        "geography": [
-          "india"
+        "lng": [
+          "lng",
+          "liquefaction",
+          "cargoes"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-04T09:21:17+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Asso.subsea revealed as buyer of Reach Subsea and Eidesvik’s IMR vessel",
@@ -487,7 +617,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 42,
       "tags": [
         "supply_disruption"
       ],
@@ -502,7 +632,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.9
       },
       "matched": {
         "supply_disruption": [
@@ -515,45 +645,44 @@
       "also_reported_by": []
     },
     {
-      "title": "US states sue to block Trump tariffs impacting dozens of countries",
-      "url": "https://www.bbc.co.uk/news/articles/cy4kp8jd0ppo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The duties were imposed over claims that 60 US trading partners have failed to tackle forced labour.",
-      "published_at": "2026-08-04T09:08:40+00:00",
+      "title": "Crescent Energy Bumps Up Production Forecast",
+      "url": "https://www.rigzone.com/news/crescent_energy_bumps_up_production_forecast-04-aug-2026-184290-article/?rss=true",
+      "snippet": "Crescent expects its full-year production to range from 327,000 barrels of oil equivalent a day to 335,000 boed, of which 40-42 percent would be oil.",
+      "published_at": "2026-08-04T12:10:10+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 44,
+      "has_magnitude": true,
+      "score": 39,
       "tags": [
-        "geopolitics"
+        "weather",
+        "oil_macro"
       ],
-      "alert": "normal",
-      "nature": "unplanned",
+      "alert": "low",
+      "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 9.0,
+        "authority": 10.9,
+        "themes": 8.8,
         "geography": 0.0,
-        "event_nature": 20.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 39.2,
-        "recency_multiplier": 0.92
+        "raw": 31.8,
+        "recency_multiplier": 0.96
       },
       "matched": {
-        "geopolitics": [
-          "tariffs"
+        "weather": [
+          "forecast"
         ],
-        "unplanned": [
-          "failed"
+        "oil_macro": [
+          "barrels"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-04T06:45:00+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Nine killed in escalating long-range strikes between Russia and Ukraine",
@@ -566,7 +695,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "geopolitics"
       ],
@@ -582,7 +711,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -608,7 +737,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "lng",
         "oil_macro"
@@ -625,7 +754,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "lng": [
@@ -643,6 +772,47 @@
       "also_reported_by": []
     },
     {
+      "title": "US states sue to block Trump tariffs impacting dozens of countries",
+      "url": "https://www.bbc.co.uk/news/articles/cy4kp8jd0ppo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The duties were imposed over claims that 60 US trading partners have failed to tackle forced labour.",
+      "published_at": "2026-08-04T09:08:40+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.2,
+        "recency_multiplier": 0.76
+      },
+      "matched": {
+        "geopolitics": [
+          "tariffs"
+        ],
+        "unplanned": [
+          "failed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-04T06:45:00+00:00"
+    },
+    {
       "title": "BP Raises Dividend Rate",
       "url": "https://www.rigzone.com/news/bp_raises_dividend_rate-04-aug-2026-184287-article/?rss=true",
       "snippet": "BP PLC announced a four percent increase to 8.66 cents in its quarterly dividend per share, as higher oil prices continued to offset lower upstream and refining volumes.",
@@ -653,7 +823,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 36,
       "tags": [
         "carbon"
       ],
@@ -668,7 +838,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.86
       },
       "matched": {
         "carbon": [
@@ -676,6 +846,46 @@
         ],
         "urgency": [
           "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Finnish regulator gives positive decision on used fuel repository",
+      "url": "https://www.world-nuclear-news.org/articles/finnish-regulator-gives-positive-decision-on-used-fuel-repository",
+      "snippet": "The safety requirements for granting the operating licence for the world's first used nuclear fuel repository have been met, Finland's Radiation and Nuclear Safety Authority has said in an official statement to the Ministry of Economic Affairs and Employment.",
+      "published_at": "2026-08-04T15:52:21+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "nuclear",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 11.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "regulation": [
+          "licence"
         ]
       },
       "duplicate_count": 0,
@@ -692,7 +902,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 33,
       "tags": [
         "oil_macro"
       ],
@@ -708,7 +918,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.71
       },
       "matched": {
         "oil_macro": [
@@ -733,7 +943,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 32,
       "tags": [
         "supply_disruption"
       ],
@@ -749,7 +959,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.86
       },
       "matched": {
         "supply_disruption": [
@@ -764,256 +974,102 @@
       "also_reported_by": []
     },
     {
-      "title": "Why are the Washington wildfires so severe? Spokane fires explained",
-      "url": "https://www.aljazeera.com/news/2026/8/4/why-are-the-washington-wildfires-so-severe-spokane-fires-explained?traffic_source=rss",
-      "snippet": "Why Spokane&#039;s wildfires spread so fast, what caused them and why Washington is facing a major fire crisis.",
-      "published_at": "2026-08-04T05:03:44+00:00",
+      "title": "Greek ministers to examine nuclear energy options",
+      "url": "https://www.world-nuclear-news.org/articles/greek-ministers-to-examine-nuclear-energy-options",
+      "snippet": "The Greek Council of Ministers has set up an Inter-Ministerial Committee to explore the potential for small modular reactors.",
+      "published_at": "2026-08-04T09:44:50+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.67
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "QatarEnergy progresses commissioning of first NFE LNG train",
-      "url": "https://lngprime.com/lng-terminals/qatarenergy-progresses-commissioning-of-first-nfe-lng-train/194386/",
-      "snippet": "State-owned LNG giant QatarEnergy is progressing with commissioning activities at the first train of the North Field East LNG project in Qatar despite the ongoing Middle East crisis, according to EPC contractor Technip Energies.",
-      "published_at": "2026-08-04T07:57:14+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 11.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.5,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "commissioning"
-        ],
-        "geography": [
-          "qatar",
-          "middle east",
-          "north field"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Klaipeda LNG throughput up in H1",
-      "url": "https://lngprime.com/europe/klaipeda-lng-throughput-up-in-h1/194404/",
-      "snippet": "LNG throughput in the Lithuanian port of Klaipeda, home to the KN-Energies-operated FSRU-based LNG import facility, jumped in the first half of this year due to growing flows to Ukraine.",
-      "published_at": "2026-08-04T06:00:03+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.7,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "fsru"
-        ],
-        "geography": [
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Soldier kills four in gun rampage in Russian-occupied Crimea",
-      "url": "https://www.bbc.co.uk/news/articles/c80n33lrnm5o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The region's Moscow-installed governor says the gunman has been detained after firing at fellow soldiers and civilians.",
-      "published_at": "2026-08-04T09:23:06+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
       "tier": 2,
       "has_magnitude": false,
       "score": 31,
       "tags": [
-        "geopolitics"
+        "nuclear"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 13.9,
+        "themes": 14.6,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.94
+        "raw": 28.4,
+        "recency_multiplier": 0.8
       },
       "matched": {
-        "geopolitics": [
-          "detained"
-        ],
-        "geography": [
-          "russian"
+        "nuclear": [
+          "nuclear",
+          "reactors"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Venezuela’s Oil Exports Fall Even as U.S. Shipments Hit Seven-Year High",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Venezuelas-Oil-Exports-Fall-Even-as-US-Shipments-Hit-Seven-Year-High.html",
-      "snippet": "Venezuela exported 1.16 million barrels of crude oil daily last month, a slight decline from June’s 1.2 million barrels daily, on lower withdrawals from storage, Reuters has reported, noting that exports to the United States during that month increased. July exports to Venezuela’s biggest oil destin",
-      "published_at": "2026-08-04T05:30:00+00:00",
+      "title": "India Expands Oil Storage Sites After Shock Supply Disruption",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Expands-Oil-Storage-Sites-After-Shock-Supply-Disruption.html",
+      "snippet": "India’s state-owned Oil and Natural Gas Corporation (ONGC), the top explorer in the country, will build a new storage site at Mangaluru to hold about 13 million barrels of oil as the world’s third-largest crude oil importer looks to boost its resilience to supply shocks. In the wake of the Iran war ",
+      "published_at": "2026-08-04T11:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 14,
       "tags": [
         "gas_storage",
-        "oil_macro"
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 18.8,
+        "themes": 29.4,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 32.6,
-        "recency_multiplier": 0.7
+        "raw": 43.2,
+        "recency_multiplier": 0.92
       },
       "matched": {
         "gas_storage": [
           "storage",
-          "withdrawals"
+          "storage site"
+        ],
+        "geopolitics": [
+          "war"
         ],
         "oil_macro": [
           "crude",
           "barrels"
         ],
-        "geography": [
-          "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "BP Earnings Surge to $5.7 Billion on Oil Price and Refining Boom",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/BP-Earnings-Surge-to-57-Billion-on-Oil-Price-and-Refining-Boom.html",
-      "snippet": "BP more than doubled its profit for the second quarter from a year earlier on the back of higher oil and gas prices and stronger refining margins driven by the shock supply disruption in the Middle East. BP on Tuesday reported an underlying replacement cost (RC) profit, the closest metric to net pro",
-      "published_at": "2026-08-04T10:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 8.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
         "supply_disruption": [
           "disruption"
         ],
         "geography": [
-          "middle east"
+          "india"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-HPCL-Snaps-Up-Nigerian-Crude-To-Dodge-The-Hormuz-Bottleneck.html",
+        "title": "India's HPCL Snaps Up Nigerian Crude To Dodge The Hormuz Bottleneck",
+        "published_at": "2026-08-04T14:30:00+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Tanker Traffic Remains Subdued Despite Trump’s Talk of Peace",
@@ -1026,7 +1082,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 16,
+      "score": 14,
       "tags": [
         "geopolitics",
         "lng"
@@ -1043,7 +1099,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.1,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.64
       },
       "matched": {
         "geopolitics": [
@@ -1081,7 +1137,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 12,
       "tags": [
         "supply_disruption"
       ],
@@ -1097,7 +1153,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.6,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.78
       },
       "matched": {
         "supply_disruption": [
@@ -1113,9 +1169,53 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Expands-Oil-Storage-Sites-After-Shock-Supply-Disruption.html",
-        "title": "India Expands Oil Storage Sites After Shock Supply Disruption",
-        "published_at": "2026-08-04T11:30:00+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-HPCL-Snaps-Up-Nigerian-Crude-To-Dodge-The-Hormuz-Bottleneck.html",
+        "title": "India's HPCL Snaps Up Nigerian Crude To Dodge The Hormuz Bottleneck",
+        "published_at": "2026-08-04T14:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Can Pakistan keep US-Iran diplomacy alive as mistrust deepens?",
+      "url": "https://www.aljazeera.com/news/2026/8/4/can-pakistan-keep-us-iran-diplomacy-alive-as-mistrust-deepens?traffic_source=rss",
+      "snippet": "New diplomatic push undertaken as repeated ceasefire failures expose limits of mediation.",
+      "published_at": "2026-08-04T12:21:41+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 10,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "geopolitics": [
+          "ceasefire",
+          "diplomatic"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/features/2026/8/4/why-are-oil-companies-posting-record-profits-amid-iran-war-disruption?traffic_source=rss",
+        "title": "Why are oil companies posting record profits amid Iran war disruption?",
+        "published_at": "2026-08-04T14:04:28+00:00"
       },
       "hidden": true
     }
