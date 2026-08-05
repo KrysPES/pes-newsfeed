@@ -1,127 +1,127 @@
 {
-  "generated_at": "2026-08-05T07:07:27.052382+00:00",
-  "item_count": 9,
+  "generated_at": "2026-08-05T09:46:07.978907+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 1
+    "high": 0,
+    "normal": 4
   },
-  "superseded_count": 2,
+  "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1705
+        "ms": 1672
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 73053
+        "ms": 38337
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3095
+        "ms": 4135
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 198
+        "ms": 330
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 273
+        "ms": 613
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 12,
         "error": null,
-        "ms": 195
+        "ms": 160
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 46,
+        "count": 47,
         "error": null,
-        "ms": 1390
+        "ms": 1366
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 509
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 47
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 725
+        "ms": 718
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 328
+        "ms": 345
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 561
+        "ms": 705
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 33,
+        "count": 35,
         "error": null,
-        "ms": 51
+        "ms": 50
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 88
+        "ms": 65
       }
     ]
   },
   "items": [
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Vantaan jätevoimala - CCGT",
-      "url": "https://umm.nordpoolgroup.com/#/messages/934aabfd-a3a2-4f6a-beb5-59ad72df5358/1",
-      "snippet": "Published: 05.08.2026 07:34:13 Publisher: Vantaan Energia Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Technical problems Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Fee",
-      "published_at": "2026-08-05T05:34:13+00:00",
+      "url": "https://umm.nordpoolgroup.com/#/messages/934aabfd-a3a2-4f6a-beb5-59ad72df5358/2",
+      "snippet": "Published: 05.08.2026 09:07:05 Publisher: Vantaan Energia Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Technical problems Remarks: Updated event stop Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable ",
+      "published_at": "2026-08-05T07:07:05+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 64,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "supply_disruption": [
@@ -146,9 +146,9 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 6,
+      "duplicate_count": 5,
       "also_reported_by": [],
-      "first_seen_at": "2026-08-04T15:23:42+00:00"
+      "first_seen_at": "2026-08-04T17:24:50+00:00"
     },
     {
       "title": "Hormuz Tanker Traffic Remains Subdued Despite Reports of Peace Talks",
@@ -161,7 +161,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 59,
+      "score": 54,
       "tags": [
         "geopolitics",
         "lng"
@@ -178,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -194,9 +194,306 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-08-05T00:00:00+00:00"
+      "also_reported_by": []
+    },
+    {
+      "title": "Red Sea Attack Sinks India-Flagged Cargo Vessel Off Yemen",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Red-Sea-Attack-Sinks-India-Flagged-Cargo-Vessel-Off-Yemen.html",
+      "snippet": "An India-flagged tanker reportedly carrying Saudi oil has sunk off the coast of Yemen in the Red Sea after it was hit by a projectile. The Indian Ministry of External Affairs on Tuesday condemned the attack on the India-flagged commercial vessel, MSV Faize Noore Oliya, which sank in the Red Sea, off",
+      "published_at": "2026-08-05T09:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 34.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 47.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack",
+          "red sea"
+        ],
+        "lng": [
+          "cargo",
+          "tanker"
+        ],
+        "geography": [
+          "red sea"
+        ],
+        "speculative": [
+          "reportedly"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Massive fire at chemical factory forces evacuations in Brazil",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/massive-fire-at-chemical-factory-forces-evacuations-in-brazil?traffic_source=rss",
+      "snippet": "Massive fire at chemical factory forces evacuations in Brazil",
+      "published_at": "2026-08-05T08:09:39+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "ECOnnect secures Bahamas LNG gig",
+      "url": "https://lngprime.com/americas/econnect-secures-bahamas-lng-gig/194464/",
+      "snippet": "A joint venture of Shell and Freeport Oil Company (Focol) has selected ECOnnect's jettyless LNG transfer system for the recently approved small-scale LNG regasification terminal in the Bahamas.",
+      "published_at": "2026-08-05T06:15:51+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 18.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.7,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "regasification"
+        ],
+        "infrastructure": [
+          "terminal"
+        ],
+        "geography": [
+          "freeport"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China’s Power Demand Hits Records as Heatwave Grips Key Regions",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Power-Demand-Hits-Records-as-Heatwave-Grips-Key-Regions.html",
+      "snippet": "Electricity demand in much of China hit a record this week due to scorching summer temperatures, driving grid loads to all-time highs, the State Grid Corporation of China said today, as cited by Reuters. On Monday and Tuesday, the company said, electricity loads reached a record in the country’s nor",
+      "published_at": "2026-08-05T08:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "weather",
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "heatwave",
+          "temperatures"
+        ],
+        "infrastructure": [
+          "grid"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Saudis Hold Talks with Houthis",
+      "url": "https://www.rigzone.com/news/wire/saudis_hold_talks_with_houthis-05-aug-2026-184296-article/?rss=true",
+      "snippet": "Saudi Arabia wants to contain a renewed conflict with Houthi militants through behind-the-scenes diplomacy, according to people familiar with the matter, in a bid to prevent clashes with the Iran-backed group hurting its oil industry and economy.",
+      "published_at": "2026-08-05T08:21:09+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "militants"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Working together to deliver faster, smarter grid connections",
+      "url": "https://www.ofgem.gov.uk/blog/working-together-deliver-faster-smarter-grid-connections",
+      "snippet": "Our latest blogpost on our connections reform work and our new Connections Investor Delivery Engagement Forum.",
+      "published_at": "2026-08-05T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "infrastructure",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 10.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "grid"
+        ],
+        "regulation": [
+          "reform"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Entergy to consider deployment of Holtec's SMR-300",
+      "url": "https://www.world-nuclear-news.org/articles/entergy-to-consider-deployment-of-holtecs-smr-300",
+      "snippet": "Holtec International has signed a memorandum of agreement with US utility Entergy and South Korea's Hyundai Engineering Construction to evaluate opportunities to advance the potential deployment of its SMR-300 small modular reactor for large-load customers across Entergy's service territory.",
+      "published_at": "2026-08-05T14:41:06+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "reactor"
+        ],
+        "geography": [
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Explosions across Kyiv as Russian missiles strike Ukraine’s capital",
@@ -209,7 +506,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -225,7 +522,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -237,94 +534,44 @@
           "ukraine"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "BBC World"
-      ]
-    },
-    {
-      "title": "China's EV Boom Is Quietly Undermining Oil's Biggest Chokepoint",
-      "url": "https://oilprice.com/Energy/Energy-General/Chinas-EV-Boom-Is-Quietly-Undermining-Oils-Biggest-Chokepoint.html",
-      "snippet": "The conventional view of the Hormuz crisis is that China has been caught in an energy trap. It is the world’s largest crude importer, the Gulf remains one of its most important sources of supply, and an estimated 45–50% of Chinese crude imports normally transit the Strait of Hormuz. When traffic thr",
-      "published_at": "2026-08-04T20:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 19.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 56.1,
-        "recency_multiplier": 0.5
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "More than 170 migrants rescued after boat catches fire in Channel",
-      "url": "https://www.bbc.co.uk/news/articles/c4gkpeppjyqo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The government says all of the migrants, who were attempting to cross to the UK, will be returned to France.",
-      "published_at": "2026-08-04T19:45:58+00:00",
+      "title": "Japan tests US-Tomahawk missile as it moves away from Post-WWII status",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/japan-tests-us-tomahawk-missile-as-it-moves-away-from-post-wwii-status?traffic_source=rss",
+      "snippet": "Japan tested a US-Tomahawk cruise missile, launching from their Chokai warship in the Pacific Ocean on July 29.",
+      "published_at": "2026-08-05T08:37:04+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 31,
       "tags": [
-        "supply_disruption"
+        "geopolitics"
       ],
       "alert": "low",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 20.0,
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 54.6,
-        "recency_multiplier": 0.49
+        "raw": 23.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "fire"
+        "geopolitics": [
+          "missile"
         ],
         "geography": [
-          "uk"
-        ],
-        "unplanned": [
-          "fire"
+          "japan"
         ]
       },
       "duplicate_count": 0,
@@ -341,7 +588,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 31,
       "tags": [
         "lng"
       ],
@@ -357,7 +604,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.9
       },
       "matched": {
         "lng": [
@@ -371,74 +618,41 @@
       "also_reported_by": []
     },
     {
-      "title": "The yearly mild weather spell that brings Yemen’s coast back to life",
-      "url": "https://www.aljazeera.com/features/2026/8/5/the-yearly-mild-weather-spell-that-brings-yemens-coast-back-to-life?traffic_source=rss",
-      "snippet": "Al-Baldah transforms Mukalla with mild temperatures, beach fun and a rare economic boost for the southern Yemeni city.",
-      "published_at": "2026-08-05T05:48:42+00:00",
+      "title": "China's EV Boom Is Quietly Undermining Oil's Biggest Chokepoint",
+      "url": "https://oilprice.com/Energy/Energy-General/Chinas-EV-Boom-Is-Quietly-Undermining-Oils-Biggest-Chokepoint.html",
+      "snippet": "The conventional view of the Hormuz crisis is that China has been caught in an energy trap. It is the world’s largest crude importer, the Gulf remains one of its most important sources of supply, and an estimated 45–50% of Chinese crude imports normally transit the Strait of Hormuz. When traffic thr",
+      "published_at": "2026-08-04T20:00:00+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
+      "has_magnitude": true,
+      "score": 31,
       "tags": [
-        "weather"
+        "geopolitics",
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 12.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 21.8,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "weather": [
-          "temperatures",
-          "mild"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US stock market hits record high amid hopes for Strait of Hormuz reopening",
-      "url": "https://www.aljazeera.com/economy/2026/8/5/us-stock-market-hits-record-high-amid-hopes-for-strait-of-hormuz-reopening?traffic_source=rss",
-      "snippet": "Oil prices fall as US officials tout progress in talks to reopen critical waterway.",
-      "published_at": "2026-08-05T02:09:06+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 13,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.6,
+        "authority": 8.8,
+        "themes": 19.3,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 0.8
+        "raw": 56.1,
+        "recency_multiplier": 0.4
       },
       "matched": {
         "geopolitics": [
           "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude"
         ],
         "geography": [
           "strait of hormuz",
@@ -446,66 +660,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Remains-Subdued-Despite-Reports-of-Peace-Talks.html",
-        "title": "Hormuz Tanker Traffic Remains Subdued Despite Reports of Peace Talks",
-        "published_at": "2026-08-05T06:00:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Iran war live: Tehran-Oman talks on Hormuz ‘positive’; ship hit in Red Sea",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/8/5/iran-war-live-tehran-oman-talks-on-hormuz-positive-ship-hit-in-red-sea?traffic_source=rss",
-      "snippet": "Iran says talks with Oman are proceeding &#039;positively&#039; as US officials say a deal could be possible soon.",
-      "published_at": "2026-08-05T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 39.1,
-        "recency_multiplier": 0.67
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "red sea"
-        ],
-        "geography": [
-          "hormuz",
-          "red sea"
-        ],
-        "speculative": [
-          "could"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Remains-Subdued-Despite-Reports-of-Peace-Talks.html",
-        "title": "Hormuz Tanker Traffic Remains Subdued Despite Reports of Peace Talks",
-        "published_at": "2026-08-05T06:00:00+00:00"
-      },
-      "hidden": true
+      "also_reported_by": []
     }
   ]
 }
