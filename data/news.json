@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-04T23:36:24.036991+00:00",
-  "item_count": 14,
+  "generated_at": "2026-08-05T01:02:54.205683+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
     "high": 0,
     "normal": 5
   },
-  "superseded_count": 0,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1470
+        "ms": 1429
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 16526
+        "ms": 55613
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3218
+        "ms": 3658
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 270
+        "ms": 865
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 314
+        "ms": 435
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 12,
         "error": null,
-        "ms": 126
+        "ms": 269
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 809
+        "ms": 1224
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 157
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 119
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 508
+        "ms": 706
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 131
+        "ms": 232
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 490
+        "ms": 433
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 270
+        "ms": 246
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 92
+        "ms": 261
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 65,
+      "score": 61,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.87
       },
       "matched": {
         "supply_disruption": [
@@ -161,7 +161,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 55,
+      "score": 51,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -178,7 +178,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.1,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -206,7 +206,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 50,
       "tags": [
         "supply_disruption"
       ],
@@ -222,7 +222,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.78
       },
       "matched": {
         "supply_disruption": [
@@ -239,6 +239,53 @@
       "also_reported_by": []
     },
     {
+      "title": "Iran war live: Tehran-Oman talks on Hormuz ‘positive’; ship hit in Red Sea",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/5/iran-war-live-tehran-oman-talks-on-hormuz-positive-ship-hit-in-red-sea?traffic_source=rss",
+      "snippet": "Iran says talks with Oman are proceeding &#039;positively&#039; as US officials say a deal could be possible soon.",
+      "published_at": "2026-08-05T00:00:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 39.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "red sea"
+        ],
+        "geography": [
+          "hormuz",
+          "red sea"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-04T19:00:43+00:00"
+    },
+    {
       "title": "Six years on, Beirut blast families still await justice",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/4/six-years-on-beirut-blast-families-still-await-justice?traffic_source=rss",
       "snippet": "Families of victims of the Beirut port blast marked six years since the explosion by demanding truth and accountability.",
@@ -249,7 +296,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 47,
       "tags": [
         "supply_disruption"
       ],
@@ -264,7 +311,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.3,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.86
       },
       "matched": {
         "supply_disruption": [
@@ -279,48 +326,49 @@
       "also_reported_by": []
     },
     {
-      "title": "Rubio: Progress made to reopen Strait of Hormuz",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/4/rubio-progress-made-to-reopen-strait-of-hormuz?traffic_source=rss",
-      "snippet": "Marco Rubio, US Secretary of State, said there has been progress in negotiations to reopen the Strait of Hormuz.",
-      "published_at": "2026-08-04T18:27:15+00:00",
+      "title": "One killed, five injured in Russian ballistic missile attack on Kyiv",
+      "url": "https://www.aljazeera.com/news/2026/8/4/russia-strikes-ukrainian-capital-kyiv-with-ballistic-missiles?traffic_source=rss",
+      "snippet": "The latest attack comes after at least 27 people were killed in both Russia and Ukraine earlier this week.",
+      "published_at": "2026-08-04T23:24:43+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 41,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.78
+        "raw": 32.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "negotiations",
-          "strait of hormuz"
+          "missile",
+          "attack"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "russia",
+          "russian",
+          "ukraine"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "BBC World"
-      ]
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-04T17:26:06+00:00"
     },
     {
       "title": "Brent Settles At Three-Week Low",
@@ -333,7 +381,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 36,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -350,7 +398,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 34.3,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -371,46 +419,47 @@
       "also_reported_by": []
     },
     {
-      "title": "Video shows Russian drone chasing Ukrainian street vendor in 'human safari' attack",
-      "url": "https://www.bbc.co.uk/news/articles/cn4n03xg981o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Ukraine said the video - showing a terrified civilian being hounded by a remotely-controlled drone - amounted to a war crime.",
-      "published_at": "2026-08-04T17:26:06+00:00",
+      "title": "Middle East War Triggers New Global Refining Boom",
+      "url": "https://oilprice.com/Energy/Energy-General/Middle-East-War-Triggers-New-Global-Refining-Boom.html",
+      "snippet": "For the second time this decade, a war has upended global oil markets and sent oil prices and refining margins to multi-year highs, benefitting the world’s biggest oil companies and top refiners. The war in Iran has tightened fuel supply as crude oil has struggled to move through the Strait of Hormu",
+      "published_at": "2026-08-05T00:00:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 34,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 26.9,
+        "authority": 8.8,
+        "themes": 11.6,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 0.73
+        "raw": 25.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "drone",
-          "war",
-          "attack"
+          "war"
+        ],
+        "oil_macro": [
+          "crude"
         ],
         "geography": [
-          "russian",
-          "ukraine"
+          "middle east"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 0,
       "also_reported_by": []
     },
     {
@@ -424,7 +473,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 34,
       "tags": [
         "oil_macro",
         "gas_storage"
@@ -441,7 +490,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.2,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.84
       },
       "matched": {
         "oil_macro": [
@@ -460,49 +509,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Three lions die in Tokyo zoo as heatwave scorches East Asia",
-      "url": "https://www.aljazeera.com/news/2026/8/4/three-lionesses-die-in-tokyo-zoo-as-heatwave-scorches-east-asia?traffic_source=rss",
-      "snippet": "A record-breaking heatwave stretching across East Asia is straining animals, health systems and people.",
-      "published_at": "2026-08-04T17:50:06+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 6.2,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.6,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "weather": [
-          "heatwave"
-        ],
-        "geography": [
-          "asia"
-        ],
-        "urgency": [
-          "breaking"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "India's HPCL Snaps Up Nigerian Crude To Dodge The Hormuz Bottleneck",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-HPCL-Snaps-Up-Nigerian-Crude-To-Dodge-The-Hormuz-Bottleneck.html",
       "snippet": "Indian state-owned refiner Hindustan Petroleum Corporation Limited (HPCL) has bought 2 million barrels of crude from Nigeria, trading sources told Reuters on Tuesday, as India looks to offset the loss of supply from the Middle East with deliveries from producers farther away. HPCL has acquired Okwui",
@@ -513,7 +519,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 33,
       "tags": [
         "supply_disruption",
         "oil_macro",
@@ -531,7 +537,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.5,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.52
       },
       "matched": {
         "supply_disruption": [
@@ -562,7 +568,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -578,7 +584,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 47.0,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.47
       },
       "matched": {
         "geopolitics": [
@@ -599,122 +605,108 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Markets Price In an Iran Deal That Does Not Exist Yet",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Markets-Price-In-an-Iran-Deal-That-Does-Not-Exist-Yet.html",
-      "snippet": "Oil prices tumbled Tuesday as traders once again priced in a U.S.-Iran agreement before anyone had actually signed one. West Texas Intermediate was trading at $75.64 per barrel shortly before 2 p.m. ET, down $4.70, or 5.85%, while Brent had fallen $4.61 to $79.16. Both benchmarks touched three-week ",
-      "published_at": "2026-08-04T18:19:00+00:00",
+      "title": "Oil prices fall on hopes Strait of Hormuz could reopen",
+      "url": "https://www.bbc.co.uk/news/articles/cpw9v0gnzxwo?at_medium=RSS&at_campaign=rss",
+      "snippet": "US Secretary of State Marco Rubio and Treasury Secretary Scott Bessent both announced talks had progressed to allow shipments to resume.",
+      "published_at": "2026-08-04T19:00:43+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 29.7,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "oil_macro": [
-          "brent",
-          "barrel"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "‘Maximum use’: Iran boosts military strength during ceasefire with US",
-      "url": "https://www.aljazeera.com/news/2026/8/4/maximum-use-iran-boosts-military-strength-during-ceasefire-with-us?traffic_source=rss",
-      "snippet": "IRGC spokesman Hossein Mohebbi said last month that Iran&#039;s missile production rate increased during the ceasefire.",
-      "published_at": "2026-08-04T18:34:48+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 13,
       "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
+        "authority": 10.2,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.79
+        "speculative": -12.0,
+        "raw": 46.9,
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
-          "missile",
-          "ceasefire"
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "urgency": [
+          "announced"
+        ],
+        "speculative": [
+          "could"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/liveblog/2026/8/5/iran-war-live-tehran-oman-talks-on-hormuz-positive-ship-hit-in-red-sea?traffic_source=rss",
+        "title": "Iran war live: Tehran-Oman talks on Hormuz ‘positive’; ship hit in Red Sea",
+        "published_at": "2026-08-05T00:00:00+00:00"
+      },
+      "hidden": true
     },
     {
-      "title": "Greece’s DEPA delivers LNG cargo to Bulgartransgaz via Alexandroupolis FSRU",
-      "url": "https://lngprime.com/europe/greeces-depa-delivers-lng-cargo-to-bulgartransgaz-via-alexandroupolis-fsru/194416/",
-      "snippet": "Greece’s DEPA has delivered its first LNG cargo to Bulgaria’s state-owned gas system operator Bulgartransgaz, a unit of Bulgarian Energy Holding, via the Gastrade-operated FSRU-based terminal in Alexandroupolis.",
-      "published_at": "2026-08-04T10:44:25+00:00",
+      "title": "Video shows Russian drone chasing Ukrainian street vendor in 'human safari' attack",
+      "url": "https://www.bbc.co.uk/news/articles/cn4n03xg981o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ukraine said the video - showing a terrified civilian being hounded by a remotely-controlled drone - amounted to a war crime.",
+      "published_at": "2026-08-04T17:26:06+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 11,
       "tags": [
-        "lng",
-        "infrastructure"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 37.5,
-        "geography": 0.0,
+        "authority": 10.2,
+        "themes": 26.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 50.7,
-        "recency_multiplier": 0.43
+        "raw": 42.1,
+        "recency_multiplier": 0.65
       },
       "matched": {
-        "lng": [
-          "lng",
-          "cargo",
-          "fsru",
-          "lng cargo"
+        "geopolitics": [
+          "drone",
+          "war",
+          "attack"
         ],
-        "infrastructure": [
-          "terminal",
-          "system operator"
+        "geography": [
+          "russian",
+          "ukraine"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/4/russia-strikes-ukrainian-capital-kyiv-with-ballistic-missiles?traffic_source=rss",
+        "title": "One killed, five injured in Russian ballistic missile attack on Kyiv",
+        "published_at": "2026-08-04T23:24:43+00:00"
+      },
+      "hidden": true
     }
   ]
 }
