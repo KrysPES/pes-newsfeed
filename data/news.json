@@ -1,111 +1,161 @@
 {
-  "generated_at": "2026-08-05T13:25:54.570253+00:00",
-  "item_count": 25,
+  "generated_at": "2026-08-05T15:40:36.686786+00:00",
+  "item_count": 27,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 8
+    "high": 0,
+    "normal": 11
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1451
+        "ms": 1324
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 24442
+        "ms": 156175
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5580
+        "ms": 2352
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 219
+        "ms": 480
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 287
+        "ms": 380
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 93
+        "ms": 271
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 49,
+        "count": 48,
         "error": null,
-        "ms": 818
+        "ms": 925
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 166
+        "ms": 147
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 514
+        "ms": 571
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 127
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20058
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 290
+        "ms": 440
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 22,
+        "count": 27,
         "error": null,
-        "ms": 77
+        "ms": 160
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 82
+        "ms": 123
       }
     ]
   },
   "items": [
+    {
+      "title": "Hormuz Bottleneck Pushes Indian Refiners Toward West African Grades",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Bottleneck-Pushes-Indian-Refiners-Toward-West-African-Grades.html",
+      "snippet": "Several Indian refiners have recently bought crude from Oman and West Africa via tenders, trade sources told Reuters on Wednesday, as term supplies from the Middle East remain choked by the shipping constraints at the Strait of Hormuz and Bab el-Mandeb. State-controlled Mangalore Refinery and Petroc",
+      "published_at": "2026-08-05T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 63,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "bab el-mandeb"
+        ],
+        "oil_macro": [
+          "crude",
+          "refinery"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "bab el-mandeb"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-05T11:31:32+00:00"
+    },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
       "url": "https://umm.nordpoolgroup.com/#/messages/ab01a5bd-af40-4a86-9a44-2ff3c0955d85/3",
@@ -117,11 +167,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 62,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +182,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "supply_disruption": [
@@ -151,6 +201,48 @@
       "first_seen_at": "2026-08-05T07:07:05+00:00"
     },
     {
+      "title": "Former heavyweight champ ⁠Parker cleared to fight again after doping ban",
+      "url": "https://www.aljazeera.com/sports/2026/8/5/former-heavyweight-champ-%e2%81%a0parker-cleared-to-fight-again-after-doping-ban?traffic_source=rss",
+      "snippet": "Joseph Parker was suspended in October after failing a voluntary drug test, but denied taking any prohibited substance.",
+      "published_at": "2026-08-05T13:21:53+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.9,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Turkish cargo ship catches fire after Black Sea drone attack",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-drone-attacks-turkish-ship-sv?traffic_source=rss",
       "snippet": "A Turkish cargo ship caught fire after a drone attack near Russia’s Black Sea port of Novorossiysk.",
@@ -161,7 +253,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 62,
+      "score": 57,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -179,7 +271,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 60.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -203,6 +295,56 @@
       "also_reported_by": []
     },
     {
+      "title": "Hormuz Draft Agreement Reportedly Awaits Khamenei Approval",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Draft-Agreement-Reportedly-Awaits-Khamenei-Approval.html",
+      "snippet": "Oil markets are awaiting a decision from Iran’s supreme leader after Iranian and Omani negotiators reportedly completed a draft agreement that could reopen the Strait of Hormuz, the main export route for Persian Gulf oil and LNG. Two regional officials briefed on the talks told the Associated Press ",
+      "published_at": "2026-08-05T15:38:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 36.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 49.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "persian gulf"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "could",
+          "reportedly"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Houthis Claim Ballistic Missile Hit on Saudi Oil Tanker in Red Sea",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Houthis-Claim-Ballistic-Missile-Hit-on-Saudi-Oil-Tanker-in-Red-Sea.html",
       "snippet": "The Iran-aligned Houthi group in Yemen on Wednesday claimed a “precise hit” on a Saudi oil tanker in the Red Sea, Houthi military spokesperson Yahya Saree said. “The Yemeni Armed Forces conducted a military operation targeting the Saudi oil tanker 'Wafaa' north of the Red Sea off the Yambu area usin",
@@ -213,7 +355,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 59,
+      "score": 55,
       "tags": [
         "geopolitics",
         "lng"
@@ -230,7 +372,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -295,133 +437,52 @@
       "also_reported_by": []
     },
     {
-      "title": "Red Sea Attack Sinks India-Flagged Cargo Vessel Off Yemen",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Red-Sea-Attack-Sinks-India-Flagged-Cargo-Vessel-Off-Yemen.html",
-      "snippet": "An India-flagged tanker reportedly carrying Saudi oil has sunk off the coast of Yemen in the Red Sea after it was hit by a projectile. The Indian Ministry of External Affairs on Tuesday condemned the attack on the India-flagged commercial vessel, MSV Faize Noore Oliya, which sank in the Red Sea, off",
-      "published_at": "2026-08-05T09:30:00+00:00",
+      "title": "Iraq-Syria Pipeline to Bypass Hormuz Could Be Revived Within 3 Years",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Syria-Pipeline-to-Bypass-Hormuz-Could-Be-Revived-Within-3-Years.html",
+      "snippet": "An old Iraq-to-Syria oil pipeline that bypasses the Strait of Hormuz could be up and running within three years, a senior Syrian official has said. The Hormuz crisis that cut off most of Iraq’s crude oil exports has accelerated plans by Iraq and Syria to rebuild a damaged oil pipeline to ship crude ",
+      "published_at": "2026-08-05T13:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 43,
       "tags": [
         "geopolitics",
-        "lng"
+        "infrastructure",
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 34.3,
+        "themes": 22.2,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": -12.0,
-        "raw": 47.1,
-        "recency_multiplier": 0.86
+        "raw": 35.0,
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
-          "attack",
-          "red sea"
-        ],
-        "lng": [
-          "cargo",
-          "tanker"
-        ],
-        "geography": [
-          "red sea"
-        ],
-        "speculative": [
-          "reportedly"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Shell’s JV chooses ECOnnect’s jettyless import solution for Caribbean LNG project",
-      "url": "https://www.offshore-energy.biz/shells-jv-chooses-econnects-jettyless-import-solution-for-caribbean-lng-project/",
-      "snippet": "Norway’s technology company ECOnnect Energy has strengthened its position in the Caribbean with a deal for the use of its floating marine liquefied natural gas (LNG) infrastructure at an LNG terminal in The Bahamas. The post Shell’s JV chooses ECOnnect’s jettyless import solution for Caribbean LNG p",
-      "published_at": "2026-08-05T09:08:45+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 47,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 24.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.2,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
+          "strait of hormuz"
         ],
         "infrastructure": [
-          "terminal"
+          "pipeline"
+        ],
+        "oil_macro": [
+          "crude"
         ],
         "geography": [
-          "norway"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Israeli forces detain Palestinians during raid in occupied West Bank",
-      "url": "https://www.aljazeera.com/news/2026/8/5/israeli-forces-detain-palestinians-during-raid-in-occupied-west-bank?traffic_source=rss",
-      "snippet": "A journalist covering events was severely beaten by Israeli soldiers, while locals were also attacked.",
-      "published_at": "2026-08-05T11:31:32+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 46,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked"
+          "strait of hormuz",
+          "hormuz"
         ],
-        "unplanned": [
-          "attacked"
+        "speculative": [
+          "could"
         ]
       },
       "duplicate_count": 0,
@@ -430,8 +491,8 @@
     {
       "title": "Drone carrying explosives found at German airport, police say",
       "url": "https://www.bbc.co.uk/news/articles/cyvlg4q48l3o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The drone was found in the cargo area near a Ukrainian aircraft before another suspected object collided with a cargo aircraft in mid-air.",
-      "published_at": "2026-08-05T13:14:28+00:00",
+      "snippet": "The drone was found near Ukrainian cargo planes before another object collided with a cargo aircraft in mid-air.",
+      "published_at": "2026-08-05T14:32:27+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -472,56 +533,111 @@
       "also_reported_by": []
     },
     {
-      "title": "South Africa’s le Clos says home destroyed during Commonwealth record run",
-      "url": "https://www.aljazeera.com/sports/2026/8/5/south-africas-le-clos-says-home-destroyed-during-commonwealth-record-run?traffic_source=rss",
-      "snippet": "Olympic swimming champion Chad le Clos says his home was destroyed in a fire while he was at the Commonwealth Games.",
-      "published_at": "2026-08-05T09:53:33+00:00",
+      "title": "Red Sea Attack Sinks India-Flagged Cargo Vessel Off Yemen",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Red-Sea-Attack-Sinks-India-Flagged-Cargo-Vessel-Off-Yemen.html",
+      "snippet": "An India-flagged tanker reportedly carrying Saudi oil has sunk off the coast of Yemen in the Red Sea after it was hit by a projectile. The Indian Ministry of External Affairs on Tuesday condemned the attack on the India-flagged commercial vessel, MSV Faize Noore Oliya, which sank in the Red Sea, off",
+      "published_at": "2026-08-05T09:30:00+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
       "score": 42,
       "tags": [
-        "supply_disruption"
+        "geopolitics",
+        "lng"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
+        "authority": 8.8,
+        "themes": 34.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.89
+        "speculative": -12.0,
+        "raw": 47.1,
+        "recency_multiplier": 0.72
       },
       "matched": {
-        "supply_disruption": [
-          "fire"
+        "geopolitics": [
+          "attack",
+          "red sea"
         ],
-        "unplanned": [
-          "fire"
+        "lng": [
+          "cargo",
+          "tanker"
+        ],
+        "geography": [
+          "red sea"
+        ],
+        "speculative": [
+          "reportedly"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Reform UK plan to return asylum seekers using navy ‘dangerous in practice’",
-      "url": "https://www.aljazeera.com/news/2026/8/5/reform-uk-plan-to-return-asylum-seekers-using-navy-dangerous-in-practice?traffic_source=rss",
-      "snippet": "Nigel Farage&#039;s party says &#039;Operation Fortress&#039; would stop migrants &#039;invading&#039;, but experts slam proposal as unrealistic.",
-      "published_at": "2026-08-05T10:07:20+00:00",
+      "title": "Shell’s JV chooses ECOnnect’s jettyless import solution for Caribbean LNG project",
+      "url": "https://www.offshore-energy.biz/shells-jv-chooses-econnects-jettyless-import-solution-for-caribbean-lng-project/",
+      "snippet": "Norway’s technology company ECOnnect Energy has strengthened its position in the Caribbean with a deal for the use of its floating marine liquefied natural gas (LNG) infrastructure at an LNG terminal in The Bahamas. The post Shell’s JV chooses ECOnnect’s jettyless import solution for Caribbean LNG p",
+      "published_at": "2026-08-05T09:08:45+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 24.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.2,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal"
+        ],
+        "infrastructure": [
+          "terminal"
+        ],
+        "geography": [
+          "norway"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UK tribunal confirms professor’s anti-Zionism is legally protected belief",
+      "url": "https://www.aljazeera.com/news/2026/8/5/uk-tribunal-confirms-professors-anti-zionism-is-legally-protected-belief?traffic_source=rss",
+      "snippet": "David Miller has told Al Jazeera the ruling is a victory that will encourage others to speak out against Zionism.",
+      "published_at": "2026-08-05T15:22:39+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 40,
       "tags": [
         "regulation"
       ],
@@ -537,11 +653,11 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.6,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 1.0
       },
       "matched": {
         "regulation": [
-          "reform"
+          "ruling"
         ],
         "geography": [
           "uk"
@@ -551,207 +667,175 @@
       "also_reported_by": []
     },
     {
-      "title": "Fresh 10-year decommissioning licence issued for Kozloduy 3 and 4",
-      "url": "https://www.world-nuclear-news.org/articles/fresh-10-year-decommissioning-licence-issued-for-kozloduy-3-and-4",
-      "snippet": "Bulgaria's Nuclear Regulatory Agency has granted a 10-year licence to the State Enterprise Radioactive Waste for decommissioning work on the shutdown units 3 and 4 at the Kozloduy Nuclear Power Plant.",
-      "published_at": "2026-08-05T08:45:42+00:00",
+      "title": "Ukraine Calls for Faster Patriot Deliveries After Deadly Russian Missile Barrage",
+      "url": "https://oilprice.com/Geopolitics/Europe/Ukraine-Calls-for-Faster-Patriot-Deliveries-After-Deadly-Russian-Missile-Barrage.html",
+      "snippet": "Russian overnight drone and ballistic missile strikes killed at least 17 people in Kyiv and the surrounding region, as Ukraine warned of critical air defense shortages and urged allies to hasten deliveries of urgently needed Patriot air defense missiles and other weapons amid intensified Russian att",
+      "published_at": "2026-08-05T14:00:00+00:00",
       "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 40,
       "tags": [
-        "nuclear",
-        "supply_disruption",
-        "regulation"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.9,
-        "themes": 21.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.6,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "decommissioning"
-        ],
-        "supply_disruption": [
-          "shutdown"
-        ],
-        "regulation": [
-          "licence"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Record heatwave in South Korea as temperatures soar to 42.5C",
-      "url": "https://www.bbc.co.uk/news/videos/c935ng9n2klo?at_medium=RSS&at_campaign=rss",
-      "snippet": "There have been at least 19 deaths related to the heatwave which has brought the country's hottest day since records began.",
-      "published_at": "2026-08-05T11:30:39+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.3,
+        "authority": 8.8,
+        "themes": 17.9,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 27.5,
+        "raw": 31.7,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "weather": [
-          "heatwave",
-          "temperatures"
+        "geopolitics": [
+          "missile",
+          "drone"
         ],
         "geography": [
-          "korea"
+          "russian",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-05T12:26:26+00:00"
     },
     {
-      "title": "Bangladesh’s RPGCL seeks two August spot LNG cargoes",
-      "url": "https://lngprime.com/asia/bangladeshs-rpgcl-seeks-two-august-spot-lng-cargoes/194472/",
-      "snippet": "Bangladesh’s Rupantarita Prakritik Gas (RPGCL), a unit of state-owned Petrobangla, is seeking bids for two spot liquefied natural gas (LNG) cargoes in August.",
-      "published_at": "2026-08-05T11:20:53+00:00",
+      "title": "Hormuz Tanker Traffic Remains Subdued Despite Reports of Peace Talks",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Remains-Subdued-Despite-Reports-of-Peace-Talks.html",
+      "snippet": "Five tankers passed through the Strait of Hormuz yesterday, with three of them entering the waterway and two exiting, Reuters reported earlier today, citing data from Kpler that shows traffic in the chokepoint remains severely constrained despite a slew of reports on peace efforts in progress. One o",
+      "published_at": "2026-08-05T06:00:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 39,
       "tags": [
+        "geopolitics",
         "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 30.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 27.7,
-        "recency_multiplier": 0.99
+        "raw": 54.7,
+        "recency_multiplier": 0.55
       },
       "matched": {
+        "geopolitics": [
+          "peace talks",
+          "strait of hormuz"
+        ],
         "lng": [
-          "lng",
-          "cargoes"
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "ECOnnect Energy to Deliver Shell-Backed LNG Project in Bahamas",
-      "url": "https://www.rigzone.com/news/econnect_energy_to_deliver_shellbacked_lng_project_in_bahamas-05-aug-2026-184299-article/?rss=true",
-      "snippet": "The regasification terminal will enable LNG export to New Providence by yearend.",
-      "published_at": "2026-08-05T10:42:32+00:00",
+      "title": "Germany investigates explosive device attached to drone at Leipzig airport",
+      "url": "https://www.aljazeera.com/news/2026/8/5/germany-investigates-explosive-device-attached-to-drone-at-leipzig-airport?traffic_source=rss",
+      "snippet": "An airport employee spotted the object carrying what authorities described as &#039;an unknown explosive device&#039;.",
+      "published_at": "2026-08-05T14:40:32+00:00",
       "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 37,
       "tags": [
-        "lng",
-        "infrastructure"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.9,
-        "themes": 18.6,
-        "geography": 0.0,
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 29.5,
-        "recency_multiplier": 0.95
+        "raw": 28.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "lng",
-          "regasification"
+        "geopolitics": [
+          "drone"
         ],
-        "infrastructure": [
-          "terminal"
+        "geography": [
+          "germany"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "LNG Prime"
-      ],
-      "first_seen_at": "2026-08-05T06:15:51+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
-      "title": "Working together to deliver faster, smarter grid connections",
-      "url": "https://www.ofgem.gov.uk/blog/working-together-deliver-faster-smarter-grid-connections",
-      "snippet": "Our latest blogpost on our connections reform work and our new Connections Investor Delivery Engagement Forum.",
-      "published_at": "2026-08-05T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
+      "title": "US Oil Product Inventories Continue to Fall",
+      "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Product-Inventories-Continue-to-Fall.html",
+      "snippet": "Crude oil inventories in the United States saw an increase of 2.5 million barrels during the week ending July 31, according to new data from the U.S. Energy Information Administration (EIA) released on Wednesday. The increase brings commercial stockpiles to 407 million barrels, according to governme",
+      "published_at": "2026-08-05T14:37:22+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
       "score": 35,
       "tags": [
-        "infrastructure",
-        "regulation"
+        "oil_macro",
+        "gas_storage"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 16.1,
-        "themes": 10.4,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 13.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 26.5,
+        "raw": 26.8,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "infrastructure": [
-          "grid"
+        "oil_macro": [
+          "crude",
+          "barrels"
         ],
-        "regulation": [
-          "reform"
+        "gas_storage": [
+          "inventories"
+        ],
+        "geography": [
+          "united states"
         ]
       },
       "duplicate_count": 0,
@@ -798,9 +882,134 @@
       "also_reported_by": []
     },
     {
+      "title": "Fresh 10-year decommissioning licence issued for Kozloduy 3 and 4",
+      "url": "https://www.world-nuclear-news.org/articles/fresh-10-year-decommissioning-licence-issued-for-kozloduy-3-and-4",
+      "snippet": "Bulgaria's Nuclear Regulatory Agency has granted a 10-year licence to the State Enterprise Radioactive Waste for decommissioning work on the shutdown units 3 and 4 at the Kozloduy Nuclear Power Plant.",
+      "published_at": "2026-08-05T08:45:42+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "nuclear",
+        "supply_disruption",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 21.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.6,
+        "recency_multiplier": 0.68
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "decommissioning"
+        ],
+        "supply_disruption": [
+          "shutdown"
+        ],
+        "regulation": [
+          "licence"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Why are US Republicans losing faith in War Secretary Pete Hegseth?",
+      "url": "https://www.aljazeera.com/news/2026/8/5/why-are-us-republicans-losing-faith-in-war-secretary-pete-hegseth?traffic_source=rss",
+      "snippet": "The reasons for dissent are not unanimous, ranging from the war in Iran to an overhaul of military leadership.",
+      "published_at": "2026-08-05T13:48:22+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 14.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "supply_disruption": [
+          "overhaul"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Carbon capture-enabled 19.2-mtpa Texas Gulf Coast LNG project enters permitting phase",
+      "url": "https://www.offshore-energy.biz/carbon-capture-enabled-19-2-mtpa-texas-gulf-coast-lng-project-enters-permitting-phase/",
+      "snippet": "A planned multi-train liquefied natural gas (LNG) export project on the Texas Gulf Coast has taken a significant regulatory step toward development after submitting a request to the U.S. Federal Energy Regulatory Commission (FERC) to begin the pre-filing review process for the proposed export termin",
+      "published_at": "2026-08-05T13:17:33+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.7,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "KHNP, AboitizPower to cooperate on nuclear energy",
       "url": "https://www.world-nuclear-news.org/articles/khnp-aboitizpower-to-cooperate-on-nuclear-energy",
-      "snippet": "Aboitiz Power Corporation, a leading Philippine energy company, has signed a memorandum of understanding with Korea Hydro Nuclear Power to explore cooperation on nuclear energy technologies and their potential deployment in the Philippines.",
+      "snippet": "AboitizPower Corporation, a leading Philippine energy company, has signed a memorandum of understanding with Korea Hydro Nuclear Power to explore cooperation on nuclear energy technologies and their potential deployment in the Philippines.",
       "published_at": "2026-08-05T12:00:18+00:00",
       "type": "news",
       "source": "world_nuclear_news",
@@ -808,7 +1017,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 31,
       "tags": [
         "nuclear"
       ],
@@ -824,7 +1033,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "nuclear": [
@@ -832,6 +1041,124 @@
         ],
         "geography": [
           "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Working together to deliver faster, smarter grid connections",
+      "url": "https://www.ofgem.gov.uk/blog/working-together-deliver-faster-smarter-grid-connections",
+      "snippet": "Our latest blogpost on our connections reform work and our new Connections Investor Delivery Engagement Forum.",
+      "published_at": "2026-08-05T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "infrastructure",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 10.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.5,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "infrastructure": [
+          "grid"
+        ],
+        "regulation": [
+          "reform"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Record heatwave in South Korea as temperatures soar to 42.5C",
+      "url": "https://www.bbc.co.uk/news/videos/c935ng9n2klo?at_medium=RSS&at_campaign=rss",
+      "snippet": "There have been at least 19 deaths related to the heatwave which has brought the country's hottest day since records began.",
+      "published_at": "2026-08-05T11:30:39+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 12.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.5,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "weather": [
+          "heatwave",
+          "temperatures"
+        ],
+        "geography": [
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Bangladesh’s RPGCL seeks two August spot LNG cargoes",
+      "url": "https://lngprime.com/asia/bangladeshs-rpgcl-seeks-two-august-spot-lng-cargoes/194472/",
+      "snippet": "Bangladesh’s Rupantarita Prakritik Gas (RPGCL), a unit of state-owned Petrobangla, is seeking bids for two spot liquefied natural gas (LNG) cargoes in August.",
+      "published_at": "2026-08-05T11:20:53+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.7,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes"
         ]
       },
       "duplicate_count": 0,
@@ -848,7 +1175,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -864,7 +1191,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.87
       },
       "matched": {
         "lng": [
@@ -878,53 +1205,50 @@
       "also_reported_by": []
     },
     {
-      "title": "China’s Power Demand Hits Records as Heatwave Grips Key Regions",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Power-Demand-Hits-Records-as-Heatwave-Grips-Key-Regions.html",
-      "snippet": "Electricity demand in much of China hit a record this week due to scorching summer temperatures, driving grid loads to all-time highs, the State Grid Corporation of China said today, as cited by Reuters. On Monday and Tuesday, the company said, electricity loads reached a record in the country’s nor",
-      "published_at": "2026-08-05T08:30:00+00:00",
+      "title": "Israeli forces detain Palestinians during raid in occupied West Bank",
+      "url": "https://www.aljazeera.com/news/2026/8/5/israeli-forces-detain-palestinians-during-raid-in-occupied-west-bank?traffic_source=rss",
+      "snippet": "A journalist covering events was severely beaten by Israeli soldiers, while locals were also attacked.",
+      "published_at": "2026-08-05T11:31:32+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 12,
       "tags": [
-        "weather",
-        "infrastructure",
-        "oil_macro"
+        "geopolitics"
       ],
       "alert": "low",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 8.8,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
+        "authority": 9.5,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 31.7,
-        "recency_multiplier": 0.8
+        "raw": 38.5,
+        "recency_multiplier": 0.85
       },
       "matched": {
-        "weather": [
-          "heatwave",
-          "temperatures"
+        "geopolitics": [
+          "attacked"
         ],
-        "infrastructure": [
-          "grid"
-        ],
-        "oil_macro": [
-          "demand"
-        ],
-        "geography": [
-          "china"
+        "unplanned": [
+          "attacked"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Bottleneck-Pushes-Indian-Refiners-Toward-West-African-Grades.html",
+        "title": "Hormuz Bottleneck Pushes Indian Refiners Toward West African Grades",
+        "published_at": "2026-08-05T14:30:00+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Russia strike kills 21 as Ukraine says it needs more missile interceptors",
@@ -937,7 +1261,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 9,
       "tags": [
         "geopolitics"
       ],
@@ -953,7 +1277,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -965,227 +1289,12 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "ORLEN Opens Transshipment Terminal at Gdansk Refinery",
-      "url": "https://www.rigzone.com/news/orlen_opens_transshipment_terminal_at_gdansk_refinery-05-aug-2026-184297-article/?rss=true",
-      "snippet": "With a handling capacity of 1.8 million metric tons of cargo annually, the project eliminates the need for intermediate transport for crude feedstock and oil products between tankers and the refinery.",
-      "published_at": "2026-08-05T09:50:28+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "oil_macro",
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 15.7,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.6,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "refinery"
-        ],
-        "lng": [
-          "cargo"
-        ],
-        "infrastructure": [
-          "terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudis Hold Talks with Houthis",
-      "url": "https://www.rigzone.com/news/wire/saudis_hold_talks_with_houthis-05-aug-2026-184296-article/?rss=true",
-      "snippet": "Saudi Arabia wants to contain a renewed conflict with Houthi militants through behind-the-scenes diplomacy, according to people familiar with the matter, in a bid to prevent clashes with the Iran-backed group hurting its oil industry and economy.",
-      "published_at": "2026-08-05T08:21:09+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.9,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "militants"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want?",
-      "url": "https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want?traffic_source=rss",
-      "snippet": "An agreement could restore shipping through crucial waterway, paving way for peace talks between Tehran and Washington.",
-      "published_at": "2026-08-05T12:07:56+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 22.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "peace talks"
-        ],
-        "geography": [
-          "hormuz"
-        ],
-        "speculative": [
-          "could"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-05T06:00:00+00:00"
-    },
-    {
-      "title": "NYK, Chinese duo name LNG carrier",
-      "url": "https://lngprime.com/asia/nyk-chinese-duo-name-lng-carrier/194468/",
-      "snippet": "Japan’s NYK and its Chinese partners CNOOC and China Merchants Energy Shipping have named a newbuild 174,000-cbm LNG carrier at the Hudong-Zhonghua yard in Shanghai.",
-      "published_at": "2026-08-05T06:10:31+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.7,
-        "recency_multiplier": 0.67
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier"
-        ],
-        "geography": [
-          "china",
-          "japan"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hormuz Tanker Traffic Remains Subdued Despite Reports of Peace Talks",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Remains-Subdued-Despite-Reports-of-Peace-Talks.html",
-      "snippet": "Five tankers passed through the Strait of Hormuz yesterday, with three of them entering the waterway and two exiting, Reuters reported earlier today, citing data from Kpler that shows traffic in the chokepoint remains severely constrained despite a slew of reports on peace efforts in progress. One o",
-      "published_at": "2026-08-05T06:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 13,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 30.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.7,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "geopolitics": [
-          "peace talks",
-          "strait of hormuz"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want?traffic_source=rss",
-        "title": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want?",
-        "published_at": "2026-08-05T12:07:56+00:00"
+        "url": "https://oilprice.com/Geopolitics/Europe/Ukraine-Calls-for-Faster-Patriot-Deliveries-After-Deadly-Russian-Missile-Barrage.html",
+        "title": "Ukraine Calls for Faster Patriot Deliveries After Deadly Russian Missile Barrage",
+        "published_at": "2026-08-05T14:00:00+00:00"
       },
       "hidden": true
     }
