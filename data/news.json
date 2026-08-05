@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-05T04:19:32.549180+00:00",
+  "generated_at": "2026-08-05T07:07:27.052382+00:00",
   "item_count": 9,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 3
+    "high": 1,
+    "normal": 1
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,111 +17,111 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1821
+        "ms": 1705
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 17792
+        "ms": 73053
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2642
+        "ms": 3095
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 1370
+        "ms": 198
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 318
+        "ms": 273
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 12,
         "error": null,
-        "ms": 170
+        "ms": 195
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1490
+        "ms": 1390
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 539
+        "ms": 509
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 666
+        "ms": 725
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 360
+        "ms": 328
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 776
+        "ms": 561
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 33,
         "error": null,
-        "ms": 191
+        "ms": 51
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 188
+        "ms": 88
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
-      "url": "https://umm.nordpoolgroup.com/#/messages/ab01a5bd-af40-4a86-9a44-2ff3c0955d85/2",
-      "snippet": "Published: 04.08.2026 23:13:46 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-04T21:13:46+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Vantaan jätevoimala - CCGT",
+      "url": "https://umm.nordpoolgroup.com/#/messages/934aabfd-a3a2-4f6a-beb5-59ad72df5358/1",
+      "snippet": "Published: 05.08.2026 07:34:13 Publisher: Vantaan Energia Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Technical problems Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Fee",
+      "published_at": "2026-08-05T05:34:13+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 51,
+      "score": 66,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -146,42 +146,47 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 5,
+      "duplicate_count": 6,
       "also_reported_by": [],
       "first_seen_at": "2026-08-04T15:23:42+00:00"
     },
     {
-      "title": "US stock market hits record high amid hopes for Strait of Hormuz reopening",
-      "url": "https://www.aljazeera.com/economy/2026/8/5/us-stock-market-hits-record-high-amid-hopes-for-strait-of-hormuz-reopening?traffic_source=rss",
-      "snippet": "Oil prices fall as US officials tout progress in talks to reopen critical waterway.",
-      "published_at": "2026-08-05T02:09:06+00:00",
+      "title": "Hormuz Tanker Traffic Remains Subdued Despite Reports of Peace Talks",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Remains-Subdued-Despite-Reports-of-Peace-Talks.html",
+      "snippet": "Five tankers passed through the Strait of Hormuz yesterday, with three of them entering the waterway and two exiting, Reuters reported earlier today, citing data from Kpler that shows traffic in the chokepoint remains severely constrained despite a slew of reports on peace efforts in progress. One o",
+      "published_at": "2026-08-05T06:00:00+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 59,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "lng"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 16.6,
+        "authority": 8.8,
+        "themes": 30.0,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 0.99
+        "raw": 54.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
+          "peace talks",
           "strait of hormuz"
+        ],
+        "lng": [
+          "tanker"
         ],
         "geography": [
           "strait of hormuz",
@@ -190,8 +195,52 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 1,
+      "update_count": 2,
       "thread_started_at": "2026-08-05T00:00:00+00:00"
+    },
+    {
+      "title": "Explosions across Kyiv as Russian missiles strike Ukraine’s capital",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/explosions-across-kyiv-as-russian-missiles-strike-ukraines-capital?traffic_source=rss",
+      "snippet": "At least one person has been killed after a Russian ballistic missile attack on Ukraine’s capital Wednesday morning.",
+      "published_at": "2026-08-05T04:38:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "missile",
+          "attack"
+        ],
+        "geography": [
+          "russian",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "BBC World"
+      ]
     },
     {
       "title": "China's EV Boom Is Quietly Undermining Oil's Biggest Chokepoint",
@@ -204,12 +253,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 36,
       "tags": [
         "geopolitics",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -221,7 +270,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.1,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.5
       },
       "matched": {
         "geopolitics": [
@@ -249,7 +298,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 35,
       "tags": [
         "supply_disruption"
       ],
@@ -265,7 +314,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.49
       },
       "matched": {
         "supply_disruption": [
@@ -282,143 +331,94 @@
       "also_reported_by": []
     },
     {
-      "title": "Six years on, Beirut blast families still await justice",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/4/six-years-on-beirut-blast-families-still-await-justice?traffic_source=rss",
-      "snippet": "Families of victims of the Beirut port blast marked six years since the explosion by demanding truth and accountability.",
-      "published_at": "2026-08-04T21:03:15+00:00",
+      "title": "Coastal Bend LNG seeks OK to start pre-filing process for Texas project",
+      "url": "https://lngprime.com/americas/coastal-bend-lng-seeks-ok-to-start-pre-filing-process-for-texas-project/194439/",
+      "snippet": "Coastal Bend LNG is seeking approval from the US FERC to initiate the pre-filing process for its planned 22.5 mtpa LNG export facility on the Texas Gulf Coast.",
+      "published_at": "2026-08-05T06:20:28+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.8,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.3,
-        "recency_multiplier": 0.67
-      },
-      "matched": {
-        "supply_disruption": [
-          "explosion",
-          "blast"
-        ],
-        "unplanned": [
-          "explosion"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ceuta and Melilla: Why Europe’s African border remains a flashpoint",
-      "url": "https://www.aljazeera.com/news/2026/8/5/ceuta-and-melilla-why-europes-african-border-remains-a-flashpoint?traffic_source=rss",
-      "snippet": "The two Spanish enclaves in North Africa remain at the centre of a diplomatic standoff between Spain and Morocco.",
-      "published_at": "2026-08-05T01:21:16+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.5,
-        "recency_multiplier": 0.93
-      },
-      "matched": {
-        "geopolitics": [
-          "diplomatic"
-        ],
-        "geography": [
-          "europe",
-          "spain"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "One killed, 12 injured in Russian ballistic missile attack on Kyiv",
-      "url": "https://www.aljazeera.com/news/2026/8/4/russia-strikes-ukrainian-capital-kyiv-with-ballistic-missiles?traffic_source=rss",
-      "snippet": "The latest attack comes after at least 27 people were killed in both Russia and Ukraine earlier this week.",
-      "published_at": "2026-08-04T23:24:43+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
       "score": 34,
       "tags": [
-        "geopolitics"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 17.9,
+        "authority": 13.1,
+        "themes": 7.3,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.8
+        "raw": 25.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "missile",
-          "attack"
+        "lng": [
+          "lng"
         ],
         "geography": [
-          "russia",
-          "russian",
-          "ukraine"
+          "gulf"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "BBC World"
-      ]
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
-      "title": "North Korea’s Kim Yo Jong issues military threat over Japan missile test",
-      "url": "https://www.aljazeera.com/news/2026/8/5/north-koreas-kim-yo-jong-issues-military-threat-over-japan-missile-test?traffic_source=rss",
-      "snippet": "The powerful sister of North Korean leader Kim Jong Un has accused Japan of moving beyond a defensive posture.",
-      "published_at": "2026-08-05T03:48:21+00:00",
+      "title": "The yearly mild weather spell that brings Yemen’s coast back to life",
+      "url": "https://www.aljazeera.com/features/2026/8/5/the-yearly-mild-weather-spell-that-brings-yemens-coast-back-to-life?traffic_source=rss",
+      "snippet": "Al-Baldah transforms Mukalla with mild temperatures, beach fun and a rare economic boost for the southern Yemeni city.",
+      "published_at": "2026-08-05T05:48:42+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 12.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 21.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "temperatures",
+          "mild"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US stock market hits record high amid hopes for Strait of Hormuz reopening",
+      "url": "https://www.aljazeera.com/economy/2026/8/5/us-stock-market-hits-record-high-amid-hopes-for-strait-of-hormuz-reopening?traffic_source=rss",
+      "snippet": "Oil prices fall as US officials tout progress in talks to reopen critical waterway.",
+      "published_at": "2026-08-05T02:09:06+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 13,
       "tags": [
         "geopolitics"
       ],
@@ -426,27 +426,34 @@
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 1.0
+        "raw": 42.1,
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
-          "missile"
+          "strait of hormuz"
         ],
         "geography": [
-          "japan",
-          "korea"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Remains-Subdued-Despite-Reports-of-Peace-Talks.html",
+        "title": "Hormuz Tanker Traffic Remains Subdued Despite Reports of Peace Talks",
+        "published_at": "2026-08-05T06:00:00+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Iran war live: Tehran-Oman talks on Hormuz ‘positive’; ship hit in Red Sea",
@@ -459,7 +466,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
@@ -475,7 +482,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.1,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -494,9 +501,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/economy/2026/8/5/us-stock-market-hits-record-high-amid-hopes-for-strait-of-hormuz-reopening?traffic_source=rss",
-        "title": "US stock market hits record high amid hopes for Strait of Hormuz reopening",
-        "published_at": "2026-08-05T02:09:06+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Remains-Subdued-Despite-Reports-of-Peace-Talks.html",
+        "title": "Hormuz Tanker Traffic Remains Subdued Despite Reports of Peace Talks",
+        "published_at": "2026-08-05T06:00:00+00:00"
       },
       "hidden": true
     }
