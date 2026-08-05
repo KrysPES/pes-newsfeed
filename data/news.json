@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-05T15:40:36.686786+00:00",
-  "item_count": 27,
+  "generated_at": "2026-08-05T17:11:55.607641+00:00",
+  "item_count": 20,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 11
+    "normal": 10
   },
-  "superseded_count": 2,
+  "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1324
+        "ms": 1575
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 156175
+        "ms": 151372
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2352
+        "ms": 10794
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 480
+        "ms": 185
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 380
+        "ms": 124
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 271
+        "ms": 212
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 48,
+        "count": 47,
         "error": null,
-        "ms": 925
+        "ms": 1337
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 147
+        "ms": 266
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 571
+        "ms": 706
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20058
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 338
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 440
+        "ms": 810
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 160
+        "ms": 51
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 123
+        "ms": 86
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 63,
+      "score": 61,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -134,7 +134,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "geopolitics": [
@@ -152,9 +152,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-05T11:31:32+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
@@ -167,7 +165,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 62,
+      "score": 58,
       "tags": [
         "supply_disruption"
       ],
@@ -182,7 +180,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.81
       },
       "matched": {
         "supply_disruption": [
@@ -199,100 +197,6 @@
       "duplicate_count": 1,
       "also_reported_by": [],
       "first_seen_at": "2026-08-05T07:07:05+00:00"
-    },
-    {
-      "title": "Former heavyweight champ ⁠Parker cleared to fight again after doping ban",
-      "url": "https://www.aljazeera.com/sports/2026/8/5/former-heavyweight-champ-%e2%81%a0parker-cleared-to-fight-again-after-doping-ban?traffic_source=rss",
-      "snippet": "Joseph Parker was suspended in October after failing a voluntary drug test, but denied taking any prohibited substance.",
-      "published_at": "2026-08-05T13:21:53+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 57,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.9,
-        "recency_multiplier": 0.98
-      },
-      "matched": {
-        "supply_disruption": [
-          "suspended"
-        ],
-        "unplanned": [
-          "suspended"
-        ],
-        "urgency": [
-          "suspended"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Turkish cargo ship catches fire after Black Sea drone attack",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-drone-attacks-turkish-ship-sv?traffic_source=rss",
-      "snippet": "A Turkish cargo ship caught fire after a drone attack near Russia’s Black Sea port of Novorossiysk.",
-      "published_at": "2026-08-05T11:49:25+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 57,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 25.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 60.0,
-        "recency_multiplier": 0.87
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "lng": [
-          "cargo"
-        ],
-        "geography": [
-          "russia"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "Hormuz Draft Agreement Reportedly Awaits Khamenei Approval",
@@ -345,45 +249,94 @@
       "also_reported_by": []
     },
     {
-      "title": "Houthis Claim Ballistic Missile Hit on Saudi Oil Tanker in Red Sea",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Houthis-Claim-Ballistic-Missile-Hit-on-Saudi-Oil-Tanker-in-Red-Sea.html",
-      "snippet": "The Iran-aligned Houthi group in Yemen on Wednesday claimed a “precise hit” on a Saudi oil tanker in the Red Sea, Houthi military spokesperson Yahya Saree said. “The Yemeni Armed Forces conducted a military operation targeting the Saudi oil tanker 'Wafaa' north of the Red Sea off the Yambu area usin",
-      "published_at": "2026-08-05T12:30:00+00:00",
+      "title": "Former heavyweight champ ⁠Parker cleared to fight again after doping ban",
+      "url": "https://www.aljazeera.com/sports/2026/8/5/former-heavyweight-champ-%e2%81%a0parker-cleared-to-fight-again-after-doping-ban?traffic_source=rss",
+      "snippet": "Joseph Parker was suspended in October after failing a voluntary drug test, but denied taking any prohibited substance.",
+      "published_at": "2026-08-05T13:21:53+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 53,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.9,
+        "recency_multiplier": 0.87
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Turkish cargo ship catches fire after Black Sea drone attack",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-drone-attacks-turkish-ship-sv?traffic_source=rss",
+      "snippet": "A Turkish cargo ship caught fire after a drone attack near Russia’s Black Sea port of Novorossiysk.",
+      "published_at": "2026-08-05T11:49:25+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
       "tags": [
         "geopolitics",
+        "supply_disruption",
         "lng"
       ],
       "alert": "normal",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 8.8,
-        "themes": 30.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
+        "authority": 9.5,
+        "themes": 25.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 54.7,
-        "recency_multiplier": 0.91
+        "raw": 60.0,
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
-          "missile",
-          "red sea"
+          "drone",
+          "attack"
+        ],
+        "supply_disruption": [
+          "fire"
         ],
         "lng": [
-          "tanker"
+          "cargo"
         ],
         "geography": [
-          "red sea"
+          "russia"
+        ],
+        "unplanned": [
+          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -400,7 +353,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 52,
       "tags": [
         "nuclear",
         "infrastructure"
@@ -437,52 +390,126 @@
       "also_reported_by": []
     },
     {
-      "title": "Iraq-Syria Pipeline to Bypass Hormuz Could Be Revived Within 3 Years",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Syria-Pipeline-to-Bypass-Hormuz-Could-Be-Revived-Within-3-Years.html",
-      "snippet": "An old Iraq-to-Syria oil pipeline that bypasses the Strait of Hormuz could be up and running within three years, a senior Syrian official has said. The Hormuz crisis that cut off most of Iraq’s crude oil exports has accelerated plans by Iraq and Syria to rebuild a damaged oil pipeline to ship crude ",
-      "published_at": "2026-08-05T13:30:00+00:00",
+      "title": "Houthis Claim Ballistic Missile Hit on Saudi Oil Tanker in Red Sea",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Houthis-Claim-Ballistic-Missile-Hit-on-Saudi-Oil-Tanker-in-Red-Sea.html",
+      "snippet": "The Iran-aligned Houthi group in Yemen on Wednesday claimed a “precise hit” on a Saudi oil tanker in the Red Sea, Houthi military spokesperson Yahya Saree said. “The Yemeni Armed Forces conducted a military operation targeting the Saudi oil tanker 'Wafaa' north of the Red Sea off the Yambu area usin",
+      "published_at": "2026-08-05T12:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 51,
       "tags": [
         "geopolitics",
-        "infrastructure",
-        "oil_macro"
+        "lng"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 22.2,
+        "themes": 30.0,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 35.0,
-        "recency_multiplier": 0.99
+        "speculative": 0.0,
+        "raw": 54.7,
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
-          "strait of hormuz"
+          "missile",
+          "red sea"
         ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "crude"
+        "lng": [
+          "tanker"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Russia kills 17 in ballistic missile attacks around Kyiv",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/5-8-sv-russia-attacks-kyiv-ua?traffic_source=rss",
+      "snippet": "At least 17 people were killed after Russia launched an overnight ballistic missile and drone attack on Kyiv.",
+      "published_at": "2026-08-05T16:42:24+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 26.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "missile",
+          "drone",
+          "attack"
         ],
-        "speculative": [
-          "could"
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Pope Leo XIV to visit Peru, Argentina and Uruguay in November",
+      "url": "https://www.aljazeera.com/news/2026/8/5/pope-leo-xiv-to-visit-peru-argentina-and-uruguay-in-november?traffic_source=rss",
+      "snippet": "The pontiff’s first Latin America trip will take him back to Peru, where he spent decades as a missionary and bishop.",
+      "published_at": "2026-08-05T16:05:58+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "trip"
+        ],
+        "unplanned": [
+          "trip"
         ]
       },
       "duplicate_count": 0,
@@ -492,7 +519,7 @@
       "title": "Drone carrying explosives found at German airport, police say",
       "url": "https://www.bbc.co.uk/news/articles/cyvlg4q48l3o?at_medium=RSS&at_campaign=rss",
       "snippet": "The drone was found near Ukrainian cargo planes before another object collided with a cargo aircraft in mid-air.",
-      "published_at": "2026-08-05T14:32:27+00:00",
+      "published_at": "2026-08-05T16:06:30+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -527,100 +554,6 @@
         ],
         "geography": [
           "german"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Red Sea Attack Sinks India-Flagged Cargo Vessel Off Yemen",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Red-Sea-Attack-Sinks-India-Flagged-Cargo-Vessel-Off-Yemen.html",
-      "snippet": "An India-flagged tanker reportedly carrying Saudi oil has sunk off the coast of Yemen in the Red Sea after it was hit by a projectile. The Indian Ministry of External Affairs on Tuesday condemned the attack on the India-flagged commercial vessel, MSV Faize Noore Oliya, which sank in the Red Sea, off",
-      "published_at": "2026-08-05T09:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 34.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 47.1,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "geopolitics": [
-          "attack",
-          "red sea"
-        ],
-        "lng": [
-          "cargo",
-          "tanker"
-        ],
-        "geography": [
-          "red sea"
-        ],
-        "speculative": [
-          "reportedly"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Shell’s JV chooses ECOnnect’s jettyless import solution for Caribbean LNG project",
-      "url": "https://www.offshore-energy.biz/shells-jv-chooses-econnects-jettyless-import-solution-for-caribbean-lng-project/",
-      "snippet": "Norway’s technology company ECOnnect Energy has strengthened its position in the Caribbean with a deal for the use of its floating marine liquefied natural gas (LNG) infrastructure at an LNG terminal in The Bahamas. The post Shell’s JV chooses ECOnnect’s jettyless import solution for Caribbean LNG p",
-      "published_at": "2026-08-05T09:08:45+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 24.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.2,
-        "recency_multiplier": 0.71
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal"
-        ],
-        "geography": [
-          "norway"
         ]
       },
       "duplicate_count": 0,
@@ -667,6 +600,152 @@
       "also_reported_by": []
     },
     {
+      "title": "Iraq-Syria Pipeline to Bypass Hormuz Could Be Revived Within 3 Years",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Syria-Pipeline-to-Bypass-Hormuz-Could-Be-Revived-Within-3-Years.html",
+      "snippet": "An old Iraq-to-Syria oil pipeline that bypasses the Strait of Hormuz could be up and running within three years, a senior Syrian official has said. The Hormuz crisis that cut off most of Iraq’s crude oil exports has accelerated plans by Iraq and Syria to rebuild a damaged oil pipeline to ship crude ",
+      "published_at": "2026-08-05T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "geopolitics",
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.2,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 35.0,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Red Sea Attack Sinks India-Flagged Cargo Vessel Off Yemen",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Red-Sea-Attack-Sinks-India-Flagged-Cargo-Vessel-Off-Yemen.html",
+      "snippet": "An India-flagged tanker reportedly carrying Saudi oil has sunk off the coast of Yemen in the Red Sea after it was hit by a projectile. The Indian Ministry of External Affairs on Tuesday condemned the attack on the India-flagged commercial vessel, MSV Faize Noore Oliya, which sank in the Red Sea, off",
+      "published_at": "2026-08-05T09:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 34.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 47.1,
+        "recency_multiplier": 0.64
+      },
+      "matched": {
+        "geopolitics": [
+          "attack",
+          "red sea"
+        ],
+        "lng": [
+          "cargo",
+          "tanker"
+        ],
+        "geography": [
+          "red sea"
+        ],
+        "speculative": [
+          "reportedly"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Shell’s JV chooses ECOnnect’s jettyless import solution for Caribbean LNG project",
+      "url": "https://www.offshore-energy.biz/shells-jv-chooses-econnects-jettyless-import-solution-for-caribbean-lng-project/",
+      "snippet": "Norway’s technology company ECOnnect Energy has strengthened its position in the Caribbean with a deal for the use of its floating marine liquefied natural gas (LNG) infrastructure at an LNG terminal in The Bahamas. The post Shell’s JV chooses ECOnnect’s jettyless import solution for Caribbean LNG p",
+      "published_at": "2026-08-05T09:08:45+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 24.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.2,
+        "recency_multiplier": 0.63
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal"
+        ],
+        "infrastructure": [
+          "terminal"
+        ],
+        "geography": [
+          "norway"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Ukraine Calls for Faster Patriot Deliveries After Deadly Russian Missile Barrage",
       "url": "https://oilprice.com/Geopolitics/Europe/Ukraine-Calls-for-Faster-Patriot-Deliveries-After-Deadly-Russian-Missile-Barrage.html",
       "snippet": "Russian overnight drone and ballistic missile strikes killed at least 17 people in Kyiv and the surrounding region, as Ukraine warned of critical air defense shortages and urged allies to hasten deliveries of urgently needed Patriot air defense missiles and other weapons amid intensified Russian att",
@@ -677,7 +756,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -693,7 +772,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -706,9 +785,47 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-05T12:26:26+00:00"
+      "also_reported_by": []
+    },
+    {
+      "title": "Germany investigates explosive device attached to drone at Leipzig airport",
+      "url": "https://www.aljazeera.com/news/2026/8/5/germany-investigates-explosive-device-attached-to-drone-at-leipzig-airport?traffic_source=rss",
+      "snippet": "An airport employee spotted the object carrying what authorities described as &#039;an unknown explosive device&#039;.",
+      "published_at": "2026-08-05T14:40:32+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.5,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "drone"
+        ],
+        "geography": [
+          "germany"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Hormuz Tanker Traffic Remains Subdued Despite Reports of Peace Talks",
@@ -721,7 +838,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 35,
       "tags": [
         "geopolitics",
         "lng"
@@ -738,7 +855,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.7,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.49
       },
       "matched": {
         "geopolitics": [
@@ -757,46 +874,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Germany investigates explosive device attached to drone at Leipzig airport",
-      "url": "https://www.aljazeera.com/news/2026/8/5/germany-investigates-explosive-device-attached-to-drone-at-leipzig-airport?traffic_source=rss",
-      "snippet": "An airport employee spotted the object carrying what authorities described as &#039;an unknown explosive device&#039;.",
-      "published_at": "2026-08-05T14:40:32+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "drone"
-        ],
-        "geography": [
-          "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "US Oil Product Inventories Continue to Fall",
       "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Product-Inventories-Continue-to-Fall.html",
       "snippet": "Crude oil inventories in the United States saw an increase of 2.5 million barrels during the week ending July 31, according to new data from the U.S. Energy Information Administration (EIA) released on Wednesday. The increase brings commercial stockpiles to 407 million barrels, according to governme",
@@ -807,7 +884,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "oil_macro",
         "gas_storage"
@@ -824,7 +901,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "oil_macro": [
@@ -852,7 +929,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "nuclear"
       ],
@@ -868,7 +945,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "nuclear": [
@@ -892,7 +969,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 30,
       "tags": [
         "nuclear",
         "supply_disruption",
@@ -909,7 +986,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.6,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.61
       },
       "matched": {
         "nuclear": [
@@ -925,378 +1002,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Why are US Republicans losing faith in War Secretary Pete Hegseth?",
-      "url": "https://www.aljazeera.com/news/2026/8/5/why-are-us-republicans-losing-faith-in-war-secretary-pete-hegseth?traffic_source=rss",
-      "snippet": "The reasons for dissent are not unanimous, ranging from the war in Iran to an overhaul of military leadership.",
-      "published_at": "2026-08-05T13:48:22+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 14.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "supply_disruption": [
-          "overhaul"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Carbon capture-enabled 19.2-mtpa Texas Gulf Coast LNG project enters permitting phase",
-      "url": "https://www.offshore-energy.biz/carbon-capture-enabled-19-2-mtpa-texas-gulf-coast-lng-project-enters-permitting-phase/",
-      "snippet": "A planned multi-train liquefied natural gas (LNG) export project on the Texas Gulf Coast has taken a significant regulatory step toward development after submitting a request to the U.S. Federal Energy Regulatory Commission (FERC) to begin the pre-filing review process for the proposed export termin",
-      "published_at": "2026-08-05T13:17:33+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.7,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "KHNP, AboitizPower to cooperate on nuclear energy",
-      "url": "https://www.world-nuclear-news.org/articles/khnp-aboitizpower-to-cooperate-on-nuclear-energy",
-      "snippet": "AboitizPower Corporation, a leading Philippine energy company, has signed a memorandum of understanding with Korea Hydro Nuclear Power to explore cooperation on nuclear energy technologies and their potential deployment in the Philippines.",
-      "published_at": "2026-08-05T12:00:18+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.1,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Working together to deliver faster, smarter grid connections",
-      "url": "https://www.ofgem.gov.uk/blog/working-together-deliver-faster-smarter-grid-connections",
-      "snippet": "Our latest blogpost on our connections reform work and our new Connections Investor Delivery Engagement Forum.",
-      "published_at": "2026-08-05T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "infrastructure",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 10.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.5,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "infrastructure": [
-          "grid"
-        ],
-        "regulation": [
-          "reform"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Record heatwave in South Korea as temperatures soar to 42.5C",
-      "url": "https://www.bbc.co.uk/news/videos/c935ng9n2klo?at_medium=RSS&at_campaign=rss",
-      "snippet": "There have been at least 19 deaths related to the heatwave which has brought the country's hottest day since records began.",
-      "published_at": "2026-08-05T11:30:39+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.5,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "weather": [
-          "heatwave",
-          "temperatures"
-        ],
-        "geography": [
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Bangladesh’s RPGCL seeks two August spot LNG cargoes",
-      "url": "https://lngprime.com/asia/bangladeshs-rpgcl-seeks-two-august-spot-lng-cargoes/194472/",
-      "snippet": "Bangladesh’s Rupantarita Prakritik Gas (RPGCL), a unit of state-owned Petrobangla, is seeking bids for two spot liquefied natural gas (LNG) cargoes in August.",
-      "published_at": "2026-08-05T11:20:53+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.7,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Cheniere set to start LNG production at seventh Corpus Christi expansion train",
-      "url": "https://lngprime.com/americas/cheniere-set-to-start-lng-production-at-seventh-corpus-christi-expansion-train/194477/",
-      "snippet": "US LNG exporter Cheniere is set to start LNG production at the seventh and final train of the Corpus Christi Stage 3 expansion project in Texas following the latest approval from the US FERC.",
-      "published_at": "2026-08-05T11:49:18+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.87
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "corpus christi"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Israeli forces detain Palestinians during raid in occupied West Bank",
-      "url": "https://www.aljazeera.com/news/2026/8/5/israeli-forces-detain-palestinians-during-raid-in-occupied-west-bank?traffic_source=rss",
-      "snippet": "A journalist covering events was severely beaten by Israeli soldiers, while locals were also attacked.",
-      "published_at": "2026-08-05T11:31:32+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 12,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.5,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Bottleneck-Pushes-Indian-Refiners-Toward-West-African-Grades.html",
-        "title": "Hormuz Bottleneck Pushes Indian Refiners Toward West African Grades",
-        "published_at": "2026-08-05T14:30:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Russia strike kills 21 as Ukraine says it needs more missile interceptors",
-      "url": "https://www.bbc.co.uk/news/articles/c330pxyvzzyo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The Russia defence ministry said it had struck logistics hubs and supply centres in Kyiv and the surrounding region.",
-      "published_at": "2026-08-05T12:26:26+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "geopolitics": [
-          "missile"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Geopolitics/Europe/Ukraine-Calls-for-Faster-Patriot-Deliveries-After-Deadly-Russian-Missile-Barrage.html",
-        "title": "Ukraine Calls for Faster Patriot Deliveries After Deadly Russian Missile Barrage",
-        "published_at": "2026-08-05T14:00:00+00:00"
-      },
-      "hidden": true
     }
   ]
 }
