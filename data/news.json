@@ -1,111 +1,154 @@
 {
-  "generated_at": "2026-08-06T07:14:39.561483+00:00",
-  "item_count": 8,
+  "generated_at": "2026-08-06T10:02:15.263928+00:00",
+  "item_count": 15,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 3
+    "normal": 6
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1944
+        "ms": 1813
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 57218
+        "ms": 111208
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 17117
+        "ms": 3139
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 873
+        "ms": 411
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 756
+        "ms": 467
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 210
+        "ms": 183
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 47,
+        "count": 46,
         "error": null,
-        "ms": 1162
+        "ms": 1191
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 521
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 76
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 743
+        "ms": 710
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 294
+        "ms": 255
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 634
+        "ms": 603
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 30,
         "error": null,
-        "ms": 464
+        "ms": 156
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 180
+        "ms": 202
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
+      "url": "https://umm.nordpoolgroup.com/#/messages/ab01a5bd-af40-4a86-9a44-2ff3c0955d85/4",
+      "snippet": "Published: 06.08.2026 11:22:21 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-06T09:22:21+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Excelerate confirms Colombian FSRU charter deal, LNG carrier purchase",
       "url": "https://lngprime.com/americas/excelerate-confirms-colombian-fsru-charter-deal-lng-carrier-purchase/194482/",
@@ -117,12 +160,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 66,
+      "score": 59,
       "tags": [
         "lng",
         "infrastructure"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -133,7 +176,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.83
       },
       "matched": {
         "lng": [
@@ -154,6 +197,93 @@
       "also_reported_by": []
     },
     {
+      "title": "Exmar in LNG bunkering move",
+      "url": "https://lngprime.com/contracts-and-tenders/exmar-in-lng-bunkering-move/194527/",
+      "snippet": "Belgium’s Exmar has secured a seven-year charter for the newly acquired 2006-built LNG carrier Simaisma. The vessel will be modified to serve as a floating transshipment unit (FTU) for the LNG bunkering market.",
+      "published_at": "2026-08-06T08:24:04+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 21.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier",
+          "charter"
+        ],
+        "geography": [
+          "belgium"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UAE Bucks Risks to Lead Hormuz Oil Shipping",
+      "url": "https://www.rigzone.com/news/wire/uae_bucks_risks_to_lead_hormuz_oil_shipping-06-aug-2026-184307-article/?rss=true",
+      "snippet": "The United Arab Emirates has moved more oil through the Strait of Hormuz than any other producer over the past two months, providing a much-needed buffer for global markets reeling from a historic energy crisis.",
+      "published_at": "2026-08-06T07:21:51+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.6,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "OilPrice.com"
+      ],
+      "update_count": 1,
+      "thread_started_at": "2026-08-06T05:05:06+00:00"
+    },
+    {
       "title": "PV Gas seeks September spot LNG cargo",
       "url": "https://lngprime.com/asia/pv-gas-seeks-september-spot-lng-cargo/194511/",
       "snippet": "Petrovietnam Gas, a unit of state-owned Petrovietnam, has released a new tender inviting firms to submit bids for one spot LNG cargo for delivery to the Thi Vai LNG import terminal.",
@@ -164,7 +294,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 49,
       "tags": [
         "lng",
         "infrastructure"
@@ -180,7 +310,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.83
       },
       "matched": {
         "lng": [
@@ -197,70 +327,60 @@
       "also_reported_by": []
     },
     {
-      "title": "Iran and Oman Near Landmark Deal to Manage Strait of Hormuz",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-and-Oman-Near-Landmark-Deal-to-Manage-Strait-of-Hormuz.html",
-      "snippet": "Iran and Oman are close to agreeing on joint management of the Strait of Hormuz, media have reported, citing a statement by Iran’s foreign ministry spokesman, Esmaeil Baghaei. Crude oil prices have been trending lower, in the meantime, with Brent crude dipping below $80 per barrel and trading at $79",
-      "published_at": "2026-08-06T05:10:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 55,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 24.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.5,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [
-        "Al Jazeera",
-        "BBC World"
-      ],
-      "first_seen_at": "2026-08-06T01:19:59+00:00",
-      "update_count": 1,
-      "thread_started_at": "2026-08-06T05:05:06+00:00"
-    },
-    {
-      "title": "Trump attacks El-Sayed as ‘hater of Jews’ after Michigan win",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/trump-attacks-el-sayed-as-hater-of-jews-after-michigan-win?traffic_source=rss",
-      "snippet": "US President Donald Trump attacked Michigan’s Democratic Senate candidate Abdul El-Sayed, calling him a ‘hater of Jews.&#039;",
-      "published_at": "2026-08-06T04:02:29+00:00",
+      "title": "US-Israel war on Iran upends Europe’s summer holiday travel patterns",
+      "url": "https://www.aljazeera.com/news/2026/8/6/how-the-middle-east-conflict-is-upending-european-travel?traffic_source=rss",
+      "snippet": "Holidaymakers are sticking closer to home as the conflict rages, while tourism operators adapt.",
+      "published_at": "2026-08-06T09:17:56+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 45,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-06T05:10:00+00:00"
+    },
+    {
+      "title": "Ex-Bangladesh cricket captain Shakib’s home petrol-bombed in Hasina fallout",
+      "url": "https://www.aljazeera.com/sports/2026/8/6/ex-bangladesh-cricket-captain-shakibs-home-petrol-bombed-in-hasina-fallout?traffic_source=rss",
+      "snippet": "Former Bangladesh captain Shakib Al Hasan&#039;s home attacked after joining former Prime Minister Sheikh Hasina’s event.",
+      "published_at": "2026-08-06T07:34:12+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
       "tags": [
         "geopolitics"
       ],
@@ -275,7 +395,86 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.5,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "attacked"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Golar’s FLNG on way to Singapore from Cameroon",
+      "url": "https://lngprime.com/africa/golars-flng-on-way-to-singapore-from-cameroon/194519/",
+      "snippet": "Golar LNG's FLNG Hilli, which has worked offshore Cameroon’s Kribi since 2018, has left the country under tow and is on its way to Seatrium’s shipyard in Singapore, where upgrades and life extension work will be carried out prior to its deployment in Argentina.",
+      "published_at": "2026-08-06T07:58:41+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "nuclear",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "life extension"
+        ],
+        "lng": [
+          "lng"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Trump attacks El-Sayed as ‘hater of Jews’ after Michigan win",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/trump-attacks-el-sayed-as-hater-of-jews-after-michigan-win?traffic_source=rss",
+      "snippet": "US President Donald Trump attacked Michigan’s Democratic Senate candidate Abdul El-Sayed, calling him a ‘hater of Jews.&#039;",
+      "published_at": "2026-08-06T04:02:29+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.5,
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -299,7 +498,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 34,
       "tags": [
         "weather",
         "lng",
@@ -317,7 +516,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.7,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.54
       },
       "matched": {
         "weather": [
@@ -340,86 +539,188 @@
       "also_reported_by": []
     },
     {
-      "title": "Venezuela’s Oil Production Grows at a Crucial Time Despite Challenges",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Venezuelas-Oil-Production-Grows-at-a-Crucial-Time-Despite-Challenges.html",
-      "snippet": "Venezuela’s oil production is growing at a crucial time, with conflict in the Middle East disrupting traffic in the Strait of Hormuz, thereby crimping global petroleum supply. Since the U.S. captured President Nicolas Maduro in a daring night raid in early January 2026, Venezuela’s petroleum output ",
-      "published_at": "2026-08-05T21:00:00+00:00",
+      "title": "China’s Top Refiner Pivots to Russian Crude",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Top-Refiner-Pivots-to-Russian-Crude.html",
+      "snippet": "China’s Sinopec, the world’s top refiner by capacity, has boosted purchases of Russia’s Far East crude for delivery in the third quarter as it looks to secure cargo arrivals amid continued shipping constraints in the Middle East. State-run Sinopec has acquired as many as 30-40 shipments, or 241,000 ",
+      "published_at": "2026-08-06T08:40:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
-        "geopolitics"
+        "lng",
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 10.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 50.4,
-        "recency_multiplier": 0.53
+        "raw": 23.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "conflict",
-          "strait of hormuz"
+        "lng": [
+          "cargo"
+        ],
+        "oil_macro": [
+          "crude"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "russia",
+          "russian",
+          "china",
+          "middle east"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Explosive-laden drone found at German airport hosting Ukrainian fleet",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/explosive-laden-drone-found-at-german-airport-hosting-ukrainian-fleet?traffic_source=rss",
-      "snippet": "German authorities are investigating how a drone packed with explosives reached Leipzig/Halle Airport.",
-      "published_at": "2026-08-06T02:28:56+00:00",
+      "title": "Philippines to Launch RE Auction for Off-Grid Islands",
+      "url": "https://www.rigzone.com/news/philippines_to_launch_re_auction_for_offgrid_islands-06-aug-2026-184308-article/?rss=true",
+      "snippet": "The Department of Energy expects to launch a Green Energy Auction next year to migrate off-grid island communities from diesel power to solar power supported with battery energy storage.",
+      "published_at": "2026-08-06T07:43:28+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
       "has_magnitude": false,
       "score": 31,
       "tags": [
-        "geopolitics"
+        "gas_storage",
+        "infrastructure",
+        "power_system"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "authority": 10.9,
+        "themes": 12.7,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 28.5,
-        "recency_multiplier": 0.81
+        "raw": 23.7,
+        "recency_multiplier": 0.98
       },
       "matched": {
-        "geopolitics": [
-          "drone"
+        "gas_storage": [
+          "storage"
         ],
-        "geography": [
-          "german"
+        "infrastructure": [
+          "grid"
+        ],
+        "power_system": [
+          "battery"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Ofgem Energy Redress Scheme supports one million customers with record £250 million funding",
+      "url": "https://www.ofgem.gov.uk/press-release/ofgem-energy-redress-scheme-supports-one-million-customers-record-ps250-million-funding",
+      "snippet": "Ofgem's Energy Redress Scheme has received £250 million in funding, helping one million customers.",
+      "published_at": "2026-08-06T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 6.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "ofgem"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran and Oman Near Landmark Deal to Manage Strait of Hormuz",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-and-Oman-Near-Landmark-Deal-to-Manage-Strait-of-Hormuz.html",
+      "snippet": "Iran and Oman are close to agreeing on joint management of the Strait of Hormuz, media have reported, citing a statement by Iran’s foreign ministry spokesman, Esmaeil Baghaei. Crude oil prices have been trending lower, in the meantime, with Brent crude dipping below $80 per barrel and trading at $79",
+      "published_at": "2026-08-06T05:10:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 14,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 24.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 49.5,
+        "recency_multiplier": 0.8
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "BBC World"
+      ],
+      "first_seen_at": "2026-08-06T01:19:59+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/6/how-the-middle-east-conflict-is-upending-european-travel?traffic_source=rss",
+        "title": "US-Israel war on Iran upends Europe’s summer holiday travel patterns",
+        "published_at": "2026-08-06T09:17:56+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Strait of Hormuz tolls would harm livelihoods worldwide, shipowners warn",
@@ -432,7 +733,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 13,
       "tags": [
         "geopolitics"
       ],
@@ -448,7 +749,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -463,9 +764,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-and-Oman-Near-Landmark-Deal-to-Manage-Strait-of-Hormuz.html",
-        "title": "Iran and Oman Near Landmark Deal to Manage Strait of Hormuz",
-        "published_at": "2026-08-06T05:10:00+00:00"
+        "url": "https://www.rigzone.com/news/wire/uae_bucks_risks_to_lead_hormuz_oil_shipping-06-aug-2026-184307-article/?rss=true",
+        "title": "UAE Bucks Risks to Lead Hormuz Oil Shipping",
+        "published_at": "2026-08-06T07:21:51+00:00"
       },
       "hidden": true
     }
