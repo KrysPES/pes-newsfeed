@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-07T12:12:05.163150+00:00",
-  "item_count": 29,
+  "generated_at": "2026-08-07T13:38:49.703174+00:00",
+  "item_count": 32,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 14
+    "high": 1,
+    "normal": 12
   },
   "superseded_count": 5,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1819
+        "ms": 1868
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 103507
+        "ms": 41002
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 25519
+        "ms": 3286
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 6,
         "error": null,
-        "ms": 179
+        "ms": 351
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 122
+        "ms": 237
       },
       {
         "id": "eia_today",
         "ok": true,
-        "count": 13,
+        "count": 14,
         "error": null,
-        "ms": 791
+        "ms": 212
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 46,
+        "count": 45,
         "error": null,
-        "ms": 1200
+        "ms": 1269
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 509
+        "ms": 243
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 715
+        "ms": 706
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 303
+        "ms": 349
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 689
+        "ms": 536
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 204
+        "ms": 51
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 71
+        "ms": 68
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
+      "url": "https://umm.nordpoolgroup.com/#/messages/d9eec43c-5868-4ac4-9485-1f7e02e8ca8d/2",
+      "snippet": "Published: 07.08.2026 14:40:55 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-07T12:40:55+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-06T21:21:05+00:00"
+    },
     {
       "title": "Oil Prices Tumble as Traders Price In a Strait of Hormuz Breakthrough",
       "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Tumble-as-Traders-Price-In-a-Strait-of-Hormuz-Breakthrough.html",
@@ -134,7 +178,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 58.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -165,7 +209,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 56,
       "tags": [
         "weather"
       ],
@@ -181,7 +225,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.89
       },
       "matched": {
         "weather": [
@@ -212,7 +256,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 55,
       "tags": [
         "geopolitics"
       ],
@@ -228,7 +272,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -254,7 +298,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 55,
       "tags": [
         "geopolitics"
       ],
@@ -270,7 +314,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -280,6 +324,93 @@
         "geography": [
           "strait of hormuz",
           "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Battery storage capacity averaged 70% growth over the last three years",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67925",
+      "snippet": "Utility-scale battery storage capacity in the United States increased significantly during the last three years, with an annual average growth rate of 70%. By the end of 2025, the U.S. power system had operational battery storage capacity of 43.6 gigawatts (GW). During the first six months of 2026, ",
+      "published_at": "2026-08-07T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 49,
+      "tags": [
+        "gas_storage",
+        "power_system"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 10.1,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 41.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "power_system": [
+          "battery"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UN chief condemns both Ukraine and Russia amid escalation in war",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/un-chief-condemns-both-ukraine-and-russia-amid-escalation-in-war?traffic_source=rss",
+      "snippet": "UN chief Guterres calls for de-escalation and a ceasefire as Russia-Ukraine attacks intensify.",
+      "published_at": "2026-08-07T12:34:13+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 26.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "ceasefire",
+          "escalation",
+          "war"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
@@ -312,7 +443,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -322,175 +453,6 @@
         ],
         "geography": [
           "qatar"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "ExxonMobil books McDermott for Mozambique’s multibillion-dollar LNG project",
-      "url": "https://www.offshore-energy.biz/exxonmobil-books-mcdermott-for-mozambiques-multibillion-dollar-lng-project/",
-      "snippet": "McDermott Energy Solutions (UK), a subsidiary of the U.S. offshore engineering and construction player McDermott, has secured a letter of intent (LOI) for a proposed liquefied natural gas (LNG) project with ExxonMobil Moçambique, a subsidiary of the American energy giant ExxonMobil, on behalf of par",
-      "published_at": "2026-08-07T10:51:32+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 46,
-      "tags": [
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 10.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "oil_macro": [
-          "dollar"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "LNG Prime"
-      ],
-      "first_seen_at": "2026-08-07T06:35:52+00:00"
-    },
-    {
-      "title": "US weekly LNG exports down to 31 cargoes",
-      "url": "https://lngprime.com/lng-terminals/us-weekly-lng-exports-down-to-31-cargoes/194616/",
-      "snippet": "US liquefied natural gas (LNG) plants sent 31 cargoes during the week ending August 5, down four cargoes from the week before, according to the Energy Information Administration.",
-      "published_at": "2026-08-07T06:31:42+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 46,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "lng exports"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Mexico deploys troops to secure avocado region after US halts imports",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/mexico-deploys-troops-to-secure-avocado-region-after-us-halts-imports?traffic_source=rss",
-      "snippet": "Mexico deployed more than 1,500 troops to its main avocado-producing state after the US suspended export inspections.",
-      "published_at": "2026-08-07T05:25:56+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.9,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "supply_disruption": [
-          "suspended"
-        ],
-        "unplanned": [
-          "suspended"
-        ],
-        "urgency": [
-          "suspended"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Why was Taiwan’s president evacuated in the middle of the night?",
-      "url": "https://www.bbc.co.uk/news/videos/cly83vm923go?at_medium=RSS&at_campaign=rss",
-      "snippet": "President William Lai took part in an emergency evacuation drill as part of Taiwan military exercises preparing for a potential Chinese invasion.",
-      "published_at": "2026-08-07T04:52:19+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 55.2,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "geopolitics": [
-          "invasion"
-        ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
         ]
       },
       "duplicate_count": 0,
@@ -538,48 +500,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Inpex raises Ichthys LNG production guidance",
-      "url": "https://lngprime.com/australia-and-oceania/inpex-raises-ichthys-lng-production-guidance/194658/",
-      "snippet": "Japan’s Inpex expects the Ichthys LNG project in Australia to exceed its previous 2026 production guidance, with an annual average of approximately 10 cargoes per month, due to \"strong\" production in the first half of this year.",
-      "published_at": "2026-08-07T07:33:15+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 44,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 44.7,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes"
-        ],
-        "geography": [
-          "australia",
-          "japan"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "India Remains Dependent on Imports for 90% of Oil Demand",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Remains-Dependent-on-Imports-for-90-of-Oil-Demand.html",
       "snippet": "Despite a decline in dependence on primary energy imports, India remains highly dependent, at a massive 90%, on crude oil imports for its consumption, a new industry report has shown. India’s dependence on primary energy imports fell to 42% in the financial year 2025 from 47% in FY 2017, according t",
@@ -623,17 +543,95 @@
       "thread_started_at": "2026-08-07T07:47:45+00:00"
     },
     {
-      "title": "Several killed after student opens fire inside Thailand school",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/several-killed-after-student-opens-fire-inside-thailand-school?traffic_source=rss",
-      "snippet": "At least eight people were killed and 15 others injured after a student opened fire inside a school in Thailand.",
-      "published_at": "2026-08-07T09:13:48+00:00",
+      "title": "US weekly LNG exports down to 31 cargoes",
+      "url": "https://lngprime.com/lng-terminals/us-weekly-lng-exports-down-to-31-cargoes/194616/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 31 cargoes during the week ending August 5, down four cargoes from the week before, according to the Energy Information Administration.",
+      "published_at": "2026-08-07T06:31:42+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 43,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran’s grip on trade is a potent weapon, but it has an expiry date",
+      "url": "https://www.aljazeera.com/opinions/2026/8/7/irans-grip-on-trade-is-a-potent-weapon-but-it-has-an-expiry-date?traffic_source=rss",
+      "snippet": "Iran can exploit dependence on Hormuz today, but prolonged disruption will erode that leverage",
+      "published_at": "2026-08-07T12:28:52+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 42,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "disruption"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Mexico deploys troops to secure avocado region after US halts imports",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/mexico-deploys-troops-to-secure-avocado-region-after-us-halts-imports?traffic_source=rss",
+      "snippet": "Mexico deployed more than 1,500 troops to its main avocado-producing state after the US suspended export inspections.",
+      "published_at": "2026-08-07T05:25:56+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
       "tags": [
         "supply_disruption"
       ],
@@ -644,61 +642,21 @@
         "themes": 8.4,
         "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.93
+        "raw": 53.9,
+        "recency_multiplier": 0.62
       },
       "matched": {
         "supply_disruption": [
-          "fire"
+          "suspended"
         ],
         "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-07T04:23:52+00:00"
-    },
-    {
-      "title": "Inpex targets Abadi LNG FID in mid-2027",
-      "url": "https://lngprime.com/asia/inpex-targets-abadi-lng-fid-in-mid-2027/194646/",
-      "snippet": "Japan’s Inpex said on Friday that it expects to take a final investment decision on the Abadi LNG project in Indonesia \"around mid-2027,\" while the company also started EPC tendering for the project.",
-      "published_at": "2026-08-07T08:09:52+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 20.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.9,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "final investment decision"
+          "suspended"
         ],
-        "geography": [
-          "japan"
+        "urgency": [
+          "suspended"
         ]
       },
       "duplicate_count": 0,
@@ -708,7 +666,7 @@
       "title": "Saudi Arabia, Turkey and Pakistan sign defence pact",
       "url": "https://www.bbc.co.uk/news/articles/c30418m4mj4o?at_medium=RSS&at_campaign=rss",
       "snippet": "Pakistan says an attack on any of the three will amount to an attack against all, amid conflict in the Middle East.",
-      "published_at": "2026-08-07T12:02:28+00:00",
+      "published_at": "2026-08-07T13:18:33+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -742,21 +700,24 @@
           "middle east"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "OilPrice.com"
+      ],
+      "first_seen_at": "2026-08-07T13:00:00+00:00"
     },
     {
       "title": "Atlantic spot LNG rates dip to $51,750 per day",
       "url": "https://lngprime.com/asia/atlantic-spot-lng-rates-dip-to-51750-per-day/194668/",
       "snippet": "Atlantic spot LNG shipping rates continued to drop this week, decreasing to $51,750 per day, the lowest since the start of the Middle East conflict, according to Spark Commodities.",
-      "published_at": "2026-08-07T09:50:48+00:00",
+      "published_at": "2026-08-07T12:45:48+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 41,
       "tags": [
         "geopolitics",
         "lng",
@@ -774,7 +735,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.0,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
@@ -794,40 +755,206 @@
       "also_reported_by": []
     },
     {
-      "title": "India's Crude Oil Output Falls for Third Straight Year",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Crude-Oil-Output-Falls-for-Third-Straight-Year.html",
-      "snippet": "India’s crude oil production fell for the third consecutive financial year in 2025/2026, the government said as it launches a push to boost offshore oil and gas exploration. India’s crude output fell by 3% in the 2025/2026 fiscal year ended March 31, 2026, Oil and Natural Gas Minister Hardeep Singh ",
-      "published_at": "2026-08-07T11:00:00+00:00",
+      "title": "Inpex raises Ichthys LNG production guidance",
+      "url": "https://lngprime.com/australia-and-oceania/inpex-raises-ichthys-lng-production-guidance/194658/",
+      "snippet": "Japan’s Inpex expects the Ichthys LNG project in Australia to exceed its previous 2026 production guidance, with an annual average of approximately 10 cargoes per month, due to \"strong\" production in the first half of this year.",
+      "published_at": "2026-08-07T07:33:15+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 41,
       "tags": [
-        "oil_macro"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 4.5,
+        "authority": 13.1,
+        "themes": 14.6,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 30.2,
+        "raw": 44.7,
+        "recency_multiplier": 0.73
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes"
+        ],
+        "geography": [
+          "australia",
+          "japan"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Why was Taiwan’s president evacuated in the middle of the night?",
+      "url": "https://www.bbc.co.uk/news/videos/cly83vm923go?at_medium=RSS&at_campaign=rss",
+      "snippet": "President William Lai took part in an emergency evacuation drill as part of Taiwan military exercises preparing for a potential Chinese invasion.",
+      "published_at": "2026-08-07T04:52:19+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 55.2,
+        "recency_multiplier": 0.59
+      },
+      "matched": {
+        "geopolitics": [
+          "invasion"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Several killed after student opens fire inside Thailand school",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/several-killed-after-student-opens-fire-inside-thailand-school?traffic_source=rss",
+      "snippet": "At least eight people were killed and 15 others injured after a student opened fire inside a school in Thailand.",
+      "published_at": "2026-08-07T09:13:48+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "$30 billion LNG project nears FID: Saipem confirms preliminary award shortly after McDermott",
+      "url": "https://www.offshore-energy.biz/30-billion-lng-project-nears-fid-saipem-confirms-preliminary-award-shortly-after-mcdermott/",
+      "snippet": "Following a project update from its joint venture partner, McDermott, Italy’s engineering, drilling, and construction services giant Saipem has corroborated the progress made in moving forward with the next phase of one of Africa’s most closely watched liquefied natural gas (LNG) developments, as ne",
+      "published_at": "2026-08-07T11:50:53+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.7,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "oil_macro": [
-          "crude"
+        "lng": [
+          "lng"
         ],
         "geography": [
-          "india"
+          "italy"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-07T10:51:32+00:00"
+    },
+    {
+      "title": "Inpex targets Abadi LNG FID in mid-2027",
+      "url": "https://lngprime.com/asia/inpex-targets-abadi-lng-fid-in-mid-2027/194646/",
+      "snippet": "Japan’s Inpex said on Friday that it expects to take a final investment decision on the Abadi LNG project in Indonesia \"around mid-2027,\" while the company also started EPC tendering for the project.",
+      "published_at": "2026-08-07T08:09:52+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 20.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.9,
+        "recency_multiplier": 0.76
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "final investment decision"
+        ],
+        "geography": [
+          "japan"
         ]
       },
       "duplicate_count": 0,
@@ -837,14 +964,14 @@
       "title": "US strikes $1.2bn deal to pay German firm to halt offshore wind projects",
       "url": "https://www.bbc.co.uk/news/articles/c1e1vg0gjl5o?at_medium=RSS&at_campaign=rss",
       "snippet": "The RWE payout is the latest in a string of deals cancelling wind energy projects, a power source long derided by Trump.",
-      "published_at": "2026-08-07T09:50:54+00:00",
+      "published_at": "2026-08-07T13:32:41+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 37,
       "tags": [
         "supply_disruption"
       ],
@@ -860,7 +987,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.6,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -868,6 +995,46 @@
         ],
         "geography": [
           "german"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "India's Crude Oil Output Falls for Third Straight Year",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Crude-Oil-Output-Falls-for-Third-Straight-Year.html",
+      "snippet": "India’s crude oil production fell for the third consecutive financial year in 2025/2026, the government said as it launches a push to boost offshore oil and gas exploration. India’s crude output fell by 3% in the 2025/2026 fiscal year ended March 31, 2026, Oil and Natural Gas Minister Hardeep Singh ",
+      "published_at": "2026-08-07T11:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 37,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 30.2,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "india"
         ]
       },
       "duplicate_count": 0,
@@ -914,94 +1081,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Lower Oil Prices Lend Support For The Gold Rally",
-      "url": "https://oilprice.com/Metals/Gold/Lower-Oil-Prices-Lend-Support-For-The-Gold-Rally.html",
-      "snippet": "Oil prices fell for a second week running thanks to optimism surrounding renewed U.S.-Iran diplomacy to reopen the Strait of Hormuz. U.S. President Donald Trump announced on Monday that talks between Washington and Tehran would resume l, adding that U.S. allies in the region, including Saudi Arabia,",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 57.4,
-        "recency_multiplier": 0.46
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
-      "url": "https://umm.nordpoolgroup.com/#/messages/ab01a5bd-af40-4a86-9a44-2ff3c0955d85/5",
-      "snippet": "Published: 06.08.2026 23:21:05 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-06T21:21:05+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.37
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-06T20:20:50+00:00"
-    },
-    {
       "title": "ZTT launches new cable-laying vessel",
       "url": "https://www.offshore-energy.biz/ztt-launches-new-cable-laying-vessel/",
       "snippet": "China&#8217;s ZTT Submarine Cable &#38; System has launched Lan Hai Ling Hang, a new [&#8230;] The post ZTT launches new cable-laying vessel appeared first on Offshore Energy .",
@@ -1012,7 +1091,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "infrastructure"
       ],
@@ -1028,7 +1107,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "infrastructure": [
@@ -1042,43 +1121,44 @@
       "also_reported_by": []
     },
     {
-      "title": "DNO Plans to Pursue Genel Offer despite Rejection",
-      "url": "https://www.rigzone.com/news/dno_plans_to_pursue_genel_offer_despite_rejection-07-aug-2026-184318-article/?rss=true",
-      "snippet": "The Norwegian company revealed it had made a rejected acquisition proposal to Britain's Genel but said it remains willing to pursue negotiations with the latter's board.",
-      "published_at": "2026-08-07T10:25:41+00:00",
+      "title": "Lower Oil Prices Lend Support For The Gold Rally",
+      "url": "https://oilprice.com/Metals/Gold/Lower-Oil-Prices-Lend-Support-For-The-Gold-Rally.html",
+      "snippet": "Oil prices fell for a second week running thanks to optimism surrounding renewed U.S.-Iran diplomacy to reopen the Strait of Hormuz. U.S. President Donald Trump announced on Monday that talks between Washington and Tehran would resume l, adding that U.S. allies in the region, including Saudi Arabia,",
+      "published_at": "2026-08-07T00:00:00+00:00",
       "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.9,
-        "themes": 9.0,
-        "geo_band": "primary",
+        "authority": 8.8,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 23.9,
-        "recency_multiplier": 1.0
+        "speculative": 0.0,
+        "raw": 57.4,
+        "recency_multiplier": 0.41
       },
       "matched": {
         "geopolitics": [
-          "negotiations"
+          "strait of hormuz"
         ],
         "geography": [
-          "britain"
+          "strait of hormuz",
+          "hormuz"
         ],
-        "speculative": [
-          "plans to"
+        "urgency": [
+          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -1121,6 +1201,49 @@
       "also_reported_by": []
     },
     {
+      "title": "DNO Plans to Pursue Genel Offer despite Rejection",
+      "url": "https://www.rigzone.com/news/dno_plans_to_pursue_genel_offer_despite_rejection-07-aug-2026-184318-article/?rss=true",
+      "snippet": "The Norwegian company revealed it had made a rejected acquisition proposal to Britain's Genel but said it remains willing to pursue negotiations with the latter's board.",
+      "published_at": "2026-08-07T10:25:41+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 23.9,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "geopolitics": [
+          "negotiations"
+        ],
+        "geography": [
+          "britain"
+        ],
+        "speculative": [
+          "plans to"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "‘De-escalation’: Europe hesitates as US pushes for Hormuz naval mission",
       "url": "https://www.aljazeera.com/news/2026/8/7/hld-european-caution-slowing-us-push-for-hormuz-naval-coalition?traffic_source=rss",
       "snippet": "The UK and France are not seeking confrontation with Iran in the US-Israeli war Europe largely rejected, say analysts.",
@@ -1131,7 +1254,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 14,
       "tags": [
         "geopolitics"
       ],
@@ -1147,7 +1270,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.4,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -1179,7 +1302,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 14,
       "tags": [
         "geopolitics",
         "lng"
@@ -1196,7 +1319,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.8,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -1221,6 +1344,57 @@
       "hidden": true
     },
     {
+      "title": "ExxonMobil books McDermott for Mozambique’s multibillion-dollar LNG project",
+      "url": "https://www.offshore-energy.biz/exxonmobil-books-mcdermott-for-mozambiques-multibillion-dollar-lng-project/",
+      "snippet": "McDermott Energy Solutions (UK), a subsidiary of the U.S. offshore engineering and construction player McDermott, has secured a letter of intent (LOI) for a proposed liquefied natural gas (LNG) project with ExxonMobil Moçambique, a subsidiary of the American energy giant ExxonMobil, on behalf of par",
+      "published_at": "2026-08-07T10:51:32+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 13,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 10.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.4,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "dollar"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.offshore-energy.biz/30-billion-lng-project-nears-fid-saipem-confirms-preliminary-award-shortly-after-mcdermott/",
+        "title": "$30 billion LNG project nears FID: Saipem confirms preliminary award shortly after McDermott",
+        "published_at": "2026-08-07T11:50:53+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "China Monthly Crude Imports Rebound",
       "url": "https://www.rigzone.com/news/wire/china_monthly_crude_imports_rebound-07-aug-2026-184317-article/?rss=true",
       "snippet": "China's crude oil imports rebounded last month from a near-decade low, after flows through the Strait of Hormuz picked up and refiners boosted purchases from nations outside the Middle East including Russia.",
@@ -1231,7 +1405,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -1248,7 +1422,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.3,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -1262,11 +1436,8 @@
           "hormuz"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "LNG Prime"
-      ],
-      "first_seen_at": "2026-08-07T07:34:19+00:00",
+      "duplicate_count": 0,
+      "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
         "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Remains-Dependent-on-Imports-for-90-of-Oil-Demand.html",
@@ -1286,7 +1457,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 11,
+      "score": 10,
       "tags": [
         "oil_macro"
       ],
@@ -1302,7 +1473,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.7,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.77
       },
       "matched": {
         "oil_macro": [
@@ -1320,52 +1491,6 @@
         "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Remains-Dependent-on-Imports-for-90-of-Oil-Demand.html",
         "title": "India Remains Dependent on Imports for 90% of Oil Demand",
         "published_at": "2026-08-07T12:00:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "At least five killed in Thailand school shooting, police say",
-      "url": "https://www.aljazeera.com/news/2026/8/7/one-killed-four-injured-in-thailand-school-shooting-officials-say?traffic_source=rss",
-      "snippet": "Authorities say suspected gunman shot and ⁠killed his grandparents ​at their home before opening fire at the school.",
-      "published_at": "2026-08-07T04:23:52+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/several-killed-after-student-opens-fire-inside-thailand-school?traffic_source=rss",
-        "title": "Several killed after student opens fire inside Thailand school",
-        "published_at": "2026-08-07T09:13:48+00:00"
       },
       "hidden": true
     }
