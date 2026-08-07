@@ -38,5 +38,20 @@ jobs:
           git config user.name "pes-calendar-bot"
           git config user.email "actions@users.noreply.github.com"
           git add calendar/data data/calendar_events.json calendar/forward-scanner/registry.json calendar/forward-scanner/scan_log.jsonl
-          git diff --cached --quiet || git commit -m "calendar refresh $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+          if git diff --cached --quiet; then
+            echo "no change, nothing to commit"
+            exit 0
+          fi
+          git commit -m "calendar refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+          # The news ingest commits every ~5 minutes, so a bare push from this
+          # slower job WILL eventually race it. Rebase + retry like ingest.yml.
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "push attempt ${attempt} failed - retrying"
+            sleep $((attempt * 10))
+          done
+          echo "push failed after 3 attempts" >&2
+          exit 1
