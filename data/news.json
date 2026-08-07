@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-07T17:26:41.505630+00:00",
-  "item_count": 33,
+  "generated_at": "2026-08-07T18:12:30.083812+00:00",
+  "item_count": 31,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 8
+    "high": 0,
+    "normal": 10
   },
   "superseded_count": 4,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1514
+        "ms": 1487
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 29224
+        "ms": 28523
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2482
+        "ms": 9048
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 6,
         "error": null,
-        "ms": 213
+        "ms": 818
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 340
+        "ms": 706
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 164
+        "ms": 746
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 2986
+        "ms": 1281
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 235
+        "ms": 297
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 533
+        "ms": 646
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 133
+        "ms": 329
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 515
+        "ms": 490
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 175
+        "ms": 157
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 308
+        "ms": 141
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 63,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.94
       },
       "matched": {
         "supply_disruption": [
@@ -151,6 +151,62 @@
       "first_seen_at": "2026-08-07T12:40:55+00:00"
     },
     {
+      "title": "Citi Lifts Brent Outlook but Still Sees Oil Falling in 2027",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Citi-Lifts-Brent-Outlook-but-Still-Sees-Oil-Falling-in-2027.html",
+      "snippet": "Citi has raised its third-quarter Brent crude forecast to $80 per barrel from $75 as the U.S.-Iran war drags on and repeated attempts at a deal fail to restore normal oil flows through the Strait of Hormuz. The bank still expects the conflict to be resolved, but the five-month war has lasted longer ",
+      "published_at": "2026-08-07T18:05:14+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 59,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "weather"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 42.2,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 55.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "weather": [
+          "forecast"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "forecast to"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "ADNOC Reports 15 Vessel Attacks as Hormuz Risks Mount",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Reports-15-Vessel-Attacks-as-Hormuz-Risks-Mount.html",
       "snippet": "Abu Dhabi National Oil Company said attacks on its vessels and employees are having a significant impact on operations as the company tries to keep crude, gas and refined products moving through the Strait of Hormuz. Fifteen ADNOC vessels have been hit by missiles or drones since the war began, incl",
@@ -161,7 +217,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 56,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -178,7 +234,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -207,7 +263,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 50,
       "tags": [
         "geopolitics"
       ],
@@ -223,7 +279,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.7,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -254,7 +310,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 49,
       "tags": [
         "lng",
         "oil_macro"
@@ -270,7 +326,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.2,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.88
       },
       "matched": {
         "lng": [
@@ -298,7 +354,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 50,
+      "score": 48,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -315,7 +371,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 58.8,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -344,7 +400,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 45,
       "tags": [
         "supply_disruption"
       ],
@@ -359,7 +415,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
@@ -383,7 +439,7 @@
       "authority": 20,
       "tier": 2,
       "has_magnitude": true,
-      "score": 45,
+      "score": 43,
       "tags": [
         "gas_storage",
         "power_system"
@@ -400,7 +456,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.7,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.84
       },
       "matched": {
         "gas_storage": [
@@ -427,7 +483,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -443,7 +499,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.4,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -469,7 +525,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -485,7 +541,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
@@ -504,7 +560,7 @@
       "title": "Saudi Arabia, Turkey and Pakistan sign defence pact",
       "url": "https://www.bbc.co.uk/news/articles/c30418m4mj4o?at_medium=RSS&at_campaign=rss",
       "snippet": "Pakistan says an attack on any of the three will amount to an attack against all, amid conflict in the Middle East.",
-      "published_at": "2026-08-07T15:48:49+00:00",
+      "published_at": "2026-08-07T17:42:54+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -595,7 +651,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -611,7 +667,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 29.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -639,7 +695,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -655,7 +711,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.6,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -681,7 +737,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "lng"
       ],
@@ -697,7 +753,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.7,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.91
       },
       "matched": {
         "lng": [
@@ -723,7 +779,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "nuclear"
       ],
@@ -739,7 +795,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.1,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.86
       },
       "matched": {
         "nuclear": [
@@ -747,96 +803,6 @@
         ],
         "geography": [
           "france"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Shipping Through Hormuz Drops Sharply as Tensions Rise",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Shipping-Through-Hormuz-Drops-Sharply-as-Tensions-Rise.html",
-      "snippet": "Vessel traffic through the Strait of Hormuz has declined this week from the prior week amid uncertainty about the U.S.-Iran talks and the potential reopening of the Middle East’s key oil and LNG chokepoint. Between Monday and Thursday, a total of 33 vessels transited the Strait of Hormuz, down from ",
-      "published_at": "2026-08-07T09:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 21.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.8,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Transgaz-Argent LNG MOU advances US gas route to Central and Eastern Europe",
-      "url": "https://www.offshore-energy.biz/transgaz-argent-lng-mou-advances-us-gas-route-to-central-and-eastern-europe/",
-      "snippet": "Romania’s national natural gas transmission system operator (TSO) Transgaz has deepened its U.S. liquefied natural gas (LNG) ties through a memorandum of understanding (MOU) with Argent LNG, a U.S.-based LNG export developer headquartered in Louisiana, in a push to diversify regional energy supply b",
-      "published_at": "2026-08-07T09:10:42+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "infrastructure",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 23.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.0,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "infrastructure": [
-          "transmission",
-          "system operator"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "europe"
         ]
       },
       "duplicate_count": 0,
@@ -853,7 +819,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "infrastructure",
         "regulation"
@@ -869,7 +835,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.72
       },
       "matched": {
         "infrastructure": [
@@ -884,135 +850,49 @@
       "also_reported_by": []
     },
     {
-      "title": "Atlantic spot LNG rates dip to $51,750 per day",
-      "url": "https://lngprime.com/asia/atlantic-spot-lng-rates-dip-to-51750-per-day/194668/",
-      "snippet": "Atlantic spot LNG shipping rates continued to drop this week, decreasing to $51,750 per day, the lowest since the start of the Middle East conflict, according to Spark Commodities.",
-      "published_at": "2026-08-07T12:45:48+00:00",
+      "title": "Transgaz-Argent LNG MOU advances US gas route to Central and Eastern Europe",
+      "url": "https://www.offshore-energy.biz/transgaz-argent-lng-mou-advances-us-gas-route-to-central-and-eastern-europe/",
+      "snippet": "Romania’s national natural gas transmission system operator (TSO) Transgaz has deepened its U.S. liquefied natural gas (LNG) ties through a memorandum of understanding (MOU) with Argent LNG, a U.S.-based LNG export developer headquartered in Louisiana, in a push to diversify regional energy supply b",
+      "published_at": "2026-08-07T09:10:42+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
       "score": 35,
       "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
+        "infrastructure",
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 14.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 12.4,
+        "themes": 23.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 33.0,
-        "recency_multiplier": 0.81
+        "raw": 46.0,
+        "recency_multiplier": 0.58
       },
       "matched": {
-        "geopolitics": [
-          "conflict"
+        "infrastructure": [
+          "transmission",
+          "system operator"
         ],
         "lng": [
           "lng"
         ],
-        "oil_macro": [
-          "rates"
-        ],
         "geography": [
-          "middle east"
+          "europe"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Iran’s grip on trade is a potent weapon, but it has an expiry date",
-      "url": "https://www.aljazeera.com/opinions/2026/8/7/irans-grip-on-trade-is-a-potent-weapon-but-it-has-an-expiry-date?traffic_source=rss",
-      "snippet": "Iran can exploit dependence on Hormuz today, but prolonged disruption will erode that leverage",
-      "published_at": "2026-08-07T12:28:52+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.9,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "supply_disruption": [
-          "disruption"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "India Remains Dependent on Imports for 90% of Oil Demand",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Remains-Dependent-on-Imports-for-90-of-Oil-Demand.html",
-      "snippet": "Despite a decline in dependence on primary energy imports, India remains highly dependent, at a massive 90%, on crude oil imports for its consumption, a new industry report has shown. India’s dependence on primary energy imports fell to 42% in the financial year 2025 from 47% in FY 2017, according t",
-      "published_at": "2026-08-07T12:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 35,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 34.7,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "demand"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-07T07:47:45+00:00"
     },
     {
       "title": "Mediterranean smuggling network ‘dismantled’ in Spain-led raid, 78 arrested",
@@ -1055,6 +935,94 @@
       "also_reported_by": []
     },
     {
+      "title": "Atlantic spot LNG rates dip to $51,750 per day",
+      "url": "https://lngprime.com/asia/atlantic-spot-lng-rates-dip-to-51750-per-day/194668/",
+      "snippet": "Atlantic spot LNG shipping rates continued to drop this week, decreasing to $51,750 per day, the lowest since the start of the Middle East conflict, according to Spark Commodities.",
+      "published_at": "2026-08-07T12:45:48+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.0,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "rates"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran’s grip on trade is a potent weapon, but it has an expiry date",
+      "url": "https://www.aljazeera.com/opinions/2026/8/7/irans-grip-on-trade-is-a-potent-weapon-but-it-has-an-expiry-date?traffic_source=rss",
+      "snippet": "Iran can exploit dependence on Hormuz today, but prolonged disruption will erode that leverage",
+      "published_at": "2026-08-07T12:28:52+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.9,
+        "recency_multiplier": 0.75
+      },
+      "matched": {
+        "supply_disruption": [
+          "disruption"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Norwegian Union Wants Assurances as Independent Decision Awaited",
       "url": "https://www.rigzone.com/news/norwegian_union_wants_assurances_as_independent_decision_awaited-07-aug-2026-184322-article/?rss=true",
       "snippet": "Well service employees have raised uncertainties about the impact to their payrolls and other benefits despite a pause in hostilities after striking workers and their employers agreed to settle their dispute through an independent tribunal.",
@@ -1065,7 +1033,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -1081,7 +1049,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.9,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -1095,6 +1063,49 @@
       "also_reported_by": []
     },
     {
+      "title": "India Remains Dependent on Imports for 90% of Oil Demand",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Remains-Dependent-on-Imports-for-90-of-Oil-Demand.html",
+      "snippet": "Despite a decline in dependence on primary energy imports, India remains highly dependent, at a massive 90%, on crude oil imports for its consumption, a new industry report has shown. India’s dependence on primary energy imports fell to 42% in the financial year 2025 from 47% in FY 2017, according t",
+      "published_at": "2026-08-07T12:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 33,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.7,
+        "recency_multiplier": 0.72
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "demand"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-07T07:47:45+00:00"
+    },
+    {
       "title": "US weekly LNG exports down to 31 cargoes",
       "url": "https://lngprime.com/lng-terminals/us-weekly-lng-exports-down-to-31-cargoes/194616/",
       "snippet": "US liquefied natural gas (LNG) plants sent 31 cargoes during the week ending August 5, down four cargoes from the week before, according to the Energy Information Administration.",
@@ -1105,7 +1116,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 34,
+      "score": 32,
       "tags": [
         "lng"
       ],
@@ -1120,7 +1131,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.5
+        "recency_multiplier": 0.47
       },
       "matched": {
         "lng": [
@@ -1143,7 +1154,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
         "supply_disruption"
       ],
@@ -1159,7 +1170,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.6,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.81
       },
       "matched": {
         "supply_disruption": [
@@ -1167,48 +1178,6 @@
         ],
         "geography": [
           "german"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Why was Taiwan’s president evacuated in the middle of the night?",
-      "url": "https://www.bbc.co.uk/news/videos/cly83vm923go?at_medium=RSS&at_campaign=rss",
-      "snippet": "President William Lai took part in an emergency evacuation drill as part of Taiwan military exercises preparing for a potential Chinese invasion.",
-      "published_at": "2026-08-07T04:52:19+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 55.2,
-        "recency_multiplier": 0.44
-      },
-      "matched": {
-        "geopolitics": [
-          "invasion"
-        ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
         ]
       },
       "duplicate_count": 0,
@@ -1225,7 +1194,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 32,
+      "score": 31,
       "tags": [
         "lng"
       ],
@@ -1241,7 +1210,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.7,
-        "recency_multiplier": 0.54
+        "recency_multiplier": 0.51
       },
       "matched": {
         "lng": [
@@ -1257,82 +1226,42 @@
       "also_reported_by": []
     },
     {
-      "title": "USA Crude Oil Stocks Rise Week on Week",
-      "url": "https://www.rigzone.com/news/usa_crude_oil_stocks_rise_week_on_week-07-aug-2026-184326-article/?rss=true",
-      "snippet": "Crude oil stocks, not including the SPR, stood at 407.0 million barrels on July 31, the EIA's latest weekly petroleum status report showed.",
-      "published_at": "2026-08-07T14:32:27+00:00",
+      "title": "Why was Taiwan’s president evacuated in the middle of the night?",
+      "url": "https://www.bbc.co.uk/news/videos/cly83vm923go?at_medium=RSS&at_campaign=rss",
+      "snippet": "President William Lai took part in an emergency evacuation drill as part of Taiwan military exercises preparing for a potential Chinese invasion.",
+      "published_at": "2026-08-07T04:52:19+00:00",
       "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 31,
       "tags": [
-        "oil_macro",
-        "gas_storage"
+        "geopolitics"
       ],
       "alert": "low",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 10.9,
-        "themes": 13.0,
+        "authority": 10.2,
+        "themes": 9.0,
         "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 23.9,
-        "recency_multiplier": 0.93
+        "raw": 55.2,
+        "recency_multiplier": 0.42
       },
       "matched": {
-        "oil_macro": [
-          "crude",
-          "barrels"
+        "geopolitics": [
+          "invasion"
         ],
-        "gas_storage": [
-          "stocks"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Inpex targets Abadi LNG FID in mid-2027",
-      "url": "https://lngprime.com/asia/inpex-targets-abadi-lng-fid-in-mid-2027/194646/",
-      "snippet": "Japan’s Inpex said on Friday that it expects to take a final investment decision on the Abadi LNG project in Indonesia \"around mid-2027,\" while the company also started EPC tendering for the project.",
-      "published_at": "2026-08-07T08:09:52+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 20.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.9,
-        "recency_multiplier": 0.57
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "final investment decision"
+        "unplanned": [
+          "emergency"
         ],
-        "geography": [
-          "japan"
+        "urgency": [
+          "emergency"
         ]
       },
       "duplicate_count": 0,
@@ -1367,7 +1296,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.0,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -1389,7 +1318,7 @@
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/c30418m4mj4o?at_medium=RSS&at_campaign=rss",
         "title": "Saudi Arabia, Turkey and Pakistan sign defence pact",
-        "published_at": "2026-08-07T15:48:49+00:00"
+        "published_at": "2026-08-07T17:42:54+00:00"
       },
       "hidden": true
     },
@@ -1420,7 +1349,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.4,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -1471,7 +1400,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.4,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.66
       },
       "matched": {
         "lng": [
@@ -1522,7 +1451,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.3,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.52
       },
       "matched": {
         "geopolitics": [
