@@ -6,11 +6,25 @@ Finds the market moves worth annotating. Deterministic, no network, no model.
 The definition, which must not drift from the historic seed data or the chart
 ends up with two incompatible sets of markers on it:
 
-    rolling weekly move = % change vs 5 TRADING days earlier, computed daily
-    breach              = |rolling weekly move| > 10%
-    episode             = a run of consecutive trading days in breach
-    trigger day         = the largest single-day move, in the breach direction,
-                          inside the 5 trading days that produced the move
+    DEFINITION v2 (July 2026). Two detectors, results merged by trigger day:
+
+    A. Weekly episode
+       rolling weekly move = % change vs 5 TRADING days earlier, computed daily
+       breach              = |rolling weekly move| > 8%          (v1 was 10%)
+       episode             = a run of consecutive trading days in breach
+       trigger day         = the largest single-day move, in the breach
+                             direction, inside the 5 days that produced it
+
+    B. Gradient shock (new in v2)
+       A single day whose move is large relative to how that contract has been
+       behaving: |1-day move| > 3.5x the contract's typical daily move over the
+       trailing 60 trading days, with a 3% absolute floor. Volatility scaling is
+       what makes it regime-aware: a 4% day fires in a calm market and stays
+       silent in crisis conditions where 4% days are routine. The shock day is
+       its own trigger day, because the shock day IS the event day.
+
+    Every annotation from the v1 definition remains valid under v2: a 10%
+    weekly breach is also an 8% one.
 
 The trigger day is what gets labelled, not the breach date. This matters. The
 breach date is where a cumulative five day move crossed the threshold, and on
@@ -38,8 +52,12 @@ from typing import Iterable, Sequence
 
 
 WINDOW = 5              # trading days in the rolling window
-BREACH_PCT = 10.0       # |rolling weekly move| above this is a breach
+BREACH_PCT = 8.0        # |rolling weekly move| above this is a breach (v2)
 DRIFT_PCT = 5.0         # no single day above this = a grind, not an event
+SHOCK_Z = 3.5           # day move vs trailing typical day (v2)
+SHOCK_FLOOR_PCT = 3.0   # absolute minimum day move for a shock (v2)
+SHOCK_LOOKBACK = 60     # trading days of trailing volatility
+SHOCK_MIN_OBS = 30      # minimum observations before a shock can fire
 
 
 @dataclass
@@ -174,6 +192,77 @@ def detect(
     close(open_ep)
 
     return episodes
+
+
+def detect_shocks(
+    gas: dict[str, dict[str, float]],
+    power: dict[str, dict[str, float]],
+    z_threshold: float = SHOCK_Z,
+    floor_pct: float = SHOCK_FLOOR_PCT,
+) -> list[Episode]:
+    """Gradient shocks: single days that are violent relative to that contract's
+    own recent behaviour. Same input rule as detect(): raw contract series only,
+    never continuous chains."""
+    books = {"Gas": {k: truncate_flat(v) for k, v in gas.items()},
+             "Electricity": {k: truncate_flat(v) for k, v in power.items()}}
+    hits: dict[str, tuple] = {}          # date -> best (fuel, contract, move, z)
+
+    for fuel, book in books.items():
+        for contract, series in book.items():
+            dates = sorted(series)
+            moves = []                    # (date, pct move)
+            for prev, cur in zip(dates, dates[1:]):
+                if series[prev]:
+                    moves.append((cur, (series[cur] / series[prev] - 1.0) * 100.0))
+            for i, (d, m) in enumerate(moves):
+                if i < SHOCK_MIN_OBS:
+                    continue
+                window = [abs(x) for _, x in moves[max(0, i - SHOCK_LOOKBACK):i]]
+                typical = (sum(window) / len(window)) * 1.2533   # ~std for normal moves
+                if typical <= 0:
+                    continue
+                if abs(m) > floor_pct and abs(m) / typical > z_threshold:
+                    prior = hits.get(d)
+                    if prior is None or abs(m) > abs(prior[2]):
+                        hits[d] = (fuel, contract, m, abs(m) / typical)
+
+    out = []
+    for d in sorted(hits):
+        fuel, contract, m, z = hits[d]
+        # a 5-trading-day window ending on the shock day, for news search
+        all_dates = sorted({x for book in books.values() for s2 in book.values() for x in s2})
+        i = all_dates.index(d)
+        win_start = all_dates[max(0, i - WINDOW)]
+        out.append(Episode(
+            breach_date=d, window_start=win_start, window_end=d,
+            trigger_day=d, trigger_move_pct=round(m, 2),
+            trigger_contract=f"{fuel} {contract}",
+            direction="Up" if m > 0 else "Down",
+            fuel_scope=f"{fuel} only",
+            largest_weekly_pct=round(m, 2),
+            largest_weekly_contract=f"{fuel} {contract}",
+            breaches={f"{fuel} {contract}": round(m, 2)},
+            length_trading_days=1, is_drift=False,
+        ))
+    return out
+
+
+def detect_all(
+    gas: dict[str, dict[str, float]],
+    power: dict[str, dict[str, float]],
+) -> list[Episode]:
+    """The v2 detector: weekly episodes plus gradient shocks, merged so one
+    trigger day yields one episode (the weekly record wins, it carries more
+    context). This is what the daily job should call."""
+    best: dict[str, Episode] = {}
+    for e in detect(gas, power):
+        prior = best.get(e.trigger_day)
+        # two weekly runs can share one trigger day; keep the larger move
+        if prior is None or abs(e.largest_weekly_pct) > abs(prior.largest_weekly_pct):
+            best[e.trigger_day] = e
+    for e in detect_shocks(gas, power):
+        best.setdefault(e.trigger_day, e)       # weekly record wins, more context
+    return [best[d] for d in sorted(best)]
 
 
 def new_episodes(episodes: Iterable[Episode], known_dates: set[str]) -> list[Episode]:

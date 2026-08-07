@@ -16,9 +16,17 @@ Env:
     ANNOTATIONS_JOB_KEY   shared secret for the Omnia annotations job API
     OMNIA_BASE            optional, defaults to production
 
-A day with no output is the NORMAL outcome: the publish bar
-(AUTOPUBLISH_MIN_RANK in attribute.py) is deliberately strict, because a
-wrong label is worse than no label. Do not "fix" quiet days by lowering it.
+v2 upgrade (Bannon, Aug 2026): the entry point is detect_all() — weekly
+episodes PLUS gradient shocks — and the series now include monthly contracts
+(the Omnia API's what=series carries both tabs). The old rank-70 publish bar
+is GONE, deliberately: in five months live it published nothing at all. The
+three gates in attribute.py (in window, direction match, not planned
+maintenance) are the whole bar now; mislabels are handled by the admins'
+per-annotation delete, not by reinstating a threshold.
+
+Every run ends with a RUN SUMMARY line (episodes detected / candidates gated /
+annotations published) because the v1 silence went unnoticed for five months —
+nothing recorded the gap between detection and publication.
 """
 import json
 import os
@@ -26,7 +34,7 @@ import sys
 import urllib.request
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
-from detect import detect, new_episodes          # noqa: E402
+from detect import detect_all, new_episodes      # noqa: E402
 from attribute import attribute                  # noqa: E402
 
 BASE = os.environ.get("OMNIA_BASE", "https://www.pesomnia.com")
@@ -65,25 +73,32 @@ def main() -> int:
     print(f"series: {len(series['gas'])} gas + {len(series['power'])} power contracts; "
           f"{len(known)} known dates; {len(items)} news items")
 
-    episodes = detect(series["gas"], series["power"])
+    episodes = detect_all(series["gas"], series["power"])
     fresh = new_episodes(episodes, known)
     print(f"{len(episodes)} episodes in the trailing window, {len(fresh)} new")
 
     published = []
+    gated = 0
     for ep in fresh:
         ann = attribute(ep.as_dict(), items)
         if ann:
+            gated += len(ann.get("candidates") or [])
             published.append(ann)
             print(f"  publish {ann['id']}: {ann['label']}")
         else:
-            why = "drift" if ep.is_drift else "nothing cleared the publish bar"
+            why = "drift" if ep.is_drift else "no news item passed the three gates"
             print(f"  {ep.trigger_day}: no annotation ({why})")
 
     if published:
         res = api_post("/api/terminal/annotations/job", {"annotations": published})
         print(f"stored: inserted {res.get('inserted')}, skipped {res.get('skipped')}")
     else:
-        print("nothing to publish today (normal)")
+        print("nothing to publish today")
+
+    # The one line to scan the Actions history for. Detection without
+    # publication for weeks on end is exactly the failure v1 hid.
+    print(f"RUN SUMMARY: episodes_detected={len(episodes)} new={len(fresh)} "
+          f"candidates_gated={gated} annotations_published={len(published)}")
     return 0
 
 

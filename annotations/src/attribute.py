@@ -4,19 +4,22 @@ Attribution.
 Given a detected episode and the news feed's recent items, propose which item
 explains the move. Deterministic, no model calls, no cost.
 
-Design note, and the important one: attribution publishes straight to the chart,
-but only when a candidate clears AUTOPUBLISH_MIN_RANK. Below that bar it
-publishes nothing at all rather than a weak guess.
+Design note (policy v2, set by Alex July 2026): any episode with an associated
+event gets labelled. "Associated" means a news item that passes the three gates
+below: published inside the episode's search window, implying the same direction
+as the move, and not routine planned maintenance. There is NO rank threshold on
+top of the gates.
 
-That gate is doing the job a review queue would otherwise do. The project rule is
-that a wrong label is worse than no label, and direction matching is about 95%
-accurate on the cases where it commits. A bar that only lets strong candidates
-through is what keeps the marginal calls off a chart nobody is going to
-proofread. Lowering it to increase coverage trades away the thing the whole
-dataset was built to protect.
+v1 additionally required the top candidate to clear a rank score of 70. In five
+months of live running that bar published nothing at all across a dozen
+detectable episodes, because it was calibrated against one synthetic maxed-out
+item rather than the feed's real score distribution. Alex's decision: labels are
+cheap to remove (per-annotation delete, whole layer toggles off) and missing
+ones are invisible, so publish whatever passes the gates and let admins prune.
 
-Anything published can be removed by an admin. Removal is the correction
-mechanism, so the gate has to be strict enough that corrections are rare.
+Do not add a threshold back without asking Alex. If mislabels become a problem,
+the fix is tightening the gates or the lexicon, not resurrecting the bar that
+silenced the system.
 
 Candidate filtering is deliberately strict. Three hard gates, applied in order:
 
@@ -24,10 +27,9 @@ Candidate filtering is deliberately strict. Three hard gates, applied in order:
   2. the direction the item implies must match the direction of the move
   3. the item must not be routine (planned maintenance already in the curve)
 
-Anything surviving all three is ranked, and the leader publishes only if it
-clears AUTOPUBLISH_MIN_RANK. If nothing survives, or nothing clears the bar, the
-function returns None and no marker appears. That is a normal outcome, not an
-error: the chart carrying fewer events is the intended trade.
+Anything surviving all three is ranked and the leader publishes. If nothing
+survives the gates, the function returns None and no marker appears; the daily
+job should log that outcome rather than let it pass silently.
 """
 
 from __future__ import annotations
@@ -153,16 +155,14 @@ def _parse(ts: str):
         return None
 
 
-AUTOPUBLISH_MIN_RANK = 70.0     # rank_score a candidate must clear to reach the chart
-
-
 def attribute(episode: dict, news_items: list[dict], lexicon=None, top_n: int = 3) -> dict | None:
     """
     episode: an Episode.as_dict() from detect.py
     news_items: the `items` array from the news feed's news.json
 
-    Returns a published annotation, or None when nothing clears the bar. None
-    means no marker: the chart stays clean rather than carrying a guess.
+    Returns a published annotation for the best gated candidate, or None when no
+    news item passes the gates. Ranking chooses BETWEEN surviving candidates; it
+    is not a bar any of them must clear.
 
     Drift episodes return None without being scored. They are slow grinds rather
     than shocks and historically have no findable cause.
@@ -221,7 +221,7 @@ def attribute(episode: dict, news_items: list[dict], lexicon=None, top_n: int = 
     candidates.sort(key=lambda c: c["rank_score"], reverse=True)
     top = candidates[:top_n]
 
-    if not top or top[0]["rank_score"] < AUTOPUBLISH_MIN_RANK:
+    if not top:
         return None
 
     return {
