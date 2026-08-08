@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T07:59:21.079110+00:00",
+  "generated_at": "2026-08-08T08:52:02.767489+00:00",
   "item_count": 8,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 11,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1515
+        "ms": 1942
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 27000
+        "ms": 45602
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2177
+        "ms": 6516
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 6,
         "error": null,
-        "ms": 345
+        "ms": 710
       },
       {
         "id": "ec_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://energy.ec.europa.eu/node/2/rss_en",
-        "ms": 310
+        "ok": true,
+        "count": 30,
+        "error": null,
+        "ms": 220
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 99
+        "ms": 310
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 807
+        "ms": 1323
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 167
+        "ms": 555
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 631
+        "ms": 689
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 207
+        "ms": 303
       },
       {
         "id": "oilprice",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://oilprice.com/rss/main",
-        "ms": 117
+        "ok": true,
+        "count": 15,
+        "error": null,
+        "ms": 648
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 37,
         "error": null,
-        "ms": 135
+        "ms": 121
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 158
+        "ms": 104
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.92
       },
       "matched": {
         "supply_disruption": [
@@ -140,6 +140,58 @@
         ],
         "unplanned": [
           "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Traders Stay Bearish Despite Deepening Middle East Disruptions",
+      "url": "https://oilprice.com/Energy/Oil-Prices/Oil-Traders-Stay-Bearish-Despite-Deepening-Middle-East-Disruptions.html",
+      "snippet": "Despite continued hostilities in the Middle East and an expansion of the war to the Red Sea, oil traders have remained largely bearish on the commodity, betting on a quick peace deal—and they might get a nasty shock. Earlier this week, Brent crude sank below $80 per barrel, and WTI dropped below $75",
+      "published_at": "2026-08-07T23:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 41.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 54.4,
+        "recency_multiplier": 0.55
+      },
+      "matched": {
+        "geopolitics": [
+          "hostilities",
+          "war",
+          "red sea"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "wti",
+          "barrel"
+        ],
+        "geography": [
+          "red sea"
+        ],
+        "speculative": [
+          "might"
         ]
       },
       "duplicate_count": 0,
@@ -156,7 +208,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 40,
+      "score": 38,
       "tags": [
         "supply_disruption"
       ],
@@ -171,7 +223,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.48
+        "recency_multiplier": 0.45
       },
       "matched": {
         "supply_disruption": [
@@ -199,7 +251,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 37,
       "tags": [
         "nuclear"
       ],
@@ -214,7 +266,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.8,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.78
       },
       "matched": {
         "nuclear": [
@@ -238,7 +290,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -254,7 +306,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -284,7 +336,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "oil_macro",
         "supply_disruption"
@@ -300,7 +352,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.57
       },
       "matched": {
         "oil_macro": [
@@ -328,7 +380,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "supply_disruption"
       ],
@@ -343,7 +395,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.63
       },
       "matched": {
         "supply_disruption": [
@@ -351,46 +403,6 @@
         ],
         "unplanned": [
           "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran war live: Trilateral Mecca defence pact signed, as Hormuz deal looms",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/8/8/iran-war-live-trilateral-mecca-defence-pact-signed-as-hormuz-deal-looms?traffic_source=rss",
-      "snippet": "Saudi crown prince, Turkish president and Pakistani prime minister sign a joint defence agreement in Mecca.",
-      "published_at": "2026-08-08T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -424,7 +436,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 57.1,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.59
       },
       "matched": {
         "geopolitics": [
