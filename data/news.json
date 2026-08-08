@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-08T02:06:33.206589+00:00",
-  "item_count": 14,
+  "generated_at": "2026-08-08T03:42:04.912957+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 6
+    "normal": 4
   },
-  "superseded_count": 2,
+  "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1577
+        "ms": 1539
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 39540
+        "ms": 25120
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2645
+        "ms": 2529
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 6,
         "error": null,
-        "ms": 455
+        "ms": 420
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 606
+        "ms": 400
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 185
+        "ms": 103
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 831
+        "ms": 825
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 176
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 42
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 588
+        "ms": 598
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 137
+        "ms": 128
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 458
+        "ms": 388
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 35,
         "error": null,
-        "ms": 486
+        "ms": 145
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 93
+        "ms": 110
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 60,
+      "score": 56,
       "tags": [
         "geopolitics",
         "regulation"
@@ -134,7 +134,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 57.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -151,53 +151,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-07T14:00:00+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, SAINT-GHISLAIN 1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/145a06da-c93c-479c-baa0-5b15e2bab190/7",
-      "snippet": "Published: 07.08.2026 22:34:49 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-07T20:34:49+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 56,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 3,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-07T12:40:55+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Oil Traders Stay Bearish Despite Deepening Middle East Disruptions",
@@ -210,7 +164,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 51,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -227,7 +181,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 54.4,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -252,6 +206,50 @@
       "also_reported_by": []
     },
     {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, SAINT-GHISLAIN 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/145a06da-c93c-479c-baa0-5b15e2bab190/7",
+      "snippet": "Published: 07.08.2026 22:34:49 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-07T20:34:49+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-07T12:40:55+00:00"
+    },
+    {
       "title": "Donald Trump renews effort to fire Federal Reserve governor Lisa Cook",
       "url": "https://www.aljazeera.com/news/2026/8/7/donald-trump-renews-effort-to-fire-federal-reserve-governor-lisa-cook?traffic_source=rss",
       "snippet": "US president has clashed with Federal Reserve members over his bid to rapidly slash interest rates despite inflation.",
@@ -262,7 +260,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 45,
       "tags": [
         "oil_macro",
         "supply_disruption"
@@ -278,7 +276,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.86
       },
       "matched": {
         "oil_macro": [
@@ -296,6 +294,48 @@
       "also_reported_by": []
     },
     {
+      "title": "Iran war live: Trilateral Mecca defence pact signed, as Hormuz deal looms",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/8/iran-war-live-trilateral-mecca-defence-pact-signed-as-hormuz-deal-looms?traffic_source=rss",
+      "snippet": "Saudi crown prince, Turkish president and Pakistani prime minister sign a joint defence agreement in Mecca.",
+      "published_at": "2026-08-08T00:00:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-07T15:45:00+00:00"
+    },
+    {
       "title": "Citi Lifts Brent Outlook but Still Sees Oil Falling in 2027",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Citi-Lifts-Brent-Outlook-but-Still-Sees-Oil-Falling-in-2027.html",
       "snippet": "Citi has raised its third-quarter Brent crude forecast to $80 per barrel from $75 as the U.S.-Iran war drags on and repeated attempts at a deal fail to restore normal oil flows through the Strait of Hormuz. The bank still expects the conflict to be resolved, but the five-month war has lasted longer ",
@@ -306,13 +346,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 39,
       "tags": [
         "geopolitics",
         "oil_macro",
         "weather"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -324,7 +364,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 55.0,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.56
       },
       "matched": {
         "geopolitics": [
@@ -352,48 +392,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Iran war live: Trilateral Mecca defence pact signed, as Hormuz deal looms",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/8/8/iran-war-live-trilateral-mecca-defence-pact-signed-as-hormuz-deal-looms?traffic_source=rss",
-      "snippet": "Saudi crown prince, Turkish president and Pakistani prime minister sign a joint defence agreement in Mecca.",
-      "published_at": "2026-08-08T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-07T15:45:00+00:00"
-    },
-    {
       "title": "Thai PM vows to introduce stricter gun laws after eight killed in shooting",
       "url": "https://www.bbc.co.uk/news/articles/cdewx6rew04o?at_medium=RSS&at_campaign=rss",
       "snippet": "Eight people were killed when a 14-year-old opened fire at his home and school before shooting himself dead.",
@@ -404,7 +402,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 36,
       "tags": [
         "supply_disruption"
       ],
@@ -419,7 +417,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.71
       },
       "matched": {
         "supply_disruption": [
@@ -443,7 +441,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 34,
       "tags": [
         "weather"
       ],
@@ -458,7 +456,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.9,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.71
       },
       "matched": {
         "weather": [
@@ -472,172 +470,40 @@
       "also_reported_by": []
     },
     {
-      "title": "EU Locks In Plan To Triple Energy Storage Capacity By 2030",
-      "url": "https://oilprice.com/Energy/Energy-General/EU-Locks-In-Plan-To-Triple-Energy-Storage-Capacity-By-2030.html",
-      "snippet": "Europe desperately needs an energy storage revolution. As the region gets rocked by the third energy crisis in four years, the continent’s insufficient indigenous energy systems, and backups to those systems, has become abundantly and painfully clear. \"We swore we’d learn. We promised things would c",
-      "published_at": "2026-08-07T23:00:00+00:00",
+      "title": "Submerged Indonesian village re-emerges as drought lowers water levels",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/8/08-08-2026-indonesia-drought-sv?traffic_source=rss",
+      "snippet": "Drone footage shows the remains of a submerged village re-emerging from Indonesia’s Karian Reservoir after a drought.",
+      "published_at": "2026-08-08T02:54:02+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 6.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.5,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "europe",
-          "eu"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "What we know so far about the deadly Thailand shooting",
-      "url": "https://www.bbc.co.uk/news/videos/c70glx1ww78o?at_medium=RSS&at_campaign=rss",
-      "snippet": "At least seven people have died after a teenage boy shot his grandparents before opening fire on a school in Bangkok.",
-      "published_at": "2026-08-07T17:17:36+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.6,
-        "recency_multiplier": 0.59
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudi Arabia’s $5 Oil Detour Is Expensive—and Worth It",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabias-5-Oil-Detour-Is-Expensiveand-Worth-It.html",
-      "snippet": "The latest Saudi oil route looks absurd on a map. Crude moves west across Saudi Arabia to Yanbu, north through the Red Sea to Egypt, across the SUMED pipeline from Ain Sokhna to Sidi Kerir, then west through the Mediterranean before tankers sail around the Cape of Good Hope to reach customers in Asi",
-      "published_at": "2026-08-07T14:49:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics",
-        "infrastructure",
-        "oil_macro"
+        "weather"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 22.2,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 9.5,
+        "themes": 12.7,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 47.0,
-        "recency_multiplier": 0.49
+        "raw": 22.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "red sea"
+          "drone"
         ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "ADNOC Buys 11 Supertankers for $1.3 Billion to Expand Export Fleet",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Buys-11-Supertankers-for-13-Billion-to-Expand-Export-Fleet.html",
-      "snippet": "ADNOC has bought 11 very large crude and gas carriers for $1.3 billion as the national oil company of Abu Dhabi continues to expand its fleet of supertankers to boost crude and LNG exports. ADNOC’s unit ADNOC Logistics & Services plc on Friday announced it had acquired five modern Very Large Gas Car",
-      "published_at": "2026-08-07T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 48.2,
-        "recency_multiplier": 0.48
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng exports"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "urgency": [
-          "announced"
+        "weather": [
+          "drought"
         ]
       },
       "duplicate_count": 0,
@@ -654,7 +520,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 10,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -671,7 +537,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.0,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.46
       },
       "matched": {
         "geopolitics": [
@@ -693,58 +559,6 @@
         "url": "https://www.aljazeera.com/news/liveblog/2026/8/8/iran-war-live-trilateral-mecca-defence-pact-signed-as-hormuz-deal-looms?traffic_source=rss",
         "title": "Iran war live: Trilateral Mecca defence pact signed, as Hormuz deal looms",
         "published_at": "2026-08-08T00:00:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Ukraine Faces a Growing Air Defense Crisis as Patriot Supplies Dwindle",
-      "url": "https://oilprice.com/Geopolitics/Europe/Ukraine-Faces-a-Growing-Air-Defense-Crisis-as-Patriot-Supplies-Dwindle.html",
-      "snippet": "Ukraine's failure to intercept a single Russian missile during a large-scale overnight attack this week has raised fresh concerns over Kyiv's dwindling supply of air-defense interceptors as Moscow escalates its ballistic missile strikes on the nearly defenseless capital and other regions. Ukrainian ",
-      "published_at": "2026-08-07T14:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.7,
-        "recency_multiplier": 0.46
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "attack"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
-        ],
-        "unplanned": [
-          "failure"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/economy/2026/8/8/us-senate-passes-sweeping-russian-energy-sanctions-bill-amid-ukraine-war?traffic_source=rss",
-        "title": "US Senate passes sweeping Russian energy sanctions bill amid Ukraine war",
-        "published_at": "2026-08-08T00:06:22+00:00"
       },
       "hidden": true
     }
