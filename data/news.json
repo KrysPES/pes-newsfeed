@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-08T07:10:50.133528+00:00",
-  "item_count": 10,
+  "generated_at": "2026-08-08T07:59:21.079110+00:00",
+  "item_count": 8,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 3
+    "normal": 1
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 11,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1329
+        "ms": 1515
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 34141
+        "ms": 27000
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2115
+        "ms": 2177
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 6,
         "error": null,
-        "ms": 410
+        "ms": 345
       },
       {
         "id": "ec_energy",
-        "ok": true,
-        "count": 30,
-        "error": null,
-        "ms": 475
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://energy.ec.europa.eu/node/2/rss_en",
+        "ms": 310
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 179
+        "ms": 99
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 772
+        "ms": 807
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 143
+        "ms": 167
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 529
+        "ms": 631
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 148
+        "ms": 207
       },
       {
         "id": "oilprice",
-        "ok": true,
-        "count": 15,
-        "error": null,
-        "ms": 430
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://oilprice.com/rss/main",
+        "ms": 117
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 37,
         "error": null,
-        "ms": 59
+        "ms": 135
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 259
+        "ms": 158
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 45,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "supply_disruption": [
@@ -140,58 +140,6 @@
         ],
         "unplanned": [
           "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Traders Stay Bearish Despite Deepening Middle East Disruptions",
-      "url": "https://oilprice.com/Energy/Oil-Prices/Oil-Traders-Stay-Bearish-Despite-Deepening-Middle-East-Disruptions.html",
-      "snippet": "Despite continued hostilities in the Middle East and an expansion of the war to the Red Sea, oil traders have remained largely bearish on the commodity, betting on a quick peace deal—and they might get a nasty shock. Earlier this week, Brent crude sank below $80 per barrel, and WTI dropped below $75",
-      "published_at": "2026-08-07T23:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 41.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 54.4,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "geopolitics": [
-          "hostilities",
-          "war",
-          "red sea"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent",
-          "wti",
-          "barrel"
-        ],
-        "geography": [
-          "red sea"
-        ],
-        "speculative": [
-          "might"
         ]
       },
       "duplicate_count": 0,
@@ -208,11 +156,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 42,
+      "score": 40,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -223,7 +171,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.48
       },
       "matched": {
         "supply_disruption": [
@@ -237,9 +185,8 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-07T15:23:39+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Saudi intelligence chief meets Iraqi PM, renews Riyadh visit invitation",
@@ -252,7 +199,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "nuclear"
       ],
@@ -267,7 +214,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.8,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.84
       },
       "matched": {
         "nuclear": [
@@ -291,7 +238,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -307,7 +254,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -337,7 +284,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "oil_macro",
         "supply_disruption"
@@ -353,7 +300,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.61
       },
       "matched": {
         "oil_macro": [
@@ -381,7 +328,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 34,
       "tags": [
         "supply_disruption"
       ],
@@ -396,7 +343,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.67
       },
       "matched": {
         "supply_disruption": [
@@ -420,7 +367,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -436,7 +383,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.63
       },
       "matched": {
         "geopolitics": [
@@ -444,62 +391,6 @@
         ],
         "geography": [
           "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Citi Lifts Brent Outlook but Still Sees Oil Falling in 2027",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Citi-Lifts-Brent-Outlook-but-Still-Sees-Oil-Falling-in-2027.html",
-      "snippet": "Citi has raised its third-quarter Brent crude forecast to $80 per barrel from $75 as the U.S.-Iran war drags on and repeated attempts at a deal fail to restore normal oil flows through the Strait of Hormuz. The bank still expects the conflict to be resolved, but the five-month war has lasted longer ",
-      "published_at": "2026-08-07T18:05:14+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 42.2,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 55.0,
-        "recency_multiplier": 0.43
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "war",
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "weather": [
-          "forecast"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "speculative": [
-          "forecast to"
         ]
       },
       "duplicate_count": 0,
@@ -516,7 +407,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics",
         "regulation"
@@ -533,7 +424,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 57.1,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.64
       },
       "matched": {
         "geopolitics": [
