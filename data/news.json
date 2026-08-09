@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T23:40:57.119925+00:00",
+  "generated_at": "2026-08-09T00:03:07.913022+00:00",
   "item_count": 7,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 3,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1072
+        "ms": 1669
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 32807
+        "ms": 40980
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3120
+        "ms": 4684
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 324
+        "ms": 565
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 600
+        "ms": 549
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 130
+        "ms": 322
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 1295
+        "ms": 1095
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 489
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 427
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 715
+        "ms": 673
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 326
+        "ms": 301
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 598
+        "ms": 514
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 107
+        "ms": 163
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 62
+        "ms": 169
       }
     ]
   },
@@ -158,44 +158,6 @@
       "thread_started_at": "2026-08-08T15:01:29+00:00"
     },
     {
-      "title": "Yemen’s government forces attack Houthis amid renewed shelling of Marib",
-      "url": "https://www.aljazeera.com/news/2026/8/8/yemens-government-forces-attack-houthis-amid-renewed-shelling-of-marib?traffic_source=rss",
-      "snippet": "Fears of a wider conflict grow as Yemen’s army counterattacks and expert warns ‘all the warning signs are there’.",
-      "published_at": "2026-08-08T18:43:20+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 26.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "geopolitics": [
-          "shelling",
-          "conflict",
-          "attack"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Unplanned, Unavailability of electricity facilities: Production, BE, SAINT-GHISLAIN 1",
       "url": "https://umm.nordpoolgroup.com/#/messages/145a06da-c93c-479c-baa0-5b15e2bab190/8",
       "snippet": "Published: 08.08.2026 12:58:40 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
@@ -221,7 +183,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.44
+        "recency_multiplier": 0.43
       },
       "matched": {
         "supply_disruption": [
@@ -233,6 +195,44 @@
         ],
         "urgency": [
           "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Yemen’s government forces attack Houthis amid renewed shelling of Marib",
+      "url": "https://www.aljazeera.com/news/2026/8/8/yemens-government-forces-attack-houthis-amid-renewed-shelling-of-marib?traffic_source=rss",
+      "snippet": "Fears of a wider conflict grow as Yemen’s army counterattacks and expert warns ‘all the warning signs are there’.",
+      "published_at": "2026-08-08T18:43:20+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 26.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "geopolitics": [
+          "shelling",
+          "conflict",
+          "attack"
         ]
       },
       "duplicate_count": 0,
@@ -265,7 +265,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.1,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -289,7 +289,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 16,
+      "score": 15,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -306,7 +306,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.4,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -359,7 +359,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.5,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.58
       },
       "matched": {
         "geopolitics": [
@@ -411,7 +411,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.4,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
