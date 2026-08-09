@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-09T00:03:07.913022+00:00",
-  "item_count": 7,
+  "generated_at": "2026-08-09T02:23:42.744289+00:00",
+  "item_count": 6,
   "alert_counts": {
     "critical": 0,
     "high": 0,
@@ -8,104 +8,230 @@
   },
   "superseded_count": 3,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1669
+        "ms": 1454
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 40980
+        "ms": 19428
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4684
+        "ms": 3086
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 565
+        "ms": 419
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 549
+        "ms": 302
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 322
+        "ms": 188
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 1095
+        "ms": 924
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 427
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 155
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 673
+        "ms": 660
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 301
+        "ms": 101
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 514
+        "ms": 449
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 163
+        "ms": 437
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 169
+        "ms": 142
       }
     ]
   },
   "items": [
+    {
+      "title": "Iran war live: Tehran demands end to US blockade to reopen Strait of Hormuz",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/9/iran-war-live-tehran-demands-end-to-us-blockade-to-reopen-strait-of-hormuz?traffic_source=rss",
+      "snippet": "IRGC sets conditions to reopen Strait of Hormuz as US seeks commitments to end attacks on ships in the waterway.",
+      "published_at": "2026-08-09T00:00:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 59,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 57.5,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "war",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-08-08T16:36:03+00:00"
+    },
+    {
+      "title": "Yemen’s government forces attack Houthis amid renewed shelling of Marib",
+      "url": "https://www.aljazeera.com/news/2026/8/8/yemens-government-forces-attack-houthis-amid-renewed-shelling-of-marib?traffic_source=rss",
+      "snippet": "Fears of a wider conflict grow as Yemen’s army counterattacks and expert warns ‘all the warning signs are there’.",
+      "published_at": "2026-08-08T18:43:20+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 26.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "geopolitics": [
+          "shelling",
+          "conflict",
+          "attack"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, SAINT-GHISLAIN 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/145a06da-c93c-479c-baa0-5b15e2bab190/8",
+      "snippet": "Published: 08.08.2026 12:58:40 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-08T10:58:40+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 0.36
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "U.S. Energy Helps Cushion Global Supply Shock From Hormuz",
       "url": "https://oilprice.com/Energy/Energy-General/US-Energy-Helps-Cushion-Global-Supply-Shock-From-Hormuz.html",
@@ -117,13 +243,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 15,
       "tags": [
         "geopolitics",
         "lng",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -135,7 +261,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -154,129 +280,13 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 3,
-      "thread_started_at": "2026-08-08T15:01:29+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, SAINT-GHISLAIN 1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/145a06da-c93c-479c-baa0-5b15e2bab190/8",
-      "snippet": "Published: 08.08.2026 12:58:40 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-08T10:58:40+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.43
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/liveblog/2026/8/9/iran-war-live-tehran-demands-end-to-us-blockade-to-reopen-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran war live: Tehran demands end to US blockade to reopen Strait of Hormuz",
+        "published_at": "2026-08-09T00:00:00+00:00"
       },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Yemen’s government forces attack Houthis amid renewed shelling of Marib",
-      "url": "https://www.aljazeera.com/news/2026/8/8/yemens-government-forces-attack-houthis-amid-renewed-shelling-of-marib?traffic_source=rss",
-      "snippet": "Fears of a wider conflict grow as Yemen’s army counterattacks and expert warns ‘all the warning signs are there’.",
-      "published_at": "2026-08-08T18:43:20+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 26.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "geopolitics": [
-          "shelling",
-          "conflict",
-          "attack"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US slams Chinese ‘nature reserve’ as effort to claim South China Sea",
-      "url": "https://www.aljazeera.com/news/2026/8/8/us-slams-chinese-nature-reserve-as-effort-to-claim-south-china-sea?traffic_source=rss",
-      "snippet": "US State Department accuses China of attempting to deny Filipino vessels access to fishing grounds in contested area.",
-      "published_at": "2026-08-08T18:57:53+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.1,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "geopolitics": [
-          "south china sea"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "hidden": true
     },
     {
       "title": "Airlines Scramble for Jet Fuel as Hormuz Disruption Drags On",
@@ -289,7 +299,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 14,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -306,7 +316,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.4,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
@@ -325,62 +335,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Energy/Energy-General/US-Energy-Helps-Cushion-Global-Supply-Shock-From-Hormuz.html",
-        "title": "U.S. Energy Helps Cushion Global Supply Shock From Hormuz",
-        "published_at": "2026-08-08T23:00:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "UAE says Iran targeted ADNOC tanker in Strait of Hormuz, no casualties",
-      "url": "https://www.aljazeera.com/news/2026/8/8/uae-says-iran-targeted-adnoc-tanker-in-hormuz-no-casualties-2?traffic_source=rss",
-      "snippet": "Gulf and Arab governments condemn Iran over missile strike on Emirati tanker.",
-      "published_at": "2026-08-08T15:01:29+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 12,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 30.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 55.5,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "strait of hormuz"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Energy/Energy-General/US-Energy-Helps-Cushion-Global-Supply-Shock-From-Hormuz.html",
-        "title": "U.S. Energy Helps Cushion Global Supply Shock From Hormuz",
-        "published_at": "2026-08-08T23:00:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/8/9/iran-war-live-tehran-demands-end-to-us-blockade-to-reopen-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran war live: Tehran demands end to US blockade to reopen Strait of Hormuz",
+        "published_at": "2026-08-09T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -395,7 +352,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 9,
       "tags": [
         "geopolitics"
       ],
@@ -411,7 +368,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.4,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
@@ -426,9 +383,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Energy/Energy-General/US-Energy-Helps-Cushion-Global-Supply-Shock-From-Hormuz.html",
-        "title": "U.S. Energy Helps Cushion Global Supply Shock From Hormuz",
-        "published_at": "2026-08-08T23:00:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/8/9/iran-war-live-tehran-demands-end-to-us-blockade-to-reopen-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran war live: Tehran demands end to US blockade to reopen Strait of Hormuz",
+        "published_at": "2026-08-09T00:00:00+00:00"
       },
       "hidden": true
     }
