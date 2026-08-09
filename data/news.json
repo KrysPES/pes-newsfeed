@@ -1,58 +1,58 @@
 {
-  "generated_at": "2026-08-09T16:18:48.525371+00:00",
-  "item_count": 2,
+  "generated_at": "2026-08-09T17:00:47.106426+00:00",
+  "item_count": 4,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 2
+    "normal": 3
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1237
+        "ms": 1493
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 36380
+        "ms": 36370
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3436
+        "ms": 18016
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 355
+        "ms": 586
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 684
+        "ms": 601
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 220
+        "ms": 254
       },
       {
         "id": "world_nuclear_news",
@@ -63,49 +63,93 @@
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 99
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 200
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 676
+        "ms": 638
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 335
+        "ms": 192
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 511
+        "ms": 536
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 29,
         "error": null,
-        "ms": 145
+        "ms": 66
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 282
+        "ms": 108
       }
     ]
   },
   "items": [
+    {
+      "title": "Drones spotted over German base days after Leipzig bomb incident",
+      "url": "https://www.bbc.co.uk/news/articles/cwyeg1ljp2eo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Police are investigating a drone sighting over a miltary base reportedly used for housing Patriot missile system parts.",
+      "published_at": "2026-08-09T16:18:10+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 61,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 58.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "missile",
+          "drone"
+        ],
+        "geography": [
+          "german"
+        ],
+        "unplanned": [
+          "incident"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "War on Iran: Phase II: Day 29",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/9/war-on-iran-phase-ii-day-29?traffic_source=rss",
@@ -163,7 +207,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 48,
+      "score": 46,
       "tags": [
         "supply_disruption"
       ],
@@ -178,7 +222,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.58
       },
       "matched": {
         "supply_disruption": [
@@ -190,6 +234,47 @@
         ],
         "urgency": [
           "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Europe's Next Energy Crisis Won't Be a War, It'll Be Peak Oil",
+      "url": "https://oilprice.com/Energy/Energy-General/Europes-Next-Energy-Crisis-Wont-Be-a-War-Itll-Be-Peak-Oil.html",
+      "snippet": "Europe is currently contending with its third energy crisis in four years against the backdrop of near-constant global geopolitical friction and fracas. The continent’s over-reliance on foreign fossil fuel imports has been thrown into sharp relief in recent months and years as the European Union has",
+      "published_at": "2026-08-09T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "europe",
+          "european"
         ]
       },
       "duplicate_count": 0,
