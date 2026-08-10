@@ -1,111 +1,251 @@
 {
-  "generated_at": "2026-08-10T12:02:40.832109+00:00",
-  "item_count": 14,
+  "generated_at": "2026-08-10T13:35:43.557148+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 6
+    "high": 1,
+    "normal": 10
   },
-  "superseded_count": 0,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 525 Server Error: <none> for url: https://ummrss.nordpoolgroup.com/messages/?unavailabilityType=1&fuelTypes=14&fuelTypes=16&fuelTypes=4&limit=100",
-        "ms": 2508
+        "ok": true,
+        "count": 80,
+        "error": null,
+        "ms": 1540
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 148644
+        "ms": 40226
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2489
+        "ms": 2688
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 302
+        "ms": 490
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 515
+        "ms": 383
       },
       {
         "id": "eia_today",
         "ok": true,
-        "count": 14,
+        "count": 15,
         "error": null,
-        "ms": 142
+        "ms": 122
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 46,
+        "count": 47,
         "error": null,
-        "ms": 1086
+        "ms": 761
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 226
+        "ms": 147
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 682
+        "ms": 520
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 242
+        "ms": 140
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 512
+        "ms": 415
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 23,
         "error": null,
-        "ms": 246
+        "ms": 291
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 290
+        "ms": 168
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Aghada - GU_400850 (AD2)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/f0863575-bda2-4bb8-8209-4b16e3410a01/1",
+      "snippet": "Published: 10.08.2026 15:28:18 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: GT Trip Remarks: GT Trip Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Feed",
+      "published_at": "2026-08-10T13:28:18+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 68,
+      "tags": [
+        "supply_disruption",
+        "nuclear"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 12.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 70.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "nuclear": [
+          "trip"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "trip"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-10T08:21:54+00:00"
+    },
+    {
+      "title": "16 MW floating wind turbine now powering Lufeng oilfield",
+      "url": "https://www.offshore-energy.biz/16-mw-floating-wind-turbine-now-powering-lufeng-oilfield/",
+      "snippet": "China National Offshore Oil Corporation (CNOOC) has started operating a 16 MW floating wind platform in the South China Sea, with the unit now supplying electricity to the Lufeng oilfield grid, according to Chinese media. The post 16 MW floating wind turbine now powering Lufeng oilfield appeared fir",
+      "published_at": "2026-08-10T12:14:24+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 58,
+      "tags": [
+        "geopolitics",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 24.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 54.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "south china sea"
+        ],
+        "infrastructure": [
+          "platform",
+          "grid"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "U.S. Bets $400 Million on Australian Scandium Miner to Break China's Grip",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Bets-400-Million-on-Australian-Scandium-Miner-to-Break-Chinas-Grip.html",
+      "snippet": "Shares in Australia-listed Sunrise Energy Metals Ltd (SRL:ASX) jumped by 29% at opening on Monday after the U.S. Department of War announced a conditional commitment for a US$400-million loan for the company to build out its scandium operations. The Department of War’s Office of Strategic Capital (O",
+      "published_at": "2026-08-10T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 56,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 50.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "australia",
+          "china"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-10T12:09:08+00:00"
+    },
     {
       "title": "Hormuz Tensions Surge After Reports of Another Tanker Strike",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tensions-Surge-After-Reports-of-Another-Tanker-Strike.html",
@@ -117,7 +257,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 53,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -135,7 +275,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 69.0,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
@@ -158,66 +298,60 @@
       "also_reported_by": []
     },
     {
-      "title": "At least 13 killed in Ukrainian drone attack on Russia’s Nizhnekamsk",
-      "url": "https://www.aljazeera.com/news/2026/8/10/at-least-13-killed-in-ukrainian-drone-attack-on-russias-nizhnekamsk?traffic_source=rss",
-      "snippet": "A day of mourning has been declared in the Russian republic of Tatarstan after the attack killed 13 people.",
-      "published_at": "2026-08-10T10:55:38+00:00",
+      "title": "India police fire tear gas at protesters seeking exam reforms",
+      "url": "https://www.bbc.co.uk/news/articles/c89nkz4vjyxo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Thousands of students and job seekers have gathered in Jharkhand state, weeks after the \"cockroach\" protests took place in Delhi.",
+      "published_at": "2026-08-10T10:41:04+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 48,
       "tags": [
-        "geopolitics"
+        "supply_disruption"
       ],
       "alert": "normal",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 9.5,
-        "themes": 17.9,
+        "authority": 10.2,
+        "themes": 8.4,
         "geo_band": "tertiary",
         "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 48.4,
-        "recency_multiplier": 1.0
+        "raw": 43.6,
+        "recency_multiplier": 0.93
       },
       "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
+        "supply_disruption": [
+          "fire"
         ],
         "geography": [
-          "russia",
-          "russian"
+          "india"
         ],
-        "urgency": [
-          "declared"
+        "unplanned": [
+          "fire"
         ]
       },
-      "duplicate_count": 2,
-      "also_reported_by": [
-        "BBC World",
-        "OilPrice.com"
-      ],
-      "first_seen_at": "2026-08-10T09:00:00+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Taiwan’s LNG imports climb in July",
       "url": "https://lngprime.com/asia/taiwans-lng-imports-climb-in-july/194802/",
       "snippet": "Taiwan’s monthly imports of liquefied natural gas (LNG) rose year-on-year in July and were the highest this year, with Australia and the US supplying most of the volumes, according to customs data.",
-      "published_at": "2026-08-10T09:47:33+00:00",
+      "published_at": "2026-08-10T12:59:33+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 47,
       "tags": [
         "lng"
       ],
@@ -233,7 +367,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.9,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 1.0
       },
       "matched": {
         "lng": [
@@ -242,6 +376,123 @@
         ],
         "geography": [
           "australia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Heat Waves Could Cost the EU 1% of GDP, Dutch Bank Says",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Heat-Waves-Could-Cost-the-EU-1-of-GDP-Dutch-Bank-Says.html",
+      "snippet": "This year’s heat waves and related productivity declines and lower agricultural output could erase as much as 1% of the gross domestic product of the European Union, wiping out most of the EU’s economic growth expected for 2026, according to Dutch bank Triodos. The bank and wealth manager, which foc",
+      "published_at": "2026-08-10T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 47,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 8.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 39.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "gdp"
+        ],
+        "geography": [
+          "european",
+          "eu",
+          "dutch"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Former MP opens fire in Thailand’s second shooting within days",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/former-mp-opens-fire-in-thailands-second-shooting-within-days?traffic_source=rss",
+      "snippet": "A second shooting has occurred in Thailand within days after a former MP opened fire outside a government office.",
+      "published_at": "2026-08-10T12:00:29+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Duration of power outages in Puerto Rico not caused by major events increased 19% in 2025",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67926",
+      "snippet": "In 2025, customers in Puerto Rico experienced an average of 36 hours of power interruptions that were not caused by major events such as hurricanes, 19% more than in 2024. On average, between 2021 and 2025, Puerto Rican customers experience 29 hours of power loss each year. By comparison, electricit",
+      "published_at": "2026-08-10T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 43,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 35.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "outages"
         ]
       },
       "duplicate_count": 0,
@@ -258,7 +509,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 42,
       "tags": [
         "geopolitics"
       ],
@@ -274,7 +525,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -301,7 +552,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 42,
       "tags": [
         "lng",
         "infrastructure"
@@ -318,7 +569,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.2,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.57
       },
       "matched": {
         "lng": [
@@ -337,6 +588,50 @@
       "also_reported_by": []
     },
     {
+      "title": "‘Long-range sanctions’: Ukraine hopes strikes cause Russia fear and losses",
+      "url": "https://www.aljazeera.com/news/2026/8/10/long-range-sanctions-ukraine-hopes-strikes-cause-russia-fear-and-losses?traffic_source=rss",
+      "snippet": "Al Jazeera is given rare access to one of Ukraine&#039;s long-range drone units tasked with targeting Russia.",
+      "published_at": "2026-08-10T11:51:28+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "drone"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-10T10:55:38+00:00"
+    },
+    {
       "title": "Adnoc Gas says Q2 net income drops to $665 million",
       "url": "https://lngprime.com/corporate/adnoc-gas-says-q2-net-income-drops-to-665-million/194777/",
       "snippet": "Adnoc’s gas and LNG unit, Adnoc Gas, reported a net income of $665 million in the second quarter of this year, a drop of 52 percent year-on-year due to disruptions caused by the ongoing Middle East conflict. Adnoc Gas has also taken the final investment decision on the second and third phases of its",
@@ -347,12 +642,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 44,
+      "score": 40,
       "tags": [
         "lng",
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -364,7 +659,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.3,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.57
       },
       "matched": {
         "lng": [
@@ -382,6 +677,43 @@
       "also_reported_by": []
     },
     {
+      "title": "ConocoPhillips continues to boost LNG portfolio",
+      "url": "https://lngprime.com/americas/conocophillips-continues-to-boost-lng-portfolio/194830/",
+      "snippet": "US energy giant ConocoPhillips has expanded its commercial LNG offtake portfolio to 12 million tonnes per annum as it continues to scale up this business, according to incoming CEO Andy O’Brien.",
+      "published_at": "2026-08-10T12:57:24+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "offtake"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "BW’s steam LNG carrier set for FSRU conversion",
       "url": "https://lngprime.com/asia/bws-steam-lng-carrier-set-for-fsru-conversion/194703/",
       "snippet": "BW LNG's 2006-built steam vessel, LNG Benue, is set to be converted into a floating storage and regasification unit, according to China’s Huarun Dadong Dockyard (HRDD).",
@@ -392,7 +724,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 36,
       "tags": [
         "lng",
         "gas_storage"
@@ -409,7 +741,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.2,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.57
       },
       "matched": {
         "lng": [
@@ -439,7 +771,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 34,
       "tags": [
         "oil_macro"
       ],
@@ -455,7 +787,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.8,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.63
       },
       "matched": {
         "oil_macro": [
@@ -482,7 +814,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "supply_disruption",
         "oil_macro"
@@ -499,7 +831,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "supply_disruption": [
@@ -516,40 +848,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Multimillion-dollar jobs take DOF’s vessel pair to Americas",
-      "url": "https://www.offshore-energy.biz/multimillion-dollar-jobs-take-dofs-vessel-pair-to-americas/",
-      "snippet": "DOF Group, a Norwegian operator and owner of a fleet of advanced vessels for the energy and marine sectors, has lined up work for two anchor handling tug supply (AHTS) vessels in the Caribbean Community (CARICOM) region, encompassing member states and territories across the Caribbean, as well as Bel",
-      "published_at": "2026-08-10T09:01:27+00:00",
+      "title": "World's oceans hit record-high July temperatures",
+      "url": "https://www.bbc.co.uk/news/articles/cpvw8vmmgrwo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Global oceans recorded their hottest July on record, partly fuelled by developing El Niño conditions, as wildfires continue to ravage western Europe.",
+      "published_at": "2026-08-10T10:24:46+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
-        "oil_macro"
+        "weather"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 12.4,
-        "themes": 4.5,
+        "authority": 10.2,
+        "themes": 6.2,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 26.9,
-        "recency_multiplier": 0.92
+        "raw": 26.4,
+        "recency_multiplier": 0.91
       },
       "matched": {
-        "oil_macro": [
-          "dollar"
+        "weather": [
+          "temperatures"
         ],
         "geography": [
-          "norwegian"
+          "europe"
         ]
       },
       "duplicate_count": 0,
@@ -634,17 +966,113 @@
       "also_reported_by": []
     },
     {
-      "title": "‘Like the movies’: How Ukraine’s ground robots are changing rules of war",
-      "url": "https://www.aljazeera.com/news/2026/8/10/like-the-movies-how-ukraines-ground-robots-are-changing-rules-of-war?traffic_source=rss",
-      "snippet": "They carry ammunition, can conduct kamikaze missions and have shown they can capture enemy positions.",
-      "published_at": "2026-08-10T09:09:08+00:00",
+      "title": "Multimillion-dollar jobs take DOF’s vessel pair to Americas",
+      "url": "https://www.offshore-energy.biz/multimillion-dollar-jobs-take-dofs-vessel-pair-to-americas/",
+      "snippet": "DOF Group, a Norwegian operator and owner of a fleet of advanced vessels for the energy and marine sectors, has lined up work for two anchor handling tug supply (AHTS) vessels in the Caribbean Community (CARICOM) region, encompassing member states and territories across the Caribbean, as well as Bel",
+      "published_at": "2026-08-10T09:01:27+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 4.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.9,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "oil_macro": [
+          "dollar"
+        ],
+        "geography": [
+          "norwegian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "At least 13 killed in Ukrainian drone attack on Russia’s Nizhnekamsk",
+      "url": "https://www.aljazeera.com/news/2026/8/10/at-least-13-killed-in-ukrainian-drone-attack-on-russias-nizhnekamsk?traffic_source=rss",
+      "snippet": "A day of mourning has been declared in the Russian republic of Tatarstan after the attack killed 13 people.",
+      "published_at": "2026-08-10T10:55:38+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 16,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 48.4,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "attack"
+        ],
+        "geography": [
+          "russia",
+          "russian"
+        ],
+        "urgency": [
+          "declared"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [
+        "BBC World",
+        "OilPrice.com"
+      ],
+      "first_seen_at": "2026-08-10T09:00:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/10/long-range-sanctions-ukraine-hopes-strikes-cause-russia-fear-and-losses?traffic_source=rss",
+        "title": "‘Long-range sanctions’: Ukraine hopes strikes cause Russia fear and losses",
+        "published_at": "2026-08-10T11:51:28+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Taiwan holds military drills to prepare for invasion by China",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/taiwan-holds-military-drills-to-prepare-for-invasion-by-china?traffic_source=rss",
+      "snippet": "Taiwan holds military drills to prepare for invasion by China",
+      "published_at": "2026-08-10T12:09:08+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
       "tags": [
         "geopolitics"
       ],
@@ -660,59 +1088,25 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.5,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "China evacuates one million from homes as massive storm arrives",
-      "url": "https://www.bbc.co.uk/news/articles/cx2rgzyplg2o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Typhoon Dolphin has made landfall, bringing strong winds and heavy rain across eastern China including Shanghai.",
-      "published_at": "2026-08-10T07:23:54+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.5,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "weather": [
-          "typhoon",
-          "storm"
+          "invasion"
         ],
         "geography": [
           "china"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Bets-400-Million-on-Australian-Scandium-Miner-to-Break-Chinas-Grip.html",
+        "title": "U.S. Bets $400 Million on Australian Scandium Miner to Break China's Grip",
+        "published_at": "2026-08-10T13:30:00+00:00"
+      },
+      "hidden": true
     }
   ]
 }
