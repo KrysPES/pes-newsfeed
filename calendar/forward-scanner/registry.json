@@ -17,7 +17,7 @@
       ],
       "route": "One table per year under an h2 of the form '2026 confirmed dates'. First cell is the weekday and day and month, year from the heading. Second cell flags the Monetary Policy Report.",
       "verdict": "resolved",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "yields": "MPC rate decisions and Monetary Policy Report publication dates",
       "note": "Announcement time is not on the page, so time is left blank."
@@ -32,7 +32,7 @@
       ],
       "route": "Definition list of DD/MM/YYYY against a description. The decision is the day two entry that says it is followed by a press conference.",
       "verdict": "resolved",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "yields": "ECB monetary policy decision dates",
       "note": "Recovery against the historic run. That run failed on the ECB decisions index and the per year press release index, both of which render via JavaScript. This is a different page and is plain HTML."
@@ -47,7 +47,7 @@
       ],
       "route": "Meetings grouped under a '2026 FOMC Meetings' anchor, each a month label and a day range. The decision is the last day of the range.",
       "verdict": "resolved",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "yields": "FOMC decision dates, with the projections meetings flagged",
       "note": "Forward minutes dates are not published on this page, so no minutes rows are written."
@@ -63,7 +63,7 @@
       ],
       "route": "Upcoming filter, paged at 50. Each item carries data-gtm-release-date, data-gtm-release-time, the title and the release page link. The link is harvested and used as the source_url.",
       "verdict": "resolved",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "yields": "ONS consumer price inflation, labour market overview, monthly GDP and first quarterly GDP",
       "note": "Release times are published here in UK civil time and are converted to UTC. The historic run could not find times on the bulletin pages, so trap B is captured going forward."
@@ -78,7 +78,7 @@
       ],
       "route": "Published iCalendar file. VEVENT blocks with DTSTART in US Eastern and the release name in SUMMARY.",
       "verdict": "resolved",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "yields": "US consumer price index and employment situation release dates and times",
       "note": "Serves 200 as text/calendar from the same host whose HTML schedule pages return 403 or 404. The block is applied inconsistently and this URL returned 403 on one of four test fetches, so expect runs where it fails. Section 7 handles that by leaving the rows untouched with a stale last_verified. BLS API v1 was tested as the brief asks: it is open without a key but serves series observations, not release dates, so it does not recover the calendar."
@@ -93,7 +93,7 @@
       ],
       "route": "Prose sentence giving the standard release day and time, then a table of holiday exceptions with alternate release dates and times.",
       "verdict": "resolved",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "yields": "holiday exception dates as published, ordinary weeks as generated",
       "note": "The EIA publishes only its exceptions as dates. Ordinary weeks carry date_source=generated from the cadence sentence on the same page."
@@ -108,7 +108,7 @@
       ],
       "route": "Same shape as the gas storage schedule, with an extra leading column for the data week.",
       "verdict": "resolved",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "yields": "holiday exception dates as published, ordinary weeks as generated",
       "note": "ir.eia.gov/wpsr/schedule.html returns 403. The www.eia.gov path carries the same table and is used instead."
@@ -123,7 +123,7 @@
       ],
       "route": "The outlook header states 'Next Release Date' as a single date.",
       "verdict": "resolved",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "yields": "one forward STEO release date per run",
       "note": "Only one forward date exists on the page, so the series fills in month by month rather than arriving as a block."
@@ -138,7 +138,7 @@
       ],
       "route": "A table per year under a '2026 Release Schedule' heading, one row per month with a cell per release day. The release time is stated in the prose above the table.",
       "verdict": "resolved",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "yields": "every weekly COT release date for the published year",
       "note": "The page describes itself as a tentative schedule and marks holiday affected weeks with an asterisk, which is carried into notes."
@@ -153,7 +153,7 @@
       ],
       "route": "Table of year against the clocks go forward and clocks go back dates.",
       "verdict": "resolved",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "yields": "UK clock change dates",
       "note": "Statutory, so it could be generated, but gov.uk publishes the dates so they are taken as published."
@@ -165,7 +165,7 @@
       "url": "https://www.iea.org/reports",
       "verdict": "unresolved",
       "reason": "blocked",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 403,
       "note": "iea.org returns 403 to a plain fetcher, as the historic run found. No route. Section 8 predicted this."
     },
@@ -176,7 +176,7 @@
       "url": "https://www.opec.org/meetings.html",
       "verdict": "unresolved",
       "reason": "blocked",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 403,
       "note": "opec.org serves the home page at 200 but returns 403 on /meetings.html, /events.html, /meeting-schedule.html and /press-releases.html. The home page carries past press releases only, no forward meeting dates."
     },
@@ -187,7 +187,7 @@
       "url": "https://agsi.gie.eu/",
       "verdict": "unresolved",
       "reason": "javascript",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "14 kB JavaScript shell with no dated content, unchanged from the historic run. The keyed API is out under decision 3."
     },
@@ -198,7 +198,7 @@
       "url": "https://energy.ec.europa.eu/topics/energy-security/gas-storage_en",
       "verdict": "unresolved",
       "reason": "no forward dated schedule",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "The page fetches at 200 and explains the regulation but carries no forward filling target dates as dated entries. Generating 1 November from the regulation text would be inference, so no row."
     },
@@ -209,7 +209,7 @@
       "url": "https://rigcount.bakerhughes.com/na-rig-count",
       "verdict": "unresolved",
       "reason": "timeout",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": "error",
       "note": "rigcount.bakerhughes.com does not answer within 30 seconds on repeated attempts, at the root or on the rig count page."
     },
@@ -220,7 +220,7 @@
       "url": "https://www.ofgem.gov.uk/energy-price-cap",
       "verdict": "unresolved",
       "reason": "javascript",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "Regression against the historic run, which listed ofgem.gov.uk as walking cleanly. The site now serves a BETA shell: 190 kB of markup that strips to about 7 kB of navigation, with no body content and no dated entries. The publications index behaves the same way."
     },
@@ -231,7 +231,7 @@
       "url": "https://www.neso.energy/industry-information/capacity-market",
       "verdict": "unresolved",
       "reason": "not found",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 404,
       "note": "Every NESO capacity market path tried returns a soft 404 that serves a 1.2 MB error page. The EMR Delivery Body portal at emrdeliverybody.com is a login shell and states the Capacity Market has moved off it. The gov.uk capacity market collection carries publication dates, not forward auction dates."
     },
@@ -242,7 +242,7 @@
       "url": "https://www.gov.uk/government/collections/contracts-for-difference",
       "verdict": "unresolved",
       "reason": "no forward dated schedule",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "The collection fetches at 200 but its dates are document publication dates, not allocation round milestones. The EMR portal shows an application window closing date with no year attached, which fails the date on the page test."
     },
@@ -253,7 +253,7 @@
       "url": "https://www.theice.com/emissions",
       "verdict": "unresolved",
       "reason": "no dated entries in HTML",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "theice.com fetches at 200 but carries no dated auction entries in the markup. The auction calendar is distributed as a PDF."
     },
@@ -264,7 +264,7 @@
       "url": "https://www.eex.com/en/markets/environmental-markets/eu-ets-auctions",
       "verdict": "unresolved",
       "reason": "dates only inside a PDF",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "The page fetches at 200 and lists an 'EEX Auction Calendar 2026 (PDF)' with its publishing date, but the per auction dates are inside the PDF. The HTML carries document publishing dates only."
     },
@@ -275,8 +275,8 @@
       "url": "https://www.consilium.europa.eu/en/meetings/calendar/",
       "verdict": "unresolved",
       "reason": "blocked",
-      "last_checked": "2026-07-31",
-      "last_status": 200,
+      "last_checked": "2026-08-10",
+      "last_status": 403,
       "note": "consilium.europa.eu returns 403 on the meetings calendar and on the energy council path, as the historic run found. The weekly probe has recorded an occasional 200 which on inspection is an anti bot interstitial, not the calendar, so the verdict is unchanged."
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures_en",
       "verdict": "unresolved",
       "reason": "no forward dated schedule",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "finance.ec.europa.eu carries dated pages per adopted package, which is what the historic run used, but no forward renewal calendar. The six monthly renewal rhythm is real but the dates are not published in advance, so generating them would be forecasting."
     },
@@ -297,7 +297,7 @@
       "url": "https://obr.uk/forecasts-in-depth/",
       "verdict": "unresolved",
       "reason": "no forward dated schedule",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "Neither the OBR nor the HM Treasury pages carry a forward fiscal event date as a dated entry. The date arrives as a written ministerial statement, which is a news item rather than a schedule."
     },
@@ -308,7 +308,7 @@
       "url": "https://www.ofgem.gov.uk/publications",
       "verdict": "unresolved",
       "reason": "javascript",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "Same Ofgem shell as the price cap. No dated entries reach a plain fetcher."
     },
@@ -319,7 +319,7 @@
       "url": "https://ec.europa.eu/eurostat/news/release-calendar",
       "verdict": "unresolved",
       "reason": "javascript",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "The release calendar is a portlet that yields no per release dated links to a plain fetcher, unchanged from the historic run. Section 8 predicted this."
     },
@@ -341,7 +341,7 @@
       "url": "https://www.ifo.de/en/ifo-business-climate-index",
       "verdict": "unresolved",
       "reason": "javascript or timeout",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "ifo.de serves a 3 kB shell with no content. zew.de times out on the indicator page and its press release index carries no forward dated entries."
     },
@@ -352,7 +352,7 @@
       "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-8060/",
       "verdict": "unresolved",
       "reason": "no forward dated schedule",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "The Commons Library briefing fetches at 200 but carries publication dates rather than a forward election timetable in dated form. electionresults.parliament.uk did not resolve by DNS."
     },
@@ -363,7 +363,7 @@
       "url": "https://unfccc.int/calendar",
       "verdict": "unresolved",
       "reason": "empty response",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "unfccc.int returns a few hundred bytes on the calendar, conference and event calendar paths. g20.org carries no forward summit date as a dated entry. European Council dates sit on consilium.europa.eu, which is blocked."
     },
@@ -374,7 +374,7 @@
       "url": "https://www.theice.com/products/910/UK-Natural-Gas-Futures",
       "verdict": "unresolved",
       "reason": "no dated entries in HTML",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "The contract page fetches at 200 but the expiry calendar is not in the markup. Deriving expiries from the two business days before month end rule would be generation with no cadence sentence on a fetched page to stand behind it."
     },
@@ -396,7 +396,7 @@
       "url": "https://climate.copernicus.eu/climate-bulletins",
       "verdict": "unresolved",
       "reason": "no forward dated schedule",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "Both sites fetch at 200 but publish past bulletins rather than a forward release calendar."
     },
@@ -407,7 +407,7 @@
       "url": "https://www.metoffice.gov.uk/services/government/contingency-planners",
       "verdict": "unresolved",
       "reason": "no forward dated schedule",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "The contingency planners page fetches at 200 and carries no dated release schedule. The long range outlook paths tried return 404."
     },
@@ -418,7 +418,7 @@
       "url": "https://www.cpc.ncep.noaa.gov/products/outlooks/hurricane.shtml",
       "verdict": "unresolved",
       "reason": "no forward dated schedule",
-      "last_checked": "2026-07-31",
+      "last_checked": "2026-08-10",
       "last_status": 200,
       "note": "The page carries the current outlook and its issue date but no forward schedule for the next issue."
     },
