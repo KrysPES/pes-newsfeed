@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-10T06:57:16.761086+00:00",
+  "generated_at": "2026-08-10T08:28:26.165619+00:00",
   "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 4
+    "high": 2,
+    "normal": 5
   },
   "superseded_count": 0,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1598
+        "ms": 1335
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 40472
+        "ms": 58792
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2481
+        "ms": 2739
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 327
+        "ms": 495
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 404
+        "ms": 220
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 110
+        "ms": 91
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 1003
+        "ms": 844
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 181
+        "ms": 144
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 624
+        "ms": 578
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 178
+        "ms": 125
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 444
+        "ms": 308
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 53
+        "ms": 59
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 112
+        "ms": 140
       }
     ]
   },
@@ -158,6 +158,50 @@
       "also_reported_by": []
     },
     {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
+      "url": "https://umm.nordpoolgroup.com/#/messages/d9eec43c-5868-4ac4-9485-1f7e02e8ca8d/3",
+      "snippet": "Published: 10.08.2026 10:21:54 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-10T08:21:54+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-10T07:20:02+00:00"
+    },
+    {
       "title": "Adnoc Gas says Q2 net income drops to $665 million",
       "url": "https://lngprime.com/corporate/adnoc-gas-says-q2-net-income-drops-to-665-million/194777/",
       "snippet": "Adnoc’s gas and LNG unit, Adnoc Gas, reported a net income of $665 million in the second quarter of this year, a drop of 52 percent year-on-year due to disruptions caused by the ongoing Middle East conflict. Adnoc Gas has also taken the final investment decision on the second and third phases of its",
@@ -168,7 +212,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 58,
+      "score": 54,
       "tags": [
         "lng",
         "geopolitics"
@@ -185,7 +229,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.3,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.85
       },
       "matched": {
         "lng": [
@@ -203,6 +247,50 @@
       "also_reported_by": []
     },
     {
+      "title": "Trump Hints at Sustained Economic Pressure on Iran",
+      "url": "https://www.rigzone.com/news/wire/trump_hints_at_sustained_economic_pressure_on_iran-10-aug-2026-184330-article/?rss=true",
+      "snippet": "The president signaled he is prepared to let economic pressure on Iran build rather than launch fresh military strikes, saying the U.S. was only 'semi-negotiating' with Tehran on the Strait of Hormuz.",
+      "published_at": "2026-08-10T08:26:09+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "first_seen_at": "2026-08-10T03:48:19+00:00"
+    },
+    {
       "title": "BW’s steam LNG carrier set for FSRU conversion",
       "url": "https://lngprime.com/asia/bws-steam-lng-carrier-set-for-fsru-conversion/194703/",
       "snippet": "BW LNG's 2006-built steam vessel, LNG Benue, is set to be converted into a floating storage and regasification unit, according to China’s Huarun Dadong Dockyard (HRDD).",
@@ -213,7 +301,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 48,
       "tags": [
         "lng",
         "gas_storage"
@@ -230,7 +318,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.2,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.85
       },
       "matched": {
         "lng": [
@@ -260,7 +348,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 47,
       "tags": [
         "geopolitics"
       ],
@@ -276,7 +364,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.5,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
@@ -302,7 +390,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 46,
       "tags": [
         "oil_macro"
       ],
@@ -318,7 +406,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "oil_macro": [
@@ -348,7 +436,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 35,
       "tags": [
         "lng",
         "gas_storage"
@@ -364,7 +452,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.7,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.85
       },
       "matched": {
         "lng": [
@@ -389,7 +477,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -405,7 +493,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.4,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.47
       },
       "matched": {
         "geopolitics": [
@@ -423,121 +511,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump signals shift to economic pressure on Iran over new military strikes",
-      "url": "https://www.aljazeera.com/economy/2026/8/10/trump-signals-shift-to-economic-pressure-on-iran-over-new-military-strikes?traffic_source=rss",
-      "snippet": "US relying on sanctions and naval blockade as oil prices stabilise, easing economic strain on American consumers.",
-      "published_at": "2026-08-10T03:48:19+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "blockade"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Top 5 news of the week August 3-9",
-      "url": "https://lngprime.com/americas/top-5-news-of-the-week-august-3-9/194723/",
-      "snippet": "LNG Prime brings you the five most popular news stories on our platform during the week of August 3-9, 2026.",
-      "published_at": "2026-08-10T04:16:00+00:00",
+      "title": "MOL expects to have 111 LNG carriers in its fleet by March 2027",
+      "url": "https://lngprime.com/asia/mol-expects-to-have-111-lng-carriers-in-its-fleet-by-march-2027/194782/",
+      "snippet": "Japan's shipping giant MOL still expects to have 111 liquefied natural gas (LNG) carriers in its fleet by March 2027.",
+      "published_at": "2026-08-10T07:55:18+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 34,
       "tags": [
-        "lng",
-        "infrastructure"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
-        "themes": 11.3,
-        "geography": 0.0,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.5,
-        "recency_multiplier": 0.95
+        "raw": 25.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "lng": [
           "lng"
         ],
-        "infrastructure": [
-          "platform"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Drones spotted over German base days after Leipzig bomb incident",
-      "url": "https://www.bbc.co.uk/news/articles/cwyeg1ljp2eo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Police are investigating a drone sighting over a miltary base reportedly used for housing Patriot missile system parts.",
-      "published_at": "2026-08-09T16:18:10+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 58.1,
-        "recency_multiplier": 0.38
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "drone"
-        ],
         "geography": [
-          "german"
-        ],
-        "unplanned": [
-          "incident"
+          "japan"
         ]
       },
       "duplicate_count": 0,
