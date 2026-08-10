@@ -45,8 +45,10 @@ jobs:
           git commit -m "calendar refresh $(date -u +%Y-%m-%dT%H:%MZ)"
           # The news ingest commits every ~5 minutes, so a bare push from this
           # slower job WILL eventually race it. Rebase + retry like ingest.yml.
+          # -X theirs: the calendar outputs are regenerated artefacts too, so
+          # on a conflict this run's copies win rather than failing the run.
           for attempt in 1 2 3; do
-            if git pull --rebase --autostash origin main && git push; then
+            if git pull --rebase --autostash -X theirs origin main && git push; then
               exit 0
             fi
             git rebase --abort 2>/dev/null || true

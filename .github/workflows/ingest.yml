@@ -73,8 +73,12 @@ jobs:
           # retry a few times before calling the run failed. The old
           # "pull --rebase || true" swallowed rebase errors and then let the
           # push fail anyway - never mask the pull here.
+          # -X theirs: news.json is a regenerated artefact, so on a conflict
+          # THIS run's version wins (rebase flips ours/theirs - "theirs" is
+          # the commit being replayed, i.e. ours). Without it, re-running an
+          # old attempt (stale checkout SHA) conflicts on every retry.
           for attempt in 1 2 3; do
-            if git pull --rebase --autostash origin ${{ github.ref_name }} && git push; then
+            if git pull --rebase --autostash -X theirs origin ${{ github.ref_name }} && git push; then
               exit 0
             fi
             git rebase --abort 2>/dev/null || true
