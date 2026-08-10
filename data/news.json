@@ -1,155 +1,111 @@
 {
-  "generated_at": "2026-08-10T11:17:16.900240+00:00",
-  "item_count": 15,
+  "generated_at": "2026-08-10T12:02:40.832109+00:00",
+  "item_count": 14,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 7
+    "normal": 6
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
-        "ok": true,
-        "count": 80,
-        "error": null,
-        "ms": 1889
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 525 Server Error: <none> for url: https://ummrss.nordpoolgroup.com/messages/?unavailabilityType=1&fuelTypes=14&fuelTypes=16&fuelTypes=4&limit=100",
+        "ms": 2508
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 246329
+        "ms": 148644
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5209
+        "ms": 2489
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 759
+        "ms": 302
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 257
+        "ms": 515
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 167
+        "ms": 142
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 47,
+        "count": 46,
         "error": null,
-        "ms": 1462
+        "ms": 1086
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 255
+        "ms": 226
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 657
+        "ms": 682
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 277
+        "ms": 242
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 768
+        "ms": 512
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 156
+        "ms": 246
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 175
+        "ms": 290
       }
     ]
   },
   "items": [
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
-      "url": "https://umm.nordpoolgroup.com/#/messages/d9eec43c-5868-4ac4-9485-1f7e02e8ca8d/3",
-      "snippet": "Published: 10.08.2026 10:21:54 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-10T08:21:54+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 63,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.93
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-10T07:20:02+00:00"
-    },
     {
       "title": "Hormuz Tensions Surge After Reports of Another Tanker Strike",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tensions-Surge-After-Reports-of-Another-Tanker-Strike.html",
@@ -161,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 59,
+      "score": 57,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -179,7 +135,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 69.0,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -251,6 +207,47 @@
       "first_seen_at": "2026-08-10T09:00:00+00:00"
     },
     {
+      "title": "Taiwan’s LNG imports climb in July",
+      "url": "https://lngprime.com/asia/taiwans-lng-imports-climb-in-july/194802/",
+      "snippet": "Taiwan’s monthly imports of liquefied natural gas (LNG) rose year-on-year in July and were the highest this year, with Australia and the US supplying most of the volumes, according to customs data.",
+      "published_at": "2026-08-10T09:47:33+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 20.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.9,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng imports"
+        ],
+        "geography": [
+          "australia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Trump Hints at Sustained Economic Pressure on Iran",
       "url": "https://www.rigzone.com/news/wire/trump_hints_at_sustained_economic_pressure_on_iran-10-aug-2026-184330-article/?rss=true",
       "snippet": "The president signaled he is prepared to let economic pressure on Iran build rather than launch fresh military strikes, saying the U.S. was only 'semi-negotiating' with Tehran on the Strait of Hormuz.",
@@ -261,7 +258,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 46,
       "tags": [
         "geopolitics"
       ],
@@ -277,7 +274,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -288,8 +285,10 @@
           "hormuz"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ]
     },
     {
       "title": "PX selected to operate Bahamas LNG terminal",
@@ -302,7 +301,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 46,
       "tags": [
         "lng",
         "infrastructure"
@@ -319,7 +318,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.2,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.64
       },
       "matched": {
         "lng": [
@@ -338,47 +337,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Taiwan’s LNG imports climb in July",
-      "url": "https://lngprime.com/asia/taiwans-lng-imports-climb-in-july/194802/",
-      "snippet": "Taiwan’s monthly imports of liquefied natural gas (LNG) rose year-on-year in July and were the highest this year, with Australia and the US supplying most of the volumes, according to customs data.",
-      "published_at": "2026-08-10T09:47:33+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 47,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 20.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.9,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng imports"
-        ],
-        "geography": [
-          "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Adnoc Gas says Q2 net income drops to $665 million",
       "url": "https://lngprime.com/corporate/adnoc-gas-says-q2-net-income-drops-to-665-million/194777/",
       "snippet": "Adnoc’s gas and LNG unit, Adnoc Gas, reported a net income of $665 million in the second quarter of this year, a drop of 52 percent year-on-year due to disruptions caused by the ongoing Middle East conflict. Adnoc Gas has also taken the final investment decision on the second and third phases of its",
@@ -389,7 +347,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 46,
+      "score": 44,
       "tags": [
         "lng",
         "geopolitics"
@@ -406,7 +364,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.3,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.64
       },
       "matched": {
         "lng": [
@@ -434,7 +392,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "lng",
         "gas_storage"
@@ -451,7 +409,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.2,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.64
       },
       "matched": {
         "lng": [
@@ -481,7 +439,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 37,
       "tags": [
         "oil_macro"
       ],
@@ -497,7 +455,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.8,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.7
       },
       "matched": {
         "oil_macro": [
@@ -510,11 +468,52 @@
           "hormuz"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Protesters rally in India’s Jharkhand over alleged exam irregularities",
+      "url": "https://www.aljazeera.com/news/2026/8/10/protesters-rally-in-indias-jharkhand-over-alleged-exam-irregularities?traffic_source=rss",
+      "snippet": "Demonstrators in Ranchi demand an overhaul of ‌the state&#039;s examination system.",
+      "published_at": "2026-08-10T11:23:48+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "supply_disruption",
+        "oil_macro"
       ],
-      "first_seen_at": "2026-08-10T03:24:38+00:00"
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 11.1,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "overhaul"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Multimillion-dollar jobs take DOF’s vessel pair to Americas",
@@ -527,7 +526,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "oil_macro"
       ],
@@ -543,7 +542,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.9,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.92
       },
       "matched": {
         "oil_macro": [
@@ -551,127 +550,6 @@
         ],
         "geography": [
           "norwegian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "China evacuates one million from homes as massive storm arrives",
-      "url": "https://www.bbc.co.uk/news/articles/cx2rgzyplg2o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Typhoon Dolphin has made landfall, bringing strong winds and heavy rain across eastern China including Shanghai.",
-      "published_at": "2026-08-10T07:23:54+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.5,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "weather": [
-          "typhoon",
-          "storm"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "‘Like the movies’: How Ukraine’s ground robots are changing rules of war",
-      "url": "https://www.aljazeera.com/news/2026/8/10/like-the-movies-how-ukraines-ground-robots-are-changing-rules-of-war?traffic_source=rss",
-      "snippet": "They carry ammunition, can conduct kamikaze missions and have shown they can capture enemy positions.",
-      "published_at": "2026-08-10T09:09:08+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "MOL expects to have 111 LNG carriers in its fleet by March 2027",
-      "url": "https://lngprime.com/asia/mol-expects-to-have-111-lng-carriers-in-its-fleet-by-march-2027/194782/",
-      "snippet": "Japan's shipping giant MOL still expects to have 111 liquefied natural gas (LNG) carriers in its fleet by March 2027.",
-      "published_at": "2026-08-10T07:55:18+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "japan"
         ]
       },
       "duplicate_count": 0,
@@ -714,41 +592,123 @@
       "also_reported_by": []
     },
     {
-      "title": "Honduras to launch first LNG-to-power project",
-      "url": "https://lngprime.com/americas/honduras-to-launch-first-lng-to-power-project/194720/",
-      "snippet": "Honduras is set to launch its first LNG-to-power project with the arrival of the second liquefied natural gas cargo at the floating storage unit (FSU) Bilbao Knutsen in Puerto Cortes.",
-      "published_at": "2026-08-10T04:22:00+00:00",
+      "title": "More offshore drilling work for Seadrill rig trio in US Gulf and Malaysia",
+      "url": "https://www.offshore-energy.biz/more-offshore-drilling-work-for-seadrill-rig-trio-in-us-gulf-and-malaysia/",
+      "snippet": "Seadrill, a Bermuda-headquartered offshore drilling contractor, has obtained multimillion-dollar deals and extensions of existing assignments for a semi-submersible rig and two drillships in the Americas and Asia. The post More offshore drilling work for Seadrill rig trio in US Gulf and Malaysia app",
+      "published_at": "2026-08-10T11:32:06+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
       "score": 30,
       "tags": [
-        "lng",
-        "gas_storage"
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 18.6,
-        "geography": 0.0,
+        "authority": 12.4,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 31.7,
-        "recency_multiplier": 0.68
+        "raw": 21.9,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "lng",
-          "cargo"
+        "oil_macro": [
+          "dollar"
         ],
-        "gas_storage": [
-          "storage"
+        "geography": [
+          "us gulf",
+          "gulf",
+          "asia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "‘Like the movies’: How Ukraine’s ground robots are changing rules of war",
+      "url": "https://www.aljazeera.com/news/2026/8/10/like-the-movies-how-ukraines-ground-robots-are-changing-rules-of-war?traffic_source=rss",
+      "snippet": "They carry ammunition, can conduct kamikaze missions and have shown they can capture enemy positions.",
+      "published_at": "2026-08-10T09:09:08+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China evacuates one million from homes as massive storm arrives",
+      "url": "https://www.bbc.co.uk/news/articles/cx2rgzyplg2o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Typhoon Dolphin has made landfall, bringing strong winds and heavy rain across eastern China including Shanghai.",
+      "published_at": "2026-08-10T07:23:54+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 12.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.5,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "weather": [
+          "typhoon",
+          "storm"
+        ],
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
