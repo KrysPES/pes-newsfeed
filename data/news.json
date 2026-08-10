@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-10T09:59:33.979985+00:00",
+  "generated_at": "2026-08-10T11:17:16.900240+00:00",
   "item_count": 15,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
+    "high": 0,
     "normal": 7
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1675
+        "ms": 1889
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 53845
+        "ms": 246329
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 12347
+        "ms": 5209
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 1,
+        "count": 2,
         "error": null,
-        "ms": 603
+        "ms": 759
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 579
+        "ms": 257
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 327
+        "ms": 167
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 1268
+        "ms": 1462
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 94
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 255
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 688
+        "ms": 657
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 221
+        "ms": 277
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 654
+        "ms": 768
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 26,
+        "count": 28,
         "error": null,
-        "ms": 126
+        "ms": 156
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 247
+        "ms": 175
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 63,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "supply_disruption": [
@@ -161,7 +161,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 63,
+      "score": 59,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -179,7 +179,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 69.0,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -202,6 +202,55 @@
       "also_reported_by": []
     },
     {
+      "title": "At least 13 killed in Ukrainian drone attack on Russia’s Nizhnekamsk",
+      "url": "https://www.aljazeera.com/news/2026/8/10/at-least-13-killed-in-ukrainian-drone-attack-on-russias-nizhnekamsk?traffic_source=rss",
+      "snippet": "A day of mourning has been declared in the Russian republic of Tatarstan after the attack killed 13 people.",
+      "published_at": "2026-08-10T10:55:38+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 54,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 48.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "attack"
+        ],
+        "geography": [
+          "russia",
+          "russian"
+        ],
+        "urgency": [
+          "declared"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [
+        "BBC World",
+        "OilPrice.com"
+      ],
+      "first_seen_at": "2026-08-10T09:00:00+00:00"
+    },
+    {
       "title": "Trump Hints at Sustained Economic Pressure on Iran",
       "url": "https://www.rigzone.com/news/wire/trump_hints_at_sustained_economic_pressure_on_iran-10-aug-2026-184330-article/?rss=true",
       "snippet": "The president signaled he is prepared to let economic pressure on Iran build rather than launch fresh military strikes, saying the U.S. was only 'semi-negotiating' with Tehran on the Strait of Hormuz.",
@@ -212,7 +261,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 48,
       "tags": [
         "geopolitics"
       ],
@@ -228,7 +277,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -243,45 +292,46 @@
       "also_reported_by": []
     },
     {
-      "title": "Adnoc Gas says Q2 net income drops to $665 million",
-      "url": "https://lngprime.com/corporate/adnoc-gas-says-q2-net-income-drops-to-665-million/194777/",
-      "snippet": "Adnoc’s gas and LNG unit, Adnoc Gas, reported a net income of $665 million in the second quarter of this year, a drop of 52 percent year-on-year due to disruptions caused by the ongoing Middle East conflict. Adnoc Gas has also taken the final investment decision on the second and third phases of its",
-      "published_at": "2026-08-10T04:19:58+00:00",
+      "title": "PX selected to operate Bahamas LNG terminal",
+      "url": "https://lngprime.com/americas/px-selected-to-operate-bahamas-lng-terminal/194825/",
+      "snippet": "A joint venture of Shell and Freeport Oil Company (Focol) has selected UK-based PX Group to operate the recently approved small-scale LNG regasification terminal in the Bahamas.",
+      "published_at": "2026-08-10T04:18:19+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 50,
+      "has_magnitude": false,
+      "score": 48,
       "tags": [
         "lng",
-        "geopolitics"
+        "infrastructure"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 13.1,
-        "themes": 26.2,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 30.0,
+        "geo_band": "primary",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 56.3,
-        "recency_multiplier": 0.75
+        "raw": 59.2,
+        "recency_multiplier": 0.68
       },
       "matched": {
         "lng": [
           "lng",
-          "final investment decision"
+          "regasification",
+          "lng terminal"
         ],
-        "geopolitics": [
-          "conflict"
+        "infrastructure": [
+          "terminal"
         ],
         "geography": [
-          "middle east"
+          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -329,6 +379,51 @@
       "also_reported_by": []
     },
     {
+      "title": "Adnoc Gas says Q2 net income drops to $665 million",
+      "url": "https://lngprime.com/corporate/adnoc-gas-says-q2-net-income-drops-to-665-million/194777/",
+      "snippet": "Adnoc’s gas and LNG unit, Adnoc Gas, reported a net income of $665 million in the second quarter of this year, a drop of 52 percent year-on-year due to disruptions caused by the ongoing Middle East conflict. Adnoc Gas has also taken the final investment decision on the second and third phases of its",
+      "published_at": "2026-08-10T04:19:58+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 46,
+      "tags": [
+        "lng",
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 56.3,
+        "recency_multiplier": 0.68
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "final investment decision"
+        ],
+        "geopolitics": [
+          "conflict"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "BW’s steam LNG carrier set for FSRU conversion",
       "url": "https://lngprime.com/asia/bws-steam-lng-carrier-set-for-fsru-conversion/194703/",
       "snippet": "BW LNG's 2006-built steam vessel, LNG Benue, is set to be converted into a floating storage and regasification unit, according to China’s Huarun Dadong Dockyard (HRDD).",
@@ -339,12 +434,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 41,
       "tags": [
         "lng",
         "gas_storage"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -356,7 +451,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.2,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.68
       },
       "matched": {
         "lng": [
@@ -376,48 +471,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Houthis launch fresh ballistic missile and drone attacks on al-Makha port",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/houthis-launch-fresh-ballistic-missile-and-drone-attacks-on-al-makha-port?traffic_source=rss",
-      "snippet": "Iran-backed Houthis have resumed attacks on Yemen’s al-Makha port in the Red Sea.",
-      "published_at": "2026-08-10T01:34:26+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 32.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 57.5,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "drone",
-          "red sea"
-        ],
-        "geography": [
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Oil Prices Rise as Iran Hardens Hormuz Demands",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rise-as-Iran-Hardens-Hormuz-Demands.html",
       "snippet": "Crude oil prices began this week with a gain following a statement by Iran setting six demands for a peace deal with the United States and claims from the Houthis that they had struck an Aramco refinery in Jazan. At the time of writing, Brent crude was trading at $84.24 per barrel, with West Texas I",
@@ -428,11 +481,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 39,
       "tags": [
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -444,7 +497,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.8,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.75
       },
       "matched": {
         "oil_macro": [
@@ -464,48 +517,44 @@
       "first_seen_at": "2026-08-10T03:24:38+00:00"
     },
     {
-      "title": "Ukrainian Drone Strike Kills 12 in Major Attack on Russian Refining Hub",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukrainian-Drone-Strike-Kills-12-in-Major-Attack-on-Russian-Refining-Hub.html",
-      "snippet": "A Ukrainian drone attack on a city in Russia’s Tatarstan region killed 12 people and wounded at least another 39 in a massive strike that also hit one of the most technologically advanced oil refineries in Russia. Radmir Belyayev, the mayor of the city of Nizhnekamsk, which hosts an oil refining hub",
-      "published_at": "2026-08-10T09:00:00+00:00",
+      "title": "Multimillion-dollar jobs take DOF’s vessel pair to Americas",
+      "url": "https://www.offshore-energy.biz/multimillion-dollar-jobs-take-dofs-vessel-pair-to-americas/",
+      "snippet": "DOF Group, a Norwegian operator and owner of a fleet of advanced vessels for the energy and marine sectors, has lined up work for two anchor handling tug supply (AHTS) vessels in the Caribbean Community (CARICOM) region, encompassing member states and territories across the Caribbean, as well as Bel",
+      "published_at": "2026-08-10T09:01:27+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 35,
       "tags": [
-        "geopolitics"
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 12.4,
+        "themes": 4.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 31.7,
-        "recency_multiplier": 1.0
+        "raw": 26.9,
+        "recency_multiplier": 0.98
       },
       "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
+        "oil_macro": [
+          "dollar"
         ],
         "geography": [
-          "russia",
-          "russian"
+          "norwegian"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-10T08:50:02+00:00"
+      "also_reported_by": []
     },
     {
       "title": "China evacuates one million from homes as massive storm arrives",
@@ -518,7 +567,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "weather"
       ],
@@ -534,7 +583,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.5,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.86
       },
       "matched": {
         "weather": [
@@ -543,87 +592,6 @@
         ],
         "geography": [
           "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "MOL expects to have 111 LNG carriers in its fleet by March 2027",
-      "url": "https://lngprime.com/asia/mol-expects-to-have-111-lng-carriers-in-its-fleet-by-march-2027/194782/",
-      "snippet": "Japan's shipping giant MOL still expects to have 111 liquefied natural gas (LNG) carriers in its fleet by March 2027.",
-      "published_at": "2026-08-10T07:55:18+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "japan"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Honduras to launch first LNG-to-power project",
-      "url": "https://lngprime.com/americas/honduras-to-launch-first-lng-to-power-project/194720/",
-      "snippet": "Honduras is set to launch its first LNG-to-power project with the arrival of the second liquefied natural gas cargo at the floating storage unit (FSU) Bilbao Knutsen in Puerto Cortes.",
-      "published_at": "2026-08-10T04:22:00+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 18.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.7,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargo"
-        ],
-        "gas_storage": [
-          "storage"
         ]
       },
       "duplicate_count": 0,
@@ -656,7 +624,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -664,6 +632,46 @@
         ],
         "geography": [
           "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "MOL expects to have 111 LNG carriers in its fleet by March 2027",
+      "url": "https://lngprime.com/asia/mol-expects-to-have-111-lng-carriers-in-its-fleet-by-march-2027/194782/",
+      "snippet": "Japan's shipping giant MOL still expects to have 111 liquefied natural gas (LNG) carriers in its fleet by March 2027.",
+      "published_at": "2026-08-10T07:55:18+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.4,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "japan"
         ]
       },
       "duplicate_count": 0,
@@ -706,53 +714,45 @@
       "also_reported_by": []
     },
     {
-      "title": "At least 13 killed in Ukrainian drone strike on Russia's Tatarstan region, officials say",
-      "url": "https://www.bbc.co.uk/news/articles/cvgjvgv926po?at_medium=RSS&at_campaign=rss",
-      "snippet": "It is one of the deadliest Ukrainian drone attacks on Russia since the start of Moscow's war on Ukraine.",
-      "published_at": "2026-08-10T08:50:02+00:00",
+      "title": "Honduras to launch first LNG-to-power project",
+      "url": "https://lngprime.com/americas/honduras-to-launch-first-lng-to-power-project/194720/",
+      "snippet": "Honduras is set to launch its first LNG-to-power project with the arrival of the second liquefied natural gas cargo at the floating storage unit (FSU) Bilbao Knutsen in Puerto Cortes.",
+      "published_at": "2026-08-10T04:22:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 30,
       "tags": [
-        "geopolitics"
+        "lng",
+        "gas_storage"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 13.1,
+        "themes": 18.6,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 33.1,
-        "recency_multiplier": 1.0
+        "raw": 31.7,
+        "recency_multiplier": 0.68
       },
       "matched": {
-        "geopolitics": [
-          "drone",
-          "war"
+        "lng": [
+          "lng",
+          "cargo"
         ],
-        "geography": [
-          "russia",
-          "ukraine"
+        "gas_storage": [
+          "storage"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukrainian-Drone-Strike-Kills-12-in-Major-Attack-on-Russian-Refining-Hub.html",
-        "title": "Ukrainian Drone Strike Kills 12 in Major Attack on Russian Refining Hub",
-        "published_at": "2026-08-10T09:00:00+00:00"
-      },
-      "hidden": true
+      "also_reported_by": []
     }
   ]
 }
