@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-11T09:38:30.135568+00:00",
-  "item_count": 13,
+  "generated_at": "2026-08-11T10:32:37.001974+00:00",
+  "item_count": 16,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 8
+    "normal": 10
   },
-  "superseded_count": 2,
+  "superseded_count": 1,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,107 +17,107 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 2192
+        "ms": 1596
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 72643
+        "ms": 85977
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5815
+        "ms": 2782
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 580
+        "ms": 564
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 332
+        "ms": 279
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 304
+        "ms": 130
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 47,
+        "count": 46,
         "error": null,
-        "ms": 1219
+        "ms": 970
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 578
+        "ms": 148
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 808
+        "ms": 532
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 321
+        "ms": 153
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 736
+        "ms": 286
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 20,
+        "count": 21,
         "error": null,
-        "ms": 74
+        "ms": 165
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 127
+        "ms": 227
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
-      "url": "https://umm.nordpoolgroup.com/#/messages/d9eec43c-5868-4ac4-9485-1f7e02e8ca8d/4",
-      "snippet": "Published: 11.08.2026 11:05:27 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-11T09:05:27+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ballylumford CCGT - GU_503730(B32)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/d41cc263-b678-418a-9ab4-f0367d8b042c/4",
+      "snippet": "Published: 11.08.2026 12:04:10 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: HP Steam Leak Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Feed",
+      "published_at": "2026-08-11T10:04:10+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 70,
       "tags": [
         "supply_disruption"
       ],
@@ -125,22 +125,24 @@
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 16.8,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
+        "raw": 74.7,
         "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "unplanned",
+          "leak"
         ],
         "unplanned": [
           "unplanned",
-          "failure"
+          "failure",
+          "leak"
         ],
         "urgency": [
           "unplanned"
@@ -148,7 +150,7 @@
       },
       "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-08-10T15:50:33+00:00"
+      "first_seen_at": "2026-08-11T09:05:27+00:00"
     },
     {
       "title": "Libya Weighs Force Majeure After Drone Attacks on Zawiya Oil Hub",
@@ -161,7 +163,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 62,
+      "score": 59,
       "tags": [
         "supply_disruption",
         "geopolitics",
@@ -179,7 +181,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 65.0,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.85
       },
       "matched": {
         "supply_disruption": [
@@ -289,6 +291,53 @@
       "also_reported_by": []
     },
     {
+      "title": "Libyan authorities battle big blaze at major oil refinery",
+      "url": "https://www.bbc.co.uk/news/articles/cp308z9pl30o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Monday's drone strike on the Zawiya refinery was the third such incident in two days.",
+      "published_at": "2026-08-11T08:28:24+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 15.6,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.8,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "drone"
+        ],
+        "supply_disruption": [
+          "blaze"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "unplanned": [
+          "incident"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Grain LNG gets new CEO",
       "url": "https://lngprime.com/europe/grain-lng-gets-new-ceo/194844/",
       "snippet": "A consortium of UK-based energy firm Centrica and US-based investment firm Energy Capital Partners, part of Bridgepoint Group, has appointed Peter Abdo as the new chief executive officer of the Grain LNG terminal in the UK.",
@@ -299,7 +348,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 51,
       "tags": [
         "lng",
         "infrastructure"
@@ -316,7 +365,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.0,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.81
       },
       "matched": {
         "lng": [
@@ -334,48 +383,122 @@
       "also_reported_by": []
     },
     {
-      "title": "Fire rages after drone strikes Libya’s largest oil refinery",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/11/fire-rages-after-drone-strikes-libyas-largest-oil-refinery?traffic_source=rss",
-      "snippet": "A drone attack ignited gasoline at Libya&#039;s Zawiya oil refinery, the country&#039;s largest operational facility.",
-      "published_at": "2026-08-11T04:09:10+00:00",
+      "title": "Australia PM under fire for remarks on Japanese counterpart's melon gifts",
+      "url": "https://www.bbc.co.uk/news/articles/c0jl6ewvq42o?at_medium=RSS&at_campaign=rss",
+      "snippet": "An ex-Japanese envoy said the \"sexist\" comments \"betrayed the close bond\" between the countries.",
+      "published_at": "2026-08-11T07:55:22+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.6,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "australia"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iraq’s semi-autonomous Kurdish region suffers as US-Iran war drags on",
+      "url": "https://www.aljazeera.com/news/2026/8/11/iraqs-semi-autonomous-kurdish-region-suffers-as-us-iran-war-drags-on?traffic_source=rss",
+      "snippet": "Kurdistan Regional Government says 70 percent of its trade has been cut by the regional conflict.",
+      "published_at": "2026-08-11T09:47:53+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 49,
+      "has_magnitude": true,
+      "score": 47,
       "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "oil_macro"
+        "geopolitics"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 24.5,
+        "themes": 17.9,
         "geography": 0.0,
-        "event_nature": 20.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 54.0,
-        "recency_multiplier": 0.76
+        "raw": 39.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "drone",
-          "attack"
+          "conflict",
+          "war"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Glenfarne’s Magnolia LNG seals feed gas deal",
+      "url": "https://lngprime.com/americas/glenfarnes-magnolia-lng-seals-feed-gas-deal/194885/",
+      "snippet": "Glenfarne’s Magnolia LNG has signed a long-term feed gas deal with Texas Eastern Transmission for its planned liquefaction and export plant in Louisiana.",
+      "published_at": "2026-08-11T09:43:32+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 25.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "liquefaction",
+          "feed gas"
         ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "unplanned": [
-          "fire"
+        "infrastructure": [
+          "transmission"
         ]
       },
       "duplicate_count": 0,
@@ -392,7 +515,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 45,
       "tags": [
         "lng",
         "infrastructure"
@@ -408,7 +531,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.85
       },
       "matched": {
         "lng": [
@@ -451,7 +574,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -470,48 +593,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump demands compensation from Iran as talks on Strait of Hormuz continue",
-      "url": "https://www.aljazeera.com/news/2026/8/11/trump-demands-compensation-from-iran-as-talks-on-strait-of-hormuz-continue?traffic_source=rss",
-      "snippet": "US president seeks payment for &#039;50 years&#039; of alleged damages after Iran conditions opening of Hormuz on war reparations.",
-      "published_at": "2026-08-11T02:32:47+00:00",
+      "title": "Venture Global’s Q2 revenue reaches $4.58 billion, net income jumps",
+      "url": "https://lngprime.com/corporate/venture-globals-q2-revenue-reaches-4-58-billion-net-income-jumps/194909/",
+      "snippet": "US LNG exporter Venture Global reported revenue of $4.58 billion in the second quarter of this year, a 47.6 percent rise from the year before, while its net income surged 266 percent year-on-year to $1.35 billion.",
+      "published_at": "2026-08-11T10:12:54+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
+      "has_magnitude": true,
+      "score": 41,
       "tags": [
-        "geopolitics"
+        "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 13.1,
+        "themes": 7.3,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.68
+        "raw": 32.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
+        "lng": [
+          "lng"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-11T00:00:00+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Iraq’s Oil Lifeline Reopens — But Can Baghdad Trust Turkey for Even One Year?",
@@ -524,7 +639,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 37,
+      "score": 35,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -541,7 +656,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 65.0,
-        "recency_multiplier": 0.44
+        "recency_multiplier": 0.41
       },
       "matched": {
         "geopolitics": [
@@ -560,6 +675,46 @@
       "also_reported_by": []
     },
     {
+      "title": "TDI-Brooks takes on survey work for US LNG project in Louisiana",
+      "url": "https://www.offshore-energy.biz/tdi-brooks-takes-on-survey-work-for-us-lng-project-in-louisiana/",
+      "snippet": "U.S.-headquartered geotechnical and offshore survey research and service company TDI-Brooks has been hired to undertake a geophysical and geotechnical survey assignment for a liquefied natural gas (LNG) project off the coast of Louisiana, United States. The post TDI-Brooks takes on survey work for U",
+      "published_at": "2026-08-11T09:07:53+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Global Gas Turbine Orders Hit Record High as Power Demand Surges",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Global-Gas-Turbine-Orders-Hit-Record-High-as-Power-Demand-Surges.html",
       "snippet": "Global orders for gas turbines have hit a record high as demand for power generation surges, according to JP Morgan. New gas turbine orders in the second quarter stood at 38 GW, which was 29% higher than orders in the first quarter of the year, the bank said, as quoted by Bloomberg. The increase in ",
@@ -570,7 +725,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 33,
+      "score": 32,
       "tags": [
         "oil_macro"
       ],
@@ -585,7 +740,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 25.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.94
       },
       "matched": {
         "oil_macro": [
@@ -606,7 +761,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 16,
+      "score": 15,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -623,7 +778,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.1,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -648,67 +803,6 @@
         "url": "https://oilprice.com/Latest-Energy-News/World-News/Libya-Weighs-Force-Majeure-After-Drone-Attacks-on-Zawiya-Oil-Hub.html",
         "title": "Libya Weighs Force Majeure After Drone Attacks on Zawiya Oil Hub",
         "published_at": "2026-08-11T06:30:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "The Hormuz Shock Is Far From Over",
-      "url": "https://oilprice.com/Energy/Energy-General/The-Hormuz-Shock-Is-Far-From-Over.html",
-      "snippet": "The latest Bloomberg data show that shipping transits through the Strait of Hormuz remained largely disrupted Monday morning, even as Iran and Oman reportedly moved closer to a deal. Brent crude futures traded near $85 a barrel as markets priced in the possibility that a deal to reopen the maritime ",
-      "published_at": "2026-08-11T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 27.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 40.4,
-        "recency_multiplier": 0.56
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "supply_disruption": [
-          "disrupted"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "speculative": [
-          "reportedly"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/11/trump-demands-compensation-from-iran-as-talks-on-strait-of-hormuz-continue?traffic_source=rss",
-        "title": "Trump demands compensation from Iran as talks on Strait of Hormuz continue",
-        "published_at": "2026-08-11T02:32:47+00:00"
       },
       "hidden": true
     }
