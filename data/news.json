@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-12T09:21:58.644838+00:00",
-  "item_count": 16,
+  "generated_at": "2026-08-12T10:32:32.180969+00:00",
+  "item_count": 21,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 4
+    "high": 1,
+    "normal": 5
   },
-  "superseded_count": 3,
+  "superseded_count": 4,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,190 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1358
+        "ms": 1267
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 76912
+        "ms": 53884
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4037
+        "ms": 3508
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 354
+        "ms": 304
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 132
+        "ms": 533
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 140
+        "ms": 93
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1584
+        "ms": 892
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 565
+        "ms": 168
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 737
+        "ms": 485
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 321
+        "ms": 147
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 674
+        "ms": 304
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 22,
+        "count": 23,
         "error": null,
-        "ms": 85
+        "ms": 100
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 73
+        "ms": 130
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ballylumford CCGT - GU_503730(B32)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/d41cc263-b678-418a-9ab4-f0367d8b042c/5",
+      "snippet": "Published: 12.08.2026 11:44:56 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: HP Steam Leak Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Feed",
+      "published_at": "2026-08-12T09:44:56+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 74.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "leak"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "leak"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Brent Tops $89 Amid U.S.-Iran Stalemate Over Hormuz",
+      "url": "https://oilprice.com/Energy/Oil-Prices/Brent-Tops-89-Amid-US-Iran-Stalemate-Over-Hormuz.html",
+      "snippet": "Brent Crude oil prices rose above $89 per barrel in early trade in Europe on Wednesday as Iran and the United States offered contrasting claims about who controls the Strait of Hormuz. Brent Crude prices were up by 0.64% at $89.60 in the morning in Europe, and WTI Crude was rising by 0.94% at $83.90",
+      "published_at": "2026-08-12T09:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 64,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.2,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 63.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "wti",
+          "barrel"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 4,
+      "thread_started_at": "2026-08-11T21:14:56+00:00"
+    },
     {
       "title": "Wildberries under fire: Why is Ukraine targeting a Russian retail giant?",
       "url": "https://www.aljazeera.com/news/2026/8/12/ukraines-strikes-on-russias-wildberries-arent-about-the-front-line?traffic_source=rss",
@@ -134,7 +229,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -156,6 +251,85 @@
       "also_reported_by": []
     },
     {
+      "title": "Venture Global Logs Nearly 50 Percent Revenue Increase",
+      "url": "https://www.rigzone.com/news/venture_global_logs_nearly_50_percent_revenue_increase-12-aug-2026-184355-article/?rss=true",
+      "snippet": "That was thanks to LNG export volumes increasing 45 percent year-on-year to 478.3 trillion British thermal units.",
+      "published_at": "2026-08-12T10:09:03+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 53,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 7.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 46.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "More than 100 passengers rescued after Indonesia ferry fire",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/more-than-100-passengers-rescued-after-indonesia-ferry-fire?traffic_source=rss",
+      "snippet": "More than 100 passengers rescued after Indonesia ferry fire",
+      "published_at": "2026-08-12T09:26:45+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "PaxOcean repairs LNG carrier duo",
       "url": "https://lngprime.com/asia/paxocean-repairs-lng-carrier-duo/194950/",
       "snippet": "PaxOcean, a unit of Singapore’s Kuok and owner of five shipyards, has completed repair work on liquefied natural gas (LNG) carriers owned by Indonesia's Sillo Maritime and South Korea's Hyundai LNG Shipping.",
@@ -166,7 +340,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 45,
       "tags": [
         "supply_disruption",
         "lng"
@@ -183,7 +357,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.7,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.86
       },
       "matched": {
         "supply_disruption": [
@@ -202,91 +376,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil prices rise as attacks dent hopes for Strait of Hormuz reopening",
-      "url": "https://www.aljazeera.com/economy/2026/8/12/oil-prices-rise-as-attacks-dent-hopes-for-strait-of-hormuz-reopening?traffic_source=rss",
-      "snippet": "Brent crude climbs as renewed violence dampens hopes for a return to stability in energy markets.",
-      "published_at": "2026-08-12T03:41:42+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 22.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.5,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 3,
-      "thread_started_at": "2026-08-11T21:14:56+00:00"
-    },
-    {
-      "title": "YPF, partners target Argentina LNG FID by year-end",
-      "url": "https://lngprime.com/americas/ypf-partners-target-argentina-lng-fid-by-year-end/194964/",
-      "snippet": "Argentina’s state-owned oil and gas company YPF and its partners Eni and XRG are still targeting a final investment decision on the 12 mtpa Argentina LNG project by the end of this year, according to YPF CEO Horacio Marin.",
-      "published_at": "2026-08-12T07:47:10+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 20.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.9,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "final investment decision"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Drone Attack Hits Power Plant at Key Libyan Oil Hub",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Drone-Attack-Hits-Power-Plant-at-Key-Libyan-Oil-Hub.html",
       "snippet": "A drone has struck a power station at the Zawiya oil export terminal in Libya, suggesting continued attacks on one of the country’s main oil hubs. The power plant is in close proximity to the largest oil refinery in Libya, the AP noted in a report on the news. The attack follows earlier ones that ca",
@@ -297,7 +386,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 40,
       "tags": [
         "geopolitics",
         "infrastructure",
@@ -314,7 +403,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -332,6 +421,43 @@
       "also_reported_by": []
     },
     {
+      "title": "YPF, partners target Argentina LNG FID by year-end",
+      "url": "https://lngprime.com/americas/ypf-partners-target-argentina-lng-fid-by-year-end/194964/",
+      "snippet": "Argentina’s state-owned oil and gas company YPF and its partners Eni and XRG are still targeting a final investment decision on the 12 mtpa Argentina LNG project by the end of this year, according to YPF CEO Horacio Marin.",
+      "published_at": "2026-08-12T07:47:10+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 20.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.9,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "final investment decision"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Axpo and Vitol wrap up first Civitavecchia LNG bunkering op",
       "url": "https://lngprime.com/europe/axpo-and-vitol-wrap-up-first-civitavecchia-lng-bunkering-op/194981/",
       "snippet": "Switzerland-based Axpo and energy trader Vitol have completed what they say is the first ship-to-ship LNG refueling at the Port of Civitavecchia, Italy’s largest cruise port.",
@@ -342,7 +468,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "lng",
         "nuclear"
@@ -359,7 +485,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.8,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.86
       },
       "matched": {
         "lng": [
@@ -370,6 +496,43 @@
         ],
         "geography": [
           "italy"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "‘The hardest mission of my life’: A rescuer’s loss in the Lebanon War",
+      "url": "https://www.aljazeera.com/video/al-jazeera-originals/2026/8/12/aje-onl-or_leb_paramedics_teaser-120826?traffic_source=rss",
+      "snippet": "A Lebanon rescuer’s work is shaped by the daughter he lost in an Israeli attack on his station.",
+      "published_at": "2026-08-12T10:02:16+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "attack"
         ]
       },
       "duplicate_count": 0,
@@ -470,7 +633,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 34,
+      "score": 33,
       "tags": [
         "oil_macro"
       ],
@@ -485,7 +648,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 26.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "oil_macro": [
@@ -506,7 +669,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
@@ -522,7 +685,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 56.8,
-        "recency_multiplier": 0.45
+        "recency_multiplier": 0.41
       },
       "matched": {
         "geopolitics": [
@@ -532,92 +695,6 @@
         ],
         "geography": [
           "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "PIL takes delivery of new LNG-powered containership in China",
-      "url": "https://lngprime.com/asia/pil-takes-delivery-of-new-lng-powered-containership-in-china/194955/",
-      "snippet": "Singapore’s Pacific International Lines (PIL) has added another LNG-powered vessel to its fleet.",
-      "published_at": "2026-08-12T06:30:53+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.94
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russia Imports Indian Fuel as Refinery Crisis Deepens",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Imports-Indian-Fuel-as-Refinery-Crisis-Deepens.html",
-      "snippet": "Russia has started importing fuels from India, Bloomberg reported today, citing Kpler data that shows one cargo of 42,000 tons of gasoline from Nayara Energy’s Vadinar refinery arriving in Russia earlier this month. The Vadinar refinery is partly owned by Rosneft, which supplies the crude oil that i",
-      "published_at": "2026-08-12T05:45:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "oil_macro",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.1,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "refinery"
-        ],
-        "lng": [
-          "cargo"
-        ],
-        "geography": [
-          "russia",
-          "india"
         ]
       },
       "duplicate_count": 0,
@@ -660,53 +737,193 @@
       "also_reported_by": []
     },
     {
-      "title": "Inside the U.S.–Israel–Saudi Plan to Cut Iran Out of Global Oil",
-      "url": "https://oilprice.com/Energy/Energy-General/Inside-the-Secret-USIsraelSaudi-Plan-to-Cut-Iran-Out-of-the-Global-Oil-Suppl.html",
-      "snippet": "Whatever officially occurs next in the on-again/off-again negotiations towards a peace deal between the U.S. and Iran, unofficially Tehran knows that it has established de facto control over both the world’s two key maritime energy transit routes -- the Strait of Hormuz and the Bab el-Mandeb Strait ",
-      "published_at": "2026-08-12T00:00:00+00:00",
+      "title": "PIL takes delivery of new LNG-powered containership in China",
+      "url": "https://lngprime.com/asia/pil-takes-delivery-of-new-lng-powered-containership-in-china/194955/",
+      "snippet": "Singapore’s Pacific International Lines (PIL) has added another LNG-powered vessel to its fleet.",
+      "published_at": "2026-08-12T06:30:53+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.4,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Russia Imports Indian Fuel as Refinery Crisis Deepens",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Imports-Indian-Fuel-as-Refinery-Crisis-Deepens.html",
+      "snippet": "Russia has started importing fuels from India, Bloomberg reported today, citing Kpler data that shows one cargo of 42,000 tons of gasoline from Nayara Energy’s Vadinar refinery arriving in Russia earlier this month. The Vadinar refinery is partly owned by Rosneft, which supplies the crude oil that i",
+      "published_at": "2026-08-12T05:45:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 30,
       "tags": [
-        "geopolitics"
+        "oil_macro",
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 32.0,
+        "themes": 13.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.1,
+        "recency_multiplier": 0.81
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "refinery"
+        ],
+        "lng": [
+          "cargo"
+        ],
+        "geography": [
+          "russia",
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UAE Offers to Shuttle Iraqi Oil through Hormuz",
+      "url": "https://www.rigzone.com/news/wire/uae_offers_to_shuttle_iraqi_oil_through_hormuz-12-aug-2026-184352-article/?rss=true",
+      "snippet": "Emirati state-owned company ADNOC is offering to shuttle exports of Iraqi oil through the Strait of Hormuz, using its dark-transit playbook to transport Basrah and other crude to refiners in Asia, according to people familiar with the matter.",
+      "published_at": "2026-08-12T08:13:47+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 16,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 19.3,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 56.8,
-        "recency_multiplier": 0.57
+        "raw": 46.3,
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
-          "negotiations",
-          "strait of hormuz",
-          "bab el-mandeb"
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude"
         ],
         "geography": [
           "strait of hormuz",
-          "hormuz",
-          "bab el-mandeb"
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/economy/2026/8/12/oil-prices-rise-as-attacks-dent-hopes-for-strait-of-hormuz-reopening?traffic_source=rss",
-        "title": "Oil prices rise as attacks dent hopes for Strait of Hormuz reopening",
-        "published_at": "2026-08-12T03:41:42+00:00"
+        "url": "https://oilprice.com/Energy/Oil-Prices/Brent-Tops-89-Amid-US-Iran-Stalemate-Over-Hormuz.html",
+        "title": "Brent Tops $89 Amid U.S.-Iran Stalemate Over Hormuz",
+        "published_at": "2026-08-12T09:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Oil prices rise as attacks dent hopes for Strait of Hormuz reopening",
+      "url": "https://www.aljazeera.com/economy/2026/8/12/oil-prices-rise-as-attacks-dent-hopes-for-strait-of-hormuz-reopening?traffic_source=rss",
+      "snippet": "Brent crude climbs as renewed violence dampens hopes for a return to stability in energy markets.",
+      "published_at": "2026-08-12T03:41:42+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 12,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 22.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.5,
+        "recency_multiplier": 0.69
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Energy/Oil-Prices/Brent-Tops-89-Amid-US-Iran-Stalemate-Over-Hormuz.html",
+        "title": "Brent Tops $89 Amid U.S.-Iran Stalemate Over Hormuz",
+        "published_at": "2026-08-12T09:30:00+00:00"
       },
       "hidden": true
     },
@@ -738,7 +955,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 72.2,
-        "recency_multiplier": 0.46
+        "recency_multiplier": 0.42
       },
       "matched": {
         "geopolitics": [
@@ -759,21 +976,21 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/economy/2026/8/12/oil-prices-rise-as-attacks-dent-hopes-for-strait-of-hormuz-reopening?traffic_source=rss",
-        "title": "Oil prices rise as attacks dent hopes for Strait of Hormuz reopening",
-        "published_at": "2026-08-12T03:41:42+00:00"
+        "url": "https://oilprice.com/Energy/Oil-Prices/Brent-Tops-89-Amid-US-Iran-Stalemate-Over-Hormuz.html",
+        "title": "Brent Tops $89 Amid U.S.-Iran Stalemate Over Hormuz",
+        "published_at": "2026-08-12T09:30:00+00:00"
       },
       "hidden": true
     },
     {
-      "title": "Iran holds firm on Hormuz conditions as Pakistan’s Naqvi visits Tehran",
-      "url": "https://www.aljazeera.com/news/2026/8/12/iran-holds-firm-on-hormuz-conditions-as-pakistans-naqvi-visits-tehran?traffic_source=rss",
-      "snippet": "Iran&#039;s top security official says the Strait of Hormuz will not reopen unless the US meets its conditions.",
-      "published_at": "2026-08-12T02:29:30+00:00",
+      "title": "Inside the U.S.–Israel–Saudi Plan to Cut Iran Out of Global Oil",
+      "url": "https://oilprice.com/Energy/Energy-General/Inside-the-Secret-USIsraelSaudi-Plan-to-Cut-Iran-Out-of-the-Global-Oil-Suppl.html",
+      "snippet": "Whatever officially occurs next in the on-again/off-again negotiations towards a peace deal between the U.S. and Iran, unofficially Tehran knows that it has established de facto control over both the world’s two key maritime energy transit routes -- the Strait of Hormuz and the Bab el-Mandeb Strait ",
+      "published_at": "2026-08-12T00:00:00+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
       "score": 11,
@@ -783,33 +1000,36 @@
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 16.6,
+        "authority": 8.8,
+        "themes": 32.0,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 0.69
+        "raw": 56.8,
+        "recency_multiplier": 0.52
       },
       "matched": {
         "geopolitics": [
-          "strait of hormuz"
+          "negotiations",
+          "strait of hormuz",
+          "bab el-mandeb"
         ],
         "geography": [
           "strait of hormuz",
-          "hormuz"
+          "hormuz",
+          "bab el-mandeb"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/economy/2026/8/12/oil-prices-rise-as-attacks-dent-hopes-for-strait-of-hormuz-reopening?traffic_source=rss",
-        "title": "Oil prices rise as attacks dent hopes for Strait of Hormuz reopening",
-        "published_at": "2026-08-12T03:41:42+00:00"
+        "url": "https://oilprice.com/Energy/Oil-Prices/Brent-Tops-89-Amid-US-Iran-Stalemate-Over-Hormuz.html",
+        "title": "Brent Tops $89 Amid U.S.-Iran Stalemate Over Hormuz",
+        "published_at": "2026-08-12T09:30:00+00:00"
       },
       "hidden": true
     }
