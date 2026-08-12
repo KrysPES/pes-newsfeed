@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-12T15:42:24.145863+00:00",
+  "generated_at": "2026-08-12T16:37:58.777873+00:00",
   "item_count": 24,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 9
+    "high": 0,
+    "normal": 8
   },
   "superseded_count": 3,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1055
+        "ms": 1361
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 58549
+        "ms": 45294
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2563
+        "ms": 3536
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 302
+        "ms": 771
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 262
+        "ms": 561
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 179
+        "ms": 261
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 844
+        "ms": 1335
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 176
+        "ms": 290
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 574
+        "ms": 626
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 187
+        "ms": 293
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 454
+        "ms": 654
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 25,
+        "count": 27,
         "error": null,
-        "ms": 515
+        "ms": 167
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 194
+        "ms": 174
       }
     ]
   },
@@ -117,13 +117,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 66,
+      "score": 65,
       "tags": [
         "geopolitics",
         "supply_disruption",
         "lng"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -135,7 +135,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -173,7 +173,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 65,
+      "score": 62,
       "tags": [
         "supply_disruption"
       ],
@@ -188,7 +188,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.9
       },
       "matched": {
         "supply_disruption": [
@@ -205,58 +205,6 @@
       "duplicate_count": 3,
       "also_reported_by": [],
       "first_seen_at": "2026-08-12T09:44:56+00:00"
-    },
-    {
-      "title": "IEA: Global Oil Deficit To Hit 1.8 Million Bpd This Quarter",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/IEA-Global-Oil-Deficit-To-Hit-18-Million-Bpd-This-Quarter.html",
-      "snippet": "The IEA has slashed its 2026 global oil supply forecast, with output now expected to plunge 4.3 million barrels per day this year as the failure to reopen the Strait of Hormuz pushes the market deeper into deficit. The latest forecast is considerably worse than the 3.7-million-bpd decline the agency",
-      "published_at": "2026-08-12T12:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 62,
-      "tags": [
-        "geopolitics",
-        "weather",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 21.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.7,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "weather": [
-          "forecast"
-        ],
-        "oil_macro": [
-          "barrels"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "unplanned": [
-          "failure"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "As Strait of Hormuz transit drops, Trump again says US has ‘control’",
@@ -300,8 +248,60 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 3,
+      "update_count": 2,
       "thread_started_at": "2026-08-12T08:13:47+00:00"
+    },
+    {
+      "title": "IEA: Global Oil Deficit To Hit 1.8 Million Bpd This Quarter",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/IEA-Global-Oil-Deficit-To-Hit-18-Million-Bpd-This-Quarter.html",
+      "snippet": "The IEA has slashed its 2026 global oil supply forecast, with output now expected to plunge 4.3 million barrels per day this year as the failure to reopen the Strait of Hormuz pushes the market deeper into deficit. The latest forecast is considerably worse than the 3.7-million-bpd decline the agency",
+      "published_at": "2026-08-12T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 60,
+      "tags": [
+        "geopolitics",
+        "weather",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.7,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "weather": [
+          "forecast"
+        ],
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "failure"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Indian Refiners Seek 6 Million Barrels of Spot Crude",
@@ -314,7 +314,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 52,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -331,7 +331,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.5,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -361,7 +361,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 48,
       "tags": [
         "nuclear"
       ],
@@ -377,7 +377,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "nuclear": [
@@ -404,7 +404,7 @@
       "authority": 20,
       "tier": 2,
       "has_magnitude": true,
-      "score": 46,
+      "score": 44,
       "tags": [
         "weather"
       ],
@@ -420,7 +420,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 37.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "weather": [
@@ -444,7 +444,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "lng",
         "infrastructure"
@@ -461,7 +461,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.0,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.85
       },
       "matched": {
         "lng": [
@@ -479,46 +479,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Venture Global Logs Nearly 50 Percent Revenue Increase",
-      "url": "https://www.rigzone.com/news/venture_global_logs_nearly_50_percent_revenue_increase-12-aug-2026-184355-article/?rss=true",
-      "snippet": "That was thanks to LNG export volumes increasing 45 percent year-on-year to 478.3 trillion British thermal units.",
-      "published_at": "2026-08-12T10:09:03+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 43,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 7.3,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 46.2,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "british"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Australian reactor marks 20 years of operations",
       "url": "https://www.world-nuclear-news.org/articles/australian-reactor-marks-20-years-of-operations",
       "snippet": "Australia's nuclear science and technology organisation ANSTO is marking 20 years of operations for its multi-purpose nuclear reactor at Lucas Heights in southern Sydney.",
@@ -529,48 +489,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor"
-        ],
-        "geography": [
-          "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "First fuel loaded into Tianwan unit 7",
-      "url": "https://www.world-nuclear-news.org/articles/first-fuel-loaded-into-tianwan-unit-7",
-      "snippet": "The initial loading of fuel assemblies into the core of unit 7 of the Tianwan nuclear power plant has begun. It is the first of two Russian-designed VVER-1200 reactors under construction as the site in China's Jiangsu province.",
-      "published_at": "2026-08-12T13:11:09+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
+      "score": 41,
       "tags": [
         "nuclear"
       ],
@@ -586,7 +505,88 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.4,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactor"
+        ],
+        "geography": [
+          "australia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Venture Global Logs Nearly 50 Percent Revenue Increase",
+      "url": "https://www.rigzone.com/news/venture_global_logs_nearly_50_percent_revenue_increase-12-aug-2026-184355-article/?rss=true",
+      "snippet": "That was thanks to LNG export volumes increasing 45 percent year-on-year to 478.3 trillion British thermal units.",
+      "published_at": "2026-08-12T10:09:03+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 7.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 46.2,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "First fuel loaded into Tianwan unit 7",
+      "url": "https://www.world-nuclear-news.org/articles/first-fuel-loaded-into-tianwan-unit-7",
+      "snippet": "The initial loading of fuel assemblies into the core of unit 7 of the Tianwan nuclear power plant has begun. It is the first of two Russian-designed VVER-1200 reactors under construction at the site in China's Jiangsu province.",
+      "published_at": "2026-08-12T13:11:09+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.4,
+        "recency_multiplier": 0.89
       },
       "matched": {
         "nuclear": [
@@ -612,7 +612,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -628,7 +628,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.89
       },
       "matched": {
         "geopolitics": [
@@ -653,7 +653,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 36,
       "tags": [
         "lng"
       ],
@@ -668,50 +668,11 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.86
       },
       "matched": {
         "lng": [
           "lng"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "More than 100 passengers rescued after Indonesia ferry fire",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/more-than-100-passengers-rescued-after-indonesia-ferry-fire?traffic_source=rss",
-      "snippet": "More than 100 passengers rescued after Indonesia ferry fire",
-      "published_at": "2026-08-12T09:26:45+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -763,36 +724,40 @@
       "also_reported_by": []
     },
     {
-      "title": "US inflation eases as food and fuel costs cool",
-      "url": "https://www.bbc.co.uk/news/articles/c0qv2nn1gpeo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Annual US inflation dipped to 3.4% in July, with food costs slowing and housing keeping prices slightly higher.",
-      "published_at": "2026-08-12T14:09:48+00:00",
+      "title": "Norway $2.3 Trillion Wealth Fund Posts Record-High Profit in H1",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Norway-23-Trillion-Wealth-Fund-Posts-Record-High-Profit-in-H1.html",
+      "snippet": "The world’s biggest sovereign wealth fund, Norway’s $2.3-trillion Government Pension Fund Global, posted a record-high profit of $185 billion for the first half of 2026, as Asian technology stocks boosted its returns and profit on the portfolio. Norway’s Government Pension Fund Global (GPFG), which ",
+      "published_at": "2026-08-12T16:30:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 35,
+      "has_magnitude": false,
+      "score": 34,
       "tags": [
-        "oil_macro"
+        "gas_storage"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 4.5,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 26.7,
+        "raw": 25.5,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "oil_macro": [
-          "inflation"
+        "gas_storage": [
+          "stocks"
+        ],
+        "geography": [
+          "norway"
         ]
       },
       "duplicate_count": 0,
@@ -835,46 +800,75 @@
       "also_reported_by": []
     },
     {
-      "title": "PaxOcean repairs LNG carrier duo",
-      "url": "https://lngprime.com/asia/paxocean-repairs-lng-carrier-duo/194950/",
-      "snippet": "PaxOcean, a unit of Singapore’s Kuok and owner of five shipyards, has completed repair work on liquefied natural gas (LNG) carriers owned by Indonesia's Sillo Maritime and South Korea's Hyundai LNG Shipping.",
-      "published_at": "2026-08-12T06:36:07+00:00",
+      "title": "US inflation eases as food and fuel costs cool",
+      "url": "https://www.bbc.co.uk/news/articles/c0qv2nn1gpeo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Annual US inflation dipped to 3.4% in July, with food costs slowing and housing keeping prices slightly higher.",
+      "published_at": "2026-08-12T14:09:48+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
+      "has_magnitude": true,
+      "score": 34,
       "tags": [
-        "supply_disruption",
-        "lng"
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 25.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 10.2,
+        "themes": 4.5,
+        "geography": 0.0,
         "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 26.7,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "oil_macro": [
+          "inflation"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "More than 100 passengers rescued after Indonesia ferry fire",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/more-than-100-passengers-rescued-after-indonesia-ferry-fire?traffic_source=rss",
+      "snippet": "More than 100 passengers rescued after Indonesia ferry fire",
+      "published_at": "2026-08-12T09:26:45+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.7,
-        "recency_multiplier": 0.58
+        "raw": 37.9,
+        "recency_multiplier": 0.67
       },
       "matched": {
         "supply_disruption": [
-          "repairs",
-          "repair"
+          "fire"
         ],
-        "lng": [
-          "lng",
-          "carrier"
-        ],
-        "geography": [
-          "korea"
+        "unplanned": [
+          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -907,7 +901,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "oil_macro": [
@@ -922,84 +916,93 @@
       "also_reported_by": []
     },
     {
-      "title": "Approval of changes to Access Rules for the North Sea Link interconnector",
-      "url": "https://www.ofgem.gov.uk/decision/approval-changes-access-rules-north-sea-link-interconnector",
-      "snippet": "Our decision to approve changes to the access rules in SLC 11A of the electricity interconnector licence submitted by NGNSL.",
-      "published_at": "2026-08-12T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
+      "title": "PaxOcean repairs LNG carrier duo",
+      "url": "https://lngprime.com/asia/paxocean-repairs-lng-carrier-duo/194950/",
+      "snippet": "PaxOcean, a unit of Singapore’s Kuok and owner of five shipyards, has completed repair work on liquefied natural gas (LNG) carriers owned by Indonesia's Sillo Maritime and South Korea's Hyundai LNG Shipping.",
+      "published_at": "2026-08-12T06:36:07+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 32,
       "tags": [
-        "infrastructure",
-        "regulation"
+        "supply_disruption",
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 16.1,
-        "themes": 10.4,
-        "geography": 0.0,
+        "authority": 13.1,
+        "themes": 25.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 26.5,
-        "recency_multiplier": 0.88
+        "raw": 43.7,
+        "recency_multiplier": 0.54
       },
       "matched": {
-        "infrastructure": [
-          "interconnector"
+        "supply_disruption": [
+          "repairs",
+          "repair"
         ],
-        "regulation": [
-          "licence"
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "geography": [
+          "korea"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Putin warns of tit-for-tat seizures of European vessels",
-      "url": "https://www.aljazeera.com/news/2026/8/12/putin-warns-of-tit-for-tat-seizures-of-european-vessels?traffic_source=rss",
-      "snippet": "If European states seize vessels with Russian cargo, Moscow will respond in kind &#039;wherever necessary&#039;, says Putin.",
-      "published_at": "2026-08-12T11:11:26+00:00",
+      "title": "Is Russia’s economy cracking despite the Iran war windfall?",
+      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/8/12/is-russias-economy-cracking-despite-the-iran-war-windfall?traffic_source=rss",
+      "snippet": "A widening deficit and Ukrainian strikes are testing Russia&#039;s economy, even as war in the Middle East lifts oil revenue.",
+      "published_at": "2026-08-12T15:36:33+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 31,
       "tags": [
-        "lng"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 26.8,
-        "recency_multiplier": 0.82
+        "raw": 23.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "cargo"
+        "geopolitics": [
+          "war"
         ],
         "geography": [
-          "european"
+          "russia",
+          "middle east"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-12T09:30:00+00:00"
     },
     {
       "title": "Brent Tops $89 Amid U.S.-Iran Stalemate Over Hormuz",
@@ -1012,7 +1015,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 16,
+      "score": 15,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -1029,7 +1032,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 63.0,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -1050,9 +1053,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/12/as-strait-of-hormuz-transit-drops-trump-again-says-us-has-control?traffic_source=rss",
-        "title": "As Strait of Hormuz transit drops, Trump again says US has ‘control’",
-        "published_at": "2026-08-12T15:07:41+00:00"
+        "url": "https://www.aljazeera.com/video/counting-the-cost/2026/8/12/is-russias-economy-cracking-despite-the-iran-war-windfall?traffic_source=rss",
+        "title": "Is Russia’s economy cracking despite the Iran war windfall?",
+        "published_at": "2026-08-12T15:36:33+00:00"
       },
       "hidden": true
     },
@@ -1083,7 +1086,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.4,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -1115,7 +1118,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 11,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -1132,7 +1135,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.3,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.61
       },
       "matched": {
         "geopolitics": [
