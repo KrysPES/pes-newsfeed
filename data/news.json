@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-13T12:10:00.781227+00:00",
-  "item_count": 15,
+  "generated_at": "2026-08-13T13:44:57.825957+00:00",
+  "item_count": 18,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 4
+    "normal": 6
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1311
+        "ms": 1360
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 95761
+        "ms": 44602
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2822
+        "ms": 4194
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 591
+        "ms": 333
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 837
+        "ms": 609
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 174
+        "ms": 164
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 45,
+        "count": 44,
         "error": null,
-        "ms": 932
+        "ms": 1388
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 117
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 198
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 770
+        "ms": 744
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 258
+        "ms": 340
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 513
+        "ms": 1011
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 35,
         "error": null,
-        "ms": 153
+        "ms": 207
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 304
+        "ms": 76
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 70,
+      "score": 67,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "supply_disruption": [
@@ -162,7 +162,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 52,
       "tags": [
         "geopolitics",
         "lng"
@@ -179,7 +179,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "geopolitics": [
@@ -193,15 +193,13 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-13T09:43:38+00:00"
+      "also_reported_by": []
     },
     {
-      "title": "Yemeni forces say Houthi attack repelled in Taiz amid escalation",
-      "url": "https://www.aljazeera.com/news/2026/8/13/yemeni-forces-say-houthi-attack-repelled-in-taiz-amid-escalation?traffic_source=rss",
-      "snippet": "Military escalation continues for days after the Yemeni government announced it is attacking Houthi positions.",
-      "published_at": "2026-08-13T09:30:24+00:00",
+      "title": "US-Iran talks in deadlock – what’s the latest?",
+      "url": "https://www.aljazeera.com/news/2026/8/13/us-iran-talks-in-deadlock-whats-the-latest?traffic_source=rss",
+      "snippet": "The US and Iran continue their standoff in the Strait of Hormuz as mediators try to coax talks.",
+      "published_at": "2026-08-13T11:56:40+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
@@ -216,22 +214,23 @@
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.4,
-        "recency_multiplier": 0.95
+        "raw": 42.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "escalation",
-          "attack"
+          "strait of hormuz"
         ],
-        "urgency": [
-          "announced"
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -248,7 +247,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 47,
       "tags": [
         "lng",
         "infrastructure"
@@ -264,7 +263,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "lng": [
@@ -281,6 +280,172 @@
       "also_reported_by": []
     },
     {
+      "title": "Yemeni forces say Houthi attack repelled in Taiz amid escalation",
+      "url": "https://www.aljazeera.com/news/2026/8/13/yemeni-forces-say-houthi-attack-repelled-in-taiz-amid-escalation?traffic_source=rss",
+      "snippet": "Military escalation continues for days after the Yemeni government announced it is attacking Houthi positions.",
+      "published_at": "2026-08-13T09:30:24+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.4,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "attack"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Decommissioning Spending in UK North Sea Hits Record High",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Decommissioning-Spending-in-UK-North-Sea-Hits-Record-High.html",
+      "snippet": "Decommissioning remained a major activity across the UK North Sea in 2025, with industry spending hitting a record-high of £2.6 billion, or $3.5 billion, the North Sea industry regulator said in a report on Thursday. Well decommissioning remains the single largest component of forecast decommissioni",
+      "published_at": "2026-08-13T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "nuclear",
+        "weather"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "decommissioning"
+        ],
+        "weather": [
+          "forecast"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "With platform topside ready for sail-away, North Sea gas project edges closer to start-up (Gallery)",
+      "url": "https://www.offshore-energy.biz/with-platform-topside-ready-for-sail-away-north-sea-gas-project-edges-closer-to-start-up-gallery/",
+      "snippet": "Netherlands-based heavy lifting and transport provider Mammoet has assisted Aibel, which is responsible for the engineering, procurement, and construction (EPC) of a topside segment of an unmanned processing platform to be deployed at a gas development in the Norwegian North Sea, with critical heavy",
+      "published_at": "2026-08-13T09:48:25+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 19.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.6,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "infrastructure": [
+          "platform",
+          "start-up"
+        ],
+        "geography": [
+          "netherlands",
+          "norwegian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Singaporean firm gets to work with Subsea7 in Arabian Gulf",
+      "url": "https://www.offshore-energy.biz/singaporean-firm-gets-to-work-with-subsea7-in-arabian-gulf/",
+      "snippet": "Singapore’s offshore marine solutions company PACC Offshore Services Holdings (POSH) has won a contract with [&#8230;] The post Singaporean firm gets to work with Subsea7 in Arabian Gulf appeared first on Offshore Energy .",
+      "published_at": "2026-08-13T11:16:12+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 16.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.0,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "arabian gulf"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Shell expands LNG bunkering network with first Valencia op",
       "url": "https://lngprime.com/europe/shell-expands-lng-bunkering-network-with-first-valencia-op/195054/",
       "snippet": "UK-based LNG giant Shell has expanded its global LNG bunkering network with the completion of its first operation in Valencia, Spain.",
@@ -291,12 +456,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 41,
       "tags": [
         "lng",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -308,7 +473,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.5,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.8
       },
       "matched": {
         "lng": [
@@ -325,6 +490,49 @@
       "also_reported_by": []
     },
     {
+      "title": "TotalEnergies handpicks Daewoo E&C for work on LNG project in Oceania",
+      "url": "https://www.offshore-energy.biz/totalenergies-handpicks-daewoo-ec-for-work-on-lng-project-in-oceania/",
+      "snippet": "France’s energy giant TotalEnergies has selected Seoul-based Daewoo Engineering &#38; Construction (Daewoo E&#38;C) as the preferred bidder for a major package on a liquefied natural gas (LNG) project in Papua New Guinea, Oceania. The post TotalEnergies handpicks Daewoo E C for work on LNG project i",
+      "published_at": "2026-08-13T12:29:06+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "france"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "LNG Prime"
+      ],
+      "first_seen_at": "2026-08-13T10:25:23+00:00"
+    },
+    {
       "title": "Golar orders fourth FLNG in China",
       "url": "https://lngprime.com/europe/golar-orders-fourth-flng-in-china/195059/",
       "snippet": "Floating LNG player Golar LNG said that it had executed an engineering, procurement, and construction (EPC) agreement with China's Yantai CIMC Raffles Offshore for its fourth FLNG and second MKII FLNG with an annual liquefaction capacity of 3.5 mtpa.",
@@ -335,7 +543,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 37,
       "tags": [
         "lng"
       ],
@@ -351,7 +559,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.89
       },
       "matched": {
         "lng": [
@@ -360,47 +568,6 @@
         ],
         "geography": [
           "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "As temperatures soar, ‘exceptionally serious’ drought imperils UK farmers",
-      "url": "https://www.aljazeera.com/news/2026/8/13/uk-drought-imperils-farmers?traffic_source=rss",
-      "snippet": "Farmers trying to adapt to extreme weather say even with the best planning, their industry is facing its toughest test.",
-      "published_at": "2026-08-13T08:15:17+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 12.3,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.8,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "weather": [
-          "drought",
-          "temperatures"
-        ],
-        "geography": [
-          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -417,7 +584,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 37,
       "tags": [
         "lng"
       ],
@@ -432,7 +599,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.78
       },
       "matched": {
         "lng": [
@@ -440,46 +607,6 @@
         ],
         "urgency": [
           "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "TotalEnergies picks Daewoo E&C for Papua LNG contract",
-      "url": "https://lngprime.com/asia/totalenergies-picks-daewoo-ec-for-papua-lng-contract/195023/",
-      "snippet": "French energy giant TotalEnergies and its partners in the planned Papua LNG project in Papua New Guinea have selected South Korea’s Daewoo E&#038;C as the preferred bidder for the EPCC of the project's central processing facility and well pads.",
-      "published_at": "2026-08-13T10:25:23+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "french"
         ]
       },
       "duplicate_count": 0,
@@ -496,7 +623,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 35,
       "tags": [
         "lng"
       ],
@@ -512,7 +639,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.6,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.68
       },
       "matched": {
         "lng": [
@@ -534,98 +661,7 @@
       "also_reported_by": []
     },
     {
-      "title": "EIA Sees 600,000 Bpd of Middle East Oil Still Offline by End-2027",
-      "url": "https://oilprice.com/Energy/Crude-Oil/EIA-Sees-600000-Bpd-of-Middle-East-Oil-Still-Offline-by-End-2027.html",
-      "snippet": "The longer-than-expected closure of the Strait of Hormuz means that some part of the oil production in the Middle East will remain shut in through the end of next year, the U.S. Energy Information Administration (EIA) said in its latest Short-Term Energy Outlook (STEO) this week. The renewed tension",
-      "published_at": "2026-08-12T22:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 38,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 21.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 74.4,
-        "recency_multiplier": 0.39
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "supply_disruption": [
-          "offline"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "urgency": [
-          "shut"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Prices Fall as OPEC and IEA Slash 2026 Demand Outlooks",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-OPEC-and-IEA-Slash-2026-Demand-Outlooks.html",
-      "snippet": "Despite the ongoing stalemate in the U.S.-Iran talks and persistent risks to shipping in the Middle East, oil prices fell in Asian trading on Thursday, weighed down by cuts to 2026 oil demand forecasts from both OPEC and the International Energy Agency. Brent Crude prices dropped by 0.5% to trade be",
-      "published_at": "2026-08-13T05:25:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 37,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 41.8,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "oil_macro": [
-          "opec",
-          "crude",
-          "brent",
-          "demand"
-        ],
-        "geography": [
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "More than 135 million people in Europe set for temperatures over 35C",
+      "title": "More than 135 million people in Europe face temperatures over 35C",
       "url": "https://www.aljazeera.com/news/2026/8/13/more-than-135-million-people-in-europe-set-for-temperatures-over-35c?traffic_source=rss",
       "snippet": "Europe is the fastest-warming continent in the world and in some places is ill-equipped to deal with hot weather.",
       "published_at": "2026-08-13T11:38:39+00:00",
@@ -651,7 +687,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "weather": [
@@ -659,6 +695,137 @@
         ],
         "geography": [
           "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Prices Fall as OPEC and IEA Slash 2026 Demand Outlooks",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-OPEC-and-IEA-Slash-2026-Demand-Outlooks.html",
+      "snippet": "Despite the ongoing stalemate in the U.S.-Iran talks and persistent risks to shipping in the Middle East, oil prices fell in Asian trading on Thursday, weighed down by cuts to 2026 oil demand forecasts from both OPEC and the International Energy Agency. Brent Crude prices dropped by 0.5% to trade be",
+      "published_at": "2026-08-13T05:25:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 34,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 41.8,
+        "recency_multiplier": 0.61
+      },
+      "matched": {
+        "oil_macro": [
+          "opec",
+          "crude",
+          "brent",
+          "demand"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "EIA Sees 600,000 Bpd of Middle East Oil Still Offline by End-2027",
+      "url": "https://oilprice.com/Energy/Crude-Oil/EIA-Sees-600000-Bpd-of-Middle-East-Oil-Still-Offline-by-End-2027.html",
+      "snippet": "The longer-than-expected closure of the Strait of Hormuz means that some part of the oil production in the Middle East will remain shut in through the end of next year, the U.S. Energy Information Administration (EIA) said in its latest Short-Term Energy Outlook (STEO) this week. The renewed tension",
+      "published_at": "2026-08-12T22:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 34,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 74.4,
+        "recency_multiplier": 0.35
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "offline"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Falling Danube flow forces shutdown of Romania’s sole nuclear plant",
+      "url": "https://www.aljazeera.com/news/2026/8/13/falling-danube-flow-forces-shutdown-of-romanias-sole-nuclear-plant?traffic_source=rss",
+      "snippet": "Romania had tried to avert a total shutdown of the plant, which usually generates a fifth of the country&#039;s electricity.",
+      "published_at": "2026-08-13T12:30:08+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "supply_disruption",
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 12.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "shutdown"
+        ],
+        "nuclear": [
+          "nuclear"
         ]
       },
       "duplicate_count": 0,
@@ -699,54 +866,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Japan protests as Russia’s Putin visits disputed Kuril Islands",
-      "url": "https://www.aljazeera.com/news/2026/8/13/japan-protests-as-russias-putin-visits-disputed-kuril-islands?traffic_source=rss",
-      "snippet": "Japanese PM says Putin&#039;s visit to the Pacific island chain, seized by the Soviet Union in 1945, is &#039;unacceptable&#039;.",
-      "published_at": "2026-08-13T09:43:38+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "geopolitics": [
-          "seized"
-        ],
-        "geography": [
-          "russia",
-          "japan"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cn0npn249qvo?at_medium=RSS&at_campaign=rss",
-        "title": "UK defends seizing shadow fleet tanker after Putin threat",
-        "published_at": "2026-08-13T11:05:03+00:00"
-      },
-      "hidden": true
     }
   ]
 }
