@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-13T08:08:22.422284+00:00",
-  "item_count": 8,
+  "generated_at": "2026-08-13T09:24:23.458368+00:00",
+  "item_count": 12,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 5
+    "high": 1,
+    "normal": 8
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,140 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1037
+        "ms": 1344
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 66452
+        "ms": 67772
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 17642
+        "ms": 2918
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 574
+        "ms": 599
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 219
+        "ms": 796
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 98
+        "ms": 159
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 46,
+        "count": 45,
         "error": null,
-        "ms": 850
+        "ms": 1202
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 174
+        "ms": 207
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 816
+        "ms": 716
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 145
+        "ms": 405
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 440
+        "ms": 770
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 31,
+        "count": 32,
         "error": null,
-        "ms": 55
+        "ms": 114
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 62
+        "ms": 95
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ballylumford CCGT - GU_503730(B32)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/d41cc263-b678-418a-9ab4-f0367d8b042c/6",
+      "snippet": "Published: 13.08.2026 11:10:54 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: HP Steam Leak Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Feed",
+      "published_at": "2026-08-13T09:10:54+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 74.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "leak"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "leak"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Will the Houthis shut down Saudi Arabian shipping?",
       "url": "https://www.aljazeera.com/video/project-force-2/2026/8/13/will-the-houthis-shut-down-saudi-arabian-shipping?traffic_source=rss",
@@ -117,7 +162,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 64,
+      "score": 61,
       "tags": [
         "geopolitics"
       ],
@@ -132,7 +177,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 63.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -160,7 +205,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 49,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -177,7 +222,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.5,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -195,9 +240,92 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-13T04:55:58+00:00"
+      "also_reported_by": []
+    },
+    {
+      "title": "Shell expands LNG bunkering network with first Valencia op",
+      "url": "https://lngprime.com/europe/shell-expands-lng-bunkering-network-with-first-valencia-op/195054/",
+      "snippet": "UK-based LNG giant Shell has expanded its global LNG bunkering network with the completion of its first operation in Valencia, Spain.",
+      "published_at": "2026-08-13T08:54:02+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 11.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 40.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "network"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "As temperatures soar, ‘exceptionally serious’ drought imperils UK farmers",
+      "url": "https://www.aljazeera.com/news/2026/8/13/uk-drought-imperils-farmers?traffic_source=rss",
+      "snippet": "Farmers trying to adapt to extreme weather say even with the best planning, their industry is facing its toughest test.",
+      "published_at": "2026-08-13T08:15:17+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "weather"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 12.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "drought",
+          "temperatures"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "South Korean Fleet Reshuffle Creates Asia’s Largest LNG Carrier Operator",
@@ -210,7 +338,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 46,
       "tags": [
         "lng"
       ],
@@ -226,7 +354,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "lng": [
@@ -248,6 +376,45 @@
       "also_reported_by": []
     },
     {
+      "title": "SK Shipping’s LNG fleet to rise to 32 vessels after asset swap deal",
+      "url": "https://lngprime.com/asia/sk-shippings-lng-fleet-to-rise-to-32-vessels-after-asset-swap-deal/195042/",
+      "snippet": "SK Shipping's fleet of liquefied natural gas (LNG) carriers will double to 32 vessels as part of an asset swap deal with H-Line Shipping announced by South Korean private equity firm Hahn &#038; ​Co.",
+      "published_at": "2026-08-13T08:31:28+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Oil Prices Fall as OPEC and IEA Slash 2026 Demand Outlooks",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-OPEC-and-IEA-Slash-2026-Demand-Outlooks.html",
       "snippet": "Despite the ongoing stalemate in the U.S.-Iran talks and persistent risks to shipping in the Middle East, oil prices fell in Asian trading on Thursday, weighed down by cuts to 2026 oil demand forecasts from both OPEC and the International Energy Agency. Brent Crude prices dropped by 0.5% to trade be",
@@ -258,7 +425,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 47,
+      "score": 44,
       "tags": [
         "oil_macro"
       ],
@@ -274,7 +441,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.8,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.86
       },
       "matched": {
         "oil_macro": [
@@ -301,7 +468,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 47,
+      "score": 44,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -318,7 +485,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 74.4,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.48
       },
       "matched": {
         "geopolitics": [
@@ -342,7 +509,7 @@
       "title": "TotalEnergies picks Daewoo E&C for Papua LNG contract",
       "url": "https://lngprime.com/asia/totalenergies-picks-daewoo-ec-for-papua-lng-contract/195023/",
       "snippet": "French energy giant TotalEnergies and its partners in the planned Papua LNG project in Papua New Guinea have selected South Korea’s Daewoo E&#038;C as the preferred bidder for the EPCC of the project's central processing facility and well pads.",
-      "published_at": "2026-08-13T06:42:23+00:00",
+      "published_at": "2026-08-13T08:56:23+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
@@ -379,94 +546,80 @@
       "also_reported_by": []
     },
     {
-      "title": "Ukrainian Attack Halts Operations at Key Russian Black Sea Grain Terminals",
-      "url": "https://oilprice.com/Geopolitics/Europe/Ukrainian-Attack-Halts-Operations-at-Key-Russian-Black-Sea-Grain-Terminals.html",
-      "snippet": "Did President Zelensky and the Ukrainian armed forces not listen to US Vice President JD Vance's warnings and request after all? On Wednesday a \"massive\" Ukrainian drone and missile strike was unleashed on Russia's port city of Novorossiysk, which badly damaged grain export terminals at what also co",
-      "published_at": "2026-08-12T23:00:00+00:00",
+      "title": "Taihan’s recently purchased CLV ready for first offshore wind assignment",
+      "url": "https://www.offshore-energy.biz/taihans-recently-purchased-clv-ready-for-first-offshore-wind-assignment/",
+      "snippet": "South Korea’s Taihan Cable &#38; Solution has held a safe operation ceremony for the [&#8230;] The post Taihan&#8217;s recently purchased CLV ready for first offshore wind assignment appeared first on Offshore Energy .",
+      "published_at": "2026-08-13T08:57:07+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 32,
       "tags": [
-        "geopolitics"
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 26.9,
+        "authority": 12.4,
+        "themes": 6.7,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 40.6,
-        "recency_multiplier": 0.58
+        "raw": 24.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "missile",
-          "drone",
-          "attack"
+        "infrastructure": [
+          "cable"
         ],
         "geography": [
-          "russia",
-          "russian"
+          "korea"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Putin can no longer claim victory in Ukraine, Nobel Peace Prize winner tells BBC",
-      "url": "https://www.bbc.co.uk/news/articles/c74grmy2v7ko?at_medium=RSS&at_campaign=rss",
-      "snippet": "In an exclusive interview with the BBC’s Steve Rosenberg, Dmitry Muratov says the Kremlin leader can only \"destroy Ukraine, not conquer it\", with the war now in its fifth year.",
-      "published_at": "2026-08-13T04:55:58+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "title": "AI Reg Lab: July 2026",
+      "url": "https://www.ofgem.gov.uk/transparency-document/ai-reg-lab-july-2026",
+      "snippet": "Findings from the Ofgem AI Reg Lab held on 8 July 2026, including insights on our approach to regulating AI, good practice, challenges and innovation in the energy sector.",
+      "published_at": "2026-08-13T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 9,
+      "score": 30,
       "tags": [
-        "geopolitics"
+        "regulation"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 16.1,
+        "themes": 6.2,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.91
+        "raw": 22.2,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "ukraine"
+        "regulation": [
+          "ofgem"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/13/russian-strike-sparks-fire-at-ukraine-port-zelenskyy-seeks-interceptors?traffic_source=rss",
-        "title": "Russian strike sparks fire at Ukraine port; Zelenskyy seeks interceptors",
-        "published_at": "2026-08-13T05:26:05+00:00"
-      },
-      "hidden": true
+      "also_reported_by": []
     }
   ]
 }
