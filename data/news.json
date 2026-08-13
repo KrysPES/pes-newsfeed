@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-13T14:46:54.374015+00:00",
-  "item_count": 21,
+  "generated_at": "2026-08-13T15:43:31.917775+00:00",
+  "item_count": 24,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 9
+    "high": 1,
+    "normal": 11
   },
   "superseded_count": 1,
   "sources": {
@@ -17,138 +17,330 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1275
+        "ms": 1052
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 55221
+        "ms": 40551
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2635
+        "ms": 22347
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 299
+        "ms": 539
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 288
+        "ms": 340
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 218
+        "ms": 95
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 45,
+        "count": 44,
         "error": null,
-        "ms": 943
+        "ms": 978
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 159
+        "ms": 190
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 537
+        "ms": 548
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 180
+        "ms": 231
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 414
+        "ms": 419
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 35,
+        "count": 37,
         "error": null,
-        "ms": 375
+        "ms": 138
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 166
+        "ms": 221
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ballylumford CCGT - GU_503730(B32)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/d41cc263-b678-418a-9ab4-f0367d8b042c/7",
-      "snippet": "Published: 13.08.2026 12:36:01 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: HP Steam Leak Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Feed",
-      "published_at": "2026-08-13T10:36:01+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
+      "url": "https://umm.nordpoolgroup.com/#/messages/3003adaa-db29-41ef-97a2-c94204982f61/1",
+      "snippet": "Published: 13.08.2026 17:34:29 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
+      "published_at": "2026-08-13T15:34:29+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-13T11:18:45+00:00"
+    },
+    {
+      "title": "Hormuz Stalemate Raises Risk of $120 Oil",
+      "url": "https://oilprice.com/Energy/Oil-Prices/Hormuz-Stalemate-Raises-Risk-of-120-Oil.html",
+      "snippet": "For months now, traders and market analysts have had to weigh two opposing scenarios for oil prices—the ongoing war and severely disrupted oil flows at the Strait of Hormuz and hopes that a U.S.-Iran deal would free up millions of barrels of oil and refined products trapped in the Persian Gulf. For ",
+      "published_at": "2026-08-13T15:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
       "score": 64,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 38.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 63.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz",
+          "persian gulf"
+        ],
+        "supply_disruption": [
+          "disrupted"
+        ],
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-13T14:59:42+00:00"
+    },
+    {
+      "title": "Four Canadian hockey stars remain suspended after sexual assault acquittal",
+      "url": "https://www.bbc.co.uk/news/articles/cj9dpdmr77do?at_medium=RSS&at_campaign=rss",
+      "snippet": "A fifth has been reinstated, though an appeals board found that the whole group broke Hockey Canada's code of conduct.",
+      "published_at": "2026-08-13T14:51:44+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 59,
       "tags": [
         "supply_disruption"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 21.9,
-        "themes": 16.8,
+        "authority": 10.2,
+        "themes": 8.4,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 74.7,
-        "recency_multiplier": 0.85
+        "raw": 54.6,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
-          "unplanned",
-          "leak"
+          "suspended"
         ],
         "unplanned": [
-          "unplanned",
-          "failure",
-          "leak"
+          "suspended"
         ],
         "urgency": [
-          "unplanned"
+          "suspended"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ukraine Strikes Gazprom's 200,000-Bpd Salavat Refinery in the Urals",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Strikes-Gazproms-200000-Bpd-Salavat-Refinery-in-the-Urals.html",
+      "snippet": "Ukraine struck another major Russian refinery Thursday, hitting Gazprom's Neftekhim Salavat complex in the Urals as Kyiv intensified attacks that have already forced Moscow to curb fuel exports and even import gasoline. The attack caused a fire at the 200,000-barrel-per-day facility in Russia's Bash",
+      "published_at": "2026-08-13T15:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 56,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 51.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "oil_macro": [
+          "refinery",
+          "barrel"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "ukraine"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UK defends seizing shadow fleet tanker after Putin threat",
+      "url": "https://www.bbc.co.uk/news/articles/cn0npn249qvo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The UK government says it is \"disrupting and deterring shadow fleet vessels\" in accordance with the law.",
+      "published_at": "2026-08-13T15:05:12+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 21.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "shadow fleet"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
       "also_reported_by": []
     },
     {
@@ -162,7 +354,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 53,
       "tags": [
         "lng"
       ],
@@ -178,7 +370,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "lng": [
@@ -197,44 +389,40 @@
       "also_reported_by": []
     },
     {
-      "title": "UK defends seizing shadow fleet tanker after Putin threat",
-      "url": "https://www.bbc.co.uk/news/articles/cn0npn249qvo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The UK government says it is \"disrupting and deterring shadow fleet vessels\" in accordance with the law.",
-      "published_at": "2026-08-13T11:05:03+00:00",
+      "title": "Ship Pays $4MM to Skip Line to Cross Panama Canal",
+      "url": "https://www.rigzone.com/news/wire/ship_pays_4mm_to_skip_line_to_cross_panama_canal-13-aug-2026-184370-article/?rss=true",
+      "snippet": "A container ship paid $4 million to cut the line at the Panama Canal.",
+      "published_at": "2026-08-13T14:07:54+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 50,
       "tags": [
-        "geopolitics",
-        "lng"
+        "geopolitics"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 21.0,
-        "geo_band": "primary",
+        "authority": 10.9,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 47.2,
-        "recency_multiplier": 0.88
+        "raw": 43.6,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "shadow fleet"
-        ],
-        "lng": [
-          "tanker"
+          "panama canal"
         ],
         "geography": [
-          "uk"
+          "panama canal"
         ]
       },
       "duplicate_count": 0,
@@ -294,7 +482,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 45,
       "tags": [
         "geopolitics"
       ],
@@ -310,7 +498,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -335,7 +523,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 43,
       "tags": [
         "nuclear",
         "weather"
@@ -352,7 +540,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "nuclear": [
@@ -363,49 +551,6 @@
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Alaska LNG Pipeline Bill Dies in Legislature, Governor Fires Back",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Alaska-LNG-Pipeline-Bill-Dies-in-Legislature-Governor-Fires-Back.html",
-      "snippet": "A bill about the construction of a pipeline for liquefied natural gas has failed to secure sufficient votes in the state’s legislature, prompting a sharp reaction from Governor Mike Dunleavy who was behind the bill. “The Legislature’s decision to not return to Juneau to take action on the proposed p",
-      "published_at": "2026-08-13T11:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.3,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 40.1,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "unplanned": [
-          "failed"
         ]
       },
       "duplicate_count": 0,
@@ -450,45 +595,46 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-13T12:30:08+00:00"
+      "also_reported_by": []
     },
     {
-      "title": "Yemeni forces say Houthi attack repelled in Taiz amid escalation",
-      "url": "https://www.aljazeera.com/news/2026/8/13/yemeni-forces-say-houthi-attack-repelled-in-taiz-amid-escalation?traffic_source=rss",
-      "snippet": "Military escalation continues for days after the Yemeni government announced it is attacking Houthi positions.",
-      "published_at": "2026-08-13T09:30:24+00:00",
+      "title": "Alaska LNG Pipeline Bill Dies in Legislature, Governor Fires Back",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Alaska-LNG-Pipeline-Bill-Dies-in-Legislature-Governor-Fires-Back.html",
+      "snippet": "A bill about the construction of a pipeline for liquefied natural gas has failed to secure sufficient votes in the state’s legislature, prompting a sharp reaction from Governor Mike Dunleavy who was behind the bill. “The Legislature’s decision to not return to Juneau to take action on the proposed p",
+      "published_at": "2026-08-13T11:30:00+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
       "score": 42,
       "tags": [
-        "geopolitics"
+        "lng",
+        "infrastructure"
       ],
       "alert": "normal",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 9.5,
-        "themes": 17.9,
+        "authority": 8.8,
+        "themes": 11.3,
         "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.4,
-        "recency_multiplier": 0.78
+        "raw": 40.1,
+        "recency_multiplier": 0.84
       },
       "matched": {
-        "geopolitics": [
-          "escalation",
-          "attack"
+        "lng": [
+          "lng"
         ],
-        "urgency": [
-          "announced"
+        "infrastructure": [
+          "pipeline"
+        ],
+        "unplanned": [
+          "failed"
         ]
       },
       "duplicate_count": 0,
@@ -505,7 +651,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "infrastructure"
       ],
@@ -521,7 +667,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.6,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.74
       },
       "matched": {
         "infrastructure": [
@@ -547,7 +693,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -563,7 +709,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.0,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -575,93 +721,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Shell expands LNG bunkering network with first Valencia op",
-      "url": "https://lngprime.com/europe/shell-expands-lng-bunkering-network-with-first-valencia-op/195054/",
-      "snippet": "UK-based LNG giant Shell has expanded its global LNG bunkering network with the completion of its first operation in Valencia, Spain.",
-      "published_at": "2026-08-13T08:54:02+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 11.3,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 40.5,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "network"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "TotalEnergies handpicks Daewoo E&C for work on LNG project in Oceania",
-      "url": "https://www.offshore-energy.biz/totalenergies-handpicks-daewoo-ec-for-work-on-lng-project-in-oceania/",
-      "snippet": "France’s energy giant TotalEnergies has selected Seoul-based Daewoo Engineering &#38; Construction (Daewoo E&#38;C) as the preferred bidder for a major package on a liquefied natural gas (LNG) project in Papua New Guinea, Oceania. The post TotalEnergies handpicks Daewoo E C for work on LNG project i",
-      "published_at": "2026-08-13T12:29:06+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.7,
-        "recency_multiplier": 0.98
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "france"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "LNG Prime"
-      ],
-      "first_seen_at": "2026-08-13T10:25:23+00:00"
     },
     {
       "title": "Ukraine attacks key Russian grain terminal on Black Sea port",
@@ -710,6 +769,93 @@
       "also_reported_by": []
     },
     {
+      "title": "Shell expands LNG bunkering network with first Valencia op",
+      "url": "https://lngprime.com/europe/shell-expands-lng-bunkering-network-with-first-valencia-op/195054/",
+      "snippet": "UK-based LNG giant Shell has expanded its global LNG bunkering network with the completion of its first operation in Valencia, Spain.",
+      "published_at": "2026-08-13T08:54:02+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 11.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 40.5,
+        "recency_multiplier": 0.69
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "network"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "TotalEnergies handpicks Daewoo E&C for work on LNG project in Oceania",
+      "url": "https://www.offshore-energy.biz/totalenergies-handpicks-daewoo-ec-for-work-on-lng-project-in-oceania/",
+      "snippet": "France’s energy giant TotalEnergies has selected Seoul-based Daewoo Engineering &#38; Construction (Daewoo E&#38;C) as the preferred bidder for a major package on a liquefied natural gas (LNG) project in Papua New Guinea, Oceania. The post TotalEnergies handpicks Daewoo E C for work on LNG project i",
+      "published_at": "2026-08-13T12:29:06+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.7,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "france"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "LNG Prime"
+      ],
+      "first_seen_at": "2026-08-13T10:25:23+00:00"
+    },
+    {
       "title": "Golar orders fourth FLNG in China",
       "url": "https://lngprime.com/europe/golar-orders-fourth-flng-in-china/195059/",
       "snippet": "Floating LNG player Golar LNG said that it had executed an engineering, procurement, and construction (EPC) agreement with China's Yantai CIMC Raffles Offshore for its fourth FLNG and second MKII FLNG with an annual liquefaction capacity of 3.5 mtpa.",
@@ -720,7 +866,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "lng"
       ],
@@ -736,7 +882,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.76
       },
       "matched": {
         "lng": [
@@ -761,7 +907,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "lng"
       ],
@@ -776,7 +922,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.67
       },
       "matched": {
         "lng": [
@@ -800,7 +946,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
         "lng"
       ],
@@ -816,7 +962,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.6,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.59
       },
       "matched": {
         "lng": [
@@ -848,7 +994,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "weather"
       ],
@@ -864,7 +1010,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.6,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.85
       },
       "matched": {
         "weather": [
@@ -888,7 +1034,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 32,
+      "score": 30,
       "tags": [
         "oil_macro"
       ],
@@ -904,7 +1050,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.8,
-        "recency_multiplier": 0.57
+        "recency_multiplier": 0.53
       },
       "matched": {
         "oil_macro": [
@@ -931,7 +1077,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 32,
+      "score": 30,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -948,7 +1094,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 74.4,
-        "recency_multiplier": 0.32
+        "recency_multiplier": 0.3
       },
       "matched": {
         "geopolitics": [
@@ -969,49 +1115,50 @@
       "also_reported_by": []
     },
     {
-      "title": "Falling Danube flow forces shutdown of Romania’s sole nuclear plant",
-      "url": "https://www.aljazeera.com/news/2026/8/13/falling-danube-flow-forces-shutdown-of-romanias-sole-nuclear-plant?traffic_source=rss",
-      "snippet": "Romania had tried to avert a total shutdown of the plant, which usually generates a fifth of the country&#039;s electricity.",
-      "published_at": "2026-08-13T12:30:08+00:00",
+      "title": "Iran says Strait of Hormuz under its control, rejects Trump claims",
+      "url": "https://www.aljazeera.com/news/2026/8/13/iran-says-strait-of-hormuz-under-its-control-rejects-trump-claims?traffic_source=rss",
+      "snippet": "Iran asserts full control over the Strait of Hormuz, challenging US claims of dominance in the strategic waterway.",
+      "published_at": "2026-08-13T14:59:42+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 9,
+      "score": 15,
       "tags": [
-        "supply_disruption",
-        "nuclear"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 12.8,
-        "geography": 0.0,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 22.3,
-        "recency_multiplier": 0.98
+        "raw": 42.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "shutdown"
+        "geopolitics": [
+          "strait of hormuz"
         ],
-        "nuclear": [
-          "nuclear"
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Romania-Shuts-Down-Last-Nuclear-Reactor-As-Danube-Hits-90-Year-Low.html",
-        "title": "Romania Shuts Down Last Nuclear Reactor As Danube Hits 90-Year Low",
-        "published_at": "2026-08-13T14:30:00+00:00"
+        "url": "https://oilprice.com/Energy/Oil-Prices/Hormuz-Stalemate-Raises-Risk-of-120-Oil.html",
+        "title": "Hormuz Stalemate Raises Risk of $120 Oil",
+        "published_at": "2026-08-13T15:00:00+00:00"
       },
       "hidden": true
     }
