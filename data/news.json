@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-13T11:25:45.327074+00:00",
-  "item_count": 16,
+  "generated_at": "2026-08-13T12:10:00.781227+00:00",
+  "item_count": 15,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 6
+    "normal": 4
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1531
+        "ms": 1311
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 54790
+        "ms": 95761
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3066
+        "ms": 2822
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 635
+        "ms": 591
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 729
+        "ms": 837
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 211
+        "ms": 174
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 44,
+        "count": 45,
         "error": null,
-        "ms": 1051
+        "ms": 932
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 538
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 117
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 689
+        "ms": 770
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 294
+        "ms": 258
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 479
+        "ms": 513
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 35,
         "error": null,
-        "ms": 120
+        "ms": 153
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 172
+        "ms": 304
       }
     ]
   },
@@ -208,7 +208,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 49,
       "tags": [
         "geopolitics"
       ],
@@ -223,7 +223,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "geopolitics": [
@@ -238,42 +238,43 @@
       "also_reported_by": []
     },
     {
-      "title": "With platform topside ready for sail-away, North Sea gas project edges closer to start-up (Gallery)",
-      "url": "https://www.offshore-energy.biz/with-platform-topside-ready-for-sail-away-north-sea-gas-project-edges-closer-to-start-up-gallery/",
-      "snippet": "Netherlands-based heavy lifting and transport provider Mammoet has assisted Aibel, which is responsible for the engineering, procurement, and construction (EPC) of a topside segment of an unmanned processing platform to be deployed at a gas development in the Norwegian North Sea, with critical heavy",
-      "published_at": "2026-08-13T09:48:25+00:00",
+      "title": "Alaska LNG Pipeline Bill Dies in Legislature, Governor Fires Back",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Alaska-LNG-Pipeline-Bill-Dies-in-Legislature-Governor-Fires-Back.html",
+      "snippet": "A bill about the construction of a pipeline for liquefied natural gas has failed to secure sufficient votes in the state’s legislature, prompting a sharp reaction from Governor Mike Dunleavy who was behind the bill. “The Legislature’s decision to not return to Juneau to take action on the proposed p",
+      "published_at": "2026-08-13T11:30:00+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 48,
       "tags": [
+        "lng",
         "infrastructure"
       ],
       "alert": "normal",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 12.4,
-        "themes": 19.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
+        "authority": 8.8,
+        "themes": 11.3,
+        "geography": 0.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 41.6,
+        "raw": 40.1,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "infrastructure": [
-          "platform",
-          "start-up"
+        "lng": [
+          "lng"
         ],
-        "geography": [
-          "netherlands",
-          "norwegian"
+        "infrastructure": [
+          "pipeline"
+        ],
+        "unplanned": [
+          "failed"
         ]
       },
       "duplicate_count": 0,
@@ -290,7 +291,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 45,
       "tags": [
         "lng",
         "infrastructure"
@@ -307,7 +308,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.5,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.91
       },
       "matched": {
         "lng": [
@@ -318,86 +319,6 @@
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "As temperatures soar, ‘exceptionally serious’ drought imperils UK farmers",
-      "url": "https://www.aljazeera.com/news/2026/8/13/uk-drought-imperils-farmers?traffic_source=rss",
-      "snippet": "Farmers trying to adapt to extreme weather say even with the best planning, their industry is facing its toughest test.",
-      "published_at": "2026-08-13T08:15:17+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "weather"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 12.3,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.8,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "weather": [
-          "drought",
-          "temperatures"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "SK Shipping’s LNG fleet to rise to 32 vessels after asset swap deal",
-      "url": "https://lngprime.com/asia/sk-shippings-lng-fleet-to-rise-to-32-vessels-after-asset-swap-deal/195042/",
-      "snippet": "SK Shipping's fleet of liquefied natural gas (LNG) carriers will double to 32 vessels as part of an asset swap deal with H-Line Shipping announced by South Korean private equity firm Hahn &#038; ​Co.",
-      "published_at": "2026-08-13T08:31:28+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.93
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "urgency": [
-          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -445,48 +366,80 @@
       "also_reported_by": []
     },
     {
-      "title": "South Korean Fleet Reshuffle Creates Asia’s Largest LNG Carrier Operator",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/SK-Shipping-to-Become-Asias-Largest-LNG-Carrier-Operator.html",
-      "snippet": "South Korean private equity firm Hahn & Co plans to reshuffle the liquefied natural gas tanker fleets of its shipping companies SK Shipping and H-Line Shipping to create Asia’s biggest and the world’s third-largest operator of LNG carriers. Under the agreement announced by the shipping firms’ owner ",
-      "published_at": "2026-08-13T06:50:00+00:00",
+      "title": "As temperatures soar, ‘exceptionally serious’ drought imperils UK farmers",
+      "url": "https://www.aljazeera.com/news/2026/8/13/uk-drought-imperils-farmers?traffic_source=rss",
+      "snippet": "Farmers trying to adapt to extreme weather say even with the best planning, their industry is facing its toughest test.",
+      "published_at": "2026-08-13T08:15:17+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
       "score": 41,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 12.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.8,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "weather": [
+          "drought",
+          "temperatures"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "SK Shipping’s LNG fleet to rise to 32 vessels after asset swap deal",
+      "url": "https://lngprime.com/asia/sk-shippings-lng-fleet-to-rise-to-32-vessels-after-asset-swap-deal/195042/",
+      "snippet": "SK Shipping's fleet of liquefied natural gas (LNG) carriers will double to 32 vessels as part of an asset swap deal with H-Line Shipping announced by South Korean private equity firm Hahn &#038; ​Co.",
+      "published_at": "2026-08-13T08:31:28+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
       "tags": [
         "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 21.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 13.1,
+        "themes": 7.3,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 16.0,
         "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 39.6,
-        "recency_multiplier": 0.82
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 0.88
       },
       "matched": {
         "lng": [
-          "lng",
-          "tanker",
-          "carrier"
-        ],
-        "geography": [
-          "asia"
+          "lng"
         ],
         "urgency": [
           "announced"
-        ],
-        "speculative": [
-          "plans to"
         ]
       },
       "duplicate_count": 0,
@@ -533,43 +486,48 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Prices Fall as OPEC and IEA Slash 2026 Demand Outlooks",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-OPEC-and-IEA-Slash-2026-Demand-Outlooks.html",
-      "snippet": "Despite the ongoing stalemate in the U.S.-Iran talks and persistent risks to shipping in the Middle East, oil prices fell in Asian trading on Thursday, weighed down by cuts to 2026 oil demand forecasts from both OPEC and the International Energy Agency. Brent Crude prices dropped by 0.5% to trade be",
-      "published_at": "2026-08-13T05:25:00+00:00",
+      "title": "South Korean Fleet Reshuffle Creates Asia’s Largest LNG Carrier Operator",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/SK-Shipping-to-Become-Asias-Largest-LNG-Carrier-Operator.html",
+      "snippet": "South Korean private equity firm Hahn & Co plans to reshuffle the liquefied natural gas tanker fleets of its shipping companies SK Shipping and H-Line Shipping to create Asia’s biggest and the world’s third-largest operator of LNG carriers. Under the agreement announced by the shipping firms’ owner ",
+      "published_at": "2026-08-13T06:50:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
+      "has_magnitude": false,
       "score": 39,
       "tags": [
-        "oil_macro"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 16.0,
+        "themes": 21.8,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 41.8,
-        "recency_multiplier": 0.73
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 39.6,
+        "recency_multiplier": 0.77
       },
       "matched": {
-        "oil_macro": [
-          "opec",
-          "crude",
-          "brent",
-          "demand"
+        "lng": [
+          "lng",
+          "tanker",
+          "carrier"
         ],
         "geography": [
-          "middle east"
+          "asia"
+        ],
+        "urgency": [
+          "announced"
+        ],
+        "speculative": [
+          "plans to"
         ]
       },
       "duplicate_count": 0,
@@ -586,7 +544,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 38,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -603,7 +561,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 74.4,
-        "recency_multiplier": 0.41
+        "recency_multiplier": 0.39
       },
       "matched": {
         "geopolitics": [
@@ -624,40 +582,83 @@
       "also_reported_by": []
     },
     {
-      "title": "Taihan’s recently purchased CLV ready for first offshore wind assignment",
-      "url": "https://www.offshore-energy.biz/taihans-recently-purchased-clv-ready-for-first-offshore-wind-assignment/",
-      "snippet": "South Korea’s Taihan Cable &#38; Solution has held a safe operation ceremony for the [&#8230;] The post Taihan&#8217;s recently purchased CLV ready for first offshore wind assignment appeared first on Offshore Energy .",
-      "published_at": "2026-08-13T08:57:07+00:00",
+      "title": "Oil Prices Fall as OPEC and IEA Slash 2026 Demand Outlooks",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-OPEC-and-IEA-Slash-2026-Demand-Outlooks.html",
+      "snippet": "Despite the ongoing stalemate in the U.S.-Iran talks and persistent risks to shipping in the Middle East, oil prices fell in Asian trading on Thursday, weighed down by cuts to 2026 oil demand forecasts from both OPEC and the International Energy Agency. Brent Crude prices dropped by 0.5% to trade be",
+      "published_at": "2026-08-13T05:25:00+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
+      "has_magnitude": true,
+      "score": 37,
       "tags": [
-        "infrastructure"
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 12.4,
-        "themes": 6.7,
+        "authority": 8.8,
+        "themes": 16.0,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 24.1,
-        "recency_multiplier": 0.96
+        "raw": 41.8,
+        "recency_multiplier": 0.69
       },
       "matched": {
-        "infrastructure": [
-          "cable"
+        "oil_macro": [
+          "opec",
+          "crude",
+          "brent",
+          "demand"
         ],
         "geography": [
-          "korea"
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "More than 135 million people in Europe set for temperatures over 35C",
+      "url": "https://www.aljazeera.com/news/2026/8/13/more-than-135-million-people-in-europe-set-for-temperatures-over-35c?traffic_source=rss",
+      "snippet": "Europe is the fastest-warming continent in the world and in some places is ill-equipped to deal with hot weather.",
+      "published_at": "2026-08-13T11:38:39+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 6.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "temperatures"
+        ],
+        "geography": [
+          "europe"
         ]
       },
       "duplicate_count": 0,
@@ -700,46 +701,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Meren Narrows Production Guidance",
-      "url": "https://www.rigzone.com/news/meren_narrows_production_guidance-13-aug-2026-184364-article/?rss=true",
-      "snippet": "Meren bumped up the lower ends of its working-interest and entitlement production forecasts for 2026 while revising down the higher ends, even as Nigeria's Agbami field ramps up production following a 2025 turnaround.",
-      "published_at": "2026-08-13T08:08:14+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 8.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.4,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "supply_disruption": [
-          "turnaround"
-        ],
-        "geography": [
-          "nigeria"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Japan protests as Russia’s Putin visits disputed Kuril Islands",
       "url": "https://www.aljazeera.com/news/2026/8/13/japan-protests-as-russias-putin-visits-disputed-kuril-islands?traffic_source=rss",
       "snippet": "Japanese PM says Putin&#039;s visit to the Pacific island chain, seized by the Soviet Union in 1945, is &#039;unacceptable&#039;.",
@@ -766,7 +727,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
