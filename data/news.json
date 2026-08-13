@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-13T13:44:57.825957+00:00",
-  "item_count": 18,
+  "generated_at": "2026-08-13T14:46:54.374015+00:00",
+  "item_count": 21,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 6
+    "high": 0,
+    "normal": 9
   },
-  "superseded_count": 0,
+  "superseded_count": 1,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1360
+        "ms": 1275
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 44602
+        "ms": 55221
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4194
+        "ms": 2635
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 333
+        "ms": 299
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 609
+        "ms": 288
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 164
+        "ms": 218
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 44,
+        "count": 45,
         "error": null,
-        "ms": 1388
+        "ms": 943
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 198
+        "ms": 159
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 744
+        "ms": 537
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 340
+        "ms": 180
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 1011
+        "ms": 414
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 35,
         "error": null,
-        "ms": 207
+        "ms": 375
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 76
+        "ms": 166
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 67,
+      "score": 64,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.85
       },
       "matched": {
         "supply_disruption": [
@@ -152,6 +152,51 @@
       "also_reported_by": []
     },
     {
+      "title": "MOL puts bow on six-vessel newbuilding program with final LNG carrier delivery",
+      "url": "https://www.offshore-energy.biz/mol-puts-bow-on-six-vessel-newbuilding-program-with-final-lng-carrier-delivery/",
+      "snippet": "Japan’s shipping giant Mitsui O.S.K. Lines (MOL) has confirmed the completion of a six-vessel liquefied natural gas (LNG) carrier newbuilding program for China National Offshore Oil Corporation (CNOOC), following the naming of the last vessel in the series at Hudong-Zhonghua Shipbuilding in China. T",
+      "published_at": "2026-08-13T13:31:01+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 54,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 48.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "geography": [
+          "china",
+          "japan"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "UK defends seizing shadow fleet tanker after Putin threat",
       "url": "https://www.bbc.co.uk/news/articles/cn0npn249qvo?at_medium=RSS&at_campaign=rss",
       "snippet": "The UK government says it is \"disrupting and deterring shadow fleet vessels\" in accordance with the law.",
@@ -162,7 +207,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 49,
       "tags": [
         "geopolitics",
         "lng"
@@ -179,7 +224,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.2,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -196,6 +241,49 @@
       "also_reported_by": []
     },
     {
+      "title": "Oman says massive oil spill reaches coastline: What damage could it do?",
+      "url": "https://www.aljazeera.com/news/2026/8/13/oman-says-massive-oil-spill-reaches-coastline-what-damage-could-it-do?traffic_source=rss",
+      "snippet": "Oil has been spilling from the Caroline Bezengi, a tanker that has been leaking crude since running aground off Oman.",
+      "published_at": "2026-08-13T14:29:58+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 10.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "tanker"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "unplanned": [
+          "damage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "US-Iran talks in deadlock – what’s the latest?",
       "url": "https://www.aljazeera.com/news/2026/8/13/us-iran-talks-in-deadlock-whats-the-latest?traffic_source=rss",
       "snippet": "The US and Iran continue their standoff in the Strait of Hormuz as mediators try to coax talks.",
@@ -206,7 +294,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 47,
       "tags": [
         "geopolitics"
       ],
@@ -222,7 +310,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -231,89 +319,6 @@
         "geography": [
           "strait of hormuz",
           "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Alaska LNG Pipeline Bill Dies in Legislature, Governor Fires Back",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Alaska-LNG-Pipeline-Bill-Dies-in-Legislature-Governor-Fires-Back.html",
-      "snippet": "A bill about the construction of a pipeline for liquefied natural gas has failed to secure sufficient votes in the state’s legislature, prompting a sharp reaction from Governor Mike Dunleavy who was behind the bill. “The Legislature’s decision to not return to Juneau to take action on the proposed p",
-      "published_at": "2026-08-13T11:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 47,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.3,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 40.1,
-        "recency_multiplier": 0.98
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "unplanned": [
-          "failed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Yemeni forces say Houthi attack repelled in Taiz amid escalation",
-      "url": "https://www.aljazeera.com/news/2026/8/13/yemeni-forces-say-houthi-attack-repelled-in-taiz-amid-escalation?traffic_source=rss",
-      "snippet": "Military escalation continues for days after the Yemeni government announced it is attacking Houthi positions.",
-      "published_at": "2026-08-13T09:30:24+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.4,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "geopolitics": [
-          "escalation",
-          "attack"
-        ],
-        "urgency": [
-          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -364,6 +369,132 @@
       "also_reported_by": []
     },
     {
+      "title": "Alaska LNG Pipeline Bill Dies in Legislature, Governor Fires Back",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Alaska-LNG-Pipeline-Bill-Dies-in-Legislature-Governor-Fires-Back.html",
+      "snippet": "A bill about the construction of a pipeline for liquefied natural gas has failed to secure sufficient votes in the state’s legislature, prompting a sharp reaction from Governor Mike Dunleavy who was behind the bill. “The Legislature’s decision to not return to Juneau to take action on the proposed p",
+      "published_at": "2026-08-13T11:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.3,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 40.1,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "unplanned": [
+          "failed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Romania Shuts Down Last Nuclear Reactor As Danube Hits 90-Year Low",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Romania-Shuts-Down-Last-Nuclear-Reactor-As-Danube-Hits-90-Year-Low.html",
+      "snippet": "Romania on Thursday began shutting down its only remaining operating nuclear reactor as record-low water levels on the Danube have forced nuclear power shutdowns in central and eastern Europe in recent weeks. Nuclearelectrica has launched the process to disconnect the one operating reactor at Romani",
+      "published_at": "2026-08-13T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 14.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactor"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-13T12:30:08+00:00"
+    },
+    {
+      "title": "Yemeni forces say Houthi attack repelled in Taiz amid escalation",
+      "url": "https://www.aljazeera.com/news/2026/8/13/yemeni-forces-say-houthi-attack-repelled-in-taiz-amid-escalation?traffic_source=rss",
+      "snippet": "Military escalation continues for days after the Yemeni government announced it is attacking Houthi positions.",
+      "published_at": "2026-08-13T09:30:24+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.4,
+        "recency_multiplier": 0.78
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "attack"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "With platform topside ready for sail-away, North Sea gas project edges closer to start-up (Gallery)",
       "url": "https://www.offshore-energy.biz/with-platform-topside-ready-for-sail-away-north-sea-gas-project-edges-closer-to-start-up-gallery/",
       "snippet": "Netherlands-based heavy lifting and transport provider Mammoet has assisted Aibel, which is responsible for the engineering, procurement, and construction (EPC) of a topside segment of an unmanned processing platform to be deployed at a gas development in the Norwegian North Sea, with critical heavy",
@@ -374,11 +505,11 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 41,
       "tags": [
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 12.4,
@@ -390,7 +521,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.6,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.8
       },
       "matched": {
         "infrastructure": [
@@ -416,7 +547,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "geopolitics"
       ],
@@ -432,7 +563,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.0,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.89
       },
       "matched": {
         "geopolitics": [
@@ -456,7 +587,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 38,
       "tags": [
         "lng",
         "infrastructure"
@@ -473,7 +604,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.5,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.74
       },
       "matched": {
         "lng": [
@@ -500,7 +631,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "lng"
       ],
@@ -516,7 +647,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "lng": [
@@ -533,6 +664,52 @@
       "first_seen_at": "2026-08-13T10:25:23+00:00"
     },
     {
+      "title": "Ukraine attacks key Russian grain terminal on Black Sea port",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/13/13-08-sv-ukraine-russia-grain-attack-ur?traffic_source=rss",
+      "snippet": "Ukraine has damaged Russia’s grain export terminals in an attack on the Novorossiysk port.",
+      "published_at": "2026-08-13T14:29:20+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 13.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "infrastructure": [
+          "terminal"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Golar orders fourth FLNG in China",
       "url": "https://lngprime.com/europe/golar-orders-fourth-flng-in-china/195059/",
       "snippet": "Floating LNG player Golar LNG said that it had executed an engineering, procurement, and construction (EPC) agreement with China's Yantai CIMC Raffles Offshore for its fourth FLNG and second MKII FLNG with an annual liquefaction capacity of 3.5 mtpa.",
@@ -543,7 +720,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "lng"
       ],
@@ -559,7 +736,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.82
       },
       "matched": {
         "lng": [
@@ -584,7 +761,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "lng"
       ],
@@ -599,7 +776,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.72
       },
       "matched": {
         "lng": [
@@ -623,7 +800,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "lng"
       ],
@@ -639,7 +816,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.6,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.63
       },
       "matched": {
         "lng": [
@@ -671,7 +848,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "weather"
       ],
@@ -687,7 +864,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.6,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.92
       },
       "matched": {
         "weather": [
@@ -711,7 +888,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 34,
+      "score": 32,
       "tags": [
         "oil_macro"
       ],
@@ -727,7 +904,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.8,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.57
       },
       "matched": {
         "oil_macro": [
@@ -754,7 +931,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 34,
+      "score": 32,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -771,7 +948,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 74.4,
-        "recency_multiplier": 0.35
+        "recency_multiplier": 0.32
       },
       "matched": {
         "geopolitics": [
@@ -802,7 +979,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 9,
       "tags": [
         "supply_disruption",
         "nuclear"
@@ -818,7 +995,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 22.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "supply_disruption": [
@@ -829,43 +1006,14 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "AI Reg Lab: July 2026",
-      "url": "https://www.ofgem.gov.uk/transparency-document/ai-reg-lab-july-2026",
-      "snippet": "Findings from the Ofgem AI Reg Lab held on 8 July 2026, including insights on our approach to regulating AI, good practice, challenges and innovation in the energy sector.",
-      "published_at": "2026-08-13T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 6.2,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.2,
-        "recency_multiplier": 1.0
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Romania-Shuts-Down-Last-Nuclear-Reactor-As-Danube-Hits-90-Year-Low.html",
+        "title": "Romania Shuts Down Last Nuclear Reactor As Danube Hits 90-Year Low",
+        "published_at": "2026-08-13T14:30:00+00:00"
       },
-      "matched": {
-        "regulation": [
-          "ofgem"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "hidden": true
     }
   ]
 }
