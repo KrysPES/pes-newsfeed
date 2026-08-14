@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-14T06:24:19.351490+00:00",
-  "item_count": 11,
+  "generated_at": "2026-08-14T07:57:20.996187+00:00",
+  "item_count": 12,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 3
+    "normal": 5
   },
-  "superseded_count": 3,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,133 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1044
+        "ms": 1111
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 58813
+        "ms": 43383
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2871
+        "ms": 2498
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 618
+        "ms": 534
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 392
+        "ms": 302
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 119
+        "ms": 241
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 916
+        "ms": 821
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 145
+        "ms": 156
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 587
+        "ms": 564
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 196
+        "ms": 169
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 517
+        "ms": 369
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 143
+        "ms": 268
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 82
+        "ms": 139
       }
     ]
   },
   "items": [
+    {
+      "title": "US weekly LNG exports climb to 36 cargoes",
+      "url": "https://lngprime.com/americas/us-weekly-lng-exports-climb-to-36-cargoes/195107/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending August 12, up five cargoes from the week before, according to the Energy Information Administration.",
+      "published_at": "2026-08-14T05:13:48+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 54,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
       "url": "https://umm.nordpoolgroup.com/#/messages/f69cd741-8bc7-4da2-9065-aa8c33b2b6f5/2",
@@ -117,7 +155,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 58,
+      "score": 54,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +170,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.72
       },
       "matched": {
         "supply_disruption": [
@@ -151,44 +189,6 @@
       "first_seen_at": "2026-08-13T16:34:57+00:00"
     },
     {
-      "title": "US weekly LNG exports climb to 36 cargoes",
-      "url": "https://lngprime.com/americas/us-weekly-lng-exports-climb-to-36-cargoes/195107/",
-      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending August 12, up five cargoes from the week before, according to the Energy Information Administration.",
-      "published_at": "2026-08-14T05:13:48+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 56,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "lng exports"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Oil Prices Head for 4% Weekly Gain as U.S.-Iran Deadlock Drags On",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-4-Weekly-Gain-as-US-Iran-Deadlock-Drags-On.html",
       "snippet": "Crude oil prices were on course to add 4% this week, as the United States and Iran indicated they are no closer to a peace deal than they were at the start of the war. At the time of writing, Brent crude was trading at $87.12 per barrel, and West Texas Intermediate was trading at $81.36 per barrel. ",
@@ -199,7 +199,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 50,
       "tags": [
         "oil_macro",
         "geopolitics"
@@ -216,7 +216,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "oil_macro": [
@@ -233,14 +233,176 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 3,
-      "thread_started_at": "2026-08-13T15:00:00+00:00"
+      "update_count": 2,
+      "thread_started_at": "2026-08-14T00:33:48+00:00"
+    },
+    {
+      "title": "Statutory consultation on modifications to Independent Gas Transporter licence conditions for the Relative Price Control",
+      "url": "https://www.ofgem.gov.uk/consultation/statutory-consultation-modifications-independent-gas-transporter-licence-conditions-relative-price-control",
+      "snippet": "We are consulting on proposed modifications to the gas transporter licences held by IGTs to give effect to our decision on the IGT Relative Price Control.",
+      "published_at": "2026-08-14T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 22.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "consultation",
+          "licence",
+          "price control"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Russia Captures Record Share of India’s Oil Market",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Captures-Record-Share-of-Indias-Oil-Market.html",
+      "snippet": "Crude oil imports from Russia accounted for over 50% of India’s total import volumes last month. This was the highest share of Russian oil in India’s import mix, Reuters noted in a report that cited unnamed trade sources. Russia exported crude at a rate of some 2.47 million barrels daily to India la",
+      "published_at": "2026-08-14T07:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 43,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "India’s Petronet LNG logs higher profit, lower volumes",
+      "url": "https://lngprime.com/lng-terminals/indias-petronet-lng-logs-higher-profit-lower-volumes/195136/",
+      "snippet": "India’s largest LNG importer Petronet LNG, the operator of the Dahej and Kochi regasification terminals, reported higher profit and lower regasification volumes in the quarter ending June 30.",
+      "published_at": "2026-08-14T06:53:45+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "regasification"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Nigel Farage defeats Count Binface to reclaim UK parliamentary seat",
+      "url": "https://www.aljazeera.com/news/2026/8/14/nigel-farage-defeats-count-binface-to-reclaim-uk-parliamentary-seat?traffic_source=rss",
+      "snippet": "The Reform UK leader received 22,239 votes in the Clacton by-election, compared with 9,455 for Binface.",
+      "published_at": "2026-08-14T07:07:42+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 6.2,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "reform"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "CMA CGM inks LoI with Chinese yard for LNG-powered giants",
       "url": "https://lngprime.com/asia/cma-cgm-inks-loi-with-chinese-yard-for-lng-powered-giants/195124/",
       "snippet": "French shipping giant CMA CGM, one of the world’s largest backers of LNG fuel, has signed a letter of intent with China’s Yangzijiang Shipbuilding to build more ultra-large LNG dual-fuel container vessels, according to shipbuilding sources.",
-      "published_at": "2026-08-14T05:39:13+00:00",
+      "published_at": "2026-08-14T07:51:13+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
@@ -304,7 +466,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -331,7 +493,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "geopolitics",
         "lng",
@@ -349,7 +511,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.4,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -369,94 +531,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Jefferies: Diesel Cracks Reveal the Real Oil Market Squeeze",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Jefferies-Diesel-Cracks-Reveal-the-Real-Oil-Market-Squeeze.html",
-      "snippet": "Brent crude futures held near recent highs of $90 a barrel before fading to around $87 early Thursday morning, as traders awaited progress toward reopening the Strait of Hormuz. Stalled US-Iran negotiations and tightening global fuel supplies continued to support prices and concern some top energy e",
-      "published_at": "2026-08-13T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 33.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 58.4,
-        "recency_multiplier": 0.42
-      },
-      "matched": {
-        "geopolitics": [
-          "negotiations",
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US says dozens of countries helped China dodge Trump's tariffs",
-      "url": "https://www.bbc.co.uk/news/articles/c78gy6ep3n5o?at_medium=RSS&at_campaign=rss",
-      "snippet": "A new US report said China had moved goods through nations with lower tariffs to dodge higher levies.",
-      "published_at": "2026-08-14T03:09:48+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "geopolitics": [
-          "tariffs"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Norway’s FM tells Al Jazeera the US war on Iran was not ‘smart’",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/aje-onl-nf_norways-fm-us-war-on-iran-was-not-smart-130826?traffic_source=rss",
       "snippet": "Norway’s FM Espen Barth Eide says the Iran war failed to achieve its initial aims and strengthened hardliners in Tehran.",
@@ -467,7 +541,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics"
       ],
@@ -483,7 +557,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.5,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
@@ -517,7 +591,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics"
       ],
@@ -533,70 +607,12 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
           "attack",
           "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-4-Weekly-Gain-as-US-Iran-Deadlock-Drags-On.html",
-        "title": "Oil Prices Head for 4% Weekly Gain as U.S.-Iran Deadlock Drags On",
-        "published_at": "2026-08-14T05:40:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Hormuz Stalemate Raises Risk of $120 Oil",
-      "url": "https://oilprice.com/Energy/Oil-Prices/Hormuz-Stalemate-Raises-Risk-of-120-Oil.html",
-      "snippet": "For months now, traders and market analysts have had to weigh two opposing scenarios for oil prices—the ongoing war and severely disrupted oil flows at the Strait of Hormuz and hopes that a U.S.-Iran deal would free up millions of barrels of oil and refined products trapped in the Persian Gulf. For ",
-      "published_at": "2026-08-13T15:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 38.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 63.4,
-        "recency_multiplier": 0.36
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz",
-          "persian gulf"
-        ],
-        "supply_disruption": [
-          "disrupted"
-        ],
-        "oil_macro": [
-          "barrels"
         ],
         "geography": [
           "strait of hormuz",
