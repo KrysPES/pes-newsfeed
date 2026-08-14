@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-14T11:57:43.492183+00:00",
-  "item_count": 23,
+  "generated_at": "2026-08-14T13:10:08.055758+00:00",
+  "item_count": 24,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 8
+    "high": 2,
+    "normal": 9
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,100 +17,150 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1324
+        "ms": 1231
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 48028
+        "ms": 57761
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3646
+        "ms": 9796
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 466
+        "ms": 442
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 2306
+        "ms": 3876
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 133
+        "ms": 174
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 42,
+        "count": 43,
         "error": null,
-        "ms": 1355
+        "ms": 864
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 523
+        "ms": 334
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 731
+        "ms": 526
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 344
+        "ms": 176
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 706
+        "ms": 560
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 49
+        "ms": 74
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 66
+        "ms": 117
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/5bd7febd-fa95-4456-821a-bb268a069154/2",
-      "snippet": "Published: 14.08.2026 12:54:25 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
-      "published_at": "2026-08-14T10:54:25+00:00",
+      "title": "Fallout Spreads Across the Middle East as the Iran War Grinds On",
+      "url": "https://oilprice.com/Energy/Energy-General/Fallout-Spreads-Across-the-Middle-East-as-the-Iran-War-Grinds-On.html",
+      "snippet": "Politics, Geopolitics & Conflict Yemen’s Houthis said they targeted Saudi Aramco’s Jazan refinery with two drones on Thursday, the second claimed attack on the Red Sea facility in less than a week and the third since July 25. Neither Saudi Arabia nor Aramco has confirmed the attack as of the time of",
+      "published_at": "2026-08-14T12:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "high",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 34.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 75.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war",
+          "attack",
+          "red sea"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "red sea"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
+      "url": "https://umm.nordpoolgroup.com/#/messages/b0c23a5f-ed41-4648-96ca-99cfa950697b/1",
+      "snippet": "Published: 14.08.2026 14:30:17 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
+      "published_at": "2026-08-14T12:30:17+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -146,7 +196,7 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 3,
       "also_reported_by": [],
       "first_seen_at": "2026-08-14T01:37:12+00:00"
     },
@@ -249,45 +299,82 @@
       "also_reported_by": []
     },
     {
-      "title": "Hormuz Tanker Traffic Slumps as U.S.-Iran Standoff Drags On",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Slumps-as-US-Iran-Standoff-Drags-On.html",
-      "snippet": "Tankers moving along the Strait of Hormuz dwindled further this week, with only five crossings on Wednesday and nine crossings on Thursday, down from a monthly average of 12 crossings, according to data from Kpler, as cited by Reuters. Five tankers went into the waterway yesterday, according to the ",
-      "published_at": "2026-08-14T08:15:00+00:00",
+      "title": "Oil Traders Reprice Hormuz Risk as Demand Outlook Deteriorates",
+      "url": "https://oilprice.com/Energy/Energy-General/Oil-Traders-Reprice-Hormuz-Risk-as-Demand-Outlook-Deteriorates.html",
+      "snippet": "September WTI crude oil futures are trading at $81.19 late Thursday, up $4.11, or 5.33%, for the week. With Friday’s session still to come, the final weekly result remains unsettled. The message is clear. Traders spent the week rebuilding the Hormuz premium after last week’s deal optimism fell apart",
+      "published_at": "2026-08-14T12:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 48,
+      "has_magnitude": true,
+      "score": 55,
       "tags": [
-        "geopolitics",
-        "lng"
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 21.0,
+        "themes": 13.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 50.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "wti",
+          "demand"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Saudi Arabia announces start of Red Sea defence alliance: Will it work?",
+      "url": "https://www.aljazeera.com/news/2026/8/14/saudi-arabia-announces-start-of-red-sea-defence-alliance-will-it-work?traffic_source=rss",
+      "snippet": "Thirteen countries have become members of the Saudi-led maritime alliance.",
+      "published_at": "2026-08-14T12:45:11+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.6,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 45.8,
-        "recency_multiplier": 0.88
+        "raw": 42.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "strait of hormuz"
-        ],
-        "lng": [
-          "tanker"
+          "red sea"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "red sea"
         ]
       },
       "duplicate_count": 0,
@@ -332,6 +419,94 @@
       "also_reported_by": []
     },
     {
+      "title": "Syria’s Oil Revival Is Weakening Russia’s Influence in the Country",
+      "url": "https://oilprice.com/Energy/Energy-General/Syrias-Oil-Revival-Is-Weakening-Russias-Influence-in-the-Country.html",
+      "snippet": "Syrian oil is clawing its way back, methodically. Onshore, the immediate issue is returning Syria’s existing oil production to Damascus. Most producing fields are concentrated in Deir ez-Zor and Hasakah in the northeast, territory Damascus lost during the civil war, eventually to the Kurdish-led Syr",
+      "published_at": "2026-08-14T12:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "russia"
+        ],
+        "urgency": [
+          "immediate"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Hormuz Tanker Traffic Slumps as U.S.-Iran Standoff Drags On",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Slumps-as-US-Iran-Standoff-Drags-On.html",
+      "snippet": "Tankers moving along the Strait of Hormuz dwindled further this week, with only five crossings on Wednesday and nine crossings on Thursday, down from a monthly average of 12 crossings, according to data from Kpler, as cited by Reuters. Five tankers went into the waterway yesterday, according to the ",
+      "published_at": "2026-08-14T08:15:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.8,
+        "recency_multiplier": 0.8
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Record-breaking rain in Japan leaves several dead, thousands stranded",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/14-08-sv-japan-floods-chiba-jp?traffic_source=rss",
       "snippet": "At least four people were killed, and one remains missing after record-breaking rain triggered flooding in Japan.",
@@ -342,7 +517,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 44,
       "tags": [
         "weather"
       ],
@@ -358,7 +533,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "weather": [
@@ -375,47 +550,9 @@
       "also_reported_by": []
     },
     {
-      "title": "US weekly LNG exports climb to 36 cargoes",
-      "url": "https://lngprime.com/americas/us-weekly-lng-exports-climb-to-36-cargoes/195107/",
-      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending August 12, up five cargoes from the week before, according to the Energy Information Administration.",
-      "published_at": "2026-08-14T05:13:48+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 44,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "lng exports"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "BP, XRG, and UCC on 4 tcf Venezuelan gas quest as offshore development gathers pace",
       "url": "https://www.offshore-energy.biz/bp-xrg-and-ucc-on-4-tcf-venezuelan-gas-quest-as-offshore-development-gathers-pace/",
-      "snippet": "UK-headquartered energy giant BP and its partners, ADNOC’s XRG and UCC Oil and Gas Holding, have secured a key licence off the coast of Venezuela in a push to unlock 4 trillion cubic feet (tcf) of proven gas resources. The post BP, XRG, and UCC on 4 tcf Venezuelan gas quest as offshore development g",
+      "snippet": "UK-headquartered energy giant BP and its partners, ADNOC’s XRG and UCC Oil and Gas Holding, have secured a key license off the coast of Venezuela in a push to unlock 4 trillion cubic feet (tcf) of proven gas resources. The post BP, XRG, and UCC on 4 tcf Venezuelan gas quest as offshore development g",
       "published_at": "2026-08-14T10:57:48+00:00",
       "type": "news",
       "source": "offshore_energy",
@@ -423,7 +560,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 42,
       "tags": [
         "regulation"
       ],
@@ -439,52 +576,14 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "regulation": [
-          "licence"
+          "license"
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Investment approval request submitted for Cyprus-Israel interconnector, project viable in all scenarios",
-      "url": "https://www.offshore-energy.biz/investment-approval-request-submitted-for-cyprus-israel-interconnector-project-viable-in-all-scenarios/",
-      "snippet": "Greece&#8217;s transmission system operator (TSO) Independent Power Transmission Operator (IPTO), as the project promoter [&#8230;] The post Investment approval request submitted for Cyprus-Israel interconnector, project viable in all scenarios appeared first on Offshore Energy .",
-      "published_at": "2026-08-14T09:28:07+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 24.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "infrastructure": [
-          "interconnector",
-          "transmission",
-          "system operator"
         ]
       },
       "duplicate_count": 0,
@@ -539,41 +638,124 @@
       "also_reported_by": []
     },
     {
-      "title": "$51 billion LNG megaproject takes ‘important’ step on path to FID by year-end",
-      "url": "https://www.offshore-energy.biz/51-billion-lng-megaproject-takes-important-step-on-path-to-fid-by-year-end/",
-      "snippet": "A giant multibillion-dollar liquefied natural gas (LNG) export project in South America is laying the groundwork for a final investment decision (FID) by the end of 2026, with the submission of its application to join Argentina’s Large Investment Incentive Regime (RIGI), bringing the country closer ",
-      "published_at": "2026-08-14T08:54:03+00:00",
+      "title": "US weekly LNG exports climb to 36 cargoes",
+      "url": "https://lngprime.com/americas/us-weekly-lng-exports-climb-to-36-cargoes/195107/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending August 12, up five cargoes from the week before, according to the Energy Information Administration.",
+      "published_at": "2026-08-14T05:13:48+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.63
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Hormuz Crisis Pushes Asian Refiners Toward U.S. Oil",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Crisis-Pushes-Asian-Refiners-Toward-US-Oil.html",
+      "snippet": "North Asian refiners have increased buying activity to secure U.S. crude oil supply as an alternative to the Middle Eastern crude that may not make it outbound from the Strait of Hormuz as the U.S.-Iran stalemate continues and the chokepoint remains effectively closed. At least four Asia-based refin",
+      "published_at": "2026-08-14T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 19.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 32.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "may"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Investment approval request submitted for Cyprus-Israel interconnector, project viable in all scenarios",
+      "url": "https://www.offshore-energy.biz/investment-approval-request-submitted-for-cyprus-israel-interconnector-project-viable-in-all-scenarios/",
+      "snippet": "Greece&#8217;s transmission system operator (TSO) Independent Power Transmission Operator (IPTO), as the project promoter [&#8230;] The post Investment approval request submitted for Cyprus-Israel interconnector, project viable in all scenarios appeared first on Offshore Energy .",
+      "published_at": "2026-08-14T09:28:07+00:00",
       "type": "news",
       "source": "offshore_energy",
       "source_name": "Offshore Energy",
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 40,
       "tags": [
-        "lng",
-        "oil_macro"
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 12.4,
-        "themes": 23.5,
+        "themes": 24.0,
         "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 35.9,
-        "recency_multiplier": 0.92
+        "raw": 36.4,
+        "recency_multiplier": 0.88
       },
       "matched": {
-        "lng": [
-          "lng",
-          "final investment decision"
-        ],
-        "oil_macro": [
-          "dollar"
+        "infrastructure": [
+          "interconnector",
+          "transmission",
+          "system operator"
         ]
       },
       "duplicate_count": 0,
@@ -590,7 +772,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "regulation"
       ],
@@ -606,7 +788,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "regulation": [
@@ -617,9 +799,48 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-14T07:07:42+00:00"
+      "also_reported_by": []
+    },
+    {
+      "title": "$51 billion LNG megaproject takes ‘important’ step on path to FID by year-end",
+      "url": "https://www.offshore-energy.biz/51-billion-lng-megaproject-takes-important-step-on-path-to-fid-by-year-end/",
+      "snippet": "A giant multibillion-dollar liquefied natural gas (LNG) export project in South America is laying the groundwork for a final investment decision (FID) by the end of 2026, with the submission of its application to join Argentina’s Large Investment Incentive Regime (RIGI), bringing the country closer ",
+      "published_at": "2026-08-14T08:54:03+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 23.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.9,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "final investment decision"
+        ],
+        "oil_macro": [
+          "dollar"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Oil Prices Head for 4% Weekly Gain as U.S.-Iran Deadlock Drags On",
@@ -632,7 +853,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 40,
+      "score": 38,
       "tags": [
         "oil_macro",
         "geopolitics"
@@ -649,7 +870,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.6,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.65
       },
       "matched": {
         "oil_macro": [
@@ -678,7 +899,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 36,
+      "score": 33,
       "tags": [
         "oil_macro"
       ],
@@ -694,7 +915,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.7,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.73
       },
       "matched": {
         "oil_macro": [
@@ -711,43 +932,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Vance Says Cheap Oil and Gas Is Top U.S. Priority in Iran War",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Vance-Says-Cheap-Oil-and-Gas-Is-Top-US-Priority-in-Iran-War.html",
-      "snippet": "Low U.S. gasoline prices are the top priority of the Administration amid the war in Iran, Vice President JD Vance said, as the U.S.-Iran deadlock persists and the U.S. vowed to keep the blockade on Iran indefinitely. “I know that oil is down today and it's way down from the highs in the early days o",
-      "published_at": "2026-08-14T09:20:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.7,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade",
-          "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "US to Soon Unveil Unprecedented Sanctions on Iran",
       "url": "https://www.rigzone.com/news/wire/us_to_soon_unveil_unprecedented_sanctions_on_iran-14-aug-2026-184374-article/?rss=true",
       "snippet": "The move will be part of a 'one-two punch' that includes the continued blockade of Iran's ports, Treasury Secretary Scott Bessent said.",
@@ -758,7 +942,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
@@ -773,7 +957,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.9,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -795,7 +979,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "lng"
       ],
@@ -811,7 +995,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 30.4,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.77
       },
       "matched": {
         "lng": [
@@ -835,7 +1019,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "lng"
       ],
@@ -851,7 +1035,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.72
       },
       "matched": {
         "lng": [
@@ -892,7 +1076,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -907,171 +1091,41 @@
       "also_reported_by": []
     },
     {
-      "title": "€1.5 billion turnkey contract awarded for Greek interconnection",
-      "url": "https://www.offshore-energy.biz/e1-5-billion-turnkey-contract-awarded-for-greek-interconnection/",
-      "snippet": "Greek Hellenic Cables, the cables segment of Belgium-headquartered Cenergy Holdings, has secured a turnkey [&#8230;] The post €1.5 billion turnkey contract awarded for Greek interconnection appeared first on Offshore Energy .",
-      "published_at": "2026-08-14T07:10:23+00:00",
+      "title": "Vance Says Cheap Oil and Gas Is Top U.S. Priority in Iran War",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Vance-Says-Cheap-Oil-and-Gas-Is-Top-US-Priority-in-Iran-War.html",
+      "snippet": "Low U.S. gasoline prices are the top priority of the Administration amid the war in Iran, Vice President JD Vance said, as the U.S.-Iran deadlock persists and the U.S. vowed to keep the blockade on Iran indefinitely. “I know that oil is down today and it's way down from the highs in the early days o",
+      "published_at": "2026-08-14T09:20:00+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
       "score": 31,
       "tags": [
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 5.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.0,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "power_system": [
-          "interconnection"
-        ],
-        "geography": [
-          "belgium"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "What is a ‘ceasefire’ supposed to achieve?",
-      "url": "https://www.aljazeera.com/video/by-the-numbers-3/2026/8/14/what-is-a-ceasefire-supposed-to-achieve?traffic_source=rss",
-      "snippet": "Gaza, Lebanon, Iran, Ukraine: four ceasefires, none that held. AJLabs on why truces keep collapsing.",
-      "published_at": "2026-08-14T09:00:51+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 8.8,
+        "themes": 17.9,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.93
+        "raw": 26.7,
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
-          "ceasefire"
-        ],
-        "geography": [
-          "ukraine"
+          "blockade",
+          "war"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "US says dozens of countries helped China dodge Trump's tariffs",
-      "url": "https://www.bbc.co.uk/news/articles/c78gy6ep3n5o?at_medium=RSS&at_campaign=rss",
-      "snippet": "A new US report said China had moved goods through nations with lower tariffs to dodge higher levies.",
-      "published_at": "2026-08-14T08:39:46+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "geopolitics": [
-          "tariffs"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Nigel Farage defeats Count Binface to reclaim UK parliamentary seat",
-      "url": "https://www.aljazeera.com/news/2026/8/14/nigel-farage-defeats-count-binface-to-reclaim-uk-parliamentary-seat?traffic_source=rss",
-      "snippet": "The Reform UK leader received 22,239 votes in the Clacton by-election, compared with 9,455 for Binface.",
-      "published_at": "2026-08-14T07:07:42+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 6.2,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.6,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "regulation": [
-          "reform"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/scrutiny-over-farages-finances-has-hurt-reform-uk?traffic_source=rss",
-        "title": "Scrutiny over Farage’s finances has ‘hurt Reform UK support’",
-        "published_at": "2026-08-14T10:32:22+00:00"
-      },
-      "hidden": true
     }
   ]
 }
