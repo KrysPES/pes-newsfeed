@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-14T03:13:10.954569+00:00",
-  "item_count": 12,
+  "generated_at": "2026-08-14T05:05:20.933248+00:00",
+  "item_count": 8,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 1
+    "high": 0,
+    "normal": 2
   },
-  "superseded_count": 3,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1342
+        "ms": 1708
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 38636
+        "ms": 76772
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3514
+        "ms": 16503
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 399
+        "ms": 880
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 94
+        "ms": 311
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 170
+        "ms": 152
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1473
+        "ms": 1488
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 497
+        "ms": 205
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 680
+        "ms": 734
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 378
+        "ms": 357
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 631
+        "ms": 782
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 36,
+        "count": 28,
         "error": null,
-        "ms": 95
+        "ms": 201
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 62
+        "ms": 168
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 62,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.89
       },
       "matched": {
         "supply_disruption": [
@@ -146,9 +146,9 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 3,
+      "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-08-13T11:18:45+00:00"
+      "first_seen_at": "2026-08-13T16:34:57+00:00"
     },
     {
       "title": "Norway’s FM tells Al Jazeera the US war on Iran was not ‘smart’",
@@ -161,7 +161,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 49,
       "tags": [
         "geopolitics"
       ],
@@ -177,7 +177,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -192,8 +192,56 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 3,
+      "update_count": 2,
       "thread_started_at": "2026-08-13T15:00:00+00:00"
+    },
+    {
+      "title": "Oil slick from tanker carrying sanctioned Russian crude reaches Oman",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/oil-slick-from-tanker-carrying-sanctioned-russian-crude-reaches-oman?traffic_source=rss",
+      "snippet": "An oil slick from the tanker the Caroline Bezengi has reached Oman’s coastline weeks after the vessel ran aground.",
+      "published_at": "2026-08-14T03:20:09+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 14.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctioned"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "russian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Jefferies: Diesel Cracks Reveal the Real Oil Market Squeeze",
@@ -206,7 +254,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 35,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -223,7 +271,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 58.4,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.46
       },
       "matched": {
         "geopolitics": [
@@ -244,39 +292,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Huge explosion rocks Italian munitions factory south of Rome",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/13/huge-explosion-rocks-italian-munitions-factory-south-of-rome?traffic_source=rss",
-      "snippet": "A powerful explosion tore through a munitions faction south of the Italian capital Rome on Thursday.",
-      "published_at": "2026-08-13T20:52:48+00:00",
+      "title": "US says dozens of countries helped China dodge Trump's tariffs",
+      "url": "https://www.bbc.co.uk/news/articles/c78gy6ep3n5o?at_medium=RSS&at_campaign=rss",
+      "snippet": "A new US report said China had moved goods through nations with lower tariffs to dodge higher levies.",
+      "published_at": "2026-08-14T03:09:48+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
-        "supply_disruption"
+        "geopolitics"
       ],
       "alert": "low",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
+        "authority": 10.2,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.72
+        "raw": 24.2,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "explosion"
+        "geopolitics": [
+          "tariffs"
         ],
-        "unplanned": [
-          "explosion"
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
@@ -293,7 +342,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 31,
       "tags": [
         "supply_disruption",
         "nuclear"
@@ -309,7 +358,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 58.2,
-        "recency_multiplier": 0.45
+        "recency_multiplier": 0.39
       },
       "matched": {
         "supply_disruption": [
@@ -327,183 +376,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Yemen faces highest risk of returning to war since 2022 truce, UN warns",
-      "url": "https://www.aljazeera.com/news/2026/8/14/yemen-faces-highest-risk-of-returning-to-war-since-2022-truce-un-warns?traffic_source=rss",
-      "snippet": "Civilian and military casualties have been reported as fighting has flared across Yemeni front lines in recent days.",
-      "published_at": "2026-08-14T00:02:22+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "geopolitics": [
-          "truce",
-          "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Four Canadian hockey stars remain suspended after sexual assault acquittal",
-      "url": "https://www.bbc.co.uk/news/articles/cj9dpdmr77do?at_medium=RSS&at_campaign=rss",
-      "snippet": "A fifth has been reinstated, though an appeals board found that the whole group broke Hockey Canada's code of conduct.",
-      "published_at": "2026-08-13T14:51:44+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.6,
-        "recency_multiplier": 0.45
-      },
-      "matched": {
-        "supply_disruption": [
-          "suspended"
-        ],
-        "unplanned": [
-          "suspended"
-        ],
-        "urgency": [
-          "suspended"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Falls as Iran Talks Remain Stalled",
-      "url": "https://www.rigzone.com/news/wire/oil_falls_as_iran_talks_remain_stalled-13-aug-2026-184373-article/?rss=true",
-      "snippet": "Crude retreated as traders assessed Hormuz shipments and rising US inventories.",
-      "published_at": "2026-08-13T19:34:52+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "gas_storage",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 9.4,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "gas_storage": [
-          "inventories"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukraine Strikes Gazprom's 200,000-Bpd Salavat Refinery in the Urals",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Strikes-Gazproms-200000-Bpd-Salavat-Refinery-in-the-Urals.html",
-      "snippet": "Ukraine struck another major Russian refinery Thursday, hitting Gazprom's Neftekhim Salavat complex in the Urals as Kyiv intensified attacks that have already forced Moscow to curb fuel exports and even import gasoline. The attack caused a fire at the 200,000-barrel-per-day facility in Russia's Bash",
-      "published_at": "2026-08-13T15:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 17.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.0,
-        "recency_multiplier": 0.47
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "oil_macro": [
-          "refinery",
-          "barrel"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "ukraine"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "UAE accuses Iran of attacks on two ADNOC vessels in Strait of Hormuz",
       "url": "https://www.aljazeera.com/news/2026/8/14/uae-accuses-iran-of-attacks-on-two-adnoc-vessels-in-strait-of-hormuz?traffic_source=rss",
       "snippet": "No injuries were reported in the attack, which the UAE called &#039;piracy&#039; and a threat to global energy security.",
@@ -514,7 +386,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 16,
+      "score": 15,
       "tags": [
         "geopolitics"
       ],
@@ -530,7 +402,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -563,7 +435,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 10,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -581,7 +453,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 63.4,
-        "recency_multiplier": 0.46
+        "recency_multiplier": 0.39
       },
       "matched": {
         "geopolitics": [
@@ -598,53 +470,6 @@
         "geography": [
           "strait of hormuz",
           "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/aje-onl-nf_norways-fm-us-war-on-iran-was-not-smart-130826?traffic_source=rss",
-        "title": "Norway’s FM tells Al Jazeera the US war on Iran was not ‘smart’",
-        "published_at": "2026-08-14T01:09:44+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "UK Economy Remains Resilient Despite Iran War and Higher Energy Prices",
-      "url": "https://oilprice.com/Energy/Energy-General/UK-Economy-Remains-Resilient-Despite-Iran-War-and-Higher-Energy-Prices.html",
-      "snippet": "The UK economy grew 0.4 per cent between April and June, official data has revealed, in a sign that businesses and consumers have so far weathered the worst shocks of the war in Iran. The growth figure from the Office for National Statistics was in line with analysts’ expectations but came alongside",
-      "published_at": "2026-08-13T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 45.7,
-        "recency_multiplier": 0.49
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "uk"
         ]
       },
       "duplicate_count": 0,
