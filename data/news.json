@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-14T14:23:26.154168+00:00",
-  "item_count": 18,
+  "generated_at": "2026-08-14T15:11:49.898945+00:00",
+  "item_count": 21,
   "alert_counts": {
     "critical": 0,
-    "high": 3,
-    "normal": 7
+    "high": 2,
+    "normal": 8
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1318
+        "ms": 1653
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 198169
+        "ms": 37841
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 22287
+        "ms": 2891
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 568
+        "ms": 912
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 221
+        "ms": 418
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 178
+        "ms": 168
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 1190
+        "ms": 1331
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 49
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 261
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 711
+        "ms": 790
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 328
+        "ms": 354
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 714
+        "ms": 745
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 95
+        "ms": 127
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 128
+        "ms": 146
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 69,
+      "score": 67,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -134,7 +134,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 75.4,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -157,10 +157,10 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
-      "url": "https://umm.nordpoolgroup.com/#/messages/3cfaf54d-6076-4e11-802b-f2dcae66a795/1",
-      "snippet": "Published: 14.08.2026 16:03:55 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
-      "published_at": "2026-08-14T14:03:55+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
+      "url": "https://umm.nordpoolgroup.com/#/messages/a7676eaa-5eb4-4be5-a4fb-042e0875db79/1",
+      "snippet": "Published: 14.08.2026 16:28:22 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
+      "published_at": "2026-08-14T14:28:22+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -196,7 +196,7 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 4,
+      "duplicate_count": 5,
       "also_reported_by": [],
       "first_seen_at": "2026-08-14T01:37:12+00:00"
     },
@@ -211,12 +211,12 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 66,
+      "score": 64,
       "tags": [
         "regulation",
         "nuclear"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 13.9,
@@ -227,7 +227,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 71.8,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.88
       },
       "matched": {
         "regulation": [
@@ -258,7 +258,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 62,
+      "score": 60,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -276,7 +276,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 64.1,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -314,7 +314,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 54,
       "tags": [
         "supply_disruption"
       ],
@@ -329,7 +329,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.89
       },
       "matched": {
         "supply_disruption": [
@@ -346,6 +346,51 @@
       "also_reported_by": []
     },
     {
+      "title": "Indian Refiners in Panic Buying Mode",
+      "url": "https://www.rigzone.com/news/wire/indian_refiners_in_panic_buying_mode-14-aug-2026-184380-article/?rss=true",
+      "snippet": "Indian state-owned refiners are rushing to procure spot crude unusually far in advance as Ukrainian attacks on Russian energy assets and a stalemate over the Strait of Hormuz make supplies increasingly uncertain.",
+      "published_at": "2026-08-14T14:01:39+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 19.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 46.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Oil Traders Reprice Hormuz Risk as Demand Outlook Deteriorates",
       "url": "https://oilprice.com/Energy/Energy-General/Oil-Traders-Reprice-Hormuz-Risk-as-Demand-Outlook-Deteriorates.html",
       "snippet": "September WTI crude oil futures are trading at $81.19 late Thursday, up $4.11, or 5.33%, for the week. With Friday’s session still to come, the final weekly result remains unsettled. The message is clear. Traders spent the week rebuilding the Hormuz premium after last week’s deal optimism fell apart",
@@ -356,7 +401,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 54,
+      "score": 52,
       "tags": [
         "oil_macro"
       ],
@@ -372,7 +417,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.2,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.91
       },
       "matched": {
         "oil_macro": [
@@ -398,7 +443,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 48,
       "tags": [
         "geopolitics"
       ],
@@ -414,7 +459,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -438,7 +483,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "regulation"
       ],
@@ -453,7 +498,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.1,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.91
       },
       "matched": {
         "regulation": [
@@ -476,7 +521,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -492,7 +537,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.7,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -519,12 +564,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 40,
       "tags": [
         "geopolitics",
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -536,7 +581,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.8,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
@@ -554,49 +599,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Record-breaking rain in Japan leaves several dead, thousands stranded",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/14-08-sv-japan-floods-chiba-jp?traffic_source=rss",
-      "snippet": "At least four people were killed, and one remains missing after record-breaking rain triggered flooding in Japan.",
-      "published_at": "2026-08-14T10:52:15+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 6.2,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.6,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "weather": [
-          "flooding"
-        ],
-        "geography": [
-          "japan"
-        ],
-        "urgency": [
-          "breaking"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Hormuz Crisis Pushes Asian Refiners Toward U.S. Oil",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Crisis-Pushes-Asian-Refiners-Toward-US-Oil.html",
       "snippet": "North Asian refiners have increased buying activity to secure U.S. crude oil supply as an alternative to the Middle Eastern crude that may not make it outbound from the Strait of Hormuz as the U.S.-Iran stalemate continues and the chokepoint remains effectively closed. At least four Asia-based refin",
@@ -607,7 +609,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -624,7 +626,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 32.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "geopolitics": [
@@ -645,6 +647,49 @@
       "also_reported_by": []
     },
     {
+      "title": "Record-breaking rain in Japan leaves several dead, thousands stranded",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/14-08-sv-japan-floods-chiba-jp?traffic_source=rss",
+      "snippet": "At least four people were killed, and one remains missing after record-breaking rain triggered flooding in Japan.",
+      "published_at": "2026-08-14T10:52:15+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 6.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.6,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "weather": [
+          "flooding"
+        ],
+        "geography": [
+          "japan"
+        ],
+        "urgency": [
+          "breaking"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Atlantic spot LNG rates drop to $40,000 per day",
       "url": "https://lngprime.com/asia/atlantic-spot-lng-rates-drop-to-40000-per-day/195150/",
       "snippet": "Atlantic spot LNG shipping rates continued to decrease this week, dropping to $40,000 per day, the lowest since the start of the Middle East conflict, according to Spark Commodities.",
@@ -655,7 +700,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 37,
       "tags": [
         "geopolitics",
         "lng",
@@ -673,7 +718,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.0,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -693,6 +738,84 @@
       "also_reported_by": []
     },
     {
+      "title": "BP, XRG, and UCC on 4 tcf Venezuelan gas quest as offshore development gathers pace",
+      "url": "https://www.offshore-energy.biz/bp-xrg-and-ucc-on-4-tcf-venezuelan-gas-quest-as-offshore-development-gathers-pace/",
+      "snippet": "UK-headquartered energy giant BP and its partners, ADNOC’s XRG and UCC Oil and Gas Holding, have secured a key license off the coast of Venezuela in a push to unlock 4 trillion cubic feet (tcf) of proven gas resources. The post BP, XRG, and UCC on 4 tcf Venezuelan gas quest as offshore development g",
+      "published_at": "2026-08-14T10:57:48+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 6.2,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.6,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "regulation": [
+          "license"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Investment approval request submitted for Cyprus-Israel interconnector, project viable in all scenarios",
+      "url": "https://www.offshore-energy.biz/investment-approval-request-submitted-for-cyprus-israel-interconnector-project-viable-in-all-scenarios/",
+      "snippet": "Greece&#8217;s transmission system operator (TSO) Independent Power Transmission Operator (IPTO), as the project promoter [&#8230;] The post Investment approval request submitted for Cyprus-Israel interconnector, project viable in all scenarios appeared first on Offshore Energy .",
+      "published_at": "2026-08-14T09:28:07+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 24.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 0.75
+      },
+      "matched": {
+        "infrastructure": [
+          "interconnector",
+          "transmission",
+          "system operator"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "US weekly LNG exports climb to 36 cargoes",
       "url": "https://lngprime.com/americas/us-weekly-lng-exports-climb-to-36-cargoes/195107/",
       "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending August 12, up five cargoes from the week before, according to the Energy Information Administration.",
@@ -703,7 +826,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 36,
       "tags": [
         "lng"
       ],
@@ -718,7 +841,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.54
       },
       "matched": {
         "lng": [
@@ -741,7 +864,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 34,
       "tags": [
         "regulation"
       ],
@@ -757,7 +880,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.6,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.81
       },
       "matched": {
         "regulation": [
@@ -765,6 +888,47 @@
         ],
         "geography": [
           "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "$51 billion LNG megaproject takes ‘important’ step on path to FID by year-end",
+      "url": "https://www.offshore-energy.biz/51-billion-lng-megaproject-takes-important-step-on-path-to-fid-by-year-end/",
+      "snippet": "A giant multibillion-dollar liquefied natural gas (LNG) export project in South America is laying the groundwork for a final investment decision (FID) by the end of 2026, with the submission of its application to join Argentina’s Large Investment Incentive Regime (RIGI), bringing the country closer ",
+      "published_at": "2026-08-14T08:54:03+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 23.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.9,
+        "recency_multiplier": 0.72
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "final investment decision"
+        ],
+        "oil_macro": [
+          "dollar"
         ]
       },
       "duplicate_count": 0,
@@ -781,7 +945,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 35,
+      "score": 33,
       "tags": [
         "oil_macro",
         "geopolitics"
@@ -798,7 +962,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.6,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.56
       },
       "matched": {
         "oil_macro": [
@@ -843,7 +1007,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -852,49 +1016,6 @@
         "geography": [
           "russia",
           "russian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russia Captures Record Share of India’s Oil Market",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Captures-Record-Share-of-Indias-Oil-Market.html",
-      "snippet": "Crude oil imports from Russia accounted for over 50% of India’s total import volumes last month. This was the highest share of Russian oil in India’s import mix, Reuters noted in a report that cited unnamed trade sources. Russia exported crude at a rate of some 2.47 million barrels daily to India la",
-      "published_at": "2026-08-14T07:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 34.7,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "india"
         ]
       },
       "duplicate_count": 0,
