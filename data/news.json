@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-14T05:05:20.933248+00:00",
-  "item_count": 8,
+  "generated_at": "2026-08-14T06:24:19.351490+00:00",
+  "item_count": 11,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 2
+    "normal": 3
   },
-  "superseded_count": 2,
+  "superseded_count": 3,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1708
+        "ms": 1044
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 76772
+        "ms": 58813
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 16503
+        "ms": 2871
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 880
+        "ms": 618
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 311
+        "ms": 392
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 152
+        "ms": 119
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1488
+        "ms": 916
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 205
+        "ms": 145
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 734
+        "ms": 587
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 357
+        "ms": 196
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 782
+        "ms": 517
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 201
+        "ms": 143
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 168
+        "ms": 82
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 62,
+      "score": 58,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.81
       },
       "matched": {
         "supply_disruption": [
@@ -151,49 +151,174 @@
       "first_seen_at": "2026-08-13T16:34:57+00:00"
     },
     {
-      "title": "Norway’s FM tells Al Jazeera the US war on Iran was not ‘smart’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/aje-onl-nf_norways-fm-us-war-on-iran-was-not-smart-130826?traffic_source=rss",
-      "snippet": "Norway’s FM Espen Barth Eide says the Iran war failed to achieve its initial aims and strengthened hardliners in Tehran.",
-      "published_at": "2026-08-14T01:09:44+00:00",
+      "title": "US weekly LNG exports climb to 36 cargoes",
+      "url": "https://lngprime.com/americas/us-weekly-lng-exports-climb-to-36-cargoes/195107/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending August 12, up five cargoes from the week before, according to the Energy Information Administration.",
+      "published_at": "2026-08-14T05:13:48+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 56,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Prices Head for 4% Weekly Gain as U.S.-Iran Deadlock Drags On",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-4-Weekly-Gain-as-US-Iran-Deadlock-Drags-On.html",
+      "snippet": "Crude oil prices were on course to add 4% this week, as the United States and Iran indicated they are no closer to a peace deal than they were at the start of the war. At the time of writing, Brent crude was trading at $87.12 per barrel, and West Texas Intermediate was trading at $81.36 per barrel. ",
+      "published_at": "2026-08-14T05:40:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 51,
+      "tags": [
+        "oil_macro",
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 18.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 44.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-08-13T15:00:00+00:00"
+    },
+    {
+      "title": "CMA CGM inks LoI with Chinese yard for LNG-powered giants",
+      "url": "https://lngprime.com/asia/cma-cgm-inks-loi-with-chinese-yard-for-lng-powered-giants/195124/",
+      "snippet": "French shipping giant CMA CGM, one of the world’s largest backers of LNG fuel, has signed a letter of intent with China’s Yangzijiang Shipbuilding to build more ultra-large LNG dual-fuel container vessels, according to shipbuilding sources.",
+      "published_at": "2026-08-14T05:39:13+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "french"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "North Korea fumes over upcoming US-South Korea military drills",
+      "url": "https://www.aljazeera.com/news/2026/8/14/north-korea-fumes-over-upcoming-us-south-korea-military-drills?traffic_source=rss",
+      "snippet": "Pyongyang has accused the US of pushing the world &#039;to the brink of nuclear war&#039;.",
+      "published_at": "2026-08-14T05:40:45+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 36,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "nuclear"
       ],
-      "alert": "normal",
-      "nature": "unplanned",
+      "alert": "low",
+      "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
+        "themes": 13.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 48.5,
-        "recency_multiplier": 0.86
+        "raw": 27.8,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
           "war"
         ],
-        "geography": [
-          "norway"
+        "nuclear": [
+          "nuclear"
         ],
-        "unplanned": [
-          "failed"
+        "geography": [
+          "korea"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-08-13T15:00:00+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Oil slick from tanker carrying sanctioned Russian crude reaches Oman",
@@ -206,7 +331,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 35,
       "tags": [
         "geopolitics",
         "lng",
@@ -224,7 +349,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -254,7 +379,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -271,7 +396,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 58.4,
-        "recency_multiplier": 0.46
+        "recency_multiplier": 0.42
       },
       "matched": {
         "geopolitics": [
@@ -302,7 +427,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -318,7 +443,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -332,48 +457,54 @@
       "also_reported_by": []
     },
     {
-      "title": "Romanian plant taken offline as Hungary moves to keep Paks operating",
-      "url": "https://www.world-nuclear-news.org/articles/romanian-plant-taken-offline-as-hungary-moves-to-keep-paks-operating",
-      "snippet": "Romania has taken the second unit of the Cernavoda nuclear power plant offline because of the record-low water level in the River Danube. Meanwhile, the Hungarian government has announced measures to enable the Paks plant to continue operating.",
-      "published_at": "2026-08-13T14:51:59+00:00",
+      "title": "Norway’s FM tells Al Jazeera the US war on Iran was not ‘smart’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/aje-onl-nf_norways-fm-us-war-on-iran-was-not-smart-130826?traffic_source=rss",
+      "snippet": "Norway’s FM Espen Barth Eide says the Iran war failed to achieve its initial aims and strengthened hardliners in Tehran.",
+      "published_at": "2026-08-14T01:09:44+00:00",
       "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 14,
       "tags": [
-        "supply_disruption",
-        "nuclear"
+        "geopolitics"
       ],
       "alert": "low",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 13.9,
-        "themes": 28.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 58.2,
-        "recency_multiplier": 0.39
+        "raw": 48.5,
+        "recency_multiplier": 0.78
       },
       "matched": {
-        "supply_disruption": [
-          "offline",
-          "taken offline"
+        "geopolitics": [
+          "war"
         ],
-        "nuclear": [
-          "nuclear"
+        "geography": [
+          "norway"
         ],
-        "urgency": [
-          "announced"
+        "unplanned": [
+          "failed"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-4-Weekly-Gain-as-US-Iran-Deadlock-Drags-On.html",
+        "title": "Oil Prices Head for 4% Weekly Gain as U.S.-Iran Deadlock Drags On",
+        "published_at": "2026-08-14T05:40:00+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "UAE accuses Iran of attacks on two ADNOC vessels in Strait of Hormuz",
@@ -386,7 +517,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 14,
       "tags": [
         "geopolitics"
       ],
@@ -402,7 +533,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -418,9 +549,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/aje-onl-nf_norways-fm-us-war-on-iran-was-not-smart-130826?traffic_source=rss",
-        "title": "Norway’s FM tells Al Jazeera the US war on Iran was not ‘smart’",
-        "published_at": "2026-08-14T01:09:44+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-4-Weekly-Gain-as-US-Iran-Deadlock-Drags-On.html",
+        "title": "Oil Prices Head for 4% Weekly Gain as U.S.-Iran Deadlock Drags On",
+        "published_at": "2026-08-14T05:40:00+00:00"
       },
       "hidden": true
     },
@@ -435,7 +566,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 9,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -453,7 +584,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 63.4,
-        "recency_multiplier": 0.39
+        "recency_multiplier": 0.36
       },
       "matched": {
         "geopolitics": [
@@ -476,9 +607,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/aje-onl-nf_norways-fm-us-war-on-iran-was-not-smart-130826?traffic_source=rss",
-        "title": "Norway’s FM tells Al Jazeera the US war on Iran was not ‘smart’",
-        "published_at": "2026-08-14T01:09:44+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-4-Weekly-Gain-as-US-Iran-Deadlock-Drags-On.html",
+        "title": "Oil Prices Head for 4% Weekly Gain as U.S.-Iran Deadlock Drags On",
+        "published_at": "2026-08-14T05:40:00+00:00"
       },
       "hidden": true
     }
