@@ -1,111 +1,157 @@
 {
-  "generated_at": "2026-08-14T21:51:39.918137+00:00",
-  "item_count": 15,
+  "generated_at": "2026-08-14T22:10:12.443779+00:00",
+  "item_count": 17,
   "alert_counts": {
     "critical": 0,
     "high": 0,
     "normal": 10
   },
-  "superseded_count": 0,
+  "superseded_count": 3,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 898
+        "ms": 1082
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 25697
+        "ms": 70067
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 6618
+        "ms": 3695
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 369
+        "ms": 343
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 222
+        "ms": 3250
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 130
+        "ms": 133
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 44,
         "error": null,
-        "ms": 1183
+        "ms": 1325
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 92
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 247
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 694
+        "ms": 692
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 315
+        "ms": 368
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 737
+        "ms": 669
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 204
+        "ms": 53
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 54
+        "ms": 94
       }
     ]
   },
   "items": [
+    {
+      "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
+      "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
+      "snippet": "Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran.",
+      "published_at": "2026-08-14T21:50:46+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 60,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 57.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "ceasefire",
+          "war",
+          "negotiations",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-08-14T12:00:00+00:00"
+    },
     {
       "title": "Government approves extended operation of Almaraz plant",
       "url": "https://www.world-nuclear-news.org/articles/government-approves-extended-operation-of-almaraz-plant",
@@ -117,7 +163,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 61,
+      "score": 60,
       "tags": [
         "regulation",
         "nuclear"
@@ -133,7 +179,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 71.8,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.78
       },
       "matched": {
         "regulation": [
@@ -207,7 +253,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 57,
+      "score": 56,
       "tags": [
         "supply_disruption"
       ],
@@ -222,7 +268,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.77
       },
       "matched": {
         "supply_disruption": [
@@ -241,56 +287,6 @@
       "first_seen_at": "2026-08-14T10:54:25+00:00"
     },
     {
-      "title": "Fallout Spreads Across the Middle East as the Iran War Grinds On",
-      "url": "https://oilprice.com/Energy/Energy-General/Fallout-Spreads-Across-the-Middle-East-as-the-Iran-War-Grinds-On.html",
-      "snippet": "Politics, Geopolitics & Conflict Yemen’s Houthis said they targeted Saudi Aramco’s Jazan refinery with two drones on Thursday, the second claimed attack on the Red Sea facility in less than a week and the third since July 25. Neither Saudi Arabia nor Aramco has confirmed the attack as of the time of",
-      "published_at": "2026-08-14T12:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 49,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 34.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 75.4,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "war",
-          "attack",
-          "red sea"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "red sea"
-        ],
-        "urgency": [
-          "confirmed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Zambia suspends vote counting in election citing violence",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/zambia-suspends-vote-counting-in-election-citing-violence?traffic_source=rss",
       "snippet": "Zambia&#039;s electoral commission on Friday suspended vote counting nationwide.",
@@ -301,7 +297,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 46,
       "tags": [
         "supply_disruption"
       ],
@@ -316,7 +312,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.9,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.71
       },
       "matched": {
         "supply_disruption": [
@@ -333,6 +329,47 @@
       "also_reported_by": []
     },
     {
+      "title": "Wildfires rage across Europe as heatwaves drive record temperatures",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/wildfires-rage-across-europe-as-heatwaves-drive-record-temperatures?traffic_source=rss",
+      "snippet": "Wildfires fuelled by record heat are ravaging Europe, burning around 500,000 hectares and forcing thousands to flee.",
+      "published_at": "2026-08-14T21:50:35+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "weather"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "temperatures",
+          "record temperatures"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "U.S. West Coast Refiners Tap Malaysian Supply",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/US-West-Coast-Refiners-Tap-Malaysian-Supply.html",
       "snippet": "A cargo of fuel oil from Malaysia is making its way to a refinery on the U.S. West Coast in the first such shipment in three years as global supply of feedstock for refineries has tightened in recent months due to the closure of the Strait of Hormuz. The Solomon Sea tanker, laden with more than 540,",
@@ -343,7 +380,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 44,
       "tags": [
         "geopolitics",
         "lng",
@@ -361,7 +398,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.7,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -393,7 +430,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -408,7 +445,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.5,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -432,7 +469,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 42,
       "tags": [
         "infrastructure"
       ],
@@ -447,7 +484,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.5,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.96
       },
       "matched": {
         "infrastructure": [
@@ -471,7 +508,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 42,
       "tags": [
         "oil_macro"
       ],
@@ -487,7 +524,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 45.7,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.75
       },
       "matched": {
         "oil_macro": [
@@ -499,63 +536,9 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Drone Strike Sparks Blaze at Key Russian Oil and Fuel Terminal",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Drone-Strike-Sparks-Blaze-at-Key-Russian-Oil-and-Fuel-Terminal.html",
-      "snippet": "Ust-Luga, the top Russian port for exports of oil and other commodities from the Baltic Sea, caught fire early on Friday following an overnight drone attack from Ukraine. A fire was detected at the port of Ust-Luga as a result of damage from drones, Alexander Drozdenko, governor of Russia’s Leningra",
-      "published_at": "2026-08-14T11:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 30.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 64.1,
-        "recency_multiplier": 0.53
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
-        ],
-        "supply_disruption": [
-          "fire",
-          "blaze"
-        ],
-        "infrastructure": [
-          "terminal"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "ukraine"
-        ],
-        "unplanned": [
-          "fire",
-          "damage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-14T12:00:00+00:00"
     },
     {
       "title": "Eurostat: EU economy greenhouse gas emissions: +0.3% in Q1 2026",
@@ -568,7 +551,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": true,
-      "score": 40,
+      "score": 39,
       "tags": [
         "gas_storage"
       ],
@@ -584,7 +567,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.8,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.69
       },
       "matched": {
         "gas_storage": [
@@ -608,7 +591,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -625,7 +608,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.3,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.62
       },
       "matched": {
         "geopolitics": [
@@ -653,7 +636,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics",
         "lng"
@@ -670,7 +653,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.8,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -687,48 +670,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Traders Reprice Hormuz Risk as Demand Outlook Deteriorates",
-      "url": "https://oilprice.com/Energy/Energy-General/Oil-Traders-Reprice-Hormuz-Risk-as-Demand-Outlook-Deteriorates.html",
-      "snippet": "September WTI crude oil futures are trading at $81.19 late Thursday, up $4.11, or 5.33%, for the week. With Friday’s session still to come, the final weekly result remains unsettled. The message is clear. Traders spent the week rebuilding the Hormuz premium after last week’s deal optimism fell apart",
-      "published_at": "2026-08-14T12:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.4,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 50.2,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "wti",
-          "demand"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "What’s next for far-right Reform UK after Farage’s by-election win?",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/whats-next-for-far-right-reform-uk-after-farages-by-election-win?traffic_source=rss",
       "snippet": "What’s next for far-right Reform UK after Farage’s by-election win?",
@@ -739,7 +680,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "regulation"
       ],
@@ -755,7 +696,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.6,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.76
       },
       "matched": {
         "regulation": [
@@ -767,6 +708,160 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Oil Rises as US Threatens Iran",
+      "url": "https://www.rigzone.com/news/wire/oil_rises_as_us_threatens_iran-14-aug-2026-184383-article/?rss=true",
+      "snippet": "Oil rose as the US threatened new economic pressure on Iran while uncertainty over the Strait of Hormuz persisted.",
+      "published_at": "2026-08-14T20:43:16+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 15,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
+        "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
+        "published_at": "2026-08-14T21:50:46+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Fallout Spreads Across the Middle East as the Iran War Grinds On",
+      "url": "https://oilprice.com/Energy/Energy-General/Fallout-Spreads-Across-the-Middle-East-as-the-Iran-War-Grinds-On.html",
+      "snippet": "Politics, Geopolitics & Conflict Yemen’s Houthis said they targeted Saudi Aramco’s Jazan refinery with two drones on Thursday, the second claimed attack on the Red Sea facility in less than a week and the third since July 25. Neither Saudi Arabia nor Aramco has confirmed the attack as of the time of",
+      "published_at": "2026-08-14T12:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 14,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 34.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 75.4,
+        "recency_multiplier": 0.53
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war",
+          "attack",
+          "red sea"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "red sea"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss",
+        "title": "Trump says he will declare Strait of Hormuz a US ‘territory’ amid Iran war",
+        "published_at": "2026-08-14T21:50:46+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Oil Traders Reprice Hormuz Risk as Demand Outlook Deteriorates",
+      "url": "https://oilprice.com/Energy/Energy-General/Oil-Traders-Reprice-Hormuz-Risk-as-Demand-Outlook-Deteriorates.html",
+      "snippet": "September WTI crude oil futures are trading at $81.19 late Thursday, up $4.11, or 5.33%, for the week. With Friday’s session still to come, the final weekly result remains unsettled. The message is clear. Traders spent the week rebuilding the Hormuz premium after last week’s deal optimism fell apart",
+      "published_at": "2026-08-14T12:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 10,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 50.2,
+        "recency_multiplier": 0.53
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "wti",
+          "demand"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Energy/Crude-Oil/Hormuz-Attacks-Push-Oil-Toward-100-Despite-US-Crude-Build.html",
+        "title": "Hormuz Attacks Push Oil Toward $100 Despite US Crude Build",
+        "published_at": "2026-08-14T16:21:21+00:00"
+      },
+      "hidden": true
     }
   ]
 }
