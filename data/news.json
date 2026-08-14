@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-14T13:10:08.055758+00:00",
-  "item_count": 24,
+  "generated_at": "2026-08-14T14:23:26.154168+00:00",
+  "item_count": 18,
   "alert_counts": {
     "critical": 0,
-    "high": 2,
-    "normal": 9
+    "high": 3,
+    "normal": 7
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1231
+        "ms": 1318
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 57761
+        "ms": 198169
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 9796
+        "ms": 22287
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 442
+        "ms": 568
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 3876
+        "ms": 221
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 174
+        "ms": 178
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 864
+        "ms": 1190
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 334
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 49
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 526
+        "ms": 711
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 176
+        "ms": 328
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 560
+        "ms": 714
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 27,
+        "count": 26,
         "error": null,
-        "ms": 74
+        "ms": 95
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 117
+        "ms": 128
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 70,
+      "score": 69,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -134,7 +134,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 75.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -157,10 +157,10 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, SPEM",
-      "url": "https://umm.nordpoolgroup.com/#/messages/b0c23a5f-ed41-4648-96ca-99cfa950697b/1",
-      "snippet": "Published: 14.08.2026 14:30:17 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
-      "published_at": "2026-08-14T12:30:17+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
+      "url": "https://umm.nordpoolgroup.com/#/messages/3cfaf54d-6076-4e11-802b-f2dcae66a795/1",
+      "snippet": "Published: 14.08.2026 16:03:55 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
+      "published_at": "2026-08-14T14:03:55+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -196,9 +196,56 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 3,
+      "duplicate_count": 4,
       "also_reported_by": [],
       "first_seen_at": "2026-08-14T01:37:12+00:00"
+    },
+    {
+      "title": "Government approves extended operation of Almaraz plant",
+      "url": "https://www.world-nuclear-news.org/articles/government-approves-extended-operation-of-almaraz-plant",
+      "snippet": "The Spanish government has granted the renewal of the operating licence for the two-unit Almaraz nuclear power plant until June 2030. Under the country's nuclear phase-out policy, unit 1 was scheduled to shut down in October 2027, with unit 2 following one year later.",
+      "published_at": "2026-08-14T11:29:14+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "regulation",
+        "nuclear"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 13.9,
+        "themes": 22.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 71.8,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "regulation": [
+          "licence",
+          "phase-out"
+        ],
+        "nuclear": [
+          "nuclear"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Drone Strike Sparks Blaze at Key Russian Oil and Fuel Terminal",
@@ -211,7 +258,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 64,
+      "score": 62,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -229,7 +276,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 64.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -267,7 +314,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 59,
+      "score": 56,
       "tags": [
         "supply_disruption"
       ],
@@ -282,7 +329,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.94
       },
       "matched": {
         "supply_disruption": [
@@ -309,7 +356,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 55,
+      "score": 54,
       "tags": [
         "oil_macro"
       ],
@@ -325,7 +372,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "oil_macro": [
@@ -391,7 +438,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 45,
       "tags": [
         "regulation"
       ],
@@ -406,7 +453,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "regulation": [
@@ -429,7 +476,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 45,
       "tags": [
         "geopolitics"
       ],
@@ -445,7 +492,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -472,7 +519,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 42,
       "tags": [
         "geopolitics",
         "lng"
@@ -489,7 +536,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.8,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -517,11 +564,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 41,
       "tags": [
         "weather"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -533,7 +580,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.6,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.89
       },
       "matched": {
         "weather": [
@@ -544,132 +591,6 @@
         ],
         "urgency": [
           "breaking"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "BP, XRG, and UCC on 4 tcf Venezuelan gas quest as offshore development gathers pace",
-      "url": "https://www.offshore-energy.biz/bp-xrg-and-ucc-on-4-tcf-venezuelan-gas-quest-as-offshore-development-gathers-pace/",
-      "snippet": "UK-headquartered energy giant BP and its partners, ADNOC’s XRG and UCC Oil and Gas Holding, have secured a key license off the coast of Venezuela in a push to unlock 4 trillion cubic feet (tcf) of proven gas resources. The post BP, XRG, and UCC on 4 tcf Venezuelan gas quest as offshore development g",
-      "published_at": "2026-08-14T10:57:48+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 6.2,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.6,
-        "recency_multiplier": 0.98
-      },
-      "matched": {
-        "regulation": [
-          "license"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Atlantic spot LNG rates drop to $40,000 per day",
-      "url": "https://lngprime.com/asia/atlantic-spot-lng-rates-drop-to-40000-per-day/195150/",
-      "snippet": "Atlantic spot LNG shipping rates continued to decrease this week, dropping to $40,000 per day, the lowest since the start of the Middle East conflict, according to Spark Commodities.",
-      "published_at": "2026-08-14T11:29:37+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.0,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "oil_macro": [
-          "rates"
-        ],
-        "geography": [
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US weekly LNG exports climb to 36 cargoes",
-      "url": "https://lngprime.com/americas/us-weekly-lng-exports-climb-to-36-cargoes/195107/",
-      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending August 12, up five cargoes from the week before, according to the Energy Information Administration.",
-      "published_at": "2026-08-14T05:13:48+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 41,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "lng exports"
         ]
       },
       "duplicate_count": 0,
@@ -724,38 +645,86 @@
       "also_reported_by": []
     },
     {
-      "title": "Investment approval request submitted for Cyprus-Israel interconnector, project viable in all scenarios",
-      "url": "https://www.offshore-energy.biz/investment-approval-request-submitted-for-cyprus-israel-interconnector-project-viable-in-all-scenarios/",
-      "snippet": "Greece&#8217;s transmission system operator (TSO) Independent Power Transmission Operator (IPTO), as the project promoter [&#8230;] The post Investment approval request submitted for Cyprus-Israel interconnector, project viable in all scenarios appeared first on Offshore Energy .",
-      "published_at": "2026-08-14T09:28:07+00:00",
+      "title": "Atlantic spot LNG rates drop to $40,000 per day",
+      "url": "https://lngprime.com/asia/atlantic-spot-lng-rates-drop-to-40000-per-day/195150/",
+      "snippet": "Atlantic spot LNG shipping rates continued to decrease this week, dropping to $40,000 per day, the lowest since the start of the Middle East conflict, according to Spark Commodities.",
+      "published_at": "2026-08-14T11:29:37+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
-        "infrastructure"
+        "geopolitics",
+        "lng",
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 12.4,
-        "themes": 24.0,
-        "geography": 0.0,
+        "authority": 13.1,
+        "themes": 14.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.88
+        "raw": 33.0,
+        "recency_multiplier": 0.93
       },
       "matched": {
-        "infrastructure": [
-          "interconnector",
-          "transmission",
-          "system operator"
+        "geopolitics": [
+          "conflict"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "rates"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US weekly LNG exports climb to 36 cargoes",
+      "url": "https://lngprime.com/americas/us-weekly-lng-exports-climb-to-36-cargoes/195107/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending August 12, up five cargoes from the week before, according to the Energy Information Administration.",
+      "published_at": "2026-08-14T05:13:48+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 38,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.58
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
         ]
       },
       "duplicate_count": 0,
@@ -772,7 +741,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 36,
       "tags": [
         "regulation"
       ],
@@ -788,7 +757,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.6,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.87
       },
       "matched": {
         "regulation": [
@@ -796,47 +765,6 @@
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "$51 billion LNG megaproject takes ‘important’ step on path to FID by year-end",
-      "url": "https://www.offshore-energy.biz/51-billion-lng-megaproject-takes-important-step-on-path-to-fid-by-year-end/",
-      "snippet": "A giant multibillion-dollar liquefied natural gas (LNG) export project in South America is laying the groundwork for a final investment decision (FID) by the end of 2026, with the submission of its application to join Argentina’s Large Investment Incentive Regime (RIGI), bringing the country closer ",
-      "published_at": "2026-08-14T08:54:03+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 23.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.9,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "final investment decision"
-        ],
-        "oil_macro": [
-          "dollar"
         ]
       },
       "duplicate_count": 0,
@@ -853,7 +781,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 35,
       "tags": [
         "oil_macro",
         "geopolitics"
@@ -870,7 +798,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.6,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.6
       },
       "matched": {
         "oil_macro": [
@@ -889,171 +817,10 @@
       "also_reported_by": []
     },
     {
-      "title": "Russia Captures Record Share of India’s Oil Market",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Captures-Record-Share-of-Indias-Oil-Market.html",
-      "snippet": "Crude oil imports from Russia accounted for over 50% of India’s total import volumes last month. This was the highest share of Russian oil in India’s import mix, Reuters noted in a report that cited unnamed trade sources. Russia exported crude at a rate of some 2.47 million barrels daily to India la",
-      "published_at": "2026-08-14T07:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 34.7,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US to Soon Unveil Unprecedented Sanctions on Iran",
-      "url": "https://www.rigzone.com/news/wire/us_to_soon_unveil_unprecedented_sanctions_on_iran-14-aug-2026-184374-article/?rss=true",
-      "snippet": "The move will be part of a 'one-two punch' that includes the continued blockade of Iran's ports, Treasury Secretary Scott Bessent said.",
-      "published_at": "2026-08-14T08:34:47+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.9,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "blockade"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "CMA CGM inks LoI with Chinese yard for LNG-powered giants",
-      "url": "https://lngprime.com/asia/cma-cgm-inks-loi-with-chinese-yard-for-lng-powered-giants/195124/",
-      "snippet": "French shipping giant CMA CGM, one of the world’s largest backers of LNG fuel, has signed a letter of intent with China’s Yangzijiang Shipbuilding to build more ultra-large LNG dual-fuel container vessels, according to shipbuilding sources.",
-      "published_at": "2026-08-14T07:51:13+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.4,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "french"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "India’s Petronet LNG logs higher profit, lower volumes",
-      "url": "https://lngprime.com/lng-terminals/indias-petronet-lng-logs-higher-profit-lower-volumes/195136/",
-      "snippet": "India’s largest LNG importer Petronet LNG, the operator of the Dahej and Kochi regasification terminals, reported higher profit and lower regasification volumes in the quarter ending June 30.",
-      "published_at": "2026-08-14T06:53:45+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.7,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "regasification"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russian ballistic attacks intensify as Kyiv claims Dnipropetrovsk advance",
-      "url": "https://www.aljazeera.com/news/2026/8/14/ukraine-liberates-dnipropetrovsk-as-russia-intensifies-missile-attacks?traffic_source=rss",
-      "snippet": "Ukraine says it has liberated 26 settlements in the south as it retools under heavy bombardment.",
-      "published_at": "2026-08-14T11:04:40+00:00",
+      "title": "Russia stance will be defended in court, pledges World Athletics chief Coe",
+      "url": "https://www.aljazeera.com/sports/2026/8/14/russia-stance-will-be-defended-in-court-pledges-world-athletics-chief-coe?traffic_source=rss",
+      "snippet": "Russian Athletics has lodged new claim at Court of Arbitration for Sport to challenge sanctions, but WA will fight it.",
+      "published_at": "2026-08-14T13:04:23+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
@@ -1076,52 +843,58 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.5,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "bombardment"
+          "sanctions"
         ],
         "geography": [
-          "russian",
-          "ukraine"
+          "russia",
+          "russian"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Vance Says Cheap Oil and Gas Is Top U.S. Priority in Iran War",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Vance-Says-Cheap-Oil-and-Gas-Is-Top-US-Priority-in-Iran-War.html",
-      "snippet": "Low U.S. gasoline prices are the top priority of the Administration amid the war in Iran, Vice President JD Vance said, as the U.S.-Iran deadlock persists and the U.S. vowed to keep the blockade on Iran indefinitely. “I know that oil is down today and it's way down from the highs in the early days o",
-      "published_at": "2026-08-14T09:20:00+00:00",
+      "title": "Russia Captures Record Share of India’s Oil Market",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Captures-Record-Share-of-Indias-Oil-Market.html",
+      "snippet": "Crude oil imports from Russia accounted for over 50% of India’s total import volumes last month. This was the highest share of Russian oil in India’s import mix, Reuters noted in a report that cited unnamed trade sources. Russia exported crude at a rate of some 2.47 million barrels daily to India la",
+      "published_at": "2026-08-14T07:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": false,
+      "has_magnitude": true,
       "score": 31,
       "tags": [
-        "geopolitics"
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 17.9,
-        "geography": 0.0,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 26.7,
-        "recency_multiplier": 0.87
+        "raw": 34.7,
+        "recency_multiplier": 0.66
       },
       "matched": {
-        "geopolitics": [
-          "blockade",
-          "war"
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "india"
         ]
       },
       "duplicate_count": 0,
