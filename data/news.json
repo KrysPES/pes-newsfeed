@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-17T19:02:59.482599+00:00",
-  "item_count": 24,
+  "generated_at": "2026-08-17T19:36:41.807117+00:00",
+  "item_count": 21,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 8
+    "normal": 7
   },
   "superseded_count": 3,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 998
+        "ms": 1683
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 67058
+        "ms": 39859
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 3308
+        "ms": 23347
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 421
+        "ms": 488
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 412
+        "ms": 701
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 161
+        "ms": 180
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 844
+        "ms": 1448
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 230
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 49
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 578
+        "ms": 635
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 103
+        "ms": 316
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 315
+        "ms": 526
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 147
+        "ms": 75
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 136
+        "ms": 52
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 68,
+      "score": 67,
       "tags": [
         "supply_disruption",
         "nuclear"
@@ -133,7 +133,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 70.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "supply_disruption": [
@@ -181,7 +181,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -199,99 +199,48 @@
       "also_reported_by": []
     },
     {
-      "title": "$11.8 billion North Sea oil & gas project clears key consultation hurdle ahead of government’s final say",
-      "url": "https://www.offshore-energy.biz/11-8-billion-north-sea-oil-gas-project-clears-key-consultation-hurdle-ahead-of-governments-final-say/",
-      "snippet": "Adura, an incorporated joint venture (IJV) between the UK-headquartered Shell and Norway’s Equinor, has confirmed the end of a public consultation period on the development of an oil and gas field in the North Sea. This project on the UK Continental Shelf (UKCS) is now awaiting the UK government’s f",
-      "published_at": "2026-08-17T14:59:50+00:00",
+      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Trump's threat on Oman, which has been holding its own talks with Iran to reopen the Strait of Hormuz, comes as a 60-day window for peace negotiations expires.",
+      "published_at": "2026-08-17T19:25:05+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
       "score": 57,
       "tags": [
-        "infrastructure",
-        "regulation"
+        "geopolitics"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 12.4,
-        "themes": 16.2,
-        "geo_band": "primary",
+        "authority": 10.2,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 60.6,
-        "recency_multiplier": 0.85
+        "raw": 51.8,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "infrastructure": [
-          "gas field"
-        ],
-        "regulation": [
-          "consultation"
+        "geopolitics": [
+          "negotiations",
+          "strait of hormuz"
         ],
         "geography": [
-          "uk"
-        ],
-        "urgency": [
-          "confirmed"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hot tests completed at third Haiyang unit",
-      "url": "https://www.world-nuclear-news.org/articles/hot-tests-completed-at-third-haiyang-unit",
-      "snippet": "Tests that simulate the temperatures and pressures which the reactor systems will be subjected to during normal operation have been completed at unit 3 of the Haiyang nuclear power plant in China's Shandong province, State Power Investment Corporation has announced.",
-      "published_at": "2026-08-17T16:16:06+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 55,
-      "tags": [
-        "nuclear",
-        "weather"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 18.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.1,
-        "recency_multiplier": 0.94
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor"
-        ],
-        "weather": [
-          "temperatures"
-        ],
-        "geography": [
-          "china"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-08-17T14:15:17+00:00"
     },
     {
       "title": "War and Drought Are Choking the World’s Most Vital Trade Routes",
@@ -346,46 +295,48 @@
       "thread_started_at": "2026-08-17T15:08:17+00:00"
     },
     {
-      "title": "Go-ahead for ADES to restart all suspended offshore rig ops as jack-up market remains tight",
-      "url": "https://www.offshore-energy.biz/go-ahead-for-ades-to-restart-all-suspended-offshore-rig-ops-as-jack-up-market-remains-tight/",
-      "snippet": "ADES Holding Company, an oil and gas drilling services provider that is part of Saudi Arabia-headquartered ADES Group, has secured the green light to restore all temporarily suspended offshore rig operations in Saudi Arabia, as offshore activity across the Gulf Cooperation Council (GCC) region conti",
-      "published_at": "2026-08-17T13:49:42+00:00",
+      "title": "Hot tests completed at third Haiyang unit",
+      "url": "https://www.world-nuclear-news.org/articles/hot-tests-completed-at-third-haiyang-unit",
+      "snippet": "Tests that simulate the temperatures and pressures which the reactor systems will be subjected to during normal operation have been completed at unit 3 of the Haiyang nuclear power plant in China's Shandong province, State Power Investment Corporation has announced.",
+      "published_at": "2026-08-17T16:16:06+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
       "tier": 2,
       "has_magnitude": false,
       "score": 54,
       "tags": [
-        "supply_disruption"
+        "nuclear",
+        "weather"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 12.4,
-        "themes": 8.4,
+        "authority": 13.9,
+        "themes": 18.3,
         "geo_band": "tertiary",
         "geography": 5.0,
-        "event_nature": 20.0,
+        "event_nature": 0.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 61.8,
-        "recency_multiplier": 0.78
+        "raw": 53.1,
+        "recency_multiplier": 0.9
       },
       "matched": {
-        "supply_disruption": [
-          "suspended"
+        "nuclear": [
+          "nuclear",
+          "reactor"
+        ],
+        "weather": [
+          "temperatures"
         ],
         "geography": [
-          "gulf"
-        ],
-        "unplanned": [
-          "suspended"
+          "china"
         ],
         "urgency": [
-          "suspended"
+          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -402,7 +353,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 49,
       "tags": [
         "supply_disruption",
         "infrastructure",
@@ -421,7 +372,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 49.4,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.85
       },
       "matched": {
         "supply_disruption": [
@@ -455,7 +406,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 45,
       "tags": [
         "geopolitics",
         "infrastructure",
@@ -473,7 +424,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.0,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -504,7 +455,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 46,
+      "score": 45,
       "tags": [
         "oil_macro",
         "gas_storage"
@@ -521,7 +472,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 54.2,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.67
       },
       "matched": {
         "oil_macro": [
@@ -540,6 +491,47 @@
       "also_reported_by": []
     },
     {
+      "title": "Russia maintains election ban on opposition Yabloko, jails deputy head",
+      "url": "https://www.aljazeera.com/news/2026/8/17/russia-maintains-election-ban-on-opposition-yabloko-jails-deputy-head?traffic_source=rss",
+      "snippet": "Supreme Court ruling supports Kremlin&#039;s clampdown on the political party ahead of September&#039;s parliamentary vote.",
+      "published_at": "2026-08-17T18:46:12+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "ruling",
+          "ban on"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "UK Inflation Set to Rebound as Energy Bills Surge",
       "url": "https://oilprice.com/Energy/Energy-General/UK-Inflation-Set-to-Rebound-as-Energy-Bills-Surge.html",
       "snippet": "Rising energy prices are poised to send UK inflation rearing back up, as economists warn that the summer boost to the economy could be fleeting. The rate of Consumer Prices Index (CPI) inflation is tipped to rise to 2.9 per cent in July, climbing from June’s 15-month low of 2.6 per cent, when the Of",
@@ -550,7 +542,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 41,
+      "score": 40,
       "tags": [
         "oil_macro"
       ],
@@ -566,7 +558,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.2,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.76
       },
       "matched": {
         "oil_macro": [
@@ -590,7 +582,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 38,
       "tags": [
         "regulation",
         "nuclear"
@@ -607,7 +599,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.6,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.84
       },
       "matched": {
         "regulation": [
@@ -635,7 +627,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 36,
       "tags": [
         "oil_macro"
       ],
@@ -651,7 +643,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.2,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.56
       },
       "matched": {
         "oil_macro": [
@@ -668,50 +660,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Russia's prominent anti-war politician jailed for 11 years",
-      "url": "https://www.bbc.co.uk/news/articles/cj4kjnle2neo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Lev Schlosberg is found guilty of \"discrediting\" Russia's army - a verdict he condemns as punishment for his political position.",
-      "published_at": "2026-08-17T16:17:34+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "geopolitics",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.7,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.9,
-        "recency_multiplier": 0.94
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "regulation": [
-          "verdict"
-        ],
-        "geography": [
-          "russia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Japan's Oil Crisis Eases, But the Import Bill Keeps Climbing",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Japans-Oil-Crisis-Eases-But-the-Import-Bill-Keeps-Climbing.html",
       "snippet": "The oil crisis in Japan has eased in recent weeks as the resource-poor G7 economy that depended on the Middle East for 90% of its crude oil supply has managed to diversify purchases and moved to release stocks from strategic reserves. However, the economic cost of sourcing crude oil supply from fara",
@@ -722,7 +670,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 35,
+      "score": 34,
       "tags": [
         "gas_storage",
         "oil_macro"
@@ -739,7 +687,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.73
       },
       "matched": {
         "gas_storage": [
@@ -767,7 +715,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "infrastructure"
       ],
@@ -783,7 +731,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.7,
-        "recency_multiplier": 0.54
+        "recency_multiplier": 0.52
       },
       "matched": {
         "infrastructure": [
@@ -800,38 +748,44 @@
       "also_reported_by": []
     },
     {
-      "title": "Egypt moves to fast-track Mediterranean gas field tie-in in pursuit of production growth",
-      "url": "https://www.offshore-energy.biz/egypt-moves-to-fast-track-mediterranean-gas-field-tie-in-in-pursuit-of-production-growth/",
-      "snippet": "With its sights set on higher domestic gas production, Egypt’s Ministry of Petroleum and Mineral Resources is pushing to accelerate field development in the Eastern Mediterranean waters, as part of its broader efforts to enable upstream growth and achieve its exploration and production plans through",
-      "published_at": "2026-08-17T12:37:12+00:00",
+      "title": "Russia's prominent anti-war politician jailed for 11 years",
+      "url": "https://www.bbc.co.uk/news/articles/cj4kjnle2neo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Lev Schlosberg is found guilty of \"discrediting\" Russia's army - a verdict he condemns as punishment for his political position.",
+      "published_at": "2026-08-17T16:17:34+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
-        "infrastructure"
+        "geopolitics",
+        "regulation"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 12.4,
-        "themes": 24.0,
-        "geography": 0.0,
+        "authority": 10.2,
+        "themes": 12.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.71
+        "raw": 27.9,
+        "recency_multiplier": 0.9
       },
       "matched": {
-        "infrastructure": [
-          "gas field",
-          "tie-in",
-          "field development"
+        "geopolitics": [
+          "war"
+        ],
+        "regulation": [
+          "verdict"
+        ],
+        "geography": [
+          "russia"
         ]
       },
       "duplicate_count": 0,
@@ -848,7 +802,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": true,
-      "score": 33,
+      "score": 32,
       "tags": [
         "nuclear"
       ],
@@ -863,7 +817,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.73
       },
       "matched": {
         "nuclear": [
@@ -874,24 +828,24 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
-      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Trump cites his \"very good relationship\" with North Korea's leader in deciding to downsize the exercises.",
-      "published_at": "2026-08-17T18:39:39+00:00",
+      "title": "Russian politician sentenced to 11 years for opposing war in Ukraine",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/russian-politician-sentenced-to-11-years-for-opposing-war-in-ukraine?traffic_source=rss",
+      "snippet": "Lev Shlosberg, a senior member of the Yabloko party, was sentenced to 11 years and one month in prison on Monday.",
+      "published_at": "2026-08-17T18:53:06+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
+        "authority": 9.5,
         "themes": 9.0,
         "geo_band": "tertiary",
         "geography": 5.0,
@@ -899,7 +853,7 @@
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.2,
+        "raw": 23.5,
         "recency_multiplier": 1.0
       },
       "matched": {
@@ -907,16 +861,12 @@
           "war"
         ],
         "geography": [
-          "korea"
+          "russian",
+          "ukraine"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ],
-      "first_seen_at": "2026-08-17T16:27:48+00:00",
-      "update_count": 2,
-      "thread_started_at": "2026-08-17T14:15:17+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "China Oil Imports Jump 22% Even as Economic Data Disappoints",
@@ -929,7 +879,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 31,
+      "score": 30,
       "tags": [
         "oil_macro"
       ],
@@ -945,7 +895,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.7,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.62
       },
       "matched": {
         "oil_macro": [
@@ -960,130 +910,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Elenger to receive three US LNG cargoes via Finnish FSRU",
-      "url": "https://lngprime.com/europe/elenger-to-receive-three-us-lng-cargoes-via-finnish-fsru/195277/",
-      "snippet": "Elenger, a unit of Estonian investment firm Infortar, will receive three US liquefied natural gas (LNG) cargoes via the Inkoo FSRU-based facility in Finland later this year, fully securing volumes for the next heating season.",
-      "published_at": "2026-08-17T11:22:49+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 21.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.0,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "fsru"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "U.S. Copper Imports Hit a 12-Year Record as LME Stocks Crash",
-      "url": "https://oilprice.com/Metals/Commodities/US-Copper-Imports-Hit-a-12-Year-Record-as-LME-Stocks-Crash.html",
-      "snippet": "U.S. importers hauled in more than 200,000 tonnes of refined copper in July, the biggest monthly volume in at least 12 years. Add that to what's already sitting in Comex warehouses, LME-registered stock and private port storage, and the country's copper stockpile is now pushing past 1 million tonnes",
-      "published_at": "2026-08-17T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "gas_storage": [
-          "storage",
-          "stocks"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
-      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Trump's threat on Oman, which has been holding its own talks with Iran to reopen the Strait of Hormuz, comes as a 60-day window for peace negotiations expires.",
-      "published_at": "2026-08-17T16:26:34+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 16,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.8,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "geopolitics": [
-          "negotiations",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
-        "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
-        "published_at": "2026-08-17T18:39:39+00:00"
-      },
-      "hidden": true
-    },
-    {
       "title": "Police execute controlled World War II–era Mine explosion",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/police-execute-controlled-world-war-ii-era-mine?traffic_source=rss",
       "snippet": "Video footage released by police on Sunday shows Slovak bomb disposal experts executing a mine detonation.",
@@ -1094,7 +920,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -1110,7 +936,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -1160,7 +986,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.1,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -1179,9 +1005,56 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
-        "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
-        "published_at": "2026-08-17T18:39:39+00:00"
+        "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
+        "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
+        "published_at": "2026-08-17T19:25:05+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
+      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Trump cites his \"very good relationship\" with North Korea's leader in deciding to downsize the exercises.",
+      "published_at": "2026-08-17T18:39:39+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 10,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
+        "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
+        "published_at": "2026-08-17T19:25:05+00:00"
       },
       "hidden": true
     }
