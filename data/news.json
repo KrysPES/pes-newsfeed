@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-17T15:35:08.013115+00:00",
-  "item_count": 24,
+  "generated_at": "2026-08-17T15:55:29.855080+00:00",
+  "item_count": 26,
   "alert_counts": {
     "critical": 0,
     "high": 1,
     "normal": 14
   },
-  "superseded_count": 0,
+  "superseded_count": 1,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1038
+        "ms": 1021
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 39557
+        "ms": 31021
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2195
+        "ms": 3277
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 323
+        "ms": 196
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 250
+        "ms": 636
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 134
+        "ms": 244
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 42,
+        "count": 43,
         "error": null,
-        "ms": 855
+        "ms": 878
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 180
+        "ms": 324
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 521
+        "ms": 640
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 167
+        "ms": 72
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 296
+        "ms": 442
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 29,
         "error": null,
-        "ms": 153
+        "ms": 140
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 112
+        "ms": 211
       }
     ]
   },
@@ -177,7 +177,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -244,6 +244,50 @@
       "also_reported_by": []
     },
     {
+      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran issue",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The US and Oman have separately been negotiating to reopen the Strait of Hormuz, a waterway that has been closed during the US war with Iran.",
+      "published_at": "2026-08-17T14:59:02+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 51.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-17T14:15:17+00:00"
+    },
+    {
       "title": "Hot tests completed at third Haiyang unit",
       "url": "https://www.world-nuclear-news.org/articles/hot-tests-completed-at-third-haiyang-unit",
       "snippet": "Tests that simulate the temperatures and pressures which the reactor systems will be subjected to during normal operation have been completed at unit 3 of the Haiyang nuclear power plant in China's Shandong province, State Power Investment Corporation has announced.",
@@ -254,7 +298,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 56,
       "tags": [
         "nuclear",
         "weather"
@@ -271,7 +315,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.1,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.95
       },
       "matched": {
         "nuclear": [
@@ -355,7 +399,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 55,
+      "score": 54,
       "tags": [
         "oil_macro",
         "gas_storage"
@@ -372,7 +416,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 54.2,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.9
       },
       "matched": {
         "oil_macro": [
@@ -440,56 +484,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Asian Refiners Seek Alternative Pickup Point for Saudi Crude",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Asian-Refiners-Seek-Alternative-Pickup-Point-for-Saudi-Crude.html",
-      "snippet": "Heightened risks to shipping safety in the Red Sea have prompted some Asian refiners to ask Saudi state oil giant Aramco to pick up its crude oil cargoes at Egypt’s Mediterranean port of Sidi Kerir as vessel owners are increasingly reluctant to pass through the Bab el-Mandeb Strait to enter the Red ",
-      "published_at": "2026-08-17T08:55:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 51,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 37.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 62.7,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "geopolitics": [
-          "bab el-mandeb",
-          "red sea"
-        ],
-        "lng": [
-          "cargoes"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "bab el-mandeb",
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Police execute controlled World War II–era Mine explosion",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/police-execute-controlled-world-war-ii-era-mine?traffic_source=rss",
       "snippet": "Video footage released by police on Sunday shows Slovak bomb disposal experts executing a mine detonation.",
@@ -527,6 +521,56 @@
         ],
         "unplanned": [
           "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Asian Refiners Seek Alternative Pickup Point for Saudi Crude",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Asian-Refiners-Seek-Alternative-Pickup-Point-for-Saudi-Crude.html",
+      "snippet": "Heightened risks to shipping safety in the Red Sea have prompted some Asian refiners to ask Saudi state oil giant Aramco to pick up its crude oil cargoes at Egypt’s Mediterranean port of Sidi Kerir as vessel owners are increasingly reluctant to pass through the Bab el-Mandeb Strait to enter the Red ",
+      "published_at": "2026-08-17T08:55:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.7,
+        "recency_multiplier": 0.68
+      },
+      "matched": {
+        "geopolitics": [
+          "bab el-mandeb",
+          "red sea"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "bab el-mandeb",
+          "red sea"
         ]
       },
       "duplicate_count": 0,
@@ -573,51 +617,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Iran signals readiness for ‘US ground operations’ as MoU expires",
-      "url": "https://www.aljazeera.com/news/2026/8/17/iran-signals-readiness-for-us-ground-operations-as-mou-expires?traffic_source=rss",
-      "snippet": "Iran&#039;s more offensive posture follows Trump&#039;s comment that the US would soon make the Strait of Hormuz its territory.",
-      "published_at": "2026-08-17T14:15:17+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 47,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 39.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "offensive",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "speculative": [
-          "comment"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "India’s Chief Economic Adviser Calls for Return of E10 Petrol",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Chief-Economic-Adviser-Calls-for-Return-of-E10-Petrol.html",
       "snippet": "India’s government should consider bringing back fuel with ethanol blending content lower than 20% amid concerns about potential damage to the old vehicle and two-wheeler fleet in the world’s most populous country, the government’s chief economic adviser said. In a bid to lower crude oil imports and",
@@ -628,7 +627,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 46,
+      "score": 45,
       "tags": [
         "oil_macro"
       ],
@@ -644,7 +643,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.2,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.74
       },
       "matched": {
         "oil_macro": [
@@ -661,6 +660,51 @@
       "also_reported_by": []
     },
     {
+      "title": "India begins public consultation on SHANTI Bill rules",
+      "url": "https://www.world-nuclear-news.org/articles/india-begins-public-consultation-on-shanti-bill-rules",
+      "snippet": "India's Department of Atomic Energy has launched a public consultation on its draft rules and regulations under the 2025 legislation to modernise the country's nuclear legal framework and, amongst other things, enable limited private participation in India's nuclear sector.",
+      "published_at": "2026-08-17T15:22:37+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "regulation",
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 16.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "consultation",
+          "legislation"
+        ],
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Japan's Oil Crisis Eases, But the Import Bill Keeps Climbing",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Japans-Oil-Crisis-Eases-But-the-Import-Bill-Keeps-Climbing.html",
       "snippet": "The oil crisis in Japan has eased in recent weeks as the resource-poor G7 economy that depended on the Middle East for 90% of its crude oil supply has managed to diversify purchases and moved to release stocks from strategic reserves. However, the economic cost of sourcing crude oil supply from fara",
@@ -671,7 +715,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 42,
       "tags": [
         "gas_storage",
         "oil_macro"
@@ -688,7 +732,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.97
       },
       "matched": {
         "gas_storage": [
@@ -716,7 +760,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 42,
       "tags": [
         "infrastructure"
       ],
@@ -732,7 +776,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.7,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.69
       },
       "matched": {
         "infrastructure": [
@@ -759,11 +803,11 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 12.4,
@@ -774,7 +818,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.9
       },
       "matched": {
         "infrastructure": [
@@ -797,7 +841,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": true,
-      "score": 41,
+      "score": 40,
       "tags": [
         "nuclear"
       ],
@@ -812,7 +856,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.97
       },
       "matched": {
         "nuclear": [
@@ -833,7 +877,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 37,
       "tags": [
         "oil_macro"
       ],
@@ -849,7 +893,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.7,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.83
       },
       "matched": {
         "oil_macro": [
@@ -874,7 +918,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "lng"
       ],
@@ -889,7 +933,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.0,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.82
       },
       "matched": {
         "lng": [
@@ -912,7 +956,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "infrastructure"
       ],
@@ -928,7 +972,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.9,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.74
       },
       "matched": {
         "infrastructure": [
@@ -953,7 +997,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -971,7 +1015,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.0,
-        "recency_multiplier": 0.54
+        "recency_multiplier": 0.52
       },
       "matched": {
         "geopolitics": [
@@ -1004,7 +1048,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -1019,7 +1063,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -1041,7 +1085,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "infrastructure"
       ],
@@ -1057,7 +1101,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.5,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "infrastructure": [
@@ -1084,7 +1128,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "infrastructure",
         "regulation"
@@ -1101,7 +1145,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.3,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.51
       },
       "matched": {
         "infrastructure": [
@@ -1143,7 +1187,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -1153,6 +1197,58 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Iran signals readiness for ‘US ground operations’ as MoU expires",
+      "url": "https://www.aljazeera.com/news/2026/8/17/iran-signals-readiness-for-us-ground-operations-as-mou-expires?traffic_source=rss",
+      "snippet": "Iran&#039;s more offensive posture follows Trump&#039;s comment that the US would soon make the Strait of Hormuz its territory.",
+      "published_at": "2026-08-17T14:15:17+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 14,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 39.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "offensive",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "comment"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
+        "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran issue",
+        "published_at": "2026-08-17T14:59:02+00:00"
+      },
+      "hidden": true
     }
   ]
 }
