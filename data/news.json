@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-17T16:52:42.987106+00:00",
-  "item_count": 24,
+  "generated_at": "2026-08-17T17:17:56.379621+00:00",
+  "item_count": 27,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 13
+    "high": 1,
+    "normal": 11
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,136 +17,141 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1355
+        "ms": 1260
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 24891
+        "ms": 38860
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3460
+        "ms": 3785
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 448
+        "ms": 626
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 154
+        "ms": 186
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 257
+        "ms": 157
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 1211
+        "ms": 1257
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 217
+        "ms": 562
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 696
+        "ms": 704
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 336
+        "ms": 278
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 500
+        "ms": 716
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 29,
+        "count": 27,
         "error": null,
-        "ms": 112
+        "ms": 408
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 78
+        "ms": 141
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
-      "url": "https://umm.nordpoolgroup.com/#/messages/be4f4964-8ea5-4104-85b3-bb7d9a37f48c/3",
-      "snippet": "Published: 17.08.2026 15:55:38 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-17T13:55:38+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, GU_504110 (GT6)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/bc619eea-28cb-46c7-815e-30c9f9f9f8ac/1",
+      "snippet": "Published: 17.08.2026 19:08:54 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unit Protection Trip Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Pow",
+      "published_at": "2026-08-17T17:08:54+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 63,
+      "score": 68,
       "tags": [
-        "supply_disruption"
+        "supply_disruption",
+        "nuclear"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 12.8,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.93
+        "raw": 70.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
           "unplanned"
         ],
+        "nuclear": [
+          "trip"
+        ],
         "unplanned": [
           "unplanned",
-          "failure"
+          "failure",
+          "trip"
         ],
         "urgency": [
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 3,
       "also_reported_by": [],
       "first_seen_at": "2026-08-17T07:45:55+00:00"
     },
@@ -178,7 +183,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 60.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "infrastructure": [
@@ -208,7 +213,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 59,
       "tags": [
         "supply_disruption"
       ],
@@ -224,7 +229,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.8,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.89
       },
       "matched": {
         "supply_disruption": [
@@ -355,7 +360,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 51,
       "tags": [
         "geopolitics",
         "infrastructure",
@@ -373,7 +378,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.0,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -404,7 +409,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 52,
+      "score": 51,
       "tags": [
         "oil_macro",
         "gas_storage"
@@ -421,7 +426,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 54.2,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.81
       },
       "matched": {
         "oil_macro": [
@@ -438,49 +443,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
-      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The US and Oman have been working separately to reopen the Strait of Hormuz, one of the world's busiest oil shipping routes.",
-      "published_at": "2026-08-17T16:26:34+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 50,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.9,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-17T14:15:17+00:00"
     },
     {
       "title": "Police execute controlled World War II–era Mine explosion",
@@ -509,7 +471,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -536,7 +498,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 46,
       "tags": [
         "geopolitics",
         "lng",
@@ -554,7 +516,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.61
       },
       "matched": {
         "geopolitics": [
@@ -586,7 +548,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 46,
+      "score": 45,
       "tags": [
         "oil_macro"
       ],
@@ -602,7 +564,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.2,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.9
       },
       "matched": {
         "oil_macro": [
@@ -671,7 +633,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 42,
       "tags": [
         "oil_macro"
       ],
@@ -687,7 +649,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.2,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.66
       },
       "matched": {
         "oil_macro": [
@@ -714,7 +676,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 40,
+      "score": 39,
       "tags": [
         "gas_storage",
         "oil_macro"
@@ -731,7 +693,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.87
       },
       "matched": {
         "gas_storage": [
@@ -759,7 +721,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "infrastructure"
       ],
@@ -775,7 +737,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.7,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.62
       },
       "matched": {
         "infrastructure": [
@@ -802,7 +764,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 38,
       "tags": [
         "infrastructure"
       ],
@@ -817,7 +779,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.81
       },
       "matched": {
         "infrastructure": [
@@ -840,7 +802,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 37,
       "tags": [
         "nuclear"
       ],
@@ -855,11 +817,55 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.87
       },
       "matched": {
         "nuclear": [
           "nuclear"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Russia's prominent anti-war politician jailed for 11 years",
+      "url": "https://www.bbc.co.uk/news/articles/cj4kjnle2neo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Lev Schlosberg is found guilty of \"discrediting\" Russia's army - a verdict he condemns as punishment for his political position.",
+      "published_at": "2026-08-17T16:17:34+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 12.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "regulation": [
+          "verdict"
+        ],
+        "geography": [
+          "russia"
         ]
       },
       "duplicate_count": 0,
@@ -876,7 +882,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 35,
+      "score": 34,
       "tags": [
         "oil_macro"
       ],
@@ -892,7 +898,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.7,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.75
       },
       "matched": {
         "oil_macro": [
@@ -917,7 +923,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "lng"
       ],
@@ -932,54 +938,13 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.0,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.74
       },
       "matched": {
         "lng": [
           "lng",
           "cargoes",
           "fsru"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "VARD welcomes NKT’s cable layer to Norway for final outfitting and commissioning",
-      "url": "https://www.offshore-energy.biz/vard-welcomes-nkts-cable-layer-to-norway-for-final-outfitting-and-commissioning/",
-      "snippet": "NKT’s new cable-laying vessel (CLV) NKT Eleonora, which will be able to run on both [&#8230;] The post VARD welcomes NKT&#8217;s cable layer to Norway for final outfitting and commissioning appeared first on Offshore Energy .",
-      "published_at": "2026-08-17T10:02:50+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 13.4,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.9,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "infrastructure": [
-          "cable",
-          "commissioning"
-        ],
-        "geography": [
-          "norway"
         ]
       },
       "duplicate_count": 0,
@@ -1014,7 +979,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.0,
-        "recency_multiplier": 0.49
+        "recency_multiplier": 0.47
       },
       "matched": {
         "geopolitics": [
@@ -1037,6 +1002,89 @@
       "also_reported_by": []
     },
     {
+      "title": "VARD welcomes NKT’s cable layer to Norway for final outfitting and commissioning",
+      "url": "https://www.offshore-energy.biz/vard-welcomes-nkts-cable-layer-to-norway-for-final-outfitting-and-commissioning/",
+      "snippet": "NKT’s new cable-laying vessel (CLV) NKT Eleonora, which will be able to run on both [&#8230;] The post VARD welcomes NKT&#8217;s cable layer to Norway for final outfitting and commissioning appeared first on Offshore Energy .",
+      "published_at": "2026-08-17T10:02:50+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 13.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.9,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "infrastructure": [
+          "cable",
+          "commissioning"
+        ],
+        "geography": [
+          "norway"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "War on Iran: Phase II, Day 37",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/war-on-iran-phase-ii-day-37?traffic_source=rss",
+      "snippet": "Iran is offering $30,000 for captured or killed US soldiers. Trump cuts back South Korea drills.",
+      "published_at": "2026-08-17T16:27:48+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-08-17T14:15:17+00:00"
+    },
+    {
       "title": "IAEA sees enhanced safety at Philippine research reactor",
       "url": "https://www.world-nuclear-news.org/articles/iaea-sees-enhanced-safety-at-philippine-research-reactor",
       "snippet": "The Philippines has made progress in implementing recommendations aimed at strengthening the safe operation of its sole nuclear reactor training facility, the PRR-1 SATER, according to an International Atomic Energy Agency team of experts.",
@@ -1047,7 +1095,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "nuclear"
       ],
@@ -1062,12 +1110,49 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.4,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.81
       },
       "matched": {
         "nuclear": [
           "nuclear",
           "reactor"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "U.S. Copper Imports Hit a 12-Year Record as LME Stocks Crash",
+      "url": "https://oilprice.com/Metals/Commodities/US-Copper-Imports-Hit-a-12-Year-Record-as-LME-Stocks-Crash.html",
+      "snippet": "U.S. importers hauled in more than 200,000 tonnes of refined copper in July, the biggest monthly volume in at least 12 years. Add that to what's already sitting in Comex warehouses, LME-registered stock and private port storage, and the country's copper stockpile is now pushing past 1 million tonnes",
+      "published_at": "2026-08-17T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "stocks"
         ]
       },
       "duplicate_count": 0,
@@ -1084,7 +1169,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -1099,7 +1184,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -1109,6 +1194,55 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Trump's threat on Oman, which has been holding its own talks with Iran to reopen the Strait of Hormuz, comes as a 60-day window for peace negotiations expires.",
+      "published_at": "2026-08-17T16:26:34+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 17,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 51.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "negotiations",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/war-on-iran-phase-ii-day-37?traffic_source=rss",
+        "title": "War on Iran: Phase II, Day 37",
+        "published_at": "2026-08-17T16:27:48+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Iran signals readiness for ‘US ground operations’ as MoU expires",
@@ -1121,7 +1255,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics"
       ],
@@ -1137,7 +1271,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.1,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -1156,9 +1290,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
-        "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
-        "published_at": "2026-08-17T16:26:34+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/war-on-iran-phase-ii-day-37?traffic_source=rss",
+        "title": "War on Iran: Phase II, Day 37",
+        "published_at": "2026-08-17T16:27:48+00:00"
       },
       "hidden": true
     }
