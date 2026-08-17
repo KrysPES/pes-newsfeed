@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-17T19:56:56.165698+00:00",
-  "item_count": 20,
+  "generated_at": "2026-08-17T20:27:10.268472+00:00",
+  "item_count": 25,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 7
+    "normal": 9
   },
-  "superseded_count": 3,
+  "superseded_count": 4,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1473
+        "ms": 1011
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 30490
+        "ms": 42865
       },
       {
         "id": "gie_agsi",
         "ok": true,
-        "count": 1,
+        "count": 0,
         "error": null,
-        "ms": 4247
+        "ms": 3034
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 503
+        "ms": 1308
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 364
+        "ms": 322
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 171
+        "ms": 206
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 1015
+        "ms": 1055
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 110
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 226
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 656
+        "ms": 626
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 216
+        "ms": 204
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 664
+        "ms": 385
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 290
+        "ms": 91
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 283
+        "ms": 253
       }
     ]
   },
@@ -166,7 +166,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 62,
+      "score": 61,
       "tags": [
         "supply_disruption"
       ],
@@ -181,7 +181,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.3,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.93
       },
       "matched": {
         "supply_disruption": [
@@ -199,50 +199,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
-      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Trump's threat on Oman, which has been holding its own talks with Iran to reopen the Strait of Hormuz, comes as a 60-day window for peace negotiations expires.",
-      "published_at": "2026-08-17T19:25:05+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 57,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.8,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "negotiations",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-08-17T14:15:17+00:00"
-    },
-    {
       "title": "War and Drought Are Choking the World’s Most Vital Trade Routes",
       "url": "https://oilprice.com/Energy/Energy-General/War-and-Drought-Are-Choking-the-Worlds-Most-Vital-Trade-Routes.html",
       "snippet": "Since early March, a previously obscure waterway between Iran and Oman that very few people could name has become the subject of daily reporting around the world after Iran closed it in response to the attack on Iran by the United States and Israel. The Strait of Hormuz, which remains closed to most",
@@ -253,7 +209,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 53,
       "tags": [
         "geopolitics",
         "weather"
@@ -270,7 +226,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 48.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -295,6 +251,53 @@
       "thread_started_at": "2026-08-17T15:08:17+00:00"
     },
     {
+      "title": "$11.8 billion North Sea oil & gas project clears key consultation hurdle ahead of government’s final say",
+      "url": "https://www.offshore-energy.biz/11-8-billion-north-sea-oil-gas-project-clears-key-consultation-hurdle-ahead-of-governments-final-say/",
+      "snippet": "Adura, an incorporated joint venture (IJV) between the UK-headquartered Shell and Norway’s Equinor, has confirmed the end of a public consultation period on the development of an oil and gas field in the North Sea. This project on the UK Continental Shelf (UKCS) is now awaiting the UK government’s f",
+      "published_at": "2026-08-17T14:59:50+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "infrastructure",
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 16.2,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 60.6,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "infrastructure": [
+          "gas field"
+        ],
+        "regulation": [
+          "consultation"
+        ],
+        "geography": [
+          "uk"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Hot tests completed at third Haiyang unit",
       "url": "https://www.world-nuclear-news.org/articles/hot-tests-completed-at-third-haiyang-unit",
       "snippet": "Tests that simulate the temperatures and pressures which the reactor systems will be subjected to during normal operation have been completed at unit 3 of the Haiyang nuclear power plant in China's Shandong province, State Power Investment Corporation has announced.",
@@ -305,7 +308,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 52,
       "tags": [
         "nuclear",
         "weather"
@@ -322,7 +325,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.1,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.85
       },
       "matched": {
         "nuclear": [
@@ -343,6 +346,52 @@
       "also_reported_by": []
     },
     {
+      "title": "Go-ahead for ADES to restart all suspended offshore rig ops as jack-up market remains tight",
+      "url": "https://www.offshore-energy.biz/go-ahead-for-ades-to-restart-all-suspended-offshore-rig-ops-as-jack-up-market-remains-tight/",
+      "snippet": "ADES Holding Company, an oil and gas drilling services provider that is part of Saudi Arabia-headquartered ADES Group, has secured the green light to restore all temporarily suspended offshore rig operations in Saudi Arabia, as offshore activity across the Gulf Cooperation Council (GCC) region conti",
+      "published_at": "2026-08-17T13:49:42+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 12.4,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 61.8,
+        "recency_multiplier": 0.7
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "geography": [
+          "gulf"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "China's Renewables Boom Faces Record Clean Power Curtailments",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Renewables-Boom-Faces-Record-Clean-Power-Curtailments.html",
       "snippet": "Grid constraints and rising coal-fired power generation in China led to soaring curtailment rates of solar and wind power generation in the first half of the year. China curtailed as much as 360 terawatt-hours (TWh) of solar and wind generation between January and June, up by 49% from a year earlier",
@@ -353,7 +402,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 48,
+      "score": 47,
       "tags": [
         "supply_disruption",
         "infrastructure",
@@ -372,7 +421,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 49.4,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.8
       },
       "matched": {
         "supply_disruption": [
@@ -396,6 +445,46 @@
       "also_reported_by": []
     },
     {
+      "title": "Gaza flotilla sets sail from the UK in bid to break Israeli siege",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/gaza-flotilla-sets-sail-from-the-uk-in-bid-to-break-israeli-siege?traffic_source=rss",
+      "snippet": "A boat has left Bristol as part of a wider campaign to break Israel’s blockade and deliver aid to Gaza.",
+      "published_at": "2026-08-17T19:32:06+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Iraq-Syria Oil Pipeline to Bypass Hormuz Is 4 Years and $15 Billion Away",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Syria-Oil-Pipeline-to-Bypass-Hormuz-Is-4-Years-and-15-Billion-Away.html",
       "snippet": "The project to ship Iraqi crude to the Syrian Mediterranean coast to bypass the Strait of Hormuz is still at least four years and $15 billion in investments away, sources familiar with the project told Reuters on Monday. The pipeline plan, supported by the U.S. Administration as a way to reduce the ",
@@ -406,7 +495,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 43,
       "tags": [
         "geopolitics",
         "infrastructure",
@@ -424,7 +513,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.0,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -455,7 +544,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 44,
+      "score": 42,
       "tags": [
         "oil_macro",
         "gas_storage"
@@ -472,7 +561,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 54.2,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.63
       },
       "matched": {
         "oil_macro": [
@@ -542,7 +631,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 38,
       "tags": [
         "oil_macro"
       ],
@@ -558,7 +647,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.2,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.71
       },
       "matched": {
         "oil_macro": [
@@ -582,7 +671,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 36,
       "tags": [
         "regulation",
         "nuclear"
@@ -599,7 +688,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.6,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.79
       },
       "matched": {
         "regulation": [
@@ -617,49 +706,6 @@
       "also_reported_by": []
     },
     {
-      "title": "India’s Chief Economic Adviser Calls for Return of E10 Petrol",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Chief-Economic-Adviser-Calls-for-Return-of-E10-Petrol.html",
-      "snippet": "India’s government should consider bringing back fuel with ethanol blending content lower than 20% amid concerns about potential damage to the old vehicle and two-wheeler fleet in the world’s most populous country, the government’s chief economic adviser said. In a bid to lower crude oil imports and",
-      "published_at": "2026-08-17T10:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 50.2,
-        "recency_multiplier": 0.54
-      },
-      "matched": {
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "india"
-        ],
-        "unplanned": [
-          "damage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Russia's prominent anti-war politician jailed for 11 years",
       "url": "https://www.bbc.co.uk/news/articles/cj4kjnle2neo?at_medium=RSS&at_campaign=rss",
       "snippet": "Lev Schlosberg is found guilty of \"discrediting\" Russia's army - a verdict he condemns as punishment for his political position.",
@@ -670,7 +716,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "geopolitics",
         "regulation"
@@ -687,7 +733,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.9,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -714,7 +760,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 33,
+      "score": 32,
       "tags": [
         "gas_storage",
         "oil_macro"
@@ -731,7 +777,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.68
       },
       "matched": {
         "gas_storage": [
@@ -759,7 +805,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "infrastructure"
       ],
@@ -775,7 +821,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.7,
-        "recency_multiplier": 0.5
+        "recency_multiplier": 0.48
       },
       "matched": {
         "infrastructure": [
@@ -792,40 +838,46 @@
       "also_reported_by": []
     },
     {
-      "title": "Blue Energy, GE Vernova take gas-plus-nuclear collaboration to next stage",
-      "url": "https://www.world-nuclear-news.org/articles/blue-energy-ge-vernova-take-gas-plus-nuclear-collaboration-to-next-stage",
-      "snippet": "Blue Energy and GE Vernova Hitachi Nuclear Energy have signed the agreement launching the next phase of their collaboration to deploy a 2.5 GW gas-plus-nuclear power plant in Texas.",
-      "published_at": "2026-08-17T13:31:13+00:00",
+      "title": "Why did Trump scale back war games with South Korea?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/8/17/why-did-trump-scale-back-war-games-with-south-korea?traffic_source=rss",
+      "snippet": "US president cites good relationship with North Korean leader Kim Jong Un",
+      "published_at": "2026-08-17T19:34:20+00:00",
       "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 32,
+      "has_magnitude": false,
+      "score": 31,
       "tags": [
-        "nuclear"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geography": 0.0,
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 33.1,
-        "recency_multiplier": 0.71
+        "raw": 23.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "nuclear": [
-          "nuclear"
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "korea"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-08-17T14:15:17+00:00"
     },
     {
       "title": "Russian politician sentenced to 11 years for opposing war in Ukraine",
@@ -869,6 +921,178 @@
       "also_reported_by": []
     },
     {
+      "title": "Blue Energy, GE Vernova take gas-plus-nuclear collaboration to next stage",
+      "url": "https://www.world-nuclear-news.org/articles/blue-energy-ge-vernova-take-gas-plus-nuclear-collaboration-to-next-stage",
+      "snippet": "Blue Energy and GE Vernova Hitachi Nuclear Energy have signed the agreement launching the next phase of their collaboration to deploy a 2.5 GW gas-plus-nuclear power plant in Texas.",
+      "published_at": "2026-08-17T13:31:13+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 31,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 33.1,
+        "recency_multiplier": 0.68
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Egypt moves to fast-track Mediterranean gas field tie-in in pursuit of production growth",
+      "url": "https://www.offshore-energy.biz/egypt-moves-to-fast-track-mediterranean-gas-field-tie-in-in-pursuit-of-production-growth/",
+      "snippet": "With its sights set on higher domestic gas production, Egypt’s Ministry of Petroleum and Mineral Resources is pushing to accelerate field development in the Eastern Mediterranean waters, as part of its broader efforts to enable upstream growth and achieve its exploration and production plans through",
+      "published_at": "2026-08-17T12:37:12+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 24.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 0.64
+      },
+      "matched": {
+        "infrastructure": [
+          "gas field",
+          "tie-in",
+          "field development"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "The Next Energy Crisis Could Be a Water Crisis",
+      "url": "https://oilprice.com/Energy/Energy-General/The-Next-Energy-Crisis-Could-Be-a-Water-Crisis.html",
+      "snippet": "Strategic shortfalls? Maybe in getting cobalt out of the Congo or rare earth powders from China or natural gas from Russia or oil from the Persian Gulf? Or maybe something closer to home. Thanks to climate change (yes, just say it and hope the big boss doesn’t hear you), temperatures have risen, and",
+      "published_at": "2026-08-17T20:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics",
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 20.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 22.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "persian gulf"
+        ],
+        "weather": [
+          "temperatures"
+        ],
+        "geography": [
+          "russia",
+          "china",
+          "gulf"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Trump's threat on Oman, which has been holding its own talks with Iran to reopen the Strait of Hormuz, comes as a 60-day window for peace negotiations expires.",
+      "published_at": "2026-08-17T19:25:05+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 17,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 51.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "negotiations",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/video/inside-story/2026/8/17/why-did-trump-scale-back-war-games-with-south-korea?traffic_source=rss",
+        "title": "Why did Trump scale back war games with South Korea?",
+        "published_at": "2026-08-17T19:34:20+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "Police execute controlled World War II–era Mine explosion",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/police-execute-controlled-world-war-ii-era-mine?traffic_source=rss",
       "snippet": "Video footage released by police on Sunday shows Slovak bomb disposal experts executing a mine detonation.",
@@ -895,7 +1119,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -945,7 +1169,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.1,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.72
       },
       "matched": {
         "geopolitics": [
@@ -964,9 +1188,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
-        "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
-        "published_at": "2026-08-17T19:25:05+00:00"
+        "url": "https://www.aljazeera.com/video/inside-story/2026/8/17/why-did-trump-scale-back-war-games-with-south-korea?traffic_source=rss",
+        "title": "Why did Trump scale back war games with South Korea?",
+        "published_at": "2026-08-17T19:34:20+00:00"
       },
       "hidden": true
     },
@@ -1011,9 +1235,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
-        "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
-        "published_at": "2026-08-17T19:25:05+00:00"
+        "url": "https://www.aljazeera.com/video/inside-story/2026/8/17/why-did-trump-scale-back-war-games-with-south-korea?traffic_source=rss",
+        "title": "Why did Trump scale back war games with South Korea?",
+        "published_at": "2026-08-17T19:34:20+00:00"
       },
       "hidden": true
     }
