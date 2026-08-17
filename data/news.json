@@ -1,111 +1,203 @@
 {
-  "generated_at": "2026-08-17T05:28:01.679928+00:00",
-  "item_count": 6,
+  "generated_at": "2026-08-17T06:02:41.716030+00:00",
+  "item_count": 8,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 0
+    "normal": 2
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1652
+        "ms": 1508
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 43017
+        "ms": 106166
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3430
+        "ms": 21572
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 833
+        "ms": 401
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 452
+        "ms": 300
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 156
+        "ms": 240
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 44,
         "error": null,
-        "ms": 1452
+        "ms": 1099
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 223
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 70
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 817
+        "ms": 687
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 384
+        "ms": 293
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 722
+        "ms": 508
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 73
+        "ms": 220
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 154
+        "ms": 170
       }
     ]
   },
   "items": [
+    {
+      "title": "Hormuz Tanker Traffic Slows to a Trickle",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Slows-to-a-Trickle.html",
+      "snippet": "Tanker traffic via the Strait of Hormuz slowed further over the weekend, maintaining upward pressure on oil prices. At the time of writing, Brent crude was trading at $88.62 per barrel, with West Texas Intermediate at $82.18 per barrel. Earlier in the session, Brent crude broke above $89 per barrel ",
+      "published_at": "2026-08-17T05:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 27.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 52.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran’s top negotiator declares victory in war against the US and Israel",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/irans-top-negotiator-declares-victory-in-war-against-the-us-and-israel?traffic_source=rss",
+      "snippet": "Iran’s Parliament speaker and top negotiator Mohammad Baqer Qalibaf has declared both a military and political victory.",
+      "published_at": "2026-08-17T05:16:18+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "urgency": [
+          "declared"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-08-16T19:00:00+00:00"
+    },
     {
       "title": "Bangladesh’s RPGCL seeks more spot LNG supplies",
       "url": "https://lngprime.com/asia/bangladeshs-rpgcl-seeks-more-spot-lng-supplies/195225/",
@@ -224,7 +316,49 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump says US to scale back South Korea military drills after it stayed out of Iran war",
+      "title": "Europe’s Gas Storage Crunch Deepens Ahead of Heating Season",
+      "url": "https://oilprice.com/Energy/Natural-Gas/Europes-Gas-Storage-Crunch-Deepens-Ahead-of-Heating-Season.html",
+      "snippet": "With less than three full months left until the start of heating season in much of Europe, the issue of gas inventories is becoming increasingly pressing. Current inventory levels are at the lowest in 17 years, and supply available for purchase is tighter than it was back in 2022. Yet Europe needs t",
+      "published_at": "2026-08-16T21:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 20.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.9,
+        "recency_multiplier": 0.58
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "inventory",
+          "inventories"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
       "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
       "snippet": "Trump cites his \"very good relationship\" with North Korea's leader in deciding to downsize the exercises.",
       "published_at": "2026-08-17T05:06:47+00:00",
@@ -234,7 +368,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
@@ -262,50 +396,13 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-16T19:00:00+00:00"
-    },
-    {
-      "title": "Europe’s Gas Storage Crunch Deepens Ahead of Heating Season",
-      "url": "https://oilprice.com/Energy/Natural-Gas/Europes-Gas-Storage-Crunch-Deepens-Ahead-of-Heating-Season.html",
-      "snippet": "With less than three full months left until the start of heating season in much of Europe, the issue of gas inventories is becoming increasingly pressing. Current inventory levels are at the lowest in 17 years, and supply available for purchase is tighter than it was back in 2022. Yet Europe needs t",
-      "published_at": "2026-08-16T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 20.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.9,
-        "recency_multiplier": 0.61
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/irans-top-negotiator-declares-victory-in-war-against-the-us-and-israel?traffic_source=rss",
+        "title": "Iran’s top negotiator declares victory in war against the US and Israel",
+        "published_at": "2026-08-17T05:16:18+00:00"
       },
-      "matched": {
-        "gas_storage": [
-          "storage",
-          "inventory",
-          "inventories"
-        ],
-        "geography": [
-          "europe"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "hidden": true
     },
     {
       "title": "Oil Majors Reap $93 Billion Windfall From the Iran War",
@@ -334,7 +431,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.4,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.5
       },
       "matched": {
         "geopolitics": [
@@ -350,9 +447,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
-        "title": "Trump says US to scale back South Korea military drills after it stayed out of Iran war",
-        "published_at": "2026-08-17T05:06:47+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/irans-top-negotiator-declares-victory-in-war-against-the-us-and-israel?traffic_source=rss",
+        "title": "Iran’s top negotiator declares victory in war against the US and Israel",
+        "published_at": "2026-08-17T05:16:18+00:00"
       },
       "hidden": true
     }
