@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-17T08:03:02.430688+00:00",
-  "item_count": 10,
+  "generated_at": "2026-08-17T08:54:50.276062+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
     "high": 1,
     "normal": 3
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,49 +17,49 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 8541
+        "ms": 1317
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 134427
+        "ms": 50925
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 24493
+        "ms": 2686
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 413
+        "ms": 419
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 375
+        "ms": 333
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 79
+        "ms": 176
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 44,
         "error": null,
-        "ms": 895
+        "ms": 684
       },
       {
         "id": "offshore_energy",
@@ -73,35 +73,35 @@
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 525
+        "ms": 506
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 217
+        "ms": 128
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 504
+        "ms": 413
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 31,
+        "count": 28,
         "error": null,
-        "ms": 258
+        "ms": 52
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 112
+        "ms": 182
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": true,
-      "score": 74,
+      "score": 72,
       "tags": [
         "supply_disruption",
         "nuclear"
@@ -133,7 +133,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 82.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "supply_disruption": [
@@ -164,7 +164,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 53,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -182,7 +182,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.0,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -199,6 +199,50 @@
         "geography": [
           "strait of hormuz",
           "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "At least six people killed in Ukrainian missile attack on Russia’s Belgorod",
+      "url": "https://www.aljazeera.com/news/2026/8/17/at-least-six-people-killed-in-ukrainian-missile-attack-on-russias-belgorod?traffic_source=rss",
+      "snippet": "Overnight Russian missile and drone attacks across Ukraine kill two people and injure 19.",
+      "published_at": "2026-08-17T08:00:05+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 26.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "missile",
+          "drone",
+          "attack"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
@@ -231,7 +275,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "infrastructure": [
@@ -258,11 +302,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 41,
       "tags": [
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -274,7 +318,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "oil_macro": [
@@ -325,6 +369,45 @@
         ]
       },
       "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-17T05:10:41+00:00"
+    },
+    {
+      "title": "War in Lebanon Escalates",
+      "url": "https://www.rigzone.com/news/wire/war_in_lebanon_escalates-17-aug-2026-184384-article/?rss=true",
+      "snippet": "Lebanon saw its deadliest day of fighting in months, heaping pressure on stalled U.S.-Iran negotiations while Washington prepares fresh economic measures.",
+      "published_at": "2026-08-17T08:17:46+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "negotiations"
+        ]
+      },
+      "duplicate_count": 0,
       "also_reported_by": []
     },
     {
@@ -338,7 +421,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "lng"
       ],
@@ -353,7 +436,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.7,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.88
       },
       "matched": {
         "lng": [
@@ -375,7 +458,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
@@ -391,7 +474,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -407,6 +490,43 @@
       "thread_started_at": "2026-08-17T05:16:18+00:00"
     },
     {
+      "title": "Bangladesh’s RPGCL seeks more spot LNG supplies",
+      "url": "https://lngprime.com/asia/bangladeshs-rpgcl-seeks-more-spot-lng-supplies/195225/",
+      "snippet": "Bangladesh’s Rupantarita Prakritik Gas (RPGCL), a unit of state-owned Petrobangla, is seeking bids for more spot liquefied natural gas (LNG) cargoes.",
+      "published_at": "2026-08-17T04:16:02+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.7,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "CIMC SOE scores new LNG bunkering vessel order",
       "url": "https://lngprime.com/asia/cimc-soe-scores-new-lng-bunkering-vessel-order/195219/",
       "snippet": "China’s Nantong CIMC Sinopacific Offshore &#038; Engineering has secured an order to build one 6,000-cbm liquefied natural gas (LNG) bunkering vessel.",
@@ -417,7 +537,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -433,7 +553,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.4,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.88
       },
       "matched": {
         "lng": [
@@ -447,41 +567,55 @@
       "also_reported_by": []
     },
     {
-      "title": "Bangladesh’s RPGCL seeks more spot LNG supplies",
-      "url": "https://lngprime.com/asia/bangladeshs-rpgcl-seeks-more-spot-lng-supplies/195225/",
-      "snippet": "Bangladesh’s Rupantarita Prakritik Gas (RPGCL), a unit of state-owned Petrobangla, is seeking bids for more spot liquefied natural gas (LNG) cargoes.",
-      "published_at": "2026-08-17T04:16:02+00:00",
+      "title": "BP, XRG secure license for Venezuela offshore gas field",
+      "url": "https://lngprime.com/americas/bp-xrg-secure-license-for-venezuela-offshore-gas-field/195259/",
+      "snippet": "UK-based energy giant BP, Adnoc's international investment unit XRG, and a unit of Qatar's UCC have secured a license to explore and develop the second phase of Venezuela's offshore Loran gas field.",
+      "published_at": "2026-08-17T05:10:41+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 14,
       "tags": [
-        "lng"
+        "infrastructure",
+        "regulation"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
+        "themes": 16.2,
+        "geo_band": "primary",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 27.7,
+        "raw": 45.3,
         "recency_multiplier": 0.87
       },
       "matched": {
-        "lng": [
-          "lng",
-          "cargoes"
+        "infrastructure": [
+          "gas field"
+        ],
+        "regulation": [
+          "license"
+        ],
+        "geography": [
+          "uk"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Oil-Giant-Secures-US-License-to-Return-to-Venezuela.html",
+        "title": "Indian Oil Giant Secures U.S. License to Return to Venezuela",
+        "published_at": "2026-08-17T07:50:00+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Iran’s top negotiator declares victory in war against the US and Israel",
@@ -509,7 +643,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
