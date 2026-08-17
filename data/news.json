@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-17T08:54:50.276062+00:00",
-  "item_count": 13,
+  "generated_at": "2026-08-17T09:37:44.762380+00:00",
+  "item_count": 12,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 3
+    "normal": 4
   },
   "superseded_count": 2,
   "sources": {
@@ -17,77 +17,77 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1317
+        "ms": 1334
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 50925
+        "ms": 135629
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2686
+        "ms": 25640
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 419
+        "ms": 337
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 333
+        "ms": 592
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 176
+        "ms": 162
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 44,
+        "count": 43,
         "error": null,
-        "ms": 684
+        "ms": 1332
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 146
+        "ms": 483
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 506
+        "ms": 743
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 128
+        "ms": 337
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 413
+        "ms": 549
       },
       {
         "id": "bbc_world",
@@ -101,7 +101,7 @@
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 182
+        "ms": 57
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": true,
-      "score": 72,
+      "score": 70,
       "tags": [
         "supply_disruption",
         "nuclear"
@@ -133,7 +133,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 82.7,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.91
       },
       "matched": {
         "supply_disruption": [
@@ -150,7 +150,57 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 2,
+      "also_reported_by": []
+    },
+    {
+      "title": "Asian Refiners Seek Alternative Pickup Point for Saudi Crude",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Asian-Refiners-Seek-Alternative-Pickup-Point-for-Saudi-Crude.html",
+      "snippet": "Heightened risks to shipping safety in the Red Sea have prompted some Asian refiners to ask Saudi state oil giant Aramco to pick up its crude oil cargoes at Egypt’s Mediterranean port of Sidi Kerir as vessel owners are increasingly reluctant to pass through the Bab el-Mandeb Strait to enter the Red ",
+      "published_at": "2026-08-17T08:55:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "bab el-mandeb",
+          "red sea"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "bab el-mandeb",
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
       "also_reported_by": []
     },
     {
@@ -164,7 +214,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 51,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -182,7 +232,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.0,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -259,7 +309,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 46,
       "tags": [
         "infrastructure"
       ],
@@ -275,7 +325,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.5,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.93
       },
       "matched": {
         "infrastructure": [
@@ -286,46 +336,6 @@
         ],
         "unplanned": [
           "delayed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Japan’s economy slows, missing growth forecasts",
-      "url": "https://www.aljazeera.com/economy/2026/8/17/japans-economy-slows-missing-growth-forecasts?traffic_source=rss",
-      "snippet": "GDP rises 0.3 percent in the second quarter as consumption and capital spending sag.",
-      "published_at": "2026-08-17T06:14:39+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 41,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 34.8,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "oil_macro": [
-          "gdp"
-        ],
-        "geography": [
-          "japan"
         ]
       },
       "duplicate_count": 0,
@@ -372,6 +382,46 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-08-17T05:10:41+00:00"
+    },
+    {
+      "title": "Japan’s economy slows, missing growth forecasts",
+      "url": "https://www.aljazeera.com/economy/2026/8/17/japans-economy-slows-missing-growth-forecasts?traffic_source=rss",
+      "snippet": "GDP rises 0.3 percent in the second quarter as consumption and capital spending sag.",
+      "published_at": "2026-08-17T06:14:39+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 40,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.8,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "oil_macro": [
+          "gdp"
+        ],
+        "geography": [
+          "japan"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "War in Lebanon Escalates",
@@ -421,7 +471,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
         "lng"
       ],
@@ -436,7 +486,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.7,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.83
       },
       "matched": {
         "lng": [
@@ -458,7 +508,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -474,7 +524,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.2,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -488,83 +538,6 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-08-17T05:16:18+00:00"
-    },
-    {
-      "title": "Bangladesh’s RPGCL seeks more spot LNG supplies",
-      "url": "https://lngprime.com/asia/bangladeshs-rpgcl-seeks-more-spot-lng-supplies/195225/",
-      "snippet": "Bangladesh’s Rupantarita Prakritik Gas (RPGCL), a unit of state-owned Petrobangla, is seeking bids for more spot liquefied natural gas (LNG) cargoes.",
-      "published_at": "2026-08-17T04:16:02+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.7,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "CIMC SOE scores new LNG bunkering vessel order",
-      "url": "https://lngprime.com/asia/cimc-soe-scores-new-lng-bunkering-vessel-order/195219/",
-      "snippet": "China’s Nantong CIMC Sinopacific Offshore &#038; Engineering has secured an order to build one 6,000-cbm liquefied natural gas (LNG) bunkering vessel.",
-      "published_at": "2026-08-17T05:19:00+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "BP, XRG secure license for Venezuela offshore gas field",
@@ -594,7 +567,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.3,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.83
       },
       "matched": {
         "infrastructure": [
@@ -628,7 +601,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 11,
       "tags": [
         "geopolitics"
       ],
@@ -643,7 +616,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
