@@ -1,111 +1,158 @@
 {
-  "generated_at": "2026-08-17T06:02:41.716030+00:00",
-  "item_count": 8,
+  "generated_at": "2026-08-17T07:12:23.228314+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 2
+    "high": 1,
+    "normal": 3
   },
   "superseded_count": 2,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1508
+        "ms": 1625
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 106166
+        "ms": 94332
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 21572
+        "ms": 3381
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 401
+        "ms": 368
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 300
+        "ms": 96
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 240
+        "ms": 178
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 44,
         "error": null,
-        "ms": 1099
+        "ms": 1307
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 70
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 222
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 687
+        "ms": 766
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 293
+        "ms": 346
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 508
+        "ms": 721
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 32,
+        "count": 31,
         "error": null,
-        "ms": 220
+        "ms": 197
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 170
+        "ms": 102
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Olkiluoto 3 - B3",
+      "url": "https://umm.nordpoolgroup.com/#/messages/6277331e-d0a8-4689-ac74-ebcea041c121/5",
+      "snippet": "Published: 17.08.2026 08:21:05 Publisher: PD Power Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Olkiluoto 3 net output remains at approximately 1300 MW due to technical faults in two main primary coolant pumps in the nuclear island. Remarks:",
+      "published_at": "2026-08-17T06:21:05+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": true,
+      "score": 74,
+      "tags": [
+        "supply_disruption",
+        "nuclear"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 12.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 82.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "nuclear": [
+          "nuclear"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Hormuz Tanker Traffic Slows to a Trickle",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Slows-to-a-Trickle.html",
@@ -158,78 +205,83 @@
       "also_reported_by": []
     },
     {
-      "title": "Iran’s top negotiator declares victory in war against the US and Israel",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/irans-top-negotiator-declares-victory-in-war-against-the-us-and-israel?traffic_source=rss",
-      "snippet": "Iran’s Parliament speaker and top negotiator Mohammad Baqer Qalibaf has declared both a military and political victory.",
-      "published_at": "2026-08-17T05:16:18+00:00",
+      "title": "India Lets Delayed Renewable Projects Pay to Keep Grid Access",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Lets-Delayed-Renewable-Projects-Pay-to-Keep-Grid-Access.html",
+      "snippet": "India’s authorities have given solar developers missing their deadlines the option to pay to keep their grid connectivity instead of losing it, Reuters has reported, citing the country’s Central Electricity Regulatory Commission. With grid connectivity a limited resource, space should not be kept un",
+      "published_at": "2026-08-17T06:45:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 6.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 40.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "grid"
+        ],
+        "geography": [
+          "india"
+        ],
+        "unplanned": [
+          "delayed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Japan’s economy slows, missing growth forecasts",
+      "url": "https://www.aljazeera.com/economy/2026/8/17/japans-economy-slows-missing-growth-forecasts?traffic_source=rss",
+      "snippet": "GDP rises 0.3 percent in the second quarter as consumption and capital spending sag.",
+      "published_at": "2026-08-17T06:14:39+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
-      "has_magnitude": false,
+      "has_magnitude": true,
       "score": 43,
       "tags": [
-        "geopolitics"
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "urgency": [
-          "declared"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-08-16T19:00:00+00:00"
-    },
-    {
-      "title": "Bangladesh’s RPGCL seeks more spot LNG supplies",
-      "url": "https://lngprime.com/asia/bangladeshs-rpgcl-seeks-more-spot-lng-supplies/195225/",
-      "snippet": "Bangladesh’s Rupantarita Prakritik Gas (RPGCL), a unit of state-owned Petrobangla, is seeking bids for more spot liquefied natural gas (LNG) cargoes.",
-      "published_at": "2026-08-17T04:16:02+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
+        "themes": 8.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 27.7,
+        "raw": 34.8,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "lng",
-          "cargoes"
+        "oil_macro": [
+          "gdp"
+        ],
+        "geography": [
+          "japan"
         ]
       },
       "duplicate_count": 0,
@@ -276,82 +328,37 @@
       "also_reported_by": []
     },
     {
-      "title": "Top 5 news of the week August 10-16",
-      "url": "https://lngprime.com/asia/top-5-news-of-the-week-august-10-16/195209/",
-      "snippet": "LNG Prime brings you the five most popular news stories on our platform during the week of August 10-16, 2026.",
-      "published_at": "2026-08-17T04:15:00+00:00",
+      "title": "Bangladesh’s RPGCL seeks more spot LNG supplies",
+      "url": "https://lngprime.com/asia/bangladeshs-rpgcl-seeks-more-spot-lng-supplies/195225/",
+      "snippet": "Bangladesh’s Rupantarita Prakritik Gas (RPGCL), a unit of state-owned Petrobangla, is seeking bids for more spot liquefied natural gas (LNG) cargoes.",
+      "published_at": "2026-08-17T04:16:02+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 34,
       "tags": [
-        "lng",
-        "infrastructure"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
-        "themes": 11.3,
+        "themes": 14.6,
         "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.5,
-        "recency_multiplier": 1.0
+        "raw": 27.7,
+        "recency_multiplier": 0.93
       },
       "matched": {
         "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "platform"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Europe’s Gas Storage Crunch Deepens Ahead of Heating Season",
-      "url": "https://oilprice.com/Energy/Natural-Gas/Europes-Gas-Storage-Crunch-Deepens-Ahead-of-Heating-Season.html",
-      "snippet": "With less than three full months left until the start of heating season in much of Europe, the issue of gas inventories is becoming increasingly pressing. Current inventory levels are at the lowest in 17 years, and supply available for purchase is tighter than it was back in 2022. Yet Europe needs t",
-      "published_at": "2026-08-16T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 20.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.9,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "gas_storage": [
-          "storage",
-          "inventory",
-          "inventories"
-        ],
-        "geography": [
-          "europe"
+          "lng",
+          "cargoes"
         ]
       },
       "duplicate_count": 0,
@@ -361,14 +368,14 @@
       "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
       "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
       "snippet": "Trump cites his \"very good relationship\" with North Korea's leader in deciding to downsize the exercises.",
-      "published_at": "2026-08-17T05:06:47+00:00",
+      "published_at": "2026-08-17T06:24:31+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
@@ -396,11 +403,92 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-08-16T19:00:00+00:00"
+    },
+    {
+      "title": "Top 5 news of the week August 10-16",
+      "url": "https://lngprime.com/asia/top-5-news-of-the-week-august-10-16/195209/",
+      "snippet": "LNG Prime brings you the five most popular news stories on our platform during the week of August 10-16, 2026.",
+      "published_at": "2026-08-17T04:15:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 11.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.5,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "platform"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran’s top negotiator declares victory in war against the US and Israel",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/irans-top-negotiator-declares-victory-in-war-against-the-us-and-israel?traffic_source=rss",
+      "snippet": "Iran’s Parliament speaker and negotiator Mohammad Bagher Ghalibaf has declared both a military and political victory",
+      "published_at": "2026-08-17T05:16:18+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 13,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "urgency": [
+          "declared"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/irans-top-negotiator-declares-victory-in-war-against-the-us-and-israel?traffic_source=rss",
-        "title": "Iran’s top negotiator declares victory in war against the US and Israel",
-        "published_at": "2026-08-17T05:16:18+00:00"
+        "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
+        "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
+        "published_at": "2026-08-17T06:24:31+00:00"
       },
       "hidden": true
     },
@@ -415,7 +503,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 9,
       "tags": [
         "geopolitics"
       ],
@@ -431,7 +519,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.4,
-        "recency_multiplier": 0.5
+        "recency_multiplier": 0.46
       },
       "matched": {
         "geopolitics": [
@@ -447,9 +535,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/irans-top-negotiator-declares-victory-in-war-against-the-us-and-israel?traffic_source=rss",
-        "title": "Iran’s top negotiator declares victory in war against the US and Israel",
-        "published_at": "2026-08-17T05:16:18+00:00"
+        "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
+        "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
+        "published_at": "2026-08-17T06:24:31+00:00"
       },
       "hidden": true
     }
