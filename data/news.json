@@ -1,116 +1,116 @@
 {
-  "generated_at": "2026-08-18T14:10:39.512490+00:00",
-  "item_count": 19,
+  "generated_at": "2026-08-18T14:52:08.478121+00:00",
+  "item_count": 21,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 9
+    "normal": 11
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 2979
+        "ms": 1379
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 82863
+        "ms": 49670
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4183
+        "ms": 5591
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 493
+        "ms": 357
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 3135
+        "ms": 642
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 164
+        "ms": 198
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 42,
+        "count": 41,
         "error": null,
-        "ms": 1203
+        "ms": 1349
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 421
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 260
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 714
+        "ms": 757
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 271
+        "ms": 269
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 6488
+        "ms": 574
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 170
+        "ms": 127
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 175
+        "ms": 140
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
-      "url": "https://umm.nordpoolgroup.com/#/messages/8c6e2266-40c3-466d-b958-a4c12a7b6d86/2",
-      "snippet": "Published: 18.08.2026 16:00:17 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-18T14:00:17+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
+      "url": "https://umm.nordpoolgroup.com/#/messages/2f0419f8-ef37-46a7-be8b-3be13c2f5677/5",
+      "snippet": "Published: 18.08.2026 16:24:50 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Technical failure Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
+      "published_at": "2026-08-18T14:24:50+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -208,7 +208,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 63,
+      "score": 62,
       "tags": [
         "geopolitics",
         "lng"
@@ -225,7 +225,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -254,7 +254,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 60,
+      "score": 59,
       "tags": [
         "geopolitics"
       ],
@@ -270,7 +270,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -280,6 +280,49 @@
         "geography": [
           "uk",
           "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "SLB lends Shell a hand to unlock oil & gas from shut-in wells",
+      "url": "https://www.offshore-energy.biz/slb-lends-shell-a-hand-to-unlock-oil-gas-from-shut-in-wells/",
+      "snippet": "U.S.-headquartered technology player SLB has been tasked by Brunei Shell Petroleum (BSP), a joint venture company between the Brunei government and the UK-headquartered Shell, to support the resumption of oil and gas production across mature offshore fields in Brunei, Southeast Asia. The post SLB le",
+      "published_at": "2026-08-18T12:40:07+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 8.4,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 52.8,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "supply_disruption": [
+          "shut-in"
+        ],
+        "geography": [
+          "uk"
+        ],
+        "urgency": [
+          "shut"
         ]
       },
       "duplicate_count": 0,
@@ -296,7 +339,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 55,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -313,7 +356,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.4,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -342,7 +385,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 56,
+      "score": 54,
       "tags": [
         "regulation",
         "lng"
@@ -359,7 +402,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.9,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.85
       },
       "matched": {
         "regulation": [
@@ -386,7 +429,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 52,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -404,7 +447,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.0,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -438,7 +481,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 50,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -455,7 +498,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.6,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -474,6 +517,54 @@
       "also_reported_by": []
     },
     {
+      "title": "Romania Restarts Coal Plant as Danube Drought Forces Nuclear Shutdown",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Romania-Restarts-Coal-Plant-as-Danube-Drought-Forces-Nuclear-Shutdown.html",
+      "snippet": "Romania has this week restarted a 300-megawatt coal-fired power plant to partially offset the generation lost by the closure of nuclear electricity output after the low water level on the Danube river forced a shutdown of the country’s only nuclear power plant. Romania, which lost 20% of its power g",
+      "published_at": "2026-08-18T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 45,
+      "tags": [
+        "supply_disruption",
+        "nuclear",
+        "weather",
+        "carbon"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 15.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 36.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "shutdown"
+        ],
+        "nuclear": [
+          "nuclear"
+        ],
+        "weather": [
+          "drought"
+        ],
+        "carbon": [
+          "offset"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Decision to grant British Gas Trading Limited a limited derogation from standard licence condition 22B of the electricity and gas supply licences",
       "url": "https://www.ofgem.gov.uk/transparency-document/decision-grant-british-gas-trading-limited-limited-derogation-standard-licence-condition-22b-electricity-and-gas-supply-licences",
       "snippet": "Our decision to grant British Gas Trading Limited a limited derogation.",
@@ -484,7 +575,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 44,
       "tags": [
         "regulation"
       ],
@@ -500,7 +591,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.2,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.94
       },
       "matched": {
         "regulation": [
@@ -524,7 +615,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 45,
+      "score": 43,
       "tags": [
         "supply_disruption",
         "lng"
@@ -541,7 +632,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 38.5,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.9
       },
       "matched": {
         "supply_disruption": [
@@ -558,6 +649,45 @@
       "also_reported_by": []
     },
     {
+      "title": "What to know about Gaza working groups and their mandate?",
+      "url": "https://www.aljazeera.com/news/2026/8/18/what-to-know-about-gaza-working-groups-and-their-mandate?traffic_source=rss",
+      "snippet": "What to know about the new Gaza working groups conditioning reconstruction on immediate disarmament.",
+      "published_at": "2026-08-18T13:58:58+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 6.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "mandate"
+        ],
+        "urgency": [
+          "immediate"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Review of the Capacity Market Advisory Group",
       "url": "https://www.ofgem.gov.uk/call-for-input/review-capacity-market-advisory-group",
       "snippet": "Ofgem is seeking stakeholder views on whether the Capacity Market Advisory Group remains effective, well governed and fit for future challenges.",
@@ -568,7 +698,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 40,
       "tags": [
         "regulation"
       ],
@@ -583,7 +713,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.7,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.94
       },
       "matched": {
         "regulation": [
@@ -605,7 +735,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "geopolitics"
       ],
@@ -621,7 +751,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -645,7 +775,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 40,
+      "score": 39,
       "tags": [
         "lng"
       ],
@@ -661,7 +791,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.9,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.59
       },
       "matched": {
         "lng": [
@@ -686,7 +816,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 38,
       "tags": [
         "supply_disruption"
       ],
@@ -701,7 +831,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.77
       },
       "matched": {
         "supply_disruption": [
@@ -715,44 +845,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Drone video shows drought-hit fields in England after driest July on record",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/drone-video-shows-drought-hit-fields-in-england-after-driest-july-on-record?traffic_source=rss",
-      "snippet": "Drone video shows drought-hit fields in England after driest July on record",
-      "published_at": "2026-08-18T09:29:30+00:00",
+      "title": "Kongsberg Maritime to equip Asia’s new FPSO with high-capacity deck machinery package",
+      "url": "https://www.offshore-energy.biz/kongsberg-maritime-to-equip-asias-new-fpso-with-high-capacity-deck-machinery-package/",
+      "snippet": "Kongsberg Maritime, a Norway-headquartered marine technology company, has been selected to provide advanced deck machinery equipment for a new floating production, storage and offloading (FPSO) vessel destined for an undisclosed offshore development in Asian waters. The post Kongsberg Maritime to eq",
+      "published_at": "2026-08-18T13:48:14+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 37,
       "tags": [
-        "geopolitics",
-        "weather"
+        "gas_storage"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 12.7,
-        "geo_band": "primary",
-        "geography": 16.0,
+        "authority": 12.4,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 38.1,
-        "recency_multiplier": 0.81
+        "raw": 29.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "drone"
-        ],
-        "weather": [
-          "drought"
+        "gas_storage": [
+          "storage"
         ],
         "geography": [
-          "england"
+          "norway"
         ]
       },
       "duplicate_count": 0,
@@ -769,7 +895,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 37,
       "tags": [
         "lng"
       ],
@@ -785,7 +911,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.1,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.59
       },
       "matched": {
         "lng": [
@@ -797,42 +923,6 @@
         "geography": [
           "norway",
           "norwegian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "KazMunayGas Posts Higher H1 Profit",
-      "url": "https://www.rigzone.com/news/kazmunaygas_posts_higher_h1_profit-18-aug-2026-184399-article/?rss=true",
-      "snippet": "Kazakhstan's state-owned KazMunayGas reported around $1.96 billion in net income for the first six months of 2026, up 69.1 percent from the first half of 2025 as higher oil prices offset lower production.",
-      "published_at": "2026-08-18T11:36:23+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 35,
-      "tags": [
-        "carbon"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 5.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 28.0,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "carbon": [
-          "offset"
         ]
       },
       "duplicate_count": 0,
@@ -879,40 +969,36 @@
       "also_reported_by": []
     },
     {
-      "title": "Meta lawsuits: Is social media facing a global legal reckoning?",
-      "url": "https://www.aljazeera.com/news/2026/8/18/meta-lawsuits-is-social-media-facing-a-global-legal-reckoning?traffic_source=rss",
-      "snippet": "Meta battles legal challenges in the US, Europe and beyond over platform design and its impact on younger users.",
-      "published_at": "2026-08-18T09:49:19+00:00",
+      "title": "KazMunayGas Posts Higher H1 Profit",
+      "url": "https://www.rigzone.com/news/kazmunaygas_posts_higher_h1_profit-18-aug-2026-184399-article/?rss=true",
+      "snippet": "Kazakhstan's state-owned KazMunayGas reported around $1.96 billion in net income for the first six months of 2026, up 69.1 percent from the first half of 2025 as higher oil prices offset lower production.",
+      "published_at": "2026-08-18T11:36:23+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
+      "has_magnitude": true,
+      "score": 34,
       "tags": [
-        "infrastructure"
+        "carbon"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 6.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "authority": 10.9,
+        "themes": 5.0,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 26.2,
-        "recency_multiplier": 0.83
+        "raw": 28.0,
+        "recency_multiplier": 0.91
       },
       "matched": {
-        "infrastructure": [
-          "platform"
-        ],
-        "geography": [
-          "europe"
+        "carbon": [
+          "offset"
         ]
       },
       "duplicate_count": 0,
