@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-18T09:43:54.393363+00:00",
+  "generated_at": "2026-08-18T10:06:19.034489+00:00",
   "item_count": 15,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 9
+    "normal": 10
   },
-  "superseded_count": 0,
+  "superseded_count": 1,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1258
+        "ms": 1066
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 61966
+        "ms": 122144
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 22983
+        "ms": 5894
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 584
+        "ms": 477
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 326
+        "ms": 324
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 77
+        "ms": 152
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 891
+        "ms": 1320
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 165
+        "ms": 260
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 577
+        "ms": 739
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 126
+        "ms": 298
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 447
+        "ms": 622
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 137
+        "ms": 118
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 159
+        "ms": 144
       }
     ]
   },
@@ -262,7 +262,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 55,
+      "score": 54,
       "tags": [
         "supply_disruption"
       ],
@@ -277,7 +277,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 65.9,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.74
       },
       "matched": {
         "supply_disruption": [
@@ -304,7 +304,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 52,
+      "score": 51,
       "tags": [
         "lng"
       ],
@@ -320,7 +320,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.9,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.86
       },
       "matched": {
         "lng": [
@@ -345,7 +345,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 49,
       "tags": [
         "lng"
       ],
@@ -361,7 +361,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.1,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.85
       },
       "matched": {
         "lng": [
@@ -502,6 +502,49 @@
       "also_reported_by": []
     },
     {
+      "title": "Russia warns UK will pay for supplying drones to Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Russia accuses the UK of escalating the Ukraine war after British-made drones were used, but the MoD says it stands against Russian aggression.",
+      "published_at": "2026-08-18T09:55:00+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "uk",
+          "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-18T08:05:42+00:00"
+    },
+    {
       "title": "Review of the Capacity Market Advisory Group",
       "url": "https://www.ofgem.gov.uk/call-for-input/review-capacity-market-advisory-group",
       "snippet": "Ofgem is seeking stakeholder views on whether the Capacity Market Advisory Group remains effective, well governed and fit for future challenges.",
@@ -549,7 +592,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "lng"
       ],
@@ -565,7 +608,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 30.4,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.88
       },
       "matched": {
         "lng": [
@@ -579,81 +622,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Large fire breaks out at fuel depot near Iraq’s Sulaimaniyah",
-      "url": "https://www.aljazeera.com/news/2026/8/18/large-fire-breaks-out-at-fuel-depot-near-iraqs-sulaimaniyah?traffic_source=rss",
-      "snippet": "At least 20 injured and dozens of fuel tankers destroyed as flames rip through warehouse near northern Kurdish city.",
-      "published_at": "2026-08-18T01:54:01+00:00",
+      "title": "Meta lawsuits: Is social media facing a global legal reckoning?",
+      "url": "https://www.aljazeera.com/news/2026/8/18/meta-lawsuits-is-social-media-facing-a-global-legal-reckoning?traffic_source=rss",
+      "snippet": "Meta battles legal challenges in the US, Europe and beyond over platform design and its impact on younger users.",
+      "published_at": "2026-08-18T09:49:19+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 34,
       "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Top Russian economist ousted after warning of growing costs of Ukraine war",
-      "url": "https://www.aljazeera.com/news/2026/8/18/top-russian-economist-ousted-after-warning-of-growing-costs-of-ukraine-war?traffic_source=rss",
-      "snippet": "Andrey Klepach, top economist at Russia&#039;s state development bank VEB, had warned Russia was lagging behind rivals.",
-      "published_at": "2026-08-18T08:05:42+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 23.5,
+        "raw": 26.2,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "war"
+        "infrastructure": [
+          "platform"
         ],
         "geography": [
-          "russia",
-          "russian",
-          "ukraine"
+          "europe"
         ]
       },
       "duplicate_count": 0,
@@ -686,7 +688,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.8,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.76
       },
       "matched": {
         "oil_macro": [
@@ -703,44 +705,53 @@
       "also_reported_by": []
     },
     {
-      "title": "India’s Bombay Logistics deploys LNG-powered trucks",
-      "url": "https://lngprime.com/asia/indias-bombay-logistics-deploys-lng-powered-trucks/195350/",
-      "snippet": "India's Bombay Logistics has deployed a fleet of LNG-powered heavy-duty trucks built by compatriot Blue Energy Motors.",
-      "published_at": "2026-08-18T05:53:01+00:00",
+      "title": "Top Russian economist ousted after warning of growing costs of Ukraine war",
+      "url": "https://www.aljazeera.com/news/2026/8/18/top-russian-economist-ousted-after-warning-of-growing-costs-of-ukraine-war?traffic_source=rss",
+      "snippet": "Andrey Klepach, top economist at Russia&#039;s state development bank VEB, had warned Russia was lagging behind rivals.",
+      "published_at": "2026-08-18T08:05:42+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 9,
       "tags": [
-        "lng"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 7.3,
+        "authority": 9.5,
+        "themes": 9.0,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.87
+        "raw": 23.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "lng"
+        "geopolitics": [
+          "war"
         ],
         "geography": [
-          "india"
+          "russia",
+          "russian",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
+        "title": "Russia warns UK will pay for supplying drones to Ukraine",
+        "published_at": "2026-08-18T09:55:00+00:00"
+      },
+      "hidden": true
     }
   ]
 }
