@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-18T07:10:34.287326+00:00",
+  "generated_at": "2026-08-18T07:53:22.387431+00:00",
   "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 5
+    "high": 1,
+    "normal": 4
   },
   "superseded_count": 0,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1209
+        "ms": 1145
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 62297
+        "ms": 29793
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3924
+        "ms": 3872
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 229
+        "ms": 307
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 312
+        "ms": 547
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 76
+        "ms": 250
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 828
+        "ms": 909
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 154
+        "ms": 437
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 1070
+        "ms": 841
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 146
+        "ms": 178
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 305
+        "ms": 539
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 36,
+        "count": 31,
         "error": null,
-        "ms": 143
+        "ms": 278
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 148
+        "ms": 149
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, FLEMALLE TH1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/8c6c3b34-321d-4368-ba39-c8e7aab96f76/7",
+      "snippet": "Published: 18.08.2026 09:15:17 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Due to steam leakage Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-18T07:15:17+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-17T19:36:07+00:00"
+    },
     {
       "title": "Vessel hit by ‘unknown projectile’ in Strait of Hormuz, UKMTO says",
       "url": "https://www.aljazeera.com/news/2026/8/18/vessel-hit-by-unknown-projectile-in-strait-of-hormuz-ukmto-says?traffic_source=rss",
@@ -162,7 +206,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 62,
+      "score": 60,
       "tags": [
         "supply_disruption"
       ],
@@ -177,7 +221,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 65.9,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.87
       },
       "matched": {
         "supply_disruption": [
@@ -279,54 +323,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, GU_504110 (GT6)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/bc619eea-28cb-46c7-815e-30c9f9f9f8ac/2",
-      "snippet": "Published: 17.08.2026 21:36:07 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unit Protection Trip Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Pow",
-      "published_at": "2026-08-17T19:36:07+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "supply_disruption",
-        "nuclear"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 12.8,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 70.7,
-        "recency_multiplier": 0.48
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "nuclear": [
-          "trip"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "trip"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "ALNG expects to enter LNG trading by year-end",
       "url": "https://lngprime.com/corporate/alng-expects-to-enter-lng-trading-by-year-end/195309/",
       "snippet": "Norway’s ALNG, the owner of two TFDE LNG vessels, expects to enter LNG trading with its first transaction by the end of this year, according to interim CEO Jens-Julius Ramdahl Nygaard.",
@@ -377,7 +373,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 36,
       "tags": [
         "supply_disruption"
       ],
@@ -392,7 +388,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.74
       },
       "matched": {
         "supply_disruption": [
@@ -416,7 +412,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "oil_macro"
       ],
@@ -432,7 +428,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.8,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.91
       },
       "matched": {
         "oil_macro": [
@@ -443,48 +439,6 @@
         ],
         "geography": [
           "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
-      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Trump's threat on Oman, which has been holding its own talks with Iran to reopen the Strait of Hormuz, comes as a 60-day window for peace negotiations expires.",
-      "published_at": "2026-08-17T19:25:05+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.8,
-        "recency_multiplier": 0.47
-      },
-      "matched": {
-        "geopolitics": [
-          "negotiations",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -517,7 +471,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -525,6 +479,48 @@
         ],
         "geography": [
           "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
+      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Trump's threat on Oman, which has been holding its own talks with Iran to reopen the Strait of Hormuz, comes as a 60-day window for peace negotiations expires.",
+      "published_at": "2026-08-17T19:25:05+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 51.8,
+        "recency_multiplier": 0.45
+      },
+      "matched": {
+        "geopolitics": [
+          "negotiations",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
