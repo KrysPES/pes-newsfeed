@@ -1,116 +1,116 @@
 {
-  "generated_at": "2026-08-18T13:33:42.853760+00:00",
-  "item_count": 21,
+  "generated_at": "2026-08-18T14:10:39.512490+00:00",
+  "item_count": 19,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 14
+    "normal": 9
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1399
+        "ms": 2979
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 96353
+        "ms": 82863
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2833
+        "ms": 4183
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 1026
+        "ms": 493
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 732
+        "ms": 3135
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 184
+        "ms": 164
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 41,
+        "count": 42,
         "error": null,
-        "ms": 1315
+        "ms": 1203
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 250
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 421
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 712
+        "ms": 714
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 377
+        "ms": 271
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 690
+        "ms": 6488
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 95
+        "ms": 170
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 183
+        "ms": 175
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
-      "url": "https://umm.nordpoolgroup.com/#/messages/2f0419f8-ef37-46a7-be8b-3be13c2f5677/4",
-      "snippet": "Published: 18.08.2026 15:10:21 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Technical failure Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
-      "published_at": "2026-08-18T13:10:21+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
+      "url": "https://umm.nordpoolgroup.com/#/messages/8c6e2266-40c3-466d-b958-a4c12a7b6d86/2",
+      "snippet": "Published: 18.08.2026 16:00:17 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-18T14:00:17+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -146,7 +146,7 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 3,
       "also_reported_by": [],
       "first_seen_at": "2026-08-18T07:15:17+00:00"
     },
@@ -283,9 +283,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-18T10:45:37+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Houthis Claim Third Attack on Saudi Aramco Refinery in Two Weeks",
@@ -298,7 +296,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 59,
+      "score": 57,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -315,7 +313,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.4,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -344,7 +342,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 58,
+      "score": 56,
       "tags": [
         "regulation",
         "lng"
@@ -361,7 +359,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.9,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.9
       },
       "matched": {
         "regulation": [
@@ -378,49 +376,6 @@
       "also_reported_by": []
     },
     {
-      "title": "SLB lends Shell a hand to unlock oil & gas from shut-in wells",
-      "url": "https://www.offshore-energy.biz/slb-lends-shell-a-hand-to-unlock-oil-gas-from-shut-in-wells/",
-      "snippet": "U.S.-headquartered technology player SLB has been tasked by Brunei Shell Petroleum (BSP), a joint venture company between the Brunei government and the UK-headquartered Shell, to support the resumption of oil and gas production across mature offshore fields in Brunei, Southeast Asia. The post SLB le",
-      "published_at": "2026-08-18T12:40:07+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 57,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 8.4,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 52.8,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "supply_disruption": [
-          "shut-in"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "urgency": [
-          "shut"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Brent Tops $91 After Unidentified Projectile Hits Vessel Transiting Hormuz",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Tops-91-After-Unidentified-Projectile-Hits-Vessel-Transiting-Hormuz.html",
       "snippet": "A cargo vessel was struck by an unknown projectile in the Strait of Hormuz early on Tuesday local time as risks of additional escalation in the region pushed Brent Crude oil prices above $91 per barrel. The United Kingdom Maritime Trade Operations (UKMTO), a Royal Navy-sponsored organization, said o",
@@ -431,7 +386,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 54,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -449,7 +404,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.0,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -483,7 +438,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 52,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -500,7 +455,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.6,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -545,7 +500,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "regulation": [
@@ -569,7 +524,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 46,
+      "score": 45,
       "tags": [
         "supply_disruption",
         "lng"
@@ -586,7 +541,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 38.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "supply_disruption": [
@@ -603,6 +558,43 @@
       "also_reported_by": []
     },
     {
+      "title": "Review of the Capacity Market Advisory Group",
+      "url": "https://www.ofgem.gov.uk/call-for-input/review-capacity-market-advisory-group",
+      "snippet": "Ofgem is seeking stakeholder views on whether the Capacity Market Advisory Group remains effective, well governed and fit for future challenges.",
+      "published_at": "2026-08-18T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 17.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.7,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "regulation": [
+          "ofgem",
+          "capacity market"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Why has Trump threatened to bomb Oman – for a second time?",
       "url": "https://www.aljazeera.com/news/2026/8/18/why-has-trump-threatened-to-bomb-oman-for-a-second-time?traffic_source=rss",
       "snippet": "The US president threatened to bomb Oman over Hormuz, with US-Iran peace negotiations in a deadlock.",
@@ -613,11 +605,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 41,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -629,7 +621,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "geopolitics": [
@@ -637,82 +629,6 @@
         ],
         "geography": [
           "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Syria, US say Israel attacked airbase in Idlib",
-      "url": "https://www.aljazeera.com/news/2026/8/18/eight-air-strikes-hit-airbase-in-syrias-idlib?traffic_source=rss",
-      "snippet": "Eight air strikes hit the Abu al-Duhur military base in Idlib&#039;s eastern countryside early on Tuesday.",
-      "published_at": "2026-08-18T10:11:53+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.5,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Review of the Capacity Market Advisory Group",
-      "url": "https://www.ofgem.gov.uk/call-for-input/review-capacity-market-advisory-group",
-      "snippet": "Ofgem is seeking stakeholder views on whether the Capacity Market Advisory Group remains effective, well governed and fit for future challenges.",
-      "published_at": "2026-08-18T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 17.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "regulation": [
-          "ofgem",
-          "capacity market"
         ]
       },
       "duplicate_count": 0,
@@ -729,11 +645,11 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 40,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -745,7 +661,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.9,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.63
       },
       "matched": {
         "lng": [
@@ -770,7 +686,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "supply_disruption"
       ],
@@ -785,7 +701,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.82
       },
       "matched": {
         "supply_disruption": [
@@ -809,7 +725,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "geopolitics",
         "weather"
@@ -826,7 +742,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.1,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -853,7 +769,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "lng"
       ],
@@ -869,7 +785,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.1,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.62
       },
       "matched": {
         "lng": [
@@ -897,7 +813,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 36,
+      "score": 35,
       "tags": [
         "carbon"
       ],
@@ -912,11 +828,51 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 28.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "carbon": [
           "offset"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Singapore, China agree to nuclear cooperation",
+      "url": "https://www.world-nuclear-news.org/articles/singapore-china-agree-to-nuclear-cooperation",
+      "snippet": "Singapore's Ministry of Trade and Industry has signed a memorandum of understanding with the China Atomic Energy Authority to cooperate in the peaceful uses of nuclear technology.",
+      "published_at": "2026-08-18T13:19:22+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
@@ -933,7 +889,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "infrastructure"
       ],
@@ -949,7 +905,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.2,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.83
       },
       "matched": {
         "infrastructure": [
@@ -961,54 +917,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Putin’s ‘illusion of victory:’ Russia ramps up missile attacks on Ukraine",
-      "url": "https://www.aljazeera.com/news/2026/8/18/putins-illusion-of-victory-russia-ramps-up-missile-attacks-on-ukraine?traffic_source=rss",
-      "snippet": "Deaths mount as Russia ramps up missile attacks on Ukraine, while Washington&#039;s promises of support remain elusive.",
-      "published_at": "2026-08-18T10:45:37+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.94
-      },
-      "matched": {
-        "geopolitics": [
-          "missile"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
-        "title": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
-        "published_at": "2026-08-18T12:36:11+00:00"
-      },
-      "hidden": true
     }
   ]
 }
