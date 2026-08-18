@@ -1,160 +1,111 @@
 {
-  "generated_at": "2026-08-18T23:03:21.303059+00:00",
-  "item_count": 20,
+  "generated_at": "2026-08-18T23:32:03.884748+00:00",
+  "item_count": 15,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 7
+    "normal": 6
   },
   "superseded_count": 3,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1264
+        "ms": 1124
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 88865
+        "ms": 52744
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3711
+        "ms": 3985
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 310
+        "ms": 328
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 107
+        "ms": 200
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 302
+        "ms": 318
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 42,
         "error": null,
-        "ms": 1236
+        "ms": 1291
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 511
+        "ms": 220
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 735
+        "ms": 795
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 349
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20271
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 537
+        "ms": 546
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 32,
+        "count": 33,
         "error": null,
-        "ms": 190
+        "ms": 50
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 61
+        "ms": 108
       }
     ]
   },
   "items": [
-    {
-      "title": "Greek-Run Oil Tanker Comes Under Attack",
-      "url": "https://www.rigzone.com/news/wire/greekrun_oil_tanker_comes_under_attack-18-aug-2026-184402-article/?rss=true",
-      "snippet": "A Greek-run oil tanker was attacked in the Black Sea after loading a Russian-origin cargo.",
-      "published_at": "2026-08-18T20:00:00+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 61,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.9,
-        "themes": 26.7,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 62.6,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "geopolitics": [
-          "attack",
-          "attacked"
-        ],
-        "lng": [
-          "cargo",
-          "tanker"
-        ],
-        "geography": [
-          "russian"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
     {
       "title": "DR Congo’s Ebola outbreak ‘global emergency’ as infections pass 5,000: WHO",
       "url": "https://www.aljazeera.com/news/2026/8/18/congo-ebola-outbreak-global-emergency-as-infections-pass-5000-who?traffic_source=rss",
@@ -181,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "infrastructure": [
@@ -208,7 +159,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 55,
+      "score": 54,
       "tags": [
         "supply_disruption"
       ],
@@ -223,7 +174,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.72
       },
       "matched": {
         "supply_disruption": [
@@ -252,7 +203,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 50,
       "tags": [
         "gas_storage",
         "oil_macro"
@@ -269,7 +220,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.6,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.96
       },
       "matched": {
         "gas_storage": [
@@ -298,7 +249,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 48,
       "tags": [
         "geopolitics"
       ],
@@ -314,7 +265,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -341,7 +292,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 47,
       "tags": [
         "geopolitics",
         "nuclear"
@@ -358,7 +309,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.8,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -386,7 +337,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 42,
       "tags": [
         "nuclear"
       ],
@@ -402,7 +353,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.3,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.76
       },
       "matched": {
         "nuclear": [
@@ -421,50 +372,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Hits Three-Week High on Iran Standoff",
-      "url": "https://www.rigzone.com/news/wire/oil_hits_threeweek_high_on_iran_standoff-18-aug-2026-184405-article/?rss=true",
-      "snippet": "Crude gained as Hormuz tensions, tanker threats and tight fuel markets supported prices.",
-      "published_at": "2026-08-18T19:31:31+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 10.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.9,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "lng": [
-          "tanker"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "UK 'supports Ukraine 100%', Burnham says, after Russia's drone warning",
       "url": "https://www.bbc.co.uk/news/articles/cy5dz0kkn0wo?at_medium=RSS&at_campaign=rss",
       "snippet": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\".",
@@ -475,7 +382,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -491,7 +398,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.1,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.5
       },
       "matched": {
         "geopolitics": [
@@ -517,7 +424,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics",
         "infrastructure"
@@ -534,7 +441,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.2,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
@@ -561,7 +468,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "supply_disruption"
       ],
@@ -577,7 +484,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.8,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.51
       },
       "matched": {
         "supply_disruption": [
@@ -604,7 +511,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "oil_macro",
         "geopolitics",
@@ -622,7 +529,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.5,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.71
       },
       "matched": {
         "oil_macro": [
@@ -655,7 +562,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 34,
+      "score": 33,
       "tags": [
         "regulation",
         "lng"
@@ -672,7 +579,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.9,
-        "recency_multiplier": 0.45
+        "recency_multiplier": 0.44
       },
       "matched": {
         "regulation": [
@@ -699,7 +606,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "supply_disruption"
       ],
@@ -715,7 +622,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.3,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.6
       },
       "matched": {
         "supply_disruption": [
@@ -723,141 +630,6 @@
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Supertankers on Mideast Route Reach $510K a Day in Earnings",
-      "url": "https://www.rigzone.com/news/wire/supertankers_on_mideast_route_reach_510k_a_day_in_earnings-18-aug-2026-184395-article/?rss=true",
-      "snippet": "Earnings for a supertanker procuring crude oil from within the Persian Gulf to Asia are nearing a two-month high, as exporters hunt for more vessels to deliver the fuel via the Strait of Hormuz even as the security situation remains uncertain.",
-      "published_at": "2026-08-18T08:17:46+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 34.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 61.6,
-        "recency_multiplier": 0.37
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz",
-          "persian gulf"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russian missile strike kills 10 civilians in Kharkiv",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/russian-missile-strike-kills-10-civilians-in-kharkiv?traffic_source=rss",
-      "snippet": "A Russian missile strike on Pechenihy, in Ukraine’s Kharkiv region, killed at least 10 civilians and wounded 17 others.",
-      "published_at": "2026-08-18T20:26:01+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "geopolitics": [
-          "missile"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Romania Restarts Coal Plant as Danube Drought Forces Nuclear Shutdown",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Romania-Restarts-Coal-Plant-as-Danube-Drought-Forces-Nuclear-Shutdown.html",
-      "snippet": "Romania has this week restarted a 300-megawatt coal-fired power plant to partially offset the generation lost by the closure of nuclear electricity output after the low water level on the Danube river forced a shutdown of the country’s only nuclear power plant. Romania, which lost 20% of its power g",
-      "published_at": "2026-08-18T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "supply_disruption",
-        "nuclear",
-        "weather",
-        "carbon"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 15.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 36.7,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "supply_disruption": [
-          "shutdown"
-        ],
-        "nuclear": [
-          "nuclear"
-        ],
-        "weather": [
-          "drought"
-        ],
-        "carbon": [
-          "offset"
         ]
       },
       "duplicate_count": 0,
@@ -891,7 +663,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 41.0,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -947,7 +719,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.1,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -982,7 +754,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 10,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -999,7 +771,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.1,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
