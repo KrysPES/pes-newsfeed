@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-19T09:02:45.684002+00:00",
+  "generated_at": "2026-08-19T09:42:40.800581+00:00",
   "item_count": 19,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 7
+    "high": 1,
+    "normal": 10
   },
-  "superseded_count": 3,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,111 +17,111 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1318
+        "ms": 937
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 170130
+        "ms": 71806
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3158
+        "ms": 3532
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 327
+        "ms": 260
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 343
+        "ms": 4193
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 177
+        "ms": 115
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 40,
         "error": null,
-        "ms": 1115
+        "ms": 841
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 445
+        "ms": 139
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 645
+        "ms": 556
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 204
+        "ms": 72
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 536
+        "ms": 459
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 244
+        "ms": 36
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 204
+        "ms": 170
       }
     ]
   },
   "items": [
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/ced3b15b-219c-457d-9106-4849fec15be5/1",
-      "snippet": "Published: 19.08.2026 08:11:27 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
-      "published_at": "2026-08-19T06:11:27+00:00",
+      "url": "https://umm.nordpoolgroup.com/#/messages/ced3b15b-219c-457d-9106-4849fec15be5/2",
+      "snippet": "Published: 19.08.2026 11:31:54 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
+      "published_at": "2026-08-19T09:31:54+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 63,
+      "score": 66,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -197,10 +197,52 @@
       "also_reported_by": []
     },
     {
+      "title": "Nick Kyrgios provisionally suspended after positive test for cocaine",
+      "url": "https://www.aljazeera.com/sports/2026/8/19/nick-kyrgios-provisionally-suspended-after-positive-test-for-cocaine?traffic_source=rss",
+      "snippet": "The Australian said he made no excuses but admitted to struggling with the twilight of his career.",
+      "published_at": "2026-08-19T09:29:41+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 58,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "India’s LNG imports up in July",
       "url": "https://lngprime.com/asia/indias-lng-imports-up-in-july/195383/",
       "snippet": "India’s liquefied natural gas (LNG) imports increased 1.5 percent year-on-year in July, preliminary data from the oil ministry’s Petroleum Planning and Analysis Cell shows.",
-      "published_at": "2026-08-19T06:55:07+00:00",
+      "published_at": "2026-08-19T09:30:07+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
@@ -223,7 +265,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.9,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 1.0
       },
       "matched": {
         "lng": [
@@ -280,9 +322,101 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-08-19T00:00:00+00:00"
+      "also_reported_by": []
+    },
+    {
+      "title": "Construction progresses on small-scale LNG terminal in Bahamas",
+      "url": "https://lngprime.com/americas/construction-progresses-on-small-scale-lng-terminal-in-bahamas/195399/",
+      "snippet": "Work on the small-scale Arawak LNG terminal in Nassau, the Bahamas, continues with the first five small storage tanks arriving on site.",
+      "published_at": "2026-08-19T09:29:56+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "lng",
+        "gas_storage",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 27.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 40.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "infrastructure": [
+          "terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Prices Rise for Fourth Day as Hormuz Traffic Slows",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rise-for-Fourth-Day-as-Hormuz-Traffic-Slows.html",
+      "snippet": "Crude oil prices extended their gains for the fourth day today as fresh tanker-tracking data suggests traffic via the Strait of Hormuz has slowed further amid harder rhetoric from both Iran and the United States, with both sides demonstrating an unwillingness to return to the negotiating table. At t",
+      "published_at": "2026-08-19T05:40:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.3,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Five Australian rules footy players suspended amid police investigation",
@@ -295,7 +429,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 47,
       "tags": [
         "supply_disruption"
       ],
@@ -310,7 +444,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.73
       },
       "matched": {
         "supply_disruption": [
@@ -327,6 +461,91 @@
       "also_reported_by": []
     },
     {
+      "title": "Strait of Hormuz Shipping Slows After Vessel Attack",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Strait-of-Hormuz-Shipping-Slows-After-Vessel-Attack.html",
+      "snippet": "Commodity vessel traffic at the Strait of Hormuz further slowed on Wednesday as operators continue to avoid the area amid heightened security concerns and uncertainties about how far Iran’s control could extend. As of early Wednesday, ship-tracking data on Kpler showed that just six commodity vessel",
+      "published_at": "2026-08-19T09:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 38.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UAE imposes indefinite trade embargo on Iran over alleged missile attacks",
+      "url": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss",
+      "snippet": "Iran denies launching missiles at the UAE, suggesting the incident was a &#039;false flag operation&#039;.",
+      "published_at": "2026-08-19T03:34:40+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.4,
+        "recency_multiplier": 0.73
+      },
+      "matched": {
+        "geopolitics": [
+          "embargo",
+          "missile"
+        ],
+        "unplanned": [
+          "incident"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Trump pauses 50 percent tariffs on Canada in last-minute deal",
       "url": "https://www.aljazeera.com/economy/2026/8/19/us-canada-reach-trade-deal-to-avert-steep-tariffs-trump-says?traffic_source=rss",
       "snippet": "Washington and Ottawa announce agreement to delay new tariffs on Canadian exports shortly before midnight deadline.",
@@ -337,7 +556,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 44,
+      "score": 42,
       "tags": [
         "geopolitics"
       ],
@@ -352,7 +571,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.5,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -376,11 +595,11 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 41,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -392,7 +611,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.7,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.88
       },
       "matched": {
         "lng": [
@@ -417,7 +636,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -434,7 +653,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.1,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -463,7 +682,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 38,
       "tags": [
         "lng"
       ],
@@ -478,51 +697,12 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.9,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.88
       },
       "matched": {
         "lng": [
           "lng",
           "lng plant"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Families' agonising search for answers as thousands still missing in Gaza",
-      "url": "https://www.bbc.co.uk/news/articles/ce34r0er75go?at_medium=RSS&at_campaign=rss",
-      "snippet": "Ten months after a ceasefire was declared, thousands of Palestinians in Gaza are still reported missing.",
-      "published_at": "2026-08-19T05:04:00+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.2,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "geopolitics": [
-          "ceasefire"
-        ],
-        "urgency": [
-          "declared"
         ]
       },
       "duplicate_count": 0,
@@ -569,6 +749,45 @@
       "also_reported_by": []
     },
     {
+      "title": "Families' agonising search for answers as thousands still missing in Gaza",
+      "url": "https://www.bbc.co.uk/news/articles/ce34r0er75go?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ten months after a ceasefire was declared, thousands of Palestinians in Gaza are still reported missing.",
+      "published_at": "2026-08-19T05:04:00+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.2,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "geopolitics": [
+          "ceasefire"
+        ],
+        "urgency": [
+          "declared"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "South Korea shortens war games with US, citing Washington request",
       "url": "https://www.bbc.co.uk/news/articles/cnvn0j31qj8o?at_medium=RSS&at_campaign=rss",
       "snippet": "It comes after Trump announced plans to curtail joint military exercises with South Korea, citing a \"very good\" relationship with North Korea's Kim Jong Un.",
@@ -579,7 +798,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 36,
       "tags": [
         "geopolitics",
         "power_system"
@@ -596,7 +815,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 31.5,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -629,7 +848,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "geopolitics",
         "lng"
@@ -646,7 +865,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.6,
-        "recency_multiplier": 0.43
+        "recency_multiplier": 0.41
       },
       "matched": {
         "geopolitics": [
@@ -662,45 +881,6 @@
         ],
         "unplanned": [
           "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "How Ebola became the deadliest outbreak in DR Congo’s history",
-      "url": "https://www.aljazeera.com/news/2026/8/19/how-ebola-became-the-deadliest-outbreak-in-dr-congos-history?traffic_source=rss",
-      "snippet": "Conflict, delayed detection, and mistrust are complicating efforts to contain the virus in eastern DR Congo.",
-      "published_at": "2026-08-19T00:53:34+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.5,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict"
-        ],
-        "unplanned": [
-          "delayed"
         ]
       },
       "duplicate_count": 0,
@@ -741,199 +921,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "South Africa to Australia: Why coal profits are surging during Iran war",
-      "url": "https://www.aljazeera.com/news/2026/8/19/south-africa-to-australia-why-coal-profits-are-surging-during-iran-war?traffic_source=rss",
-      "snippet": "Coal companies are reporting a huge rise in profits, but analysts say global clean energy transition is still on track.",
-      "published_at": "2026-08-19T06:27:30+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-19T03:34:40+00:00"
-    },
-    {
-      "title": "Oil Prices Rise for Fourth Day as Hormuz Traffic Slows",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rise-for-Fourth-Day-as-Hormuz-Traffic-Slows.html",
-      "snippet": "Crude oil prices extended their gains for the fourth day today as fresh tanker-tracking data suggests traffic via the Strait of Hormuz has slowed further amid harder rhetoric from both Iran and the United States, with both sides demonstrating an unwillingness to return to the negotiating table. At t",
-      "published_at": "2026-08-19T05:40:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 15,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 22.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.3,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinese-Oil-Tankers-Turn-Back-as-Hormuz-Risks-Mount.html",
-        "title": "Chinese Oil Tankers Turn Back as Hormuz Risks Mount",
-        "published_at": "2026-08-19T08:15:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "UAE imposes indefinite trade embargo on Iran over alleged missile attacks",
-      "url": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss",
-      "snippet": "Iran denies launching missiles at the UAE, suggesting the incident was a &#039;false flag operation&#039;.",
-      "published_at": "2026-08-19T03:34:40+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 13,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.4,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "geopolitics": [
-          "embargo",
-          "missile"
-        ],
-        "unplanned": [
-          "incident"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/19/south-africa-to-australia-why-coal-profits-are-surging-during-iran-war?traffic_source=rss",
-        "title": "South Africa to Australia: Why coal profits are surging during Iran war",
-        "published_at": "2026-08-19T06:27:30+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Iran war live: Rubio discusses Hormuz security with UAE official",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/8/19/iran-war-live-trump-denies-iran-talks-tehran-claims-us-begging?traffic_source=rss",
-      "snippet": "Trump says no talks with Tehran scheduled; Iranian Foreign Minister Abbas Araghchi claims US &#039;begging&#039; for negotiations.",
-      "published_at": "2026-08-19T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.4,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "negotiations"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinese-Oil-Tankers-Turn-Back-as-Hormuz-Risks-Mount.html",
-        "title": "Chinese Oil Tankers Turn Back as Hormuz Risks Mount",
-        "published_at": "2026-08-19T08:15:00+00:00"
-      },
-      "hidden": true
     }
   ]
 }
