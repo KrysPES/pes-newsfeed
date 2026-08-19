@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-19T20:02:12.063275+00:00",
-  "item_count": 25,
+  "generated_at": "2026-08-19T20:38:42.804669+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 9
+    "normal": 7
   },
   "superseded_count": 2,
   "sources": {
@@ -17,139 +17,95 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1323
+        "ms": 1324
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 124817
+        "ms": 66172
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4462
+        "ms": 3687
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 500
+        "ms": 549
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 665
+        "ms": 772
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 147
+        "ms": 233
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1151
+        "ms": 1477
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 568
+        "ms": 265
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 750
+        "ms": 751
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 284
+        "ms": 355
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 684
+        "ms": 585
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 99
+        "ms": 202
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 159
+        "ms": 157
       }
     ]
   },
   "items": [
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, DROGENBOS 1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/f9d56c5f-636c-4016-9f25-e8b260d5a36b/2",
-      "snippet": "Published: 19.08.2026 19:47:29 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
-      "published_at": "2026-08-19T17:47:29+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 65,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.98
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-19T09:31:54+00:00"
-    },
     {
       "title": "$100 Diesel Cracks Signal a Much Tighter Oil Market Than Brent Suggests",
       "url": "https://oilprice.com/Energy/Energy-General/100-Diesel-Cracks-Signal-a-Much-Tighter-Oil-Market-Than-Brent-Suggests.html",
@@ -207,17 +163,61 @@
       "also_reported_by": []
     },
     {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, DROGENBOS 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/f9d56c5f-636c-4016-9f25-e8b260d5a36b/2",
+      "snippet": "Published: 19.08.2026 19:47:29 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
+      "published_at": "2026-08-19T17:47:29+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 63,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-19T09:31:54+00:00"
+    },
+    {
       "title": "Sacked Ukrainian defence minister calls for presidential election",
       "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss",
       "snippet": "Martial law has been in place in Ukraine since February 2022, under which elections are suspended.",
-      "published_at": "2026-08-19T17:23:42+00:00",
+      "published_at": "2026-08-19T20:34:39+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 62,
       "tags": [
         "supply_disruption"
       ],
@@ -233,7 +233,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.6,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -265,7 +265,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 60,
+      "score": 58,
       "tags": [
         "regulation",
         "geopolitics",
@@ -283,7 +283,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 65.9,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.82
       },
       "matched": {
         "regulation": [
@@ -314,7 +314,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 44,
       "tags": [
         "nuclear",
         "gas_storage"
@@ -331,7 +331,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.5,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.67
       },
       "matched": {
         "nuclear": [
@@ -362,7 +362,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "supply_disruption",
         "power_system"
@@ -379,7 +379,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "supply_disruption": [
@@ -407,7 +407,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": true,
-      "score": 44,
+      "score": 42,
       "tags": [
         "supply_disruption"
       ],
@@ -422,7 +422,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 68.8,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.5
       },
       "matched": {
         "supply_disruption": [
@@ -449,11 +449,11 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 41,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -465,7 +465,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.9,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.64
       },
       "matched": {
         "lng": [
@@ -474,52 +474,6 @@
         ],
         "geography": [
           "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "CNOOC’s Binhai LNG terminal hits new milestone",
-      "url": "https://lngprime.com/asia/cnoocs-binhai-lng-terminal-hits-new-milestone/195423/",
-      "snippet": "China National Offshore Oil Company (CNOOC) has reached a new milestone at its giant Binhai liquefied natural gas (LNG) import terminal in Jiangsu.",
-      "published_at": "2026-08-19T12:44:32+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 32.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 50.5,
-        "recency_multiplier": 0.67
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal",
-          "import terminal"
-        ],
-        "geography": [
-          "china"
         ]
       },
       "duplicate_count": 0,
@@ -536,7 +490,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 40,
       "tags": [
         "nuclear",
         "supply_disruption"
@@ -552,7 +506,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.6,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.88
       },
       "matched": {
         "nuclear": [
@@ -578,7 +532,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 40,
       "tags": [
         "nuclear"
       ],
@@ -594,7 +548,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.4,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.71
       },
       "matched": {
         "nuclear": [
@@ -604,6 +558,52 @@
         "geography": [
           "uk",
           "england"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "CNOOC’s Binhai LNG terminal hits new milestone",
+      "url": "https://lngprime.com/asia/cnoocs-binhai-lng-terminal-hits-new-milestone/195423/",
+      "snippet": "China National Offshore Oil Company (CNOOC) has reached a new milestone at its giant Binhai liquefied natural gas (LNG) import terminal in Jiangsu.",
+      "published_at": "2026-08-19T12:44:32+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 32.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 50.5,
+        "recency_multiplier": 0.63
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal"
+        ],
+        "infrastructure": [
+          "terminal",
+          "import terminal"
+        ],
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
@@ -620,7 +620,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "lng",
         "nuclear",
@@ -638,7 +638,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.4,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.57
       },
       "matched": {
         "lng": [
@@ -653,56 +653,6 @@
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "South Korea shortens war games with US, citing Washington request",
-      "url": "https://www.bbc.co.uk/news/articles/cnvn0j31qj8o?at_medium=RSS&at_campaign=rss",
-      "snippet": "It comes after Trump announced plans to curtail joint military exercises with South Korea, citing a \"very good\" relationship with North Korea's Kim Jong Un.",
-      "published_at": "2026-08-19T17:39:49+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "geopolitics",
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 31.5,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "power_system": [
-          "curtail"
-        ],
-        "geography": [
-          "korea"
-        ],
-        "urgency": [
-          "announced"
-        ],
-        "speculative": [
-          "plans to"
         ]
       },
       "duplicate_count": 0,
@@ -751,6 +701,56 @@
       "also_reported_by": []
     },
     {
+      "title": "South Korea shortens war games with US, citing Washington request",
+      "url": "https://www.bbc.co.uk/news/articles/cnvn0j31qj8o?at_medium=RSS&at_campaign=rss",
+      "snippet": "It comes after Trump announced plans to curtail joint military exercises with South Korea, citing a \"very good\" relationship with North Korea's Kim Jong Un.",
+      "published_at": "2026-08-19T17:39:49+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "geopolitics",
+        "power_system"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 12.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 31.5,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "power_system": [
+          "curtail"
+        ],
+        "geography": [
+          "korea"
+        ],
+        "urgency": [
+          "announced"
+        ],
+        "speculative": [
+          "plans to"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Iran War Set to Drive UK Energy Bills to 3-Year High",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Set-to-Drive-UK-Energy-Bills-to-3-Year-High.html",
       "snippet": "UK household energy bills are set to further rise from October by 4% to their highest level since the summer of 2023, as the Iran war has tightened global gas supply and made gas restocking in Europe more difficult and expensive, Cornwall Insight said on Wednesday. The energy consultancy expects Bri",
@@ -761,7 +761,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
@@ -777,7 +777,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 45.7,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.62
       },
       "matched": {
         "geopolitics": [
@@ -801,7 +801,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "lng",
         "gas_storage"
@@ -817,7 +817,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.0,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.68
       },
       "matched": {
         "lng": [
@@ -827,43 +827,6 @@
         ],
         "gas_storage": [
           "storage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Trump Dangles Keystone XL Revival as Canada Tariff Deadline Looms",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Dangles-Keystone-XL-Revival-as-Canada-Tariff-Deadline-Looms.html",
-      "snippet": "Canada has won a three-day reprieve from President Donald Trump’s threatened 50% tariffs, but a final trade deal remains hung up on Canadian auto exports, leaving Washington and Ottawa until Friday to settle one of their biggest remaining disputes, Reuters reported on Wednesday. Trump added energy i",
-      "published_at": "2026-08-19T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 38.7,
-        "recency_multiplier": 0.71
-      },
-      "matched": {
-        "geopolitics": [
-          "tariff",
-          "tariffs"
         ]
       },
       "duplicate_count": 0,
@@ -880,7 +843,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -897,7 +860,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 30.4,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -914,6 +877,43 @@
       "also_reported_by": []
     },
     {
+      "title": "Trump Dangles Keystone XL Revival as Canada Tariff Deadline Looms",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Dangles-Keystone-XL-Revival-as-Canada-Tariff-Deadline-Looms.html",
+      "snippet": "Canada has won a three-day reprieve from President Donald Trump’s threatened 50% tariffs, but a final trade deal remains hung up on Canadian auto exports, leaving Washington and Ottawa until Friday to settle one of their biggest remaining disputes, Reuters reported on Wednesday. Trump added energy i",
+      "published_at": "2026-08-19T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 34,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 38.7,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "geopolitics": [
+          "tariff",
+          "tariffs"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Electricity Coordination Group discusses extreme weather impacts on electricity security of supply in Central Europe and South-East Europe",
       "url": "https://energy.ec.europa.eu/news/electricity-coordination-group-discusses-extreme-weather-impacts-electricity-security-supply-central-2026-08-19_en",
       "snippet": "The discussion took place against the backdrop of persistent high temperatures and record low water levels, all of which are putting pressure on electricity generation and demand in these regions.",
@@ -924,7 +924,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "weather",
         "oil_macro"
@@ -941,7 +941,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.9,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.72
       },
       "matched": {
         "weather": [
@@ -968,7 +968,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
@@ -984,7 +984,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.2,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -1008,7 +1008,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "nuclear"
       ],
@@ -1024,7 +1024,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.7,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.59
       },
       "matched": {
         "nuclear": [
@@ -1033,82 +1033,6 @@
         ],
         "geography": [
           "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Seven decades of US regime change efforts: What have they achieved?",
-      "url": "https://www.aljazeera.com/news/2026/8/19/seven-decades-of-us-regime-change-efforts-what-have-they-achieved?traffic_source=rss",
-      "snippet": "US interventions in Iran and beyond reveal a recurring pattern of regime changes, with high human and financial costs.",
-      "published_at": "2026-08-19T15:46:05+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.1,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "geopolitics": [
-          "regime change"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Kino Aski, Marinvest Propose Canadian LNG Project to Supply Europe",
-      "url": "https://www.rigzone.com/news/kino_aski_marinvest_propose_canadian_lng_project_to_supply_europe-19-aug-2026-184415-article/?rss=true",
-      "snippet": "'In a period of global energy instability, Kino Aski LNG will establish a reliable, secure, short-distance energy corridor between North America and Europe'.",
-      "published_at": "2026-08-19T14:50:02+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.2,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "europe"
         ]
       },
       "duplicate_count": 0,
@@ -1143,7 +1067,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 58.3,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -1171,7 +1095,7 @@
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss",
         "title": "Sacked Ukrainian defence minister calls for presidential election",
-        "published_at": "2026-08-19T17:23:42+00:00"
+        "published_at": "2026-08-19T20:34:39+00:00"
       },
       "hidden": true
     },
@@ -1186,7 +1110,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 12,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -1204,7 +1128,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -1228,7 +1152,7 @@
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss",
         "title": "Sacked Ukrainian defence minister calls for presidential election",
-        "published_at": "2026-08-19T17:23:42+00:00"
+        "published_at": "2026-08-19T20:34:39+00:00"
       },
       "hidden": true
     }
