@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-19T11:04:03.540544+00:00",
-  "item_count": 19,
+  "generated_at": "2026-08-19T11:37:56.089889+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 8
+    "high": 0,
+    "normal": 12
   },
   "superseded_count": 0,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1054
+        "ms": 965
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 130656
+        "ms": 193405
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 11012
+        "ms": 17628
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 611
+        "ms": 323
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 282
+        "ms": 434
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 161
+        "ms": 113
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 40,
         "error": null,
-        "ms": 720
+        "ms": 850
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 141
+        "ms": 169
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 636
+        "ms": 635
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 144
+        "ms": 72
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 472
+        "ms": 305
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 134
+        "ms": 137
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 97
+        "ms": 83
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 65,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -196,6 +196,55 @@
       "also_reported_by": []
     },
     {
+      "title": "Lloyd’s Register assists with LNG carrier-to-FSU conversion for African gas project",
+      "url": "https://www.offshore-energy.biz/lloyds-register-assists-with-lng-carrier-to-fsu-conversion-for-african-gas-project/",
+      "snippet": "UK-based classification society Lloyd’s Register (LR) is supporting the life extension of a liquefied natural gas (LNG) carrier (LNGC) being repurposed as a floating storage unit (FSU), helping lay the groundwork for Gabon’s emerging floating gas infrastructure and a wider push to unlock Africa’s of",
+      "published_at": "2026-08-19T11:21:08+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 58,
+      "tags": [
+        "lng",
+        "nuclear",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 25.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "nuclear": [
+          "life extension"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Nick Kyrgios provisionally suspended after positive test for cocaine",
       "url": "https://www.aljazeera.com/sports/2026/8/19/nick-kyrgios-provisionally-suspended-after-positive-test-for-cocaine?traffic_source=rss",
       "snippet": "The Australian said he made no excuses but admitted to struggling with the twilight of his career.",
@@ -221,7 +270,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -279,45 +328,43 @@
       "also_reported_by": []
     },
     {
-      "title": "Chinese Oil Tankers Turn Back as Hormuz Risks Mount",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinese-Oil-Tankers-Turn-Back-as-Hormuz-Risks-Mount.html",
-      "snippet": "Two Chinese very large crude carriers have made U-turns in the Strait of Hormuz, currently idling in the area, Bloomberg reported today, citing ship-tracking data. One of the supertankers, Sea V, loaded crude oil in Iraq and set off for Hormuz yesterday, but turned back and is now idling in the wate",
-      "published_at": "2026-08-19T08:15:00+00:00",
+      "title": "Murban Crude Jumps to 4-Month High as ADNOC Curbs Supply to Asia",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Murban-Crude-Jumps-to-4-Month-High-as-ADNOC-Curbs-Supply-to-Asia.html",
+      "snippet": "The price of Murban Crude, the flagship grade of the United Arab Emirates, surged to a four-month high this week, amid reports that the UAE’s national oil company ADNOC will reduce its immediate crude shipments to Asia. ADNOC plans to cut by about 5% the supply it is offering in spot tenders to Asia",
+      "published_at": "2026-08-19T11:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 49,
+      "has_magnitude": true,
+      "score": 53,
       "tags": [
-        "geopolitics",
         "oil_macro"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 19.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 44.1,
-        "recency_multiplier": 0.94
+        "raw": 46.2,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
         "oil_macro": [
           "crude"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "asia"
+        ],
+        "urgency": [
+          "immediate"
         ]
       },
       "duplicate_count": 0,
@@ -334,7 +381,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 47,
       "tags": [
         "lng",
         "gas_storage",
@@ -351,7 +398,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "lng": [
@@ -363,6 +410,51 @@
         ],
         "infrastructure": [
           "terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Chinese Oil Tankers Turn Back as Hormuz Risks Mount",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinese-Oil-Tankers-Turn-Back-as-Hormuz-Risks-Mount.html",
+      "snippet": "Two Chinese very large crude carriers have made U-turns in the Strait of Hormuz, currently idling in the area, Bloomberg reported today, citing ship-tracking data. One of the supertankers, Sea V, loaded crude oil in Iraq and set off for Hormuz yesterday, but turned back and is now idling in the wate",
+      "published_at": "2026-08-19T08:15:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 19.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 44.1,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -395,7 +487,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 38.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -414,6 +506,45 @@
       "also_reported_by": []
     },
     {
+      "title": "Shell Taps SLB for Production Restarts offshore Brunei",
+      "url": "https://www.rigzone.com/news/shell_taps_slb_for_production_restarts_offshore_brunei-19-aug-2026-184408-article/?rss=true",
+      "snippet": "SLB received a contract from Brunei Shell Petroleum to reactivate shut-in wells across multiple offshore fields.",
+      "published_at": "2026-08-19T10:18:10+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "shut-in"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Oil Prices Rise for Fourth Day as Hormuz Traffic Slows",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rise-for-Fourth-Day-as-Hormuz-Traffic-Slows.html",
       "snippet": "Crude oil prices extended their gains for the fourth day today as fresh tanker-tracking data suggests traffic via the Strait of Hormuz has slowed further amid harder rhetoric from both Iran and the United States, with both sides demonstrating an unwillingness to return to the negotiating table. At t",
@@ -424,7 +555,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 43,
       "tags": [
         "geopolitics",
         "lng",
@@ -442,7 +573,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.3,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -473,7 +604,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 43,
       "tags": [
         "supply_disruption"
       ],
@@ -488,7 +619,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.63
       },
       "matched": {
         "supply_disruption": [
@@ -505,6 +636,51 @@
       "also_reported_by": []
     },
     {
+      "title": "LR nets Gabon FSU conversion contract",
+      "url": "https://lngprime.com/europe/lr-nets-gabon-fsu-conversion-contract/195419/",
+      "snippet": "Classification society Lloyd’s Register has secured a contract from Dutch services company Dixstone, a unit of London-based oil and gas firm Perenco, to deliver classification and technical assurance for the conversion of an LNG carrier into a floating storage unit (FSU) for the Gabon project.",
+      "published_at": "2026-08-19T06:02:21+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "lng",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 18.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.7,
+        "recency_multiplier": 0.76
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "dutch"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Flex LNG reports higher earnings, expects freight market to remain volatile",
       "url": "https://lngprime.com/europe/flex-lng-reports-higher-earnings-expects-freight-market-to-remain-volatile/195366/",
       "snippet": "Norwegian LNG carrier owner Flex LNG reported higher revenues and net income in the second quarter due to high spot earnings from two vessels, while the company expects the freight market to remain volatile for the remainder of this year.",
@@ -515,7 +691,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "lng"
       ],
@@ -531,7 +707,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.7,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.76
       },
       "matched": {
         "lng": [
@@ -593,7 +769,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -610,7 +786,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.1,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -639,7 +815,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "regulation"
       ],
@@ -655,7 +831,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.6,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.9
       },
       "matched": {
         "regulation": [
@@ -679,7 +855,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "lng"
       ],
@@ -694,7 +870,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.9,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.76
       },
       "matched": {
         "lng": [
@@ -716,7 +892,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -731,7 +907,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -755,7 +931,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "geopolitics",
         "power_system"
@@ -772,7 +948,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 31.5,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
@@ -882,7 +1058,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics",
         "lng"
@@ -899,7 +1075,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.6,
-        "recency_multiplier": 0.37
+        "recency_multiplier": 0.35
       },
       "matched": {
         "geopolitics": [
