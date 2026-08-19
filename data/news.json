@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-19T06:05:37.931625+00:00",
-  "item_count": 15,
+  "generated_at": "2026-08-19T07:03:41.267316+00:00",
+  "item_count": 20,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 7
+    "high": 1,
+    "normal": 9
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1352
+        "ms": 1541
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 64338
+        "ms": 108742
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 26134
+        "ms": 23229
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 449
+        "ms": 317
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 297
+        "ms": 210
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 319
+        "ms": 173
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 42,
         "error": null,
-        "ms": 954
+        "ms": 916
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 194
+        "ms": 206
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 587
+        "ms": 658
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 185
+        "ms": 203
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 309
+        "ms": 587
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 36,
+        "count": 22,
         "error": null,
-        "ms": 73
+        "ms": 147
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 126
+        "ms": 137
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/ced3b15b-219c-457d-9106-4849fec15be5/1",
+      "snippet": "Published: 19.08.2026 08:11:27 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
+      "published_at": "2026-08-19T06:11:27+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-18T16:22:17+00:00"
+    },
     {
       "title": "Sacked Ukrainian defence minister calls for presidential election",
       "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss",
@@ -117,7 +161,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 62,
+      "score": 61,
       "tags": [
         "supply_disruption"
       ],
@@ -133,7 +177,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "supply_disruption": [
@@ -153,6 +197,47 @@
       "also_reported_by": []
     },
     {
+      "title": "India’s LNG imports up in July",
+      "url": "https://lngprime.com/asia/indias-lng-imports-up-in-july/195383/",
+      "snippet": "India’s liquefied natural gas (LNG) imports increased 1.5 percent year-on-year in July, preliminary data from the oil ministry’s Petroleum Planning and Analysis Cell shows.",
+      "published_at": "2026-08-19T06:55:07+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 56,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 20.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 50.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng imports"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Five Australian rules footy players suspended amid police investigation",
       "url": "https://www.bbc.co.uk/news/articles/cg4d7q2ne7go?at_medium=RSS&at_campaign=rss",
       "snippet": "The suspensions, for drinking and inviting women to a hotel, come as police investigate an alleged sexual assault.",
@@ -163,7 +248,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 55,
       "tags": [
         "supply_disruption"
       ],
@@ -178,7 +263,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.89
       },
       "matched": {
         "supply_disruption": [
@@ -241,48 +326,6 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-18T21:03:59+00:00"
-    },
-    {
-      "title": "UAE imposes indefinite trade embargo on Iran over alleged missile attacks",
-      "url": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss",
-      "snippet": "Iran denies launching missiles at the UAE, suggesting the incident was a &#039;false flag operation&#039;.",
-      "published_at": "2026-08-19T03:34:40+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 52,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.4,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "geopolitics": [
-          "embargo",
-          "missile"
-        ],
-        "unplanned": [
-          "incident"
-        ]
-      },
-      "duplicate_count": 0,
       "also_reported_by": []
     },
     {
@@ -296,7 +339,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 47,
       "tags": [
         "geopolitics"
       ],
@@ -311,7 +354,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.4,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -322,10 +365,8 @@
           "delay"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "BBC World"
-      ]
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Flex LNG reports higher earnings, expects freight market to remain volatile",
@@ -369,49 +410,122 @@
       "also_reported_by": []
     },
     {
-      "title": "Greek-Run Oil Tanker Comes Under Attack",
-      "url": "https://www.rigzone.com/news/wire/greekrun_oil_tanker_comes_under_attack-18-aug-2026-184402-article/?rss=true",
-      "snippet": "A Greek-run oil tanker was attacked in the Black Sea after loading a Russian-origin cargo.",
-      "published_at": "2026-08-18T20:00:00+00:00",
+      "title": "Ukraine’s ousted defence minister calls for elections during war",
+      "url": "https://www.aljazeera.com/news/2026/8/19/ukraines-ousted-defence-minister-calls-for-elections-during-war?traffic_source=rss",
+      "snippet": "Mykhailo Fedorov&#039;s call is first such demand by a major Ukrainian political figure since Russia&#039;s full-scale invasion.",
+      "published_at": "2026-08-19T05:59:44+00:00",
       "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 20.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "invasion",
+          "war"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Families' agonising search for answers as thousands still missing in Gaza",
+      "url": "https://www.bbc.co.uk/news/articles/ce34r0er75go?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ten months after a ceasefire was declared, thousands of Palestinians in Gaza are still reported missing.",
+      "published_at": "2026-08-19T05:04:00+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "ceasefire"
+        ],
+        "urgency": [
+          "declared"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "St1 Biokraft launches new bio-LNG plant in Finland",
+      "url": "https://lngprime.com/europe/st1-biokraft-launches-new-bio-lng-plant-in-finland/195372/",
+      "snippet": "Sweden-based bio-LNG producer St1 Biokraft and its partners have launched what they say is Finland’s first industrial-scale liquefied biogas, or bio-LNG, production plant.",
+      "published_at": "2026-08-19T06:00:12+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
       "score": 42,
       "tags": [
-        "geopolitics",
         "lng"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 10.9,
-        "themes": 26.7,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
+        "authority": 13.1,
+        "themes": 20.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 62.6,
-        "recency_multiplier": 0.54
+        "raw": 33.9,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "attack",
-          "attacked"
-        ],
         "lng": [
-          "cargo",
-          "tanker"
-        ],
-        "geography": [
-          "russian"
-        ],
-        "unplanned": [
-          "attacked"
+          "lng",
+          "lng plant"
         ]
       },
       "duplicate_count": 0,
@@ -468,90 +582,92 @@
       "also_reported_by": []
     },
     {
-      "title": "DR Congo’s Ebola outbreak ‘global emergency’ as infections pass 5,000: WHO",
-      "url": "https://www.aljazeera.com/news/2026/8/18/congo-ebola-outbreak-global-emergency-as-infections-pass-5000-who?traffic_source=rss",
-      "snippet": "Officials warn they are continuing to identify new chains of transmission that need to be broken to stop the spread.",
-      "published_at": "2026-08-18T21:24:52+00:00",
+      "title": "Greek-Run Oil Tanker Comes Under Attack",
+      "url": "https://www.rigzone.com/news/wire/greekrun_oil_tanker_comes_under_attack-18-aug-2026-184402-article/?rss=true",
+      "snippet": "A Greek-run oil tanker was attacked in the Black Sea after loading a Russian-origin cargo.",
+      "published_at": "2026-08-18T20:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.9,
+        "themes": 26.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.6,
+        "recency_multiplier": 0.5
+      },
+      "matched": {
+        "geopolitics": [
+          "attack",
+          "attacked"
+        ],
+        "lng": [
+          "cargo",
+          "tanker"
+        ],
+        "geography": [
+          "russian"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "How Ebola became the deadliest outbreak in DR Congo’s history",
+      "url": "https://www.aljazeera.com/news/2026/8/19/how-ebola-became-the-deadliest-outbreak-in-dr-congos-history?traffic_source=rss",
+      "snippet": "Conflict, delayed detection, and mistrust are complicating efforts to contain the virus in eastern DR Congo.",
+      "published_at": "2026-08-19T00:53:34+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 36,
       "tags": [
-        "infrastructure"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
-        "themes": 6.7,
+        "themes": 9.0,
         "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 52.2,
-        "recency_multiplier": 0.6
+        "raw": 38.5,
+        "recency_multiplier": 0.73
       },
       "matched": {
-        "infrastructure": [
-          "transmission"
+        "geopolitics": [
+          "conflict"
         ],
         "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
+          "delayed"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, GU_504120 (GT7)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/0b73e7e6-28ee-4612-b41c-2d2dd32fd68c/7",
-      "snippet": "Published: 18.08.2026 19:13:29 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Generator Issues Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power F",
-      "published_at": "2026-08-18T17:13:29+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.43
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-18T14:00:17+00:00"
     },
     {
       "title": "US sanctions International Criminal Court’s president and top lawyer",
@@ -564,7 +680,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
@@ -579,7 +695,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -601,7 +717,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 34,
+      "score": 32,
       "tags": [
         "gas_storage",
         "oil_macro"
@@ -618,7 +734,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.6,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.54
       },
       "matched": {
         "gas_storage": [
@@ -637,58 +753,10 @@
       "also_reported_by": []
     },
     {
-      "title": "5 Energy Stocks Cashing In On The New Energy Crunch",
-      "url": "https://oilprice.com/Energy/Energy-General/5-Energy-Stocks-Cashing-In-On-The-New-Energy-Crunch.html",
-      "snippet": "The Iran war has created an extraordinary earnings season for U.S. refiners. Brent crude has fallen to around $90 per barrel from a wartime peak of $126, but the shortage of refined fuels has only deepened. According to Reuters, Global refinery throughput in July was nearly 5 million barrels per day",
-      "published_at": "2026-08-19T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "oil_macro",
-        "geopolitics",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.7,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.5,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "refinery",
-          "barrel",
-          "barrels"
-        ],
-        "geopolitics": [
-          "war"
-        ],
-        "gas_storage": [
-          "stocks"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Attackers go ‘house to house’ killing 25 villagers in central Nigeria",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/attackers-go-house-to-house-killing-25-villagers-in-central-nigeria?traffic_source=rss",
-      "snippet": "An attack on a village in Nigeria’s central Plateau state has killed at least 25 people.",
-      "published_at": "2026-08-19T04:25:26+00:00",
+      "title": "South Africa to Australia: Why coal profits are surging during Iran war",
+      "url": "https://www.aljazeera.com/news/2026/8/19/south-africa-to-australia-why-coal-profits-are-surging-during-iran-war?traffic_source=rss",
+      "snippet": "Coal companies are reporting a huge rise in profits, but analysts say global clean energy transition is still on track.",
+      "published_at": "2026-08-19T06:27:30+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
@@ -715,6 +783,48 @@
       },
       "matched": {
         "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "australia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-08-19T00:00:00+00:00"
+    },
+    {
+      "title": "Attackers go ‘house to house’ killing 25 villagers in central Nigeria",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/attackers-go-house-to-house-killing-25-villagers-in-central-nigeria?traffic_source=rss",
+      "snippet": "An attack on a village in Nigeria’s central Plateau state has killed at least 25 people.",
+      "published_at": "2026-08-19T04:25:26+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "geopolitics": [
           "attack"
         ],
         "geography": [
@@ -725,17 +835,112 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump says no talks planned with Iran amid anger over Iran-Oman Hormuz deal",
-      "url": "https://www.aljazeera.com/news/2026/8/18/no-talks-with-iran-says-trump-as-us-president-stews-over-hormuz-deal?traffic_source=rss",
-      "snippet": "US president hits out as states bordering the Strait of Hormuz continue talks on managing the strategic waterway.",
-      "published_at": "2026-08-18T21:03:59+00:00",
+      "title": "5 Energy Stocks Cashing In On The New Energy Crunch",
+      "url": "https://oilprice.com/Energy/Energy-General/5-Energy-Stocks-Cashing-In-On-The-New-Energy-Crunch.html",
+      "snippet": "The Iran war has created an extraordinary earnings season for U.S. refiners. Brent crude has fallen to around $90 per barrel from a wartime peak of $126, but the shortage of refined fuels has only deepened. According to Reuters, Global refinery throughput in July was nearly 5 million barrels per day",
+      "published_at": "2026-08-19T00:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "oil_macro",
+        "geopolitics",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 23.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.5,
+        "recency_multiplier": 0.68
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "refinery",
+          "barrel",
+          "barrels"
+        ],
+        "geopolitics": [
+          "war"
+        ],
+        "gas_storage": [
+          "stocks"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UAE imposes indefinite trade embargo on Iran over alleged missile attacks",
+      "url": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss",
+      "snippet": "Iran denies launching missiles at the UAE, suggesting the incident was a &#039;false flag operation&#039;.",
+      "published_at": "2026-08-19T03:34:40+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 15,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.4,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "geopolitics": [
+          "embargo",
+          "missile"
+        ],
+        "unplanned": [
+          "incident"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/19/south-africa-to-australia-why-coal-profits-are-surging-during-iran-war?traffic_source=rss",
+        "title": "South Africa to Australia: Why coal profits are surging during Iran war",
+        "published_at": "2026-08-19T06:27:30+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Iran war live: Rubio discusses Hormuz security with UAE official",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/19/iran-war-live-trump-denies-iran-talks-tehran-claims-us-begging?traffic_source=rss",
+      "snippet": "Trump says no talks with Tehran scheduled; Iranian Foreign Minister Abbas Araghchi claims US &#039;begging&#039; for negotiations.",
+      "published_at": "2026-08-19T00:00:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
       "tags": [
         "geopolitics"
       ],
@@ -743,22 +948,22 @@
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 16.6,
+        "themes": 17.9,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 0.58
+        "raw": 43.4,
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
-          "strait of hormuz"
+          "war",
+          "negotiations"
         ],
         "geography": [
-          "strait of hormuz",
           "hormuz"
         ]
       },
@@ -766,9 +971,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rise-for-Fourth-Day-as-Hormuz-Traffic-Slows.html",
-        "title": "Oil Prices Rise for Fourth Day as Hormuz Traffic Slows",
-        "published_at": "2026-08-19T05:40:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/8/19/south-africa-to-australia-why-coal-profits-are-surging-during-iran-war?traffic_source=rss",
+        "title": "South Africa to Australia: Why coal profits are surging during Iran war",
+        "published_at": "2026-08-19T06:27:30+00:00"
       },
       "hidden": true
     }
