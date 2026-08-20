@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T01:00:13.730742+00:00",
-  "item_count": 15,
+  "generated_at": "2026-08-20T02:21:06.575532+00:00",
+  "item_count": 11,
   "alert_counts": {
     "critical": 0,
     "high": 0,
@@ -8,152 +8,104 @@
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1732
+        "ms": 1850
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 26590
+        "ms": 48473
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5496
+        "ms": 8636
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 2,
+        "count": 0,
         "error": null,
-        "ms": 895
+        "ms": 707
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 360
+        "ms": 256
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 356
+        "ms": 319
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1256
+        "ms": 1377
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 165
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 247
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 653
+        "ms": 777
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 249
+        "ms": 381
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 759
+        "ms": 773
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 25,
+        "count": 26,
         "error": null,
-        "ms": 299
+        "ms": 157
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 167
+        "ms": 289
       }
     ]
   },
   "items": [
-    {
-      "title": "Sacked Ukrainian defence minister calls for presidential election",
-      "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Martial law has been in place in Ukraine since February 2022, under which elections are suspended.",
-      "published_at": "2026-08-19T20:34:39+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 55,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 59.6,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "supply_disruption": [
-          "suspended"
-        ],
-        "geography": [
-          "ukraine"
-        ],
-        "unplanned": [
-          "suspended"
-        ],
-        "urgency": [
-          "suspended"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-19T14:30:00+00:00"
-    },
     {
       "title": "$100 Diesel Cracks Signal a Much Tighter Oil Market Than Brent Suggests",
       "url": "https://oilprice.com/Energy/Energy-General/100-Diesel-Cracks-Signal-a-Much-Tighter-Oil-Market-Than-Brent-Suggests.html",
@@ -165,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 52,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -184,7 +136,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.8,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.72
       },
       "matched": {
         "geopolitics": [
@@ -211,6 +163,54 @@
       "also_reported_by": []
     },
     {
+      "title": "Sacked Ukrainian defence minister calls for presidential election",
+      "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Martial law has been in place in Ukraine since February 2022, under which elections are suspended.",
+      "published_at": "2026-08-19T20:34:39+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 59.6,
+        "recency_multiplier": 0.75
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "geography": [
+          "ukraine"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-19T14:30:00+00:00"
+    },
+    {
       "title": "Unplanned, Unavailability of electricity facilities: Production, BE, DROGENBOS 1",
       "url": "https://umm.nordpoolgroup.com/#/messages/f9d56c5f-636c-4016-9f25-e8b260d5a36b/2",
       "snippet": "Published: 19.08.2026 19:47:29 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
@@ -221,7 +221,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 51,
+      "score": 48,
       "tags": [
         "supply_disruption"
       ],
@@ -236,7 +236,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.6
       },
       "matched": {
         "supply_disruption": [
@@ -250,64 +250,15 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-08-19T09:31:54+00:00"
-    },
-    {
-      "title": "UK Inflation Jumps to 2.9% as Energy Bills Bite",
-      "url": "https://oilprice.com/Energy/Energy-General/UK-Inflation-Jumps-to-29-as-Energy-Bills-Bite.html",
-      "snippet": "Inflation has leaped up following the reset of the energy price cap, official data has revealed, marking the likely beginning of a long run of increases in price growth. The Office for National Statistics (ONS) put the consumer price index inflation reading at 2.9 per cent for the 12 months to July.",
-      "published_at": "2026-08-19T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 46,
-      "tags": [
-        "regulation",
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 29.2,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 65.9,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "regulation": [
-          "cap",
-          "price cap"
-        ],
-        "geopolitics": [
-          "price cap"
-        ],
-        "oil_macro": [
-          "inflation"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "first_seen_at": "2026-08-19T16:53:54+00:00"
     },
     {
       "title": "Trump threatens 'tremendous economic consequences' on any country helping Iran",
       "url": "https://www.bbc.co.uk/news/articles/c2k7e83ynj4o?at_medium=RSS&at_campaign=rss",
       "snippet": "It comes after a 60-day ceasefire expired on Monday, with no sign of a diplomatic or military off-ramp to the conflict.",
-      "published_at": "2026-08-20T00:52:28+00:00",
+      "published_at": "2026-08-20T02:16:49+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -342,6 +293,55 @@
       "also_reported_by": []
     },
     {
+      "title": "UK Inflation Jumps to 2.9% as Energy Bills Bite",
+      "url": "https://oilprice.com/Energy/Energy-General/UK-Inflation-Jumps-to-29-as-Energy-Bills-Bite.html",
+      "snippet": "Inflation has leaped up following the reset of the energy price cap, official data has revealed, marking the likely beginning of a long run of increases in price growth. The Office for National Statistics (ONS) put the consumer price index inflation reading at 2.9 per cent for the 12 months to July.",
+      "published_at": "2026-08-19T16:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 43,
+      "tags": [
+        "regulation",
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 29.2,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 65.9,
+        "recency_multiplier": 0.53
+      },
+      "matched": {
+        "regulation": [
+          "cap",
+          "price cap"
+        ],
+        "geopolitics": [
+          "price cap"
+        ],
+        "oil_macro": [
+          "inflation"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Hope Fades, Traders Brace for Extended Oil, LNG Squeeze",
       "url": "https://oilprice.com/Energy/Crude-Oil/Hope-Fades-Traders-Brace-for-Extended-Oil-LNG-Squeeze.html",
       "snippet": "For most of the past six months, traders active on the commodity futures markets have been mostly optimistic. They have taken every statement by President Donald Trump about peace talks or victory over Iran at face value, betting on a speedy end of the war. Now, it has started to dawn on many that t",
@@ -352,7 +352,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 36,
       "tags": [
         "geopolitics",
         "lng"
@@ -368,7 +368,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -377,6 +377,95 @@
         ],
         "lng": [
           "lng"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "South Korea’s rookie investors lose small fortunes amid AI stocks frenzy",
+      "url": "https://www.aljazeera.com/economy/2026/8/19/south-koreas-rookie-investors-lose-small-fortunes-amid-ai-stocks-frenzy?traffic_source=rss",
+      "snippet": "South Korea&#039;s stock market has attracted a wave of novice investors amid booming demand for chips used in AI.",
+      "published_at": "2026-08-19T23:51:12+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "gas_storage",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.9,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "gas_storage": [
+          "stocks"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Central Asia Blackout Traced to Key Hydropower Plant",
+      "url": "https://oilprice.com/Energy/Energy-General/Central-Asia-Blackout-Traced-to-Key-Hydropower-Plant.html",
+      "snippet": "Kyrgyzstan has provided some clarity on the source of the recent blackout that impacted four states in Central Asia, while vigorously denying blame for the cascading outage. Power outages were first reported in the Kyrgyz capital of Bishkek during the afternoon of August 14 before spreading to south",
+      "published_at": "2026-08-19T18:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "supply_disruption",
+        "power_system"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 23.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.8,
+        "recency_multiplier": 0.61
+      },
+      "matched": {
+        "supply_disruption": [
+          "outage",
+          "outages"
+        ],
+        "power_system": [
+          "blackout"
+        ],
+        "geography": [
+          "asia"
         ]
       },
       "duplicate_count": 0,
@@ -393,7 +482,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 31,
       "tags": [
         "nuclear",
         "gas_storage"
@@ -410,7 +499,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.5,
-        "recency_multiplier": 0.48
+        "recency_multiplier": 0.43
       },
       "matched": {
         "nuclear": [
@@ -431,302 +520,42 @@
       "also_reported_by": []
     },
     {
-      "title": "Central Asia Blackout Traced to Key Hydropower Plant",
-      "url": "https://oilprice.com/Energy/Energy-General/Central-Asia-Blackout-Traced-to-Key-Hydropower-Plant.html",
-      "snippet": "Kyrgyzstan has provided some clarity on the source of the recent blackout that impacted four states in Central Asia, while vigorously denying blame for the cascading outage. Power outages were first reported in the Kyrgyz capital of Bishkek during the afternoon of August 14 before spreading to south",
-      "published_at": "2026-08-19T18:00:00+00:00",
+      "title": "All Arabian Drilling’s offshore rigs set to return to work by quarter-end",
+      "url": "https://www.offshore-energy.biz/all-arabian-drillings-offshore-rigs-set-to-return-to-work-by-quarter-end/",
+      "snippet": "Arabian Drilling, said to be Saudi Arabia’s largest onshore and offshore drilling contractor by fleet size, has been cleared to bring its remaining suspended offshore rigs back into operation, putting its offshore fleet on track to reach 100% utilization by the end of the third quarter of 2026. The ",
+      "published_at": "2026-08-19T09:33:56+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "supply_disruption",
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.8,
-        "recency_multiplier": 0.68
-      },
-      "matched": {
-        "supply_disruption": [
-          "outage",
-          "outages"
-        ],
-        "power_system": [
-          "blackout"
-        ],
-        "geography": [
-          "asia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "South Korea’s rookie investors lose small fortunes amid AI stocks frenzy",
-      "url": "https://www.aljazeera.com/economy/2026/8/19/south-koreas-rookie-investors-lose-small-fortunes-amid-ai-stocks-frenzy?traffic_source=rss",
-      "snippet": "South Korea&#039;s stock market has attracted a wave of novice investors amid booming demand for chips used in AI.",
-      "published_at": "2026-08-19T23:51:12+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "gas_storage",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.9,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "gas_storage": [
-          "stocks"
-        ],
-        "oil_macro": [
-          "demand"
-        ],
-        "geography": [
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Immersive environment to accelerate UK nuclear decommissioning",
-      "url": "https://www.world-nuclear-news.org/articles/immersive-environment-to-accelerate-uk-nuclear-decommissioning",
-      "snippet": "A new immersive environment has been established at the Robotics and Artificial Intelligence Collaboration facility in West Cumbria, northwest England, giving nuclear specialists a powerful way to plan and deliver decommissioning work more safely.",
-      "published_at": "2026-08-19T14:13:27+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 14.6,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 44.4,
-        "recency_multiplier": 0.51
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "decommissioning"
-        ],
-        "geography": [
-          "uk",
-          "england"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "India’s LNG imports up in July",
-      "url": "https://lngprime.com/asia/indias-lng-imports-up-in-july/195383/",
-      "snippet": "India’s liquefied natural gas (LNG) imports increased 1.5 percent year-on-year in July, preliminary data from the oil ministry’s Petroleum Planning and Analysis Cell shows.",
-      "published_at": "2026-08-19T12:45:07+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 20.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 50.9,
-        "recency_multiplier": 0.45
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng imports"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "CNOOC’s Binhai LNG terminal hits new milestone",
-      "url": "https://lngprime.com/asia/cnoocs-binhai-lng-terminal-hits-new-milestone/195423/",
-      "snippet": "China National Offshore Oil Company (CNOOC) has reached a new milestone at its giant Binhai liquefied natural gas (LNG) import terminal in Jiangsu.",
-      "published_at": "2026-08-19T12:44:32+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 32.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 50.5,
-        "recency_multiplier": 0.45
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal",
-          "import terminal"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Gains as Refinery Demand Surges",
-      "url": "https://www.rigzone.com/news/wire/oil_gains_as_refinery_demand_surges-19-aug-2026-184416-article/?rss=true",
-      "snippet": "Crude gained as Gulf tensions intensified while US refiners boosted oil consumption.",
-      "published_at": "2026-08-19T19:20:41+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
       "score": 30,
       "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 13.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.4,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "refinery",
-          "demand"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "The Strongest El Niño on Record Lands on the Tightest Energy Market in Years",
-      "url": "https://oilprice.com/Energy/Energy-General/The-Strongest-El-Nio-on-Record-Lands-on-the-Tightest-Energy-Market-in-Years.html",
-      "snippet": "Romania spent more than 2 million euros this month detonating rocks and sinking barges in the Danube, trying to shove enough water toward the Cernavoda nuclear plant to keep its reactors cool. It didn’t work. On Aug. 13, Nuclearelectrica began a controlled shutdown of the plant’s second reactor, the",
-      "published_at": "2026-08-19T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "nuclear",
         "supply_disruption"
       ],
       "alert": "low",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 8.8,
-        "themes": 26.9,
+        "authority": 12.4,
+        "themes": 8.4,
         "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 35.6,
-        "recency_multiplier": 0.63
+        "raw": 68.8,
+        "recency_multiplier": 0.32
       },
       "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor",
-          "reactors"
-        ],
         "supply_disruption": [
-          "shutdown"
+          "suspended"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
         ]
       },
       "duplicate_count": 0,
@@ -743,7 +572,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 11,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -761,7 +590,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 58.3,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.47
       },
       "matched": {
         "geopolitics": [
