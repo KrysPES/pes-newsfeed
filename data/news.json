@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-20T14:05:19.706664+00:00",
-  "item_count": 19,
+  "generated_at": "2026-08-20T14:50:15.216179+00:00",
+  "item_count": 21,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 11
+    "normal": 10
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 5789
+        "ms": 1386
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 110803
+        "ms": 55125
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4366
+        "ms": 3733
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 410
+        "ms": 326
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 293
+        "ms": 130
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 241
+        "ms": 158
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 40,
+        "count": 42,
         "error": null,
-        "ms": 984
+        "ms": 1303
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 467
+        "ms": 252
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 694
+        "ms": 702
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 244
+        "ms": 374
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 786
+        "ms": 734
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 29,
+        "count": 27,
         "error": null,
-        "ms": 132
+        "ms": 86
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 295
+        "ms": 125
       }
     ]
   },
@@ -206,7 +206,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 50,
       "tags": [
         "oil_macro"
       ],
@@ -222,7 +222,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.2,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.9
       },
       "matched": {
         "oil_macro": [
@@ -251,7 +251,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 48,
       "tags": [
         "weather"
       ],
@@ -267,7 +267,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.6,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.89
       },
       "matched": {
         "weather": [
@@ -294,7 +294,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 48,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -311,7 +311,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.0,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -339,7 +339,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 46,
       "tags": [
         "infrastructure",
         "gas_storage"
@@ -356,7 +356,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.9,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.85
       },
       "matched": {
         "infrastructure": [
@@ -411,51 +411,10 @@
       "also_reported_by": []
     },
     {
-      "title": "Atomic Canyon launches virtual assistant for US nuclear fleet",
-      "url": "https://www.world-nuclear-news.org/articles/atomic-canyon-launches-virtual-assistant-for-us-nuclear-fleet",
-      "snippet": "The company says NIVA - for Nuclear Industry Virtual Assistant - is the first AI platform of its kind available to commercial nuclear plants belonging to organisations including the Institute of Nuclear Power Operations, EPRI, and the Nuclear Energy Institute that have collaborated in its developmen",
-      "published_at": "2026-08-20T11:00:44+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "nuclear",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 24.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.7,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "nuclear fleet"
-        ],
-        "infrastructure": [
-          "platform"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "War on Iran: Trump announces a new campaign to isolate Iran economically",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/war-on-iran-trump-announces-a-new-campaign-to-isolate-iran-economically?traffic_source=rss",
-      "snippet": "US President Donald Trump has announced a new campaign to isolate Iran and punish its trading partners.",
-      "published_at": "2026-08-20T13:14:14+00:00",
+      "title": "Trump’s war on Stars and Stripes: Why has military newspaper chief quit?",
+      "url": "https://www.aljazeera.com/news/2026/8/20/trumps-war-on-stars-and-stripes-why-has-military-newspaper-chief-quit?traffic_source=rss",
+      "snippet": "Longtime Stars and Stripes publisher Max D Lederer Jr announced his resignation over clashes with the Pentagon.",
+      "published_at": "2026-08-20T14:10:01+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
@@ -489,99 +448,86 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 1,
+      "update_count": 2,
       "thread_started_at": "2026-08-20T09:13:18+00:00"
     },
     {
-      "title": "Belgium’s Zeebrugge terminal to receive latest Golden Pass LNG cargo",
-      "url": "https://lngprime.com/americas/belgiums-zeebrugge-terminal-to-receive-latest-golden-pass-lng-cargo/195465/",
-      "snippet": "The Fluxys-operated LNG import facility in the Belgian port of Zeebrugge is expected to receive another cargo from the Golden Pass LNG export terminal in Texas, owned by QatarEnergy and ExxonMobil, according to shipping data.",
-      "published_at": "2026-08-20T06:37:31+00:00",
+      "title": "Second US port to explore nuclear maritime technologies",
+      "url": "https://www.world-nuclear-news.org/articles/second-us-port-to-explore-nuclear-maritime-technologies",
+      "snippet": "The Port of Corpus Christi in Texas has signed an agreement with the US Department of Transportation's Maritime Administration to explore the use of small modular reactors, microgrids, and advanced vessel propulsion systems. The port is also to collaborate with Core Power for a site-specific maritim",
+      "published_at": "2026-08-20T13:06:35+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 42,
       "tags": [
-        "lng",
-        "infrastructure"
+        "nuclear"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 30.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "authority": 13.9,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 53.2,
-        "recency_multiplier": 0.66
+        "raw": 33.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "lng",
-          "cargo",
-          "lng cargo"
-        ],
-        "infrastructure": [
-          "terminal"
+        "nuclear": [
+          "nuclear",
+          "reactors"
         ],
         "geography": [
-          "belgium",
-          "belgian",
-          "zeebrugge"
+          "corpus christi"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Chinese Refiners Snap Up Iraqi Oil as Gulf Supply Routes Fracture",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinese-Refiners-Snap-Up-Iraqi-Oil-as-Gulf-Supply-Routes-Fracture.html",
-      "snippet": "Chinese refiners are buying Iraqi crude, with recent purchases of 8 million barrels of Basrah Heavy and Basrah Medium for prompt delivery, Bloomberg has reported, citing unnamed traders. Oil has continued flowing via the Strait of Hormuz—Iraq’s main export channel—despite the Iranian blockade, but t",
-      "published_at": "2026-08-20T05:30:00+00:00",
+      "title": "Atomic Canyon launches virtual assistant for US nuclear fleet",
+      "url": "https://www.world-nuclear-news.org/articles/atomic-canyon-launches-virtual-assistant-for-us-nuclear-fleet",
+      "snippet": "The company says NIVA - for Nuclear Industry Virtual Assistant - is the first AI platform of its kind available to commercial nuclear plants belonging to organisations including the Institute of Nuclear Power Operations, EPRI, and the Nuclear Energy Institute that have collaborated in its developmen",
+      "published_at": "2026-08-20T11:00:44+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
       "tier": 2,
       "has_magnitude": false,
       "score": 42,
       "tags": [
-        "geopolitics",
-        "oil_macro"
+        "nuclear",
+        "infrastructure"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 31.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 13.9,
+        "themes": 24.8,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 55.7,
-        "recency_multiplier": 0.6
+        "raw": 38.7,
+        "recency_multiplier": 0.87
       },
       "matched": {
-        "geopolitics": [
-          "blockade",
-          "strait of hormuz"
+        "nuclear": [
+          "nuclear",
+          "nuclear fleet"
         ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
+        "infrastructure": [
+          "platform"
         ]
       },
       "duplicate_count": 0,
@@ -629,6 +575,137 @@
       "also_reported_by": []
     },
     {
+      "title": "Belgium’s Zeebrugge terminal to receive latest Golden Pass LNG cargo",
+      "url": "https://lngprime.com/americas/belgiums-zeebrugge-terminal-to-receive-latest-golden-pass-lng-cargo/195465/",
+      "snippet": "The Fluxys-operated LNG import facility in the Belgian port of Zeebrugge is expected to receive another cargo from the Golden Pass LNG export terminal in Texas, owned by QatarEnergy and ExxonMobil, according to shipping data.",
+      "published_at": "2026-08-20T06:37:31+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 30.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.2,
+        "recency_multiplier": 0.62
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargo",
+          "lng cargo"
+        ],
+        "infrastructure": [
+          "terminal"
+        ],
+        "geography": [
+          "belgium",
+          "belgian",
+          "zeebrugge"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Chinese Refiners Snap Up Iraqi Oil as Gulf Supply Routes Fracture",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinese-Refiners-Snap-Up-Iraqi-Oil-as-Gulf-Supply-Routes-Fracture.html",
+      "snippet": "Chinese refiners are buying Iraqi crude, with recent purchases of 8 million barrels of Basrah Heavy and Basrah Medium for prompt delivery, Bloomberg has reported, citing unnamed traders. Oil has continued flowing via the Strait of Hormuz—Iraq’s main export channel—despite the Iranian blockade, but t",
+      "published_at": "2026-08-20T05:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 31.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 55.7,
+        "recency_multiplier": 0.57
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Equinor to Enter Namibia by Joining Chevron Exploration Campaign",
+      "url": "https://www.rigzone.com/news/equinor_to_enter_namibia_by_joining_chevron_exploration_campaign-20-aug-2026-184421-article/?rss=true",
+      "snippet": "Equinor signed an agreement to acquire a 17.4 percent stake in Petroleum Exploration License 90 on the Namibian side of the offshore Orange Basin from operator Chevron.",
+      "published_at": "2026-08-20T13:49:46+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 37,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 6.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 29.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "license"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "ADNOC Issues Ninth Spot Crude Tender Since June as UAE Boosts Exports",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Issues-Ninth-Spot-Crude-Tender-Since-June-as-UAE-Boosts-Exports.html",
       "snippet": "Abu Dhabi National Oil Company (ADNOC) has just issued its ninth spot tender offering crude oil to buyers for October and November loadings, as the United Arab Emirates (UAE) continues to push its oil production and exports higher despite the Hormuz crisis. The UAE’s national oil company is offering",
@@ -639,7 +716,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "oil_macro"
       ],
@@ -655,7 +732,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "oil_macro": [
@@ -663,89 +740,6 @@
         ],
         "geography": [
           "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Lithuania’s KN reports higher LNG revenue",
-      "url": "https://lngprime.com/europe/lithuanias-kn-reports-higher-lng-revenue/195470/",
-      "snippet": "Lithuania’s KN Energies, the state-owned operator of the country’s first FSRU-based LNG import facility in Klaipeda, reported higher LNG revenue in the first half of this year due to high terminal utilization and increased regasification and reloading volumes.",
-      "published_at": "2026-08-20T06:30:36+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 25.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 39.0,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "regasification",
-          "fsru"
-        ],
-        "infrastructure": [
-          "terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Further Chinese order for Doosan Enerbility forgings",
-      "url": "https://www.world-nuclear-news.org/articles/further-chinese-order-for-doosan-enerbility-forgings",
-      "snippet": "South Korea's Doosan Enerbility recently signed a contract to supply ultra-large forged components for steam generators at units 5 and 6 of the Laiyang nuclear power plant in China's Shandong Province.",
-      "published_at": "2026-08-20T11:19:05+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.1,
-        "recency_multiplier": 0.94
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "china",
-          "korea"
         ]
       },
       "duplicate_count": 0,
@@ -792,6 +786,89 @@
       "also_reported_by": []
     },
     {
+      "title": "Lithuania’s KN reports higher LNG revenue",
+      "url": "https://lngprime.com/europe/lithuanias-kn-reports-higher-lng-revenue/195470/",
+      "snippet": "Lithuania’s KN Energies, the state-owned operator of the country’s first FSRU-based LNG import facility in Klaipeda, reported higher LNG revenue in the first half of this year due to high terminal utilization and increased regasification and reloading volumes.",
+      "published_at": "2026-08-20T06:30:36+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 25.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.0,
+        "recency_multiplier": 0.61
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "regasification",
+          "fsru"
+        ],
+        "infrastructure": [
+          "terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Further Chinese order for Doosan Enerbility forgings",
+      "url": "https://www.world-nuclear-news.org/articles/further-chinese-order-for-doosan-enerbility-forgings",
+      "snippet": "South Korea's Doosan Enerbility recently signed a contract to supply ultra-large forged components for steam generators at units 5 and 6 of the Laiyang nuclear power plant in China's Shandong Province.",
+      "published_at": "2026-08-20T11:19:05+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.1,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "china",
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Yangzijiang delivers its first LNG carrier",
       "url": "https://lngprime.com/asia/yangzijiang-delivers-its-first-lng-carrier/195486/",
       "snippet": "Chinese private shipyard Yangzijiang Shipbuilding has delivered its first 175,000-cbm liquefied natural gas (LNG) carrier, Yangze LNG 01.",
@@ -802,7 +879,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -817,7 +894,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.7,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.8
       },
       "matched": {
         "lng": [
@@ -829,47 +906,50 @@
       "also_reported_by": []
     },
     {
-      "title": "Poland’s Orlen locks in Norwegian crude supplies with Equinor amid oil market volatility",
-      "url": "https://www.offshore-energy.biz/polands-orlen-locks-in-norwegian-crude-supplies-with-equinor-amid-oil-market-volatility/",
-      "snippet": "Poland’s Orlen has secured up to a quarter of its crude needs through a new deal with Norway’s state-owned energy giant Equinor, which expands the duo’s strategic energy ties while ensuring the Polish player’s long-term access to Norwegian oil and strengthening European energy cooperation and securi",
-      "published_at": "2026-08-20T09:31:01+00:00",
+      "title": "War on Iran: Trump announces a new campaign to isolate Iran economically",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/war-on-iran-trump-announces-a-new-campaign-to-isolate-iran-economically?traffic_source=rss",
+      "snippet": "US President Donald Trump has announced a new campaign to isolate Iran and punish its trading partners.",
+      "published_at": "2026-08-20T13:14:14+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 13,
       "tags": [
-        "oil_macro"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 12.4,
-        "themes": 4.5,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "authority": 9.5,
+        "themes": 9.0,
+        "geography": 0.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 26.9,
-        "recency_multiplier": 0.82
+        "raw": 34.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "oil_macro": [
-          "crude"
+        "geopolitics": [
+          "war"
         ],
-        "geography": [
-          "european",
-          "norway",
-          "norwegian",
-          "poland"
+        "urgency": [
+          "announced"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/20/trumps-war-on-stars-and-stripes-why-has-military-newspaper-chief-quit?traffic_source=rss",
+        "title": "Trump’s war on Stars and Stripes: Why has military newspaper chief quit?",
+        "published_at": "2026-08-20T14:10:01+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Trump vows tougher economic measures on Iran and supporting countries",
@@ -897,7 +977,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -910,9 +990,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/20/war-on-iran-trump-announces-a-new-campaign-to-isolate-iran-economically?traffic_source=rss",
-        "title": "War on Iran: Trump announces a new campaign to isolate Iran economically",
-        "published_at": "2026-08-20T13:14:14+00:00"
+        "url": "https://www.aljazeera.com/news/2026/8/20/trumps-war-on-stars-and-stripes-why-has-military-newspaper-chief-quit?traffic_source=rss",
+        "title": "Trump’s war on Stars and Stripes: Why has military newspaper chief quit?",
+        "published_at": "2026-08-20T14:10:01+00:00"
       },
       "hidden": true
     }
