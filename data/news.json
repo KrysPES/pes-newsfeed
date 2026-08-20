@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-20T14:50:15.216179+00:00",
-  "item_count": 21,
+  "generated_at": "2026-08-20T15:21:17.942031+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 10
+    "high": 1,
+    "normal": 9
   },
   "superseded_count": 2,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1386
+        "ms": 1286
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 55125
+        "ms": 72010
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3733
+        "ms": 4192
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 326
+        "ms": 472
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 130
+        "ms": 152
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 158
+        "ms": 218
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 42,
+        "count": 41,
         "error": null,
-        "ms": 1303
+        "ms": 1279
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 252
+        "ms": 508
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 702
+        "ms": 695
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 374
+        "ms": 304
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 734
+        "ms": 570
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 86
+        "ms": 65
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 125
+        "ms": 51
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 6",
+      "url": "https://umm.nordpoolgroup.com/#/messages/032c322d-abef-455b-867e-3660fe543b1e/1",
+      "snippet": "Published: 20.08.2026 17:09:54 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; ",
+      "published_at": "2026-08-20T15:09:54+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "delay"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "German neo-Nazi suspected of deadly 1970 fire at Jewish retirement home",
       "url": "https://www.bbc.co.uk/news/articles/c3r055g23qdo?at_medium=RSS&at_campaign=rss",
@@ -117,7 +161,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 57,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -134,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -165,7 +209,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 56,
+      "score": 55,
       "tags": [
         "lng"
       ],
@@ -181,7 +225,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "lng": [
@@ -206,7 +250,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 49,
       "tags": [
         "oil_macro"
       ],
@@ -222,7 +266,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.2,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.87
       },
       "matched": {
         "oil_macro": [
@@ -251,7 +295,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 47,
       "tags": [
         "weather"
       ],
@@ -267,7 +311,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.6,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.86
       },
       "matched": {
         "weather": [
@@ -294,7 +338,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 47,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -311,7 +355,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.0,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -339,7 +383,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 45,
       "tags": [
         "infrastructure",
         "gas_storage"
@@ -356,7 +400,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.9,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.81
       },
       "matched": {
         "infrastructure": [
@@ -398,7 +442,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -455,7 +499,7 @@
       "title": "Second US port to explore nuclear maritime technologies",
       "url": "https://www.world-nuclear-news.org/articles/second-us-port-to-explore-nuclear-maritime-technologies",
       "snippet": "The Port of Corpus Christi in Texas has signed an agreement with the US Department of Transportation's Maritime Administration to explore the use of small modular reactors, microgrids, and advanced vessel propulsion systems. The port is also to collaborate with Core Power for a site-specific maritim",
-      "published_at": "2026-08-20T13:06:35+00:00",
+      "published_at": "2026-08-20T16:06:35+00:00",
       "type": "news",
       "source": "world_nuclear_news",
       "source_name": "World Nuclear News",
@@ -503,12 +547,12 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "nuclear",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.9,
@@ -519,7 +563,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.7,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.83
       },
       "matched": {
         "nuclear": [
@@ -544,7 +588,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 40,
       "tags": [
         "lng"
       ],
@@ -560,7 +604,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "lng": [
@@ -585,7 +629,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 40,
       "tags": [
         "lng",
         "infrastructure"
@@ -602,7 +646,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.2,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.6
       },
       "matched": {
         "lng": [
@@ -633,7 +677,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -650,7 +694,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.7,
-        "recency_multiplier": 0.57
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
@@ -664,6 +708,51 @@
         "geography": [
           "strait of hormuz",
           "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Beijing Bets on Fossil Fuels Even as It Leads the World in Renewables",
+      "url": "https://oilprice.com/Energy/Energy-General/Beijing-Bets-on-Fossil-Fuels-Even-as-It-Leads-the-World-in-Renewables.html",
+      "snippet": "China has become the world’s largest renewable energy producer by accelerating the rollout of solar, wind, and battery storage projects, while in recent years it has also increased its oil and gas output. Efforts to expand its fossil fuel industry are expected to boost China’s energy self-sufficienc",
+      "published_at": "2026-08-20T15:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "power_system",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 15.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "power_system": [
+          "renewables",
+          "battery"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
@@ -706,6 +795,50 @@
       "also_reported_by": []
     },
     {
+      "title": "USS Washington arrives in Middle East after aircraft carrier outcry",
+      "url": "https://www.aljazeera.com/news/2026/8/20/uss-washington-arrives-in-middle-east-after-aircraft-carrier-outcry?traffic_source=rss",
+      "snippet": "Vessel expected to replace USS Lincoln after reports of dire conditions on board raised questions over US war planning.",
+      "published_at": "2026-08-20T14:36:35+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 13.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "lng": [
+          "carrier"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "ADNOC Issues Ninth Spot Crude Tender Since June as UAE Boosts Exports",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Issues-Ninth-Spot-Crude-Tender-Since-June-as-UAE-Boosts-Exports.html",
       "snippet": "Abu Dhabi National Oil Company (ADNOC) has just issued its ninth spot tender offering crude oil to buyers for October and November loadings, as the United Arab Emirates (UAE) continues to push its oil production and exports higher despite the Hormuz crisis. The UAE’s national oil company is offering",
@@ -716,7 +849,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 36,
       "tags": [
         "oil_macro"
       ],
@@ -732,7 +865,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.2,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.94
       },
       "matched": {
         "oil_macro": [
@@ -740,6 +873,47 @@
         ],
         "geography": [
           "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "USA Crude Oil Stocks See Another Build",
+      "url": "https://www.rigzone.com/news/usa_crude_oil_stocks_see_another_build-20-aug-2026-184425-article/?rss=true",
+      "snippet": "Crude oil stocks, not including the SPR, stood at 428.8 million barrels on August 14, the EIA's latest weekly petroleum status report showed.",
+      "published_at": "2026-08-20T14:50:58+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "oil_macro",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 13.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "gas_storage": [
+          "stocks"
         ]
       },
       "duplicate_count": 0,
@@ -796,7 +970,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "lng",
         "infrastructure"
@@ -812,7 +986,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.0,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.59
       },
       "matched": {
         "lng": [
@@ -822,84 +996,6 @@
         ],
         "infrastructure": [
           "terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Further Chinese order for Doosan Enerbility forgings",
-      "url": "https://www.world-nuclear-news.org/articles/further-chinese-order-for-doosan-enerbility-forgings",
-      "snippet": "South Korea's Doosan Enerbility recently signed a contract to supply ultra-large forged components for steam generators at units 5 and 6 of the Laiyang nuclear power plant in China's Shandong Province.",
-      "published_at": "2026-08-20T11:19:05+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.1,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "china",
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Yangzijiang delivers its first LNG carrier",
-      "url": "https://lngprime.com/asia/yangzijiang-delivers-its-first-lng-carrier/195486/",
-      "snippet": "Chinese private shipyard Yangzijiang Shipbuilding has delivered its first 175,000-cbm liquefied natural gas (LNG) carrier, Yangze LNG 01.",
-      "published_at": "2026-08-20T09:55:52+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.7,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier"
         ]
       },
       "duplicate_count": 0,
@@ -931,7 +1027,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -962,7 +1058,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
@@ -977,7 +1073,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
