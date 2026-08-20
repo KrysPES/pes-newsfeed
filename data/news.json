@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-19T23:55:12.034827+00:00",
-  "item_count": 17,
+  "generated_at": "2026-08-20T01:00:13.730742+00:00",
+  "item_count": 15,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 4
+    "normal": 5
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1436
+        "ms": 1732
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 22698
+        "ms": 26590
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3173
+        "ms": 5496
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 382
+        "ms": 895
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 325
+        "ms": 360
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 161
+        "ms": 356
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 894
+        "ms": 1256
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 222
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 165
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 635
+        "ms": 653
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 1422
+        "ms": 249
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 638
+        "ms": 759
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 25,
         "error": null,
-        "ms": 140
+        "ms": 299
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 211
+        "ms": 167
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 55,
       "tags": [
         "supply_disruption"
       ],
@@ -133,7 +133,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.6,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.83
       },
       "matched": {
         "supply_disruption": [
@@ -165,7 +165,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 55,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -184,7 +184,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.8,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -221,7 +221,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 54,
+      "score": 51,
       "tags": [
         "supply_disruption"
       ],
@@ -236,7 +236,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.67
       },
       "matched": {
         "supply_disruption": [
@@ -265,7 +265,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 49,
+      "score": 46,
       "tags": [
         "regulation",
         "geopolitics",
@@ -283,7 +283,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 65.9,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.58
       },
       "matched": {
         "regulation": [
@@ -298,6 +298,44 @@
         ],
         "geography": [
           "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Trump threatens 'tremendous economic consequences' on any country helping Iran",
+      "url": "https://www.bbc.co.uk/news/articles/c2k7e83ynj4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "It comes after a 60-day ceasefire expired on Monday, with no sign of a diplomatic or military off-ramp to the conflict.",
+      "published_at": "2026-08-20T00:52:28+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 26.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "ceasefire",
+          "conflict",
+          "diplomatic"
         ]
       },
       "duplicate_count": 0,
@@ -345,51 +383,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Central Asia Blackout Traced to Key Hydropower Plant",
-      "url": "https://oilprice.com/Energy/Energy-General/Central-Asia-Blackout-Traced-to-Key-Hydropower-Plant.html",
-      "snippet": "Kyrgyzstan has provided some clarity on the source of the recent blackout that impacted four states in Central Asia, while vigorously denying blame for the cascading outage. Power outages were first reported in the Kyrgyz capital of Bishkek during the afternoon of August 14 before spreading to south",
-      "published_at": "2026-08-19T18:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "supply_disruption",
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.8,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "supply_disruption": [
-          "outage",
-          "outages"
-        ],
-        "power_system": [
-          "blackout"
-        ],
-        "geography": [
-          "asia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Passive safety module installed at Zhangzhou 4",
       "url": "https://www.world-nuclear-news.org/articles/passive-safety-module-installed-at-zhangzhou-4",
       "snippet": "The third and final module of the passive reactor cavity water injection tank has been installed in the reactor building of unit 4 of the Zhangzhou nuclear power plant in China's Fujian province, China National Nuclear Corporation announced.",
@@ -400,7 +393,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 34,
       "tags": [
         "nuclear",
         "gas_storage"
@@ -417,7 +410,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.5,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.48
       },
       "matched": {
         "nuclear": [
@@ -438,52 +431,10 @@
       "also_reported_by": []
     },
     {
-      "title": "All Arabian Drilling’s offshore rigs set to return to work by quarter-end",
-      "url": "https://www.offshore-energy.biz/all-arabian-drillings-offshore-rigs-set-to-return-to-work-by-quarter-end/",
-      "snippet": "Arabian Drilling, said to be Saudi Arabia’s largest onshore and offshore drilling contractor by fleet size, has been cleared to bring its remaining suspended offshore rigs back into operation, putting its offshore fleet on track to reach 100% utilization by the end of the third quarter of 2026. The ",
-      "published_at": "2026-08-19T09:33:56+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 35,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 12.4,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 68.8,
-        "recency_multiplier": 0.39
-      },
-      "matched": {
-        "supply_disruption": [
-          "suspended"
-        ],
-        "unplanned": [
-          "suspended"
-        ],
-        "urgency": [
-          "suspended"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "The Strongest El Niño on Record Lands on the Tightest Energy Market in Years",
-      "url": "https://oilprice.com/Energy/Energy-General/The-Strongest-El-Nio-on-Record-Lands-on-the-Tightest-Energy-Market-in-Years.html",
-      "snippet": "Romania spent more than 2 million euros this month detonating rocks and sinking barges in the Danube, trying to shove enough water toward the Cernavoda nuclear plant to keep its reactors cool. It didn’t work. On Aug. 13, Nuclearelectrica began a controlled shutdown of the plant’s second reactor, the",
-      "published_at": "2026-08-19T17:00:00+00:00",
+      "title": "Central Asia Blackout Traced to Key Hydropower Plant",
+      "url": "https://oilprice.com/Energy/Energy-General/Central-Asia-Blackout-Traced-to-Key-Hydropower-Plant.html",
+      "snippet": "Kyrgyzstan has provided some clarity on the source of the recent blackout that impacted four states in Central Asia, while vigorously denying blame for the cascading outage. Power outages were first reported in the Kyrgyz capital of Bishkek during the afternoon of August 14 before spreading to south",
+      "published_at": "2026-08-19T18:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
@@ -492,30 +443,77 @@
       "has_magnitude": false,
       "score": 33,
       "tags": [
-        "nuclear",
-        "supply_disruption"
+        "supply_disruption",
+        "power_system"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 26.9,
-        "geography": 0.0,
+        "themes": 23.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 35.6,
+        "raw": 36.8,
         "recency_multiplier": 0.68
       },
       "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor",
-          "reactors"
-        ],
         "supply_disruption": [
-          "shutdown"
+          "outage",
+          "outages"
+        ],
+        "power_system": [
+          "blackout"
+        ],
+        "geography": [
+          "asia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "South Korea’s rookie investors lose small fortunes amid AI stocks frenzy",
+      "url": "https://www.aljazeera.com/economy/2026/8/19/south-koreas-rookie-investors-lose-small-fortunes-amid-ai-stocks-frenzy?traffic_source=rss",
+      "snippet": "South Korea&#039;s stock market has attracted a wave of novice investors amid booming demand for chips used in AI.",
+      "published_at": "2026-08-19T23:51:12+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "gas_storage",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "gas_storage": [
+          "stocks"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "korea"
         ]
       },
       "duplicate_count": 0,
@@ -532,7 +530,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
         "nuclear"
       ],
@@ -548,7 +546,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.4,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.51
       },
       "matched": {
         "nuclear": [
@@ -574,7 +572,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 33,
+      "score": 31,
       "tags": [
         "lng"
       ],
@@ -590,7 +588,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.9,
-        "recency_multiplier": 0.49
+        "recency_multiplier": 0.45
       },
       "matched": {
         "lng": [
@@ -615,7 +613,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
         "lng",
         "infrastructure"
@@ -632,7 +630,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.5,
-        "recency_multiplier": 0.49
+        "recency_multiplier": 0.45
       },
       "matched": {
         "lng": [
@@ -661,7 +659,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "oil_macro"
       ],
@@ -677,7 +675,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 29.4,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.75
       },
       "matched": {
         "oil_macro": [
@@ -693,140 +691,42 @@
       "also_reported_by": []
     },
     {
-      "title": "Lloyd’s Register assists with LNG carrier-to-FSU conversion for African gas project",
-      "url": "https://www.offshore-energy.biz/lloyds-register-assists-with-lng-carrier-to-fsu-conversion-for-african-gas-project/",
-      "snippet": "UK-based classification society Lloyd’s Register (LR) is supporting the life extension of a liquefied natural gas (LNG) carrier (LNGC) being repurposed into a floating storage unit (FSU), helping lay the groundwork for Gabon’s emerging floating gas infrastructure and a wider push to unlock Africa’s ",
-      "published_at": "2026-08-19T11:21:08+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng",
-        "nuclear",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 25.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.4,
-        "recency_multiplier": 0.44
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier"
-        ],
-        "nuclear": [
-          "life extension"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russia’s Fuel Crisis Hits Moscow as Rationing Spreads",
-      "url": "https://oilprice.com/Energy/Energy-General/Russias-Fuel-Crisis-Hits-Moscow-as-Rationing-Spreads.html",
-      "snippet": "Russia has been subject to many months of a ramped-up long-range drone campaign out of Ukraine, chiefly targeting oil refineries as well as industrial sites - and most recently expanding to online retail companies and attacks on private sector businesses. Tuesday saw one of the single biggest drone ",
-      "published_at": "2026-08-19T22:00:00+00:00",
+      "title": "The Strongest El Niño on Record Lands on the Tightest Energy Market in Years",
+      "url": "https://oilprice.com/Energy/Energy-General/The-Strongest-El-Nio-on-Record-Lands-on-the-Tightest-Energy-Market-in-Years.html",
+      "snippet": "Romania spent more than 2 million euros this month detonating rocks and sinking barges in the Danube, trying to shove enough water toward the Cernavoda nuclear plant to keep its reactors cool. It didn’t work. On Aug. 13, Nuclearelectrica began a controlled shutdown of the plant’s second reactor, the",
+      "published_at": "2026-08-19T17:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
-        "geopolitics"
+        "nuclear",
+        "supply_disruption"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 26.9,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 22.7,
-        "recency_multiplier": 1.0
+        "raw": 35.6,
+        "recency_multiplier": 0.63
       },
       "matched": {
-        "geopolitics": [
-          "drone"
+        "nuclear": [
+          "nuclear",
+          "reactor",
+          "reactors"
         ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "South Korea shortens war games with US, citing Washington request",
-      "url": "https://www.bbc.co.uk/news/articles/cnvn0j31qj8o?at_medium=RSS&at_campaign=rss",
-      "snippet": "It comes after Trump announced plans to curtail joint military exercises with South Korea, citing a \"very good\" relationship with North Korea's Kim Jong Un.",
-      "published_at": "2026-08-19T17:39:49+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 31.5,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "power_system": [
-          "curtail"
-        ],
-        "geography": [
-          "korea"
-        ],
-        "urgency": [
-          "announced"
-        ],
-        "speculative": [
-          "plans to"
+        "supply_disruption": [
+          "shutdown"
         ]
       },
       "duplicate_count": 0,
@@ -861,7 +761,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 58.3,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.52
       },
       "matched": {
         "geopolitics": [
