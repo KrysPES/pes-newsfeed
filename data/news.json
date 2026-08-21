@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-21T19:41:09.172313+00:00",
-  "item_count": 23,
+  "generated_at": "2026-08-21T19:57:06.101900+00:00",
+  "item_count": 22,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 6
+    "normal": 4
   },
-  "superseded_count": 2,
+  "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1144
+        "ms": 790
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 43081
+        "ms": 32085
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 8021
+        "ms": 3451
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 525
+        "ms": 347
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 606
+        "ms": 344
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 312
+        "ms": 141
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1229
+        "ms": 809
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 276
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 59
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 755
+        "ms": 509
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 364
+        "ms": 79
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 707
+        "ms": 368
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 44
+        "ms": 144
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 72
+        "ms": 241
       }
     ]
   },
@@ -161,7 +161,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 61,
+      "score": 60,
       "tags": [
         "geopolitics",
         "lng",
@@ -179,7 +179,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -197,11 +197,8 @@
           "red sea"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Rigzone"
-      ],
-      "first_seen_at": "2026-08-21T09:18:13+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Iran Warns Gulf States as U.S. Turns Up Economic Pressure",
@@ -214,7 +211,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 52,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -231,7 +228,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 72.7,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.63
       },
       "matched": {
         "geopolitics": [
@@ -253,53 +250,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Oil Nears $100 as Trump’s ‘Economic D-Day’ Raises the Stakes",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Nears-100-as-Trumps-Economic-D-Day-Raises-the-Stakes.html",
-      "snippet": "Hormuz traffic remains near a standstill as Trump’s ‘Economic D-Day’ campaign pushes Brent closer to $100. Friday, August 21, 2026 Transits through the Strait of Hormuz have been in single digits the entire week, with Trump’s announcement of an ‘Economic D-Day’ campaign against Iran increasing geopo",
-      "published_at": "2026-08-21T15:01:15+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 19.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 44.1,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "brent"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-21T14:35:06+00:00"
     },
     {
       "title": "Norway Union, Helicopter Group Start Talks to Avert Strike",
@@ -328,7 +278,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.9,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -346,56 +296,17 @@
       "also_reported_by": []
     },
     {
-      "title": "Israeli settlers set fire to heavy machinery at West Bank quarry",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-settlers-set-fire-to-heavy-machinery-at-west-bank-quarry?traffic_source=rss",
-      "snippet": "Israeli settlers entered a stone quarry in Wadi Al-Rakheem near Hebron overnight and set fire to heavy machinery",
-      "published_at": "2026-08-21T16:00:02+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "China’s Teapots Look Beyond Iranian Oil amid U.S. Blockade",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Teapots-Look-Beyond-Iranian-Oil-amid-US-Blockade.html",
-      "snippet": "China’s refiners have imported lower volumes of Iranian crude in August compared to July as the U.S. blockade reinstated in mid-July is squeezing crude supply to Iran’s top oil customer. So far this month, China is estimated to have imported about 534,000 barrels per day (bpd) of Iranian crude oil, ",
-      "published_at": "2026-08-21T15:30:00+00:00",
+      "title": "Oil Nears $100 as Trump’s ‘Economic D-Day’ Raises the Stakes",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Nears-100-as-Trumps-Economic-D-Day-Raises-the-Stakes.html",
+      "snippet": "Hormuz traffic remains near a standstill as Trump’s ‘Economic D-Day’ campaign pushes Brent closer to $100. Friday, August 21, 2026 Transits through the Strait of Hormuz have been in single digits the entire week, with Trump’s announcement of an ‘Economic D-Day’ campaign against Iran increasing geopo",
+      "published_at": "2026-08-21T15:01:15+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 42,
+      "has_magnitude": false,
+      "score": 43,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -404,26 +315,26 @@
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 14.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 19.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 40.1,
-        "recency_multiplier": 0.85
+        "raw": 44.1,
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
-          "blockade"
+          "strait of hormuz"
         ],
         "oil_macro": [
-          "crude",
-          "barrels"
+          "brent"
         ],
         "geography": [
-          "china"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -472,10 +383,49 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Bulls Take Control as Iran Deal Collapses and Hormuz Stays Restricted",
-      "url": "https://oilprice.com/Energy/Energy-General/Oil-Bulls-Take-Control-as-Iran-Deal-Collapses-and-Hormuz-Stays-Restricted.html",
-      "snippet": "October WTI crude oil futures are trading at $86.31 late Thursday, up $4.82 or 5.91% for the week. The contract opened at $81.62, traded as low as $80.80, and reached $87.69. Friday’s session is still ahead, so the weekly result is not final. The market has already made its decision about the week. ",
-      "published_at": "2026-08-21T12:00:00+00:00",
+      "title": "Israeli settlers set fire to heavy machinery at West Bank quarry",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-settlers-set-fire-to-heavy-machinery-at-west-bank-quarry?traffic_source=rss",
+      "snippet": "Israeli settlers entered a stone quarry in Wadi Al-Rakheem near Hebron overnight and set fire to heavy machinery",
+      "published_at": "2026-08-21T16:00:02+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China’s Teapots Look Beyond Iranian Oil amid U.S. Blockade",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Teapots-Look-Beyond-Iranian-Oil-amid-US-Blockade.html",
+      "snippet": "China’s refiners have imported lower volumes of Iranian crude in August compared to July as the U.S. blockade reinstated in mid-July is squeezing crude supply to Iran’s top oil customer. So far this month, China is estimated to have imported about 534,000 barrels per day (bpd) of Iranian crude oil, ",
+      "published_at": "2026-08-21T15:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
@@ -484,33 +434,33 @@
       "has_magnitude": true,
       "score": 41,
       "tags": [
-        "oil_macro",
-        "supply_disruption"
+        "geopolitics",
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 14.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 14.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 50.8,
-        "recency_multiplier": 0.65
+        "raw": 40.1,
+        "recency_multiplier": 0.83
       },
       "matched": {
+        "geopolitics": [
+          "blockade"
+        ],
         "oil_macro": [
           "crude",
-          "wti"
-        ],
-        "supply_disruption": [
-          "restricted"
+          "barrels"
         ],
         "geography": [
-          "hormuz"
+          "china"
         ]
       },
       "duplicate_count": 0,
@@ -543,7 +493,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "weather": [
@@ -552,6 +502,51 @@
         "geography": [
           "uk",
           "england"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Bulls Take Control as Iran Deal Collapses and Hormuz Stays Restricted",
+      "url": "https://oilprice.com/Energy/Energy-General/Oil-Bulls-Take-Control-as-Iran-Deal-Collapses-and-Hormuz-Stays-Restricted.html",
+      "snippet": "October WTI crude oil futures are trading at $86.31 late Thursday, up $4.82 or 5.91% for the week. The contract opened at $81.62, traded as low as $80.80, and reached $87.69. Friday’s session is still ahead, so the weekly result is not final. The market has already made its decision about the week. ",
+      "published_at": "2026-08-21T12:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 40,
+      "tags": [
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 14.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 50.8,
+        "recency_multiplier": 0.63
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "wti"
+        ],
+        "supply_disruption": [
+          "restricted"
+        ],
+        "geography": [
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -568,7 +563,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 37,
       "tags": [
         "nuclear"
       ],
@@ -584,7 +579,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 45.4,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.64
       },
       "matched": {
         "nuclear": [
@@ -599,44 +594,45 @@
       "also_reported_by": []
     },
     {
-      "title": "Heerema, AF Gruppen take on 35,000-ton North Sea platform removal and recycling project",
-      "url": "https://www.offshore-energy.biz/heerema-af-gruppen-take-on-35000-ton-north-sea-platform-removal-and-recycling-project/",
-      "snippet": "A consortium - consisting of AF Offshore Decom, part of AF Gruppen, and Heerema Marine Contractors (HMC) - has won a new assignment for offshore platform decommissioning activities on the UK Continental Shelf (UKCS), representing its third contract from the same North Sea operator in the past year. ",
-      "published_at": "2026-08-21T13:19:02+00:00",
+      "title": "Various Tankers Shuttle Saudi Oil North to Evade Houthis",
+      "url": "https://www.rigzone.com/news/wire/various_tankers_shuttle_saudi_oil_north_to_evade_houthis-21-aug-2026-184428-article/?rss=true",
+      "snippet": "Shipowners including Sinokor Group are helping Saudi Arabian crude exit the Red Sea via the safer northern route, as Iran-backed militants target the kingdom's exports via the Bab el Mandeb chokepoint in the south.",
+      "published_at": "2026-08-21T09:18:13+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
       "has_magnitude": false,
       "score": 37,
       "tags": [
-        "nuclear",
-        "infrastructure"
+        "geopolitics",
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 12.4,
-        "themes": 11.3,
-        "geo_band": "primary",
+        "authority": 10.9,
+        "themes": 28.3,
+        "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 39.7,
-        "recency_multiplier": 0.71
+        "raw": 55.2,
+        "recency_multiplier": 0.51
       },
       "matched": {
-        "nuclear": [
-          "decommissioning"
+        "geopolitics": [
+          "militants",
+          "red sea"
         ],
-        "infrastructure": [
-          "platform"
+        "oil_macro": [
+          "crude"
         ],
         "geography": [
-          "uk"
+          "red sea"
         ]
       },
       "duplicate_count": 0,
@@ -690,7 +686,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "supply_disruption"
       ],
@@ -705,7 +701,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.69
       },
       "matched": {
         "supply_disruption": [
@@ -729,7 +725,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "lng",
         "infrastructure"
@@ -745,7 +741,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.62
       },
       "matched": {
         "lng": [
@@ -764,8 +760,8 @@
     {
       "title": "Russian double-tap drone strike kills 15 in Ukrainian mall, officials say",
       "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Another 130 people, including 23 children, were injured when the shopping centre was hit, according to the regional head.",
-      "published_at": "2026-08-21T18:51:43+00:00",
+      "snippet": "At least 130 people, including 23 children, were also injured when the shopping centre was hit, according to the regional head.",
+      "published_at": "2026-08-21T19:49:56+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -829,7 +825,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.64
       },
       "matched": {
         "nuclear": [
@@ -869,7 +865,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.7,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.63
       },
       "matched": {
         "regulation": [
@@ -935,7 +931,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "gas_storage",
         "power_system"
@@ -952,7 +948,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.8,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.93
       },
       "matched": {
         "gas_storage": [
@@ -979,7 +975,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "regulation",
         "lng"
@@ -996,7 +992,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.9,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "regulation": [
@@ -1014,56 +1010,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "$10.4B oil project nears offshore installation as key equipment reaches Mexico",
-      "url": "https://www.offshore-energy.biz/10-4b-oil-project-nears-offshore-installation-as-key-equipment-reaches-mexico/",
-      "snippet": "Netherlands-based SBM Offshore, a provider of the design, construction, installation, and operation of offshore floating facilities, has confirmed the arrival of offshore equipment in Altamira, moving a multibillion-dollar ultra-deepwater oil development project closer to its installation campaign o",
-      "published_at": "2026-08-21T14:35:06+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 13,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 4.5,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.9,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "oil_macro": [
-          "dollar"
-        ],
-        "geography": [
-          "netherlands"
-        ],
-        "urgency": [
-          "confirmed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Nears-100-as-Trumps-Economic-D-Day-Raises-the-Stakes.html",
-        "title": "Oil Nears $100 as Trump’s ‘Economic D-Day’ Raises the Stakes",
-        "published_at": "2026-08-21T15:01:15+00:00"
-      },
-      "hidden": true
     },
     {
       "title": "Ukrainian Drone Attack Hits Lukoil Refinery Deep in Russia",
@@ -1093,7 +1039,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.4,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -1115,7 +1061,7 @@
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
         "title": "Russian double-tap drone strike kills 15 in Ukrainian mall, officials say",
-        "published_at": "2026-08-21T18:51:43+00:00"
+        "published_at": "2026-08-21T19:49:56+00:00"
       },
       "hidden": true
     }
