@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-21T10:53:24.806027+00:00",
-  "item_count": 18,
+  "generated_at": "2026-08-21T11:17:27.064045+00:00",
+  "item_count": 19,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 8
+    "normal": 7
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1368
+        "ms": 1261
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 56627
+        "ms": 52288
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19291
+        "ms": 23434
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 603
+        "ms": 624
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 233
+        "ms": 557
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 156
+        "ms": 96
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 39,
         "error": null,
-        "ms": 1410
+        "ms": 996
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 39
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 196
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 777
+        "ms": 651
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 330
+        "ms": 129
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 554
+        "ms": 288
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 24,
+        "count": 25,
         "error": null,
-        "ms": 49
+        "ms": 67
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 116
+        "ms": 79
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 61,
+      "score": 60,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.86
       },
       "matched": {
         "supply_disruption": [
@@ -196,44 +196,6 @@
       "also_reported_by": []
     },
     {
-      "title": "US weekly LNG exports reach 34 shipments",
-      "url": "https://lngprime.com/americas/us-weekly-lng-exports-reach-34-shipments/195516/",
-      "snippet": "US liquefied natural gas (LNG) plants sent 34 cargoes during the week ending August 19, down two cargoes from the week before, according to the Energy Information Administration.",
-      "published_at": "2026-08-21T05:48:44+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 48,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "lng exports"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "TotalEnergies, CMA CGM get EU OK for LNG bunkering JV",
       "url": "https://lngprime.com/europe/totalenergies-cma-cgm-get-eu-ok-for-lng-bunkering-jv/195584/",
       "snippet": "French energy giant TotalEnergies and compatriot shipping firm CMA CGM have received approval from the European Commission to form a 50/50 logistics joint venture and operate an LNG bunkering supply solution at the Dutch port of Rotterdam.",
@@ -275,6 +237,44 @@
           "eu",
           "dutch",
           "french"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US weekly LNG exports reach 34 shipments",
+      "url": "https://lngprime.com/americas/us-weekly-lng-exports-reach-34-shipments/195516/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 34 cargoes during the week ending August 19, down two cargoes from the week before, according to the Energy Information Administration.",
+      "published_at": "2026-08-21T05:48:44+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 47,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.76
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
         ]
       },
       "duplicate_count": 0,
@@ -331,7 +331,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -347,7 +347,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.9,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -373,7 +373,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 42,
       "tags": [
         "supply_disruption"
       ],
@@ -388,7 +388,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.9
       },
       "matched": {
         "supply_disruption": [
@@ -396,6 +396,45 @@
         ],
         "unplanned": [
           "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Charter plane crash near Alaskan military site kills 8",
+      "url": "https://www.aljazeera.com/news/2026/8/21/charter-plane-crash-near-alaskan-military-site-kills-8?traffic_source=rss",
+      "snippet": "Rescuers who landed near the crash site &#039;confirmed there were no survivors&#039;.",
+      "published_at": "2026-08-21T10:59:50+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "charter"
+        ],
+        "urgency": [
+          "confirmed"
         ]
       },
       "duplicate_count": 0,
@@ -412,11 +451,11 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 10.2,
@@ -427,7 +466,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.85
       },
       "matched": {
         "supply_disruption": [
@@ -451,7 +490,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 38,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -468,7 +507,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 82.4,
-        "recency_multiplier": 0.37
+        "recency_multiplier": 0.36
       },
       "matched": {
         "geopolitics": [
@@ -486,53 +525,6 @@
         ],
         "urgency": [
           "emergency"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Prices Head for Second Straight Weekly Gain as Iran Risks Mount",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-Second-Straight-Weekly-Gain-as-Iran-Risks-Mount.html",
-      "snippet": "Crude oil prices were on course to book a second consecutive weekly gain as the prospects of peace in the Middle East dimmed further amid U.S. threats of the “toughest sanctions in history” against Iran and continued Ukrainian drone attacks on Russian refineries. At the time of writing, Brent crude ",
-      "published_at": "2026-08-21T05:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.1,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "drone"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent"
-        ],
-        "geography": [
-          "russian",
-          "middle east"
         ]
       },
       "duplicate_count": 0,
@@ -575,6 +567,53 @@
       "also_reported_by": []
     },
     {
+      "title": "Oil Prices Head for Second Straight Weekly Gain as Iran Risks Mount",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-Second-Straight-Weekly-Gain-as-Iran-Risks-Mount.html",
+      "snippet": "Crude oil prices were on course to book a second consecutive weekly gain as the prospects of peace in the Middle East dimmed further amid U.S. threats of the “toughest sanctions in history” against Iran and continued Ukrainian drone attacks on Russian refineries. At the time of writing, Brent crude ",
+      "published_at": "2026-08-21T05:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 23.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.1,
+        "recency_multiplier": 0.75
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "drone"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ],
+        "geography": [
+          "russian",
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Japan executes man who killed five in Pachinko parlour fire",
       "url": "https://www.bbc.co.uk/news/articles/cly8k232mn7o?at_medium=RSS&at_campaign=rss",
       "snippet": "This is the first time since June 2025 that the country has enacted capital punishment.",
@@ -585,7 +624,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "supply_disruption"
       ],
@@ -601,7 +640,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.61
       },
       "matched": {
         "supply_disruption": [
@@ -628,7 +667,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -645,7 +684,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.1,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -673,7 +712,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "lng"
       ],
@@ -688,12 +727,54 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.9,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.76
       },
       "matched": {
         "lng": [
           "lng",
           "lng plant"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Russia ready for ‘new ideas’ on Ukraine war that match Putin’s goals",
+      "url": "https://www.aljazeera.com/news/2026/8/21/russia-ready-for-new-ideas-on-ukraine-war-that-match-putins-goals?traffic_source=rss",
+      "snippet": "Deputy Foreign Minister Sergey Ryabkov suggests Moscow is eager for the US to revive its support for Russian agenda.",
+      "published_at": "2026-08-21T10:59:37+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
@@ -776,50 +857,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Houthis Move to Gain Complete Control Over Crucial Bab el-Mandeb Oil Chokepoint",
-      "url": "https://oilprice.com/Geopolitics/Middle-East/Houthis-Move-to-Gain-Complete-Control-Over-Crucial-Bab-el-Mandeb-Oil-Chokepoint.html",
-      "snippet": "The Yemeni Houthis are planning to seize land along the Yemeni coast in the Bab el-Mandeb Strait, tightening their control of the chokepoint. The information comes from the minister of information in the government that the Houthis are fighting in Yemen and suggests further disruption to marine traf",
-      "published_at": "2026-08-20T23:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 21.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.4,
-        "recency_multiplier": 0.47
-      },
-      "matched": {
-        "geopolitics": [
-          "bab el-mandeb"
-        ],
-        "supply_disruption": [
-          "disruption"
-        ],
-        "geography": [
-          "bab el-mandeb"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Panama Canal to limit shipping ahead of extreme weather during El Nino",
       "url": "https://www.aljazeera.com/news/2026/8/21/panama-canal-to-limit-shipping-ahead-of-extreme-weather-during-el-nino?traffic_source=rss",
       "snippet": "The El Nino weather phenomenon is expected to increase the likelihood of drought and excess heat across the region.",
@@ -847,7 +884,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.8,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.54
       },
       "matched": {
         "geopolitics": [
