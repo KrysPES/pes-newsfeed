@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-21T07:53:36.557863+00:00",
-  "item_count": 11,
+  "generated_at": "2026-08-21T08:29:40.710923+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 7
+    "normal": 6
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1331
+        "ms": 1508
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 35343
+        "ms": 56675
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3832
+        "ms": 3006
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 356
+        "ms": 571
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 167
+        "ms": 613
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 160
+        "ms": 708
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 40,
         "error": null,
-        "ms": 1236
+        "ms": 1048
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 208
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 88
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 806
+        "ms": 600
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 309
+        "ms": 321
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 503
+        "ms": 601
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 46
+        "ms": 164
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 67
+        "ms": 245
       }
     ]
   },
@@ -146,9 +146,9 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 4,
+      "duplicate_count": 3,
       "also_reported_by": [],
-      "first_seen_at": "2026-08-20T15:49:49+00:00"
+      "first_seen_at": "2026-08-20T16:04:00+00:00"
     },
     {
       "title": "US weekly LNG exports reach 34 shipments",
@@ -161,7 +161,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 56,
+      "score": 54,
       "tags": [
         "lng"
       ],
@@ -176,7 +176,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.95
       },
       "matched": {
         "lng": [
@@ -231,6 +231,45 @@
       "thread_started_at": "2026-08-21T01:12:02+00:00"
     },
     {
+      "title": "Israeli settlers set fire to Palestinian home while family asleep",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-settlers-set-fire-to-palestinian-home-while-family-asleep?traffic_source=rss",
+      "snippet": "Israeli settlers set fire to a Palestinian home while a mother and her children were sleeping inside.",
+      "published_at": "2026-08-21T07:58:41+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Five missing after fire in Swiss Alpine town",
       "url": "https://www.bbc.co.uk/news/articles/cy8e6g13497o?at_medium=RSS&at_campaign=rss",
       "snippet": "Eight others were injured, local police say, with the cause of the fire still being investigated.",
@@ -280,7 +319,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 45,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -297,7 +336,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 82.4,
-        "recency_multiplier": 0.47
+        "recency_multiplier": 0.45
       },
       "matched": {
         "geopolitics": [
@@ -331,7 +370,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 43,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -348,7 +387,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -378,11 +417,11 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 41,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 10.2,
@@ -394,7 +433,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.75
       },
       "matched": {
         "supply_disruption": [
@@ -421,11 +460,11 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 40,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -436,12 +475,57 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.9,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.94
       },
       "matched": {
         "lng": [
           "lng",
           "lng plant"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China’s Oil Imports Set to Rebound as Refiners Hunt for New Supply",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Oil-Imports-Set-to-Rebound-as-Refiners-Hunt-for-New-Supply.html",
+      "snippet": "Crude oil imports into China are set to rise by about 1.2 million barrels per day in the final quarter of the year from the current one, although they will likely remain lower than pre-war levels, Bloomberg has reported, citing energy consultancies. Oil purchases by Chinese refiners are climbing bac",
+      "published_at": "2026-08-21T08:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 14.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
@@ -458,7 +542,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 34,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -475,7 +559,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.4,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.56
       },
       "matched": {
         "geopolitics": [
@@ -492,39 +576,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Brazil launches AI supercomputer push while balancing US and Chinese tech",
-      "url": "https://www.aljazeera.com/economy/2026/8/21/brazil-launches-ai-supercomputer-push-while-balancing-us-and-chinese-tech?traffic_source=rss",
-      "snippet": "The government has announced investments of about 2.3 billion reais ($444.2m) to bolster its AI ecosystem.",
-      "published_at": "2026-08-21T01:38:37+00:00",
+      "title": "Ebara Elliott Energy, Doosan Enerbility join forces on compressors for LNG industry",
+      "url": "https://lngprime.com/americas/ebara-elliott-energy-doosan-enerbility-join-forces-on-compressors-for-lng-industry/195559/",
+      "snippet": "US-based Ebara Elliott Energy has joined forces with South Korea's Doosan Enerbility to co-develop gas turbine-driven centrifugal compressors for the liquefied natural gas (LNG) industry.",
+      "published_at": "2026-08-21T05:15:00+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 31,
       "tags": [
-        "power_system"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 5.6,
-        "geography": 0.0,
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 31.1,
-        "recency_multiplier": 0.72
+        "raw": 25.4,
+        "recency_multiplier": 0.91
       },
       "matched": {
-        "power_system": [
-          "balancing"
+        "lng": [
+          "lng"
         ],
-        "urgency": [
-          "announced"
+        "geography": [
+          "korea"
         ]
       },
       "duplicate_count": 0,
@@ -558,7 +643,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.8,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
