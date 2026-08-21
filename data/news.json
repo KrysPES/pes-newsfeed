@@ -1,127 +1,127 @@
 {
-  "generated_at": "2026-08-21T07:05:04.660533+00:00",
+  "generated_at": "2026-08-21T07:53:36.557863+00:00",
   "item_count": 11,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "normal": 7
   },
-  "superseded_count": 2,
+  "superseded_count": 1,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1584
+        "ms": 1331
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 72377
+        "ms": 35343
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5966
+        "ms": 3832
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 756
+        "ms": 356
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 625
+        "ms": 167
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 211
+        "ms": 160
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 40,
         "error": null,
-        "ms": 981
+        "ms": 1236
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 74
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 208
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 621
+        "ms": 806
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 223
+        "ms": 309
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 616
+        "ms": 503
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 29,
+        "count": 31,
         "error": null,
-        "ms": 190
+        "ms": 46
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 169
+        "ms": 67
       }
     ]
   },
   "items": [
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
-      "url": "https://umm.nordpoolgroup.com/#/messages/61fcb273-8119-4bf7-a885-93b54d5bc5e9/2",
-      "snippet": "Published: 21.08.2026 06:07:26 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
-      "published_at": "2026-08-21T04:07:26+00:00",
+      "url": "https://umm.nordpoolgroup.com/#/messages/61fcb273-8119-4bf7-a885-93b54d5bc5e9/3",
+      "snippet": "Published: 21.08.2026 09:22:41 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
+      "published_at": "2026-08-21T07:22:41+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 63,
+      "score": 66,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -176,7 +176,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "lng": [
@@ -231,6 +231,45 @@
       "thread_started_at": "2026-08-21T01:12:02+00:00"
     },
     {
+      "title": "Five missing after fire in Swiss Alpine town",
+      "url": "https://www.bbc.co.uk/news/articles/cy8e6g13497o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Eight others were injured, local police say, with the cause of the fire still being investigated.",
+      "published_at": "2026-08-21T07:06:16+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Europe’s Energy Reserves Worked. The Next Test Will Be Harder",
       "url": "https://oilprice.com/Energy/Crude-Oil/Europes-Energy-Reserves-Worked-The-Next-Test-Will-Be-Harder.html",
       "snippet": "Europe has discovered something unusual during the latest energy crisis: its emergency system actually works. The closure of the Strait of Hormuz removed or disrupted one of the largest flows of oil and gas in the world. Prices rose, shipping routes changed, insurance costs increased, and concerns e",
@@ -241,7 +280,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 46,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -258,7 +297,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 82.4,
-        "recency_multiplier": 0.5
+        "recency_multiplier": 0.47
       },
       "matched": {
         "geopolitics": [
@@ -292,7 +331,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 44,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -309,7 +348,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -326,9 +365,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-21T00:00:00+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Japan executes man who killed five in Pachinko parlour fire",
@@ -341,7 +378,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "supply_disruption"
       ],
@@ -357,7 +394,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.79
       },
       "matched": {
         "supply_disruption": [
@@ -399,7 +436,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "lng": [
@@ -421,7 +458,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 36,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -438,7 +475,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.4,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.59
       },
       "matched": {
         "geopolitics": [
@@ -465,7 +502,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "power_system"
       ],
@@ -480,7 +517,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.1,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.72
       },
       "matched": {
         "power_system": [
@@ -504,7 +541,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 12,
       "tags": [
         "geopolitics",
         "weather"
@@ -521,7 +558,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.8,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -541,54 +578,6 @@
         "url": "https://www.bbc.co.uk/news/articles/cwyl0jkxxryo?at_medium=RSS&at_campaign=rss",
         "title": "Panama Canal to cut number of ships passing through due to El Niño",
         "published_at": "2026-08-21T06:46:08+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Iran war live: US vows toughest Iran sanctions, urges China support",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/8/21/iran-war-live-us-vows-toughest-iran-sanctions-urges-china-support?traffic_source=rss",
-      "snippet": "US Treasury Secretary Bessent says new economic measures will &#039;collapse&#039; Iranian government.",
-      "published_at": "2026-08-21T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.68
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "war"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-Second-Straight-Weekly-Gain-as-Iran-Risks-Mount.html",
-        "title": "Oil Prices Head for Second Straight Weekly Gain as Iran Risks Mount",
-        "published_at": "2026-08-21T05:30:00+00:00"
       },
       "hidden": true
     }
