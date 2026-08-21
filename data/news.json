@@ -1,127 +1,127 @@
 {
-  "generated_at": "2026-08-21T03:40:25.887595+00:00",
-  "item_count": 8,
+  "generated_at": "2026-08-21T04:24:02.469776+00:00",
+  "item_count": 9,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "normal": 4
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 854
+        "ms": 1544
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 37251
+        "ms": 74477
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2833
+        "ms": 2858
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 395
+        "ms": 483
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 357
+        "ms": 622
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 321
+        "ms": 179
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 40,
         "error": null,
-        "ms": 857
+        "ms": 1069
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 153
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 105
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 535
+        "ms": 620
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 176
+        "ms": 299
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 493
+        "ms": 590
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 29,
+        "count": 30,
         "error": null,
-        "ms": 612
+        "ms": 249
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 164
+        "ms": 147
       }
     ]
   },
   "items": [
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
-      "url": "https://umm.nordpoolgroup.com/#/messages/61fcb273-8119-4bf7-a885-93b54d5bc5e9/1",
-      "snippet": "Published: 21.08.2026 01:49:36 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
-      "published_at": "2026-08-20T23:49:36+00:00",
+      "url": "https://umm.nordpoolgroup.com/#/messages/61fcb273-8119-4bf7-a885-93b54d5bc5e9/2",
+      "snippet": "Published: 21.08.2026 06:07:26 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
+      "published_at": "2026-08-21T04:07:26+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 60,
+      "score": 66,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -161,7 +161,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 56,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -178,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 82.4,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.61
       },
       "matched": {
         "geopolitics": [
@@ -202,6 +202,49 @@
       "also_reported_by": []
     },
     {
+      "title": "Japan executes man who killed five in Pachinko parlour fire",
+      "url": "https://www.bbc.co.uk/news/articles/cly8k232mn7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "This is the first time since June 2025 that the country has enacted capital punishment.",
+      "published_at": "2026-08-21T02:49:27+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "japan"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Panama Canal to limit shipping ahead of extreme weather during El Nino",
       "url": "https://www.aljazeera.com/news/2026/8/21/panama-canal-to-limit-shipping-ahead-of-extreme-weather-during-el-nino?traffic_source=rss",
       "snippet": "The El Nino weather phenomenon is expected to increase the likelihood of drought and excess heat across the region.",
@@ -212,7 +255,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 49,
       "tags": [
         "geopolitics",
         "weather"
@@ -229,7 +272,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.8,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -256,7 +299,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 44,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -273,7 +316,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.4,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -300,7 +343,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 38,
       "tags": [
         "power_system"
       ],
@@ -315,7 +358,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.94
       },
       "matched": {
         "power_system": [
@@ -339,7 +382,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -355,7 +398,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -380,7 +423,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "supply_disruption"
       ],
@@ -396,7 +439,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.2,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.71
       },
       "matched": {
         "supply_disruption": [
@@ -420,7 +463,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -437,7 +480,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.9,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.49
       },
       "matched": {
         "geopolitics": [
