@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-21T13:14:27.224886+00:00",
-  "item_count": 28,
+  "generated_at": "2026-08-21T14:01:34.892888+00:00",
+  "item_count": 26,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 8
+    "normal": 9
   },
   "superseded_count": 2,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1281
+        "ms": 1236
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 46653
+        "ms": 96704
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2951
+        "ms": 3793
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 1,
+        "count": 2,
         "error": null,
-        "ms": 431
+        "ms": 594
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 342
+        "ms": 660
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 81
+        "ms": 198
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 40,
+        "count": 41,
         "error": null,
-        "ms": 762
+        "ms": 967
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 142
+        "ms": 253
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 596
+        "ms": 684
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 98
+        "ms": 285
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 492
+        "ms": 681
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 91
+        "ms": 427
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 197
+        "ms": 201
       }
     ]
   },
@@ -162,7 +162,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 55,
+      "score": 53,
       "tags": [
         "supply_disruption"
       ],
@@ -177,7 +177,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.7
       },
       "matched": {
         "supply_disruption": [
@@ -196,6 +196,47 @@
       "first_seen_at": "2026-08-21T07:22:19+00:00"
     },
     {
+      "title": "Russia plans to add 30 GW nuclear capacity, expand exports",
+      "url": "https://www.world-nuclear-news.org/articles/russia-plans-to-add-30-gw-nuclear-capacity-expand-exports",
+      "snippet": "President Vladimir Putin has set out the goals for Russia's nuclear energy sector and said that new capacity, including small modular reactors, in the Urals, Siberia and the country's Far East will help the long-term development of these regions.",
+      "published_at": "2026-08-21T12:09:20+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 52,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 45.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactors"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Various Tankers Shuttle Saudi Oil North to Evade Houthis",
       "url": "https://www.rigzone.com/news/wire/various_tankers_shuttle_saudi_oil_north_to_evade_houthis-21-aug-2026-184428-article/?rss=true",
       "snippet": "Shipowners including Sinokor Group are helping Saudi Arabian crude exit the Red Sea via the safer northern route, as Iran-backed militants target the kingdom's exports via the Bab el Mandeb chokepoint in the south.",
@@ -206,7 +247,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 51,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -223,7 +264,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.2,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -267,7 +308,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "lng": [
@@ -278,6 +319,50 @@
         ],
         "infrastructure": [
           "terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Heerema, AF Gruppen take on 35,000-ton North Sea platform removal and recycling project",
+      "url": "https://www.offshore-energy.biz/heerema-af-gruppen-take-on-35000-ton-north-sea-platform-removal-and-recycling-project/",
+      "snippet": "A consortium - consisting of AF Offshore Decom, part of AF Gruppen, and Heerema Marine Contractors (HMC) - has won a new assignment for offshore platform decommissioning activities on the UK Continental Shelf (UKCS), representing its third contract from the same North Sea operator in the past year. ",
+      "published_at": "2026-08-21T13:19:02+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "nuclear",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 11.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "decommissioning"
+        ],
+        "infrastructure": [
+          "platform"
+        ],
+        "geography": [
+          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -323,6 +408,47 @@
       "also_reported_by": []
     },
     {
+      "title": "Amendments to the RIIO-3 licences and Price Control Financial Models (PCFM)",
+      "url": "https://www.ofgem.gov.uk/consultation/amendments-riio-3-licences-and-price-control-financial-models-pcfm",
+      "snippet": "Consultation on correcting typographical errors, inconsistencies and minor inaccuracies in Gas Distribution, Gas Transmission and Electricity Transmission licences and Price Control Financial Instruments",
+      "published_at": "2026-08-21T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "regulation",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 21.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "consultation",
+          "price control"
+        ],
+        "infrastructure": [
+          "transmission"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "TotalEnergies, CMA CGM get EU OK for LNG bunkering JV",
       "url": "https://lngprime.com/europe/totalenergies-cma-cgm-get-eu-ok-for-lng-bunkering-jv/195584/",
       "snippet": "French energy giant TotalEnergies and compatriot shipping firm CMA CGM have received approval from the European Commission to form a 50/50 logistics joint venture and operate an LNG bunkering supply solution at the Dutch port of Rotterdam.",
@@ -333,7 +459,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "regulation",
         "lng"
@@ -350,7 +476,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.9,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.91
       },
       "matched": {
         "regulation": [
@@ -380,11 +506,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -396,7 +522,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.1,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -420,11 +546,11 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 40,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -435,7 +561,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.62
       },
       "matched": {
         "lng": [
@@ -458,7 +584,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "lng"
       ],
@@ -473,7 +599,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.8,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.92
       },
       "matched": {
         "lng": [
@@ -481,86 +607,6 @@
         ],
         "urgency": [
           "confirmed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "East African Nations Offered 30% Share of Dangote’s Kenya Mega-Refinery",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/East-African-Nations-Offered-30-Share-of-Dangotes-Kenya-Mega-Refinery.html",
-      "snippet": "Nigeria’s Dangote Group has offered a 30% stake in a planned refinery in Kenya to East African nations, a senior economic adviser to Kenya’s President William Ruto said. Dangote Group, the corporation of Africa’s richest man, Aliko Dangote, plans to build a refinery in Kenya with a processing capaci",
-      "published_at": "2026-08-21T11:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 39,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 30.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "nigeria"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Panama Canal to cut number of ships passing through due to El Niño",
-      "url": "https://www.bbc.co.uk/news/articles/cwyl0jkxxryo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The crucial waterway's operator says low rainfall caused by the ocean pattern had led to the decision.",
-      "published_at": "2026-08-21T06:46:08+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.9,
-        "recency_multiplier": 0.71
-      },
-      "matched": {
-        "geopolitics": [
-          "panama canal"
-        ],
-        "geography": [
-          "panama canal"
         ]
       },
       "duplicate_count": 0,
@@ -607,6 +653,86 @@
       "also_reported_by": []
     },
     {
+      "title": "East African Nations Offered 30% Share of Dangote’s Kenya Mega-Refinery",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/East-African-Nations-Offered-30-Share-of-Dangotes-Kenya-Mega-Refinery.html",
+      "snippet": "Nigeria’s Dangote Group has offered a 30% stake in a planned refinery in Kenya to East African nations, a senior economic adviser to Kenya’s President William Ruto said. Dangote Group, the corporation of Africa’s richest man, Aliko Dangote, plans to build a refinery in Kenya with a processing capaci",
+      "published_at": "2026-08-21T11:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 37,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 30.2,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "nigeria"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Panama Canal to cut number of ships passing through due to El Niño",
+      "url": "https://www.bbc.co.uk/news/articles/cwyl0jkxxryo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The crucial waterway's operator says low rainfall caused by the ocean pattern had led to the decision.",
+      "published_at": "2026-08-21T06:46:08+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.9,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "geopolitics": [
+          "panama canal"
+        ],
+        "geography": [
+          "panama canal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Equinor Secures Deal to Supply Crude to ORLEN",
       "url": "https://www.rigzone.com/news/equinor_secures_deal_to_supply_crude_to_orlen-21-aug-2026-184430-article/?rss=true",
       "snippet": "ORLEN signed a three-year agreement to buy five to more than nine million metric tons a year of crude oil from Norway.",
@@ -647,97 +773,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Europe’s Energy Reserves Worked. The Next Test Will Be Harder",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Europes-Energy-Reserves-Worked-The-Next-Test-Will-Be-Harder.html",
-      "snippet": "Europe has discovered something unusual during the latest energy crisis: its emergency system actually works. The closure of the Strait of Hormuz removed or disrupted one of the largest flows of oil and gas in the world. Prices rose, shipping routes changed, insurance costs increased, and concerns e",
-      "published_at": "2026-08-20T20:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 21.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 82.4,
-        "recency_multiplier": 0.31
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "supply_disruption": [
-          "disrupted"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Doosan Enerbility contracted for Natrium components",
-      "url": "https://www.world-nuclear-news.org/articles/doosan-enerbility-contracted-for-natrium-components",
-      "snippet": "Doosan Enerbility of South Korea has signed a contract for the supply of key equipment for TerraPower's first Natrium sodium-cooled fast reactor power plant, in Kemmerer, Wyoming, USA.",
-      "published_at": "2026-08-21T10:35:20+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.1,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "nuclear": [
-          "reactor"
-        ],
-        "geography": [
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
       "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&at_campaign=rss",
       "snippet": "Drivers are waiting hours in fuel queues, as Moscow prepares to celebrate Russian Flag Day.",
@@ -772,42 +807,6 @@
         ],
         "geography": [
           "russian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Dangote Offers East African States 30 Pct Stake in Planned Refinery",
-      "url": "https://www.rigzone.com/news/wire/dangote_offers_east_african_states_30_pct_stake_in_planned_refinery-21-aug-2026-184429-article/?rss=true",
-      "snippet": "Dangote Group has offered East African countries a 30 percent equity stake in the giant refinery planned for the region, according to Kenyan President William Ruto's top economic adviser.",
-      "published_at": "2026-08-21T09:37:20+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 32,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 4.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "oil_macro": [
-          "refinery"
         ]
       },
       "duplicate_count": 0,
@@ -923,7 +922,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "lng": [
@@ -937,85 +936,76 @@
       "also_reported_by": []
     },
     {
-      "title": "Russia says ready for ‘new ideas’ on Ukraine war that match Putin’s goals",
-      "url": "https://www.aljazeera.com/news/2026/8/21/russia-ready-for-new-ideas-on-ukraine-war-that-match-putins-goals?traffic_source=rss",
-      "snippet": "Deputy Foreign Minister Sergey Ryabkov suggests Moscow is eager for the US to revive its support for Russian agenda.",
-      "published_at": "2026-08-21T10:59:37+00:00",
+      "title": "Doosan Enerbility contracted for Natrium components",
+      "url": "https://www.world-nuclear-news.org/articles/doosan-enerbility-contracted-for-natrium-components",
+      "snippet": "Doosan Enerbility of South Korea has signed a contract for the supply of key equipment for TerraPower's first Natrium sodium-cooled fast reactor power plant, in Kemmerer, Wyoming, USA.",
+      "published_at": "2026-08-21T10:35:20+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
       "tier": 2,
       "has_magnitude": false,
       "score": 31,
       "tags": [
-        "geopolitics"
+        "nuclear"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 9.0,
+        "authority": 13.9,
+        "themes": 7.3,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.98
+        "raw": 26.1,
+        "recency_multiplier": 0.9
       },
       "matched": {
-        "geopolitics": [
-          "war"
+        "nuclear": [
+          "reactor"
         ],
         "geography": [
-          "russia",
-          "russian",
-          "ukraine"
+          "korea"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Japan executes man who killed five in Pachinko parlour fire",
-      "url": "https://www.bbc.co.uk/news/articles/cly8k232mn7o?at_medium=RSS&at_campaign=rss",
-      "snippet": "This is the first time since June 2025 that the country has enacted capital punishment.",
-      "published_at": "2026-08-21T02:49:27+00:00",
+      "title": "Dangote Offers East African States 30 Pct Stake in Planned Refinery",
+      "url": "https://www.rigzone.com/news/wire/dangote_offers_east_african_states_30_pct_stake_in_planned_refinery-21-aug-2026-184429-article/?rss=true",
+      "snippet": "Dangote Group has offered East African countries a 30 percent equity stake in the giant refinery planned for the region, according to Kenyan President William Ruto's top economic adviser.",
+      "published_at": "2026-08-21T09:37:20+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
-      "has_magnitude": false,
+      "has_magnitude": true,
       "score": 31,
       "tags": [
-        "supply_disruption"
+        "oil_macro"
       ],
       "alert": "low",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
+        "authority": 10.9,
+        "themes": 4.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 43.6,
-        "recency_multiplier": 0.52
+        "raw": 27.4,
+        "recency_multiplier": 0.83
       },
       "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "geography": [
-          "japan"
-        ],
-        "unplanned": [
-          "fire"
+        "oil_macro": [
+          "refinery"
         ]
       },
       "duplicate_count": 0,
@@ -1098,88 +1088,6 @@
       "also_reported_by": []
     },
     {
-      "title": "China’s Oil Imports Set to Rebound as Refiners Hunt for New Supply",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Oil-Imports-Set-to-Rebound-as-Refiners-Hunt-for-New-Supply.html",
-      "snippet": "Crude oil imports into China are set to rise by about 1.2 million barrels per day in the final quarter of the year from the current one, although they will likely remain lower than pre-war levels, Bloomberg has reported, citing energy consultancies. Oil purchases by Chinese refiners are climbing bac",
-      "published_at": "2026-08-21T08:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.1,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "TPDC seals deal for Tanzanian small-scale LNG plant",
-      "url": "https://lngprime.com/africa/tpdc-seals-deal-for-tanzanian-small-scale-lng-plant/195537/",
-      "snippet": "State-run Tanzania Petroleum Development Corporation, Taqa Arabia's Rosetta Energy Solutions, and Africa50 have signed a gas sales agreement (GSA) for East Africa LNG, the venture developing Tanzania’s first small-scale LNG facility.",
-      "published_at": "2026-08-21T05:45:30+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 20.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.9,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng plant"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Iran Warns Gulf States as U.S. Turns Up Economic Pressure",
       "url": "https://oilprice.com/Energy/Energy-General/Iran-Warns-Gulf-States-as-US-Turns-Up-Economic-Pressure.html",
       "snippet": "Politics, Geopolitics & Conflict Iran has warned Gulf states that any support for U.S. military operations will make them participants in the war, as the UAE cuts economic ties with Tehran. Iran says it’s tracking U.S. aircraft operating from regional bases. Abu Dhabi suspended all trade, commercial",
@@ -1248,7 +1156,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 9,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -1265,7 +1173,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
