@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-21T19:57:06.101900+00:00",
-  "item_count": 22,
+  "generated_at": "2026-08-21T20:27:17.409784+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 4
+    "high": 0,
+    "normal": 6
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 790
+        "ms": 2256
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 32085
+        "ms": 41285
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3451
+        "ms": 4113
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 347
+        "ms": 909
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 344
+        "ms": 784
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 141
+        "ms": 300
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 809
+        "ms": 1316
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 59
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 594
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 509
+        "ms": 647
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 79
+        "ms": 277
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 368
+        "ms": 597
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 144
+        "ms": 143
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 241
+        "ms": 186
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 64,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
@@ -161,7 +161,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 60,
+      "score": 59,
       "tags": [
         "geopolitics",
         "lng",
@@ -179,7 +179,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -197,8 +197,11 @@
           "red sea"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Rigzone"
+      ],
+      "first_seen_at": "2026-08-21T09:18:13+00:00"
     },
     {
       "title": "Iran Warns Gulf States as U.S. Turns Up Economic Pressure",
@@ -211,7 +214,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 51,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -228,7 +231,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 72.7,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.61
       },
       "matched": {
         "geopolitics": [
@@ -252,6 +255,101 @@
       "also_reported_by": []
     },
     {
+      "title": "Low Rivers, High Stakes: Europe's Nuclear Cooling Crisis",
+      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Low-Rivers-High-Stakes-Europes-Nuclear-Cooling-Crisis.html",
+      "snippet": "The extreme heat experienced across Europe in recent weeks has caused widespread disruption to nuclear power plants. Governments across the region have been forced to take extraordinary measures to keep nuclear facilities operating, but some are failing to meet their goals, with river levels at reco",
+      "published_at": "2026-08-21T20:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "weather",
+        "supply_disruption",
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 19.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "extreme heat"
+        ],
+        "supply_disruption": [
+          "disruption"
+        ],
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Nears $100 as Trump’s ‘Economic D-Day’ Raises the Stakes",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Nears-100-as-Trumps-Economic-D-Day-Raises-the-Stakes.html",
+      "snippet": "Hormuz traffic remains near a standstill as Trump’s ‘Economic D-Day’ campaign pushes Brent closer to $100. Friday, August 21, 2026 Transits through the Strait of Hormuz have been in single digits the entire week, with Trump’s announcement of an ‘Economic D-Day’ campaign against Iran increasing geopo",
+      "published_at": "2026-08-21T15:01:15+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 19.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 44.1,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "brent"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-21T14:35:06+00:00"
+    },
+    {
       "title": "Norway Union, Helicopter Group Start Talks to Avert Strike",
       "url": "https://www.rigzone.com/news/norway_union_helicopter_group_start_talks_to_avert_strike-21-aug-2026-184432-article/?rss=true",
       "snippet": "The Styrke union warned of an immediate strike should negotiations with the Federation of Norwegian Aviation Industries do not result in an agreement.",
@@ -262,7 +360,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 42,
       "tags": [
         "geopolitics"
       ],
@@ -278,7 +376,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.9,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -296,51 +394,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Nears $100 as Trump’s ‘Economic D-Day’ Raises the Stakes",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Nears-100-as-Trumps-Economic-D-Day-Raises-the-Stakes.html",
-      "snippet": "Hormuz traffic remains near a standstill as Trump’s ‘Economic D-Day’ campaign pushes Brent closer to $100. Friday, August 21, 2026 Transits through the Strait of Hormuz have been in single digits the entire week, with Trump’s announcement of an ‘Economic D-Day’ campaign against Iran increasing geopo",
-      "published_at": "2026-08-21T15:01:15+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 19.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 44.1,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "brent"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Russian drone attack on busy shopping centre kills 14 in Ukraine",
       "url": "https://www.aljazeera.com/news/2026/8/21/russian-drone-attack-on-busy-shopping-centre-kills-14-in-ukraine?traffic_source=rss",
       "snippet": "Ukraine&#039;s Volodymyr Zelenskyy slams &#039;cynical and despicable&#039; attack on his hometown Kryvyi Rih that injured over 120.",
@@ -351,7 +404,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
@@ -367,7 +420,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -383,45 +436,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Israeli settlers set fire to heavy machinery at West Bank quarry",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-settlers-set-fire-to-heavy-machinery-at-west-bank-quarry?traffic_source=rss",
-      "snippet": "Israeli settlers entered a stone quarry in Wadi Al-Rakheem near Hebron overnight and set fire to heavy machinery",
-      "published_at": "2026-08-21T16:00:02+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "China’s Teapots Look Beyond Iranian Oil amid U.S. Blockade",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Teapots-Look-Beyond-Iranian-Oil-amid-US-Blockade.html",
       "snippet": "China’s refiners have imported lower volumes of Iranian crude in August compared to July as the U.S. blockade reinstated in mid-July is squeezing crude supply to Iran’s top oil customer. So far this month, China is estimated to have imported about 534,000 barrels per day (bpd) of Iranian crude oil, ",
@@ -432,7 +446,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 41,
+      "score": 40,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -449,7 +463,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 40.1,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -477,7 +491,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "weather"
       ],
@@ -493,7 +507,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.6,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.96
       },
       "matched": {
         "weather": [
@@ -518,7 +532,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 40,
+      "score": 39,
       "tags": [
         "oil_macro",
         "supply_disruption"
@@ -535,7 +549,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.8,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.61
       },
       "matched": {
         "oil_macro": [
@@ -547,92 +561,6 @@
         ],
         "geography": [
           "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russia plans to add 30 GW nuclear capacity, expand exports",
-      "url": "https://www.world-nuclear-news.org/articles/russia-plans-to-add-30-gw-nuclear-capacity-expand-exports",
-      "snippet": "President Vladimir Putin has set out the goals for Russia's nuclear energy sector and said that new capacity, including small modular reactors, in the Urals, Siberia and the country's Far East will help the long-term development of these regions.",
-      "published_at": "2026-08-21T12:09:20+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 37,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 45.4,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactors"
-        ],
-        "geography": [
-          "russia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Various Tankers Shuttle Saudi Oil North to Evade Houthis",
-      "url": "https://www.rigzone.com/news/wire/various_tankers_shuttle_saudi_oil_north_to_evade_houthis-21-aug-2026-184428-article/?rss=true",
-      "snippet": "Shipowners including Sinokor Group are helping Saudi Arabian crude exit the Red Sea via the safer northern route, as Iran-backed militants target the kingdom's exports via the Bab el Mandeb chokepoint in the south.",
-      "published_at": "2026-08-21T09:18:13+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 28.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 55.2,
-        "recency_multiplier": 0.51
-      },
-      "matched": {
-        "geopolitics": [
-          "militants",
-          "red sea"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "red sea"
         ]
       },
       "duplicate_count": 0,
@@ -676,6 +604,91 @@
       "also_reported_by": []
     },
     {
+      "title": "Russia plans to add 30 GW nuclear capacity, expand exports",
+      "url": "https://www.world-nuclear-news.org/articles/russia-plans-to-add-30-gw-nuclear-capacity-expand-exports",
+      "snippet": "President Vladimir Putin has set out the goals for Russia's nuclear energy sector and said that new capacity, including small modular reactors, in the Urals, Siberia and the country's Far East will help the long-term development of these regions.",
+      "published_at": "2026-08-21T12:09:20+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 36,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 45.4,
+        "recency_multiplier": 0.62
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactors"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Heerema, AF Gruppen take on 35,000-ton North Sea platform removal and recycling project",
+      "url": "https://www.offshore-energy.biz/heerema-af-gruppen-take-on-35000-ton-north-sea-platform-removal-and-recycling-project/",
+      "snippet": "A consortium - consisting of AF Offshore Decom, part of AF Gruppen, and Heerema Marine Contractors (HMC) - has won a new assignment for offshore platform decommissioning activities on the UK Continental Shelf (UKCS), representing its third contract from the same North Sea operator in the past year. ",
+      "published_at": "2026-08-21T13:19:02+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "nuclear",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 11.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.7,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "nuclear": [
+          "decommissioning"
+        ],
+        "infrastructure": [
+          "platform"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Five missing after fire in Swiss Alpine town",
       "url": "https://www.bbc.co.uk/news/articles/cy8e6g13497o?at_medium=RSS&at_campaign=rss",
       "snippet": "Eight others were injured, local police say, with the cause of the fire still being investigated.",
@@ -686,7 +699,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "supply_disruption"
       ],
@@ -701,7 +714,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.67
       },
       "matched": {
         "supply_disruption": [
@@ -725,7 +738,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "lng",
         "infrastructure"
@@ -741,7 +754,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.6
       },
       "matched": {
         "lng": [
@@ -752,6 +765,47 @@
         ],
         "infrastructure": [
           "terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Rises as US Targets Iran's Economy",
+      "url": "https://www.rigzone.com/news/wire/oil_rises_as_us_targets_irans_economy-21-aug-2026-184437-article/?rss=true",
+      "snippet": "Crude extended its rally as Asian demand strengthened while the Iran conflict continued to constrain global supplies.",
+      "published_at": "2026-08-21T19:44:25+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 14.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict"
+        ],
+        "oil_macro": [
+          "crude",
+          "demand"
         ]
       },
       "duplicate_count": 0,
@@ -800,86 +854,6 @@
       "thread_started_at": "2026-08-21T15:00:00+00:00"
     },
     {
-      "title": "Blue Ghost to carry nuclear power source to the Moon",
-      "url": "https://www.world-nuclear-news.org/articles/blue-ghost-to-carry-nuclear-power-source-to-the-moon",
-      "snippet": "Firefly Aerospace and Zeno Power Systems have announced a commercial payload agreement that will see a radioisotope heating unit developed to withstand the frigid conditions of the lunar night taken on one of Firefly Aerospace's Blue Ghost missions to the moon, potentially as soon as 2028.",
-      "published_at": "2026-08-21T12:11:34+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.1,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Amendments to the RIIO-3 licences and Price Control Financial Models (PCFM)",
-      "url": "https://www.ofgem.gov.uk/consultation/amendments-riio-3-licences-and-price-control-financial-models-pcfm",
-      "snippet": "Consultation on correcting typographical errors, inconsistencies and minor inaccuracies in Gas Distribution, Gas Transmission and Electricity Transmission licences and Price Control Financial Instruments",
-      "published_at": "2026-08-21T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "regulation",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 21.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.7,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "regulation": [
-          "consultation",
-          "price control"
-        ],
-        "infrastructure": [
-          "transmission"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Iraq Wants to Double Oil Output—and Needs OPEC to Get Out of the Way",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Wants-to-Double-Oil-Outputand-Needs-OPEC-to-Get-Out-of-the-Way.html",
       "snippet": "Iraq wants to more than double its oil production within six years. First, it needs OPEC to let it. Baghdad is targeting output of between 8 million and 10 million barrels per day, up from roughly 4 million bpd before the Iran war, Prime Minister Ali al-Zaidi said Friday. Iraq dispatched its oil and",
@@ -921,95 +895,174 @@
       "also_reported_by": []
     },
     {
-      "title": "India Boosts Battery Investment to Cut Solar Power Waste",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Boosts-Battery-Investment-to-Cut-Solar-Power-Waste.html",
-      "snippet": "Solar power developers in India have started to add battery storage to photovoltaic projects to attract buyers and reduce the large share of curtailments for power supply that the grids are unable to absorb, Santosh Sarangi, Secretary of India’s Ministry of New and Renewable Energy, said on Friday. ",
-      "published_at": "2026-08-21T17:00:00+00:00",
+      "title": "Blue Ghost to carry nuclear power source to the Moon",
+      "url": "https://www.world-nuclear-news.org/articles/blue-ghost-to-carry-nuclear-power-source-to-the-moon",
+      "snippet": "Firefly Aerospace and Zeno Power Systems have announced a commercial payload agreement that will see a radioisotope heating unit developed to withstand the frigid conditions of the lunar night taken on one of Firefly Aerospace's Blue Ghost missions to the moon, potentially as soon as 2028.",
+      "published_at": "2026-08-21T12:11:34+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 31,
       "tags": [
-        "gas_storage",
-        "power_system"
+        "nuclear"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 10.1,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 13.9,
+        "themes": 7.3,
+        "geography": 0.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 23.8,
-        "recency_multiplier": 0.93
+        "raw": 37.1,
+        "recency_multiplier": 0.62
       },
       "matched": {
-        "gas_storage": [
-          "storage"
+        "nuclear": [
+          "nuclear"
         ],
-        "power_system": [
-          "battery"
-        ],
-        "geography": [
-          "india"
+        "urgency": [
+          "announced"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "TotalEnergies, CMA CGM get EU OK for LNG bunkering JV",
-      "url": "https://lngprime.com/europe/totalenergies-cma-cgm-get-eu-ok-for-lng-bunkering-jv/195584/",
-      "snippet": "French energy giant TotalEnergies and compatriot shipping firm CMA CGM have received approval from the European Commission to form a 50/50 logistics joint venture and operate an LNG bunkering supply solution at the Dutch port of Rotterdam.",
-      "published_at": "2026-08-21T10:46:24+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "title": "Amendments to the RIIO-3 licences and Price Control Financial Models (PCFM)",
+      "url": "https://www.ofgem.gov.uk/consultation/amendments-riio-3-licences-and-price-control-financial-models-pcfm",
+      "snippet": "Consultation on correcting typographical errors, inconsistencies and minor inaccuracies in Gas Distribution, Gas Transmission and Electricity Transmission licences and Price Control Financial Instruments",
+      "published_at": "2026-08-21T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 31,
       "tags": [
         "regulation",
-        "lng"
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 15.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "authority": 16.1,
+        "themes": 21.6,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 38.9,
-        "recency_multiplier": 0.58
+        "raw": 37.7,
+        "recency_multiplier": 0.61
       },
       "matched": {
         "regulation": [
-          "european commission"
+          "consultation",
+          "price control"
         ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "european",
-          "eu",
-          "dutch",
-          "french"
+        "infrastructure": [
+          "transmission"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Bolivia’s President Rodrigo Paz fires economy minister amid unrest",
+      "url": "https://www.aljazeera.com/news/2026/8/21/bolivias-president-rodrigo-paz-nixes-economy-minister-amid-unrest?traffic_source=rss",
+      "snippet": "Jose Gabriel Espinoza removed from post days after he was censured by the legislature amid tumult over economic reform.",
+      "published_at": "2026-08-21T20:07:40+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 12.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "unrest"
+        ],
+        "regulation": [
+          "reform"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "$10.4B oil project nears offshore installation as key equipment reaches Mexico",
+      "url": "https://www.offshore-energy.biz/10-4b-oil-project-nears-offshore-installation-as-key-equipment-reaches-mexico/",
+      "snippet": "Netherlands-based SBM Offshore, a provider of the design, construction, installation, and operation of offshore floating facilities, has confirmed the arrival of offshore equipment in Altamira, moving a multibillion-dollar ultra-deepwater oil development project closer to its installation campaign o",
+      "published_at": "2026-08-21T14:35:06+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 12,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 4.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.9,
+        "recency_multiplier": 0.74
+      },
+      "matched": {
+        "oil_macro": [
+          "dollar"
+        ],
+        "geography": [
+          "netherlands"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Nears-100-as-Trumps-Economic-D-Day-Raises-the-Stakes.html",
+        "title": "Oil Nears $100 as Trump’s ‘Economic D-Day’ Raises the Stakes",
+        "published_at": "2026-08-21T15:01:15+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Ukrainian Drone Attack Hits Lukoil Refinery Deep in Russia",
@@ -1022,7 +1075,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 10,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -1039,7 +1092,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.4,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
