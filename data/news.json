@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-21T10:18:38.938502+00:00",
-  "item_count": 15,
+  "generated_at": "2026-08-21T10:53:24.806027+00:00",
+  "item_count": 18,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 6
+    "normal": 8
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1296
+        "ms": 1368
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 85914
+        "ms": 56627
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 21979
+        "ms": 19291
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 345
+        "ms": 603
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 227
+        "ms": 233
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 167
+        "ms": 156
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 39,
         "error": null,
-        "ms": 1225
+        "ms": 1410
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 582
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 39
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 697
+        "ms": 777
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 282
+        "ms": 330
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 513
+        "ms": 554
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 96
+        "ms": 49
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 157
+        "ms": 116
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 63,
+      "score": 61,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.89
       },
       "matched": {
         "supply_disruption": [
@@ -206,7 +206,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 49,
+      "score": 48,
       "tags": [
         "lng"
       ],
@@ -221,13 +221,100 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.79
       },
       "matched": {
         "lng": [
           "lng",
           "cargoes",
           "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "TotalEnergies, CMA CGM get EU OK for LNG bunkering JV",
+      "url": "https://lngprime.com/europe/totalenergies-cma-cgm-get-eu-ok-for-lng-bunkering-jv/195584/",
+      "snippet": "French energy giant TotalEnergies and compatriot shipping firm CMA CGM have received approval from the European Commission to form a 50/50 logistics joint venture and operate an LNG bunkering supply solution at the Dutch port of Rotterdam.",
+      "published_at": "2026-08-21T10:46:24+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "regulation",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 15.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "european commission"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "european",
+          "eu",
+          "dutch",
+          "french"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Nord Stream bombing suspect to Hollywood fixer: Who is Volodymyr Zhuravlev?",
+      "url": "https://www.aljazeera.com/news/2026/8/21/nord-stream-bombing-suspect-to-hollywood-fixer-who-is-volodymyr-zhuravlev?traffic_source=rss",
+      "snippet": "German authorities allege that Ukrainian scuba diver Volodymyr Zhuravlev was involved in the Nord Stream explosions.",
+      "published_at": "2026-08-21T10:10:52+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "nord stream"
+        ],
+        "geography": [
+          "german"
         ]
       },
       "duplicate_count": 0,
@@ -244,7 +331,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 44,
       "tags": [
         "geopolitics"
       ],
@@ -260,7 +347,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.9,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -286,7 +373,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "supply_disruption"
       ],
@@ -301,7 +388,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.93
       },
       "matched": {
         "supply_disruption": [
@@ -325,7 +412,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 42,
       "tags": [
         "supply_disruption"
       ],
@@ -340,7 +427,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.87
       },
       "matched": {
         "supply_disruption": [
@@ -364,7 +451,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -381,7 +468,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 82.4,
-        "recency_multiplier": 0.39
+        "recency_multiplier": 0.37
       },
       "matched": {
         "geopolitics": [
@@ -415,7 +502,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -432,7 +519,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -452,6 +539,42 @@
       "also_reported_by": []
     },
     {
+      "title": "Dangote Offers East African States 30 Pct Stake in Planned Refinery",
+      "url": "https://www.rigzone.com/news/wire/dangote_offers_east_african_states_30_pct_stake_in_planned_refinery-21-aug-2026-184429-article/?rss=true",
+      "snippet": "Dangote Group has offered East African countries a 30 percent equity stake in the giant refinery planned for the region, according to Kenyan President William Ruto's top economic adviser.",
+      "published_at": "2026-08-21T09:37:20+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 36,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 4.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "refinery"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Japan executes man who killed five in Pachinko parlour fire",
       "url": "https://www.bbc.co.uk/news/articles/cly8k232mn7o?at_medium=RSS&at_campaign=rss",
       "snippet": "This is the first time since June 2025 that the country has enacted capital punishment.",
@@ -462,7 +585,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 36,
       "tags": [
         "supply_disruption"
       ],
@@ -478,7 +601,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.63
       },
       "matched": {
         "supply_disruption": [
@@ -505,7 +628,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -522,7 +645,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.1,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -550,7 +673,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "lng"
       ],
@@ -565,7 +688,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.9,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.79
       },
       "matched": {
         "lng": [
@@ -580,7 +703,7 @@
       "title": "Atlantic spot LNG rates dip to $20,000 per day",
       "url": "https://lngprime.com/asia/atlantic-spot-lng-rates-dip-to-20000-per-day/195546/",
       "snippet": "Atlantic spot LNG shipping rates continued to decrease this week, dropping to $20,000 per day, according to Spark Commodities.",
-      "published_at": "2026-08-21T08:51:17+00:00",
+      "published_at": "2026-08-21T10:49:17+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
@@ -611,50 +734,6 @@
         ],
         "oil_macro": [
           "rates"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Houthis Move to Gain Complete Control Over Crucial Bab el-Mandeb Oil Chokepoint",
-      "url": "https://oilprice.com/Geopolitics/Middle-East/Houthis-Move-to-Gain-Complete-Control-Over-Crucial-Bab-el-Mandeb-Oil-Chokepoint.html",
-      "snippet": "The Yemeni Houthis are planning to seize land along the Yemeni coast in the Bab el-Mandeb Strait, tightening their control of the chokepoint. The information comes from the minister of information in the government that the Houthis are fighting in Yemen and suggests further disruption to marine traf",
-      "published_at": "2026-08-20T23:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 21.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.4,
-        "recency_multiplier": 0.49
-      },
-      "matched": {
-        "geopolitics": [
-          "bab el-mandeb"
-        ],
-        "supply_disruption": [
-          "disruption"
-        ],
-        "geography": [
-          "bab el-mandeb"
         ]
       },
       "duplicate_count": 0,
@@ -697,6 +776,50 @@
       "also_reported_by": []
     },
     {
+      "title": "Houthis Move to Gain Complete Control Over Crucial Bab el-Mandeb Oil Chokepoint",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/Houthis-Move-to-Gain-Complete-Control-Over-Crucial-Bab-el-Mandeb-Oil-Chokepoint.html",
+      "snippet": "The Yemeni Houthis are planning to seize land along the Yemeni coast in the Bab el-Mandeb Strait, tightening their control of the chokepoint. The information comes from the minister of information in the government that the Houthis are fighting in Yemen and suggests further disruption to marine traf",
+      "published_at": "2026-08-20T23:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 46.4,
+        "recency_multiplier": 0.47
+      },
+      "matched": {
+        "geopolitics": [
+          "bab el-mandeb"
+        ],
+        "supply_disruption": [
+          "disruption"
+        ],
+        "geography": [
+          "bab el-mandeb"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Panama Canal to limit shipping ahead of extreme weather during El Nino",
       "url": "https://www.aljazeera.com/news/2026/8/21/panama-canal-to-limit-shipping-ahead-of-extreme-weather-during-el-nino?traffic_source=rss",
       "snippet": "The El Nino weather phenomenon is expected to increase the likelihood of drought and excess heat across the region.",
@@ -724,7 +847,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.8,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
