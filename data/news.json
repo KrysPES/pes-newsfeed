@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-22T08:26:36.846245+00:00",
-  "item_count": 10,
+  "generated_at": "2026-08-22T08:57:41.924801+00:00",
+  "item_count": 9,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 5
+    "high": 1,
+    "normal": 4
   },
   "superseded_count": 0,
   "sources": {
@@ -17,136 +17,138 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1581
+        "ms": 1243
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 68488
+        "ms": 51150
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5150
+        "ms": 2893
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 461
+        "ms": 394
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 620
+        "ms": 356
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 170
+        "ms": 173
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1264
+        "ms": 838
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 264
+        "ms": 145
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 631
+        "ms": 527
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 263
+        "ms": 137
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 647
+        "ms": 461
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 125
+        "ms": 541
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 104
+        "ms": 213
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, FLEVO 4",
-      "url": "https://umm.nordpoolgroup.com/#/messages/5127069b-d842-452a-bac4-88cfc25241d0/2",
-      "snippet": "Published: 22.08.2026 07:50:25 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-22T05:50:25+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Tynagh Energy Limited",
+      "url": "https://umm.nordpoolgroup.com/#/messages/a7c17742-a66e-4895-8b95-48c26a1d4492/1",
+      "snippet": "Published: 22.08.2026 10:42:04 Publisher: Tynagh Energy Limited Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: HRSG Tube leak Remarks: Suspecting a Heat Recovery Steam Generator (HRSG) tube leak. Production Units Unit Name Unit EIC Area Installed",
+      "published_at": "2026-08-22T08:42:04+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 64,
+      "score": 70,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 16.8,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.95
+        "raw": 74.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "unplanned",
+          "leak"
         ],
         "unplanned": [
           "unplanned",
-          "failure"
+          "failure",
+          "leak"
         ],
         "urgency": [
           "unplanned"
         ]
       },
-      "duplicate_count": 3,
+      "duplicate_count": 4,
       "also_reported_by": [],
       "first_seen_at": "2026-08-21T18:01:37+00:00"
     },
@@ -161,7 +163,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 57,
+      "score": 55,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -179,7 +181,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 59.3,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -212,7 +214,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 50,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -228,7 +230,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 53.1,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -408,7 +410,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -424,7 +426,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.4,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.5
       },
       "matched": {
         "geopolitics": [
@@ -466,7 +468,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -475,56 +477,6 @@
         "geography": [
           "russian",
           "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudi Oil Exports from Mediterranean Soar with Shuttles North to Avoid Houthis",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Oil-Exports-from-Mediterranean-Soar-with-Shuttles-North-to-Avoid-Houthis.html",
-      "snippet": "Saudi Arabia has boosted its crude oil exports from Egypt’s Mediterranean port of Sidi Kerir by about 33% in the month since the Houthis threatened Saudi oil shipments in the southern Red Sea and the Bab el-Mandeb Strait, tanker-tracking data compiled by Bloomberg showed on Friday. Saudi state oil g",
-      "published_at": "2026-08-21T14:28:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 37.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 74.7,
-        "recency_multiplier": 0.29
-      },
-      "matched": {
-        "geopolitics": [
-          "bab el-mandeb",
-          "red sea"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "bab el-mandeb",
-          "red sea"
         ]
       },
       "duplicate_count": 0,
