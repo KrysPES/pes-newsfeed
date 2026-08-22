@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-22T17:58:46.203220+00:00",
-  "item_count": 9,
+  "generated_at": "2026-08-22T18:37:45.922480+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 5
+    "high": 1,
+    "normal": 4
   },
   "superseded_count": 0,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1357
+        "ms": 1448
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 37371
+        "ms": 49128
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5749
+        "ms": 2961
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 342
+        "ms": 720
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 561
+        "ms": 732
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 210
+        "ms": 230
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1119
+        "ms": 1178
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 290
+        "ms": 250
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 652
+        "ms": 843
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 291
+        "ms": 357
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 638
+        "ms": 650
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 87
+        "ms": 108
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 143
+        "ms": 131
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, DK1, Solar Park Holsted",
+      "url": "https://umm.nordpoolgroup.com/#/messages/5c67a59a-d963-40e6-a011-02b3fe6cce4a/1",
+      "snippet": "Published: 22.08.2026 20:24:50 Publisher: Holsted Solar Park ApS Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unforeseen event Remarks: Unforeseen event Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable ",
+      "published_at": "2026-08-22T18:24:50+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-22T10:18:30+00:00"
+    },
     {
       "title": "Fans and police injured in pitch invasion during ‘high risk’ German Cup tie",
       "url": "https://www.aljazeera.com/sports/2026/8/22/fans-and-police-injured-in-pitch-invasion-during-high-risk-german-cup-tie?traffic_source=rss",
@@ -117,7 +161,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 61,
+      "score": 59,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -134,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 69.5,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -157,50 +201,43 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Tynagh Energy Limited",
-      "url": "https://umm.nordpoolgroup.com/#/messages/a7c17742-a66e-4895-8b95-48c26a1d4492/2",
-      "snippet": "Published: 22.08.2026 13:52:08 Publisher: Tynagh Energy Limited Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: HRSG Tube leak Remarks: Heat Recovery Steam Generator (HRSG) tube leak on IP economizer. Production Units Unit Name Unit EIC Area Insta",
-      "published_at": "2026-08-22T11:52:08+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
+      "title": "Armed men kidnap dozens in attacks on Nigerian villages",
+      "url": "https://www.aljazeera.com/news/2026/8/22/armed-men-kidnap-dozens-in-attacks-on-nigerian-villages?traffic_source=rss",
+      "snippet": "Police say three villages and a mosque were attacked, and worshippers kidnapped in central Niger State.",
+      "published_at": "2026-08-22T17:58:15+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 46,
       "tags": [
-        "supply_disruption"
+        "geopolitics"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 21.9,
-        "themes": 16.8,
+        "authority": 9.5,
+        "themes": 9.0,
         "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 74.7,
-        "recency_multiplier": 0.73
+        "raw": 38.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "leak"
+        "geopolitics": [
+          "attacked"
         ],
         "unplanned": [
-          "unplanned",
-          "failure",
-          "leak"
-        ],
-        "urgency": [
-          "unplanned"
+          "attacked"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-22T10:18:30+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Over 100 ex-diplomats urge France, UK to sanction Israel over Palestine",
@@ -213,7 +250,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 45,
       "tags": [
         "regulation",
         "weather"
@@ -230,7 +267,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.6,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.92
       },
       "matched": {
         "regulation": [
@@ -301,11 +338,11 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 40,
       "tags": [
         "nuclear"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 10.2,
@@ -316,7 +353,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.5,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.85
       },
       "matched": {
         "nuclear": [
@@ -333,7 +370,7 @@
       "title": "Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse",
       "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
       "snippet": "Canada's prime minister said he was \"reluctantly\" announcing retaliatory tariffs as he accused the US of starting a trade war.",
-      "published_at": "2026-08-22T16:45:02+00:00",
+      "published_at": "2026-08-22T18:20:36+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -377,7 +414,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "infrastructure"
       ],
@@ -393,7 +430,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.2,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.88
       },
       "matched": {
         "infrastructure": [
@@ -418,7 +455,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
@@ -433,7 +470,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -455,7 +492,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
@@ -471,7 +508,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.71
       },
       "matched": {
         "geopolitics": [
