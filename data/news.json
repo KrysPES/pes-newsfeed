@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-22T00:02:29.948228+00:00",
+  "generated_at": "2026-08-22T01:44:21.597183+00:00",
   "item_count": 9,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 2
+    "high": 0,
+    "normal": 4
   },
   "superseded_count": 1,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1416
+        "ms": 1004
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 81200
+        "ms": 23486
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18761
+        "ms": 2992
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 2,
+        "count": 0,
         "error": null,
-        "ms": 672
+        "ms": 376
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 216
+        "ms": 618
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 265
+        "ms": 98
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1479
+        "ms": 685
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 254
+        "ms": 307
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 805
+        "ms": 581
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 350
+        "ms": 138
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 755
+        "ms": 387
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 25,
+        "count": 27,
         "error": null,
-        "ms": 317
+        "ms": 69
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 179
+        "ms": 238
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 65,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -161,7 +161,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 51,
       "tags": [
         "geopolitics"
       ],
@@ -177,7 +177,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -193,6 +193,53 @@
       "also_reported_by": []
     },
     {
+      "title": "Iran war live: Trump says he views Strait of Hormuz as ‘American territory’",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/22/iran-war-live-trump-says-tehran-not-ready-to-make-right-deal-to-end-war?traffic_source=rss",
+      "snippet": "US president says Iran &#039;would love to make a deal, but they’re not ready to make the right deal in my opinion&#039;.",
+      "published_at": "2026-08-22T00:00:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 39.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "opinion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-21T15:01:15+00:00"
+    },
+    {
       "title": "Saudi Oil Exports from Mediterranean Soar with Shuttles North to Avoid Houthis",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Oil-Exports-from-Mediterranean-Soar-with-Shuttles-North-to-Avoid-Houthis.html",
       "snippet": "Saudi Arabia has boosted its crude oil exports from Egypt’s Mediterranean port of Sidi Kerir by about 33% in the month since the Houthis threatened Saudi oil shipments in the southern Red Sea and the Bab el-Mandeb Strait, tanker-tracking data compiled by Bloomberg showed on Friday. Saudi state oil g",
@@ -203,7 +250,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 49,
+      "score": 45,
       "tags": [
         "geopolitics",
         "lng",
@@ -221,7 +268,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.49
       },
       "matched": {
         "geopolitics": [
@@ -243,6 +290,48 @@
       "also_reported_by": []
     },
     {
+      "title": "Several killed in Russia’s ‘double-tap’ drone strike on Ukraine mall",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/several-killed-in-russias-double-tap-drone-strike-on-ukraine-mall?traffic_source=rss",
+      "snippet": "Ukraine’s president accuses Russia of a ‘cowardly and deliberate’ attack on a mall in his hometown of Kryvyi Rih.",
+      "published_at": "2026-08-22T00:06:48+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "attack"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Low Rivers, High Stakes: Europe's Nuclear Cooling Crisis",
       "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Low-Rivers-High-Stakes-Europes-Nuclear-Cooling-Crisis.html",
       "snippet": "The extreme heat experienced across Europe in recent weeks has caused widespread disruption to nuclear power plants. Governments across the region have been forced to take extraordinary measures to keep nuclear facilities operating, but some are failing to meet their goals, with river levels at reco",
@@ -253,7 +342,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 37,
       "tags": [
         "weather",
         "supply_disruption",
@@ -271,7 +360,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.8,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.75
       },
       "matched": {
         "weather": [
@@ -291,51 +380,41 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Nears $100 as Trump’s ‘Economic D-Day’ Raises the Stakes",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Nears-100-as-Trumps-Economic-D-Day-Raises-the-Stakes.html",
-      "snippet": "Hormuz traffic remains near a standstill as Trump’s ‘Economic D-Day’ campaign pushes Brent closer to $100. Friday, August 21, 2026 Transits through the Strait of Hormuz have been in single digits the entire week, with Trump’s announcement of an ‘Economic D-Day’ campaign against Iran increasing geopo",
-      "published_at": "2026-08-21T15:01:15+00:00",
+      "title": "Iranian president says time to end war with US from ‘position of strength’",
+      "url": "https://www.aljazeera.com/news/2026/8/22/iranian-president-says-time-to-end-war-with-us-from-position-of?traffic_source=rss",
+      "snippet": "Omani and Iranian foreign ministers hold a call as Washington prepares economic sanctions.",
+      "published_at": "2026-08-22T00:59:37+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 36,
       "tags": [
-        "geopolitics",
-        "oil_macro"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 19.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 44.1,
-        "recency_multiplier": 0.58
+        "raw": 27.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "brent"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "sanctions",
+          "war"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-21T14:35:06+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Norway Union, Helicopter Group Start Talks to Avert Strike",
@@ -348,7 +427,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
@@ -364,7 +443,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.9,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.49
       },
       "matched": {
         "geopolitics": [
@@ -382,17 +461,17 @@
       "also_reported_by": []
     },
     {
-      "title": "China’s Teapots Look Beyond Iranian Oil amid U.S. Blockade",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Teapots-Look-Beyond-Iranian-Oil-amid-US-Blockade.html",
-      "snippet": "China’s refiners have imported lower volumes of Iranian crude in August compared to July as the U.S. blockade reinstated in mid-July is squeezing crude supply to Iran’s top oil customer. So far this month, China is estimated to have imported about 534,000 barrels per day (bpd) of Iranian crude oil, ",
-      "published_at": "2026-08-21T15:30:00+00:00",
+      "title": "Oil Nears $100 as Trump’s ‘Economic D-Day’ Raises the Stakes",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Nears-100-as-Trumps-Economic-D-Day-Raises-the-Stakes.html",
+      "snippet": "Hormuz traffic remains near a standstill as Trump’s ‘Economic D-Day’ campaign pushes Brent closer to $100. Friday, August 21, 2026 Transits through the Strait of Hormuz have been in single digits the entire week, with Trump’s announcement of an ‘Economic D-Day’ campaign against Iran increasing geopo",
+      "published_at": "2026-08-21T15:01:15+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 32,
+      "has_magnitude": false,
+      "score": 9,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -401,115 +480,35 @@
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 14.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 40.1,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US, Canada negotiators race to ink a deal as Trump’s tariff deadline looms",
-      "url": "https://www.aljazeera.com/economy/2026/8/21/us-canada-negotiators-race-to-ink-a-deal-as-trumps-tariff-deadline-looms?traffic_source=rss",
-      "snippet": "Experts say even a last-minute breakthrough will not result in the US lifting all its tariffs on Canadian goods.",
-      "published_at": "2026-08-21T19:20:17+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
+        "themes": 19.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.81
+        "raw": 44.1,
+        "recency_multiplier": 0.51
       },
       "matched": {
         "geopolitics": [
-          "tariff",
-          "tariffs"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "$10.4B oil project nears offshore installation as key equipment reaches Mexico",
-      "url": "https://www.offshore-energy.biz/10-4b-oil-project-nears-offshore-installation-as-key-equipment-reaches-mexico/",
-      "snippet": "Netherlands-based SBM Offshore, a provider of the design, construction, installation, and operation of offshore floating facilities, has confirmed the arrival of offshore equipment in Altamira, moving a multibillion-dollar ultra-deepwater oil development project closer to its installation campaign o",
-      "published_at": "2026-08-21T14:35:06+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 4.5,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.9,
-        "recency_multiplier": 0.56
-      },
-      "matched": {
+          "strait of hormuz"
+        ],
         "oil_macro": [
-          "dollar"
+          "brent"
         ],
         "geography": [
-          "netherlands"
-        ],
-        "urgency": [
-          "confirmed"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Nears-100-as-Trumps-Economic-D-Day-Raises-the-Stakes.html",
-        "title": "Oil Nears $100 as Trump’s ‘Economic D-Day’ Raises the Stakes",
-        "published_at": "2026-08-21T15:01:15+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/8/22/iran-war-live-trump-says-tehran-not-ready-to-make-right-deal-to-end-war?traffic_source=rss",
+        "title": "Iran war live: Trump says he views Strait of Hormuz as ‘American territory’",
+        "published_at": "2026-08-22T00:00:00+00:00"
       },
       "hidden": true
     }
