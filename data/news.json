@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T20:55:44.308800+00:00",
-  "item_count": 8,
+  "generated_at": "2026-08-22T21:19:23.840146+00:00",
+  "item_count": 7,
   "alert_counts": {
     "critical": 0,
     "high": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1429
+        "ms": 1384
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 39236
+        "ms": 46231
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3834
+        "ms": 23315
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 577
+        "ms": 363
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 770
+        "ms": 632
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 223
+        "ms": 153
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1313
+        "ms": 1191
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 213
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 48
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 713
+        "ms": 698
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 360
+        "ms": 333
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 681
+        "ms": 637
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 246
+        "ms": 47
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 121
+        "ms": 59
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 64,
+      "score": 63,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.93
       },
       "matched": {
         "supply_disruption": [
@@ -161,7 +161,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -176,7 +176,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.5,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -200,7 +200,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -217,7 +217,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -234,50 +234,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Over 100 ex-diplomats urge France, UK to sanction Israel over Palestine",
-      "url": "https://www.aljazeera.com/news/2026/8/22/over-100-ex-diplomats-urge-france-uk-to-sanction-israel-over-palestine?traffic_source=rss",
-      "snippet": "An open letter demands a ban on arms transfers and a freeze on EU-Israel and UK-Israel trade agreements.",
-      "published_at": "2026-08-22T15:30:49+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
-      "tags": [
-        "regulation",
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 15.1,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 40.6,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "regulation": [
-          "ban on"
-        ],
-        "weather": [
-          "freeze"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Carney: Canada will enact retaliatory US tariffs starting September 8",
       "url": "https://www.aljazeera.com/news/2026/8/22/carney-canada-will-enact-retaliatory-us-tariffs-starting-september-8?traffic_source=rss",
       "snippet": "The prime minister spoke hours after the US imposed 50 percent tariffs on nearly $20bn worth of Canadian goods.",
@@ -288,7 +244,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 38,
       "tags": [
         "geopolitics"
       ],
@@ -303,7 +259,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -398,7 +354,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "nuclear"
       ],
@@ -413,7 +369,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.5,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.69
       },
       "matched": {
         "nuclear": [
