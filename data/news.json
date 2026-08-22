@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-22T21:41:35.048739+00:00",
+  "generated_at": "2026-08-22T21:58:15.668237+00:00",
   "item_count": 7,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 2
+    "normal": 1
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1238
+        "ms": 1469
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 32821
+        "ms": 22368
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3389
+        "ms": 4072
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 700
+        "ms": 345
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 425
+        "ms": 211
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 203
+        "ms": 158
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 955
+        "ms": 1401
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 97
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 238
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 744
+        "ms": 780
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 284
+        "ms": 351
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 687
+        "ms": 516
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 377
+        "ms": 65
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 162
+        "ms": 179
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 62,
+      "score": 61,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.89
       },
       "matched": {
         "supply_disruption": [
@@ -161,11 +161,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -176,7 +176,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.5,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -184,50 +184,6 @@
         ],
         "unplanned": [
           "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Every Chokepoint That Isn't Hormuz",
-      "url": "https://oilprice.com/Energy/Energy-General/Every-Chokepoint-That-Isnt-Hormuz.html",
-      "snippet": "For six months the entire conversation about oil logistics has been about one strait, and you can hardly blame anyone for that. Hormuz has been effectively closed since late February, when the war between Iran and the U.S. and Israel started, and the EIA reckons only 4.9 million barrels a day of cru",
-      "published_at": "2026-08-22T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "oil_macro": [
-          "barrels"
-        ],
-        "geography": [
-          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -259,11 +215,55 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.5,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
           "tariffs"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Every Chokepoint That Isn't Hormuz",
+      "url": "https://oilprice.com/Energy/Energy-General/Every-Chokepoint-That-Isnt-Hormuz.html",
+      "snippet": "For six months the entire conversation about oil logistics has been about one strait, and you can hardly blame anyone for that. Hormuz has been effectively closed since late February, when the war between Iran and the U.S. and Israel started, and the EIA reckons only 4.9 million barrels a day of cru",
+      "published_at": "2026-08-22T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 0.8
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -332,7 +332,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -354,7 +354,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "nuclear"
       ],
@@ -369,7 +369,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.5,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.66
       },
       "matched": {
         "nuclear": [
