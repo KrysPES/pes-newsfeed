@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-22T07:27:56.301858+00:00",
+  "generated_at": "2026-08-22T07:55:45.794905+00:00",
   "item_count": 8,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 2
+    "high": 0,
+    "normal": 3
   },
   "superseded_count": 0,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1129
+        "ms": 1891
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 48158
+        "ms": 28427
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18260
+        "ms": 3329
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 551
+        "ms": 482
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 618
+        "ms": 103
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 78
+        "ms": 147
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 790
+        "ms": 1473
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 150
+        "ms": 507
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 532
+        "ms": 836
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 166
+        "ms": 342
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 421
+        "ms": 741
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 50
+        "ms": 49
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 148
+        "ms": 105
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 65,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -161,7 +161,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 60,
+      "score": 58,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -179,7 +179,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 59.3,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -212,7 +212,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 54,
+      "score": 52,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -228,7 +228,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 53.1,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -245,6 +245,42 @@
       "also_reported_by": []
     },
     {
+      "title": "Somalia child hunger crisis deepens after aid cuts, UNICEF says",
+      "url": "https://www.aljazeera.com/news/2026/8/22/somalia-child-hunger-crisis-deepens-after-aid-cuts-unicef-says?traffic_source=rss",
+      "snippet": "The drought-stricken country has recorded a 32 percent jump in the number of children treated for severe malnutrition.",
+      "published_at": "2026-08-22T07:11:27+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 36,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 6.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 27.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "drought"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "China's New Five-Year Plan Preps the Nation for Peak Oil",
       "url": "https://oilprice.com/Energy/Crude-Oil/Chinas-New-Five-Year-Plan-Preps-the-Nation-for-Peak-Oil.html",
       "snippet": "China's energy strategy has largely shielded it from the fallout of the war in Iran and the resultant closure of the Strait of Hormuz, a vital artery for global oil and gas trade. However, the country's newest five-year plan for its oil and gas sector reveals ongoing anxieties about geopolitical ten",
@@ -255,7 +291,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
@@ -271,7 +307,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.4,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.54
       },
       "matched": {
         "geopolitics": [
@@ -297,7 +333,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -313,7 +349,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.1,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.63
       },
       "matched": {
         "geopolitics": [
@@ -383,7 +419,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 32,
+      "score": 31,
       "tags": [
         "geopolitics",
         "lng",
@@ -401,7 +437,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 0.32
+        "recency_multiplier": 0.3
       },
       "matched": {
         "geopolitics": [
@@ -417,46 +453,6 @@
         "geography": [
           "bab el-mandeb",
           "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Nigeria and the Sahel: A growing security divide",
-      "url": "https://www.aljazeera.com/news/2026/8/22/nigeria-and-the-sahel-a-growing-security-divide?traffic_source=rss",
-      "snippet": "A widening diplomatic rift is complicating efforts to confront a shared cross-border security threat.",
-      "published_at": "2026-08-22T04:30:07+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.93
-      },
-      "matched": {
-        "geopolitics": [
-          "diplomatic"
-        ],
-        "geography": [
-          "nigeria"
         ]
       },
       "duplicate_count": 0,
