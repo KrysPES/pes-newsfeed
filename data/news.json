@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-22T05:13:00.849700+00:00",
-  "item_count": 11,
+  "generated_at": "2026-08-22T05:44:16.012074+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 4
+    "high": 1,
+    "normal": 2
   },
   "superseded_count": 1,
   "sources": {
@@ -17,84 +17,84 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 3897
+        "ms": 1126
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 44599
+        "ms": 64028
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 21059
+        "ms": 2332
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 555
+        "ms": 565
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 215
+        "ms": 508
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 150
+        "ms": 70
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1201
+        "ms": 688
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 269
+        "ms": 156
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 643
+        "ms": 571
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 321
+        "ms": 100
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 711
+        "ms": 452
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 224
+        "ms": 551
       },
       {
         "id": "aljazeera",
@@ -106,6 +106,50 @@
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, FLEVO 4",
+      "url": "https://umm.nordpoolgroup.com/#/messages/5127069b-d842-452a-bac4-88cfc25241d0/1",
+      "snippet": "Published: 22.08.2026 07:29:56 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
+      "published_at": "2026-08-22T05:29:56+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 4,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-21T15:29:57+00:00"
+    },
     {
       "title": "Canada says it will match US tariffs 'dollar for dollar' as trade talks break down",
       "url": "https://www.bbc.co.uk/news/articles/cvgvyy4x2mvo?at_medium=RSS&at_campaign=rss",
@@ -201,50 +245,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
-      "url": "https://umm.nordpoolgroup.com/#/messages/61fcb273-8119-4bf7-a885-93b54d5bc5e9/4",
-      "snippet": "Published: 22.08.2026 01:34:06 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
-      "published_at": "2026-08-21T23:34:06+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 55,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 3,
-      "also_reported_by": [],
-      "first_seen_at": "2026-08-21T15:29:57+00:00"
-    },
-    {
       "title": "China's New Five-Year Plan Preps the Nation for Peak Oil",
       "url": "https://oilprice.com/Energy/Crude-Oil/Chinas-New-Five-Year-Plan-Preps-the-Nation-for-Peak-Oil.html",
       "snippet": "China's energy strategy has largely shielded it from the fallout of the war in Iran and the resultant closure of the Strait of Hormuz, a vital artery for global oil and gas trade. However, the country's newest five-year plan for its oil and gas sector reveals ongoing anxieties about geopolitical ten",
@@ -255,11 +255,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -271,7 +271,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.4,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.64
       },
       "matched": {
         "geopolitics": [
@@ -297,7 +297,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 38,
       "tags": [
         "geopolitics"
       ],
@@ -313,7 +313,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.1,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
@@ -342,7 +342,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics",
         "lng",
@@ -360,7 +360,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 0.37
+        "recency_multiplier": 0.36
       },
       "matched": {
         "geopolitics": [
@@ -385,7 +385,7 @@
       "title": "Russian strikes on Ukraine kill two, officials say, a day after deadly attack on mall",
       "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
       "snippet": "Attacks come a day after at least 16 people were killed in a double-tap strike on a shopping mall.",
-      "published_at": "2026-08-22T03:17:29+00:00",
+      "published_at": "2026-08-22T05:15:58+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -475,7 +475,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -490,60 +490,12 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
           "sanctions",
           "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Low Rivers, High Stakes: Europe's Nuclear Cooling Crisis",
-      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Low-Rivers-High-Stakes-Europes-Nuclear-Cooling-Crisis.html",
-      "snippet": "The extreme heat experienced across Europe in recent weeks has caused widespread disruption to nuclear power plants. Governments across the region have been forced to take extraordinary measures to keep nuclear facilities operating, but some are failing to meet their goals, with river levels at reco",
-      "published_at": "2026-08-21T20:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "weather",
-        "supply_disruption",
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 19.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.8,
-        "recency_multiplier": 0.57
-      },
-      "matched": {
-        "weather": [
-          "extreme heat"
-        ],
-        "supply_disruption": [
-          "disruption"
-        ],
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "europe"
         ]
       },
       "duplicate_count": 0,
@@ -576,7 +528,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -594,7 +546,7 @@
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
         "title": "Russian strikes on Ukraine kill two, officials say, a day after deadly attack on mall",
-        "published_at": "2026-08-22T03:17:29+00:00"
+        "published_at": "2026-08-22T05:15:58+00:00"
       },
       "hidden": true
     }
