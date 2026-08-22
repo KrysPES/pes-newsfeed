@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-22T13:54:07.315204+00:00",
-  "item_count": 8,
+  "generated_at": "2026-08-22T14:15:04.079397+00:00",
+  "item_count": 9,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
+    "high": 2,
     "normal": 1
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 922
+        "ms": 1152
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 22192
+        "ms": 57924
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3673
+        "ms": 3468
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 336
+        "ms": 348
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 665
+        "ms": 334
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 124
+        "ms": 144
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 723
+        "ms": 2741
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 178
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 47
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 648
+        "ms": 530
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 141
+        "ms": 88
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 496
+        "ms": 305
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 171
+        "ms": 138
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 132
+        "ms": 143
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 70,
+      "score": 69,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
@@ -151,6 +151,56 @@
       "duplicate_count": 3,
       "also_reported_by": [],
       "first_seen_at": "2026-08-21T22:59:54+00:00"
+    },
+    {
+      "title": "Fans and police injured in pitch invasion during ‘high risk’ German Cup tie",
+      "url": "https://www.aljazeera.com/sports/2026/8/22/fans-and-police-injured-in-pitch-invasion-during-high-risk-german-cup-tie?traffic_source=rss",
+      "snippet": "Waldhof Mannheim and Kaiserslautern game halted for 30 minutes as eight people hospitalised with about 100 injured.",
+      "published_at": "2026-08-22T13:44:02+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 67,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 14.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 69.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "invasion"
+        ],
+        "supply_disruption": [
+          "halted"
+        ],
+        "geography": [
+          "german"
+        ],
+        "unplanned": [
+          "halted"
+        ],
+        "urgency": [
+          "halted"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Canada says it will match US tariffs 'dollar for dollar' as trade talks break down",
@@ -214,7 +264,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "geopolitics"
       ],
@@ -230,7 +280,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.72
       },
       "matched": {
         "geopolitics": [
@@ -254,7 +304,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 38,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -270,7 +320,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -295,7 +345,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "nuclear"
       ],
@@ -310,7 +360,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.5,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.76
       },
       "matched": {
         "nuclear": [
@@ -377,7 +427,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -392,7 +442,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.5,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.72
       },
       "matched": {
         "geopolitics": [
@@ -429,7 +479,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
