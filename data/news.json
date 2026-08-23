@@ -1,127 +1,127 @@
 {
-  "generated_at": "2026-08-23T10:34:51.080816+00:00",
+  "generated_at": "2026-08-23T10:56:11.842916+00:00",
   "item_count": 4,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 1
+    "high": 1,
+    "normal": 0
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1473
+        "ms": 1532
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 67327
+        "ms": 34512
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2644
+        "ms": 3895
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 404
+        "ms": 718
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 602
+        "ms": 529
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 244
+        "ms": 190
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 923
+        "ms": 1275
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 85
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 226
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 615
+        "ms": 741
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 228
+        "ms": 342
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 471
+        "ms": 692
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 185
+        "ms": 74
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 236
+        "ms": 106
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, DK1, Solar Park Holsted",
-      "url": "https://umm.nordpoolgroup.com/#/messages/5c67a59a-d963-40e6-a011-02b3fe6cce4a/2",
-      "snippet": "Published: 23.08.2026 09:29:48 Publisher: Holsted Solar Park ApS Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unforeseen event Remarks: Unforeseen event Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable ",
-      "published_at": "2026-08-23T07:29:48+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 20",
+      "url": "https://umm.nordpoolgroup.com/#/messages/3f8345eb-0e06-4e98-9bdd-8761be32fa80/2",
+      "snippet": "Published: 23.08.2026 12:34:12 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Technical failure Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
+      "published_at": "2026-08-23T10:34:12+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 63,
+      "score": 66,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -148,7 +148,7 @@
       },
       "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-08-23T04:42:37+00:00"
+      "first_seen_at": "2026-08-23T07:29:48+00:00"
     },
     {
       "title": "Photos: Russia celebrates National Flag Day amid war and tensions with the West",
@@ -161,7 +161,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -177,7 +177,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.5,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -201,7 +201,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -216,7 +216,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.1,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -256,7 +256,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.5,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
