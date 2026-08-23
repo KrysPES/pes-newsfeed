@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-23T21:18:13.122389+00:00",
-  "item_count": 6,
+  "generated_at": "2026-08-23T21:40:49.585899+00:00",
+  "item_count": 5,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 2
+    "normal": 0
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 943
+        "ms": 1394
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 81527
+        "ms": 65508
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 10740
+        "ms": 3795
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 361
+        "ms": 617
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 566
+        "ms": 815
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 265
+        "ms": 260
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 997
+        "ms": 1358
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 95
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 215
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 648
+        "ms": 660
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 265
+        "ms": 348
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 470
+        "ms": 676
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 38,
         "error": null,
-        "ms": 172
+        "ms": 132
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 213
+        "ms": 123
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.87
       },
       "matched": {
         "supply_disruption": [
@@ -156,11 +156,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -171,7 +171,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.51
+        "recency_multiplier": 0.5
       },
       "matched": {
         "supply_disruption": [
@@ -200,7 +200,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 36,
       "tags": [
         "nuclear"
       ],
@@ -216,7 +216,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.8,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.66
       },
       "matched": {
         "nuclear": [
@@ -243,7 +243,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -258,7 +258,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.1,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -280,7 +280,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
@@ -295,53 +295,12 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
           "conflict",
           "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "The Suez Crisis stopped the British Empire. Will Hormuz defeat the US?",
-      "url": "https://www.aljazeera.com/video/deja-vu-2/2026/8/23/the-suez-crisis-stopped-the-british-empire-will-hormuz-defeat-the-us?traffic_source=rss",
-      "snippet": "In the latest episode of Al Jazeera’s new podcast, Deja Vu looks at how oil, shipping and war shape the Gulf.",
-      "published_at": "2026-08-23T13:37:50+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "hormuz",
-          "suez"
         ]
       },
       "duplicate_count": 0,
