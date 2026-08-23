@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-23T04:06:14.694390+00:00",
-  "item_count": 5,
+  "generated_at": "2026-08-23T04:48:53.811268+00:00",
+  "item_count": 6,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 2
+    "high": 1,
+    "normal": 1
   },
-  "superseded_count": 0,
+  "superseded_count": 1,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,84 +17,84 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1213
+        "ms": 1103
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 139142
+        "ms": 27924
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 10120
+        "ms": 2550
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 370
+        "ms": 635
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 380
+        "ms": 375
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 170
+        "ms": 78
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 683
+        "ms": 681
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 166
+        "ms": 161
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 618
+        "ms": 580
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 203
+        "ms": 131
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 429
+        "ms": 456
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 139
+        "ms": 146
       },
       {
         "id": "aljazeera",
@@ -106,6 +106,50 @@
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 20",
+      "url": "https://umm.nordpoolgroup.com/#/messages/3f8345eb-0e06-4e98-9bdd-8761be32fa80/1",
+      "snippet": "Published: 23.08.2026 06:42:37 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Technical failure Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capac",
+      "published_at": "2026-08-23T04:42:37+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-22T11:52:08+00:00"
+    },
     {
       "title": "‘You just can’t trust Trump’: Canadian premiers fire back in trade war",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/you-just-cant-trust-trump-canadian-premiers-fire-back-in-trade-war?traffic_source=rss",
@@ -148,51 +192,9 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, DK1, Solar Park Holsted",
-      "url": "https://umm.nordpoolgroup.com/#/messages/5c67a59a-d963-40e6-a011-02b3fe6cce4a/1",
-      "snippet": "Published: 22.08.2026 20:24:50 Publisher: Holsted Solar Park ApS Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unforeseen event Remarks: Unforeseen event Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable ",
-      "published_at": "2026-08-22T18:24:50+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-08-22T11:52:08+00:00"
+      "update_count": 1,
+      "thread_started_at": "2026-08-22T20:10:00+00:00"
     },
     {
       "title": "Canada to hit US with retaliatory tariffs as trade war escalates",
@@ -205,7 +207,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -220,7 +222,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -242,7 +244,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -257,7 +259,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.1,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -279,7 +281,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -294,7 +296,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -304,6 +306,51 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Carney say Trump started trade war with fresh tarrifs 'attack'",
+      "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Canada's prime minister said he was \"reluctantly\" announcing retaliatory tariffs as he accused the US of starting a trade war.",
+      "published_at": "2026-08-22T20:10:00+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 26.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.1,
+        "recency_multiplier": 0.6
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "attack",
+          "tariffs"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/you-just-cant-trust-trump-canadian-premiers-fire-back-in-trade-war?traffic_source=rss",
+        "title": "‘You just can’t trust Trump’: Canadian premiers fire back in trade war",
+        "published_at": "2026-08-23T03:42:22+00:00"
+      },
+      "hidden": true
     }
   ]
 }
