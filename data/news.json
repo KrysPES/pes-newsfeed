@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T02:10:10.472035+00:00",
-  "item_count": 4,
+  "generated_at": "2026-08-23T03:15:18.874956+00:00",
+  "item_count": 5,
   "alert_counts": {
     "critical": 0,
     "high": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1049
+        "ms": 1091
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 41945
+        "ms": 24755
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5206
+        "ms": 17904
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 409
+        "ms": 361
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 348
+        "ms": 342
       },
       {
         "id": "eia_today",
-        "ok": true,
-        "count": 18,
-        "error": null,
-        "ms": 117
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.eia.gov', port=443): Read timed out. (read timeout=20)",
+        "ms": 20078
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 860
+        "ms": 872
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 189
+        "ms": 156
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 545
+        "ms": 515
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 149
+        "ms": 198
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 358
+        "ms": 421
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 179
+        "ms": 67
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 116
+        "ms": 269
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 50,
+      "score": 47,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.59
       },
       "matched": {
         "supply_disruption": [
@@ -146,9 +146,46 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-08-22T10:18:30+00:00"
+      "first_seen_at": "2026-08-22T11:52:08+00:00"
+    },
+    {
+      "title": "Canada to hit US with retaliatory tariffs as trade war escalates",
+      "url": "https://www.aljazeera.com/news/2026/8/23/canada-to-hit-us-with-retaliatory-tariffs-as-trade-war-escalates?traffic_source=rss",
+      "snippet": "Mark Carney says Canada will impose tariffs starting September 8 on imports of US steel, electronics and other products.",
+      "published_at": "2026-08-23T02:34:49+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "tariffs"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Swedish sword attack victim was 17-year-old girl, police say",
@@ -198,7 +235,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
@@ -213,7 +250,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -235,7 +272,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -250,7 +287,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.5,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.57
       },
       "matched": {
         "geopolitics": [
