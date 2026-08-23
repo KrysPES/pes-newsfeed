@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T14:39:41.552073+00:00",
-  "item_count": 6,
+  "generated_at": "2026-08-23T15:00:04.556863+00:00",
+  "item_count": 7,
   "alert_counts": {
     "critical": 0,
     "high": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1495
+        "ms": 1647
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 46167
+        "ms": 36157
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 10406
+        "ms": 3910
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 902
+        "ms": 530
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 273
+        "ms": 3186
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 211
+        "ms": 367
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1100
+        "ms": 1429
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 230
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 76
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 619
+        "ms": 739
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 312
+        "ms": 350
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 605
+        "ms": 825
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 34,
         "error": null,
-        "ms": 143
+        "ms": 229
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 291
+        "ms": 132
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 60,
+      "score": 59,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.83
       },
       "matched": {
         "supply_disruption": [
@@ -149,6 +149,49 @@
       "duplicate_count": 1,
       "also_reported_by": [],
       "first_seen_at": "2026-08-23T07:29:48+00:00"
+    },
+    {
+      "title": "PM Tarique Rahman’s trip stalled: What it means for Bangladesh-India ties",
+      "url": "https://www.aljazeera.com/features/2026/8/23/pm-tarique-rahmans-trip-stalled-what-it-means-for-bangladesh-india-ties?traffic_source=rss",
+      "snippet": "India and Bangladesh have not been able to move past the contentious question of Sheikh Hasina, living in New Delhi.",
+      "published_at": "2026-08-23T14:17:18+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "trip"
+        ],
+        "geography": [
+          "india"
+        ],
+        "unplanned": [
+          "trip"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "The Suez Crisis stopped the British Empire. Will Hormuz defeat the US?",
@@ -217,7 +260,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -240,11 +283,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -255,7 +298,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.86
       },
       "matched": {
         "supply_disruption": [
@@ -294,7 +337,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
