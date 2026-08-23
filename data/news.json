@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T10:03:30.506826+00:00",
+  "generated_at": "2026-08-23T10:34:51.080816+00:00",
   "item_count": 4,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1460
+        "ms": 1473
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 88584
+        "ms": 67327
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 29879
+        "ms": 2644
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 541
+        "ms": 404
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 511
+        "ms": 602
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 96
+        "ms": 244
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 842
+        "ms": 923
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 178
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 85
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 548
+        "ms": 615
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 211
+        "ms": 228
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 489
+        "ms": 471
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 382
+        "ms": 185
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 197
+        "ms": 236
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 64,
+      "score": 63,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.92
       },
       "matched": {
         "supply_disruption": [
@@ -149,45 +149,6 @@
       "duplicate_count": 1,
       "also_reported_by": [],
       "first_seen_at": "2026-08-23T04:42:37+00:00"
-    },
-    {
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
-      "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Canada's PM said he was \"reluctantly\" announcing retaliatory tariffs and accused the US of starting a trade war.",
-      "published_at": "2026-08-23T05:46:43+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.1,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "tariffs"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-23T03:42:22+00:00"
     },
     {
       "title": "Photos: Russia celebrates National Flag Day amid war and tensions with the West",
@@ -216,7 +177,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -230,6 +191,45 @@
       "also_reported_by": []
     },
     {
+      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
+      "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Canada's PM said he was \"reluctantly\" announcing retaliatory tariffs and accused the US of starting a trade war.",
+      "published_at": "2026-08-23T05:46:43+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.1,
+        "recency_multiplier": 0.81
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "tariffs"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-23T03:42:22+00:00"
+    },
+    {
       "title": "‘You just can’t trust Trump’: Canadian premiers fire back in trade war",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/you-just-cant-trust-trump-canadian-premiers-fire-back-in-trade-war?traffic_source=rss",
       "snippet": "Provincial premiers have joined Canada’s Prime Minister Mark Carney, firing back after US President imposed tariffs.",
@@ -240,7 +240,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -256,7 +256,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.5,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
