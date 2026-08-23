@@ -1,111 +1,155 @@
 {
-  "generated_at": "2026-08-23T03:15:18.874956+00:00",
+  "generated_at": "2026-08-23T04:06:14.694390+00:00",
   "item_count": 5,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 1
+    "normal": 2
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1091
+        "ms": 1213
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 24755
+        "ms": 139142
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 17904
+        "ms": 10120
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 361
+        "ms": 370
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 342
+        "ms": 380
       },
       {
         "id": "eia_today",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.eia.gov', port=443): Read timed out. (read timeout=20)",
-        "ms": 20078
+        "ok": true,
+        "count": 18,
+        "error": null,
+        "ms": 170
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 872
+        "ms": 683
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 156
+        "ms": 166
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 515
+        "ms": 618
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 198
+        "ms": 203
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 421
+        "ms": 429
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 67
+        "ms": 139
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 269
+        "ms": 194
       }
     ]
   },
   "items": [
+    {
+      "title": "‘You just can’t trust Trump’: Canadian premiers fire back in trade war",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/you-just-cant-trust-trump-canadian-premiers-fire-back-in-trade-war?traffic_source=rss",
+      "snippet": "Provincial premiers have joined Canada’s Prime Minister Mark Carney, firing back after US President imposed tariffs.",
+      "published_at": "2026-08-23T03:42:22+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 23.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 52.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "tariffs"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, DK1, Solar Park Holsted",
       "url": "https://umm.nordpoolgroup.com/#/messages/5c67a59a-d963-40e6-a011-02b3fe6cce4a/1",
@@ -117,7 +161,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 47,
+      "score": 45,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +176,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.55
       },
       "matched": {
         "supply_disruption": [
@@ -198,7 +242,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -213,7 +257,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -235,7 +279,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
@@ -250,51 +294,12 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
           "retaliation",
           "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Armed men kidnap dozens in attacks on Nigerian villages",
-      "url": "https://www.aljazeera.com/news/2026/8/22/armed-men-kidnap-dozens-in-attacks-on-nigerian-villages?traffic_source=rss",
-      "snippet": "Police say three villages and a mosque were attacked, and worshippers kidnapped in central Niger State.",
-      "published_at": "2026-08-22T17:58:15+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.5,
-        "recency_multiplier": 0.57
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked"
-        ],
-        "unplanned": [
-          "attacked"
         ]
       },
       "duplicate_count": 0,
