@@ -1,111 +1,154 @@
 {
-  "generated_at": "2026-08-24T06:00:37.492485+00:00",
-  "item_count": 6,
+  "generated_at": "2026-08-24T07:15:49.578668+00:00",
+  "item_count": 9,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 3
+    "high": 1,
+    "normal": 2
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1249
+        "ms": 1824
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 52340
+        "ms": 116529
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2638
+        "ms": 15151
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 190
+        "ms": 485
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 283
+        "ms": 510
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 92
+        "ms": 391
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 791
+        "ms": 1278
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 156
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 131
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 644
+        "ms": 743
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 113
+        "ms": 286
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 318
+        "ms": 458
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 43,
+        "count": 34,
         "error": null,
-        "ms": 137
+        "ms": 190
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 165
+        "ms": 195
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, DK1, Solar Park Holsted",
+      "url": "https://umm.nordpoolgroup.com/#/messages/5c67a59a-d963-40e6-a011-02b3fe6cce4a/4",
+      "snippet": "Published: 24.08.2026 09:04:54 Publisher: Holsted Solar Park ApS Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unforeseen event Remarks: Unforeseen event Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable ",
+      "published_at": "2026-08-24T07:04:54+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Hormuz Tanker Traffic Slumps as U.S. and Iran Trade Threats",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Slumps-as-US-and-Iran-Trade-Threats.html",
@@ -152,40 +195,78 @@
       "also_reported_by": []
     },
     {
-      "title": "Burnham to hand long-range missile blueprints to Zelensky as he visits Kyiv",
-      "url": "https://www.bbc.co.uk/news/articles/clyqypkrzq5o?at_medium=RSS&at_campaign=rss",
-      "snippet": "It comes after Moscow warned of \"consequences\" over the reported use of British drones by Ukraine.",
-      "published_at": "2026-08-24T05:16:57+00:00",
+      "title": "Canada-US trade war: Who wins? Who loses?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/canada-us-trade-war-who-wins-who-loses?traffic_source=rss",
+      "snippet": "Canada suspends US trade talks as Trump imposes 50% tariffs, with Ottawa vowing dollar-for-dollar retaliation.",
+      "published_at": "2026-08-24T07:00:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
+      "has_magnitude": true,
+      "score": 56,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
+        "authority": 9.5,
+        "themes": 29.6,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 35.2,
+        "raw": 51.1,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "missile"
+          "retaliation",
+          "war",
+          "tariffs"
         ],
-        "geography": [
-          "british"
+        "oil_macro": [
+          "dollar"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Santos: GLNG to buy Meridian CSG project",
+      "url": "https://lngprime.com/australia-and-oceania/santos-glng-to-buy-meridian-csg-project/195623/",
+      "snippet": "Australian LNG player Santos and its GLNG joint venture partners have entered into binding agreements to purchase 100 percent of the Greater Meridian CSG project in Queensland for approximately $310 million.",
+      "published_at": "2026-08-24T06:28:32+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
         ]
       },
       "duplicate_count": 0,
@@ -202,12 +283,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 40,
       "tags": [
         "oil_macro",
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -218,7 +299,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 39.6,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.8
       },
       "matched": {
         "oil_macro": [
@@ -244,7 +325,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 35,
       "tags": [
         "supply_disruption"
       ],
@@ -259,7 +340,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.69
       },
       "matched": {
         "supply_disruption": [
@@ -275,7 +356,7 @@
     {
       "title": "India’s GAIL plans Kandla LNG bunkering facility",
       "url": "https://lngprime.com/asia/indias-gail-plans-kandla-lng-bunkering-facility/195611/",
-      "snippet": "India’s largest gas utility GAIL has signed a cooperation agreement with Deendayal Port Authority (DPA) and classification society DNV on setting up a liquefied natural gas (LNG) bunkering facility at the port of Kandla on the north-western coast of India.",
+      "snippet": "India’s largest gas utility GAIL has signed a cooperation agreement with Deendayal Port Authority (DPA) and classification society DNV on setting up a liquefied natural gas (LNG) bunkering facility at the port of Kandla on the northwestern coast of India.",
       "published_at": "2026-08-24T04:18:00+00:00",
       "type": "news",
       "source": "lng_prime",
@@ -283,7 +364,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "lng"
       ],
@@ -299,7 +380,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "lng": [
@@ -307,6 +388,47 @@
         ],
         "geography": [
           "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ukraine’s allies convene in Kyiv as Zelenskyy seeks air defence boost",
+      "url": "https://www.aljazeera.com/news/2026/8/24/ukraines-allies-convene-in-kyiv-as-zelenskyy-seeks-air-defence-boost?traffic_source=rss",
+      "snippet": "&#039;Coalition of the Willing&#039; leaders to discuss air defence shortage as Ukraine and Russia trade drone attacks.",
+      "published_at": "2026-08-24T06:55:58+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
@@ -323,7 +445,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
         "lng",
         "infrastructure"
@@ -339,7 +461,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "lng": [
