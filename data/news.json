@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-24T22:04:50.854418+00:00",
-  "item_count": 20,
+  "generated_at": "2026-08-24T22:39:09.630405+00:00",
+  "item_count": 17,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 5
+    "normal": 4
   },
-  "superseded_count": 6,
+  "superseded_count": 5,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1146
+        "ms": 1364
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 83319
+        "ms": 29002
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3146
+        "ms": 3989
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 570
+        "ms": 505
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 474
+        "ms": 81
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 82
+        "ms": 126
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1038
+        "ms": 1378
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 189
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 63
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 634
+        "ms": 694
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 172
+        "ms": 345
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 465
+        "ms": 625
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 90
+        "ms": 95
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 168
+        "ms": 60
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 71,
+      "score": 69,
       "tags": [
         "geopolitics",
         "lng"
@@ -134,7 +134,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 77.1,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.95
       },
       "matched": {
         "geopolitics": [
@@ -171,7 +171,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 59,
+      "score": 58,
       "tags": [
         "geopolitics",
         "infrastructure",
@@ -189,7 +189,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 63.0,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -223,7 +223,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 45,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -240,7 +240,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.5,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
@@ -259,8 +259,47 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-08-24T15:00:00+00:00"
+      "update_count": 1,
+      "thread_started_at": "2026-08-24T15:14:14+00:00"
+    },
+    {
+      "title": "Video: Israel attacks desalination plant and mosque in Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/video-israel-attacks-desalination-plant-and-mosque-in-gaza?traffic_source=rss",
+      "snippet": "Israel has attacked a critical water desalination plant and a mosque in Gaza as it intensifies attacks on the enclave.",
+      "published_at": "2026-08-24T19:21:01+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.5,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "geopolitics": [
+          "attacked"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Goldman Sachs: Europe Needs Much Higher Gas Prices to Secure Winter Supply",
@@ -273,7 +312,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "geopolitics",
         "gas_storage",
@@ -291,7 +330,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.0,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -313,45 +352,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Video: Israel attacks desalination plant and mosque in Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/video-israel-attacks-desalination-plant-and-mosque-in-gaza?traffic_source=rss",
-      "snippet": "Israel has attacked a critical water desalination plant and a mosque in Gaza as it intensifies attacks on the enclave.",
-      "published_at": "2026-08-24T19:21:01+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.5,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Masdar Starts Up 35MW BESS in England",
       "url": "https://www.rigzone.com/news/masdar_starts_up_35mw_bess_in_england-24-aug-2026-184442-article/?rss=true",
       "snippet": "The Emirati state-owned renewables company began commercial operations at a 35-megawatt battery energy storage system in Rochdale, England, its second start-up toward a target of three-gigawatt-hour BESS capacity across the UK.",
@@ -362,13 +362,13 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 40,
       "tags": [
         "infrastructure",
         "power_system",
         "gas_storage"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -380,7 +380,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 60.5,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.53
       },
       "matched": {
         "infrastructure": [
@@ -402,53 +402,6 @@
       "also_reported_by": []
     },
     {
-      "title": "MODEC’s FPSO reaches Guyana as ExxonMobil’s fifth oil project nears start-up",
-      "url": "https://www.offshore-energy.biz/modecs-fpso-reaches-guyana-as-exxonmobils-fifth-oil-project-nears-start-up/",
-      "snippet": "Japan’s MODEC has announced the arrival of a floating production, storage, and offloading (FPSO) vessel in Guyanese waters ahead of its deployment on a project in the Stabroek block, as the development moves closer to first oil expected later this year. The post MODEC’s FPSO reaches Guyana as ExxonM",
-      "published_at": "2026-08-24T14:37:31+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "infrastructure",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 16.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.9,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "infrastructure": [
-          "start-up"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "japan"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Norway plans further development of Arctic drilling amid EU energy concerns",
       "url": "https://www.aljazeera.com/news/2026/8/24/norway-plans-further-development-of-arctic-drilling-amid-eu-energy-concerns?traffic_source=rss",
       "snippet": "EU reviewing support of a ban on new drilling in the Arctic as war impacts energy security.",
@@ -459,7 +412,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "regulation",
         "geopolitics"
@@ -476,7 +429,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.3,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.84
       },
       "matched": {
         "regulation": [
@@ -504,7 +457,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 37,
       "tags": [
         "nuclear"
       ],
@@ -519,7 +472,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.1,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.5
       },
       "matched": {
         "nuclear": [
@@ -585,7 +538,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "supply_disruption"
       ],
@@ -600,7 +553,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.42
+        "recency_multiplier": 0.4
       },
       "matched": {
         "supply_disruption": [
@@ -628,7 +581,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -644,7 +597,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.7,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -670,7 +623,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "infrastructure"
       ],
@@ -686,7 +639,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.7,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.66
       },
       "matched": {
         "infrastructure": [
@@ -694,51 +647,6 @@
         ],
         "geography": [
           "england"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "NKT cranks up the heat on HVDC power cables with 90°C technology",
-      "url": "https://www.offshore-energy.biz/nkt-cranks-up-the-heat-on-hvdc-power-cables-with-90c-technology/",
-      "snippet": "Denmark-headquartered power cable manufacturer and installation player NKT is raising the bar for high-voltage direct current (HVDC) power cable technology with a newly qualified 525 kV extruded XLPE subsea cable system for operation at 90°C, boosting transmission capability and the firm’s HVDC port",
-      "published_at": "2026-08-24T10:36:45+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 24.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.1,
-        "recency_multiplier": 0.48
-      },
-      "matched": {
-        "geopolitics": [
-          "subsea cable"
-        ],
-        "infrastructure": [
-          "transmission",
-          "cable"
-        ],
-        "geography": [
-          "denmark"
         ]
       },
       "duplicate_count": 0,
@@ -755,7 +663,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 17,
+      "score": 16,
       "tags": [
         "geopolitics"
       ],
@@ -771,7 +679,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 69.7,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -826,7 +734,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 62.1,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
@@ -877,7 +785,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.4,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -923,7 +831,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 35.8,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
@@ -994,57 +902,6 @@
         "url": "https://www.aljazeera.com/news/2026/8/24/us-public-support-for-iran-war-falls-as-trump-approval-at-record-low-poll?traffic_source=rss",
         "title": "US public support for Iran war falls as Trump approval at record low: Poll",
         "published_at": "2026-08-24T21:35:10+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "European Leaders Gather in Kyiv as Ukraine Seeks More Air Defense",
-      "url": "https://oilprice.com/Geopolitics/Europe/European-Leaders-Gather-in-Kyiv-as-Ukraine-Seeks-More-Air-Defense.html",
-      "snippet": "Ukrainian President Volodymyr Zelenskyy's push to bolster international support and receive additional air defenses continues on August 24 as the so-called Coalition of the Willing meets to discuss ways to pressure Russia to halt its invasion months ahead of another likely brutal winter. The summit ",
-      "published_at": "2026-08-24T15:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.8,
-        "recency_multiplier": 0.68
-      },
-      "matched": {
-        "geopolitics": [
-          "invasion"
-        ],
-        "supply_disruption": [
-          "halt"
-        ],
-        "geography": [
-          "european"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/24/russia-to-seize-poorly-protected-infrastructure-as-ukraine-barrage-persists?traffic_source=rss",
-        "title": "Russia to seize poorly protected infrastructure amid Ukraine drone attacks",
-        "published_at": "2026-08-24T16:59:47+00:00"
       },
       "hidden": true
     }
