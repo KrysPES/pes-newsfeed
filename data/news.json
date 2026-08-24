@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-24T10:41:29.798486+00:00",
+  "generated_at": "2026-08-24T11:07:54.870552+00:00",
   "item_count": 13,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
+    "high": 0,
     "normal": 3
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1339
+        "ms": 1347
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 92842
+        "ms": 85964
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4073
+        "ms": 3646
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 610
+        "ms": 478
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 204
+        "ms": 311
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 140
+        "ms": 158
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1376
+        "ms": 1235
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 197
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 49
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 689
+        "ms": 735
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 349
+        "ms": 329
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 737
+        "ms": 640
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 29,
+        "count": 30,
         "error": null,
-        "ms": 59
+        "ms": 48
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 190
+        "ms": 64
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 65,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
@@ -150,53 +150,6 @@
       "also_reported_by": []
     },
     {
-      "title": "MODEC’s FPSO reaches Guyana as ExxonMobil’s fifth oil project nears start-up",
-      "url": "https://www.offshore-energy.biz/modecs-fpso-reaches-guyana-as-exxonmobils-fifth-oil-project-nears-start-up/",
-      "snippet": "Japan’s MODEC has announced the arrival of a floating production, storage, and offloading (FPSO) vessel in Guyanese waters ahead of its deployment on a project in the Stabroek block, as the development moves closer to first oil expected later this year. The post MODEC’s FPSO reaches Guyana as ExxonM",
-      "published_at": "2026-08-24T09:35:31+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 55,
-      "tags": [
-        "infrastructure",
-        "gas_storage"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 16.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.9,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "infrastructure": [
-          "start-up"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "japan"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Canada-US trade war: Who wins? Who loses?",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/canada-us-trade-war-who-wins-who-loses?traffic_source=rss",
       "snippet": "Canada suspends US trade talks as Trump imposes 50% tariffs, with Ottawa vowing dollar-for-dollar retaliation.",
@@ -207,7 +160,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 50,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -223,7 +176,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -321,6 +274,47 @@
       "also_reported_by": []
     },
     {
+      "title": "Japan Power Prices Surge to Highest Since 2023",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Japan-Power-Prices-Surge-to-Highest-Since-2023.html",
+      "snippet": "Japan’s nationwide day-ahead electricity price soared by 20% in one week to settle on Monday at the highest level since January 2023, as gas supply disruptions from the Middle East and an intense heatwave pushed up prices and consumption. The day-ahead power price in Japan has jumped to $0.16 (25.18",
+      "published_at": "2026-08-24T11:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 40,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 6.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 31.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "heatwave"
+        ],
+        "geography": [
+          "japan",
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "US threatens toughest sanctions yet against Iran: What we know",
       "url": "https://www.aljazeera.com/news/2026/8/24/us-threatens-toughest-sanctions-yet-against-iran-what-we-know?traffic_source=rss",
       "snippet": "Tehran has threatened to retaliate against any country that joins new US economic measures.",
@@ -370,7 +364,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "weather"
       ],
@@ -386,7 +380,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 30.9,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.87
       },
       "matched": {
         "weather": [
@@ -410,7 +404,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 36,
+      "score": 35,
       "tags": [
         "lng"
       ],
@@ -425,7 +419,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.81
       },
       "matched": {
         "lng": [
@@ -446,7 +440,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "lng",
         "infrastructure"
@@ -462,7 +456,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 24.5,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.95
       },
       "matched": {
         "lng": [
@@ -486,7 +480,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 32,
+      "score": 31,
       "tags": [
         "oil_macro",
         "geopolitics"
@@ -502,7 +496,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 39.6,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.59
       },
       "matched": {
         "oil_macro": [
@@ -528,7 +522,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -544,7 +538,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.2,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.95
       },
       "matched": {
         "lng": [
@@ -568,7 +562,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -584,7 +578,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.69
       },
       "matched": {
         "lng": [
@@ -626,7 +620,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 57.8,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
