@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-24T03:51:21.630773+00:00",
-  "item_count": 3,
+  "generated_at": "2026-08-24T04:33:17.187099+00:00",
+  "item_count": 5,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 3
+    "normal": 2
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 958
+        "ms": 1142
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 42665
+        "ms": 69602
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2807
+        "ms": 2972
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 418
+        "ms": 402
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 575
+        "ms": 400
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 704
+        "ms": 188
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 985
+        "ms": 794
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 444
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 52
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 603
+        "ms": 572
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 276
+        "ms": 144
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 653
+        "ms": 514
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 42,
         "error": null,
-        "ms": 234
+        "ms": 77
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 177
+        "ms": 82
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 48,
       "tags": [
         "nuclear"
       ],
@@ -133,7 +133,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.5,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.77
       },
       "matched": {
         "nuclear": [
@@ -177,7 +177,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 39.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "oil_macro": [
@@ -203,11 +203,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -218,7 +218,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.85
       },
       "matched": {
         "supply_disruption": [
@@ -226,6 +226,86 @@
         ],
         "unplanned": [
           "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "India’s GAIL plans Kandla LNG bunkering facility",
+      "url": "https://lngprime.com/asia/indias-gail-plans-kandla-lng-bunkering-facility/195611/",
+      "snippet": "India’s largest gas utility GAIL has signed a cooperation agreement with Deendayal Port Authority (DPA) and classification society DNV on setting up a liquefied natural gas (LNG) bunkering facility at the port of Kandla on the north-western coast of India.",
+      "published_at": "2026-08-24T04:18:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Top 5 news of the week August 17-23",
+      "url": "https://lngprime.com/asia/top-5-news-of-the-week-august-17-23/195597/",
+      "snippet": "LNG Prime brings you the five most popular news stories on our platform during the week of August 17-23, 2026.",
+      "published_at": "2026-08-24T04:15:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 11.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "platform"
         ]
       },
       "duplicate_count": 0,
