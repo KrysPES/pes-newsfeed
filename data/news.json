@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T04:33:17.187099+00:00",
+  "generated_at": "2026-08-24T05:23:18.716720+00:00",
   "item_count": 5,
   "alert_counts": {
     "critical": 0,
@@ -8,148 +8,104 @@
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1142
+        "ms": 1451
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 69602
+        "ms": 77082
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2972
+        "ms": 3500
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 402
+        "ms": 346
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 400
+        "ms": 154
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 188
+        "ms": 144
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 794
+        "ms": 1373
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 52
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 209
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 572
+        "ms": 776
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 144
+        "ms": 363
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 514
+        "ms": 718
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 42,
+        "count": 43,
         "error": null,
-        "ms": 77
+        "ms": 58
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 82
+        "ms": 61
       }
     ]
   },
   "items": [
-    {
-      "title": "Burnham to visit Kyiv on first foreign trip and reaffirm UK support for Ukraine",
-      "url": "https://www.bbc.co.uk/news/articles/clyqypkrzq5o?at_medium=RSS&at_campaign=rss",
-      "snippet": "It comes after Moscow warned of \"consequences\" over the reported use of British drones by Ukraine.",
-      "published_at": "2026-08-23T23:07:10+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 48,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 7.3,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.5,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "nuclear": [
-          "trip"
-        ],
-        "geography": [
-          "uk",
-          "british"
-        ],
-        "unplanned": [
-          "trip"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
     {
       "title": "Oil Prices Slide 2% as Markets Brace for Bessent’s ‘Economic D-Day’",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Slide-2-as-Markets-Brace-for-Bessents-Economic-D-Day.html",
@@ -161,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 47,
+      "score": 44,
       "tags": [
         "oil_macro",
         "geopolitics"
@@ -177,7 +133,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 39.6,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.92
       },
       "matched": {
         "oil_macro": [
@@ -187,6 +143,46 @@
         ],
         "geopolitics": [
           "sanctions"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Burnham to hand long-range missile blueprints to Zelensky as he visits Kyiv",
+      "url": "https://www.bbc.co.uk/news/articles/clyqypkrzq5o?at_medium=RSS&at_campaign=rss",
+      "snippet": "It comes after Moscow warned of \"consequences\" over the reported use of British drones by Ukraine.",
+      "published_at": "2026-08-24T05:16:57+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "missile"
+        ],
+        "geography": [
+          "british"
         ]
       },
       "duplicate_count": 0,
@@ -203,7 +199,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "supply_disruption"
       ],
@@ -218,7 +214,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.8
       },
       "matched": {
         "supply_disruption": [
