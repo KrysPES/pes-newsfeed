@@ -1,111 +1,163 @@
 {
-  "generated_at": "2026-08-24T18:27:29.210411+00:00",
-  "item_count": 18,
+  "generated_at": "2026-08-24T19:11:34.992114+00:00",
+  "item_count": 16,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 9
+    "high": 0,
+    "normal": 10
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1096
+        "ms": 1336
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 40007
+        "ms": 83157
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2885
+        "ms": 2677
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 477
+        "ms": 176
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 559
+        "ms": 292
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 185
+        "ms": 79
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 735
+        "ms": 852
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 153
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 44
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 593
+        "ms": 652
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 124
+        "ms": 93
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 469
+        "ms": 473
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 261
+        "ms": 48
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 225
+        "ms": 250
       }
     ]
   },
   "items": [
+    {
+      "title": "TotalEnergies Backs Two Major Oil Pipelines to Bypass Hormuz",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/TotalEnergies-Backs-Two-Major-Oil-Pipelines-to-Bypass-Hormuz.html",
+      "snippet": "TotalEnergies will invest in two major oil pipelines designed to bypass the Strait of Hormuz, backing Abu Dhabi’s expansion of its Fujairah export route and a planned pipeline carrying Iraqi crude through Syria to the Mediterranean. CEO Patrick Pouyanné announced the commitments Monday at the ONS en",
+      "published_at": "2026-08-24T18:27:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "geopolitics",
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.2,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 63.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Iran-Linked Cyberattack Tests Britain’s Energy Defenses",
       "url": "https://oilprice.com/Energy/Energy-General/Iran-Linked-Cyberattack-Tests-Britains-Energy-Defenses.html",
@@ -117,11 +169,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 66,
+      "score": 64,
       "tags": [
         "geopolitics"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -133,7 +185,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 69.7,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -164,7 +216,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 56,
+      "score": 54,
       "tags": [
         "geopolitics",
         "lng"
@@ -181,7 +233,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 62.1,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -210,7 +262,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 52,
       "tags": [
         "geopolitics",
         "gas_storage",
@@ -228,7 +280,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.0,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -250,6 +302,52 @@
       "also_reported_by": []
     },
     {
+      "title": "Russia to seize poorly protected infrastructure as Ukraine barrage persists",
+      "url": "https://www.aljazeera.com/news/2026/8/24/russia-to-seize-poorly-protected-infrastructure-as-ukraine-barrage-persists?traffic_source=rss",
+      "snippet": "Owners could lose control of facilities if regulators find them too slow to repair damage.",
+      "published_at": "2026-08-24T16:59:47+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.9,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "supply_disruption": [
+          "repair"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
+        ],
+        "unplanned": [
+          "damage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-24T15:00:00+00:00"
+    },
+    {
       "title": "Masdar Starts Up 35MW BESS in England",
       "url": "https://www.rigzone.com/news/masdar_starts_up_35mw_bess_in_england-24-aug-2026-184442-article/?rss=true",
       "snippet": "The Emirati state-owned renewables company began commercial operations at a 35-megawatt battery energy storage system in Rochdale, England, its second start-up toward a target of three-gigawatt-hour BESS capacity across the UK.",
@@ -260,7 +358,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 49,
       "tags": [
         "infrastructure",
         "power_system",
@@ -278,7 +376,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 60.5,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.69
       },
       "matched": {
         "infrastructure": [
@@ -300,99 +398,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Russia to seize poorly protected infrastructure as Ukraine barrage persists",
-      "url": "https://www.aljazeera.com/news/2026/8/24/russia-to-seize-poorly-protected-infrastructure-as-ukraine-barrage-persists?traffic_source=rss",
-      "snippet": "Owners could lose control of facilities if regulators find them too slow to repair damage.",
-      "published_at": "2026-08-24T16:59:47+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 50,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.9,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "supply_disruption": [
-          "repair"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ],
-        "unplanned": [
-          "damage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-24T15:00:00+00:00"
-    },
-    {
-      "title": "MODEC’s FPSO reaches Guyana as ExxonMobil’s fifth oil project nears start-up",
-      "url": "https://www.offshore-energy.biz/modecs-fpso-reaches-guyana-as-exxonmobils-fifth-oil-project-nears-start-up/",
-      "snippet": "Japan’s MODEC has announced the arrival of a floating production, storage, and offloading (FPSO) vessel in Guyanese waters ahead of its deployment on a project in the Stabroek block, as the development moves closer to first oil expected later this year. The post MODEC’s FPSO reaches Guyana as ExxonM",
-      "published_at": "2026-08-24T14:37:31+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 50,
-      "tags": [
-        "infrastructure",
-        "gas_storage"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 16.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.9,
-        "recency_multiplier": 0.87
-      },
-      "matched": {
-        "infrastructure": [
-          "start-up"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "japan"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Hungary plans new climate law, as Paks ramps up",
       "url": "https://www.world-nuclear-news.org/articles/hungary-plans-new-climate-law-as-paks-ramps-up",
       "snippet": "Prime Minister P ter Magyar says that emergency works to secure the necessary water supply for Hungary s Paks nuclear power plant have progressed faster than planned.",
@@ -403,7 +408,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 45,
       "tags": [
         "nuclear"
       ],
@@ -418,7 +423,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.1,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.65
       },
       "matched": {
         "nuclear": [
@@ -435,6 +440,51 @@
       "also_reported_by": []
     },
     {
+      "title": "Norway plans further development of Arctic drilling amid EU energy concerns",
+      "url": "https://www.aljazeera.com/news/2026/8/24/norway-plans-further-development-of-arctic-drilling-amid-eu-energy-concerns?traffic_source=rss",
+      "snippet": "EU reviewing support of a ban on new drilling in the Arctic as war impacts energy security.",
+      "published_at": "2026-08-24T18:22:18+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "regulation",
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "ban on"
+        ],
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "eu",
+          "norway"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Houses set on fire as fresh violence erupts in India’s Manipur",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/houses-set-on-fire-as-fresh-violence-erupts-in-indias-manipur?traffic_source=rss",
       "snippet": "Several houses were set ablaze in India’s Manipur state, followed by gunfire between two groups.",
@@ -445,7 +495,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 44,
       "tags": [
         "supply_disruption"
       ],
@@ -461,7 +511,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.9,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.83
       },
       "matched": {
         "supply_disruption": [
@@ -488,7 +538,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
         "supply_disruption"
       ],
@@ -503,7 +553,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.52
       },
       "matched": {
         "supply_disruption": [
@@ -531,12 +581,12 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 41,
       "tags": [
         "geopolitics",
         "weather"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -548,7 +598,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.1,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -620,7 +670,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 37,
       "tags": [
         "infrastructure"
       ],
@@ -636,7 +686,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.7,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.86
       },
       "matched": {
         "infrastructure": [
@@ -644,51 +694,6 @@
         ],
         "geography": [
           "england"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "NKT cranks up the heat on HVDC power cables with 90°C technology",
-      "url": "https://www.offshore-energy.biz/nkt-cranks-up-the-heat-on-hvdc-power-cables-with-90c-technology/",
-      "snippet": "Denmark-headquartered power cable manufacturer and installation player NKT is raising the bar for high-voltage direct current (HVDC) power cable technology with a newly qualified 525 kV extruded XLPE subsea cable system for operation at 90°C, boosting transmission capability and the firm’s HVDC port",
-      "published_at": "2026-08-24T10:36:45+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 24.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.1,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "geopolitics": [
-          "subsea cable"
-        ],
-        "infrastructure": [
-          "transmission",
-          "cable"
-        ],
-        "geography": [
-          "denmark"
         ]
       },
       "duplicate_count": 0,
@@ -705,7 +710,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 37,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
@@ -720,103 +725,11 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.5,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
           "tariffs"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Aker Solutions, Microsoft partner to fast-track global CCS, carbon removal pipeline",
-      "url": "https://www.offshore-energy.biz/aker-solutions-microsoft-partner-to-fast-track-global-ccs-carbon-removal-pipeline/",
-      "snippet": "Norway-based energy services provider Aker Solutions has joined forces with Microsoft to accelerate carbon capture and storage (CCS) and carbon dioxide removal (CDR) projects across the globe, aiming to cut execution risks and help developers move projects toward final investment decisions (FIDs). T",
-      "published_at": "2026-08-24T13:26:13+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "gas_storage",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 10.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.2,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "gas_storage": [
-          "storage"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "norway"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "WATCH: $17.5B US Gulf Coast LNG project taking shape as Woodside pushes toward 2029 start-up",
-      "url": "https://www.offshore-energy.biz/watch-17-5b-us-gulf-coast-lng-project-taking-shape-as-woodside-pushes-toward-2029-start-up/",
-      "snippet": "Australia’s energy giant Woodside is moving its liquefied natural gas (LNG) development project in Louisiana closer to the targeted first cargo in 2029 with a new construction milestone at the project site in the Pelican State, United States (U.S.). The post WATCH: $17.5B US Gulf Coast LNG project t",
-      "published_at": "2026-08-24T11:36:40+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 22.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 39.5,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargo"
-        ],
-        "infrastructure": [
-          "start-up"
-        ],
-        "geography": [
-          "united states",
-          "us gulf",
-          "australia",
-          "gulf"
         ]
       },
       "duplicate_count": 0,
@@ -833,7 +746,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 34,
+      "score": 33,
       "tags": [
         "geopolitics",
         "lng"
@@ -850,7 +763,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 57.8,
-        "recency_multiplier": 0.45
+        "recency_multiplier": 0.42
       },
       "matched": {
         "geopolitics": [
@@ -895,7 +808,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.8,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
