@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-24T19:11:34.992114+00:00",
-  "item_count": 16,
+  "generated_at": "2026-08-24T19:44:50.878251+00:00",
+  "item_count": 21,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 10
+    "normal": 12
   },
   "superseded_count": 1,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1336
+        "ms": 1087
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 83157
+        "ms": 47288
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2677
+        "ms": 3002
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 176
+        "ms": 389
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 292
+        "ms": 734
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 79
+        "ms": 227
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 852
+        "ms": 1123
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 44
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 236
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 652
+        "ms": 711
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 93
+        "ms": 207
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 473
+        "ms": 640
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 48
+        "ms": 257
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 250
+        "ms": 210
       }
     ]
   },
@@ -169,7 +169,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 64,
+      "score": 63,
       "tags": [
         "geopolitics"
       ],
@@ -185,7 +185,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 69.7,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -216,7 +216,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 54,
+      "score": 53,
       "tags": [
         "geopolitics",
         "lng"
@@ -233,7 +233,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 62.1,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
@@ -262,7 +262,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 51,
       "tags": [
         "geopolitics",
         "gas_storage",
@@ -280,7 +280,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.0,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -312,7 +312,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 48,
       "tags": [
         "supply_disruption"
       ],
@@ -328,7 +328,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.9,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.94
       },
       "matched": {
         "supply_disruption": [
@@ -358,7 +358,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 49,
+      "score": 48,
       "tags": [
         "infrastructure",
         "power_system",
@@ -376,7 +376,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 60.5,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.66
       },
       "matched": {
         "infrastructure": [
@@ -398,42 +398,86 @@
       "also_reported_by": []
     },
     {
-      "title": "Hungary plans new climate law, as Paks ramps up",
-      "url": "https://www.world-nuclear-news.org/articles/hungary-plans-new-climate-law-as-paks-ramps-up",
-      "snippet": "Prime Minister P ter Magyar says that emergency works to secure the necessary water supply for Hungary s Paks nuclear power plant have progressed faster than planned.",
-      "published_at": "2026-08-24T11:36:00+00:00",
+      "title": "MODEC’s FPSO reaches Guyana as ExxonMobil’s fifth oil project nears start-up",
+      "url": "https://www.offshore-energy.biz/modecs-fpso-reaches-guyana-as-exxonmobils-fifth-oil-project-nears-start-up/",
+      "snippet": "Japan’s MODEC has announced the arrival of a floating production, storage, and offloading (FPSO) vessel in Guyanese waters ahead of its deployment on a project in the Stabroek block, as the development moves closer to first oil expected later this year. The post MODEC’s FPSO reaches Guyana as ExxonM",
+      "published_at": "2026-08-24T14:37:31+00:00",
       "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 47,
       "tags": [
-        "nuclear"
+        "infrastructure",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 16.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 49.9,
+        "recency_multiplier": 0.79
+      },
+      "matched": {
+        "infrastructure": [
+          "start-up"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "japan"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Video: Israel attacks desalination plant and mosque in Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/video-israel-attacks-desalination-plant-and-mosque-in-gaza?traffic_source=rss",
+      "snippet": "Israel has attacked a critical water desalination plant and a mosque in Gaza as it intensifies attacks on the enclave.",
+      "published_at": "2026-08-24T19:21:01+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "geopolitics"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 13.9,
-        "themes": 7.3,
+        "authority": 9.5,
+        "themes": 9.0,
         "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 57.1,
-        "recency_multiplier": 0.65
+        "raw": 38.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "nuclear": [
-          "nuclear"
+        "geopolitics": [
+          "attacked"
         ],
         "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
+          "attacked"
         ]
       },
       "duplicate_count": 0,
@@ -485,6 +529,85 @@
       "also_reported_by": []
     },
     {
+      "title": "Hungary plans new climate law, as Paks ramps up",
+      "url": "https://www.world-nuclear-news.org/articles/hungary-plans-new-climate-law-as-paks-ramps-up",
+      "snippet": "Prime Minister P ter Magyar says that emergency works to secure the necessary water supply for Hungary s Paks nuclear power plant have progressed faster than planned.",
+      "published_at": "2026-08-24T11:36:00+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 57.1,
+        "recency_multiplier": 0.62
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Treasury Expands Iran Sanctions Without Targeting Major Chinese Banks",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Treasury-Expands-Iran-Sanctions-Without-Targeting-Major-Chinese-Banks.html",
+      "snippet": "The Trump administration has revealed the details of its “economic D-Day” campaign against Iran, expanding secondary sanctions that threaten foreign companies with exclusion from the U.S. financial system for continuing to do business with Tehran and targeting nearly 60 individuals, entities and ves",
+      "published_at": "2026-08-24T19:13:50+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "secondary sanctions"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Houses set on fire as fresh violence erupts in India’s Manipur",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/houses-set-on-fire-as-fresh-violence-erupts-in-indias-manipur?traffic_source=rss",
       "snippet": "Several houses were set ablaze in India’s Manipur state, followed by gunfire between two groups.",
@@ -495,7 +618,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 42,
       "tags": [
         "supply_disruption"
       ],
@@ -511,7 +634,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.9,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.8
       },
       "matched": {
         "supply_disruption": [
@@ -538,11 +661,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 43,
+      "score": 41,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -553,7 +676,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.5
       },
       "matched": {
         "supply_disruption": [
@@ -569,53 +692,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "UK to help Ukraine build Storm Shadow long-range missiles: Why it matters",
-      "url": "https://www.aljazeera.com/news/2026/8/24/uk-to-help-ukraine-build-storm-shadow-long-range-missiles-why-it-matters?traffic_source=rss",
-      "snippet": "The UK&#039;s willingness to share classified missile-production knowledge sets a potentially important precedent.",
-      "published_at": "2026-08-24T15:17:36+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "geopolitics",
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 12.7,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.1,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "geopolitics": [
-          "missile"
-        ],
-        "weather": [
-          "storm"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "BBC World"
-      ],
-      "first_seen_at": "2026-08-24T15:14:14+00:00"
     },
     {
       "title": "US Accuses More Than 40 Countries of Helping China Evade Tariffs",
@@ -660,6 +736,53 @@
       "also_reported_by": []
     },
     {
+      "title": "UK to help Ukraine build Storm Shadow long-range missiles: Why it matters",
+      "url": "https://www.aljazeera.com/news/2026/8/24/uk-to-help-ukraine-build-storm-shadow-long-range-missiles-why-it-matters?traffic_source=rss",
+      "snippet": "The UK&#039;s willingness to share classified missile-production knowledge sets a potentially important precedent.",
+      "published_at": "2026-08-24T15:17:36+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics",
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 12.7,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.1,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "geopolitics": [
+          "missile"
+        ],
+        "weather": [
+          "storm"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "BBC World"
+      ],
+      "first_seen_at": "2026-08-24T15:14:14+00:00"
+    },
+    {
       "title": "Construction of Thames Electricity Tunnel Reaches Midway Point",
       "url": "https://www.rigzone.com/news/construction_of_thames_electricity_tunnel_reaches_midway_point-24-aug-2026-184447-article/?rss=true",
       "snippet": "Tunneling for the 2.2-kilometer Grain to Tilbury high-voltage cable tunnel beneath southern England's primary river surpassed the halfway point.",
@@ -670,7 +793,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 36,
       "tags": [
         "infrastructure"
       ],
@@ -686,7 +809,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.7,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.82
       },
       "matched": {
         "infrastructure": [
@@ -694,6 +817,51 @@
         ],
         "geography": [
           "england"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "NKT cranks up the heat on HVDC power cables with 90°C technology",
+      "url": "https://www.offshore-energy.biz/nkt-cranks-up-the-heat-on-hvdc-power-cables-with-90c-technology/",
+      "snippet": "Denmark-headquartered power cable manufacturer and installation player NKT is raising the bar for high-voltage direct current (HVDC) power cable technology with a newly qualified 525 kV extruded XLPE subsea cable system for operation at 90°C, boosting transmission capability and the firm’s HVDC port",
+      "published_at": "2026-08-24T10:36:45+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 24.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.1,
+        "recency_multiplier": 0.58
+      },
+      "matched": {
+        "geopolitics": [
+          "subsea cable"
+        ],
+        "infrastructure": [
+          "transmission",
+          "cable"
+        ],
+        "geography": [
+          "denmark"
         ]
       },
       "duplicate_count": 0,
@@ -710,7 +878,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -725,7 +893,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.5,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -736,45 +904,92 @@
       "also_reported_by": []
     },
     {
-      "title": "Hormuz Tanker Traffic Slumps as U.S. and Iran Trade Threats",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Slumps-as-US-and-Iran-Trade-Threats.html",
-      "snippet": "Tanker traffic via the Strait of Hormuz remained weak over the weekend, with fewer than 20 vessels traversing the chokepoint as Iran and the United States traded threats again. Some 13 tankers passed through the strait on Saturday, with only four making the journey on Sunday, Kpler data cited by Reu",
-      "published_at": "2026-08-24T06:00:00+00:00",
+      "title": "WATCH: $17.5B US Gulf Coast LNG project taking shape as Woodside pushes toward 2029 start-up",
+      "url": "https://www.offshore-energy.biz/watch-17-5b-us-gulf-coast-lng-project-taking-shape-as-woodside-pushes-toward-2029-start-up/",
+      "snippet": "Australia’s energy giant Woodside is moving its liquefied natural gas (LNG) development project in Louisiana closer to the targeted first cargo in 2029 with a new construction milestone at the project site in the Pelican State, United States (U.S.). The post WATCH: $17.5B US Gulf Coast LNG project t",
+      "published_at": "2026-08-24T11:36:40+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
-      "has_magnitude": true,
+      "has_magnitude": false,
       "score": 33,
       "tags": [
-        "geopolitics",
-        "lng"
+        "lng",
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 21.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 12.4,
+        "themes": 22.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 57.8,
-        "recency_multiplier": 0.42
+        "raw": 39.5,
+        "recency_multiplier": 0.62
       },
       "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
         "lng": [
-          "tanker"
+          "lng",
+          "cargo"
+        ],
+        "infrastructure": [
+          "start-up"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "united states",
+          "us gulf",
+          "australia",
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Aker Solutions, Microsoft partner to fast-track global CCS, carbon removal pipeline",
+      "url": "https://www.offshore-energy.biz/aker-solutions-microsoft-partner-to-fast-track-global-ccs-carbon-removal-pipeline/",
+      "snippet": "Norway-based energy services provider Aker Solutions has joined forces with Microsoft to accelerate carbon capture and storage (CCS) and carbon dioxide removal (CDR) projects across the globe, aiming to cut execution risks and help developers move projects toward final investment decisions (FIDs). T",
+      "published_at": "2026-08-24T13:26:13+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "gas_storage",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 10.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.2,
+        "recency_multiplier": 0.72
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "norway"
         ]
       },
       "duplicate_count": 0,
@@ -791,7 +1006,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 10,
       "tags": [
         "geopolitics",
         "supply_disruption"
@@ -808,7 +1023,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.8,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
