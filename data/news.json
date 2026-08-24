@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T07:15:49.578668+00:00",
-  "item_count": 9,
+  "generated_at": "2026-08-24T08:08:11.475668+00:00",
+  "item_count": 11,
   "alert_counts": {
     "critical": 0,
     "high": 1,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1824
+        "ms": 1368
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 116529
+        "ms": 108566
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 15151
+        "ms": 34456
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 485
+        "ms": 430
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 510
+        "ms": 683
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 391
+        "ms": 132
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 1278
+        "ms": 1334
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 131
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 500
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 743
+        "ms": 674
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 286
+        "ms": 316
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 458
+        "ms": 850
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 34,
         "error": null,
-        "ms": 190
+        "ms": 79
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 195
+        "ms": 79
       }
     ]
   },
@@ -160,7 +160,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 61,
+      "score": 60,
       "tags": [
         "geopolitics",
         "lng"
@@ -177,7 +177,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 57.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -273,6 +273,46 @@
       "also_reported_by": []
     },
     {
+      "title": "EU, Russian aircraft help Serbia battle wildfires",
+      "url": "https://www.aljazeera.com/news/2026/8/24/eu-russian-aircraft-help-serbia-battle-wildfires?traffic_source=rss",
+      "snippet": "EU crews and a Russian aircraft help Serbia fight major wildfires as extreme heat fuels fires across the Balkans.",
+      "published_at": "2026-08-24T07:19:32+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 11.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "extreme heat"
+        ],
+        "geography": [
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Oil Prices Slide 2% as Markets Brace for Bessent’s ‘Economic D-Day’",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Slide-2-as-Markets-Brace-for-Bessents-Economic-D-Day.html",
       "snippet": "Oil prices fell by more than 2% in early Asian trade on Monday as traders took profits and markets awaited details of a new U.S. sanctions package against Iran. At the time of writing, WTI futures were trading at $85.18 per barrel, down 2.16%, while Brent futures were trading at $92.32 per barrel, d",
@@ -283,7 +323,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 40,
+      "score": 38,
       "tags": [
         "oil_macro",
         "geopolitics"
@@ -299,7 +339,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 39.6,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.74
       },
       "matched": {
         "oil_macro": [
@@ -309,6 +349,89 @@
         ],
         "geopolitics": [
           "sanctions"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Bangladesh seeks more spot LNG supplies",
+      "url": "https://lngprime.com/contracts-and-tenders/bangladesh-seeks-more-spot-lng-supplies/195649/",
+      "snippet": "Bangladesh’s Rupantarita Prakritik Gas (RPGCL), a unit of state-owned Petrobangla, is seeking bids for a new batch of spot liquefied natural gas (LNG) cargoes amid the ongoing Middle East crisis.",
+      "published_at": "2026-08-24T04:17:33+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.7,
+        "recency_multiplier": 0.87
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Uniper, Equinor seal long-term gas supply deal",
+      "url": "https://lngprime.com/contracts-and-tenders/uniper-equinor-seal-long-term-gas-supply-deal/195641/",
+      "snippet": "German energy and LNG firm Uniper has signed a long-term deal with Norway's Equinor for the supply of natural gas to Germany.",
+      "published_at": "2026-08-24T04:16:56+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 0.87
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "germany",
+          "german",
+          "norway"
         ]
       },
       "duplicate_count": 0,
@@ -325,7 +448,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "supply_disruption"
       ],
@@ -340,7 +463,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.65
       },
       "matched": {
         "supply_disruption": [
@@ -348,46 +471,6 @@
         ],
         "unplanned": [
           "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "India’s GAIL plans Kandla LNG bunkering facility",
-      "url": "https://lngprime.com/asia/indias-gail-plans-kandla-lng-bunkering-facility/195611/",
-      "snippet": "India’s largest gas utility GAIL has signed a cooperation agreement with Deendayal Port Authority (DPA) and classification society DNV on setting up a liquefied natural gas (LNG) bunkering facility at the port of Kandla on the northwestern coast of India.",
-      "published_at": "2026-08-24T04:18:00+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.93
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "india"
         ]
       },
       "duplicate_count": 0,
@@ -435,40 +518,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Top 5 news of the week August 17-23",
-      "url": "https://lngprime.com/asia/top-5-news-of-the-week-august-17-23/195597/",
-      "snippet": "LNG Prime brings you the five most popular news stories on our platform during the week of August 17-23, 2026.",
-      "published_at": "2026-08-24T04:15:00+00:00",
+      "title": "India’s GAIL plans Kandla LNG bunkering facility",
+      "url": "https://lngprime.com/asia/indias-gail-plans-kandla-lng-bunkering-facility/195611/",
+      "snippet": "India’s largest gas utility GAIL has signed a cooperation agreement with Deendayal Port Authority (DPA) and classification society DNV on setting up a liquefied natural gas (LNG) bunkering facility at the port of Kandla on the northwestern coast of India.",
+      "published_at": "2026-08-24T04:18:00+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
-        "lng",
-        "infrastructure"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
-        "themes": 11.3,
-        "geography": 0.0,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.5,
-        "recency_multiplier": 0.92
+        "raw": 25.4,
+        "recency_multiplier": 0.87
       },
       "matched": {
         "lng": [
           "lng"
         ],
-        "infrastructure": [
-          "platform"
+        "geography": [
+          "india"
         ]
       },
       "duplicate_count": 0,
