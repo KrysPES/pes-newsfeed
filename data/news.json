@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-25T21:47:56.660898+00:00",
-  "item_count": 18,
+  "generated_at": "2026-08-25T22:05:29.432459+00:00",
+  "item_count": 17,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 6
+    "normal": 5
   },
   "superseded_count": 4,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1494
+        "ms": 2213
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 134002
+        "ms": 157307
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 8358
+        "ms": 7760
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 583
+        "ms": 667
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 638
+        "ms": 695
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 205
+        "ms": 219
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 42,
         "error": null,
-        "ms": 1153
+        "ms": 1212
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 275
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 204
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 660
+        "ms": 732
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 287
+        "ms": 259
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 463
+        "ms": 654
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 80
+        "ms": 116
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 172
+        "ms": 173
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 57,
+      "score": 56,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -133,7 +133,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -159,7 +159,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 45,
+      "score": 44,
       "tags": [
         "lng",
         "infrastructure"
@@ -176,7 +176,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 62.5,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "lng": [
@@ -205,7 +205,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 43,
       "tags": [
         "infrastructure",
         "geopolitics",
@@ -223,7 +223,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.4,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.63
       },
       "matched": {
         "infrastructure": [
@@ -241,102 +241,6 @@
         ],
         "unplanned": [
           "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Satellite Images Show Seven Tankers Loading Iraqi Crude at Once",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Satellite-Images-Show-Seven-Tankers-Loading-Iraqi-Crude-at-Once.html",
-      "snippet": "Seven crude carriers were moored at Iraq’s Persian Gulf export facilities on August 24—a sharp increase from recent weeks. The carriers had a combined carrying capacity of roughly 13 million barrels, according to satellite imagery analyzed by Bloomberg. TankerTrackers.com separately said it counted ",
-      "published_at": "2026-08-25T19:32:27+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 22.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.8,
-        "recency_multiplier": 0.98
-      },
-      "matched": {
-        "geopolitics": [
-          "persian gulf"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukraine Hits Another Russian Refinery as Fuel Crunch Worsens",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Hits-Another-Russian-Refinery-as-Fuel-Crunch-Worsens.html",
-      "snippet": "Ukraine continues to pound Russian refineries in nearly daily drone attacks that damage refining infrastructure, deepen the fuel crisis in Russia, and tighten global fuel markets. In the latest attack on Monday night, Ukrainian forces hit the 180,000-barrels-per-day Afipsky refinery in the southern ",
-      "published_at": "2026-08-25T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 57.1,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
-        ],
-        "oil_macro": [
-          "refinery",
-          "barrels"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "ukraine"
-        ],
-        "unplanned": [
-          "damage"
         ]
       },
       "duplicate_count": 0,
@@ -392,6 +296,94 @@
         ],
         "speculative": [
           "may"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Satellite Images Show Seven Tankers Loading Iraqi Crude at Once",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Satellite-Images-Show-Seven-Tankers-Loading-Iraqi-Crude-at-Once.html",
+      "snippet": "Seven crude carriers were moored at Iraq’s Persian Gulf export facilities on August 24—a sharp increase from recent weeks. The carriers had a combined carrying capacity of roughly 13 million barrels, according to satellite imagery analyzed by Bloomberg. TankerTrackers.com separately said it counted ",
+      "published_at": "2026-08-25T19:32:27+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.8,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "persian gulf"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "The U.S. Power Play in Iraq That Moscow and Beijing Didn’t See Coming",
+      "url": "https://oilprice.com/Energy/Energy-General/The-US-Power-Play-in-Iraq-That-Moscow-and-Beijing-Didnt-See-Coming.html",
+      "snippet": "As Russia remains occupied with its war in Ukraine, Iran focuses on defending its territory against U.S. and Israeli attacks, and China maintains its involvement in both conflicts under the bar that would trigger direct conflict with America, Washington is leveraging its position in Iraq. These effo",
+      "published_at": "2026-08-25T22:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war"
+        ],
+        "geography": [
+          "russia",
+          "ukraine",
+          "china"
         ]
       },
       "duplicate_count": 0,
@@ -508,7 +500,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.7,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "lng": [
@@ -548,56 +540,12 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
           "sanctions",
           "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "WATCH: North Sea decom campaign retires trio of gas wells in UK waters",
-      "url": "https://www.offshore-energy.biz/watch-north-sea-decom-campaign-retires-trio-of-gas-wells-in-uk-waters/",
-      "snippet": "Spirit Energy, a North Sea operator, has finished a multimillion-dollar decommissioning campaign in the UK sector of the North Sea, plugging and abandoning (P&#38;A) three gas wells that have reached the end of their productive lives and removing more than 234 tons of subsea infrastructure. The post",
-      "published_at": "2026-08-25T13:50:12+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "nuclear",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 10.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.4,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "nuclear": [
-          "decommissioning"
-        ],
-        "oil_macro": [
-          "dollar"
-        ],
-        "geography": [
-          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -630,7 +578,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "lng": [
@@ -654,7 +602,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "nuclear"
       ],
@@ -669,7 +617,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.6
       },
       "matched": {
         "nuclear": [
@@ -693,7 +641,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "nuclear"
       ],
@@ -708,7 +656,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.6
       },
       "matched": {
         "nuclear": [
@@ -748,7 +696,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
@@ -797,7 +745,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.7,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
@@ -849,7 +797,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.7,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
