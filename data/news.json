@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-25T22:39:54.656129+00:00",
+  "generated_at": "2026-08-25T23:06:02.240959+00:00",
   "item_count": 16,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 3
+    "high": 1,
+    "normal": 2
   },
   "superseded_count": 4,
   "sources": {
@@ -17,95 +17,138 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1377
+        "ms": 1220
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 73367
+        "ms": 274544
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 21909
+        "ms": 9516
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 510
+        "ms": 522
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 318
+        "ms": 381
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 133
+        "ms": 84
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 42,
         "error": null,
-        "ms": 725
+        "ms": 891
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 182
+        "ms": 159
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 607
+        "ms": 587
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 74
+        "ms": 185
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 370
+        "ms": 513
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 170
+        "ms": 50
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 121
+        "ms": 80
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Poolbeg Flexgen (PB7) (GU_403620) - GU_403620",
+      "url": "https://umm.nordpoolgroup.com/#/messages/2ad29809-75d1-45c3-a576-6f0ac48718cf/1",
+      "snippet": "Published: 26.08.2026 00:49:21 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unit operating at reduced output due to ongoing issue. Remarks: Unit operating at reduced output due to ongoing issue. Production Units Unit Name",
+      "published_at": "2026-08-25T22:49:21+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Canada announces 'dollar-for-dollar' retaliatory tariffs on US as high as 50%",
       "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
@@ -117,7 +160,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 54,
+      "score": 53,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -133,7 +176,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.8,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
@@ -159,7 +202,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 42,
       "tags": [
         "lng",
         "infrastructure"
@@ -176,7 +219,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 62.5,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.54
       },
       "matched": {
         "lng": [
@@ -205,13 +248,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "geopolitics",
         "supply_disruption",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -223,7 +266,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 33.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -244,103 +287,6 @@
         ],
         "speculative": [
           "may"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Satellite Images Show Seven Tankers Loading Iraqi Crude at Once",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Satellite-Images-Show-Seven-Tankers-Loading-Iraqi-Crude-at-Once.html",
-      "snippet": "Seven crude carriers were moored at Iraq’s Persian Gulf export facilities on August 24—a sharp increase from recent weeks. The carriers had a combined carrying capacity of roughly 13 million barrels, according to satellite imagery analyzed by Bloomberg. TankerTrackers.com separately said it counted ",
-      "published_at": "2026-08-25T19:32:27+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 22.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.8,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "geopolitics": [
-          "persian gulf"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukraine Attacks Oil Refinery, Gas Plant in Russia",
-      "url": "https://www.rigzone.com/news/wire/ukraine_attacks_oil_refinery_gas_plant_in_russia-25-aug-2026-184453-article/?rss=true",
-      "snippet": "Ukraine said it attacked an oil refinery and a gas-processing plant in Russia overnight.",
-      "published_at": "2026-08-25T14:00:00+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "infrastructure",
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.9,
-        "themes": 19.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 55.4,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "infrastructure": [
-          "processing plant"
-        ],
-        "geopolitics": [
-          "attacked"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ],
-        "unplanned": [
-          "attacked"
         ]
       },
       "duplicate_count": 0,
@@ -436,6 +382,103 @@
       "also_reported_by": []
     },
     {
+      "title": "Satellite Images Show Seven Tankers Loading Iraqi Crude at Once",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Satellite-Images-Show-Seven-Tankers-Loading-Iraqi-Crude-at-Once.html",
+      "snippet": "Seven crude carriers were moored at Iraq’s Persian Gulf export facilities on August 24—a sharp increase from recent weeks. The carriers had a combined carrying capacity of roughly 13 million barrels, according to satellite imagery analyzed by Bloomberg. TankerTrackers.com separately said it counted ",
+      "published_at": "2026-08-25T19:32:27+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.8,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "geopolitics": [
+          "persian gulf"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ukraine Attacks Oil Refinery, Gas Plant in Russia",
+      "url": "https://www.rigzone.com/news/wire/ukraine_attacks_oil_refinery_gas_plant_in_russia-25-aug-2026-184453-article/?rss=true",
+      "snippet": "Ukraine said it attacked an oil refinery and a gas-processing plant in Russia overnight.",
+      "published_at": "2026-08-25T14:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "infrastructure",
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.9,
+        "themes": 19.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 55.4,
+        "recency_multiplier": 0.58
+      },
+      "matched": {
+        "infrastructure": [
+          "processing plant"
+        ],
+        "geopolitics": [
+          "attacked"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "New US sanctions signal Trump desperation on Iran, experts say",
       "url": "https://www.aljazeera.com/news/2026/8/25/new-us-sanctions-signal-trump-desperation-on-iran-experts-say?traffic_source=rss",
       "snippet": "Economic escalation is unlikely to force the Iranian government to capitulate to US demands, according to experts.",
@@ -446,7 +489,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -461,7 +504,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -500,7 +543,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.7,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.54
       },
       "matched": {
         "lng": [
@@ -525,7 +568,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -540,7 +583,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -562,7 +605,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "nuclear",
         "oil_macro"
@@ -579,7 +622,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.4,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.57
       },
       "matched": {
         "nuclear": [
@@ -590,46 +633,6 @@
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Woodside Retreats on Clean Energy, Doubles Down on LNG",
-      "url": "https://www.rigzone.com/news/wire/woodside_retreats_on_clean_energy_doubles_down_on_lng-25-aug-2026-184454-article/?rss=true",
-      "snippet": "Australia's biggest oil and gas producer Woodside Energy Group Ltd. is scaling back its clean energy ambitions to double down on fossil fuels.",
-      "published_at": "2026-08-25T20:00:00+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.2,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "australia"
         ]
       },
       "duplicate_count": 0,
@@ -662,7 +665,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -711,7 +714,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.7,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.63
       },
       "matched": {
         "geopolitics": [
@@ -728,53 +731,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/25/new-us-sanctions-signal-trump-desperation-on-iran-experts-say?traffic_source=rss",
-        "title": "New US sanctions signal Trump desperation on Iran, experts say",
-        "published_at": "2026-08-25T20:34:49+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Oil Drops as Iran Diplomacy Gains",
-      "url": "https://www.rigzone.com/news/wire/oil_drops_as_iran_diplomacy_gains-25-aug-2026-184459-article/?rss=true",
-      "snippet": "Oil extended losses as traders saw fewer signs of military escalation and US sanctions on Iran proved less severe than feared.",
-      "published_at": "2026-08-25T20:06:49+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 11,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.9,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "escalation"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "OilPrice.com"
-      ],
-      "first_seen_at": "2026-08-25T15:53:00+00:00",
       "superseded": true,
       "superseded_by": {
         "url": "https://www.aljazeera.com/news/2026/8/25/new-us-sanctions-signal-trump-desperation-on-iran-experts-say?traffic_source=rss",
@@ -810,7 +766,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.7,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -821,6 +777,50 @@
         ],
         "urgency": [
           "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/25/new-us-sanctions-signal-trump-desperation-on-iran-experts-say?traffic_source=rss",
+        "title": "New US sanctions signal Trump desperation on Iran, experts say",
+        "published_at": "2026-08-25T20:34:49+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Oil Drops as Iran Diplomacy Gains",
+      "url": "https://www.rigzone.com/news/wire/oil_drops_as_iran_diplomacy_gains-25-aug-2026-184459-article/?rss=true",
+      "snippet": "Oil extended losses as traders saw fewer signs of military escalation and US sanctions on Iran proved less severe than feared.",
+      "published_at": "2026-08-25T20:06:49+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 10,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.9,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "escalation"
         ]
       },
       "duplicate_count": 0,
