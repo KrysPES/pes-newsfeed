@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T10:44:43.230918+00:00",
-  "item_count": 12,
+  "generated_at": "2026-08-25T11:08:39.151888+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
     "high": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 2,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1369
+        "ms": 1552
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 81458
+        "ms": 85149
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19544
+        "ms": 5514
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 789
+        "ms": 451
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 595
+        "ms": 679
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 343
+        "ms": 129
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 40,
         "error": null,
-        "ms": 939
+        "ms": 1219
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 227
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 54
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 603
+        "ms": 724
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 201
+        "ms": 349
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 527
+        "ms": 684
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 139
+        "ms": 198
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 380
+        "ms": 74
       }
     ]
   },
@@ -168,7 +168,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 50,
       "tags": [
         "lng"
       ],
@@ -184,7 +184,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.1,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.79
       },
       "matched": {
         "lng": [
@@ -200,40 +200,42 @@
       "also_reported_by": []
     },
     {
-      "title": "BW confirms sale of steam LNG carrier",
-      "url": "https://lngprime.com/asia/bw-confirms-sale-of-steam-lng-carrier/195690/",
-      "snippet": "Singapore-based gas shipping giant BW confirmed that it has sold its 2005-built steam LNG carrier, LNG Oyo.",
-      "published_at": "2026-08-25T08:07:36+00:00",
+      "title": "Malacca States Vow to Keep Asia’s Busiest Shipping Route Open",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Malacca-States-Vow-to-Keep-Asias-Busiest-Shipping-Route-Open.html",
+      "snippet": "The three states in the Strait of Malacca, the vital shipping lane into Asia, have pledged to keep the world’s busiest maritime thoroughfare free and open to vessels amid the ongoing crisis in the Strait of Hormuz in the Middle East. Indonesia, Malaysia, and Singapore on Tuesday reaffirmed in a join",
+      "published_at": "2026-08-25T11:00:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
       "score": 49,
       "tags": [
-        "lng"
+        "geopolitics"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.7,
-        "recency_multiplier": 0.95
+        "raw": 41.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "lng",
-          "carrier"
+        "geopolitics": [
+          "strait of hormuz"
         ],
-        "urgency": [
-          "confirmed"
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "malacca"
         ]
       },
       "duplicate_count": 0,
@@ -285,6 +287,46 @@
       "also_reported_by": []
     },
     {
+      "title": "BW confirms sale of steam LNG carrier",
+      "url": "https://lngprime.com/asia/bw-confirms-sale-of-steam-lng-carrier/195690/",
+      "snippet": "Singapore-based gas shipping giant BW confirmed that it has sold its 2005-built steam LNG carrier, LNG Oyo.",
+      "published_at": "2026-08-25T08:07:36+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.7,
+        "recency_multiplier": 0.92
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Knutsen takes delivery of QatarEnergy LNG tanker",
       "url": "https://lngprime.com/asia/knutsen-takes-delivery-of-qatarenergy-lng-tanker/195695/",
       "snippet": "Norwegian shipowner Knutsen has taken delivery of another 174,000-cbm LNG carrier built as part of the massive QatarEnergy shipbuilding program.",
@@ -295,7 +337,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 43,
       "tags": [
         "lng"
       ],
@@ -311,7 +353,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.0,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.79
       },
       "matched": {
         "lng": [
@@ -337,7 +379,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 42,
       "tags": [
         "gas_storage",
         "oil_macro"
@@ -354,7 +396,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.95
       },
       "matched": {
         "gas_storage": [
@@ -381,11 +423,11 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.2,
@@ -397,7 +439,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 48.1,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
@@ -429,7 +471,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 36,
       "tags": [
         "geopolitics",
         "lng"
@@ -446,7 +488,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 77.1,
-        "recency_multiplier": 0.37
+        "recency_multiplier": 0.36
       },
       "matched": {
         "geopolitics": [
@@ -480,7 +522,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 36,
+      "score": 35,
       "tags": [
         "lng"
       ],
@@ -495,7 +537,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.82
       },
       "matched": {
         "lng": [
@@ -516,7 +558,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -531,7 +573,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -571,7 +613,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -603,7 +645,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 14,
       "tags": [
         "geopolitics"
       ],
@@ -618,7 +660,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.6,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -630,8 +672,10 @@
           "announced"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": [],
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "BBC World"
+      ],
       "superseded": true,
       "superseded_by": {
         "url": "https://www.aljazeera.com/news/2026/8/25/pakistan-says-significant-progress-made-in-talks-on-iran-us-war?traffic_source=rss",
