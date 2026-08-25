@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-25T04:41:14.592834+00:00",
-  "item_count": 8,
+  "generated_at": "2026-08-25T05:18:30.462381+00:00",
+  "item_count": 6,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 2
+    "normal": 1
   },
-  "superseded_count": 3,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1207
+        "ms": 1167
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 57656
+        "ms": 89571
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2593
+        "ms": 2601
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 438
+        "ms": 446
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 435
+        "ms": 607
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 100
+        "ms": 101
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 994
+        "ms": 4931
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 171
+        "ms": 242
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 672
+        "ms": 516
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 266
+        "ms": 159
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 1356
+        "ms": 275
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 29,
+        "count": 30,
         "error": null,
-        "ms": 81
+        "ms": 468
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 89
+        "ms": 179
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 51,
       "tags": [
         "geopolitics",
         "lng"
@@ -134,7 +134,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 77.1,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.57
       },
       "matched": {
         "geopolitics": [
@@ -168,13 +168,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 40,
       "tags": [
         "geopolitics",
         "infrastructure",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -186,7 +186,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 63.0,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.51
       },
       "matched": {
         "geopolitics": [
@@ -204,6 +204,53 @@
         ],
         "urgency": [
           "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran-Linked Cyberattack Tests Britain’s Energy Defenses",
+      "url": "https://oilprice.com/Energy/Energy-General/Iran-Linked-Cyberattack-Tests-Britains-Energy-Defenses.html",
+      "snippet": "An attack on an energy facility which was shut down for four days last month was carried out by hackers linked to the Iranian regime. The cyberattack, which is believed to be the first time Iranian-affiliated hackers have successfully infiltrated a UK energy facility, shutting it down. A government ",
+      "published_at": "2026-08-24T16:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 69.7,
+        "recency_multiplier": 0.42
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "geography": [
+          "uk",
+          "britain"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "shut"
         ]
       },
       "duplicate_count": 0,
@@ -244,9 +291,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 3,
-      "thread_started_at": "2026-08-24T14:00:00+00:00"
+      "also_reported_by": []
     },
     {
       "title": "The Biggest Victims Of Trump’s Economic D-Day On Iran",
@@ -259,7 +304,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 33,
+      "score": 31,
       "tags": [
         "oil_macro"
       ],
@@ -275,7 +320,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.2,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.78
       },
       "matched": {
         "oil_macro": [
@@ -289,154 +334,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Goldman Sachs: Europe Needs Much Higher Gas Prices to Secure Winter Supply",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Europe-Needs-Much-Higher-Gas-Prices-to-Secure-Winter-Supply.html",
-      "snippet": "Natural gas prices in Europe need to jump by December for European storage to fill up with enough inventory for the coming winter if the Strait of Hormuz crisis persists and keeps spot LNG prices in Asia elevated, according to Goldman Sachs. Since the Middle East crisis began, Europe has started los",
-      "published_at": "2026-08-24T15:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "gas_storage",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 27.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 52.0,
-        "recency_multiplier": 0.42
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "gas_storage": [
-          "storage",
-          "inventory"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran-Linked Cyberattack Tests Britain’s Energy Defenses",
-      "url": "https://oilprice.com/Energy/Energy-General/Iran-Linked-Cyberattack-Tests-Britains-Energy-Defenses.html",
-      "snippet": "An attack on an energy facility which was shut down for four days last month was carried out by hackers linked to the Iranian regime. The cyberattack, which is believed to be the first time Iranian-affiliated hackers have successfully infiltrated a UK energy facility, shutting it down. A government ",
-      "published_at": "2026-08-24T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 12,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 69.7,
-        "recency_multiplier": 0.44
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "geography": [
-          "uk",
-          "britain"
-        ],
-        "unplanned": [
-          "shut down"
-        ],
-        "urgency": [
-          "shut"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
-        "title": "Iran says it is ready for what US calls 'greatest financial offensive ever'",
-        "published_at": "2026-08-25T03:50:06+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Iran war live: US slaps new sanctions on Iran, warns Tehran trade partners",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/8/25/iran-war-live-drat?traffic_source=rss",
-      "snippet": "US tells countries to choose between Washington and Tehran, warns Iran&#039;s trade partners they will face consequences.",
-      "published_at": "2026-08-25T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
-        "title": "Iran says it is ready for what US calls 'greatest financial offensive ever'",
-        "published_at": "2026-08-25T03:50:06+00:00"
-      },
-      "hidden": true
-    },
-    {
       "title": "Iran Blacklists 45 Tankers as Hormuz Standoff Escalates",
       "url": "https://oilprice.com/Energy/Energy-General/Iran-Blacklists-45-Tankers-as-Hormuz-Standoff-Escalates.html",
       "snippet": "Iran has blacklisted 45 oil, LNG, LPG and product tankers using the Strait of Hormuz, threatening fines, detention and cargo confiscation as Tehran retaliates against Washington’s looming “economic D-Day.” The list includes vessels owned by shipping companies tied to two of the Gulf’s biggest oil pr",
@@ -447,7 +344,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 9,
+      "score": 30,
       "tags": [
         "geopolitics",
         "lng"
@@ -464,7 +361,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 62.1,
-        "recency_multiplier": 0.38
+        "recency_multiplier": 0.36
       },
       "matched": {
         "geopolitics": [
@@ -480,14 +377,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
-        "title": "Iran says it is ready for what US calls 'greatest financial offensive ever'",
-        "published_at": "2026-08-25T03:50:06+00:00"
-      },
-      "hidden": true
+      "also_reported_by": []
     }
   ]
 }
