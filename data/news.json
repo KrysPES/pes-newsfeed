@@ -1,157 +1,111 @@
 {
-  "generated_at": "2026-08-25T16:21:27.323287+00:00",
-  "item_count": 23,
+  "generated_at": "2026-08-25T17:02:51.545152+00:00",
+  "item_count": 20,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 10
+    "normal": 7
   },
   "superseded_count": 2,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1640
+        "ms": 1417
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 228832
+        "ms": 156764
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4197
+        "ms": 4284
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 660
+        "ms": 566
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 357
+        "ms": 449
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 256
+        "ms": 186
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 42,
         "error": null,
-        "ms": 1394
+        "ms": 943
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 444
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 209
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 6050
+        "ms": 785
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 317
+        "ms": 218
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 621
+        "ms": 593
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 192
+        "ms": 202
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 179
+        "ms": 253
       }
     ]
   },
   "items": [
-    {
-      "title": "Second phase of Tangshan LNG terminal 80 percent complete",
-      "url": "https://lngprime.com/asia/second-phase-of-tangshan-lng-terminal-80-percent-complete/195707/",
-      "snippet": "The second phase of the Caofeidian LNG import terminal in Tangshan is almost 80 percent complete, according to China Suntien Green Energy.",
-      "published_at": "2026-08-25T13:01:10+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 60,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 32.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 62.5,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal",
-          "import terminal"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
     {
       "title": "Hormuz Crisis Boosts Appeal of $42-Billion Tanzania LNG",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Crisis-Boosts-Appeal-of-42-Billion-Tanzania-LNG.html",
@@ -199,6 +153,52 @@
       "also_reported_by": []
     },
     {
+      "title": "Second phase of Tangshan LNG terminal 80 percent complete",
+      "url": "https://lngprime.com/asia/second-phase-of-tangshan-lng-terminal-80-percent-complete/195707/",
+      "snippet": "The second phase of the Caofeidian LNG import terminal in Tangshan is almost 80 percent complete, according to China Suntien Green Energy.",
+      "published_at": "2026-08-25T13:01:10+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 58,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 32.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 62.5,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal"
+        ],
+        "infrastructure": [
+          "terminal",
+          "import terminal"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Two killed, refinery on fire in Russia’s Krasnodar after drone attack",
       "url": "https://www.aljazeera.com/news/2026/8/25/two-killed-refinery-on-fire-in-russias-krasnodar-after-drone-attack?traffic_source=rss",
       "snippet": "Ukraine hits Moscow&#039;s Afipsky oil refinery and Russian-controlled Zaporizhzhia nuclear power plant",
@@ -209,7 +209,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 59,
+      "score": 57,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -228,7 +228,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 60.9,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -267,7 +267,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 56,
       "tags": [
         "infrastructure",
         "geopolitics",
@@ -285,7 +285,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.4,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.92
       },
       "matched": {
         "infrastructure": [
@@ -319,7 +319,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 56,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -336,7 +336,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.1,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.89
       },
       "matched": {
         "geopolitics": [
@@ -370,7 +370,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 48,
       "tags": [
         "geopolitics",
         "lng",
@@ -388,7 +388,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.6,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
@@ -421,7 +421,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 45,
       "tags": [
         "lng"
       ],
@@ -436,7 +436,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.7,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.86
       },
       "matched": {
         "lng": [
@@ -445,50 +445,6 @@
         ],
         "urgency": [
           "confirmed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "WATCH: North Sea decom campaign retires trio of gas wells in UK waters",
-      "url": "https://www.offshore-energy.biz/watch-north-sea-decom-campaign-retires-trio-of-gas-wells-in-uk-waters/",
-      "snippet": "Spirit Energy, a North Sea operator, has finished a multimillion-dollar decommissioning campaign in the UK sector of the North Sea, plugging and abandoning (P&#38;A) three gas wells that have reached the end of their productive lives and removing more than 234 tons of subsea infrastructure. The post",
-      "published_at": "2026-08-25T13:50:12+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "nuclear",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 10.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.4,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "nuclear": [
-          "decommissioning"
-        ],
-        "oil_macro": [
-          "dollar"
-        ],
-        "geography": [
-          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -505,11 +461,11 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 41,
       "tags": [
         "nuclear"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.9,
@@ -520,7 +476,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.89
       },
       "matched": {
         "nuclear": [
@@ -544,11 +500,11 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 41,
       "tags": [
         "nuclear"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.9,
@@ -559,54 +515,11 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.88
       },
       "matched": {
         "nuclear": [
           "reactor"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Equinor, Aker BP, Var Energi to Jointly Pursue Bigger NCS Opportunities",
-      "url": "https://www.rigzone.com/news/equinor_aker_bp_var_energi_to_jointly_pursue_bigger_ncs_opportunities-25-aug-2026-184451-article/?rss=true",
-      "snippet": "The Norwegian trio announced a collaboration to explore the largest remaining reserves in the country's waters to sustain production as existing developments become depleted.",
-      "published_at": "2026-08-25T10:30:21+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 6.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.7,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "gas_storage": [
-          "depleted"
-        ],
-        "geography": [
-          "norwegian"
         ],
         "urgency": [
           "announced"
@@ -670,7 +583,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 39,
       "tags": [
         "geopolitics"
       ],
@@ -686,7 +599,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.4,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -702,42 +615,43 @@
       "also_reported_by": []
     },
     {
-      "title": "Shell, partners take FID on new project to deliver more gas to Egypt",
-      "url": "https://lngprime.com/europe/shell-partners-take-fid-on-new-project-to-deliver-more-gas-to-egypt/195700/",
-      "snippet": "Egypt, which has turned to LNG imports over the last two years to cover domestic natural gas shortages, will receive more much-needed gas supplies after UK-based LNG giant Shell and its partners took a final investment decision on the Phase 12a development project in the West Delta Deep Marine (WDDM",
-      "published_at": "2026-08-25T06:05:24+00:00",
+      "title": "Equinor, Aker BP, Var Energi to Jointly Pursue Bigger NCS Opportunities",
+      "url": "https://www.rigzone.com/news/equinor_aker_bp_var_energi_to_jointly_pursue_bigger_ncs_opportunities-25-aug-2026-184451-article/?rss=true",
+      "snippet": "The Norwegian trio announced a collaboration to explore the largest remaining reserves in the country's waters to sustain production as existing developments become depleted.",
+      "published_at": "2026-08-25T10:30:21+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 39,
       "tags": [
-        "lng"
+        "gas_storage"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geo_band": "primary",
-        "geography": 16.0,
+        "authority": 10.9,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 55.1,
-        "recency_multiplier": 0.53
+        "raw": 43.7,
+        "recency_multiplier": 0.7
       },
       "matched": {
-        "lng": [
-          "lng",
-          "lng imports",
-          "final investment decision"
+        "gas_storage": [
+          "depleted"
         ],
         "geography": [
-          "uk"
+          "norwegian"
+        ],
+        "urgency": [
+          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -781,41 +695,42 @@
       "also_reported_by": []
     },
     {
-      "title": "Flex2Future advances floating wave, wind and solar platform toward pre-2030 demo",
-      "url": "https://www.offshore-energy.biz/flex2future-advances-floating-wave-wind-and-solar-platform-toward-pre-2030-demo/",
-      "snippet": "Flex2Future, a Norwegian technology company developing floating offshore energy systems that combine wind, wave and solar power on a single platform, has wrapped up an extensive model testing campaign in Norway, putting its floating wave, wind and solar energy platform concept through simulated offs",
-      "published_at": "2026-08-25T14:58:00+00:00",
+      "title": "Shell, partners take FID on new project to deliver more gas to Egypt",
+      "url": "https://lngprime.com/europe/shell-partners-take-fid-on-new-project-to-deliver-more-gas-to-egypt/195700/",
+      "snippet": "Egypt, which has turned to LNG imports over the last two years to cover domestic natural gas shortages, will receive more much-needed gas supplies after UK-based LNG giant Shell and its partners took a final investment decision on the Phase 12a development project in the West Delta Deep Marine (WDDM",
+      "published_at": "2026-08-25T06:05:24+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 36,
       "tags": [
-        "infrastructure"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 12.4,
-        "themes": 6.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "authority": 13.1,
+        "themes": 26.0,
+        "geo_band": "primary",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 29.1,
-        "recency_multiplier": 1.0
+        "raw": 55.1,
+        "recency_multiplier": 0.5
       },
       "matched": {
-        "infrastructure": [
-          "platform"
+        "lng": [
+          "lng",
+          "lng imports",
+          "final investment decision"
         ],
         "geography": [
-          "norway",
-          "norwegian"
+          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -832,7 +747,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "nuclear"
       ],
@@ -848,7 +763,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.4,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.73
       },
       "matched": {
         "nuclear": [
@@ -903,48 +818,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Knutsen takes delivery of QatarEnergy LNG tanker",
-      "url": "https://lngprime.com/asia/knutsen-takes-delivery-of-qatarenergy-lng-tanker/195695/",
-      "snippet": "Norwegian shipowner Knutsen has taken delivery of another 174,000-cbm LNG carrier built as part of the massive QatarEnergy shipbuilding program.",
-      "published_at": "2026-08-25T06:00:12+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 21.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.0,
-        "recency_multiplier": 0.53
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "tanker",
-          "carrier"
-        ],
-        "geography": [
-          "norwegian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Adnoc L&S orders more LNG carriers in China",
       "url": "https://lngprime.com/asia/adnoc-ls-orders-more-lng-carriers-in-china/195722/",
       "snippet": "UAE’s Adnoc L&#038;S, a unit of state-owned energy giant Adnoc, has ordered two additional liquefied natural gas (LNG) carriers from China’s Jiangnan.",
@@ -955,7 +828,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -971,7 +844,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.4,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.87
       },
       "matched": {
         "lng": [
@@ -985,44 +858,42 @@
       "also_reported_by": []
     },
     {
-      "title": "Japan Holds Off on New Oil Reserve Release Despite September Import Drop",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Japan-Holds-Off-on-New-Oil-Reserve-Release-Despite-September-Import-Drop.html",
-      "snippet": "Japan expects its oil imports next month to be lower than this month’s but has no plans to release additional crude from storage, the country’s economy minister said. Oil imports next month are seen at 80% of the average monthly for 2025, Ryosei Akazawa said, as quoted by Reuters. The report noted t",
-      "published_at": "2026-08-25T08:30:00+00:00",
+      "title": "Knutsen takes delivery of QatarEnergy LNG tanker",
+      "url": "https://lngprime.com/asia/knutsen-takes-delivery-of-qatarenergy-lng-tanker/195695/",
+      "snippet": "Norwegian shipowner Knutsen has taken delivery of another 174,000-cbm LNG carrier built as part of the massive QatarEnergy shipbuilding program.",
+      "published_at": "2026-08-25T06:00:12+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
-      "has_magnitude": true,
+      "has_magnitude": false,
       "score": 30,
       "tags": [
-        "gas_storage",
-        "oil_macro"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 9.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 13.1,
+        "themes": 21.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 35.2,
-        "recency_multiplier": 0.64
+        "raw": 45.0,
+        "recency_multiplier": 0.5
       },
       "matched": {
-        "gas_storage": [
-          "storage"
-        ],
-        "oil_macro": [
-          "crude"
+        "lng": [
+          "lng",
+          "tanker",
+          "carrier"
         ],
         "geography": [
-          "japan"
+          "norwegian"
         ]
       },
       "duplicate_count": 0,
@@ -1039,7 +910,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 14,
       "tags": [
         "geopolitics"
       ],
@@ -1055,7 +926,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "geopolitics": [
