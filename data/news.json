@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-25T22:05:29.432459+00:00",
-  "item_count": 17,
+  "generated_at": "2026-08-25T22:39:54.656129+00:00",
+  "item_count": 16,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 5
+    "normal": 3
   },
   "superseded_count": 4,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 2213
+        "ms": 1377
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 157307
+        "ms": 73367
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 7760
+        "ms": 21909
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 667
+        "ms": 510
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 695
+        "ms": 318
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 219
+        "ms": 133
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 42,
         "error": null,
-        "ms": 1212
+        "ms": 725
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 204
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 182
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 732
+        "ms": 607
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 259
+        "ms": 74
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 654
+        "ms": 370
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 116
+        "ms": 170
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 173
+        "ms": 121
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 56,
+      "score": 54,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -133,7 +133,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.8,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -159,7 +159,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 44,
+      "score": 43,
       "tags": [
         "lng",
         "infrastructure"
@@ -176,7 +176,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 62.5,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.55
       },
       "matched": {
         "lng": [
@@ -189,58 +189,6 @@
         ],
         "geography": [
           "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukraine Attacks Oil Refinery, Gas Plant in Russia",
-      "url": "https://www.rigzone.com/news/wire/ukraine_attacks_oil_refinery_gas_plant_in_russia-25-aug-2026-184453-article/?rss=true",
-      "snippet": "Ukraine said it attacked an oil refinery and a gas-processing plant in Russia overnight.",
-      "published_at": "2026-08-25T14:00:00+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "infrastructure",
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.9,
-        "themes": 19.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 55.4,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "infrastructure": [
-          "processing plant"
-        ],
-        "geopolitics": [
-          "attacked"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ],
-        "unplanned": [
-          "attacked"
         ]
       },
       "duplicate_count": 0,
@@ -312,12 +260,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "geopolitics",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -329,7 +277,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.8,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -341,6 +289,58 @@
         ],
         "geography": [
           "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ukraine Attacks Oil Refinery, Gas Plant in Russia",
+      "url": "https://www.rigzone.com/news/wire/ukraine_attacks_oil_refinery_gas_plant_in_russia-25-aug-2026-184453-article/?rss=true",
+      "snippet": "Ukraine said it attacked an oil refinery and a gas-processing plant in Russia overnight.",
+      "published_at": "2026-08-25T14:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "infrastructure",
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.9,
+        "themes": 19.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 55.4,
+        "recency_multiplier": 0.6
+      },
+      "matched": {
+        "infrastructure": [
+          "processing plant"
+        ],
+        "geopolitics": [
+          "attacked"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
+        ],
+        "unplanned": [
+          "attacked"
         ]
       },
       "duplicate_count": 0,
@@ -461,7 +461,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -485,7 +485,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "lng"
       ],
@@ -500,7 +500,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.7,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.56
       },
       "matched": {
         "lng": [
@@ -525,7 +525,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
@@ -540,12 +540,56 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
           "sanctions",
           "war"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "WATCH: North Sea decom campaign retires trio of gas wells in UK waters",
+      "url": "https://www.offshore-energy.biz/watch-north-sea-decom-campaign-retires-trio-of-gas-wells-in-uk-waters/",
+      "snippet": "Spirit Energy, a North Sea operator, has finished a multimillion-dollar decommissioning campaign in the UK sector of the North Sea, plugging and abandoning (P&#38;A) three gas wells that have reached the end of their productive lives and removing more than 234 tons of subsea infrastructure. The post",
+      "published_at": "2026-08-25T13:50:12+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "nuclear",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 10.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.4,
+        "recency_multiplier": 0.59
+      },
+      "matched": {
+        "nuclear": [
+          "decommissioning"
+        ],
+        "oil_macro": [
+          "dollar"
+        ],
+        "geography": [
+          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -562,7 +606,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -578,7 +622,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.2,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.95
       },
       "matched": {
         "lng": [
@@ -586,84 +630,6 @@
         ],
         "geography": [
           "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Core Power teams up with US Administration on maritime nuclear",
-      "url": "https://www.world-nuclear-news.org/articles/core-power-teams-up-with-us-administration-on-maritime-nuclear",
-      "snippet": "Core Power said it is targeting first construction from 2028 under a newly announced federal-private cooperation framework to accelerate the commercial, industrial and regulatory pathway for a future fleet of US-flagged nuclear-powered merchant ships.",
-      "published_at": "2026-08-25T13:29:51+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.1,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Criticality testing milestone for Westinghouse's eVinci reactor",
-      "url": "https://www.world-nuclear-news.org/articles/criticality-testing-milestone-for-westinghouses-evinci-microreactor",
-      "snippet": "Zero-power criticality testing for the eVinci microreactor has been successfully completed, Westinghouse Electric Company has announced.",
-      "published_at": "2026-08-25T13:26:57+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.1,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "nuclear": [
-          "reactor"
-        ],
-        "urgency": [
-          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -680,7 +646,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 14,
       "tags": [
         "geopolitics"
       ],
@@ -696,7 +662,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -728,7 +694,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics",
         "lng"
@@ -745,7 +711,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.7,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.65
       },
       "matched": {
         "geopolitics": [
@@ -758,56 +724,6 @@
         "geography": [
           "strait of hormuz",
           "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/25/new-us-sanctions-signal-trump-desperation-on-iran-experts-say?traffic_source=rss",
-        "title": "New US sanctions signal Trump desperation on Iran, experts say",
-        "published_at": "2026-08-25T20:34:49+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "China Defies U.S. Economic D-Day against Iran",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Defies-US-Economic-D-Day-against-Iran.html",
-      "snippet": "China on Tuesday signaled it would not end its ties and trade relations with Iran following the U.S. sanctions unveiled on Monday that target Chinese and Hong Kong entities for helping Iran do business. On Monday, the U.S. Administration announced a series of new sanctions against individuals and en",
-      "published_at": "2026-08-25T17:15:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 12,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.7,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "china"
-        ],
-        "urgency": [
-          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -846,7 +762,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -859,6 +775,56 @@
         "OilPrice.com"
       ],
       "first_seen_at": "2026-08-25T15:53:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/25/new-us-sanctions-signal-trump-desperation-on-iran-experts-say?traffic_source=rss",
+        "title": "New US sanctions signal Trump desperation on Iran, experts say",
+        "published_at": "2026-08-25T20:34:49+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "China Defies U.S. Economic D-Day against Iran",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Defies-US-Economic-D-Day-against-Iran.html",
+      "snippet": "China on Tuesday signaled it would not end its ties and trade relations with Iran following the U.S. sanctions unveiled on Monday that target Chinese and Hong Kong entities for helping Iran do business. On Monday, the U.S. Administration announced a series of new sanctions against individuals and en",
+      "published_at": "2026-08-25T17:15:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.7,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "china"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
         "url": "https://www.aljazeera.com/news/2026/8/25/new-us-sanctions-signal-trump-desperation-on-iran-experts-say?traffic_source=rss",
