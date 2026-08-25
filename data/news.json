@@ -1,111 +1,204 @@
 {
-  "generated_at": "2026-08-25T12:05:48.790432+00:00",
-  "item_count": 14,
+  "generated_at": "2026-08-25T13:09:21.699597+00:00",
+  "item_count": 15,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 6
+    "normal": 9
   },
-  "superseded_count": 2,
+  "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1219
+        "ms": 1443
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 202520
+        "ms": 197050
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2343
+        "ms": 4202
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 338
+        "ms": 205
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 241
+        "ms": 245
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 111
+        "ms": 238
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 40,
+        "count": 39,
         "error": null,
-        "ms": 901
+        "ms": 1445
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 312
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 46
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 539
+        "ms": 724
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 193
+        "ms": 321
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 500
+        "ms": 662
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 49
+        "ms": 60
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 82
+        "ms": 53
       }
     ]
   },
   "items": [
+    {
+      "title": "Second phase of Tangshan LNG terminal 80 percent complete",
+      "url": "https://lngprime.com/asia/second-phase-of-tangshan-lng-terminal-80-percent-complete/195707/",
+      "snippet": "The second phase of the Caofeidian LNG import terminal in Tangshan is almost 80 percent complete, according to China Suntien Green Energy.",
+      "published_at": "2026-08-25T13:01:10+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 63,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 32.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 62.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal"
+        ],
+        "infrastructure": [
+          "terminal",
+          "import terminal"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UK to back Ukraine with missile blueprints amid Russia-Ukraine strikes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/25/uk-to-back-ukraine-with-missile-blueprints-amid-russia-ukraine-strikes?traffic_source=rss",
+      "snippet": "UK PM Andy Burnham visited Kyiv on his first foreign trip, pledging to give cruise missile designs to Ukraine.",
+      "published_at": "2026-08-25T12:30:45+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 61,
+      "tags": [
+        "geopolitics",
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 13.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 58.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "missile"
+        ],
+        "nuclear": [
+          "trip"
+        ],
+        "geography": [
+          "uk"
+        ],
+        "unplanned": [
+          "trip"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "India’s Crude Import Bill Surges as Hormuz Shipping Rates Soar",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Crude-Import-Bill-Surges-as-Hormuz-Shipping-Rates-Soar.html",
@@ -117,7 +210,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 62,
+      "score": 59,
       "tags": [
         "geopolitics",
         "lng",
@@ -135,7 +228,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.6,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -158,6 +251,46 @@
       "also_reported_by": []
     },
     {
+      "title": "BW confirms sale of steam LNG carrier",
+      "url": "https://lngprime.com/asia/bw-confirms-sale-of-steam-lng-carrier/195690/",
+      "snippet": "Singapore-based gas shipping giant BW confirmed that it has sold its 2005-built steam LNG carrier, LNG Oyo.",
+      "published_at": "2026-08-25T13:02:36+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Equinor, Aker BP, Var Energi to Jointly Pursue Bigger NCS Opportunities",
       "url": "https://www.rigzone.com/news/equinor_aker_bp_var_energi_to_jointly_pursue_bigger_ncs_opportunities-25-aug-2026-184451-article/?rss=true",
       "snippet": "The Norwegian trio announced a collaboration to explore the largest remaining reserves in the country's waters to sustain production as existing developments become depleted.",
@@ -168,7 +301,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 49,
       "tags": [
         "gas_storage"
       ],
@@ -184,7 +317,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "gas_storage": [
@@ -211,7 +344,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 48,
       "tags": [
         "geopolitics"
       ],
@@ -227,7 +360,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "geopolitics": [
@@ -253,7 +386,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 45,
       "tags": [
         "lng"
       ],
@@ -269,7 +402,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.1,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.68
       },
       "matched": {
         "lng": [
@@ -295,7 +428,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 44,
       "tags": [
         "geopolitics"
       ],
@@ -311,7 +444,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 40.4,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.89
       },
       "matched": {
         "geopolitics": [
@@ -330,44 +463,48 @@
       "also_reported_by": []
     },
     {
-      "title": "BW confirms sale of steam LNG carrier",
-      "url": "https://lngprime.com/asia/bw-confirms-sale-of-steam-lng-carrier/195690/",
-      "snippet": "Singapore-based gas shipping giant BW confirmed that it has sold its 2005-built steam LNG carrier, LNG Oyo.",
-      "published_at": "2026-08-25T08:07:36+00:00",
+      "title": "Iran Threatens Retaliation as U.S. Widens Sanctions",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Threatens-Retaliation-as-US-Widens-Sanctions.html",
+      "snippet": "Iran threatened an aggressive response to the latest U.S. sanctions announced on Monday by Treasury Secretary Scott Bessent, with a top government official noting Tehran was “fully prepared for the U.S. sanctions.” “Naturally, the enemies intend to launch an economic terrorist attack on us, but we a",
+      "published_at": "2026-08-25T06:00:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 43,
       "tags": [
-        "lng"
+        "geopolitics"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 14.6,
+        "authority": 8.8,
+        "themes": 26.9,
         "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.7,
-        "recency_multiplier": 0.86
+        "raw": 51.6,
+        "recency_multiplier": 0.67
       },
       "matched": {
-        "lng": [
-          "lng",
-          "carrier"
+        "geopolitics": [
+          "sanctions",
+          "retaliation",
+          "attack"
         ],
         "urgency": [
-          "confirmed"
+          "announced"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 2,
+      "also_reported_by": [
+        "BBC World",
+        "Al Jazeera"
+      ]
     },
     {
       "title": "Knutsen takes delivery of QatarEnergy LNG tanker",
@@ -380,7 +517,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "lng"
       ],
@@ -396,7 +533,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.0,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.67
       },
       "matched": {
         "lng": [
@@ -422,7 +559,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 37,
       "tags": [
         "gas_storage",
         "oil_macro"
@@ -439,7 +576,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.82
       },
       "matched": {
         "gas_storage": [
@@ -466,7 +603,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
@@ -482,7 +619,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 48.1,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.58
       },
       "matched": {
         "geopolitics": [
@@ -514,7 +651,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 32,
       "tags": [
         "geopolitics",
         "lng"
@@ -531,7 +668,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 77.1,
-        "recency_multiplier": 0.34
+        "recency_multiplier": 0.31
       },
       "matched": {
         "geopolitics": [
@@ -565,7 +702,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 33,
+      "score": 31,
       "tags": [
         "lng"
       ],
@@ -580,7 +717,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.71
       },
       "matched": {
         "lng": [
@@ -601,7 +738,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -616,7 +753,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -625,108 +762,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-08-25T06:00:00+00:00"
-    },
-    {
-      "title": "The Iran war is bringing cyberwarfare into critical infrastructure",
-      "url": "https://www.aljazeera.com/opinions/2026/8/25/the-iran-war-is-bringing-cyberwarfare-into-critical-infrastructure?traffic_source=rss",
-      "snippet": "Recent attacks in the UK and the US demonstrate critical vulnerabilities that governments need to urgently address.",
-      "published_at": "2026-08-25T06:37:32+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 14,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 25.6,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "critical infrastructure"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/25/pakistan-says-significant-progress-made-in-talks-on-iran-us-war?traffic_source=rss",
-        "title": "Pakistan says significant progress made in talks on Iran-US war",
-        "published_at": "2026-08-25T08:32:52+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Iran Threatens Retaliation as U.S. Widens Sanctions",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Threatens-Retaliation-as-US-Widens-Sanctions.html",
-      "snippet": "Iran threatened an aggressive response to the latest U.S. sanctions announced on Monday by Treasury Secretary Scott Bessent, with a top government official noting Tehran was “fully prepared for the U.S. sanctions.” “Naturally, the enemies intend to launch an economic terrorist attack on us, but we a",
-      "published_at": "2026-08-25T06:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 14,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 26.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.6,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "retaliation",
-          "attack"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [
-        "BBC World",
-        "Al Jazeera"
-      ],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/8/25/pakistan-says-significant-progress-made-in-talks-on-iran-us-war?traffic_source=rss",
-        "title": "Pakistan says significant progress made in talks on Iran-US war",
-        "published_at": "2026-08-25T08:32:52+00:00"
-      },
-      "hidden": true
+      "also_reported_by": []
     }
   ]
 }
