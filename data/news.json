@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-26T06:20:11.968475+00:00",
-  "item_count": 8,
+  "generated_at": "2026-08-26T07:15:34.913831+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
+    "high": 2,
     "normal": 4
   },
-  "superseded_count": 0,
+  "superseded_count": 1,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1039
+        "ms": 1669
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 123568
+        "ms": 136359
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2439
+        "ms": 3894
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 172
+        "ms": 657
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 298
+        "ms": 803
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 104
+        "ms": 620
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 42,
         "error": null,
-        "ms": 758
+        "ms": 1076
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 160
+        "ms": 292
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 565
+        "ms": 609
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 201
+        "ms": 326
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 292
+        "ms": 673
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 71
+        "ms": 153
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 274
+        "ms": 144
       }
     ]
   },
@@ -152,6 +152,51 @@
       "also_reported_by": []
     },
     {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 6",
+      "url": "https://umm.nordpoolgroup.com/#/messages/d6bd7ba4-b5d2-4e0f-9c22-1e4ca94b9853/1",
+      "snippet": "Published: 26.08.2026 09:11:58 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Overhaul Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; ple",
+      "published_at": "2026-08-26T07:11:58+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 74.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "overhaul"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-25T22:49:21+00:00"
+    },
+    {
       "title": "Russia’s ‘Amazon’ Wildberries comes under Ukraine attack again",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/26/russias-amazon-wildberries-comes-under-ukraine-attack-again?traffic_source=rss",
       "snippet": "Russia’s biggest online retailer, Wildberries, has once again been attacked in a drone strike by Ukraine.",
@@ -162,7 +207,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 63,
+      "score": 62,
       "tags": [
         "geopolitics"
       ],
@@ -178,7 +223,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -198,57 +243,15 @@
       "also_reported_by": []
     },
     {
-      "title": "At least 14 newborns killed in Pakistan hospital nursery fire",
+      "title": "At least 14 newborn babies killed in Pakistan hospital nursery fire",
       "url": "https://www.aljazeera.com/news/2026/8/26/at-least-15-newborns-killed-in-pakistan-hospital-fire?traffic_source=rss",
-      "snippet": "A malfunction in an air conditioning unit is believed to have triggered the blaze at a government hospital in Islamabad.",
+      "snippet": "Prime minister orders investigation and promises &#039;strictest action&#039; against those responsible for the blaze.",
       "published_at": "2026-08-26T04:27:15+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 59,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 25.2,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "supply_disruption": [
-          "malfunction",
-          "fire",
-          "blaze"
-        ],
-        "unplanned": [
-          "malfunction",
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Poolbeg Flexgen (PB7) (GU_403620) - GU_403620",
-      "url": "https://umm.nordpoolgroup.com/#/messages/2ad29809-75d1-45c3-a576-6f0ac48718cf/1",
-      "snippet": "Published: 26.08.2026 00:49:21 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unit operating at reduced output due to ongoing issue. Remarks: Unit operating at reduced output due to ongoing issue. Production Units Unit Name",
-      "published_at": "2026-08-25T22:49:21+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
       "has_magnitude": false,
       "score": 50,
       "tags": [
@@ -257,26 +260,23 @@
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 21.9,
-        "themes": 8.4,
+        "authority": 9.5,
+        "themes": 16.8,
         "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.65
+        "raw": 46.3,
+        "recency_multiplier": 0.94
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "fire",
+          "blaze"
         ],
         "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
+          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -326,6 +326,137 @@
       "also_reported_by": []
     },
     {
+      "title": "Exmar working on new LNG projects",
+      "url": "https://lngprime.com/europe/exmar-working-on-new-lng-projects/195735/",
+      "snippet": "Belgian shipping firm Exmar is actively pursuing new LNG import and floating liquefaction projects after winning three awards over the past year.",
+      "published_at": "2026-08-26T07:12:38+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "liquefaction"
+        ],
+        "geography": [
+          "belgian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Prices Fall as Iran-Oman Talks Fuel Hopes of Strait Reopening",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Iran-Oman-Talks-Fuel-Hopes-of-Strait-Reopening.html",
+      "snippet": "Crude oil prices dipped earlier today following news reports about Iran and Oman renewing their talks about joint management of the Strait of Hormuz, as those reports were taken to mean the waterway could soon reopen for normal traffic. Reuters reported that the two were discussing “a joint temporar",
+      "published_at": "2026-08-26T06:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 19.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 32.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-26T00:00:00+00:00"
+    },
+    {
+      "title": "Hoegh Autoliners books six more LNG-powered car carriers in China",
+      "url": "https://lngprime.com/asia/hoegh-autoliners-books-six-more-lng-powered-car-carriers-in-china/195727/",
+      "snippet": "Norway's Hoegh Autoliners has entered into a contract with China Merchants Heavy Industry in Jiangsu for six additional LNG dual-fuel PCTCs.",
+      "published_at": "2026-08-26T06:31:10+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "norway"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Canada announces 'dollar-for-dollar' retaliatory tariffs on US as high as 50%",
       "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
       "snippet": "The latest escalation in an ongoing trade war between the US and Canada will see new levies on goods from steel to furniture, fresh tuna and makeup.",
@@ -336,7 +467,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 35,
+      "score": 33,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -352,7 +483,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.8,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.48
       },
       "matched": {
         "geopolitics": [
@@ -378,7 +509,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 9,
       "tags": [
         "geopolitics"
       ],
@@ -394,7 +525,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -405,47 +536,14 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Big Oil Is Betting Billions On Nuclear Fusion",
-      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Big-Oil-Is-Betting-Billions-On-Nuclear-Fusion.html",
-      "snippet": "After decades confined largely to laboratories, nuclear fusion is beginning to attract the kind of money and industrial planning normally reserved for technologies expected to make it onto the grid. Global private investment in fusion hit a record $4.48 billion in 2025, up 69% from a year earlier, w",
-      "published_at": "2026-08-26T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "nuclear",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 32.1,
-        "recency_multiplier": 0.72
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Iran-Oman-Talks-Fuel-Hopes-of-Strait-Reopening.html",
+        "title": "Oil Prices Fall as Iran-Oman Talks Fuel Hopes of Strait Reopening",
+        "published_at": "2026-08-26T06:30:00+00:00"
       },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "infrastructure": [
-          "grid"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "hidden": true
     }
   ]
 }
