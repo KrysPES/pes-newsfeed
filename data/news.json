@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-08-26T14:28:01.834426+00:00",
-  "item_count": 24,
+  "generated_at": "2026-08-26T16:03:45.235018+00:00",
+  "item_count": 20,
   "alert_counts": {
     "critical": 0,
-    "high": 5,
-    "normal": 7
+    "high": 2,
+    "normal": 11
   },
-  "superseded_count": 3,
+  "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1606
+        "ms": 1564
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 70563
+        "ms": 199626
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3832
+        "ms": 10913
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 621
+        "ms": 325
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 551
+        "ms": 427
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 258
+        "ms": 572
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 41,
+        "count": 43,
         "error": null,
-        "ms": 1356
+        "ms": 1000
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 501
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 126
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 688
+        "ms": 588
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 501
+        "ms": 271
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 734
+        "ms": 607
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 212
+        "ms": 278
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 233
+        "ms": 283
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 70,
+      "score": 69,
       "tags": [
         "geopolitics",
         "regulation"
@@ -134,7 +134,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 75.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -154,155 +154,10 @@
       "also_reported_by": []
     },
     {
-      "title": "Energy price cap will rise by 4% from October 2026",
-      "url": "https://www.ofgem.gov.uk/press-release/energy-price-cap-will-rise-4-october-2026",
-      "snippet": "Ofgem has announced a 4% increase of the energy price cap for the period covering 1 October to 31 December 2026.",
-      "published_at": "2026-08-26T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 69,
-      "tags": [
-        "regulation",
-        "geopolitics"
-      ],
-      "alert": "high",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 32.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 76.0,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "regulation": [
-          "ofgem",
-          "cap",
-          "price cap"
-        ],
-        "geopolitics": [
-          "price cap"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": []
-    },
-    {
-      "title": "Gasunie: Dutch gas storage will not meet winter filling target",
-      "url": "https://lngprime.com/europe/gasunie-dutch-gas-storage-will-not-meet-winter-filling-target/195792/",
-      "snippet": "Dutch gas grid and LNG terminal operator Gasunie said on Wednesday that the Netherlands will not meet its previously set gas storage filling target of 115 TWh for this winter, which is about half of the country's gas consumption.",
-      "published_at": "2026-08-26T12:01:13+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 68,
-      "tags": [
-        "lng",
-        "gas_storage",
-        "infrastructure"
-      ],
-      "alert": "high",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 37.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 72.2,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "gas_storage": [
-          "storage",
-          "filling target"
-        ],
-        "infrastructure": [
-          "terminal",
-          "grid"
-        ],
-        "geography": [
-          "netherlands",
-          "dutch"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Qatar Loses $24 Billion as LNG Exports Collapse 96%",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Qatar-Loses-24-Billion-as-LNG-Exports-Collapse-96.html",
-      "snippet": "Six months since the Iran war crippled Qatar’s LNG exports via the Strait of Hormuz, the world’s second-largest liquefied natural gas exporter has lost $24 billion in sales as exports tumbled by as much as 96%, Reuters calculations showed on Wednesday. The number of LNG cargoes that Qatar has manage",
-      "published_at": "2026-08-26T11:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 68,
-      "tags": [
-        "lng",
-        "geopolitics"
-      ],
-      "alert": "high",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 41.4,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 78.1,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "lng exports"
-        ],
-        "geopolitics": [
-          "war",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, VILVOORDE 1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/f99e62d6-2c51-4472-a61c-4eafe2d6aa5f/2",
-      "snippet": "Published: 26.08.2026 15:09:51 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-08-26T13:09:51+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
+      "url": "https://umm.nordpoolgroup.com/#/messages/b948fc5f-8375-42d1-9c20-0f94cc851a57/1",
+      "snippet": "Published: 26.08.2026 17:29:11 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Test Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; please ",
+      "published_at": "2026-08-26T15:29:11+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -338,9 +193,54 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 3,
       "also_reported_by": [],
       "first_seen_at": "2026-08-26T07:11:58+00:00"
+    },
+    {
+      "title": "Energy price cap will rise by 4% from October 2026",
+      "url": "https://www.ofgem.gov.uk/press-release/energy-price-cap-will-rise-4-october-2026",
+      "snippet": "Ofgem has announced a 4% increase of the energy price cap for the period covering 1 October to 31 December 2026.",
+      "published_at": "2026-08-26T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 65,
+      "tags": [
+        "regulation",
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 32.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 76.0,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "regulation": [
+          "ofgem",
+          "cap",
+          "price cap"
+        ],
+        "geopolitics": [
+          "price cap"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": []
     },
     {
       "title": "CIA Director’s Surprise Moscow Trip Raises Questions Over Iran and Ukraine",
@@ -391,9 +291,197 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-08-26T10:00:05+00:00"
+      "also_reported_by": []
+    },
+    {
+      "title": "Gasunie: Dutch gas storage will not meet winter filling target",
+      "url": "https://lngprime.com/europe/gasunie-dutch-gas-storage-will-not-meet-winter-filling-target/195792/",
+      "snippet": "Dutch gas grid and LNG terminal operator Gasunie said on Wednesday that the Netherlands will not meet its previously set gas storage filling target of 115 TWh for this winter, which is about half of the country's gas consumption.",
+      "published_at": "2026-08-26T12:01:13+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 63,
+      "tags": [
+        "lng",
+        "gas_storage",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 37.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 72.2,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal"
+        ],
+        "gas_storage": [
+          "storage",
+          "filling target"
+        ],
+        "infrastructure": [
+          "terminal",
+          "grid"
+        ],
+        "geography": [
+          "netherlands",
+          "dutch"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Qatar Loses $24 Billion as LNG Exports Collapse 96%",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Qatar-Loses-24-Billion-as-LNG-Exports-Collapse-96.html",
+      "snippet": "Six months since the Iran war crippled Qatar’s LNG exports via the Strait of Hormuz, the world’s second-largest liquefied natural gas exporter has lost $24 billion in sales as exports tumbled by as much as 96%, Reuters calculations showed on Wednesday. The number of LNG cargoes that Qatar has manage",
+      "published_at": "2026-08-26T11:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 63,
+      "tags": [
+        "lng",
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 41.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 78.1,
+        "recency_multiplier": 0.79
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
+        ],
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran, Oman agree on temporary Hormuz route: What we know",
+      "url": "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know?traffic_source=rss",
+      "snippet": "Iran’s deputy foreign minister announced a temporary shipping corridor in the Strait of Hormuz.",
+      "published_at": "2026-08-26T12:05:09+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 58.1,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "U.S. Crude Stocks Barely Budge as Gasoline Inventories Fall",
+      "url": "https://oilprice.com/Energy/Crude-Oil/US-Crude-Stocks-Barely-Budge-as-Gasoline-Inventories-Fall.html",
+      "snippet": "Crude oil inventories in the United States saw an increase of 100,000 barrels during the week ending August 21, according to new data from the U.S. Energy Information Administration (EIA) released on Wednesday. The increase brings commercial stockpiles to 428.9 million barrels, according to governme",
+      "published_at": "2026-08-26T14:37:41+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 51,
+      "tags": [
+        "gas_storage",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 18.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 44.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "gas_storage": [
+          "stocks",
+          "inventories"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Petronet’s Dahej terminal gets 4000th LNG cargo",
@@ -406,7 +494,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 47,
       "tags": [
         "lng",
         "infrastructure"
@@ -423,7 +511,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.7,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.71
       },
       "matched": {
         "lng": [
@@ -444,138 +532,10 @@
       "also_reported_by": []
     },
     {
-      "title": "Egypt was top destination for US LNG cargoes in June",
-      "url": "https://lngprime.com/americas/egypt-was-top-destination-for-us-lng-cargoes-in-june/195743/",
-      "snippet": "FSRU-based LNG import terminals in Egypt were the top destinations for US liquefied natural gas shipments in June this year, with Asia becoming the preferred destination for US cargoes over Europe for the first time since September 2024, according to the Department of Energy’s LNG monthly report.",
-      "published_at": "2026-08-26T12:02:38+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 50,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 21.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.0,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "fsru"
-        ],
-        "geography": [
-          "europe"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "SLB takes on FEED work to advance North Sea CO2 storage project toward FID",
-      "url": "https://www.offshore-energy.biz/slb-takes-on-feed-work-to-advance-north-sea-co2-storage-project-toward-fid/",
-      "snippet": "U.S.-headquartered technology player SLB has been hired to help move a large-scale CO2 storage project in the Norwegian sector of the North Sea toward a final investment decision (FID), taking on technology and engineering work spanning the concept and front-end engineering and design (FEED) phases,",
-      "published_at": "2026-08-26T13:18:14+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 48,
-      "tags": [
-        "lng",
-        "gas_storage"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 17.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 40.0,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "final investment decision"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "norwegian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "NKT brings first cables ashore on €3.1 billion Spain-France power link (Gallery)",
-      "url": "https://www.offshore-energy.biz/nkt-brings-first-cables-ashore-on-e3-1-billion-spain-france-power-link-gallery/",
-      "snippet": "first cable pull-ins at Lemóniz in northern Spain, marking what it describes as an important construction milestone on a multibillion-euro interconnector, which will increase electricity exchange capacity between Spain and France from 2.8 GW to 5 GW. The post NKT brings first cables ashore on €3.1 b",
-      "published_at": "2026-08-26T09:54:16+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 47,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 13.4,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 47.9,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "infrastructure": [
-          "interconnector",
-          "cable"
-        ],
-        "geography": [
-          "france",
-          "spain"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Door was locked at Pakistan hospital where fire killed 14 babies, witnesses say",
       "url": "https://www.bbc.co.uk/news/articles/czdz13elezlo?at_medium=RSS&at_campaign=rss",
-      "snippet": "A hospital official told the BBC that the door to the ward was not locked, but manned with security guards, to protect the babies.",
-      "published_at": "2026-08-26T12:32:47+00:00",
+      "snippet": "The hospital tells the BBC the ward door was not locked but manned with security guards, to protect the babies.",
+      "published_at": "2026-08-26T14:42:03+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -610,7 +570,50 @@
       "duplicate_count": 1,
       "also_reported_by": [
         "Al Jazeera"
-      ]
+      ],
+      "first_seen_at": "2026-08-26T13:44:36+00:00"
+    },
+    {
+      "title": "Egypt was top destination for US LNG cargoes in June",
+      "url": "https://lngprime.com/americas/egypt-was-top-destination-for-us-lng-cargoes-in-june/195743/",
+      "snippet": "FSRU-based LNG import terminals in Egypt were the top destinations for US liquefied natural gas shipments in June this year, with Asia becoming the preferred destination for US cargoes over Europe for the first time since September 2024, according to the Department of Energy’s LNG monthly report.",
+      "published_at": "2026-08-26T12:02:38+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 21.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.0,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "fsru"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Eight petroleum liquids pipeline projects have been completed since the start of 2025",
@@ -652,6 +655,106 @@
       "also_reported_by": []
     },
     {
+      "title": "Natural Gas, Not Oil, Is Key Inflation Concern in Europe",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Natural-Gas-Not-Oil-Is-Key-Inflation-Concern-in-Europe.html",
+      "snippet": "Soaring energy prices have rekindled inflation fears in Europe since the Iran war disrupted oil and gas flows, but policy makers and bond markets appear to be more concerned about the jump in natural gas prices rather than the increase in crude oil futures. European benchmark natural gas prices have",
+      "published_at": "2026-08-26T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "oil_macro": [
+          "crude",
+          "inflation"
+        ],
+        "supply_disruption": [
+          "disrupted"
+        ],
+        "geography": [
+          "europe",
+          "european"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "The Netherlands to Miss Natural Gas Filling Target for Winter",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/The-Netherlands-to-Miss-Natural-Gas-Filling-Target-for-Winter.html",
+      "snippet": "The Netherlands will miss its target to fill natural gas storage sites ahead of the winter, its gas network operators said on Wednesday, in one of the first evidence-based signs that Europe may be struggling to have sufficient supply for a harsh winter. Gasunie, the Dutch gas network operator, on We",
+      "published_at": "2026-08-26T16:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "gas_storage",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 23.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 30.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "filling target"
+        ],
+        "infrastructure": [
+          "network"
+        ],
+        "geography": [
+          "europe",
+          "netherlands",
+          "dutch"
+        ],
+        "speculative": [
+          "may"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Rosatom and Egypt discussing more potential units",
       "url": "https://www.world-nuclear-news.org/articles/rosatom-and-egypt-discuss-more-potential-units",
       "snippet": "Egypt's Ministry of Energy and Russia's Rosatom have held talks to review progress on El Dabaa Nuclear Power Plant's construction - and also discussed further potential large and small reactor options.",
@@ -662,7 +765,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 35,
       "tags": [
         "nuclear"
       ],
@@ -678,7 +781,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.4,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.81
       },
       "matched": {
         "nuclear": [
@@ -703,7 +806,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 34,
       "tags": [
         "nuclear"
       ],
@@ -719,7 +822,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 26.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "nuclear": [
@@ -737,6 +840,48 @@
       "also_reported_by": []
     },
     {
+      "title": "ICC chief urges Japan to counter US pressure on the court",
+      "url": "https://www.aljazeera.com/news/2026/8/26/icc-chief-urges-japan-to-counter-us-pressure-on-war-crimes-court?traffic_source=rss",
+      "snippet": "Washington escalated its campaign against the ICC last week by sanctioning its president and a senior trial lawyer.",
+      "published_at": "2026-08-26T13:15:59+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "geopolitics": [
+          "escalated"
+        ],
+        "geography": [
+          "japan"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-26T08:30:00+00:00"
+    },
+    {
       "title": "Second EPR site authorised for site preparations",
       "url": "https://www.world-nuclear-news.org/articles/second-epr-site-authorised-for-site-preparations",
       "snippet": "The French government has given EDF the go-ahead to start site preparation work for the second pair of new EPR2 reactors proposed for construction.",
@@ -747,7 +892,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 30,
       "tags": [
         "nuclear"
       ],
@@ -763,7 +908,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.1,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.71
       },
       "matched": {
         "nuclear": [
@@ -787,7 +932,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -803,7 +948,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.7,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.59
       },
       "matched": {
         "lng": [
@@ -818,267 +963,6 @@
       "also_reported_by": []
     },
     {
-      "title": "China advises its citizens to leave Taiwan ally Eswatini over 'security risks'",
-      "url": "https://www.bbc.co.uk/news/articles/c3rel9rgnx5o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Eswatini is one of 12 countries, and the only one in Africa, that has diplomatic relations with Taiwan.",
-      "published_at": "2026-08-26T12:17:12+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "geopolitics": [
-          "diplomatic"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Gasum’s Borlange bio-LNG plant enters commissioning phase",
-      "url": "https://lngprime.com/europe/gasums-borlange-bio-lng-plant-enters-commissioning-phase/195783/",
-      "snippet": "Gasum’s new bio-LNG production plant in Borlange, Sweden, has entered the commissioning phase, according to Lundsby Renewable Solutions.",
-      "published_at": "2026-08-26T06:25:03+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 24.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.0,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng plant"
-        ],
-        "infrastructure": [
-          "commissioning"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "ICC chief urges Japan to counter US pressure on the court",
-      "url": "https://www.aljazeera.com/news/2026/8/26/icc-chief-urges-japan-to-counter-us-pressure-on-war-crimes-court?traffic_source=rss",
-      "snippet": "Washington escalated its campaign against the ICC last week by sanctioning its president and a senior trial lawyer.",
-      "published_at": "2026-08-26T13:15:59+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "escalated"
-        ],
-        "geography": [
-          "japan"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-08-26T08:30:00+00:00"
-    },
-    {
-      "title": "India’s Russian Oil Imports Slide From Record High as Supply Tightens",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Russian-Oil-Imports-Slide-From-Record-High-as-Supply-Tightens.html",
-      "snippet": "India’s crude oil imports from Russia have eased so far this month from July’s record high, as Ukrainian attacks on Russian export infrastructure and competition from China for Russia’s barrels have dented Indian intake of Moscow’s oil. India’s imports of Russian oil hit a new all-time high in July ",
-      "published_at": "2026-08-26T12:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "china",
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Why India is sharing missile secrets with its private sector",
-      "url": "https://www.aljazeera.com/news/2026/8/26/why-india-is-sharing-missile-secrets-with-its-private-sector?traffic_source=rss",
-      "snippet": "New policy allows India’s private sector to produce advanced weaponry, supporting its goal of military self-sufficiency.",
-      "published_at": "2026-08-26T11:32:35+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.93
-      },
-      "matched": {
-        "geopolitics": [
-          "missile"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran, Oman agree on temporary Hormuz route: What we know",
-      "url": "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know?traffic_source=rss",
-      "snippet": "Iran’s deputy foreign minister announced a temporary shipping corridor in the Strait of Hormuz.",
-      "published_at": "2026-08-26T12:05:09+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 18,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 58.1,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "OilPrice.com"
-      ],
-      "first_seen_at": "2026-08-26T09:30:00+00:00",
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Energy/Energy-General/CIA-Directors-Surprise-Moscow-Trip-Raises-Questions-Over-Iran-and-Ukraine.html",
-        "title": "CIA Director’s Surprise Moscow Trip Raises Questions Over Iran and Ukraine",
-        "published_at": "2026-08-26T14:00:00+00:00"
-      },
-      "hidden": true
-    },
-    {
       "title": "Japan to Unveil New Oil Diversification Strategy",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Japan-to-Unveil-New-Oil-Diversification-Strategy.html",
       "snippet": "Japan is today set to announce an energy import diversification plan that will include stipulations about support for pipelines in the Middle East aimed at diverting export oil flows away from the Strait of Hormuz. The plan also features a push to reduce the country’s reliance on oil and gas overall",
@@ -1089,7 +973,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
@@ -1105,7 +989,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.4,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.65
       },
       "matched": {
         "geopolitics": [
@@ -1123,54 +1007,6 @@
         "url": "https://www.aljazeera.com/news/2026/8/26/icc-chief-urges-japan-to-counter-us-pressure-on-war-crimes-court?traffic_source=rss",
         "title": "ICC chief urges Japan to counter US pressure on the court",
         "published_at": "2026-08-26T13:15:59+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "One US dollar now costs 2 million rials in Iran, and here’s what it can buy",
-      "url": "https://www.aljazeera.com/economy/2026/8/26/one-us-dollar-now-costs-2-million-rials-in-iran-and-heres-what-it-can-buy?traffic_source=rss",
-      "snippet": "Sanctions and the US-Israel war on Iran have left the country&#039;s people unable to keep pace with rising prices.",
-      "published_at": "2026-08-26T10:00:05+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 20.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.1,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "war"
-        ],
-        "oil_macro": [
-          "dollar"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Energy/Energy-General/CIA-Directors-Surprise-Moscow-Trip-Raises-Questions-Over-Iran-and-Ukraine.html",
-        "title": "CIA Director’s Surprise Moscow Trip Raises Questions Over Iran and Ukraine",
-        "published_at": "2026-08-26T14:00:00+00:00"
       },
       "hidden": true
     }
