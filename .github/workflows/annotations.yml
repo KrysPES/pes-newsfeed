@@ -26,4 +26,5 @@ jobs:
       - name: Detect and attribute
         env:
           ANNOTATIONS_JOB_KEY: ${{ secrets.ANNOTATIONS_JOB_KEY }}
+          INDEX_BASE: https://app.index-terminal.com
         run: python annotations/job.py

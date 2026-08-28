@@ -229,7 +229,7 @@ def attribute(episode: dict, news_items: list[dict], lexicon=None, top_n: int = 
         "date": episode["trigger_day"],
         "label": headline_to_label(top[0]["title"]),
         "headline": top[0]["title"],
-        "what_happened": top[0].get("snippet", ""),
+        "what_happened": body_text(top[0]),
         "why_it_moved": "",
         "confidence": "Auto",
         "status": "published",
@@ -255,22 +255,73 @@ _FLUFF = re.compile(
     r"in what could be|is set to|looks set to|appears to)\b", re.I)
 
 
+# A label must not end on a word that is waiting for the rest of its clause.
+# "Europe's Energy Reserves Worked. The Next Test Will Be" is what the old
+# trimmer produced from a real headline: it never broke a word, but it stopped
+# on "Be" and the card read as truncated.
+_DANGLING = {
+    "a", "an", "and", "as", "at", "be", "been", "being", "but", "by", "can", "could",
+    "do", "does", "for", "from", "had", "has", "have", "in", "into", "is", "it", "its",
+    "may", "might", "more", "most", "not", "of", "on", "or", "over", "shall", "should",
+    "than", "that", "the", "their", "then", "there", "these", "this", "to", "up", "was",
+    "were", "will", "with", "would",
+}
+
+
+def _trim_dangling(text: str) -> str:
+    """Drop trailing words that cannot end a label."""
+    words = text.split()
+    while words and words[-1].strip(",.;:").lower() in _DANGLING:
+        words.pop()
+    return " ".join(words).rstrip(" ,-")
+
+
 def headline_to_label(title: str) -> str:
     """Trim a news headline into a chart label.
 
-    Headlines are written to be read in a feed, not to sit on an axis. Strip the
-    hedging, drop a trailing clause if it is still too long, and never end
-    mid-word. Core information only.
+    Headlines are written to be read in a feed, not to sit on an axis. Strip
+    the hedging, cut at the first sentence end where there is one, drop a
+    trailing clause if it is still too long, never end mid word and never end
+    on a dangling word. Core information only.
+
+    The sentence cut comes first because a two sentence headline carries its
+    news in the first sentence and the second is almost always a tease. It is
+    also the difference between a clean 31 character label and a 54 character
+    one that stops on "Will Be".
     """
     t = _FLUFF.sub("", str(title or "")).strip()
     t = re.sub(r"\s{2,}", " ", t)
     t = re.sub(r"^[\-\u2013\u2014\s]+|[\s\.]+$", "", t)
+
+    # First sentence, when the split leaves something substantial. The lookahead
+    # keeps decimals and abbreviations ("U.S.", "5.6 bcm") out of it.
+    m = re.search(r"(?<=[a-z\)\"'])[.!?]\s+(?=[A-Z])", t)
+    if m and m.start() >= 24:
+        first = t[: m.start()].rstrip(" .")
+        if len(first) >= 24:
+            t = first
+
     if len(t) <= LABEL_MAX:
-        return t
+        return _trim_dangling(t)
+
     cut = t[:LABEL_MAX]
     for sep in (" - ", " \u2013 ", ", ", " as ", " after ", " on "):
         i = cut.rfind(sep)
         if i > 24:
-            return cut[:i].rstrip(" ,-")
+            return _trim_dangling(cut[:i].rstrip(" ,-"))
     i = cut.rfind(" ")
-    return (cut[:i] if i > 24 else cut).rstrip(" ,-")
+    return _trim_dangling((cut[:i] if i > 24 else cut).rstrip(" ,-"))
+
+
+def body_text(candidate: dict) -> str:
+    """What goes under "What happened" on the annotation card.
+
+    The news item's snippet where there is one. Where there is not, the FULL
+    untrimmed headline, because a card with an empty body reads as broken and
+    the commentary in the position report has nothing to work with either. An
+    empty string is only returned when the item carries neither.
+    """
+    snippet = str(candidate.get("snippet") or "").strip()
+    if snippet:
+        return snippet
+    return str(candidate.get("title") or "").strip()

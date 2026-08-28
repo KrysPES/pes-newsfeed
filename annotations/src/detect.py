@@ -250,10 +250,18 @@ def detect_shocks(
 def detect_all(
     gas: dict[str, dict[str, float]],
     power: dict[str, dict[str, float]],
+    skip_steps: bool = True,
 ) -> list[Episode]:
     """The v2 detector: weekly episodes plus gradient shocks, merged so one
     trigger day yields one episode (the weekly record wins, it carries more
-    context). This is what the daily job should call."""
+    context). This is what the daily job should call.
+
+    `skip_steps` drops trigger days that stepguard reads as a data
+    discontinuity rather than a market move: one fuel jumping and holding
+    while the other sits still. Those days cannot be attributed, because no
+    news explains them, so they would otherwise sit in the review pile
+    forever. Pass False to see the raw detector output.
+    """
     best: dict[str, Episode] = {}
     for e in detect(gas, power):
         prior = best.get(e.trigger_day)
@@ -262,6 +270,12 @@ def detect_all(
             best[e.trigger_day] = e
     for e in detect_shocks(gas, power):
         best.setdefault(e.trigger_day, e)       # weekly record wins, more context
+
+    if skip_steps:
+        from stepguard import excluded_dates
+        for day in excluded_dates(gas, power):
+            best.pop(day, None)
+
     return [best[d] for d in sorted(best)]
 
 

@@ -1,0 +1,29 @@
+name: Annotations store merge (run by hand)
+
+# One-shot: merges the researched annotations update
+# (annotations/data/events_seed.json, currently 160 events) into the live
+# Omnia store and mirrors the result to the Index terminal. Admin deletions
+# always win, locally edited labels are kept, and running it twice changes
+# nothing, so it is safe to re-run after Bannon ships a new seed.
+#
+# Trigger it from the Actions tab -> "Annotations store merge" -> Run workflow.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Merge and push the store
+        env:
+          ANNOTATIONS_JOB_KEY: ${{ secrets.ANNOTATIONS_JOB_KEY }}
+          INDEX_BASE: https://app.index-terminal.com
+        run: python annotations/merge_job.py
