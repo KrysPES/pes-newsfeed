@@ -29,6 +29,7 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from adapters import ADAPTERS, fetch_gdelt, fetch_google_news   # noqa: E402
 from dedupe import cluster                                       # noqa: E402
+from energy_relevance import RelevanceFilter                     # noqa: E402
 from scoring import Scorer                                       # noqa: E402
 from supersede import apply_supersession                          # noqa: E402
 
@@ -173,12 +174,27 @@ def run(demo: bool = False) -> dict:
                     "ms": int((time.time() - started) * 1000),
                 })
 
+    # ---- relevance gate --------------------------------------------------
+    # Bannon's three-layer energy filter (index-terminal-update pack). The
+    # scorer alone let a football match through on 27 Aug 2026: the RSS
+    # description carried "attacked" (geopolitics theme) and "french"
+    # (geography), scoring 54 with no requirement that the story mention
+    # energy at all. The filter demands an energy anchor and kills whole
+    # non-news URL sections (/sports/ etc) before scoring even runs.
+    relevance = RelevanceFilter(ROOT / "config" / "themes.json")
+
     # ---- score -----------------------------------------------------------
     now = datetime.now(timezone.utc)
     scored: list[dict] = []
 
     for item in raw_items:
         if not item.get("title"):
+            continue
+        keep, drop_reason = relevance.check(
+            item.get("title") or "", item.get("summary") or "", item.get("url") or ""
+        )
+        if not keep:
+            print(f"  relevance drop ({drop_reason}): {item.get('title')!r}")
             continue
         result = scorer.score(item, now=now)
         if result.excluded or result.score < 30:
