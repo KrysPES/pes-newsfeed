@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-31T15:28:23.782492+00:00",
-  "item_count": 17,
+  "generated_at": "2026-08-31T20:59:28.940106+00:00",
+  "item_count": 15,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 6
+    "high": 1,
+    "normal": 3
   },
   "superseded_count": 2,
   "sources": {
@@ -17,95 +17,318 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1872
+        "ms": 1325
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 116702
+        "ms": 48545
       },
       {
         "id": "gie_agsi",
         "ok": true,
-        "count": 1,
+        "count": 0,
         "error": null,
-        "ms": 3013
+        "ms": 2620
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 281
+        "ms": 542
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 2412
+        "ms": 218
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 205
+        "ms": 123
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 42,
+        "count": 41,
         "error": null,
-        "ms": 1169
+        "ms": 831
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 527
+        "ms": 196
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 778
+        "ms": 537
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 402
+        "ms": 78
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 648
+        "ms": 478
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 21,
+        "count": 29,
         "error": null,
-        "ms": 183
+        "ms": 87
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 309
+        "ms": 163
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, FLEVO 4",
+      "url": "https://umm.nordpoolgroup.com/#/messages/ee3b0516-4938-496b-8b71-ed2cc5822816/2",
+      "snippet": "Published: 31.08.2026 21:48:26 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-08-31T19:48:26+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-08-31T16:13:37+00:00"
+    },
+    {
+      "title": "Iran Weakened but Defiant After 6 Months of War",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/Iran-Weakened-but-Defiant-After-6-Months-of-War.html",
+      "snippet": "Six months after US and Israeli air strikes against Iran launched a conflict that has shaken energy markets and disrupted global shipping, there is still no clear end to the confrontation. While Iran's military capabilities have suffered major damage, it retains leverage in the Strait of Hormuz. Exp",
+      "published_at": "2026-08-31T16:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 65,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 81.8,
+        "recency_multiplier": 0.79
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war",
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "disrupted"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "damage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Europe Gas Prices Jump 5% to Highest Level Since 2023",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Europe-Gas-Prices-Jump-5-to-Highest-Level-Since-2023.html",
+      "snippet": "European benchmark natural gas prices jumped by 5% in early morning trade on Monday as the re-escalation of hostilities between the United States and Iran intensified concerns about LNG supply from the Middle East. The benchmark price at the Dutch Title Transfer Facility (TTF) soared by 5% in mornin",
+      "published_at": "2026-08-31T16:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 51,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 53.0,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "hostilities"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "europe",
+          "european",
+          "ttf",
+          "dutch"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "BP Adds 80 MMcf/d to Egypt’s Gas Supply Two Years Ahead of Schedule",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/BP-Adds-80-MMcfd-to-Egypts-Gas-Supply-Two-Years-Ahead-of-Schedule.html",
+      "snippet": "Roughly two years ahead of schedule, BP has started production from the Fayoum-4 well in Egypt’s West Nile Delta, adding around 80 million cubic feet per day of natural gas to a market where declining domestic production has forced Cairo back into large-scale LNG imports, Egyptian media reported on ",
+      "published_at": "2026-08-31T18:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 48,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 20.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 41.6,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng imports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Western Balkans truck drivers threaten EU border blockade",
+      "url": "https://www.aljazeera.com/economy/2026/8/31/western-balkans-truck-drivers-threaten-eu-border-blockade?traffic_source=rss",
+      "snippet": "Drivers demand an exemption to 90-day limit to stay in Schengen area, saying current rules stop them from working.",
+      "published_at": "2026-08-31T18:15:11+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 11.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.1,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "China's LNG Imports Set to Drop 18% in August as Prices Soar",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-LNG-Imports-Set-to-Drop-18-in-August-as-Prices-Soar.html",
@@ -117,11 +340,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 50,
+      "score": 37,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -133,7 +356,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 46.6,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.61
       },
       "matched": {
         "lng": [
@@ -148,48 +371,45 @@
       "also_reported_by": []
     },
     {
-      "title": "Germany’s BASF gets first LNG cargo under Cheniere contract",
-      "url": "https://lngprime.com/europe/germanys-basf-gets-first-lng-cargo-under-cheniere-contract/192548/",
-      "snippet": "German chemicals giant BASF has received its first liquefied natural gas (LNG) cargo under a long-term contract with US LNG exporter Cheniere.",
-      "published_at": "2026-08-31T11:04:02+00:00",
+      "title": "Cheniere hits 5,000-cargo mark as project in Texas lifts LNG capacity to 56 mtpa",
+      "url": "https://www.offshore-energy.biz/cheniere-hits-5000-cargo-mark-as-project-in-texas-lifts-lng-capacity-to-56-mtpa/",
+      "snippet": "U.S. energy player Cheniere Energy has reached substantial completion at the third stage of its liquefied natural gas (LNG) project in Texas and exported its 5,000th LNG cargo, marking a major expansion of its U.S. liquefaction capacity and a decade of rapid growth in the global LNG market. The post",
+      "published_at": "2026-08-31T14:57:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 36,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
+        "authority": 12.4,
         "themes": 26.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 49.1,
-        "recency_multiplier": 0.83
+        "raw": 38.4,
+        "recency_multiplier": 0.73
       },
       "matched": {
         "lng": [
           "lng",
+          "liquefaction",
           "cargo",
-          "lng cargo",
-          "long-term contract"
-        ],
-        "geography": [
-          "germany",
-          "german"
+          "lng cargo"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-08-31T11:04:02+00:00"
     },
     {
       "title": "Edison says QatarEnergy extends force majeure until early November",
@@ -202,13 +422,13 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 33,
       "tags": [
         "lng",
         "supply_disruption",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 13.1,
@@ -220,7 +440,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 75.7,
-        "recency_multiplier": 0.49
+        "recency_multiplier": 0.32
       },
       "matched": {
         "lng": [
@@ -244,48 +464,124 @@
       "also_reported_by": []
     },
     {
-      "title": "Fire breaks out after unidentified explosions at oil refinery in Baghdad",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/fire-breaks-out-after-unidentified-explosions-at-oil-refinery-in-baghdad-2?traffic_source=rss",
-      "snippet": "A fire broke out following unidentified explosions at the Al-Dora power plant south of the Iraqi capital, Baghdad.",
-      "published_at": "2026-08-31T11:58:57+00:00",
+      "title": "Conflict and Climate Are Driving Food Prices Higher",
+      "url": "https://oilprice.com/Energy/Energy-General/Conflict-and-Climate-Are-Driving-Food-Prices-Higher.html",
+      "snippet": "Two weeks ago, I wrote about how conflict and climate change are combining to impede navigation across the globe. That same combination is also pushing food supply down and prices up worldwide. Climate change is no longer coming; it's here, and we're mixing it with our human folly in war in ways tha",
+      "published_at": "2026-08-31T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.7,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Firecracker factory blast in India kills 8 children",
+      "url": "https://www.aljazeera.com/news/2026/8/31/firecracker-factory-blast-in-india-kills-8-children?traffic_source=rss",
+      "snippet": "Videos reveal demolished houses and desperate rescue efforts after third such blast at a firecracker factory this year.",
+      "published_at": "2026-08-31T18:44:43+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 30,
       "tags": [
-        "supply_disruption",
-        "oil_macro"
+        "supply_disruption"
       ],
-      "alert": "normal",
-      "nature": "unplanned",
+      "alert": "low",
+      "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 11.1,
-        "geography": 0.0,
-        "event_nature": 20.0,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 40.6,
-        "recency_multiplier": 0.89
+        "raw": 22.9,
+        "recency_multiplier": 0.98
       },
       "matched": {
         "supply_disruption": [
-          "fire"
+          "blast"
         ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "unplanned": [
-          "fire"
+        "geography": [
+          "india"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 0,
       "also_reported_by": [],
-      "first_seen_at": "2026-08-31T10:11:59+00:00"
+      "update_count": 1,
+      "thread_started_at": "2026-08-31T18:00:00+00:00"
+    },
+    {
+      "title": "Iran Dismisses Trump Claim of Kharg Attack as Hostilities Return",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Dismisses-Trump-Claim-of-Kharg-Attack-as-Hostilities-Return.html",
+      "snippet": "Iran on Monday dismissed as “laughable” a Truth Social AI-generated post by U.S. President Donald Trump that the key Iranian oil export hub of Kharg Island is “being blown to smithereens”, as tensions in the Middle East boiled up again with U.S. attacks and Iranian claims of retaliatory strikes. Pre",
+      "published_at": "2026-08-31T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.7,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "geopolitics": [
+          "hostilities",
+          "attack"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Arctic LNG 2 exit ticked off the list: TotalEnergies retains $1.3 billion loan claim",
@@ -298,12 +594,12 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 30,
       "tags": [
         "geopolitics",
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 12.4,
@@ -315,7 +611,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.7,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.63
       },
       "matched": {
         "geopolitics": [
@@ -342,12 +638,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 30,
       "tags": [
         "lng",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -358,7 +654,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.7,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.43
       },
       "matched": {
         "lng": [
@@ -375,17 +671,72 @@
       "also_reported_by": []
     },
     {
-      "title": "Pakistan launches tender for one spot LNG shipment",
-      "url": "https://lngprime.com/asia/pakistan-launches-tender-for-one-spot-lng-shipment/196079/",
-      "snippet": "State-owned Pakistan LNG has released a new tender inviting firms to submit bids for one spot liquefied natural gas shipment to meet the country’s gas requirements amid disruptions from the ongoing Middle East crisis.",
-      "published_at": "2026-08-31T11:03:50+00:00",
+      "title": "Russian Oil Is No Longer India’s Easy Bargain",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Russian-Oil-Is-No-Longer-Indias-Easy-Bargain.html",
+      "snippet": "India’s crude imports fell in August, and Russia’s share declined with them, exposing a supply problem that seasonal refinery patterns alone cannot explain. The usual maintenance period at Indian plants comes toward the end of the monsoon, when domestic diesel and gasoline demand typically eases, bu",
+      "published_at": "2026-08-31T18:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
+      "tags": [
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 18.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.2,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "refinery",
+          "demand"
+        ],
+        "supply_disruption": [
+          "maintenance"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/8/31/firecracker-factory-blast-in-india-kills-8-children?traffic_source=rss",
+        "title": "Firecracker factory blast in India kills 8 children",
+        "published_at": "2026-08-31T18:44:43+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Germany’s BASF gets first LNG cargo under Cheniere contract",
+      "url": "https://lngprime.com/europe/germanys-basf-gets-first-lng-cargo-under-cheniere-contract/192548/",
+      "snippet": "German chemicals giant BASF has received its first liquefied natural gas (LNG) cargo under a long-term contract with US LNG exporter Cheniere.",
+      "published_at": "2026-08-31T11:04:02+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 10,
       "tags": [
         "lng"
       ],
@@ -393,463 +744,35 @@
       "nature": "",
       "why": {
         "authority": 13.1,
-        "themes": 20.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.9,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng shipment"
-        ],
-        "geography": [
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran Dismisses Trump Claim of Kharg Attack as Hostilities Return",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Dismisses-Trump-Claim-of-Kharg-Attack-as-Hostilities-Return.html",
-      "snippet": "Iran on Monday dismissed as “laughable” a Truth Social AI-generated post by U.S. President Donald Trump that the key Iranian oil export hub of Kharg Island is “being blown to smithereens”, as tensions in the Middle East boiled up again with U.S. attacks and Iranian claims of retaliatory strikes. Pre",
-      "published_at": "2026-08-31T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "hostilities",
-          "attack"
-        ],
-        "geography": [
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-08-31T11:00:00+00:00"
-    },
-    {
-      "title": "Asia Refiners Scoop Up Argentine Oil",
-      "url": "https://www.rigzone.com/news/wire/asia_refiners_scoop_up_argentine_oil-31-aug-2026-184493-article/?rss=true",
-      "snippet": "Asian refiners have increased purchases of Argentinian crude as the Iran war disrupts supply from the Middle East.",
-      "published_at": "2026-08-31T13:29:45+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 11.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.6,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "middle east",
-          "asia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Swedish firm picks up work for 1.5 GW LNG-to-power project in Southeast Asia",
-      "url": "https://www.offshore-energy.biz/swedish-firm-picks-up-work-for-1-5-gw-lng-to-power-project-in-southeast-asia/",
-      "snippet": "AFRY, a Swedish engineering, design, and advisory company, has secured a key technical advisory role on a liquefied natural gas (LNG) development in Vietnam. The 1.5 GW LNG-to-power project involves an integrated floating LNG (FLNG) terminal and gas-fired power plant, supporting the expansion of LNG",
-      "published_at": "2026-08-31T07:58:30+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 35,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 11.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 40.7,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "terminal"
-        ],
-        "geography": [
-          "asia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Companies and Banks Face UK Windfall Tax Threat",
-      "url": "https://oilprice.com/Energy/Energy-General/Oil-Companies-and-Banks-Face-UK-Windfall-Tax-Threat.html",
-      "snippet": "Chancellor John Healey has been presented with a plan to tax oil firms and banks further as bosses in the sectors have posted huge profits, according to reports. Healey may look to tax businesses at this year’s Budget in order to rebuild a partly-eroded £22.7bn fiscal buffer, and fill spending pledg",
-      "published_at": "2026-08-31T14:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.4,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 24.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "regulation": [
-          "windfall tax"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "speculative": [
-          "may"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Net Zero North Sea Storage Limited: Consultation on BOC & H2T Discontinuation Determination",
-      "url": "https://www.ofgem.gov.uk/consultation/net-zero-north-sea-storage-limited-consultation-boc-h2t-discontinuation-determination",
-      "snippet": "Our proposed decision on Net Zero North Sea Storage Ltd’s application for a Change in Scope Re-opener.",
-      "published_at": "2026-08-31T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "gas_storage",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 10.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.5,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "gas_storage": [
-          "storage"
-        ],
-        "regulation": [
-          "consultation"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "War and heat: Why are wheat prices soaring?",
-      "url": "https://www.aljazeera.com/news/2026/8/31/war-and-heat-why-are-wheat-prices-soaring?traffic_source=rss",
-      "snippet": "Russia and Ukraine have stepped up attacks on their respective grain terminals in the Black Sea.",
-      "published_at": "2026-08-31T14:42:40+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Feed-in Tariff Levelisation Report April to June 2026",
-      "url": "https://www.ofgem.gov.uk/transparency-document/feed-tariff-levelisation-report-april-june-2026",
-      "snippet": "This report details the total Feed-in Tariff (FIT) payments made by FIT Licensees for the quarter from April to June 2026.",
-      "published_at": "2026-08-31T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.0,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "geopolitics": [
-          "tariff"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "TenneT names contractor for annual Dutch offshore cable integrity surveys",
-      "url": "https://www.offshore-energy.biz/tennet-names-contractor-for-annual-dutch-offshore-cable-integrity-surveys/",
-      "snippet": "TenneT Netherlands has selected compatriot survey company Deep to perform annual offshore cable integrity [&#8230;] The post TenneT names contractor for annual Dutch offshore cable integrity surveys appeared first on Offshore Energy .",
-      "published_at": "2026-08-31T09:52:52+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 6.7,
+        "themes": 26.0,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 29.1,
-        "recency_multiplier": 0.76
+        "raw": 49.1,
+        "recency_multiplier": 0.54
       },
       "matched": {
-        "infrastructure": [
-          "cable"
-        ],
-        "geography": [
-          "netherlands",
-          "dutch"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran Says Supertanker Hit by Mines in Strait of Hormuz",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Says-Supertanker-Hit-by-Mines-in-Strait-of-Hormuz.html",
-      "snippet": "A supertanker caught fire after hitting two naval mines in the southern Strait of Hormuz, Iranian state media reported on Monday, citing Iran’s Islamic Revolutionary Guard Corps. The tanker was trying to transit the Strait illegally, the Revolutionary Guards said in a statement carried by Iranian me",
-      "published_at": "2026-08-31T11:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 18,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 24.2,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 69.0,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
         "lng": [
-          "tanker"
+          "lng",
+          "cargo",
+          "lng cargo",
+          "long-term contract"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Dismisses-Trump-Claim-of-Kharg-Attack-as-Hostilities-Return.html",
-        "title": "Iran Dismisses Trump Claim of Kharg Attack as Hostilities Return",
-        "published_at": "2026-08-31T14:30:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "UAE intercepts drone after US and Iran exchange attacks",
-      "url": "https://www.aljazeera.com/news/2026/8/31/uae-intercepts-drone-after-us-and-iran-exchange-attacks?traffic_source=rss",
-      "snippet": "The UAE says it intercepted a drone coming from Iran and rejected &#039;false&#039; reports of an attack on its Al Menhad airbase.",
-      "published_at": "2026-08-31T11:25:43+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 9,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
+          "germany",
+          "german"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Dismisses-Trump-Claim-of-Kharg-Attack-as-Hostilities-Return.html",
-        "title": "Iran Dismisses Trump Claim of Kharg Attack as Hostilities Return",
-        "published_at": "2026-08-31T14:30:00+00:00"
+        "url": "https://www.offshore-energy.biz/cheniere-hits-5000-cargo-mark-as-project-in-texas-lifts-lng-capacity-to-56-mtpa/",
+        "title": "Cheniere hits 5,000-cargo mark as project in Texas lifts LNG capacity to 56 mtpa",
+        "published_at": "2026-08-31T14:57:00+00:00"
       },
       "hidden": true
     }
