@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-01T05:36:07.034091+00:00",
-  "item_count": 10,
+  "generated_at": "2026-09-01T10:25:51.602142+00:00",
+  "item_count": 14,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 3
+    "normal": 6
   },
   "superseded_count": 0,
   "sources": {
@@ -17,143 +17,317 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1043
+        "ms": 1268
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 137226
+        "ms": 104169
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2244
+        "ms": 9981
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 364
+        "ms": 165
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 459
+        "ms": 2965
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 166
+        "ms": 185
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 41,
         "error": null,
-        "ms": 854
+        "ms": 684
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 317
+        "ms": 171
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 555
+        "ms": 639
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 151
+        "ms": 225
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 344
+        "ms": 252
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 30,
+        "count": 35,
         "error": null,
-        "ms": 262
+        "ms": 141
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 117
+        "ms": 80
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
-      "url": "https://umm.nordpoolgroup.com/#/messages/1521dad6-9a0e-4b97-a9e5-020c1e24f0d1/1",
-      "snippet": "Published: 01.09.2026 05:38:21 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
-      "published_at": "2026-09-01T03:38:21+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Poolbeg - GU_400325 (PBB)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/be877b98-d4a1-4b4e-b2f8-7742691b7718/7",
+      "snippet": "Published: 01.09.2026 11:13:44 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Steam wind turbine trip - Unit only available in OCGT Mode Remarks: Steam turbine trip - Unit only available in OCGT Mode Production Units Unit N",
+      "published_at": "2026-09-01T09:13:44+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 68,
       "tags": [
-        "supply_disruption"
+        "supply_disruption",
+        "nuclear"
       ],
       "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 12.8,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
+        "raw": 70.7,
         "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
           "unplanned"
         ],
+        "nuclear": [
+          "trip"
+        ],
         "unplanned": [
           "unplanned",
-          "failure"
+          "failure",
+          "trip"
         ],
         "urgency": [
           "unplanned"
         ]
       },
-      "duplicate_count": 8,
+      "duplicate_count": 6,
       "also_reported_by": [],
-      "first_seen_at": "2026-08-31T16:13:37+00:00"
+      "first_seen_at": "2026-08-31T19:48:26+00:00"
+    },
+    {
+      "title": "Russia Expands LNG Dark Fleet",
+      "url": "https://www.rigzone.com/news/wire/russia_expands_lng_dark_fleet-01-sep-2026-184501-article/?rss=true",
+      "snippet": "Russia has almost doubled the fleet of tankers ferrying liquefied natural gas from its U.S.-sanctioned Arctic project in less than a year.",
+      "published_at": "2026-09-01T09:00:22+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 30.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctioned",
+          "dark fleet"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Britons face ‘risk premium’ for energy as US-Israel war on Iran intensifies",
+      "url": "https://www.aljazeera.com/news/2026/9/1/uk-energy-price-rise-britons-face-risk-premium-for-supply-amid-iran-war?traffic_source=rss",
+      "snippet": "A price cap increase is on the way, the latest blow to people already struggling with rising costs.",
+      "published_at": "2026-09-01T08:14:07+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "geopolitics",
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 36.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.7,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "price cap"
+        ],
+        "regulation": [
+          "cap",
+          "price cap"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "NYK wraps up Avenir LNG stake purchase",
+      "url": "https://lngprime.com/asia/nyk-wraps-up-avenir-lng-stake-purchase/196104/",
+      "snippet": "Japan's shipping giant NYK has completed the acquisition of a 50 percent stake in UK-based small-scale player Avenir LNG from Norway’s Stolt-Nielsen following regulatory approvals.",
+      "published_at": "2026-09-01T06:02:37+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 48,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 48.4,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Sogestran, Titan seal long-term charter deal for LNG bunkering newbuild",
+      "url": "https://lngprime.com/europe/sogestran-titan-seal-long-term-charter-deal-for-lng-bunkering-newbuild/196143/",
+      "snippet": "Dutch LNG supplier Titan, a part of Molgas, has chartered a recently ordered liquefied natural gas (LNG) bunkering vessel from French shipping group Sogestran.",
+      "published_at": "2026-09-01T09:39:46+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "charter"
+        ],
+        "geography": [
+          "dutch",
+          "french"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Oil Prices Climb as Trump Threatens New Strikes on Iran",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-as-Trump-Threatens-New-Strikes-on-Iran.html",
-      "snippet": "Crude oil prices extended their earlier climb as President Trump issued his latest threat to Iran, following the first exchange of fire in weeks. At the time of writing, Brent crude was trading at $91.48 per barrel, with West Texas Intermediate at $86.97 per barrel, both up by over $1 per barrel fro",
+      "snippet": "Crude oil prices extended their earlier climb after President Trump issued his latest threat to Iran, following the first exchange of fire in weeks. At the time of writing, Brent crude was trading at $91.48 per barrel, with West Texas Intermediate at $86.97 per barrel, both up by over $1 per barrel ",
       "published_at": "2026-09-01T05:30:00+00:00",
       "type": "news",
       "source": "oilprice",
@@ -161,7 +335,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 46,
       "tags": [
         "oil_macro",
         "supply_disruption"
@@ -177,7 +351,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.8
       },
       "matched": {
         "oil_macro": [
@@ -196,6 +370,138 @@
       "also_reported_by": []
     },
     {
+      "title": "Russian drone and missile barrage kills at least 12 in Ukraine’s Kyiv",
+      "url": "https://www.aljazeera.com/news/2026/9/1/russian-drone-and-missile-barrage-kills-at-least-12-in-ukraines-kyiv?traffic_source=rss",
+      "snippet": "Russian attacks escalate as EU defence ministers meet in Ireland to discuss Ukraine air defence shortages.",
+      "published_at": "2026-09-01T08:57:48+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "missile",
+          "drone"
+        ],
+        "geography": [
+          "eu",
+          "ireland"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Price, Not Politics, Is Driving Most of India’s Oil Buying",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Price-Not-Politics-Is-Driving-Most-of-Indias-Oil-Buying.html",
+      "snippet": "India’s imports of spot crude cargoes from producers such as the United States and Venezuela are being driven by the prevailing cargo and oil prices, the top executive of India’s state-owned Oil and Natural Gas Corporation (ONGC) has said. “Imports are decided by the price, except for term crudes. N",
+      "published_at": "2026-09-01T09:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "cargo",
+          "cargoes"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "united states",
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Bangladesh seeks to further expand spot LNG supplier list",
+      "url": "https://lngprime.com/asia/bangladesh-seeks-to-further-expand-spot-lng-supplier-list/196125/",
+      "snippet": "Bangladesh is inviting companies to submit applications to add more approved spot LNG suppliers as the country seeks to secure needed supplies for its power plants amid disruptions from the ongoing Middle East conflict. Petrobangla issued an invitation to enlist additional spot LNG suppliers on beha",
+      "published_at": "2026-09-01T07:52:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 13.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.5,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Canada Tariffs Deepen North America’s Steel and Aluminum Squeeze",
       "url": "https://oilprice.com/Metals/Commodities/Canada-Tariffs-Deepen-North-Americas-Steel-and-Aluminum-Squeeze.html",
       "snippet": "The renewed trade war between the United States and Canada adds even more uncertainty to the complex steel and aluminum supply chains critical for heavy manufacturing and North America’s automotive industry. Last week’s breakdown in trade talks led to a quick escalation of tariffs and counter-tariff",
@@ -206,12 +512,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 38,
       "tags": [
         "geopolitics",
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -223,7 +529,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 70.8,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.41
       },
       "matched": {
         "geopolitics": [
@@ -246,318 +552,158 @@
       "also_reported_by": []
     },
     {
-      "title": "Iran Weakened but Defiant After 6 Months of War",
-      "url": "https://oilprice.com/Geopolitics/Middle-East/Iran-Weakened-but-Defiant-After-6-Months-of-War.html",
-      "snippet": "Six months after US and Israeli air strikes against Iran launched a conflict that has shaken energy markets and disrupted global shipping, there is still no clear end to the confrontation. While Iran's military capabilities have suffered major damage, it retains leverage in the Strait of Hormuz. Exp",
-      "published_at": "2026-08-31T16:00:00+00:00",
+      "title": "Doosan Enerbility scores South Korean LNG power plant gig",
+      "url": "https://lngprime.com/asia/doosan-enerbility-scores-south-korean-lng-power-plant-gig/196136/",
+      "snippet": "South Korea’s Doosan Enerbility has won an EPC contract from compatriot Korea Southern Power (Kospo) for the Hadong LNG combined cycle power plant.",
+      "published_at": "2026-09-01T09:40:18+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 37.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 81.8,
-        "recency_multiplier": 0.41
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "war",
-          "strait of hormuz"
-        ],
-        "supply_disruption": [
-          "disrupted"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "unplanned": [
-          "damage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Poland opens terror probe into fire at factory supplying Ukraine drones",
-      "url": "https://www.aljazeera.com/news/2026/8/31/poland-opens-terror-probe-into-fire-at-drone-factory?traffic_source=rss",
-      "snippet": "Amid suspicion of Russian sabotage, Warsaw eyes link to foreign intelligence services.",
-      "published_at": "2026-08-31T21:24:15+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 14.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.5,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "geopolitics": [
-          "sabotage"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "geography": [
-          "poland"
-        ],
-        "unplanned": [
-          "fire",
-          "sabotage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran War Triggers Billions in New Oil Pipeline and Port Investment",
-      "url": "https://oilprice.com/Energy/Energy-General/Iran-War-Triggers-Billions-in-New-Oil-Pipeline-and-Port-Investment.html",
-      "snippet": "The severe disruption of oil and gas flows out of the Persian Gulf resulting from the war between the U.S. and Israel and Iran, has saddled energy-importing nations with soaring bills, supply uncertainty, and a murky outlook. However, there has been a silver lining: a rush to build alternative condu",
-      "published_at": "2026-08-31T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 33.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.8,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "persian gulf"
-        ],
-        "supply_disruption": [
-          "disruption"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "JERUSALEM DAILY: JOURNALISTS ATTACKED",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/jerusalem-daily-journalists-attacked?traffic_source=rss",
-      "snippet": "Israeli pogroms target Palestinians and an NBC crew in the occupied West Bank.",
-      "published_at": "2026-08-31T22:16:18+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
       "score": 34,
       "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.5,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Rallies on Fresh US-Iran Fighting",
-      "url": "https://www.rigzone.com/news/wire/oil_rallies_on_fresh_usiran_fighting-31-aug-2026-184500-article/?rss=true",
-      "snippet": "Oil rose sharply as renewed US-Iran fighting heightened concerns about shipping through the Strait of Hormuz.",
-      "published_at": "2026-08-31T20:08:56+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.6,
-        "recency_multiplier": 0.56
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Why More Venezuelan Oil Won’t Solve America’s Gasoline Problem",
-      "url": "https://oilprice.com/Energy/Energy-General/Why-More-Venezuelan-Oil-Wont-Solve-Americas-Gasoline-Problem.html",
-      "snippet": "Venezuela has the largest proven oil reserves in the world, and its heavy crude is particularly well suited to the sophisticated refineries lining the U.S. Gulf Coast. More Venezuelan oil should help U.S. refiners, but that doesn’t translate directly into lower prices at the pump. Trump announced Fr",
-      "published_at": "2026-08-31T23:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.2,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "gulf"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Europe Gas Prices Jump 5% to Highest Level Since 2023",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Europe-Gas-Prices-Jump-5-to-Highest-Level-Since-2023.html",
-      "snippet": "European benchmark natural gas prices jumped by 5% in early morning trade on Monday as the re-escalation of hostilities between the United States and Iran intensified concerns about LNG supply from the Middle East. The benchmark price at the Dutch Title Transfer Facility (TTF) soared by 5% in mornin",
-      "published_at": "2026-08-31T16:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "geopolitics",
         "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 22.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 53.0,
-        "recency_multiplier": 0.43
+        "raw": 25.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "escalation",
-          "hostilities"
-        ],
         "lng": [
           "lng"
         ],
         "geography": [
-          "europe",
-          "european",
-          "ttf",
-          "dutch"
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil prices jump as US, Iranian attacks stoke fears of escalation",
+      "url": "https://www.aljazeera.com/economy/2026/9/1/oil-prices-climb-as-us-iranian-attacks-stoke-fears-of-escalation?traffic_source=rss",
+      "snippet": "Brent crude tops $92 a barrel following first strikes between Washington and Tehran in over a month.",
+      "published_at": "2026-09-01T06:07:39+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "oil_macro",
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 18.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.3,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "geopolitics": [
+          "escalation"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Notice under the Electricity (Competitive Tenders for Offshore Transmission Licences) Regulations 2015 for TR14",
+      "url": "https://www.ofgem.gov.uk/decision/notice-under-electricity-competitive-tenders-offshore-transmission-licences-regulations-2015-tr14",
+      "snippet": "Our decision to start a tender exercise in respect of Horsnea Project 3.",
+      "published_at": "2026-09-01T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 6.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "transmission"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Furetank, partners order more LNG-powered vessels in China",
+      "url": "https://lngprime.com/asia/furetank-partners-order-more-lng-powered-vessels-in-china/196109/",
+      "snippet": "Swedish shipowner Furetank and its partners have ordered four more LNG-powered tankers at China Merchants Jinling Shipyard in Yangzhou.",
+      "published_at": "2026-09-01T06:27:14+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.4,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
