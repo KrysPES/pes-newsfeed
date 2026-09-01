@@ -1,151 +1,199 @@
 {
-  "generated_at": "2026-09-01T15:03:28.353706+00:00",
+  "generated_at": "2026-09-01T18:25:30.423703+00:00",
   "item_count": 14,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 4
+    "high": 2,
+    "normal": 6
   },
-  "superseded_count": 2,
+  "superseded_count": 3,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1928
+        "ms": 1093
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 122255
+        "ms": 150805
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3852
+        "ms": 2381
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 243
+        "ms": 412
       },
       {
         "id": "ec_energy",
-        "ok": true,
-        "count": 30,
-        "error": null,
-        "ms": 140
+        "ok": false,
+        "count": 0,
+        "error": "SSLError: HTTPSConnectionPool(host='energy.ec.europa.eu', port=443): Max retries exceeded with url: /node/2/rss_en (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer",
+        "ms": 219
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 11,
         "error": null,
-        "ms": 175
+        "ms": 88
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 43,
+        "count": 42,
         "error": null,
-        "ms": 1433
+        "ms": 888
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 278
+        "ms": 316
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 721
+        "ms": 495
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 325
+        "ms": 162
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 509
+        "ms": 497
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 42,
         "error": null,
-        "ms": 62
+        "ms": 58
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 65
+        "ms": 146
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Poolbeg - GU_400325 (PBB)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/be877b98-d4a1-4b4e-b2f8-7742691b7718/9",
-      "snippet": "Published: 01.09.2026 15:14:20 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Steam wind turbine trip - Unit only available in OCGT Mode Remarks: Steam turbine trip - Unit only available in OCGT Mode Production Units Unit N",
-      "published_at": "2026-09-01T13:14:20+00:00",
+      "title": "Germany accuses Russia of drone attack on Leipzig airport",
+      "url": "https://www.aljazeera.com/news/2026/9/1/germany-accuses-russia-of-drone-attack-on-leipzig-airport?traffic_source=rss",
+      "snippet": "Findings announced as European countries report an increase in sabotage attacks and attempts that they blame on Russia.",
+      "published_at": "2026-09-01T16:24:36+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 73,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 26.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 82.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "sabotage",
+          "attack"
+        ],
+        "geography": [
+          "european",
+          "germany"
+        ],
+        "unplanned": [
+          "sabotage"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "BBC World"
+      ],
+      "update_count": 1,
+      "thread_started_at": "2026-09-01T09:00:22+00:00"
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Poolbeg Flexgen (PB7) (GU_403620) - GU_403620",
+      "url": "https://umm.nordpoolgroup.com/#/messages/e0fb5694-9591-423d-a6fc-b7698de3489b/2",
+      "snippet": "Published: 01.09.2026 19:29:40 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Ignition Issue Remarks: Ignition Issue Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel T",
+      "published_at": "2026-09-01T17:29:40+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 68,
+      "score": 66,
       "tags": [
-        "supply_disruption",
-        "nuclear"
+        "supply_disruption"
       ],
       "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 12.8,
+        "themes": 8.4,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 70.7,
+        "raw": 66.3,
         "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
           "unplanned"
         ],
-        "nuclear": [
-          "trip"
-        ],
         "unplanned": [
           "unplanned",
-          "failure",
-          "trip"
+          "failure"
         ],
         "urgency": [
           "unplanned"
@@ -156,42 +204,170 @@
       "first_seen_at": "2026-09-01T03:38:21+00:00"
     },
     {
-      "title": "Two Supertankers Hit by Unknown Projectiles in Strait of Hormuz",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Two-Supertankers-Hit-by-Unknown-Projectiles-in-Strait-of-Hormuz.html",
-      "snippet": "Two oil supertankers have been hit by unknown projectiles while transiting the Strait of Hormuz outbound from the Persian Gulf, maritime risk management firm Marisks said on Tuesday, as tensions in the Middle East flared up again this week and put the tentative oil flow recovery at risk. The Sidr ve",
-      "published_at": "2026-09-01T11:35:16+00:00",
+      "title": "Asia Spot LNG Prices Hit 5-Month High as Hormuz Blockage Drags On",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Asia-Spot-LNG-Prices-Hit-5-Month-High-as-Hormuz-Blockage-Drags-On.html",
+      "snippet": "Spot LNG prices in Asia jumped on Tuesday to the highest level since the 2026 winter, as buyers compete for spot cargoes amid the still-stalled LNG traffic through the Strait of Hormuz. Asia’s spot LNG price jumped to as high as $24.614 per million British thermal units (MMBtu) on Tuesday, traders t",
+      "published_at": "2026-09-01T15:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 53,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "lng"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 32.0,
+        "themes": 25.4,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 56.8,
-        "recency_multiplier": 0.89
+        "raw": 50.1,
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
-          "strait of hormuz",
-          "persian gulf"
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng",
+          "cargoes"
         ],
         "geography": [
           "strait of hormuz",
           "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-09-01T11:35:16+00:00"
+    },
+    {
+      "title": "Wison fires starting gun on FPSO fabrication for Eni’s African oil & gas project",
+      "url": "https://www.offshore-energy.biz/wison-fires-starting-gun-on-fpso-fabrication-for-enis-african-oil-gas-project/",
+      "snippet": "China-based energy services provider Wison New Energies (WNE) has confirmed the first steel cut for a newbuild floating production, storage and offloading (FPSO) vessel, destined for deployment at the next phase of a major oil and gas development off the coast of Côte d’Ivoire, operated by Italy’s E",
+      "published_at": "2026-09-01T15:01:59+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.1,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "italy"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=",
+      "snippet": "U.S. liquefied natural gas (LNG) exports averaged 17.4 billion cubic feet per day (Bcf/d) in the first six months of the year, 23% more than the same period in 2025, according to our Natural Gas Monthly. In our latest Short-Term Energy Outlook, we estimate U.S. LNG exports will average 17.3 Bcf/d in",
+      "published_at": "2026-09-01T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 47,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 20.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 47.4,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "IAEA concern over diesel supply for Zaporizhzhia generators",
+      "url": "https://www.world-nuclear-news.org/articles/iaea-concern-over-diesel-supply-for-zaporizhzhia-generators",
+      "snippet": "The Zaporizhzhia Nuclear Power Plant has been relying on emergency diesel generators for more than 11 days, with the International Atomic Energy Agency raising concerns about fuel supplies if the loss of external power continues.",
+      "published_at": "2026-09-01T11:16:44+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 57.1,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
         ]
       },
       "duplicate_count": 0,
@@ -208,7 +384,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 46,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -226,7 +402,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.1,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.65
       },
       "matched": {
         "geopolitics": [
@@ -253,126 +429,93 @@
       "also_reported_by": []
     },
     {
-      "title": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=",
-      "snippet": "U.S. liquefied natural gas (LNG) exports averaged 17.4 billion cubic feet per day (Bcf/d) in the first six months of the year, 23% more than the same period in 2025, according to our Natural Gas Monthly. In our latest Short-Term Energy Outlook, we estimate U.S. LNG exports will average 17.3 Bcf/d in",
-      "published_at": "2026-09-01T14:00:00+00:00",
+      "title": "Food Inflation Jumps as Higher Energy Costs Hit UK Retailers",
+      "url": "https://oilprice.com/Energy/Energy-General/Food-Inflation-Jumps-as-Higher-Energy-Costs-Hit-UK-Retailers.html",
+      "snippet": "Shop price inflation has hit a two-year high and is set to climb through the autumn as a surge in energy and commodity costs filters through to consumers, a top business group has found. The British Retail Consortium (BRC), which represents major supermarkets and high street shops across the UK, war",
+      "published_at": "2026-09-01T16:00:00+00:00",
       "type": "news",
-      "source": "eia_today",
-      "source_name": "EIA Today in Energy",
-      "authority": 20,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 53,
+      "has_magnitude": false,
+      "score": 43,
       "tags": [
-        "lng"
+        "geopolitics",
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 14.6,
-        "themes": 20.8,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 11.6,
+        "geo_band": "primary",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 47.4,
-        "recency_multiplier": 1.0
+        "raw": 36.4,
+        "recency_multiplier": 0.97
       },
       "matched": {
-        "lng": [
-          "lng",
-          "lng exports"
+        "geopolitics": [
+          "war"
+        ],
+        "oil_macro": [
+          "inflation"
+        ],
+        "geography": [
+          "uk",
+          "british"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Russia Expands LNG Dark Fleet",
-      "url": "https://www.rigzone.com/news/wire/russia_expands_lng_dark_fleet-01-sep-2026-184501-article/?rss=true",
-      "snippet": "Russia has almost doubled the fleet of tankers ferrying liquefied natural gas from its U.S.-sanctioned Arctic project in less than a year.",
-      "published_at": "2026-09-01T09:00:22+00:00",
+      "title": "U.S.-Iran Strikes Put $100 Oil Back in Focus",
+      "url": "https://oilprice.com/Energy/Crude-Oil/US-Iran-Strikes-Put-100-Oil-Back-in-Focus.html",
+      "snippet": "U.S.-Iran strikes reignite fears of a prolonged Middle East conflict as Hormuz tensions push regional oil benchmarks above $100. Rising Bond Yields Turn Oil’s Rally Into a Demand Risk - Global bond yields have surged to their highest since 2008, as rising oil prices perpetuate fears of longer-than-a",
+      "published_at": "2026-09-01T15:10:00+00:00",
       "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "geopolitics",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 30.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.9,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctioned",
-          "dark fleet"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "russia"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "OilPrice.com"
-      ]
-    },
-    {
-      "title": "SCO slams attacks, sanctions on Iran: Key takeaways from Bishkek summit",
-      "url": "https://www.aljazeera.com/news/2026/9/1/sco-slams-attacks-sanctions-on-iran-key-takeaways-from-bishkek-summit?traffic_source=rss",
-      "snippet": "The SCO started in 1996 and accounts for 43 percent of the world’s population and 23 percent of the global economy.",
-      "published_at": "2026-09-01T13:32:33+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 39,
-      "tags": [
-        "geopolitics"
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 11.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 30.5,
-        "recency_multiplier": 1.0
+        "raw": 36.4,
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
-          "sanctions"
+          "conflict"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-01T13:08:14+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Sogestran, Titan seal long-term charter deal for LNG bunkering newbuild",
@@ -385,7 +528,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -401,7 +544,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.7,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.59
       },
       "matched": {
         "lng": [
@@ -427,7 +570,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 37,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -443,7 +586,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 48.4,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.45
       },
       "matched": {
         "lng": [
@@ -457,188 +600,17 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Prices Climb as Trump Threatens New Strikes on Iran",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-as-Trump-Threatens-New-Strikes-on-Iran.html",
-      "snippet": "Crude oil prices extended their earlier climb after President Trump issued his latest threat to Iran, following the first exchange of fire in weeks. At the time of writing, Brent crude was trading at $91.48 per barrel, with West Texas Intermediate at $86.97 per barrel, both up by over $1 per barrel ",
-      "published_at": "2026-09-01T05:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "oil_macro",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 18.5,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.2,
-        "recency_multiplier": 0.56
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Fuel loading under way for Palisades restart, Holtec announces",
-      "url": "https://www.world-nuclear-news.org/articles/fuel-loading-under-way-for-palisades-restart-holtec-announces",
-      "snippet": "The loading of fuel into the reactor has begun at Palisades nuclear power plant in the US, as Holtec International continues to move towards the first restart of a closed-down unit.",
-      "published_at": "2026-09-01T11:08:41+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.4,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Price, Not Politics, Is Driving Most of India’s Oil Buying",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Price-Not-Politics-Is-Driving-Most-of-Indias-Oil-Buying.html",
-      "snippet": "India’s imports of spot crude cargoes from producers such as the United States and Venezuela are being driven by the prevailing cargo and oil prices, the top executive of India’s state-owned Oil and Natural Gas Corporation (ONGC) has said. “Imports are decided by the price, except for term crudes. N",
-      "published_at": "2026-09-01T09:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 17.2,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.0,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "lng": [
-          "cargo",
-          "cargoes"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "united states",
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Why did Modi urge Putin to end Ukraine war - and will he listen?",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zy3wdqqeo?at_medium=RSS&at_campaign=rss",
-      "snippet": "BBC correspondents in Delhi and Moscow look at why the Indian PM made a very public peace plea to his Russian ally.",
-      "published_at": "2026-09-01T11:55:51+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-01T08:57:48+00:00"
-    },
-    {
-      "title": "Russian drone and missile barrage kills at least 12 in Ukraine’s Kyiv",
-      "url": "https://www.aljazeera.com/news/2026/9/1/russian-drone-and-missile-barrage-kills-at-least-12-in-ukraines-kyiv?traffic_source=rss",
-      "snippet": "Russian attacks escalate as EU defence ministers meet in Ireland to discuss Ukraine air defence shortages.",
-      "published_at": "2026-09-01T08:57:48+00:00",
+      "title": "Qatar says efforts under way to end Iran-US war and reopen Strait of Hormuz",
+      "url": "https://www.aljazeera.com/news/2026/9/1/qatar-says-efforts-under-way-to-end-iran-us-war-and-reopen-strait-of-hormuz?traffic_source=rss",
+      "snippet": "Qatar accuses Israel of exploiting regional conflicts to impose new realities in Palestine, Lebanon, and Syria.",
+      "published_at": "2026-09-01T15:29:48+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 16,
       "tags": [
         "geopolitics"
       ],
@@ -646,80 +618,136 @@
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 37.4,
-        "recency_multiplier": 0.73
+        "raw": 51.1,
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
-          "missile",
-          "drone"
+          "war",
+          "strait of hormuz"
         ],
         "geography": [
-          "eu",
-          "ireland"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cx2zy3wdqqeo?at_medium=RSS&at_campaign=rss",
-        "title": "Why did Modi urge Putin to end Ukraine war - and will he listen?",
-        "published_at": "2026-09-01T11:55:51+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Asia-Spot-LNG-Prices-Hit-5-Month-High-as-Hormuz-Blockage-Drags-On.html",
+        "title": "Asia Spot LNG Prices Hit 5-Month High as Hormuz Blockage Drags On",
+        "published_at": "2026-09-01T15:30:00+00:00"
       },
       "hidden": true
     },
     {
-      "title": "Why China will not comply with US sanctions on Iran",
-      "url": "https://www.aljazeera.com/opinions/2026/9/1/why-china-will-not-comply-with-us-sanctions-on-iran?traffic_source=rss",
-      "snippet": "Beijing will not comply with US measures because it can and because it’s in its interest not to.",
-      "published_at": "2026-09-01T13:08:14+00:00",
+      "title": "Two Supertankers Hit by Unknown Projectiles in Strait of Hormuz",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Two-Supertankers-Hit-by-Unknown-Projectiles-in-Strait-of-Hormuz.html",
+      "snippet": "Two oil supertankers have been hit by unknown projectiles while transiting the Strait of Hormuz outbound from the Persian Gulf, maritime risk management firm Marisks said on Tuesday, as tensions in the Middle East flared up again this week and put the tentative oil flow recovery at risk. The Sidr ve",
+      "published_at": "2026-09-01T11:35:16+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 9,
+      "score": 14,
       "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 8.8,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 1.0
+        "raw": 56.8,
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
-          "sanctions"
+          "strait of hormuz",
+          "persian gulf"
         ],
         "geography": [
-          "china"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/9/1/sco-slams-attacks-sanctions-on-iran-key-takeaways-from-bishkek-summit?traffic_source=rss",
-        "title": "SCO slams attacks, sanctions on Iran: Key takeaways from Bishkek summit",
-        "published_at": "2026-09-01T13:32:33+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Asia-Spot-LNG-Prices-Hit-5-Month-High-as-Hormuz-Blockage-Drags-On.html",
+        "title": "Asia Spot LNG Prices Hit 5-Month High as Hormuz Blockage Drags On",
+        "published_at": "2026-09-01T15:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Russia Expands LNG Dark Fleet",
+      "url": "https://www.rigzone.com/news/wire/russia_expands_lng_dark_fleet-01-sep-2026-184501-article/?rss=true",
+      "snippet": "Russia has almost doubled the fleet of tankers ferrying liquefied natural gas from its U.S.-sanctioned Arctic project in less than a year.",
+      "published_at": "2026-09-01T09:00:22+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 10,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 30.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.9,
+        "recency_multiplier": 0.56
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctioned",
+          "dark fleet"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "OilPrice.com"
+      ],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/9/1/germany-accuses-russia-of-drone-attack-on-leipzig-airport?traffic_source=rss",
+        "title": "Germany accuses Russia of drone attack on Leipzig airport",
+        "published_at": "2026-09-01T16:24:36+00:00"
       },
       "hidden": true
     }
