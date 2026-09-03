@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-03T00:46:26.297816+00:00",
-  "item_count": 12,
+  "generated_at": "2026-09-03T05:13:34.018147+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 6
+    "high": 1,
+    "normal": 4
   },
-  "superseded_count": 3,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,268 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1298
+        "ms": 1740
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 83355
+        "ms": 126280
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3696
+        "ms": 14278
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 606
+        "ms": 702
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 218
+        "ms": 5934
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 11,
         "error": null,
-        "ms": 125
+        "ms": 372
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 1333
+        "ms": 1299
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 215
+        "ms": 302
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 720
+        "ms": 735
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 387
+        "ms": 340
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 704
+        "ms": 696
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 44
+        "ms": 135
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 122
+        "ms": 175
       }
     ]
   },
   "items": [
+    {
+      "title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
+      "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
+      "snippet": "Russia is accused of growing increasingly reckless after Berlin blamed Russia for a failed drone attack on Leipzig airport.",
+      "published_at": "2026-09-03T03:21:24+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 26.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 67.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "escalation",
+          "attack"
+        ],
+        "geography": [
+          "eu",
+          "germany"
+        ],
+        "unplanned": [
+          "failed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Asia looks to store oil, gas closer to home after Strait of Hormuz crisis",
+      "url": "https://www.aljazeera.com/economy/2026/9/3/asia-looks-to-store-oil-gas-closer-to-home-after-strait-of-hormuz-crisis?traffic_source=rss",
+      "snippet": "Asian economies are racing to build up storage capacity to reduce their exposure to conflict in the Middle East.",
+      "published_at": "2026-09-03T04:26:27+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 59,
+      "tags": [
+        "geopolitics",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 29.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 55.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "strait of hormuz"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Equinor takes first LNG cargo from Cheniere",
+      "url": "https://lngprime.com/americas/equinor-takes-first-lng-cargo-from-cheniere/196203/",
+      "snippet": "Norwegian energy firm Equinor has taken delivery of its first liquefied natural gas (LNG) cargo under long-term supply agreements with US LNG exporting giant Cheniere.",
+      "published_at": "2026-09-03T04:16:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 49.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargo",
+          "lng cargo"
+        ],
+        "geography": [
+          "norwegian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Niger displays arsenal seized after failed military mutiny",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/niger-displays-arsenal-seized-after-failed-military-mutiny?traffic_source=rss",
+      "snippet": "Niger’s authorities showed off the arsenal seized during fighting to put down a revolt against the government.",
+      "published_at": "2026-09-03T04:32:52+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "seized"
+        ],
+        "unplanned": [
+          "failed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "U.S. SPR Depletion Threatens Further Oil Price Volatility",
       "url": "https://oilprice.com/Energy/Crude-Oil/US-SPR-Depletion-Threatens-Further-Oil-Price-Volatility.html",
@@ -117,7 +290,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 43,
       "tags": [
         "geopolitics",
         "gas_storage",
@@ -135,7 +308,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.72
       },
       "matched": {
         "geopolitics": [
@@ -167,11 +340,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -183,7 +356,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 63.7,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.49
       },
       "matched": {
         "geopolitics": [
@@ -203,53 +376,6 @@
       "also_reported_by": []
     },
     {
-      "title": "EU pursuing more Russia sanctions after failed airport attack: Kallas",
-      "url": "https://www.aljazeera.com/news/2026/9/2/eu-pursuing-more-russia-sanctions-after-failed-airport-attack-kallas?traffic_source=rss",
-      "snippet": "EU foreign affairs chief Kaja Kallas warns of more pressure after Germany blames Russia for attempted attack.",
-      "published_at": "2026-09-02T19:06:19+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 50,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 57.4,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "attack"
-        ],
-        "geography": [
-          "eu",
-          "germany"
-        ],
-        "unplanned": [
-          "failed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-02T16:49:00+00:00"
-    },
-    {
       "title": "Republican senator calls on Trump to fire Secretary of Defence Hegseth",
       "url": "https://www.aljazeera.com/news/2026/9/2/republican-senator-calls-on-trump-to-fire-secretary-of-defence-hegseth?traffic_source=rss",
       "snippet": "Senator Thom Tillis accuses Pentagon chief of &#039;inept mismanagement&#039; as US military is strained by war on Iran.",
@@ -260,12 +386,12 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 37,
       "tags": [
         "geopolitics",
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -276,7 +402,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.65
       },
       "matched": {
         "geopolitics": [
@@ -290,9 +416,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-09-02T19:16:36+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Aghada - GU_400183 (AT14)",
@@ -305,12 +429,12 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 46,
+      "score": 35,
       "tags": [
         "supply_disruption",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -321,7 +445,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 78.7,
-        "recency_multiplier": 0.48
+        "recency_multiplier": 0.34
       },
       "matched": {
         "supply_disruption": [
@@ -353,11 +477,11 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -369,7 +493,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.58
       },
       "matched": {
         "geopolitics": [
@@ -394,7 +518,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 31,
       "tags": [
         "lng"
       ],
@@ -410,7 +534,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.4,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.39
       },
       "matched": {
         "lng": [
@@ -427,251 +551,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Why Uranium Stocks Are Falling as U.S. Production Triples",
-      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Why-Uranium-Stocks-Are-Falling-as-US-Production-Triples.html",
-      "snippet": "U.S. uranium production is climbing from a base so depleted that a threefold increase still leaves America dependent on imports for most of its reactor fuel. Output rose to 2.1 million pounds in 2025, its highest level since 2017, before reaching 2.13 million pounds in the first half of 2026, accord",
-      "published_at": "2026-09-03T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "gas_storage",
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 17.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.6,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "gas_storage": [
-          "stocks",
-          "depleted"
-        ],
-        "nuclear": [
-          "reactor"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Nikkiso lands equipment deal for German LNG terminal",
-      "url": "https://www.offshore-energy.biz/nikkiso-lands-equipment-deal-for-german-lng-terminal/",
-      "snippet": "Cryogenic equipment supplier Nikkiso Clean Energy &#38; Industrial Gases (Nikkiso CE&#38;IG) Group has secured an order to deliver multiple pumps for a liquefied natural gas (LNG) terminal in Brunsbüttel, adding to its growing portfolio of equipment for Germany’s LNG import infrastructure. The post ",
-      "published_at": "2026-09-02T13:24:11+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 24.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.2,
-        "recency_multiplier": 0.49
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal"
-        ],
-        "geography": [
-          "germany",
-          "german"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Trump suggests renaming Strait of Hormuz as Trump Strait amid Iran war",
-      "url": "https://www.aljazeera.com/news/2026/9/2/trump-suggests-renaming-strait-of-hormuz-as-trump-strait-amid-iran?traffic_source=rss",
-      "snippet": "Despite renewed fighting with Iran and near daily attacks on ships, Trump says Strait of Hormuz is &#039;under USA control&#039;.",
-      "published_at": "2026-09-02T20:12:14+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 15,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/9/2/republican-senator-calls-on-trump-to-fire-secretary-of-defence-hegseth?traffic_source=rss",
-        "title": "Republican senator calls on Trump to fire Secretary of Defence Hegseth",
-        "published_at": "2026-09-02T21:37:41+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Saudi Arabia condemns deadly Iranian attack on tanker in Strait of Hormuz",
-      "url": "https://www.aljazeera.com/news/2026/9/2/saudi-arabia-condemns-deadly-iranian-attack-on-tanker-in-strait-of-hormuz?traffic_source=rss",
-      "snippet": "Regional neighbours condemn attack this week that killed two crew members from the Philippines.",
-      "published_at": "2026-09-02T19:16:36+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 15,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 30.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 55.5,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "geopolitics": [
-          "attack",
-          "strait of hormuz"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "BBC World"
-      ],
-      "first_seen_at": "2026-09-02T17:33:45+00:00",
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/9/2/republican-senator-calls-on-trump-to-fire-secretary-of-defence-hegseth?traffic_source=rss",
-        "title": "Republican senator calls on Trump to fire Secretary of Defence Hegseth",
-        "published_at": "2026-09-02T21:37:41+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
-      "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
-      "snippet": "Russia is accused of growing increasingly reckless after Berlin blamed Russia for a failed drone attack on Leipzig airport.",
-      "published_at": "2026-09-02T16:49:00+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 15,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 26.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 67.1,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "escalation",
-          "attack"
-        ],
-        "geography": [
-          "eu",
-          "germany"
-        ],
-        "unplanned": [
-          "failed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/9/2/eu-pursuing-more-russia-sanctions-after-failed-airport-attack-kallas?traffic_source=rss",
-        "title": "EU pursuing more Russia sanctions after failed airport attack: Kallas",
-        "published_at": "2026-09-02T19:06:19+00:00"
-      },
-      "hidden": true
     }
   ]
 }
