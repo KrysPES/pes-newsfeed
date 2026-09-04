@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-04T04:46:05.394766+00:00",
-  "item_count": 4,
+  "generated_at": "2026-09-04T09:07:39.688666+00:00",
+  "item_count": 6,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 0
+    "normal": 3
   },
   "superseded_count": 0,
   "sources": {
@@ -17,35 +17,35 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1023
+        "ms": 1320
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 81647
+        "ms": 114733
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3242
+        "ms": 4261
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 378
+        "ms": 511
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 270
+        "ms": 659
       },
       {
         "id": "eia_today",
@@ -59,218 +59,308 @@
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 778
+        "ms": 1182
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 157
+        "ms": 260
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 564
+        "ms": 672
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 147
+        "ms": 320
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 473
+        "ms": 547
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 683
+        "ms": 92
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 194
+        "ms": 141
       }
     ]
   },
   "items": [
     {
-      "title": "EU Vows Tougher Russia Measures After Leipzig Drone Attack",
-      "url": "https://oilprice.com/Geopolitics/Europe/EU-Vows-Tougher-Russia-Measures-After-Leipzig-Drone-Attack.html",
-      "snippet": "The recent incident at Leipzig Airport in which explosive-laden drones interrupted flights is the \"new normal,\" European Commission President Ursula von der Leyen said on September 2, vowing more restrictive measures on Moscow. \"Leipzig marks a new escalation on European soil, directly attributed to",
-      "published_at": "2026-09-03T14:00:00+00:00",
+      "title": "ADNOC Keeps Loading LNG Tankers in Gulf",
+      "url": "https://www.rigzone.com/news/wire/adnoc_keeps_loading_lng_tankers_in_gulf-04-sep-2026-184536-article/?rss=true",
+      "snippet": "ADNOC appears to be continuing to load liquefied natural gas onto tankers in the Persian Gulf, according to satellite images, despite ongoing disruptions to energy flows through the Strait of Hormuz and a recent escalation of hostilities.",
+      "published_at": "2026-09-04T08:23:17+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 64,
       "tags": [
         "geopolitics",
-        "regulation"
+        "lng"
       ],
-      "alert": "low",
-      "nature": "unplanned",
+      "alert": "normal",
+      "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 33.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
+        "authority": 10.9,
+        "themes": 36.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 72.5,
-        "recency_multiplier": 0.37
+        "raw": 63.3,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "drone",
           "escalation",
-          "attack"
+          "hostilities",
+          "strait of hormuz",
+          "persian gulf"
         ],
-        "regulation": [
-          "european commission"
+        "lng": [
+          "lng"
         ],
         "geography": [
-          "european",
-          "eu"
-        ],
-        "unplanned": [
-          "incident"
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "OilPrice.com"
+      ],
+      "first_seen_at": "2026-09-04T07:00:00+00:00"
+    },
+    {
+      "title": "US weekly LNG exports reach 32 shipments",
+      "url": "https://lngprime.com/americas/us-weekly-lng-exports-reach-32-shipments-2/196254/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 32 cargoes during the week ending September 2, up one shipment from the week before, according to the Energy Information Administration.",
+      "published_at": "2026-09-04T06:29:58+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 54,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "US continues to squeeze Cuban economy with new round of sanctions",
-      "url": "https://www.aljazeera.com/news/2026/9/4/us-continues-to-squeeze-cuban-economy-with-new-round-of-sanctions?traffic_source=rss",
-      "snippet": "Cuba announces new pro-market reforms amid threats of military attack from the Trump administration.",
-      "published_at": "2026-09-04T01:45:56+00:00",
+      "title": "Brent Nears $96 as Iran Conflict Keeps Oil Market on Edge",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Nears-96-as-Iran-Conflict-Keeps-Oil-Market-on-Edge.html",
+      "snippet": "Crude oil prices extended their climb today and are set for a sharp weekly gain as the war in the Middle East continues with little chance of peace. At the time of writing, Brent crude was trading at $95.55 per barrel, and West Texas Intermediate was changing hands for $91.53 per barrel, as Iran and",
+      "published_at": "2026-09-04T05:40:00+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 44,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "oil_macro"
       ],
-      "alert": "low",
+      "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 26.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 27.4,
+        "raw": 39.7,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Venice Energy seeks investors for Australian LNG import project",
+      "url": "https://lngprime.com/australia-and-oceania/venice-energy-seeks-investors-for-australian-lng-import-project/196249/",
+      "snippet": "Venice Energy is seeking major investors to help it develop its planned FSRU-based LNG import project at the Port of Adelaide, South Australia.",
+      "published_at": "2026-09-04T06:08:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.7,
         "recency_multiplier": 0.93
       },
       "matched": {
-        "geopolitics": [
-          "sanctions",
-          "attack"
+        "lng": [
+          "lng",
+          "fsru"
+        ],
+        "geography": [
+          "australia"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Gas Coordination Group: No immediate security of supply risk",
-      "url": "https://energy.ec.europa.eu/news/gas-coordination-group-no-immediate-security-supply-risk-2026-09-03_en",
-      "snippet": "Despite lower gas storage levels compared to previous years, the Member States and the Commission consider there is no immediate risk for security of gas supply in the EU.",
-      "published_at": "2026-09-03T15:38:37+00:00",
-      "type": "regulation",
-      "source": "ec_energy",
-      "source_name": "European Commission energy",
-      "authority": 22,
+      "title": "Orlen in Gdynia LNG bunkering move",
+      "url": "https://lngprime.com/europe/orlen-in-gdynia-lng-bunkering-move/196266/",
+      "snippet": "Poland's Orlen and the Port of Gdynia Authority have signed an agreement to explore the use of LNG and bio-LNG as marine fuels.",
+      "published_at": "2026-09-04T06:00:10+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 36,
       "tags": [
-        "gas_storage"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 16.1,
-        "themes": 19.2,
+        "authority": 13.1,
+        "themes": 7.3,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 0.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 61.3,
-        "recency_multiplier": 0.42
+        "raw": 30.4,
+        "recency_multiplier": 0.92
       },
       "matched": {
-        "gas_storage": [
-          "storage",
-          "storage levels"
+        "lng": [
+          "lng"
         ],
         "geography": [
-          "eu"
-        ],
-        "urgency": [
-          "immediate"
+          "poland"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "AI Data Center Boom Pushes U.S. Power Equipment to the Breaking Point",
-      "url": "https://oilprice.com/Energy/Energy-General/AI-Data-Center-Boom-Pushes-US-Power-Equipment-to-the-Breaking-Point.html",
-      "snippet": "Big Tech is betting trillions of dollars on artificial intelligence, with a lot of that to be spent on building the data centers that would power large language models. Stock markets are reflecting this in Big Tech stocks, but that’s not the only industry riding the artificial intelligence wave. Bec",
-      "published_at": "2026-09-03T22:00:00+00:00",
+      "title": "UK Poised to Approve Jackdaw Gas Field as Energy Costs Soar",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/UK-Poised-to-Approve-Jackdaw-Gas-Field-as-Energy-Costs-Soar.html",
+      "snippet": "Prime Minister Andy Burnham is expected to approve the development of the Jackdaw natural gas field in the North Sea before the end of the month, the BBC reported, citing unnamed sources. The Jackdaw project, along with Rosebank, was initially approved for development several years ago, but environm",
+      "published_at": "2026-09-04T08:15:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 33,
       "tags": [
-        "gas_storage"
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 6.7,
-        "geography": 0.0,
+        "themes": 12.5,
+        "geo_band": "primary",
+        "geography": 16.0,
         "event_nature": 0.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.5,
-        "recency_multiplier": 0.69
+        "speculative": -12.0,
+        "raw": 25.2,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "gas_storage": [
-          "stocks"
+        "infrastructure": [
+          "gas field"
         ],
-        "urgency": [
-          "breaking"
+        "geography": [
+          "uk"
+        ],
+        "speculative": [
+          "poised"
         ]
       },
       "duplicate_count": 0,
