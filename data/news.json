@@ -1,111 +1,156 @@
 {
-  "generated_at": "2026-09-04T09:07:39.688666+00:00",
-  "item_count": 6,
+  "generated_at": "2026-09-04T13:29:43.924064+00:00",
+  "item_count": 15,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 3
+    "normal": 8
   },
-  "superseded_count": 0,
+  "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1320
+        "ms": 1413
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 114733
+        "ms": 94518
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4261
+        "ms": 4762
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 1,
+        "count": 4,
         "error": null,
-        "ms": 511
+        "ms": 496
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 659
+        "ms": 550
       },
       {
         "id": "eia_today",
         "ok": true,
-        "count": 12,
+        "count": 13,
         "error": null,
-        "ms": 165
+        "ms": 249
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 43,
+        "count": 38,
         "error": null,
-        "ms": 1182
+        "ms": 997
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 260
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 111
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 672
+        "ms": 626
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 320
+        "ms": 236
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 547
+        "ms": 532
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 31,
+        "count": 27,
         "error": null,
-        "ms": 92
+        "ms": 136
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 141
+        "ms": 121
       }
     ]
   },
   "items": [
+    {
+      "title": "Europe targeted by spiralling campaign of sabotage and Russia is the chief suspect",
+      "url": "https://www.bbc.co.uk/news/articles/c5y4g6meekro?at_medium=RSS&at_campaign=rss",
+      "snippet": "Germany has blamed Russia for an attack on Leipzig airport but there has been a series of suspicious incidents elsewhere.",
+      "published_at": "2026-09-04T10:00:18+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 58.1,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "geopolitics": [
+          "sabotage",
+          "attack"
+        ],
+        "geography": [
+          "europe",
+          "germany"
+        ],
+        "unplanned": [
+          "sabotage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "ADNOC Keeps Loading LNG Tankers in Gulf",
       "url": "https://www.rigzone.com/news/wire/adnoc_keeps_loading_lng_tankers_in_gulf-04-sep-2026-184536-article/?rss=true",
@@ -117,7 +162,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 64,
+      "score": 55,
       "tags": [
         "geopolitics",
         "lng"
@@ -134,7 +179,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 63.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -158,6 +203,193 @@
       "first_seen_at": "2026-09-04T07:00:00+00:00"
     },
     {
+      "title": "Europe Gas Prices Head for Fourth Straight Weekly Gain",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Europe-Gas-Prices-Head-for-Fourth-Straight-Weekly-Gain.html",
+      "snippet": "European benchmark natural gas prices on Friday headed for their fourth consecutive weekly gain as the re-escalation in the Middle East dampened hopes that LNG flows from the Strait of Hormuz could normalize soon. The front-month price at the Dutch Title Transfer Facility (TTF), the benchmark for Eu",
+      "published_at": "2026-09-04T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 30.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 42.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "The Iran War Has Put Venezuela’s Oil Back in the Spotlight",
+      "url": "https://oilprice.com/Energy/Energy-General/The-Iran-War-Has-Put-Venezuelas-Oil-Back-in-the-Spotlight.html",
+      "snippet": "Politics, Geopolitics & Conflict The U.S. restarted major strikes on Iran this week, hitting missile, radar, and other military installations along the southern coast and on Larak Island. Iran retaliated against U.S. positions across the Gulf and Jordan, and also continued attacking commercial shipp",
+      "published_at": "2026-09-04T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 40.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "missile",
+          "conflict",
+          "war"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "How Much Oil Is Really Getting Through the Strait of Hormuz?",
+      "url": "https://oilprice.com/Energy/Energy-General/How-Much-Oil-Is-Really-Getting-Through-the-Strait-of-Hormuz.html",
+      "snippet": "Trump says the U.S. has effectively reopened the Strait of Hormuz, with 18 million barrels of oil reportedly crossing under American protection on Tuesday, close to the roughly 20 million bpd that moved through before the war. The problem is that nobody outside the U.S. government can yet verify Tue",
+      "published_at": "2026-09-04T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 28.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 41.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "reportedly"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-09-04T12:10:51+00:00"
+    },
+    {
+      "title": "WTI Back Above $91 as War Premium Returns",
+      "url": "https://oilprice.com/Energy/Energy-General/WTI-Back-Above-91-as-War-Premium-Returns.html",
+      "snippet": "October WTI crude oil futures are trading at $91.80 Thursday night, up $8.36 or 10.02% for the week so far. The contract traded as low as $84.11 early in the week before reaching $93.14, its strongest level since late July. The market began the week testing whether more cargoes moving through the St",
+      "published_at": "2026-09-04T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 46,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "oil_macro": [
+          "crude",
+          "wti"
+        ],
+        "lng": [
+          "cargoes"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "US weekly LNG exports reach 32 shipments",
       "url": "https://lngprime.com/americas/us-weekly-lng-exports-reach-32-shipments-2/196254/",
       "snippet": "US liquefied natural gas (LNG) plants sent 32 cargoes during the week ending September 2, up one shipment from the week before, according to the Energy Information Administration.",
@@ -168,7 +400,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 54,
+      "score": 43,
       "tags": [
         "lng"
       ],
@@ -183,13 +415,242 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.68
       },
       "matched": {
         "lng": [
           "lng",
           "cargoes",
           "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Decision on proposed modifications to BBLC's charging methodology and access rules",
+      "url": "https://www.ofgem.gov.uk/decision/decision-proposed-modifications-bblcs-charging-methodology-and-access-rules",
+      "snippet": "Ofgem's decision on proposed modifications to BBLC's Charging Methodology and Access Rules.",
+      "published_at": "2026-09-04T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 17.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "ofgem",
+          "charging methodology"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Peru LNG sent five shipments in August",
+      "url": "https://lngprime.com/americas/peru-lng-sent-five-shipments-in-august/196294/",
+      "snippet": "Peru LNG’s liquefaction plant at Pampa Melchorita shipped five liquefied natural gas cargoes in July, the same as in the previous three months, according to shipment data by state-owned Perupetro.",
+      "published_at": "2026-09-04T09:35:25+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 21.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.0,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "liquefaction",
+          "cargoes"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Reform UK officials step down as new funding scandal hits far-right party",
+      "url": "https://www.aljazeera.com/news/2026/9/4/reform-uk-officials-step-down-as-new-funding-scandal-hits-far-right-party?traffic_source=rss",
+      "snippet": "Resignations come after documentary alleges party arranged for overseas company to fund polling.",
+      "published_at": "2026-09-04T10:26:42+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 6.2,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.6,
+        "recency_multiplier": 0.92
+      },
+      "matched": {
+        "regulation": [
+          "reform"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Argentina Targets Falklands Oil Drillers With Tougher Sanctions",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Argentina-Targets-Falklands-Oil-Drillers-With-Tougher-Sanctions.html",
+      "snippet": "Argentina’s President Javier Milei threatened to impose sanctions on oil companies drilling near the Falkland Islands, after reiterating his claim that the territory under British control is Argentine. The Falklands are “historically and legally” Argentine, Milei said in a televised address, apparen",
+      "published_at": "2026-09-04T09:45:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.7,
+        "recency_multiplier": 0.87
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Energy code reform: statutory consultation on modifications to the Retail Energy Code and affected licences",
+      "url": "https://www.ofgem.gov.uk/consultation/energy-code-reform-statutory-consultation-modifications-retail-energy-code-and-affected-licences",
+      "snippet": "Our consultation seeks views on proposed modifications to the REC and affected licences required to implement the new governance framework for the REC.",
+      "published_at": "2026-09-04T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 12.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "consultation",
+          "reform"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Elevated crack spreads and crude oil prices contribute to higher prices at the pump",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68104",
+      "snippet": "What are crack spreads and why are they elevated? Crack spreads are indicators of the profitability of refining crude oil into petroleum products such as gasoline and diesel. One common crack spread is calculated by subtracting the spot market price of a gallon of crude oil from the wholesale price ",
+      "published_at": "2026-09-04T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 12.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "crack spread"
         ]
       },
       "duplicate_count": 0,
@@ -206,12 +667,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 34,
       "tags": [
         "geopolitics",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -223,7 +684,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.7,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.64
       },
       "matched": {
         "geopolitics": [
@@ -243,128 +704,55 @@
       "also_reported_by": []
     },
     {
-      "title": "Venice Energy seeks investors for Australian LNG import project",
-      "url": "https://lngprime.com/australia-and-oceania/venice-energy-seeks-investors-for-australian-lng-import-project/196249/",
-      "snippet": "Venice Energy is seeking major investors to help it develop its planned FSRU-based LNG import project at the Port of Adelaide, South Australia.",
-      "published_at": "2026-09-04T06:08:00+00:00",
+      "title": "South Korea mulls ‘contributions’ in Strait of Hormuz",
+      "url": "https://www.aljazeera.com/news/2026/9/4/south-korea-mulls-contributions-in-strait-of-hormuz?traffic_source=rss",
+      "snippet": "Seoul heavily affected by closure of strategic waterway and under heavy US pressure for participation against Iran.",
+      "published_at": "2026-09-04T12:10:51+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 11,
       "tags": [
-        "lng"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.7,
-        "recency_multiplier": 0.93
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "fsru"
-        ],
-        "geography": [
-          "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Orlen in Gdynia LNG bunkering move",
-      "url": "https://lngprime.com/europe/orlen-in-gdynia-lng-bunkering-move/196266/",
-      "snippet": "Poland's Orlen and the Port of Gdynia Authority have signed an agreement to explore the use of LNG and bio-LNG as marine fuels.",
-      "published_at": "2026-09-04T06:00:10+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.4,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "poland"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "UK Poised to Approve Jackdaw Gas Field as Energy Costs Soar",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/UK-Poised-to-Approve-Jackdaw-Gas-Field-as-Energy-Costs-Soar.html",
-      "snippet": "Prime Minister Andy Burnham is expected to approve the development of the Jackdaw natural gas field in the North Sea before the end of the month, the BBC reported, citing unnamed sources. The Jackdaw project, along with Rosebank, was initially approved for development several years ago, but environm",
-      "published_at": "2026-09-04T08:15:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 12.5,
-        "geo_band": "primary",
+        "authority": 9.5,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": -12.0,
-        "raw": 25.2,
+        "raw": 30.1,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "infrastructure": [
-          "gas field"
+        "geopolitics": [
+          "strait of hormuz"
         ],
         "geography": [
-          "uk"
+          "strait of hormuz",
+          "hormuz"
         ],
         "speculative": [
-          "poised"
+          "mulls"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Energy/Energy-General/How-Much-Oil-Is-Really-Getting-Through-the-Strait-of-Hormuz.html",
+        "title": "How Much Oil Is Really Getting Through the Strait of Hormuz?",
+        "published_at": "2026-09-04T12:30:00+00:00"
+      },
+      "hidden": true
     }
   ]
 }
