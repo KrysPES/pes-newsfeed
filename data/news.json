@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-06T09:45:12.329654+00:00",
-  "item_count": 2,
+  "generated_at": "2026-09-06T13:12:17.761499+00:00",
+  "item_count": 3,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 1
+    "normal": 2
   },
   "superseded_count": 0,
   "sources": {
@@ -17,140 +17,179 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1432
+        "ms": 1510
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 117008
+        "ms": 102051
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 13036
+        "ms": 4172
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 195
+        "ms": 703
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 86
+        "ms": 560
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 179
+        "ms": 157
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 1458
+        "ms": 1019
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 225
+        "ms": 406
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 676
+        "ms": 594
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 365
+        "ms": 160
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 580
+        "ms": 289
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 49
+        "ms": 263
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 128
+        "ms": 92
       }
     ]
   },
   "items": [
     {
-      "title": "Iran war live: IRGC, US trade fire, attack oil tankers in Hormuz",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/9/6/iran-war-live-irgc-claims-new-attacks-on-us-warships-over-naval-blockade?traffic_source=rss",
-      "snippet": "IRGC launches new strikes after firing missiles at US warships as standoff in Strait of Hormuz intensifies.",
-      "published_at": "2026-09-06T00:00:00+00:00",
+      "title": "US, Iran engaged in tanker war: Where is the months-long conflict headed?",
+      "url": "https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed?traffic_source=rss",
+      "snippet": "The US and Iran attack tankers in Strait of Hormuz, as the two sides try to exert control over the strategic waterway.",
+      "published_at": "2026-09-06T10:49:22+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 62,
       "tags": [
         "geopolitics",
-        "supply_disruption"
+        "lng"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 37.0,
+        "themes": 36.4,
         "geo_band": "chokepoint",
         "geography": 16.0,
-        "event_nature": 20.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 82.5,
-        "recency_multiplier": 0.55
+        "raw": 61.9,
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
+          "conflict",
           "war",
           "attack",
           "strait of hormuz"
         ],
-        "supply_disruption": [
-          "fire"
+        "lng": [
+          "tanker"
         ],
         "geography": [
           "strait of hormuz",
           "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Equinor Starts Up 100 MW Energy Storage Project in Texas",
+      "url": "https://www.rigzone.com/news/equinor_starts_up_100_mw_energy_storage_project_in_texas-06-sep-2026-184546-article/?rss=true",
+      "snippet": "Equinor said the 200-mWh Citrus Flatts battery energy storage facility in Harlingen, Texas is now online.",
+      "published_at": "2026-09-06T11:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 51,
+      "tags": [
+        "gas_storage",
+        "power_system"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 22.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 45.5,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "storage facility"
         ],
-        "unplanned": [
-          "fire"
+        "power_system": [
+          "battery"
         ]
       },
       "duplicate_count": 0,
@@ -167,7 +206,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 31,
       "tags": [
         "supply_disruption"
       ],
@@ -182,7 +221,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.61
       },
       "matched": {
         "supply_disruption": [
