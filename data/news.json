@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-07T00:05:09.297821+00:00",
-  "item_count": 4,
+  "generated_at": "2026-09-07T04:28:36.808254+00:00",
+  "item_count": 5,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 0
+    "high": 0,
+    "normal": 4
   },
   "superseded_count": 0,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1167
+        "ms": 1370
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 81603
+        "ms": 59032
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2973
+        "ms": 3054
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 653
+        "ms": 281
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 605
+        "ms": 513
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 87
+        "ms": 81
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 43,
         "error": null,
-        "ms": 972
+        "ms": 835
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 187
+        "ms": 162
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 648
+        "ms": 535
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 233
+        "ms": 107
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 498
+        "ms": 500
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 31,
+        "count": 28,
         "error": null,
-        "ms": 60
+        "ms": 154
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 173
+        "ms": 194
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 55,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.74
       },
       "matched": {
         "supply_disruption": [
@@ -151,120 +151,173 @@
       "first_seen_at": "2026-09-06T22:30:02+00:00"
     },
     {
-      "title": "Can AfD form Germany’s first far-right state government since World War II?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/06-09-sv-germany-afd-wins-saxony-de-fm?traffic_source=rss",
-      "snippet": "Germany’s far-right Alternative for Germany (AfD) is projected to win a regional election in Saxony-Anhalt.",
-      "published_at": "2026-09-06T20:52:01+00:00",
+      "title": "Oil Prices Climb After U.S. Strikes Three Iranian Tankers and Iran Vows Revenge",
+      "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Climb-After-US-Strikes-Three-Iranian-Tankers-and-Iran-Vows-Revenge.html",
+      "snippet": "Oil prices edged higher in early Asian trade on Monday following another weekend of escalation in the U.S.-Iran war. At the time of writing, WTI was trading at $92.14 per barrel, up 0.72% on the session, while Brent had risen 0.63% to trade at $96.89. On Saturday, U.S. Central Command (Centcom) repo",
+      "published_at": "2026-09-07T03:40:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 53,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 46.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "war"
+        ],
+        "oil_macro": [
+          "brent",
+          "wti",
+          "barrel"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran to announce restricted zone outside Strait of Hormuz",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/aje-onl-nf_iran-to-announce-restricted-zone-around-hormuz-060926?traffic_source=rss",
+      "snippet": "Iran&#039;s security chief Mohsen Rezaei says Tehran will announce a restricted zone around the Strait of Hormuz.",
+      "published_at": "2026-09-07T02:41:56+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 53,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "supply_disruption"
       ],
-      "alert": "low",
+      "alert": "normal",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "themes": 21.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 28.5,
-        "recency_multiplier": 0.91
+        "raw": 47.2,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "war"
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "restricted"
         ],
         "geography": [
-          "germany"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-07T00:00:00+00:00"
     },
     {
-      "title": "Palestinian farmers battle settler sabotage to save Hebron crops, livestock",
-      "url": "https://www.aljazeera.com/features/2026/9/6/palestinian-farmers-battle-settler-sabotage-to-save-hebron-crops-livestock?traffic_source=rss",
-      "snippet": "West Bank farmers defy daily settler attacks, sheep theft, and military restrictions to protect their land.",
-      "published_at": "2026-09-06T17:03:20+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.5,
-        "recency_multiplier": 0.68
-      },
-      "matched": {
-        "geopolitics": [
-          "sabotage"
-        ],
-        "unplanned": [
-          "sabotage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Peace talks rich in symbolism but fundamental differences between Russia and Ukraine remain",
-      "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
-      "snippet": "Despite talks between US envoys and both Putin and Zelensky, the expectation in Kyiv is the fighting will continue, writes James Landale.",
-      "published_at": "2026-09-06T20:52:12+00:00",
+      "title": "Five dead after Amazon cargo plane crashes at Miami airport",
+      "url": "https://www.bbc.co.uk/news/articles/c0e3p1j7n3ro?at_medium=RSS&at_campaign=rss",
+      "snippet": "Five people are dead and five seriously injured after a Boeing 767-300 cargo plane \"overran\" the runway and caught fire, officials say.",
+      "published_at": "2026-09-07T00:57:38+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 46,
       "tags": [
-        "geopolitics"
+        "supply_disruption",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 12.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.0,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "lng": [
+          "cargo"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Zvezda nears delivery of third Russian-built ice-class LNG carrier",
+      "url": "https://lngprime.com/asia/zvezda-nears-delivery-of-third-russian-built-ice-class-lng-carrier/196331/",
+      "snippet": "Russian Zvezda yard is nearing the delivery of the second Russian-built ice-class liquefied natural gas (LNG) carrier.",
+      "published_at": "2026-09-07T04:18:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 9.0,
+        "authority": 13.1,
+        "themes": 14.6,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.91
+        "raw": 32.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "peace talks"
+        "lng": [
+          "lng",
+          "carrier"
         ],
         "geography": [
-          "russia",
-          "ukraine"
+          "russian"
         ]
       },
       "duplicate_count": 0,
