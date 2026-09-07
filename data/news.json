@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-07T19:13:52.673974+00:00",
-  "item_count": 16,
+  "generated_at": "2026-09-07T22:03:37.488723+00:00",
+  "item_count": 14,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 5
+    "normal": 6
   },
   "superseded_count": 0,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1212
+        "ms": 1391
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 136524
+        "ms": 84719
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3309
+        "ms": 23972
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 212
+        "ms": 334
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 297
+        "ms": 619
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 86
+        "ms": 326
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 44,
         "error": null,
-        "ms": 716
+        "ms": 1259
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 144
+        "ms": 214
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 519
+        "ms": 731
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 72
+        "ms": 1028
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 438
+        "ms": 564
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 26,
+        "count": 25,
         "error": null,
-        "ms": 243
+        "ms": 43
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 85
+        "ms": 54
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, SE3, Forsmark Block2",
+      "url": "https://umm.nordpoolgroup.com/#/messages/322866bc-ef7a-4d26-983a-e962ea7cf1ed/4",
+      "snippet": "Published: 07.09.2026 23:17:05 Publisher: Forsmarks Kraftgrupp AB Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Failure on turbine Remarks: Troubleshooting is complete. Power will at first decrease due to startprocedure for turbine 21. When turb",
+      "published_at": "2026-09-07T21:17:05+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-07T16:04:59+00:00"
+    },
     {
       "title": "Russia shutters German consulate as diplomatic freeze deepens",
       "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
@@ -117,12 +161,12 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 68,
+      "score": 63,
       "tags": [
         "geopolitics",
         "weather"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -134,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 70.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -156,48 +200,169 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, SE3, Forsmark Block2",
-      "url": "https://umm.nordpoolgroup.com/#/messages/322866bc-ef7a-4d26-983a-e962ea7cf1ed/3",
-      "snippet": "Published: 07.09.2026 18:47:19 Publisher: Forsmarks Kraftgrupp AB Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Failure on turbine Remarks: Troubleshooting is complete. Power will at first decrease due to startprocedure for turbine 21. When turb",
-      "published_at": "2026-09-07T16:47:19+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
+      "title": "Washington’s Venezuela Oil Deal Is About Much More Than Crude",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Washingtons-Venezuela-Oil-Deal-Is-About-Much-More-Than-Crude.html",
+      "snippet": "Washington’s takeover of more than a fifth of Venezuela’s oil reserves in a deal officially signed by U.S. Energy Secretary Chris Wright on 2 September was as unexpected as it was dramatic, with President Donald Trump’s comment a few days earlier that it is “the biggest oil deal in world history” lo",
+      "published_at": "2026-09-07T22:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
       "has_magnitude": false,
-      "score": 64,
+      "score": 55,
       "tags": [
-        "supply_disruption"
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 21.9,
-        "themes": 8.4,
+        "authority": 8.8,
+        "themes": 4.5,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.97
+        "raw": 49.2,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "unplanned"
+        "oil_macro": [
+          "crude"
         ],
         "unplanned": [
-          "unplanned",
-          "failure"
+          "unexpected"
         ],
         "urgency": [
-          "unplanned"
+          "unexpected"
         ]
       },
-      "duplicate_count": 3,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-07T16:04:59+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil prices surge as US-Iran strikes intensify in Strait of Hormuz",
+      "url": "https://www.aljazeera.com/economy/2026/9/7/oil-prices-surge-as-us-iran-strikes-intensify-in-strait-of-hormuz?traffic_source=rss",
+      "snippet": "Oil prices spike to six-week highs as US-Iran strikes disrupt traffic in the crucial Strait of Hormuz.",
+      "published_at": "2026-09-07T21:17:12+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Cuba says no negotiations with US despite ‘genocidal’ blockade",
+      "url": "https://www.aljazeera.com/economy/2026/9/7/cuba-says-no-negotiations-with-us-despite-genocidal-blockade?traffic_source=rss",
+      "snippet": "Cuba reports record losses from the US embargo as foreign minister describes months of punishing blackouts.",
+      "published_at": "2026-09-07T19:58:48+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 26.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "embargo",
+          "blockade",
+          "negotiations"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Sudan Could Become the Red Sea’s Next Energy Security Flashpoint",
+      "url": "https://oilprice.com/Geopolitics/Africa/Sudan-Could-Become-the-Red-Seas-Next-Energy-Security-Flashpoint.html",
+      "snippet": "The investigations published by The New York Times and The Washington Post should not be dismissed as another collection of allegations emerging from Sudan’s opaque civil war. Taken together, they present the most substantial publicly available evidence yet that elements of the Sudanese Armed Forces",
+      "published_at": "2026-09-07T19:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 38.4,
+        "recency_multiplier": 0.92
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "red sea"
+        ],
+        "geography": [
+          "red sea"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Saudi Aramco's Jizan Refinery Hit Again as Houthi Attacks Escalate",
@@ -210,7 +375,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 43,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -227,7 +392,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.1,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.56
       },
       "matched": {
         "geopolitics": [
@@ -249,92 +414,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Sudan Could Become the Red Sea’s Next Energy Security Flashpoint",
-      "url": "https://oilprice.com/Geopolitics/Africa/Sudan-Could-Become-the-Red-Seas-Next-Energy-Security-Flashpoint.html",
-      "snippet": "The investigations published by The New York Times and The Washington Post should not be dismissed as another collection of allegations emerging from Sudan’s opaque civil war. Taken together, they present the most substantial publicly available evidence yet that elements of the Sudanese Armed Forces",
-      "published_at": "2026-09-07T19:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 46,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 38.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "red sea"
-        ],
-        "geography": [
-          "red sea"
-        ],
-        "speculative": [
-          "could"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Commission inaugurates Europe's largest industrial carbon capture and storage facility in the Netherlands",
-      "url": "https://energy.ec.europa.eu/news/commission-inaugurates-europes-largest-industrial-carbon-capture-and-storage-facility-netherlands-2026-09-07_en",
-      "snippet": "Today, the Yara Sluiskil plant, the largest commercial carbon capture and storage (CCS) project in Europe started its operations in Sluikil, a village in the Zeeland province of the Netherlands.",
-      "published_at": "2026-09-07T14:55:22+00:00",
-      "type": "regulation",
-      "source": "ec_energy",
-      "source_name": "European Commission energy",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 46,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 19.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.3,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "gas_storage": [
-          "storage",
-          "storage facility"
-        ],
-        "geography": [
-          "europe",
-          "netherlands"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Russia Vows to Keep Selling Oil to India Despite U.S. Tariff Threat",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Vows-to-Keep-Selling-Oil-to-India-Despite-US-Tariff-Threat.html",
       "snippet": "Russia will remain a key crude oil supplier to India, Russia’s Ambassador to India, Denis Alipov, said in an interview with Asian News International, in which he also criticized the planned U.S. legislation to slap tariffs on countries importing Russian oil. Russia has become India’s single-biggest ",
@@ -345,13 +424,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 39,
       "tags": [
         "geopolitics",
         "regulation",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -363,7 +442,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -386,6 +465,96 @@
       "also_reported_by": []
     },
     {
+      "title": "Commission inaugurates Europe's largest industrial carbon capture and storage facility in the Netherlands",
+      "url": "https://energy.ec.europa.eu/news/commission-inaugurates-europes-largest-industrial-carbon-capture-and-storage-facility-netherlands-2026-09-07_en",
+      "snippet": "Today, the Yara Sluiskil plant, the largest commercial carbon capture and storage (CCS) project in Europe started its operations in Sluikil, a village in the Zeeland province of the Netherlands.",
+      "published_at": "2026-09-07T14:55:22+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 19.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.3,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "storage facility"
+        ],
+        "geography": [
+          "europe",
+          "netherlands"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Rosneft Ships First Crude From $157 Billion Vostok Oil Project",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Rosneft-Ships-First-Crude-From-157-Billion-Vostok-Oil-Project.html",
+      "snippet": "Rosneft has shipped the first crude oil cargo from the Vostok Oil project in Eastern Siberia, despite sanctions targeting Russia’s energy industry and the exit of Western business partners. At peak capacity, the project is expected to produce between 50 and 100 million tons of crude annually. The Vo",
+      "published_at": "2026-09-07T21:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 14.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "lng": [
+          "cargo"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Fresh record set for nuclear generation in 2025",
       "url": "https://www.world-nuclear-news.org/articles/fresh-record-set-for-nuclear-generation-in-2025",
       "snippet": "Nuclear reactors worldwide generated 2,702 TWh of electricity in 2025, beating the previous year's record of 2,667 TWh, according to the W orld Nuclear Outlook Report , which also calculates that if all national nuclear targets were achieved, total capacity would more than triple by 2050.",
@@ -396,7 +565,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": true,
-      "score": 41,
+      "score": 35,
       "tags": [
         "nuclear"
       ],
@@ -411,12 +580,52 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 40.4,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.65
       },
       "matched": {
         "nuclear": [
           "nuclear",
           "reactors"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Robots protest in Poland over AI regulation concerns",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/robots-protest-in-poland-over-ai-regulation-concerns?traffic_source=rss",
+      "snippet": "Robots protest in Poland over AI regulation concerns",
+      "published_at": "2026-09-07T20:59:12+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 6.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "regulation"
+        ],
+        "geography": [
+          "poland"
         ]
       },
       "duplicate_count": 0,
@@ -433,7 +642,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 32,
       "tags": [
         "lng",
         "infrastructure"
@@ -450,7 +659,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.0,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.5
       },
       "matched": {
         "lng": [
@@ -469,363 +678,37 @@
       "also_reported_by": []
     },
     {
-      "title": "China Halts New Battery Storage Plant Approvals",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Halts-New-Battery-Storage-Plant-Approvals.html",
-      "snippet": "China has paused approvals for new battery storage factories amid a review of existing and planned capacity, Chinese financial news outlet Cailianshe reported this weekend, citing industry sources. The temporary suspension of approvals of plants that have not started construction yet comes amid grow",
-      "published_at": "2026-09-07T16:30:00+00:00",
+      "title": "Syria’s Assad-era reactor configured for nuclear weapons: IAEA",
+      "url": "https://www.aljazeera.com/news/2026/9/7/syrias-assad-era-reactor-configured-for-nuclear-weapons-iaea?traffic_source=rss",
+      "snippet": "UN watchdog says material from facility, bombed in 2007, now under IAEA safeguards.",
+      "published_at": "2026-09-07T19:31:05+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "supply_disruption",
-        "gas_storage",
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.2,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "supply_disruption": [
-          "suspension"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "power_system": [
-          "battery"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Uzbekistan Scales Back Nuclear Cooperation With Russia",
-      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Uzbekistan-Scales-Back-Nuclear-Cooperation-With-Russia.html",
-      "snippet": "Back on June 4, Uzbek President Shavkat Mirziyoyev and Russian leader Vladimir Putin were all smiles amid the ceremonial groundbreaking for the construction of Uzbekistan’s first cluster of nuclear reactors, to be built by Russia’s nuclear entity Rosatom. “I am confident that you have chosen the bes",
-      "published_at": "2026-09-07T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
+      "score": 31,
       "tags": [
         "nuclear"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
+        "authority": 9.5,
         "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.3,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactors"
-        ],
-        "geography": [
-          "russia",
-          "russian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "American and African Crudes Soar as China's Oil Imports Rebound",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/American-and-African-Crudes-Soar-as-Chinas-Oil-Imports-Rebound.html",
-      "snippet": "The prices of crudes from Canada, South America, and Africa have jumped in recent weeks as Chinese oil import demand is rising from a decade-low, benchmark prices rally, and Middle East supply remains disrupted. The Djeno crude from Congo, one of the smaller producers in OPEC, is being offered at a ",
-      "published_at": "2026-09-07T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "oil_macro",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 18.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.2,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "oil_macro": [
-          "opec",
-          "crude",
-          "demand"
-        ],
-        "supply_disruption": [
-          "disrupted"
-        ],
-        "geography": [
-          "china",
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "ExxonMobil to Acquire Papua LNG Operatorship from TotalEnergies",
-      "url": "https://www.rigzone.com/news/exxonmobil_to_acquire_papua_lng_operatorship_from_totalenergies-07-sep-2026-184550-article/?rss=true",
-      "snippet": "TotalEnergies said the transfer, which also involves a farm-down by the French majority owner, will help bring the project closer to a final investment decision.",
-      "published_at": "2026-09-07T10:22:29+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 20.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.8,
-        "recency_multiplier": 0.59
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "final investment decision"
-        ],
-        "geography": [
-          "french"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "India’s Crude Oil Benchmark Tops $100 as Middle East War Escalates",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Crude-Oil-Benchmark-Tops-100-as-Middle-East-War-Escalates.html",
-      "snippet": "India’s average crude import price soared to above $100 per barrel at the end of last week and is set to further rise this week as international crude prices rallied amid intensified hostilities in the Middle East. The so-called Crude Oil FOB Price, or the Indian Basket of average sweet and sour gra",
-      "published_at": "2026-09-07T11:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.1,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "geopolitics": [
-          "hostilities",
-          "war"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrel"
-        ],
-        "geography": [
-          "india",
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Local ceasefire in place for Zaporizhzhia power line repairs",
-      "url": "https://www.world-nuclear-news.org/articles/local-ceasefire-in-place-for-zaporizhzhia-power-line-repairs",
-      "snippet": "The International Atomic Energy Agency says that a seventh ceasefire is in place to allow demining and repair work to take place to restore external power to the Zaporizhzhia Nuclear Power Plant.",
-      "published_at": "2026-09-07T10:43:29+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "supply_disruption",
-        "geopolitics",
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 24.7,
         "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 38.6,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "supply_disruption": [
-          "repairs",
-          "repair"
-        ],
-        "geopolitics": [
-          "ceasefire"
-        ],
-        "nuclear": [
-          "nuclear"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "High Crude and LNG Prices Weigh on India’s Oil and Gas Sector",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/High-Crude-and-LNG-Prices-Weigh-on-Indias-Oil-and-Gas-Sector.html",
-      "snippet": "The renewed rally in crude oil and LNG prices and the higher freight costs are pressuring the marketing margins of India’s oil and gas sector, which has to contend with the fallout of the Iran war on global oil and LNG trade flows. Increased refining margins offset some of the downward pressure, but",
-      "published_at": "2026-09-07T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "carbon",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.7,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "carbon": [
-          "offset"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Argentina aims for 2027 launch of RA-10 multipurpose reactor",
-      "url": "https://www.world-nuclear-news.org/articles/argentina-aims-for-2027-launch-of-ra-10-multipurpose-reactor",
-      "snippet": "The National Atomic Energy Commission and the Secretariat for Nuclear Affairs say commissioning of the RA-10 multipurpose reactor will begin before the end of the year - and outlined plans for private financing for the associated production plant.",
-      "published_at": "2026-09-07T12:07:48+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "nuclear",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 18.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.5,
-        "recency_multiplier": 0.68
+        "raw": 24.1,
+        "recency_multiplier": 0.96
       },
       "matched": {
         "nuclear": [
           "nuclear",
           "reactor"
-        ],
-        "infrastructure": [
-          "commissioning"
         ]
       },
       "duplicate_count": 0,
