@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-09-08T00:15:06.652694+00:00",
-  "item_count": 14,
+  "generated_at": "2026-09-08T04:40:28.621619+00:00",
+  "item_count": 7,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 5
+    "high": 0,
+    "normal": 3
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1227
+        "ms": 1582
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 113285
+        "ms": 5426
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 17929
+        "ms": 2571
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 2,
+        "count": 0,
         "error": null,
-        "ms": 414
+        "ms": 629
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 366
+        "ms": 564
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 90
+        "ms": 88
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 44,
         "error": null,
-        "ms": 844
+        "ms": 1094
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 44
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 210
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 491
+        "ms": 627
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 158
+        "ms": 252
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 437
+        "ms": 537
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 346
+        "ms": 256
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 183
+        "ms": 119
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 68,
+      "score": 58,
       "tags": [
         "nuclear"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -132,7 +132,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 71.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.75
       },
       "matched": {
         "nuclear": [
@@ -160,7 +160,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 63,
+      "score": 51,
       "tags": [
         "supply_disruption"
       ],
@@ -175,7 +175,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.66
       },
       "matched": {
         "supply_disruption": [
@@ -194,55 +194,6 @@
       "first_seen_at": "2026-09-07T16:04:59+00:00"
     },
     {
-      "title": "Russia shutters German consulate as diplomatic freeze deepens",
-      "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
-      "snippet": "Moscow retaliates after similar move from Berlin last week citing failed drone attack on airport.",
-      "published_at": "2026-09-07T18:27:39+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 57,
-      "tags": [
-        "geopolitics",
-        "weather"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 30.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 70.1,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "attack",
-          "diplomatic"
-        ],
-        "weather": [
-          "freeze"
-        ],
-        "geography": [
-          "german"
-        ],
-        "unplanned": [
-          "failed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Washington’s Venezuela Oil Deal Is About Much More Than Crude",
       "url": "https://oilprice.com/Energy/Crude-Oil/Washingtons-Venezuela-Oil-Deal-Is-About-Much-More-Than-Crude.html",
       "snippet": "Washington’s takeover of more than a fifth of Venezuela’s oil reserves in a deal officially signed by U.S. Energy Secretary Chris Wright on 2 September was as unexpected as it was dramatic, with President Donald Trump’s comment a few days earlier that it is “the biggest oil deal in world history” lo",
@@ -253,7 +204,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 43,
       "tags": [
         "oil_macro"
       ],
@@ -268,7 +219,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.2,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.7
       },
       "matched": {
         "oil_macro": [
@@ -295,11 +246,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -311,7 +262,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -321,6 +272,53 @@
         "geography": [
           "strait of hormuz",
           "hormuz"
+        ],
+        "speculative": [
+          "may"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Panama Canal may cut ship traffic further as El Niño strengthens",
+      "url": "https://www.aljazeera.com/news/2026/9/8/panama-canal-may-cut-ship-traffic-further-as-el-nio-strengthens?traffic_source=rss",
+      "snippet": "Canal authorities may further reduce ship traffic if a strengthening El Niño worsens the country&#039;s drought.",
+      "published_at": "2026-09-08T01:16:10+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "geopolitics",
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 20.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 33.8,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "geopolitics": [
+          "panama canal"
+        ],
+        "weather": [
+          "drought"
+        ],
+        "geography": [
+          "panama canal"
         ],
         "speculative": [
           "may"
@@ -340,11 +338,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -356,7 +354,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
@@ -381,7 +379,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -396,312 +394,13 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
           "embargo",
           "blockade",
           "negotiations"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Sudan Could Become the Red Sea’s Next Energy Security Flashpoint",
-      "url": "https://oilprice.com/Geopolitics/Africa/Sudan-Could-Become-the-Red-Seas-Next-Energy-Security-Flashpoint.html",
-      "snippet": "The investigations published by The New York Times and The Washington Post should not be dismissed as another collection of allegations emerging from Sudan’s opaque civil war. Taken together, they present the most substantial publicly available evidence yet that elements of the Sudanese Armed Forces",
-      "published_at": "2026-09-07T19:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 38.4,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "red sea"
-        ],
-        "geography": [
-          "red sea"
-        ],
-        "speculative": [
-          "could"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Rosneft Ships First Crude From $157 Billion Vostok Oil Project",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Rosneft-Ships-First-Crude-From-157-Billion-Vostok-Oil-Project.html",
-      "snippet": "Rosneft has shipped the first crude oil cargo from the Vostok Oil project in Eastern Siberia, despite sanctions targeting Russia’s energy industry and the exit of Western business partners. At peak capacity, the project is expected to produce between 50 and 100 million tons of crude annually. The Vo",
-      "published_at": "2026-09-07T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.7,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "lng": [
-          "cargo"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "russia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russia Vows to Keep Selling Oil to India Despite U.S. Tariff Threat",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Vows-to-Keep-Selling-Oil-to-India-Despite-US-Tariff-Threat.html",
-      "snippet": "Russia will remain a key crude oil supplier to India, Russia’s Ambassador to India, Denis Alipov, said in an interview with Asian News International, in which he also criticized the planned U.S. legislation to slap tariffs on countries importing Russian oil. Russia has become India’s single-biggest ",
-      "published_at": "2026-09-07T17:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics",
-        "regulation",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.2,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.9,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "geopolitics": [
-          "tariff",
-          "tariffs"
-        ],
-        "regulation": [
-          "legislation"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Commission inaugurates Europe's largest industrial carbon capture and storage facility in the Netherlands",
-      "url": "https://energy.ec.europa.eu/news/commission-inaugurates-europes-largest-industrial-carbon-capture-and-storage-facility-netherlands-2026-09-07_en",
-      "snippet": "Today, the Yara Sluiskil plant, the largest commercial carbon capture and storage (CCS) project in Europe started its operations in Sluikil, a village in the Zeeland province of the Netherlands.",
-      "published_at": "2026-09-07T14:55:22+00:00",
-      "type": "regulation",
-      "source": "ec_energy",
-      "source_name": "European Commission energy",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 19.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.3,
-        "recency_multiplier": 0.57
-      },
-      "matched": {
-        "gas_storage": [
-          "storage",
-          "storage facility"
-        ],
-        "geography": [
-          "europe",
-          "netherlands"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Robots protest in Poland over AI regulation concerns",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/robots-protest-in-poland-over-ai-regulation-concerns?traffic_source=rss",
-      "snippet": "Robots protest in Poland over AI regulation concerns",
-      "published_at": "2026-09-07T20:59:12+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 6.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.6,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "regulation": [
-          "regulation"
-        ],
-        "geography": [
-          "poland"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hawaii braces for Hurricane Lowell",
-      "url": "https://www.aljazeera.com/news/2026/9/7/hawaii-braces-for-hurricane-lowell?traffic_source=rss",
-      "snippet": "Threats of cyclones and deadly surf as the Category 3 storm path approaches Hawaiian islands on Monday night.",
-      "published_at": "2026-09-07T22:37:25+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 12.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 21.8,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "weather": [
-          "hurricane",
-          "storm"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Fresh record set for nuclear generation in 2025",
-      "url": "https://www.world-nuclear-news.org/articles/fresh-record-set-for-nuclear-generation-in-2025",
-      "snippet": "Nuclear reactors worldwide generated 2,702 TWh of electricity in 2025, beating the previous year's record of 2,667 TWh, according to the W orld Nuclear Outlook Report , which also calculates that if all national nuclear targets were achieved, total capacity would more than triple by 2050.",
-      "published_at": "2026-09-07T14:27:16+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 40.4,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactors"
         ]
       },
       "duplicate_count": 0,
