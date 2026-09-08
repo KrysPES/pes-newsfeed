@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-09-08T20:10:03.571151+00:00",
-  "item_count": 23,
+  "generated_at": "2026-09-08T22:40:59.744921+00:00",
+  "item_count": 18,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 7
+    "high": 0,
+    "normal": 8
   },
-  "superseded_count": 3,
+  "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1335
+        "ms": 1345
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 249347
+        "ms": 304609
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 9860
+        "ms": 2505
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 1047
+        "ms": 436
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 403
+        "ms": 195
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 271
+        "ms": 82
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1078
+        "ms": 897
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 206
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 51
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 662
+        "ms": 497
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 139
+        "ms": 73
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 1162
+        "ms": 477
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 29,
         "error": null,
-        "ms": 355
+        "ms": 55
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 156
+        "ms": 169
       }
     ]
   },
@@ -117,12 +117,12 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 68,
+      "score": 61,
       "tags": [
         "supply_disruption",
         "nuclear"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -133,7 +133,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 70.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.84
       },
       "matched": {
         "supply_disruption": [
@@ -156,6 +156,92 @@
       "first_seen_at": "2026-09-08T12:58:51+00:00"
     },
     {
+      "title": "What the UK ban on goods from illegal Israeli settlements really means",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss",
+      "snippet": "Israel has announced that it’s shutting down the UK Consulate in occupied East Jerusalem after a new ban on its goods.",
+      "published_at": "2026-09-08T21:35:36+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 11.4,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 52.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "ban on"
+        ],
+        "geography": [
+          "uk"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Hundreds of UK flights disrupted by air traffic control glitch",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/hundreds-of-uk-flights-disrupted-by-air-traffic-control-glitch?traffic_source=rss",
+      "snippet": "A technical issue in the UK’s air traffic control system disrupted flights at major airports.",
+      "published_at": "2026-09-08T20:24:26+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.9,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "supply_disruption": [
+          "disrupted"
+        ],
+        "geography": [
+          "uk"
+        ],
+        "unplanned": [
+          "technical issue"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "$100 Brent Looms as China’s Oil Buying Rebounds",
       "url": "https://oilprice.com/Energy/Energy-General/100-Brent-Looms-as-Chinas-Oil-Buying-Rebounds.html",
       "snippet": "One of the reasons why the price of oil failed to soar during the \"actively kinetic\" phase of the Iran war, when shipments through Hormuz were effectively halted and the world faced a shortage of about 10-15 million barrels of oil per day, is that Chinese oil demand suddenly evaporated. Whether due ",
@@ -166,7 +252,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 62,
+      "score": 55,
       "tags": [
         "oil_macro",
         "geopolitics",
@@ -184,7 +270,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 82.5,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.6
       },
       "matched": {
         "oil_macro": [
@@ -223,7 +309,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 53,
+      "score": 46,
       "tags": [
         "geopolitics"
       ],
@@ -239,7 +325,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 68.8,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
@@ -258,6 +344,53 @@
       "also_reported_by": []
     },
     {
+      "title": "Sabotage suspect held in Germany after spate of attacks on power grid",
+      "url": "https://www.bbc.co.uk/news/articles/cy5zw56lnx3o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The suspect had reportedly claimed responsibility for attacks on electricity substations in letters.",
+      "published_at": "2026-09-08T15:57:06+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "geopolitics",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 13.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.2,
+        "recency_multiplier": 0.69
+      },
+      "matched": {
+        "geopolitics": [
+          "sabotage"
+        ],
+        "infrastructure": [
+          "grid"
+        ],
+        "geography": [
+          "germany"
+        ],
+        "unplanned": [
+          "sabotage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Oil Coordination Group: No immediate security of oil supply concerns in the EU",
       "url": "https://energy.ec.europa.eu/news/oil-coordination-group-no-immediate-security-oil-supply-concerns-eu-2026-09-08_en",
       "snippet": "Experts from the European Commission, EU countries, industry, the International Energy Agency (IEA), Energy Community and NATO met in the Oil Coordination Group today to discuss the state of oil security of supply in Europe.",
@@ -268,7 +401,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 45,
       "tags": [
         "regulation"
       ],
@@ -284,7 +417,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.5,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.69
       },
       "matched": {
         "regulation": [
@@ -313,7 +446,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 44,
       "tags": [
         "geopolitics"
       ],
@@ -329,7 +462,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 45.5,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -348,94 +481,46 @@
       "also_reported_by": []
     },
     {
-      "title": "Sabotage suspect held in Germany after spate of attacks on power grid",
-      "url": "https://www.bbc.co.uk/news/articles/cy5zw56lnx3o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The suspect had reportedly claimed responsibility for attacks on electricity substations in letters.",
-      "published_at": "2026-09-08T15:57:06+00:00",
+      "title": "UK announces sanctions on West Bank settlements prompting furious Israeli response",
+      "url": "https://www.bbc.co.uk/news/articles/c4g7zen0vveo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Britain's foreign secretary accuses settlers of carrying out the \"ethnic cleansing\" of Palestinians, as Israel responds by shutting the UK consulate in East Jerusalem.",
+      "published_at": "2026-09-08T19:11:39+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 13.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.2,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "geopolitics": [
-          "sabotage"
-        ],
-        "infrastructure": [
-          "grid"
-        ],
-        "geography": [
-          "germany"
-        ],
-        "unplanned": [
-          "sabotage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "EU condemns Serbia’s ministers for attending funeral of war criminal Mladic",
-      "url": "https://www.aljazeera.com/news/2026/9/8/eu-condemns-serbias-ministers-for-attending-funeral-of-war-criminal-mladic?traffic_source=rss",
-      "snippet": "EU leaders condemn Serbian officials&#039; presence at Ratko Mladic&#039;s funeral as a failure to confront past war crimes.",
-      "published_at": "2026-09-08T15:01:36+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 46,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
-      "nature": "unplanned",
+      "alert": "low",
+      "nature": "",
       "why": {
-        "authority": 9.5,
+        "authority": 10.2,
         "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 48.5,
-        "recency_multiplier": 0.79
+        "raw": 35.2,
+        "recency_multiplier": 0.89
       },
       "matched": {
         "geopolitics": [
-          "war"
+          "sanctions"
         ],
         "geography": [
-          "eu"
-        ],
-        "unplanned": [
-          "failure"
+          "uk",
+          "britain"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-08T15:36:34+00:00"
     },
     {
       "title": "Pakistan set to receive Qatari LNG cargo",
@@ -448,12 +533,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 37,
       "tags": [
         "lng",
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -465,7 +550,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 65.1,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.43
       },
       "matched": {
         "lng": [
@@ -495,7 +580,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 36,
       "tags": [
         "regulation"
       ],
@@ -511,7 +596,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "regulation": [
@@ -520,48 +605,6 @@
         "geography": [
           "uk",
           "british"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
-      "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss",
-      "snippet": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\"",
-      "published_at": "2026-09-08T17:10:54+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.1,
-        "recency_multiplier": 0.93
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
         ]
       },
       "duplicate_count": 0,
@@ -578,7 +621,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 34,
       "tags": [
         "infrastructure",
         "oil_macro"
@@ -595,7 +638,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.72
       },
       "matched": {
         "infrastructure": [
@@ -622,7 +665,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -637,7 +680,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 40.1,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.63
       },
       "matched": {
         "geopolitics": [
@@ -647,48 +690,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "UK sanctions on Israeli settlements a ‘seismic’ shift says Albanese",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-israel-sanctions-albanese-qt-mp4?traffic_source=rss",
-      "snippet": "UN expert Francesca Albanese calls UK sanctions on Israeli settlements a ‘seismic shift’ after years of UK ‘complicity’.",
-      "published_at": "2026-09-08T16:05:38+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 3,
-      "thread_started_at": "2026-09-08T15:00:20+00:00"
     },
     {
       "title": "US maritime nuclear energy company raises USD50 million",
@@ -701,7 +702,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 33,
       "tags": [
         "nuclear"
       ],
@@ -716,7 +717,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.4,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.43
       },
       "matched": {
         "nuclear": [
@@ -731,6 +732,49 @@
       "also_reported_by": []
     },
     {
+      "title": "Police bodycam captures Russian missile strike on Kyiv",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss",
+      "snippet": "Bodycam video has captured the moment a Russian missile struck near police in Ukraine’s capital Kiev",
+      "published_at": "2026-09-08T20:43:52+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "missile"
+        ],
+        "geography": [
+          "russian",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-09-08T17:10:54+00:00"
+    },
+    {
       "title": "Dutch TTF Gas Jumps 2% as Winter Storage Race Heats Up",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Dutch-TTF-Gas-Jumps-2-as-Winter-Storage-Race-Heats-Up.html",
       "snippet": "Europe’s benchmark natural gas prices jumped on Tuesday morning in Amsterdam as the Middle East crisis remains a major supply shock amid the European race against time to stock up for the winter. The front-month price at the Dutch Title Transfer Facility (TTF), the benchmark for Europe’s gas trading",
@@ -741,7 +785,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 37,
+      "score": 31,
       "tags": [
         "gas_storage"
       ],
@@ -757,7 +801,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 37.5,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.62
       },
       "matched": {
         "gas_storage": [
@@ -784,7 +828,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 30,
       "tags": [
         "nuclear",
         "infrastructure"
@@ -801,7 +845,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.2,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.48
       },
       "matched": {
         "nuclear": [
@@ -821,323 +865,51 @@
       "also_reported_by": []
     },
     {
-      "title": "Chevron to Double Venezuela Rig Count in $7 Billion Oil Push",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chevron-to-Double-Venezuela-Rig-Count-in-7-Billion-Oil-Push.html",
-      "snippet": "Chevron plans to double the number of drilling rigs it operates in Venezuela under a five-year expansion that targets roughly 600,000 barrels per day of production. CFO Eimear Bonner said Tuesday that Chevron will add rigs under new contract terms signed with Venezuela last week. Those terms also gi",
-      "published_at": "2026-09-08T17:59:37+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 25.2,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "oil_macro": [
-          "barrels"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "U.S.-Saudi Nuclear Deal Clears Vienna Hurdle As Congress Review Continues",
-      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/US-Saudi-Nuclear-Deal-Clears-Vienna-Hurdle-As-Congress-Review-Continues.html",
-      "snippet": "A planned nuclear cooperation deal between the United States and Saudi Arabia won't include the toughest inspection regime the U.N.'s atomic watchdog has to offer, but it's going to come close on the activities that matter most. That's the picture International Atomic Energy Agency chief Rafael Gros",
-      "published_at": "2026-09-08T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "supply_disruption",
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 12.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.5,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "supply_disruption": [
-          "inspection"
-        ],
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Uganda Set to Become World's Newest Oil Exporter in Early 2027",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Uganda-Set-to-Become-Worlds-Newest-Oil-Exporter-in-Early-2027.html",
-      "snippet": "The global list of crude oil exporters will expand with Uganda early next year as the African country is moving closer to first oil from a project whose crude will flow through a new pipeline to Tanzania's coast. Landlocked Uganda, where France's supermajor TotalEnergies and China's CNOOC have been ",
-      "published_at": "2026-09-08T15:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "infrastructure",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.4,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.2,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "france"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "How the U.S. Is Targeting Iran's Oil Money",
-      "url": "https://oilprice.com/Geopolitics/Middle-East/How-the-US-Is-Targeting-Irans-Oil-Money.html",
-      "snippet": "The United States has imposed sanctions on a Turkish investment bank and two subsidiaries, accusing them of helping Iran move oil revenue and providing access to the international financial system as Washington intensifies its campaign to squeeze Tehran. The US Treasury Department on September 4 des",
-      "published_at": "2026-09-08T18:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.7,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Jerusalem Daily: UK announces sanctions on Israeli settlement goods",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/jerusalem-daily-uk-announces-sanctions-on-israeli-settlement-goods?traffic_source=rss",
-      "snippet": "The UK’s foreign secretary has announced a ban on trade with goods from Israeli settlements in the occupied West Bank.",
-      "published_at": "2026-09-08T15:12:42+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 16,
-      "tags": [
-        "regulation",
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.8,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 58.3,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "regulation": [
-          "ban on"
-        ],
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "BBC World"
-      ],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-israel-sanctions-albanese-qt-mp4?traffic_source=rss",
-        "title": "UK sanctions on Israeli settlements a ‘seismic’ shift says Albanese",
-        "published_at": "2026-09-08T16:05:38+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "UK imposes ban on goods from Israeli settlements in occupied West Bank",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/uk-imposes-ban-on-goods-from-israeli-settlements-in-occupied-west-bank?traffic_source=rss",
-      "snippet": "The UK has announced a trade ban on goods made in illegal Israeli settlements in the occupied West Bank.",
-      "published_at": "2026-09-08T15:00:20+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 15,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 11.4,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 52.9,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "regulation": [
-          "ban on"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-israel-sanctions-albanese-qt-mp4?traffic_source=rss",
-        "title": "UK sanctions on Israeli settlements a ‘seismic’ shift says Albanese",
-        "published_at": "2026-09-08T16:05:38+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "In West Bank, date farmers weigh impact of UK sanctions on Israeli settlers",
-      "url": "https://www.bbc.co.uk/news/articles/cvgy6gd228vo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Palestinians strongly back a ban on settlement goods, but Israel's government says it is a \"big mistake\".",
-      "published_at": "2026-09-08T15:36:34+00:00",
+      "title": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
+      "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\"",
+      "published_at": "2026-09-08T17:10:54+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 10,
       "tags": [
-        "regulation",
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.2,
-        "themes": 16.8,
-        "geo_band": "primary",
-        "geography": 16.0,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.0,
-        "recency_multiplier": 0.82
+        "raw": 33.1,
+        "recency_multiplier": 0.76
       },
       "matched": {
-        "regulation": [
-          "ban on"
-        ],
         "geopolitics": [
-          "sanctions"
+          "drone",
+          "attack"
         ],
         "geography": [
-          "uk"
+          "russian",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-israel-sanctions-albanese-qt-mp4?traffic_source=rss",
-        "title": "UK sanctions on Israeli settlements a ‘seismic’ shift says Albanese",
-        "published_at": "2026-09-08T16:05:38+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss",
+        "title": "Police bodycam captures Russian missile strike on Kyiv",
+        "published_at": "2026-09-08T20:43:52+00:00"
       },
       "hidden": true
     }
