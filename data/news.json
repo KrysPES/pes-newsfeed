@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-08T17:30:58.821993+00:00",
-  "item_count": 24,
+  "generated_at": "2026-09-08T20:10:03.571151+00:00",
+  "item_count": 23,
   "alert_counts": {
     "critical": 0,
-    "high": 2,
-    "normal": 11
+    "high": 1,
+    "normal": 7
   },
   "superseded_count": 3,
   "sources": {
@@ -17,95 +17,144 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1417
+        "ms": 1335
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 299167
+        "ms": 249347
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5000
+        "ms": 9860
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 649
+        "ms": 1047
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 348
+        "ms": 403
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 213
+        "ms": 271
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1468
+        "ms": 1078
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 260
+        "ms": 206
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 748
+        "ms": 662
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 375
+        "ms": 139
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 776
+        "ms": 1162
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 160
+        "ms": 355
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 176
+        "ms": 156
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Huntstown - Huntstown 1 (HNC)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/cc00eb80-bb2b-4530-8bf9-85d2b28b82f6/1",
+      "snippet": "Published: 08.09.2026 20:21:50 Publisher: Huntstown Power Company Limited Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: ST Trip Remarks: Investigation on going. End time is best estimate at this stage Production Units Unit Name Unit EIC Area Ins",
+      "published_at": "2026-09-08T18:21:50+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 68,
+      "tags": [
+        "supply_disruption",
+        "nuclear"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 12.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 70.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "nuclear": [
+          "trip"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "trip"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-08T12:58:51+00:00"
+    },
     {
       "title": "$100 Brent Looms as China’s Oil Buying Rebounds",
       "url": "https://oilprice.com/Energy/Energy-General/100-Brent-Looms-as-Chinas-Oil-Buying-Rebounds.html",
@@ -117,13 +166,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 69,
+      "score": 62,
       "tags": [
         "oil_macro",
         "geopolitics",
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -135,7 +184,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 82.5,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.73
       },
       "matched": {
         "oil_macro": [
@@ -164,50 +213,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 20",
-      "url": "https://umm.nordpoolgroup.com/#/messages/f4674a24-b638-48b1-9004-0a9e15a1418a/2",
-      "snippet": "Published: 08.09.2026 18:28:43 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
-      "published_at": "2026-09-08T16:28:43+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 66,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "high",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-08T12:58:51+00:00"
-    },
-    {
       "title": "Oil Tankers Flood Back Into Suez Canal As Red Sea Risk Grows",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Tankers-Flood-Back-Into-Suez-Canal-As-Red-Sea-Risk-Grows.html",
       "snippet": "Suez Canal's revenue jumped by 42% in July from the same month last year as the number of oil tankers passing through the Egyptian gateway to the Mediterranean surged amid threats to shipping in the southern Red Sea and the Bab el-Mandeb Strait. The revenues rose to $505 million in July, according t",
@@ -218,7 +223,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 60,
+      "score": 53,
       "tags": [
         "geopolitics"
       ],
@@ -234,7 +239,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 68.8,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -253,6 +258,96 @@
       "also_reported_by": []
     },
     {
+      "title": "Oil Coordination Group: No immediate security of oil supply concerns in the EU",
+      "url": "https://energy.ec.europa.eu/news/oil-coordination-group-no-immediate-security-oil-supply-concerns-eu-2026-09-08_en",
+      "snippet": "Experts from the European Commission, EU countries, industry, the International Energy Agency (IEA), Energy Community and NATO met in the Oil Coordination Group today to discuss the state of oil security of supply in Europe.",
+      "published_at": "2026-09-08T15:54:49+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 11.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.5,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "regulation": [
+          "european commission"
+        ],
+        "geography": [
+          "europe",
+          "european",
+          "eu"
+        ],
+        "urgency": [
+          "immediate"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Yemen’s war is back: A new battle for Sanaa and the Red Sea",
+      "url": "https://www.aljazeera.com/features/2026/9/8/yemens-war-is-back-a-new-battle-for-sanaa-and-the-red-sea?traffic_source=rss",
+      "snippet": "This phase of the war could be the start of another protracted conflict rather than a decisive campaign, say analysts.",
+      "published_at": "2026-09-08T17:37:35+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 45.5,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war",
+          "red sea"
+        ],
+        "geography": [
+          "red sea"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Sabotage suspect held in Germany after spate of attacks on power grid",
       "url": "https://www.bbc.co.uk/news/articles/cy5zw56lnx3o?at_medium=RSS&at_campaign=rss",
       "snippet": "The suspect had reportedly claimed responsibility for attacks on electricity substations in letters.",
@@ -263,7 +358,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 51,
       "tags": [
         "geopolitics",
         "infrastructure"
@@ -280,7 +375,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -300,51 +395,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Coordination Group: No immediate security of oil supply concerns in the EU",
-      "url": "https://energy.ec.europa.eu/news/oil-coordination-group-no-immediate-security-oil-supply-concerns-eu-2026-09-08_en",
-      "snippet": "Experts from the European Commission, EU countries, industry, the International Energy Agency (IEA), Energy Community and NATO met in the Oil Coordination Group today to discuss the state of oil security of supply in Europe.",
-      "published_at": "2026-09-08T15:54:49+00:00",
-      "type": "regulation",
-      "source": "ec_energy",
-      "source_name": "European Commission energy",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 58,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 11.4,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "regulation": [
-          "european commission"
-        ],
-        "geography": [
-          "europe",
-          "european",
-          "eu"
-        ],
-        "urgency": [
-          "immediate"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "EU condemns Serbia’s ministers for attending funeral of war criminal Mladic",
       "url": "https://www.aljazeera.com/news/2026/9/8/eu-condemns-serbias-ministers-for-attending-funeral-of-war-criminal-mladic?traffic_source=rss",
       "snippet": "EU leaders condemn Serbian officials&#039; presence at Ratko Mladic&#039;s funeral as a failure to confront past war crimes.",
@@ -355,7 +405,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 46,
       "tags": [
         "geopolitics"
       ],
@@ -371,7 +421,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.5,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -388,49 +438,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Qatar says reopening Strait of Hormuz ‘unconditionally’ is a priority",
-      "url": "https://www.aljazeera.com/news/2026/9/8/qatar-says-reopening-strait-of-hormuz-unconditionally-is-a-priority?traffic_source=rss",
-      "snippet": "Qatar&#039;s Foreign Ministry says Doha working towards diplomatic solutions to end US war on Iran.",
-      "published_at": "2026-09-08T12:44:59+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 53,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 32.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 57.5,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "diplomatic",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Pakistan set to receive Qatari LNG cargo",
       "url": "https://lngprime.com/asia/pakistan-set-to-receive-qatari-lng-cargo/196434/",
       "snippet": "Pakistan is set to receive a liquefied natural gas (LNG) cargo from Qatar via the Strait of Hormuz, according to shipping data.",
@@ -441,7 +448,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 43,
       "tags": [
         "lng",
         "geopolitics"
@@ -458,7 +465,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 65.1,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.53
       },
       "matched": {
         "lng": [
@@ -478,207 +485,41 @@
       "also_reported_by": []
     },
     {
-      "title": "Carney says US trade war 'will come at a cost' as Canada strikes back on tariffs",
-      "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Canada's levies - as high as 50% - will apply to nearly $20bn of US products, from steel to T-shirts.",
-      "published_at": "2026-09-08T14:46:16+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 46,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 40.1,
-        "recency_multiplier": 0.94
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "tariffs"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US maritime nuclear energy company raises USD50 million",
-      "url": "https://www.world-nuclear-news.org/articles/us-maritime-nuclear-energy-company-raises-usd50-million",
-      "snippet": "Bluecore Energy, a developer of small modular, water-cooled reactors designed to operate aboard floating barges, has announced the close of a USD50 million seed financing to accelerate development, testing, and deployment of its floating nuclear energy systems.",
-      "published_at": "2026-09-08T09:50:01+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 44,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 56.4,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactors"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Canada’s Oil Pivot to Asia Is Starting to Materialize",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Canadas-Oil-Pivot-to-Asia-Is-Starting-to-Materialize.html",
-      "snippet": "Canada’s Trans Mountain pipeline hit full capacity for the first time in June, and the company running it already has another 300,000 barrels per day of capacity planned. Most of those new barrels are expected to head across the Pacific. Trans Mountain currently moves 890,000 bpd from Alberta to Bri",
-      "published_at": "2026-09-08T16:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 43,
-      "tags": [
-        "infrastructure",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 35.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "barrels"
-        ],
-        "geography": [
-          "asia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "UK sanctions on Israeli settlements a ‘seismic’ shift says Albanese",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-israel-sanctions-albanese-qt-mp4?traffic_source=rss",
-      "snippet": "UN expert Francesca Albanese calls UK sanctions on Israeli settlements a ‘seismic shift’ after years of UK ‘complicity’.",
-      "published_at": "2026-09-08T16:05:38+00:00",
+      "title": "Does the UK have a legal obligation to redress the harms of slavery?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/8/does-the-uk-have-a-legal-obligation-to-redress-the-harms-of-slavery?traffic_source=rss",
+      "snippet": "Jamaica petitions the British monarch over questions about the legality of the transatlantic slave trade.",
+      "published_at": "2026-09-08T19:01:13+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 40,
       "tags": [
-        "geopolitics"
+        "regulation"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 9.0,
+        "themes": 6.2,
         "geo_band": "primary",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 34.5,
+        "raw": 31.6,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "sanctions"
+        "regulation": [
+          "obligation"
         ],
         "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-08T12:34:55+00:00",
-      "update_count": 3,
-      "thread_started_at": "2026-09-08T15:00:20+00:00"
-    },
-    {
-      "title": "Dutch TTF Gas Jumps 2% as Winter Storage Race Heats Up",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Dutch-TTF-Gas-Jumps-2-as-Winter-Storage-Race-Heats-Up.html",
-      "snippet": "Europe’s benchmark natural gas prices jumped on Tuesday morning in Amsterdam as the Middle East crisis remains a major supply shock amid the European race against time to stock up for the winter. The front-month price at the Dutch Title Transfer Facility (TTF), the benchmark for Europe’s gas trading",
-      "published_at": "2026-09-08T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 43,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 6.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 37.5,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "europe",
-          "european",
-          "ttf",
-          "dutch"
+          "uk",
+          "british"
         ]
       },
       "duplicate_count": 0,
@@ -695,7 +536,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "geopolitics"
       ],
@@ -711,7 +552,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -721,6 +562,212 @@
         "geography": [
           "russian",
           "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Canada’s Oil Pivot to Asia Is Starting to Materialize",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Canadas-Oil-Pivot-to-Asia-Is-Starting-to-Materialize.html",
+      "snippet": "Canada’s Trans Mountain pipeline hit full capacity for the first time in June, and the company running it already has another 300,000 barrels per day of capacity planned. Most of those new barrels are expected to head across the Pacific. Trans Mountain currently moves 890,000 bpd from Alberta to Bri",
+      "published_at": "2026-09-08T16:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 39,
+      "tags": [
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 35.2,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "asia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Carney says US trade war 'will come at a cost' as Canada strikes back on tariffs",
+      "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Canada's levies - as high as 50% - will apply to nearly $20bn of US products, from steel to T-shirts.",
+      "published_at": "2026-09-08T14:46:16+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 39,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 40.1,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "tariffs"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UK sanctions on Israeli settlements a ‘seismic’ shift says Albanese",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-israel-sanctions-albanese-qt-mp4?traffic_source=rss",
+      "snippet": "UN expert Francesca Albanese calls UK sanctions on Israeli settlements a ‘seismic shift’ after years of UK ‘complicity’.",
+      "published_at": "2026-09-08T16:05:38+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-09-08T15:00:20+00:00"
+    },
+    {
+      "title": "US maritime nuclear energy company raises USD50 million",
+      "url": "https://www.world-nuclear-news.org/articles/us-maritime-nuclear-energy-company-raises-usd50-million",
+      "snippet": "Bluecore Energy, a developer of small modular, water-cooled reactors designed to operate aboard floating barges, has announced the close of a USD50 million seed financing to accelerate development, testing, and deployment of its floating nuclear energy systems.",
+      "published_at": "2026-09-08T09:50:01+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 38,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 56.4,
+        "recency_multiplier": 0.53
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactors"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Dutch TTF Gas Jumps 2% as Winter Storage Race Heats Up",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Dutch-TTF-Gas-Jumps-2-as-Winter-Storage-Race-Heats-Up.html",
+      "snippet": "Europe’s benchmark natural gas prices jumped on Tuesday morning in Amsterdam as the Middle East crisis remains a major supply shock amid the European race against time to stock up for the winter. The front-month price at the Dutch Title Transfer Facility (TTF), the benchmark for Europe’s gas trading",
+      "published_at": "2026-09-08T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 37,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.5,
+        "recency_multiplier": 0.75
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "europe",
+          "european",
+          "ttf",
+          "dutch"
         ]
       },
       "duplicate_count": 0,
@@ -737,7 +784,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 35,
       "tags": [
         "nuclear",
         "infrastructure"
@@ -754,7 +801,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.2,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.58
       },
       "matched": {
         "nuclear": [
@@ -774,131 +821,36 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Prices Near $100 After Fresh Attacks on Saudi Energy Sites",
-      "url": "https://oilprice.com/Energy/Oil-Prices/Oil-Prices-Near-100-After-Fresh-Attacks-on-Saudi-Energy-Sites.html",
-      "snippet": "Saudi Arabia has temporarily halted some operations at energy facilities in its southern region bordering Yemen, following attacks on energy sites on Tuesday morning local time, the official Saudi Press Agency reported. “Several energy sector facilities and installations in the southern region of th",
-      "published_at": "2026-09-08T08:40:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.2,
-        "recency_multiplier": 0.59
-      },
-      "matched": {
-        "supply_disruption": [
-          "halted"
-        ],
-        "unplanned": [
-          "halted"
-        ],
-        "urgency": [
-          "halted"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Uganda Set to Become World's Newest Oil Exporter in Early 2027",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Uganda-Set-to-Become-Worlds-Newest-Oil-Exporter-in-Early-2027.html",
-      "snippet": "The global list of crude oil exporters will expand with Uganda early next year as the African country is moving closer to first oil from a project whose crude will flow through a new pipeline to Tanzania's coast. Landlocked Uganda, where France's supermajor TotalEnergies and China's CNOOC have been ",
-      "published_at": "2026-09-08T15:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "infrastructure",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.4,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "france"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Germany Faces Winter Gas Shortage Risk as Storage Lags",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Germany-Faces-Winter-Gas-Shortage-Risk-as-Storage-Lags.html",
-      "snippet": "Germany is risking gas shortages this winter if it turns out to be colder than previous years, the country’s gas storage association has warned. With current gas storage levels at 54.52%, the industry association, INES, said the best it could do by November 1 would be 77%. This would be more than th",
-      "published_at": "2026-09-08T07:00:00+00:00",
+      "title": "Chevron to Double Venezuela Rig Count in $7 Billion Oil Push",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chevron-to-Double-Venezuela-Rig-Count-in-7-Billion-Oil-Push.html",
+      "snippet": "Chevron plans to double the number of drilling rigs it operates in Venezuela under a five-year expansion that targets roughly 600,000 barrels per day of production. CFO Eimear Bonner said Tuesday that Chevron will add rigs under new contract terms signed with Venezuela last week. Those terms also gi",
+      "published_at": "2026-09-08T17:59:37+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 36,
+      "score": 33,
       "tags": [
-        "gas_storage",
-        "weather"
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 22.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "themes": 4.5,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 53.7,
-        "recency_multiplier": 0.52
+        "raw": 25.2,
+        "recency_multiplier": 0.99
       },
       "matched": {
-        "gas_storage": [
-          "storage",
-          "storage levels"
-        ],
-        "weather": [
-          "colder"
-        ],
-        "geography": [
-          "germany"
+        "oil_macro": [
+          "barrels"
         ]
       },
       "duplicate_count": 0,
@@ -915,7 +867,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 32,
       "tags": [
         "supply_disruption",
         "nuclear"
@@ -932,7 +884,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "supply_disruption": [
@@ -949,60 +901,63 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Prices Are Once Again on the Brink of $100",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Prices-Are-Once-Again-on-the-Brink-of-100.html",
-      "snippet": "Oil prices surge toward $100 as Houthi attacks, U.S. strikes on Iranian tankers and renewed Middle East tensions rattle markets. Europe’s Gas Prices Surge as Storage Fears Return - European natural gas prices have jumped to €75 per MWh ($25.5 per MMBtu), the highest since 2022 and more than double t",
-      "published_at": "2026-09-08T15:13:18+00:00",
+      "title": "Uganda Set to Become World's Newest Oil Exporter in Early 2027",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Uganda-Set-to-Become-Worlds-Newest-Oil-Exporter-in-Early-2027.html",
+      "snippet": "The global list of crude oil exporters will expand with Uganda early next year as the African country is moving closer to first oil from a project whose crude will flow through a new pipeline to Tanzania's coast. Landlocked Uganda, where France's supermajor TotalEnergies and China's CNOOC have been ",
+      "published_at": "2026-09-08T15:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 33,
+      "score": 31,
       "tags": [
-        "gas_storage"
+        "infrastructure",
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 6.7,
+        "themes": 9.4,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 25.5,
-        "recency_multiplier": 0.98
+        "raw": 28.2,
+        "recency_multiplier": 0.81
       },
       "matched": {
-        "gas_storage": [
-          "storage"
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "crude"
         ],
         "geography": [
-          "europe",
-          "european"
+          "france"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "China’s Crude Buying Rebounds as Fuel Exports Jump 29%",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Crude-Buying-Rebounds-as-Fuel-Exports-Jump-29.html",
-      "snippet": "China’s crude oil imports rose for the second consecutive month in August as refiners turned to additional non-Middle Eastern supply and boosted overseas fuel shipments amid eased export restrictions. China imported 37.93 million tons, or 8.93 million barrels per day (bpd) of crude oil in August, up",
-      "published_at": "2026-09-08T10:00:00+00:00",
+      "title": "How the U.S. Is Targeting Iran's Oil Money",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/How-the-US-Is-Targeting-Irans-Oil-Money.html",
+      "snippet": "The United States has imposed sanctions on a Turkish investment bank and two subsidiaries, accusing them of helping Iran move oil revenue and providing access to the international financial system as Washington intensifies its campaign to squeeze Tehran. The US Treasury Department on September 4 des",
+      "published_at": "2026-09-08T18:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
+      "has_magnitude": false,
+      "score": 30,
       "tags": [
-        "oil_macro"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
@@ -1013,18 +968,17 @@
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 34.7,
-        "recency_multiplier": 0.65
+        "raw": 22.7,
+        "recency_multiplier": 0.99
       },
       "matched": {
-        "oil_macro": [
-          "crude",
-          "barrels"
+        "geopolitics": [
+          "sanctions"
         ],
         "geography": [
-          "china"
+          "united states"
         ]
       },
       "duplicate_count": 0,
@@ -1041,7 +995,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 18,
+      "score": 16,
       "tags": [
         "regulation",
         "geopolitics"
@@ -1058,7 +1012,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 58.3,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.8
       },
       "matched": {
         "regulation": [
@@ -1074,8 +1028,10 @@
           "announced"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": [],
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "BBC World"
+      ],
       "superseded": true,
       "superseded_by": {
         "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-israel-sanctions-albanese-qt-mp4?traffic_source=rss",
@@ -1095,7 +1051,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 17,
+      "score": 15,
       "tags": [
         "regulation"
       ],
@@ -1111,7 +1067,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.9,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.78
       },
       "matched": {
         "regulation": [
@@ -1124,7 +1080,7 @@
           "announced"
         ]
       },
-      "duplicate_count": 0,
+      "duplicate_count": 1,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
@@ -1145,7 +1101,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 13,
       "tags": [
         "regulation",
         "geopolitics"
@@ -1162,7 +1118,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.82
       },
       "matched": {
         "regulation": [
