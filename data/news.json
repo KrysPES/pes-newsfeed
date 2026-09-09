@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-08T22:40:59.744921+00:00",
-  "item_count": 18,
+  "generated_at": "2026-09-09T00:38:59.879537+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 8
+    "high": 1,
+    "normal": 4
   },
   "superseded_count": 1,
   "sources": {
@@ -17,112 +17,112 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1345
+        "ms": 1403
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 304609
+        "ms": 305828
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2505
+        "ms": 3777
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 436
+        "ms": 329
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 195
+        "ms": 218
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 82
+        "ms": 188
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 897
+        "ms": 1453
       },
       {
         "id": "offshore_energy",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 51
+        "ms": 54
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 497
+        "ms": 727
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 73
+        "ms": 363
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 477
+        "ms": 594
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 55
+        "ms": 49
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 169
+        "ms": 114
       }
     ]
   },
   "items": [
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Huntstown - Huntstown 1 (HNC)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/cc00eb80-bb2b-4530-8bf9-85d2b28b82f6/1",
-      "snippet": "Published: 08.09.2026 20:21:50 Publisher: Huntstown Power Company Limited Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: ST Trip Remarks: Investigation on going. End time is best estimate at this stage Production Units Unit Name Unit EIC Area Ins",
-      "published_at": "2026-09-08T18:21:50+00:00",
+      "url": "https://umm.nordpoolgroup.com/#/messages/cc00eb80-bb2b-4530-8bf9-85d2b28b82f6/2",
+      "snippet": "Published: 09.09.2026 01:14:17 Publisher: Huntstown Power Company Limited Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: ST Trip Remarks: Unit fully available Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavaila",
+      "published_at": "2026-09-08T23:14:17+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 61,
+      "score": 68,
       "tags": [
         "supply_disruption",
         "nuclear"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -133,7 +133,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 70.7,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -156,6 +156,101 @@
       "first_seen_at": "2026-09-08T12:58:51+00:00"
     },
     {
+      "title": "Iran’s Oil Exports Collapse as Hormuz Standoff Drags On",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Irans-Oil-Exports-Collapse-as-Hormuz-Standoff-Drags-On.html",
+      "snippet": "More than six months after the U.S.-Iran war began, shipping traffic at the Strait of Hormuz remains disrupted, and oil prices are once again closing in on the $100 per barrel mark. The U.S. and Iran remain deadlocked at the start of the seventh month of the conflict. But the U.S. economic pressure ",
+      "published_at": "2026-09-09T00:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 38.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 63.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war",
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "disrupted"
+        ],
+        "oil_macro": [
+          "barrel"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US slaps import ban on Canadian alcohol and other goods",
+      "url": "https://www.bbc.co.uk/news/articles/c99dm1000p7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "It is the latest escalation in a trade war between the two countries, and comes as Canadian retaliatory tariffs on US goods come into force.",
+      "published_at": "2026-09-09T00:31:31+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 59,
+      "tags": [
+        "geopolitics",
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 45.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 55.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "war",
+          "tariffs",
+          "import ban"
+        ],
+        "regulation": [
+          "ban on",
+          "come into force"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "What the UK ban on goods from illegal Israeli settlements really means",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss",
       "snippet": "Israel has announced that it’s shutting down the UK Consulate in occupied East Jerusalem after a new ban on its goods.",
@@ -166,7 +261,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 54,
       "tags": [
         "regulation"
       ],
@@ -182,7 +277,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "regulation": [
@@ -209,7 +304,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 52,
       "tags": [
         "supply_disruption"
       ],
@@ -225,7 +320,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.9,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.84
       },
       "matched": {
         "supply_disruption": [
@@ -242,108 +337,6 @@
       "also_reported_by": []
     },
     {
-      "title": "$100 Brent Looms as China’s Oil Buying Rebounds",
-      "url": "https://oilprice.com/Energy/Energy-General/100-Brent-Looms-as-Chinas-Oil-Buying-Rebounds.html",
-      "snippet": "One of the reasons why the price of oil failed to soar during the \"actively kinetic\" phase of the Iran war, when shipments through Hormuz were effectively halted and the world faced a shortage of about 10-15 million barrels of oil per day, is that Chinese oil demand suddenly evaporated. Whether due ",
-      "published_at": "2026-09-08T14:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 55,
-      "tags": [
-        "oil_macro",
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 21.8,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 82.5,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "oil_macro": [
-          "brent",
-          "barrels",
-          "demand"
-        ],
-        "geopolitics": [
-          "war"
-        ],
-        "supply_disruption": [
-          "halted"
-        ],
-        "geography": [
-          "hormuz"
-        ],
-        "unplanned": [
-          "failed",
-          "halted"
-        ],
-        "urgency": [
-          "halted"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Tankers Flood Back Into Suez Canal As Red Sea Risk Grows",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Tankers-Flood-Back-Into-Suez-Canal-As-Red-Sea-Risk-Grows.html",
-      "snippet": "Suez Canal's revenue jumped by 42% in July from the same month last year as the number of oil tankers passing through the Egyptian gateway to the Mediterranean surged amid threats to shipping in the southern Red Sea and the Bab el-Mandeb Strait. The revenues rose to $505 million in July, according t",
-      "published_at": "2026-09-08T13:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 46,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 32.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 68.8,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "geopolitics": [
-          "bab el-mandeb",
-          "suez canal",
-          "red sea"
-        ],
-        "geography": [
-          "bab el-mandeb",
-          "suez",
-          "suez canal",
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Sabotage suspect held in Germany after spate of attacks on power grid",
       "url": "https://www.bbc.co.uk/news/articles/cy5zw56lnx3o?at_medium=RSS&at_campaign=rss",
       "snippet": "The suspect had reportedly claimed responsibility for attacks on electricity substations in letters.",
@@ -354,12 +347,12 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 40,
       "tags": [
         "geopolitics",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 10.2,
@@ -371,7 +364,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.2,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
@@ -401,11 +394,11 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 40,
       "tags": [
         "regulation"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 16.1,
@@ -417,7 +410,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.5,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.6
       },
       "matched": {
         "regulation": [
@@ -436,49 +429,43 @@
       "also_reported_by": []
     },
     {
-      "title": "Yemen’s war is back: A new battle for Sanaa and the Red Sea",
-      "url": "https://www.aljazeera.com/features/2026/9/8/yemens-war-is-back-a-new-battle-for-sanaa-and-the-red-sea?traffic_source=rss",
-      "snippet": "This phase of the war could be the start of another protracted conflict rather than a decisive campaign, say analysts.",
-      "published_at": "2026-09-08T17:37:35+00:00",
+      "title": "Iran war live: US hits Iranian tankers, IRGC attacks US base in Jordan",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/9/iran-war-live-us-hits-iranian-tankers-irgc-attacks-us-base-in-jordan?traffic_source=rss",
+      "snippet": "Iran&#039;s IRGC urges crews to leave tankers in Kuwait and Bahrain, warning it will target ships following US attack.",
+      "published_at": "2026-09-09T00:00:00+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 32.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 17.9,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 45.5,
-        "recency_multiplier": 0.79
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "conflict",
           "war",
-          "red sea"
-        ],
-        "geography": [
-          "red sea"
-        ],
-        "speculative": [
-          "could"
+          "attack"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-09-08T23:49:25+00:00"
     },
     {
       "title": "UK announces sanctions on West Bank settlements prompting furious Israeli response",
@@ -491,7 +478,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
@@ -507,7 +494,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -533,7 +520,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 32,
       "tags": [
         "lng",
         "geopolitics"
@@ -550,7 +537,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 65.1,
-        "recency_multiplier": 0.43
+        "recency_multiplier": 0.37
       },
       "matched": {
         "lng": [
@@ -570,41 +557,42 @@
       "also_reported_by": []
     },
     {
-      "title": "Does the UK have a legal obligation to redress the harms of slavery?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/9/8/does-the-uk-have-a-legal-obligation-to-redress-the-harms-of-slavery?traffic_source=rss",
-      "snippet": "Jamaica petitions the British monarch over questions about the legality of the transatlantic slave trade.",
-      "published_at": "2026-09-08T19:01:13+00:00",
+      "title": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
+      "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\"",
+      "published_at": "2026-09-08T17:10:54+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 30,
       "tags": [
-        "regulation"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 6.2,
-        "geo_band": "primary",
-        "geography": 16.0,
+        "authority": 10.2,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 31.6,
-        "recency_multiplier": 0.88
+        "raw": 33.1,
+        "recency_multiplier": 0.66
       },
       "matched": {
-        "regulation": [
-          "obligation"
+        "geopolitics": [
+          "drone",
+          "attack"
         ],
         "geography": [
-          "uk",
-          "british"
+          "russian",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
@@ -621,7 +609,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 34,
+      "score": 30,
       "tags": [
         "infrastructure",
         "oil_macro"
@@ -638,7 +626,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.62
       },
       "matched": {
         "infrastructure": [
@@ -655,261 +643,52 @@
       "also_reported_by": []
     },
     {
-      "title": "Carney says US trade war 'will come at a cost' as Canada strikes back on tariffs",
-      "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Canada's levies - as high as 50% - will apply to nearly $20bn of US products, from steel to T-shirts.",
-      "published_at": "2026-09-08T14:46:16+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 34,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 40.1,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "tariffs"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US maritime nuclear energy company raises USD50 million",
-      "url": "https://www.world-nuclear-news.org/articles/us-maritime-nuclear-energy-company-raises-usd50-million",
-      "snippet": "Bluecore Energy, a developer of small modular, water-cooled reactors designed to operate aboard floating barges, has announced the close of a USD50 million seed financing to accelerate development, testing, and deployment of its floating nuclear energy systems.",
-      "published_at": "2026-09-08T09:50:01+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 56.4,
-        "recency_multiplier": 0.43
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactors"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Police bodycam captures Russian missile strike on Kyiv",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss",
-      "snippet": "Bodycam video has captured the moment a Russian missile struck near police in Ukraine’s capital Kiev",
-      "published_at": "2026-09-08T20:43:52+00:00",
+      "title": "US bombs five Iranian oil tankers after its navy is attacked",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/us-bombs-five-iranian-oil-tankers-after-its-navy-is-attacked?traffic_source=rss",
+      "snippet": "The US military has released video of its forces destroying what it says are five Iranian crude oil tankers.",
+      "published_at": "2026-09-08T23:49:25+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 14,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "oil_macro"
       ],
       "alert": "low",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
         "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
+        "themes": 11.6,
+        "geography": 0.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 23.5,
+        "raw": 41.1,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "missile"
+          "attacked"
         ],
-        "geography": [
-          "russian",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-08T17:10:54+00:00"
-    },
-    {
-      "title": "Dutch TTF Gas Jumps 2% as Winter Storage Race Heats Up",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Dutch-TTF-Gas-Jumps-2-as-Winter-Storage-Race-Heats-Up.html",
-      "snippet": "Europe’s benchmark natural gas prices jumped on Tuesday morning in Amsterdam as the Middle East crisis remains a major supply shock amid the European race against time to stock up for the winter. The front-month price at the Dutch Title Transfer Facility (TTF), the benchmark for Europe’s gas trading",
-      "published_at": "2026-09-08T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 6.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 37.5,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "gas_storage": [
-          "storage"
+        "oil_macro": [
+          "crude"
         ],
-        "geography": [
-          "europe",
-          "european",
-          "ttf",
-          "dutch"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Key commissioning tests completed at Changjiang 4",
-      "url": "https://www.world-nuclear-news.org/articles/key-commissioning-tests-completed-at-changjiang-4",
-      "snippet": "Cold functional tests have been completed at unit 4 of the Changjiang nuclear power plant in China's Hainan province, China National Nuclear Corporation has announced.",
-      "published_at": "2026-09-08T11:07:57+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "nuclear",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 11.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.2,
-        "recency_multiplier": 0.48
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "infrastructure": [
-          "commissioning"
-        ],
-        "geography": [
-          "china"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
-      "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss",
-      "snippet": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\"",
-      "published_at": "2026-09-08T17:10:54+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.1,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
+        "unplanned": [
+          "attacked"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss",
-        "title": "Police bodycam captures Russian missile strike on Kyiv",
-        "published_at": "2026-09-08T20:43:52+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/9/9/iran-war-live-us-hits-iranian-tankers-irgc-attacks-us-base-in-jordan?traffic_source=rss",
+        "title": "Iran war live: US hits Iranian tankers, IRGC attacks US base in Jordan",
+        "published_at": "2026-09-09T00:00:00+00:00"
       },
       "hidden": true
     }
