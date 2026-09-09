@@ -1,116 +1,116 @@
 {
-  "generated_at": "2026-09-09T00:38:59.879537+00:00",
-  "item_count": 13,
+  "generated_at": "2026-09-09T05:14:51.781669+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 4
+    "normal": 2
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1403
+        "ms": 1249
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 305828
+        "ms": 305671
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3777
+        "ms": 21401
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 329
+        "ms": 522
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 218
+        "ms": 893
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 188
+        "ms": 258
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1453
+        "ms": 1120
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 54
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 509
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 727
+        "ms": 715
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 363
+        "ms": 280
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 594
+        "ms": 486
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 49
+        "ms": 188
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 114
+        "ms": 177
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Huntstown - Huntstown 1 (HNC)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/cc00eb80-bb2b-4530-8bf9-85d2b28b82f6/2",
-      "snippet": "Published: 09.09.2026 01:14:17 Publisher: Huntstown Power Company Limited Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: ST Trip Remarks: Unit fully available Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavaila",
-      "published_at": "2026-09-08T23:14:17+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Whitegate Power Station - Whitegate Power Station",
+      "url": "https://umm.nordpoolgroup.com/#/messages/e3925d1b-d7ef-4021-89ce-401ec8568d54/1",
+      "snippet": "Published: 09.09.2026 05:19:57 Publisher: Bord Gais Energy Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: unit trip - investigating Remarks: unit trip - investigating Production Units Unit Name Unit EIC Area Installed Capacity Available Capac",
+      "published_at": "2026-09-09T03:19:57+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -151,9 +151,52 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 4,
       "also_reported_by": [],
       "first_seen_at": "2026-09-08T12:58:51+00:00"
+    },
+    {
+      "title": "US slaps import ban on Canadian alcohol, motorbikes and other goods",
+      "url": "https://www.bbc.co.uk/news/articles/c99dm1000p7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "It is the latest strike in a long trade war, and comes as Canadian counter-tariffs on US goods come into force.",
+      "published_at": "2026-09-09T03:03:32+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "geopolitics",
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 40.1,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 50.3,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "tariffs",
+          "import ban"
+        ],
+        "regulation": [
+          "ban on",
+          "come into force"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Iran’s Oil Exports Collapse as Hormuz Standoff Drags On",
@@ -166,7 +209,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 64,
+      "score": 55,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -184,7 +227,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 63.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -207,130 +250,206 @@
       "also_reported_by": []
     },
     {
-      "title": "US slaps import ban on Canadian alcohol and other goods",
-      "url": "https://www.bbc.co.uk/news/articles/c99dm1000p7o?at_medium=RSS&at_campaign=rss",
-      "snippet": "It is the latest escalation in a trade war between the two countries, and comes as Canadian retaliatory tariffs on US goods come into force.",
-      "published_at": "2026-09-09T00:31:31+00:00",
+      "title": "Conflict over Taiwan would be disastrous, de facto US ambassador warns",
+      "url": "https://www.aljazeera.com/economy/2026/9/9/conflict-over-taiwan-would-be-disastrous-de-facto-us-ambassador-warns?traffic_source=rss",
+      "snippet": "The United States remains Taiwan&#039;s main international backer and arms supplier despite lack of formal diplomatic ties.",
+      "published_at": "2026-09-09T04:04:45+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "diplomatic"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UK announces sanctions on West Bank settlements prompting furious Israeli response",
+      "url": "https://www.bbc.co.uk/news/articles/c4g7zen0vveo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Britain's foreign secretary accuses settlers of carrying out the \"ethnic cleansing\" of Palestinians, as Israel responds by shutting the UK consulate in East Jerusalem.",
+      "published_at": "2026-09-09T01:45:15+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 59,
+      "score": 40,
       "tags": [
-        "geopolitics",
-        "regulation"
+        "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.2,
-        "themes": 45.2,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.2,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "uk",
+          "britain"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US bombs five Iranian oil tankers after its navy is attacked",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/us-bombs-five-iranian-oil-tankers-after-its-navy-is-attacked?traffic_source=rss",
+      "snippet": "The US military has released video of its forces destroying what it says are five Iranian crude oil tankers.",
+      "published_at": "2026-09-08T23:49:25+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 11.6,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.1,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "geopolitics": [
+          "attacked"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Gambian leader pledges halt to rolling blackouts as protests turn violent",
+      "url": "https://www.aljazeera.com/news/2026/9/9/gambian-leader-pledges-halt-to-rolling-blackouts-as-protests-turn-violent?traffic_source=rss",
+      "snippet": "Barrow pledges new power infrastructure, including a 24-megawatt plant, to tackle the worsening electricity crisis.",
+      "published_at": "2026-09-09T02:47:59+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "power_system",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 15.4,
         "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 55.4,
-        "recency_multiplier": 1.0
+        "raw": 24.9,
+        "recency_multiplier": 0.97
       },
       "matched": {
-        "geopolitics": [
-          "escalation",
-          "war",
-          "tariffs",
-          "import ban"
+        "power_system": [
+          "rolling blackouts"
         ],
-        "regulation": [
-          "ban on",
-          "come into force"
+        "supply_disruption": [
+          "halt"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "What the UK ban on goods from illegal Israeli settlements really means",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss",
-      "snippet": "Israel has announced that it’s shutting down the UK Consulate in occupied East Jerusalem after a new ban on its goods.",
-      "published_at": "2026-09-08T21:35:36+00:00",
+      "title": "Iran war live: US, Iran attack oil tankers; crude heads to $100",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/9/iran-war-live-us-hits-iranian-tankers-irgc-attacks-us-base-in-jordan?traffic_source=rss",
+      "snippet": "Iran&#039;s IRGC urges crews to leave tankers in Kuwait and Bahrain, warning it will target ships following US attack.",
+      "published_at": "2026-09-09T00:00:00+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 31,
       "tags": [
-        "regulation"
+        "geopolitics",
+        "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 11.4,
-        "geo_band": "primary",
-        "geography": 16.0,
+        "themes": 20.6,
+        "geography": 0.0,
         "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 52.9,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "regulation": [
-          "ban on"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hundreds of UK flights disrupted by air traffic control glitch",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/hundreds-of-uk-flights-disrupted-by-air-traffic-control-glitch?traffic_source=rss",
-      "snippet": "A technical issue in the UK’s air traffic control system disrupted flights at major airports.",
-      "published_at": "2026-09-08T20:24:26+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 52,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 53.9,
-        "recency_multiplier": 0.84
+        "raw": 30.1,
+        "recency_multiplier": 0.78
       },
       "matched": {
-        "supply_disruption": [
-          "disrupted"
+        "geopolitics": [
+          "war",
+          "attack"
         ],
-        "geography": [
-          "uk"
-        ],
-        "unplanned": [
-          "technical issue"
+        "oil_macro": [
+          "crude"
         ]
       },
       "duplicate_count": 0,
@@ -347,7 +466,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 30,
       "tags": [
         "geopolitics",
         "infrastructure"
@@ -364,7 +483,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.2,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.42
       },
       "matched": {
         "geopolitics": [
@@ -394,7 +513,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 30,
       "tags": [
         "regulation"
       ],
@@ -410,7 +529,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.5,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.42
       },
       "matched": {
         "regulation": [
@@ -427,270 +546,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Iran war live: US hits Iranian tankers, IRGC attacks US base in Jordan",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/9/9/iran-war-live-us-hits-iranian-tankers-irgc-attacks-us-base-in-jordan?traffic_source=rss",
-      "snippet": "Iran&#039;s IRGC urges crews to leave tankers in Kuwait and Bahrain, warning it will target ships following US attack.",
-      "published_at": "2026-09-09T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "attack"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-08T23:49:25+00:00"
-    },
-    {
-      "title": "UK announces sanctions on West Bank settlements prompting furious Israeli response",
-      "url": "https://www.bbc.co.uk/news/articles/c4g7zen0vveo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Britain's foreign secretary accuses settlers of carrying out the \"ethnic cleansing\" of Palestinians, as Israel responds by shutting the UK consulate in East Jerusalem.",
-      "published_at": "2026-09-08T19:11:39+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.2,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "uk",
-          "britain"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-08T15:36:34+00:00"
-    },
-    {
-      "title": "Pakistan set to receive Qatari LNG cargo",
-      "url": "https://lngprime.com/asia/pakistan-set-to-receive-qatari-lng-cargo/196434/",
-      "snippet": "Pakistan is set to receive a liquefied natural gas (LNG) cargo from Qatar via the Strait of Hormuz, according to shipping data.",
-      "published_at": "2026-09-08T09:51:57+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng",
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 36.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 65.1,
-        "recency_multiplier": 0.37
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargo",
-          "lng cargo"
-        ],
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
-      "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss",
-      "snippet": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\"",
-      "published_at": "2026-09-08T17:10:54+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.1,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Canada’s Oil Pivot to Asia Is Starting to Materialize",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Canadas-Oil-Pivot-to-Asia-Is-Starting-to-Materialize.html",
-      "snippet": "Canada’s Trans Mountain pipeline hit full capacity for the first time in June, and the company running it already has another 300,000 barrels per day of capacity planned. Most of those new barrels are expected to head across the Pacific. Trans Mountain currently moves 890,000 bpd from Alberta to Bri",
-      "published_at": "2026-09-08T16:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "infrastructure",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 35.2,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "barrels"
-        ],
-        "geography": [
-          "asia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US bombs five Iranian oil tankers after its navy is attacked",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/us-bombs-five-iranian-oil-tankers-after-its-navy-is-attacked?traffic_source=rss",
-      "snippet": "The US military has released video of its forces destroying what it says are five Iranian crude oil tankers.",
-      "published_at": "2026-09-08T23:49:25+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 14,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 11.6,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/9/9/iran-war-live-us-hits-iranian-tankers-irgc-attacks-us-base-in-jordan?traffic_source=rss",
-        "title": "Iran war live: US hits Iranian tankers, IRGC attacks US base in Jordan",
-        "published_at": "2026-09-09T00:00:00+00:00"
-      },
-      "hidden": true
     }
   ]
 }
