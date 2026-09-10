@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-10T21:59:11.929983+00:00",
-  "item_count": 15,
+  "generated_at": "2026-09-10T23:57:38.396323+00:00",
+  "item_count": 12,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 6
+    "high": 0,
+    "normal": 5
   },
   "superseded_count": 0,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1241
+        "ms": 1317
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 12155
+        "ms": 15309
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3587
+        "ms": 20497
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 2,
+        "count": 0,
         "error": null,
-        "ms": 443
+        "ms": 487
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 521
+        "ms": 1568
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 203
+        "ms": 117
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1027
+        "ms": 838
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 412
+        "ms": 198
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 645
+        "ms": 506
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 241
+        "ms": 149
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 443
+        "ms": 477
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 198
+        "ms": 489
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 222
+        "ms": 170
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 64,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "supply_disruption": [
@@ -151,6 +151,48 @@
       "first_seen_at": "2026-09-10T15:48:51+00:00"
     },
     {
+      "title": "OPEC Sees Oil Demand Growth Explode Sixfold in 2027",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Sees-Oil-Demand-Growth-Explode-Sixfold-in-2027.html",
+      "snippet": "OPEC now expects global oil demand growth to jump from just 380,000 barrels per day this year to 2.36 million bpd in 2027—a more than sixfold increase in the space of a year. The cartel trimmed its 2026 demand-growth forecast in its September Monthly Oil Market Report, putting total consumption this",
+      "published_at": "2026-09-10T21:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 45,
+      "tags": [
+        "oil_macro",
+        "weather"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.1,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "oil_macro": [
+          "opec",
+          "barrels",
+          "demand"
+        ],
+        "weather": [
+          "forecast"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Oil Soars as Hormuz Risks Rattle Markets",
       "url": "https://www.rigzone.com/news/wire/oil_soars_as_hormuz_risks_rattle_markets-10-sep-2026-184590-article/?rss=true",
       "snippet": "Brent surged more than 6% to $107.63 as escalating Middle East tensions heightened global supply concerns.",
@@ -161,7 +203,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 50,
+      "score": 45,
       "tags": [
         "oil_macro"
       ],
@@ -177,7 +219,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 43.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.86
       },
       "matched": {
         "oil_macro": [
@@ -201,7 +243,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 43,
       "tags": [
         "geopolitics"
       ],
@@ -217,7 +259,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 46.2,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
@@ -246,7 +288,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 42,
       "tags": [
         "supply_disruption"
       ],
@@ -262,7 +304,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.9,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.8
       },
       "matched": {
         "supply_disruption": [
@@ -279,48 +321,6 @@
       "also_reported_by": []
     },
     {
-      "title": "OPEC Sees Oil Demand Growth Explode Sixfold in 2027",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Sees-Oil-Demand-Growth-Explode-Sixfold-in-2027.html",
-      "snippet": "OPEC now expects global oil demand growth to jump from just 380,000 barrels per day this year to 2.36 million bpd in 2027—a more than sixfold increase in the space of a year. The cartel trimmed its 2026 demand-growth forecast in its September Monthly Oil Market Report, putting total consumption this",
-      "published_at": "2026-09-10T21:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 46,
-      "tags": [
-        "oil_macro",
-        "weather"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 17.1,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "oil_macro": [
-          "opec",
-          "barrels",
-          "demand"
-        ],
-        "weather": [
-          "forecast"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "More than 20 children killed in DR Congo school fire",
       "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss",
       "snippet": "Officials say there was a stampede as they fled a fire that engulfed two schools in the eastern rebel-held city of Bukavu.",
@@ -331,11 +331,11 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 40,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 10.2,
@@ -346,7 +346,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.81
       },
       "matched": {
         "supply_disruption": [
@@ -373,13 +373,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 40,
       "tags": [
         "geopolitics",
         "lng",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -391,7 +391,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 56.3,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.56
       },
       "matched": {
         "geopolitics": [
@@ -423,7 +423,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 41,
+      "score": 36,
       "tags": [
         "oil_macro",
         "gas_storage"
@@ -440,7 +440,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.64
       },
       "matched": {
         "oil_macro": [
@@ -469,7 +469,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 35,
       "tags": [
         "geopolitics",
         "gas_storage"
@@ -485,7 +485,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 30.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
@@ -510,7 +510,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 34,
       "tags": [
         "regulation"
       ],
@@ -526,7 +526,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.7,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.59
       },
       "matched": {
         "regulation": [
@@ -552,7 +552,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 34,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -570,7 +570,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 48.6,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.52
       },
       "matched": {
         "geopolitics": [
@@ -607,7 +607,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 31,
       "tags": [
         "supply_disruption",
         "lng"
@@ -624,7 +624,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.0,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.48
       },
       "matched": {
         "supply_disruption": [
@@ -638,129 +638,6 @@
         ],
         "unplanned": [
           "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil jumps to $105, pushing up chances of a US interest rate increase",
-      "url": "https://www.aljazeera.com/economy/2026/9/10/oil-jumps-to-105-pushing-up-chances-of-a-us-interest-rate-increase?traffic_source=rss",
-      "snippet": "Prices spiked as attacks on oil tankers escalated amid the US-Iran war.",
-      "published_at": "2026-09-10T16:05:06+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 22.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "geopolitics": [
-          "escalated",
-          "war"
-        ],
-        "oil_macro": [
-          "interest rate"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Algeria cuts diplomatic ties with UAE: What we know",
-      "url": "https://www.aljazeera.com/news/2026/9/10/algeria-cuts-diplomatic-ties-with-uae-what-we-know?traffic_source=rss",
-      "snippet": "Algiers ends relations with Gulf state over &#039;provocative and hostile&#039; actions, after years of tensions.",
-      "published_at": "2026-09-10T19:51:59+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "geopolitics": [
-          "diplomatic"
-        ],
-        "geography": [
-          "algeria",
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Nuclear medicine: New EU framework to secure Europe’s supply of medical radioisotopes and reduce dependence on Russia",
-      "url": "https://energy.ec.europa.eu/news/nuclear-medicine-new-eu-framework-secure-europes-supply-medical-radioisotopes-and-reduce-dependence-2026-09-10_en",
-      "snippet": "Nuclear medicine: New EU framework to secure Europe’s supply of medical radioisotopes and reduce dependence on Russia",
-      "published_at": "2026-09-10T15:12:10+00:00",
-      "type": "regulation",
-      "source": "ec_energy",
-      "source_name": "European Commission energy",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.3,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "europe",
-          "eu"
         ]
       },
       "duplicate_count": 0,
