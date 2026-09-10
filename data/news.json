@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-10T13:48:29.448277+00:00",
-  "item_count": 23,
+  "generated_at": "2026-09-10T17:18:37.880486+00:00",
+  "item_count": 18,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "normal": 8
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,190 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1100
+        "ms": 1300
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 16009
+        "ms": 18279
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5406
+        "ms": 22422
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 1,
+        "count": 2,
         "error": null,
-        "ms": 551
+        "ms": 367
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 588
+        "ms": 490
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 388
+        "ms": 127
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 730
+        "ms": 981
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 177
+        "ms": 241
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 579
+        "ms": 580
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 71
+        "ms": 191
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 257
+        "ms": 321
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 22,
+        "count": 23,
         "error": null,
-        "ms": 146
+        "ms": 143
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 151
+        "ms": 263
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, FLEMALLE TH1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/64479cbf-9d7f-4bec-aba5-abbe6bf9152c/5",
+      "snippet": "Published: 10.09.2026 18:41:32 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfil",
+      "published_at": "2026-09-10T16:41:32+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "delay"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-10T15:48:51+00:00"
+    },
+    {
+      "title": "IEA: Global Coal Demand Set to Hit Record High as Iran War Chokes LNG Supply",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/IEA-Global-Coal-Demand-Set-to-Hit-Record-High-as-Iran-War-Chokes-LNG-Supply.html",
+      "snippet": "Soaring LNG prices due to the Strait of Hormuz blockage are prompting economies to shift to alternative energy sources, pushing coal demand to a another record high this year, the International Energy Agency (IEA) said in a new report on Thursday. The surge in LNG prices have pushed markets includin",
+      "published_at": "2026-09-10T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 31.5,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.3,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Houthis advance along Yemen’s southern Red Sea coast",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/houthis-advance-along-yemens-southern-red-sea-coast?traffic_source=rss",
@@ -117,7 +212,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 55,
       "tags": [
         "geopolitics"
       ],
@@ -133,7 +228,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -143,6 +238,96 @@
         "geography": [
           "bab el-mandeb",
           "red sea"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [
+        "BBC World"
+      ]
+    },
+    {
+      "title": "U.S. Crude Inventories Fall As Brent Prices Soar",
+      "url": "https://oilprice.com/Energy/Crude-Oil/US-Crude-Inventories-Fall-As-Brent-Prices-Soar.html",
+      "snippet": "Crude oil inventories in the United States saw a decrease of 400,000 barrels during the week ending September 4, according to new data from the U.S. Energy Information Administration (EIA) released on Thursday. The decrease brings commercial stockpiles to 424.1 million barrels, according to governme",
+      "published_at": "2026-09-10T16:14:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 50,
+      "tags": [
+        "oil_macro",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 43.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrels"
+        ],
+        "gas_storage": [
+          "inventories"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Consultation on proposed electricity market reforms in the Netherlands",
+      "url": "https://energy.ec.europa.eu/news/consultation-proposed-electricity-market-reforms-netherlands-2026-09-10_en",
+      "snippet": "The European Commission has opened a consultation on proposed electricity market reforms in the Netherlands",
+      "published_at": "2026-09-10T15:08:14+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 17.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.7,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "regulation": [
+          "consultation",
+          "european commission"
+        ],
+        "geography": [
+          "european",
+          "netherlands"
         ]
       },
       "duplicate_count": 0,
@@ -159,7 +344,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 49,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -177,7 +362,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 48.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
@@ -204,17 +389,17 @@
       "also_reported_by": []
     },
     {
-      "title": "Twenty-five dead after fire on cargo ship in eastern China",
-      "url": "https://www.bbc.co.uk/news/articles/cj4jyv7l92eo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Of the 42 people on board, 17 were were evacuated, CCTV reports.",
-      "published_at": "2026-09-10T12:24:54+00:00",
+      "title": "At least 25 dead after cargo ship catches fire in China",
+      "url": "https://www.aljazeera.com/news/2026/9/10/at-least-25-dead-after-cargo-ship-catches-fire-in-china?traffic_source=rss",
+      "snippet": "Fire breaks out on ship being repaired in the port of Qingdao, eastern China.",
+      "published_at": "2026-09-10T12:45:11+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 47,
       "tags": [
         "supply_disruption",
         "lng"
@@ -222,7 +407,7 @@
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 10.2,
+        "authority": 9.5,
         "themes": 12.8,
         "geo_band": "tertiary",
         "geography": 5.0,
@@ -230,8 +415,8 @@
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 48.0,
-        "recency_multiplier": 1.0
+        "raw": 47.3,
+        "recency_multiplier": 0.82
       },
       "matched": {
         "supply_disruption": [
@@ -249,8 +434,51 @@
       },
       "duplicate_count": 1,
       "also_reported_by": [
+        "BBC World"
+      ],
+      "first_seen_at": "2026-09-10T12:24:54+00:00"
+    },
+    {
+      "title": "More than 20 children feared dead in DR Congo school fire",
+      "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Officials say there was a stampede as they fled a fire that engulfed two schools in the eastern rebel-held city of Bukavu.",
+      "published_at": "2026-09-10T16:21:50+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
         "Al Jazeera"
-      ]
+      ],
+      "first_seen_at": "2026-09-10T15:37:58+00:00"
     },
     {
       "title": "Oil Tanker Rates Hit Record Highs as Middle East Shipping Risks Soar",
@@ -263,7 +491,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 42,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -281,7 +509,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.3,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
@@ -303,49 +531,134 @@
       "also_reported_by": []
     },
     {
-      "title": "Drone video shows aftermath of deadly ferry fire off the Philippines",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/drone-video-shows-aftermath-of-deadly-ferry-fire-off-the-philippines?traffic_source=rss",
-      "snippet": "Drone video from the Philippine Coast Guard shows smoke rising from the burned out MV June Aster off Palawan.",
-      "published_at": "2026-09-10T10:28:44+00:00",
+      "title": "Nuclear medicine: New EU framework to secure Europe’s supply of medical radioisotopes and reduce dependence on Russia",
+      "url": "https://energy.ec.europa.eu/news/nuclear-medicine-new-eu-framework-secure-europes-supply-medical-radioisotopes-and-reduce-dependence-2026-09-10_en",
+      "snippet": "Nuclear medicine: New EU framework to secure Europe’s supply of medical radioisotopes and reduce dependence on Russia",
+      "published_at": "2026-09-10T15:12:10+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.3,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "europe",
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "United States on track for record crude oil production in 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68125",
+      "snippet": "We forecast U.S. crude oil production will average 13.8 million barrels per day (b/d) in 2026, surpassing the previous record of 13.7 million b/d set in 2025, in our latest Short-Term Energy Outlook (STEO).",
+      "published_at": "2026-09-10T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "oil_macro",
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 12.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.3,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "weather": [
+          "forecast"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil jumps to $105, pushing up chances of a US interest rate increase",
+      "url": "https://www.aljazeera.com/economy/2026/9/10/oil-jumps-to-105-pushing-up-chances-of-a-us-interest-rate-increase?traffic_source=rss",
+      "snippet": "Prices spiked as attacks on oil tankers escalated in the Middle East.",
+      "published_at": "2026-09-10T16:05:06+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 37,
       "tags": [
         "geopolitics",
-        "supply_disruption"
+        "oil_macro"
       ],
-      "alert": "normal",
-      "nature": "unplanned",
+      "alert": "low",
+      "nature": "",
       "why": {
         "authority": 9.5,
         "themes": 14.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.5,
-        "recency_multiplier": 0.9
+        "raw": 28.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "drone"
+          "escalated"
         ],
-        "supply_disruption": [
-          "fire"
+        "oil_macro": [
+          "interest rate"
         ],
-        "unplanned": [
-          "fire"
+        "geography": [
+          "middle east"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-10T06:30:19+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Taiwan’s LNG imports climb in August",
@@ -358,11 +671,11 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 35,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -374,7 +687,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.9,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.69
       },
       "matched": {
         "lng": [
@@ -399,11 +712,11 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 35,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -414,7 +727,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.9,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.59
       },
       "matched": {
         "geopolitics": [
@@ -439,12 +752,12 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 34,
       "tags": [
         "lng",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 12.4,
@@ -456,7 +769,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.76
       },
       "matched": {
         "lng": [
@@ -473,51 +786,6 @@
       "also_reported_by": []
     },
     {
-      "title": "United States on track for record crude oil production in 2026",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68125",
-      "snippet": "We forecast U.S. crude oil production will average 13.8 million barrels per day (b/d) in 2026, surpassing the previous record of 13.7 million b/d set in 2025, in our latest Short-Term Energy Outlook (STEO).",
-      "published_at": "2026-09-10T14:00:00+00:00",
-      "type": "news",
-      "source": "eia_today",
-      "source_name": "EIA Today in Energy",
-      "authority": 20,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "oil_macro",
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 14.6,
-        "themes": 12.7,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.3,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "weather": [
-          "forecast"
-        ],
-        "geography": [
-          "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "'People were trampling me': Philippine ferry fire survivor recalls narrow escape",
       "url": "https://www.bbc.co.uk/news/articles/c5y48mxm2zjo?at_medium=RSS&at_campaign=rss",
       "snippet": "A survivor has told the BBC of the chaos onboard as the ferry caught fire near the popular tourist spot of Coron.",
@@ -528,7 +796,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 33,
       "tags": [
         "supply_disruption"
       ],
@@ -543,7 +811,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.64
       },
       "matched": {
         "supply_disruption": [
@@ -567,7 +835,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 33,
       "tags": [
         "geopolitics",
         "lng",
@@ -585,7 +853,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.7,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.47
       },
       "matched": {
         "geopolitics": [
@@ -608,48 +876,6 @@
       "also_reported_by": []
     },
     {
-      "title": "How Ukraine’s deepest attack in Russia, on Arctic gas, signals new reach",
-      "url": "https://www.aljazeera.com/news/2026/9/10/how-ukraines-deepest-attack-in-russia-on-arctic-gas-signals-new-reach?traffic_source=rss",
-      "snippet": "Long-range Ukrainian drones hit Russia&#039;s key gas plants, raising questions about the conflict&#039;s next phase.",
-      "published_at": "2026-09-10T10:38:53+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "attack"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "MOL names first LNG carrier equipped with sails",
       "url": "https://lngprime.com/vessels/mol-names-first-lng-carrier-equipped-with-sails/196611/",
       "snippet": "Japan's MOL has named what it says is the world’s first LNG carrier equipped with a wind-assisted propulsion system.",
@@ -660,7 +886,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -676,7 +902,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.68
       },
       "matched": {
         "lng": [
@@ -689,422 +915,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Nuclear medicine: New EU framework to secure Europe’s supply of medical radioisotopes and reduce dependence on Russia",
-      "url": "https://energy.ec.europa.eu/news/nuclear-medicine-new-eu-framework-secure-europes-supply-medical-radioisotopes-and-reduce-dependence-2026-09-10_en",
-      "snippet": "Nuclear medicine: New EU framework to secure Europe’s supply of medical radioisotopes and reduce dependence on Russia",
-      "published_at": "2026-09-10T10:17:55+00:00",
-      "type": "regulation",
-      "source": "ec_energy",
-      "source_name": "European Commission energy",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.3,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "europe",
-          "eu"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Argent LNG in Albania LNG terminal move",
-      "url": "https://lngprime.com/contracts-and-tenders/argent-lng-in-albania-lng-terminal-move/196542/",
-      "snippet": "Argent LNG, developer of an LNG export terminal in Port Fourchon, Louisiana, has signed a memorandum of understanding with the government of Albania to jointly evaluate the development of a large-scale onshore LNG regasification terminal on the Albanian coast.",
-      "published_at": "2026-09-10T06:21:00+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 30.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.2,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "regasification",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Annual report on the operation of the capacity market in 2025/26",
-      "url": "https://www.ofgem.gov.uk/transparency-document/annual-report-operation-capacity-market-202526",
-      "snippet": "The eleventh report on the operation of the Capacity Market, covering the delivery year 1 October 2025 to 30 September 2026 (to date).",
-      "published_at": "2026-09-10T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 11.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "regulation": [
-          "capacity market"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "EU Faces Worst Gas Storage Position in Decades, WoodMac Says",
-      "url": "https://www.rigzone.com/news/eu_faces_worst_gas_storage_position_in_decades_woodmac_says-10-sep-2026-184583-article/?rss=true",
-      "snippet": "Wood Mackenzie warned that Europe faces its 'weakest' winter gas storage position for nearly two decades.",
-      "published_at": "2026-09-10T11:55:01+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 6.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "europe",
-          "eu"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "WTI Breaks $100—and This Rally Has Legs",
-      "url": "https://oilprice.com/Energy/Energy-General/Oil-Breaks-100and-This-Rally-Has-Legs.html",
-      "snippet": "For months, crude oil prices have been constrained by reports of improving tanker traffic in the Strait of Hormuz. Even after the June ceasefire between Iran and the United States collapsed, tankers moving in and out of Hormuz have been moving at rates higher than in the spring. This has now changed",
-      "published_at": "2026-09-10T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 36.2,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 61.0,
-        "recency_multiplier": 0.4
-      },
-      "matched": {
-        "geopolitics": [
-          "ceasefire",
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "wti",
-          "rates"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Algeria says cutting diplomatic ties with UAE",
-      "url": "https://www.aljazeera.com/news/2026/9/10/algeria-says-cutting-diplomatic-ties-with-uae?traffic_source=rss",
-      "snippet": "Relations have been strained for years, as the two countries took differing positions on several regional issues.",
-      "published_at": "2026-09-10T12:26:06+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "diplomatic"
-        ],
-        "geography": [
-          "algeria"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Australia Softens Gas Reservation Rule for LNG Exporters",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Australia-Softens-Gas-Reservation-Rule-for-LNG-Exporters.html",
-      "snippet": "Australia’s government has relaxed gas supply rules for producers aimed at securing enough gas for the domestic market. Originally, the rules stipulated that producers should reserve 20% of output for the Australian market. Now, the proposal is for up to 20% of output to be reserved for the domestic",
-      "published_at": "2026-09-10T07:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 33.0,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Yangzijiang’s first LNG carrier wraps up maiden voyage",
-      "url": "https://lngprime.com/asia/yangzijiangs-first-lng-carrier-wraps-up-maiden-voyage/196573/",
-      "snippet": "Yangzijiang Shipbuilding's 175,000-cbm Yangze LNG 01, the first large LNG carrier built by a private Chinese shipbuilder, has completed its maiden voyage.",
-      "published_at": "2026-09-10T08:38:43+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.7,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Naming ceremony held for new LNG carrier built by Samsung Heavy Industries",
-      "url": "https://www.offshore-energy.biz/naming-ceremony-held-for-new-lng-carrier-built-by-samsung-heavy-industries/",
-      "snippet": "A naming ceremony has been held in South Korea for a new LNG carrier [&#8230;] The post Naming ceremony held for new LNG carrier built by Samsung Heavy Industries appeared first on Offshore Energy .",
-      "published_at": "2026-09-10T06:50:48+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.0,
-        "recency_multiplier": 0.68
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier"
-        ],
-        "geography": [
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Five dead and 86 missing as 'heartbreaking' fire breaks out on Philippines ferry",
-      "url": "https://www.bbc.co.uk/news/articles/cy4zd4dn9n9o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The fire broke out as the vessel nearing its destination at the tourist hotspot of Coron in Palawan.",
-      "published_at": "2026-09-10T06:30:19+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.6,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/drone-video-shows-aftermath-of-deadly-ferry-fire-off-the-philippines?traffic_source=rss",
-        "title": "Drone video shows aftermath of deadly ferry fire off the Philippines",
-        "published_at": "2026-09-10T10:28:44+00:00"
-      },
-      "hidden": true
     }
   ]
 }
