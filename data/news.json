@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-09-10T00:31:08.255770+00:00",
-  "item_count": 13,
+  "generated_at": "2026-09-10T05:09:36.620597+00:00",
+  "item_count": 6,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 5
+    "normal": 3
   },
-  "superseded_count": 2,
+  "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1350
+        "ms": 1323
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 218902
+        "ms": 306063
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 17816
+        "ms": 3944
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 743
+        "ms": 557
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 364
+        "ms": 183
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 1910
+        "ms": 118
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 854
+        "ms": 1249
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 167
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 101
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 588
+        "ms": 888
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 147
+        "ms": 306
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 424
+        "ms": 864
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 31,
+        "count": 33,
         "error": null,
-        "ms": 53
+        "ms": 129
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 130
+        "ms": 61
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 61,
+      "score": 52,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -135,7 +135,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 58.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -158,49 +158,46 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump says Iran war ‘will end immediately’ after US midterm elections",
-      "url": "https://www.aljazeera.com/news/2026/9/9/trump-says-iran-war-will-end-immediately-after-us-midterm-elections?traffic_source=rss",
-      "snippet": "The president added the US is not looking to restart negotiations with Iran after the failure of previous ceasefires.",
-      "published_at": "2026-09-09T21:09:45+00:00",
+      "title": "Five dead and 86 missing as 'heartbreaking' fire breaks out on Philippines ferry",
+      "url": "https://www.bbc.co.uk/news/articles/cy4zd4dn9n9o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The fire broke out as the vessel nearing its destination at the tourist hotspot of Coron in Palawan.",
+      "published_at": "2026-09-10T04:08:07+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 46,
       "tags": [
-        "geopolitics"
+        "supply_disruption"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 9.5,
-        "themes": 17.9,
+        "authority": 10.2,
+        "themes": 8.4,
         "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 63.4,
-        "recency_multiplier": 0.9
+        "raw": 38.6,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "war",
-          "negotiations"
+        "supply_disruption": [
+          "fire"
         ],
         "unplanned": [
-          "failure"
-        ],
-        "urgency": [
-          "immediately"
+          "fire"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-09-09T16:00:00+00:00"
+      "duplicate_count": 2,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "first_seen_at": "2026-09-10T02:50:36+00:00"
     },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Olkiluoto 3 - B3",
@@ -213,7 +210,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": true,
-      "score": 58,
+      "score": 45,
       "tags": [
         "supply_disruption",
         "nuclear"
@@ -229,7 +226,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 82.7,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.45
       },
       "matched": {
         "supply_disruption": [
@@ -246,52 +243,9 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 3,
+      "duplicate_count": 2,
       "also_reported_by": [],
-      "first_seen_at": "2026-09-09T08:44:46+00:00"
-    },
-    {
-      "title": "UK man charged with assisting Russian military spies in sabotage plot",
-      "url": "https://www.aljazeera.com/news/2026/9/9/uk-man-charged-with-assisting-russian-intelligence-connected-group?traffic_source=rss",
-      "snippet": "Joshua Cammidge, 31, has been charged after alleged contact with a member of the GRU Volunteer Corps.",
-      "published_at": "2026-09-09T20:17:49+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 52,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.5,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "geopolitics": [
-          "sabotage"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "unplanned": [
-          "sabotage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "first_seen_at": "2026-09-09T14:14:11+00:00"
     },
     {
       "title": "U.S. Crude Stocks Edge Lower as Oil Tops $100",
@@ -304,12 +258,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 47,
+      "score": 36,
       "tags": [
         "gas_storage",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -321,7 +275,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.6,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.62
       },
       "matched": {
         "gas_storage": [
@@ -340,40 +294,39 @@
       "also_reported_by": []
     },
     {
-      "title": "Burnham defends UK ban on Israeli settlement trade",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/burnham-defends-uk-ban-on-israeli-settlement-trade?traffic_source=rss",
-      "snippet": "UK Prime Minister Andy Burnham defended a ban on trade with Israeli settlements in the occupied West Bank",
-      "published_at": "2026-09-09T20:32:24+00:00",
+      "title": "Trump says the US-Iran war will end right after midterms",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/trump-says-the-us-iran-war-will-end-right-after-midterms?traffic_source=rss",
+      "snippet": "Seven months after launching the war on Iran, US President Donald Trump says it will end immediately after midterms.",
+      "published_at": "2026-09-09T23:22:46+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 34,
       "tags": [
-        "regulation"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 11.4,
-        "geo_band": "primary",
-        "geography": 16.0,
+        "themes": 9.0,
+        "geography": 0.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 36.9,
-        "recency_multiplier": 0.86
+        "raw": 34.5,
+        "recency_multiplier": 0.75
       },
       "matched": {
-        "regulation": [
-          "ban on"
+        "geopolitics": [
+          "war"
         ],
-        "geography": [
-          "uk"
+        "urgency": [
+          "immediately"
         ]
       },
       "duplicate_count": 0,
@@ -390,7 +343,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 30,
       "tags": [
         "oil_macro"
       ],
@@ -406,7 +359,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 30.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.73
       },
       "matched": {
         "oil_macro": [
@@ -419,290 +372,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Negative Power Prices Are Piling Up Across Europe",
-      "url": "https://oilprice.com/Energy/Energy-General/Negative-Power-Prices-Are-Piling-Up-Across-Europe.html",
-      "snippet": "Europe desperately needs to ramp up its energy storage capacity if it wants to avoid another energy crisis. In the wake of Vladimir Putin's invasion of Ukraine back in 2022, the European Union made major strides in building up its own energy production capacities in an effort to wean itself off of R",
-      "published_at": "2026-09-09T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.8,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "geopolitics": [
-          "invasion"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "europe",
-          "european"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Two die at Moldovan border as Russia-Ukraine drone war rages",
-      "url": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Five deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes.",
-      "published_at": "2026-09-09T20:28:04+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.1,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "war"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Yemeni diplomat says Houthis want to drag Saudi Arabia into war",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/09-09-clip-yemen-says-houthis-dragging-saudi-into-war-yn?traffic_source=rss",
-      "snippet": "Houthis are trying to drag Saudi Arabia into conflict by targeting Saudi territory, says Yemen’s Ambassador to Qatar.",
-      "published_at": "2026-09-09T19:18:19+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "war"
-        ],
-        "geography": [
-          "qatar"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukraine Targets Russia's Key Black Sea Oil Port",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Targets-Russias-Key-Black-Sea-Oil-Port.html",
-      "snippet": "Ukraine hit with drones overnight on Wednesday infrastructure in Novorossiysk, which is Russia’s key oil terminal in the Black Sea, in attacks that killed four people and reportedly sparked a fire at a fuel oil terminal at the port. Ukrainian drones hit buildings in and near Novorossiysk early on We",
-      "published_at": "2026-09-09T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "supply_disruption",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 12.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.2,
-        "recency_multiplier": 0.54
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "infrastructure": [
-          "terminal"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "IAEA board refers Iran to UN Security Council over nuclear ‘non-compliance’",
-      "url": "https://www.aljazeera.com/news/2026/9/9/iaea-board-resolves-to-report-iran-to-security-council-over-nuclear-program?traffic_source=rss",
-      "snippet": "The symbolic escalation has been initiated by the United States, Germany, France and the United Kingdom.",
-      "published_at": "2026-09-09T20:23:34+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 11,
-      "tags": [
-        "geopolitics",
-        "nuclear",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 15.5,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.0,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "geopolitics": [
-          "escalation"
-        ],
-        "nuclear": [
-          "nuclear"
-        ],
-        "regulation": [
-          "compliance"
-        ],
-        "geography": [
-          "germany",
-          "france"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/9/9/trump-says-iran-war-will-end-immediately-after-us-midterm-elections?traffic_source=rss",
-        "title": "Trump says Iran war ‘will end immediately’ after US midterm elections",
-        "published_at": "2026-09-09T21:09:45+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Bank of England Warns Iran War Could Push UK Inflation Above 4%",
-      "url": "https://oilprice.com/Energy/Energy-General/Bank-of-England-Warns-Iran-War-Could-Push-UK-Inflation-Above-4.html",
-      "snippet": "Bank of England governor Andrew Bailey has warned inflationary pressures are still buffeting the UK economy and energy prices could rise further next year if the war in Iran continues. Speaking to MPs on Tuesday, the Bank chief said inflation risks were “to the upside” and energy prices “could be hi",
-      "published_at": "2026-09-09T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 11,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.6,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 48.4,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "oil_macro": [
-          "inflation"
-        ],
-        "geography": [
-          "uk",
-          "england"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/9/9/trump-says-iran-war-will-end-immediately-after-us-midterm-elections?traffic_source=rss",
-        "title": "Trump says Iran war ‘will end immediately’ after US midterm elections",
-        "published_at": "2026-09-09T21:09:45+00:00"
-      },
-      "hidden": true
     }
   ]
 }
