@@ -1,111 +1,327 @@
 {
-  "generated_at": "2026-09-10T05:09:36.620597+00:00",
-  "item_count": 6,
+  "generated_at": "2026-09-10T09:38:32.915658+00:00",
+  "item_count": 10,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 3
+    "normal": 5
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1323
+        "ms": 1580
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 306063
+        "ms": 42721
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3944
+        "ms": 10780
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 1,
+        "count": 0,
         "error": null,
-        "ms": 557
+        "ms": 630
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 183
+        "ms": 321
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 118
+        "ms": 223
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 45,
+        "count": 44,
         "error": null,
-        "ms": 1249
+        "ms": 1203
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 101
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 219
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 888
+        "ms": 688
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 306
+        "ms": 163
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 864
+        "ms": 703
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 33,
+        "count": 34,
         "error": null,
-        "ms": 129
+        "ms": 395
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 61
+        "ms": 262
       }
     ]
   },
   "items": [
+    {
+      "title": "Iran Says Ready for Escalation after Trump Warning",
+      "url": "https://www.rigzone.com/news/wire/iran_says_ready_for_escalation_after_trump_warning-10-sep-2026-184580-article/?rss=true",
+      "snippet": "'The war is going to end immediately after the election because they can't hold out any longer', Trump said.",
+      "published_at": "2026-09-10T08:28:46+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 44.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "war"
+        ],
+        "urgency": [
+          "immediately"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Holds Above $100 as U.S.-Iran Tanker War Escalates",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Holds-Above-100-as-US-Iran-Tanker-War-Escalates.html",
+      "snippet": "Crude oil prices held near recent highs after rallying sharply earlier this week, with gains driven by an escalation in the U.S.-Iran conflict and intensifying attacks on tankers in the Persian Gulf. Iran reported hits on U.S. warships and tankers in the Persian Gulf, while the U.S. said it had hit ",
+      "published_at": "2026-09-10T05:35:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 51.7,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "conflict",
+          "war",
+          "persian gulf"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Argent LNG in Albania LNG terminal move",
+      "url": "https://lngprime.com/contracts-and-tenders/argent-lng-in-albania-lng-terminal-move/196542/",
+      "snippet": "Argent LNG, developer of an LNG export terminal in Port Fourchon, Louisiana, has signed a memorandum of understanding with the government of Albania to jointly evaluate the development of a large-scale onshore LNG regasification terminal on the Albanian coast.",
+      "published_at": "2026-09-10T06:21:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 30.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.2,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "regasification",
+          "lng terminal"
+        ],
+        "infrastructure": [
+          "terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Five dead and 86 missing as 'heartbreaking' fire breaks out on Philippines ferry",
+      "url": "https://www.bbc.co.uk/news/articles/cy4zd4dn9n9o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The fire broke out as the vessel nearing its destination at the tourist hotspot of Coron in Palawan.",
+      "published_at": "2026-09-10T06:30:19+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.6,
+        "recency_multiplier": 0.92
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "first_seen_at": "2026-09-10T02:50:36+00:00"
+    },
+    {
+      "title": "Nuclear medicine: New EU framework to secure Europe’s supply of medical radioisotopes and reduce dependence on Russia",
+      "url": "https://energy.ec.europa.eu/news/nuclear-medicine-new-eu-framework-secure-europes-supply-medical-radioisotopes-and-reduce-dependence-2026-09-10_en",
+      "snippet": "Nuclear medicine: New EU framework to secure Europe’s supply of medical radioisotopes and reduce dependence on Russia",
+      "published_at": "2026-09-10T09:12:18+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "europe",
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Oil Breaks $100—and This Rally Has Legs",
       "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Breaks-100and-This-Rally-Has-Legs.html",
@@ -117,13 +333,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 41,
       "tags": [
         "geopolitics",
         "oil_macro",
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -135,7 +351,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 58.3,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.56
       },
       "matched": {
         "geopolitics": [
@@ -158,46 +374,122 @@
       "also_reported_by": []
     },
     {
-      "title": "Five dead and 86 missing as 'heartbreaking' fire breaks out on Philippines ferry",
-      "url": "https://www.bbc.co.uk/news/articles/cy4zd4dn9n9o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The fire broke out as the vessel nearing its destination at the tourist hotspot of Coron in Palawan.",
-      "published_at": "2026-09-10T04:08:07+00:00",
+      "title": "Australia Softens Gas Reservation Rule for LNG Exporters",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Australia-Softens-Gas-Reservation-Rule-for-LNG-Exporters.html",
+      "snippet": "Australia’s government has relaxed gas supply rules for producers aimed at securing enough gas for the domestic market. Originally, the rules stipulated that producers should reserve 20% of output for the Australian market. Now, the proposal is for up to 20% of output to be reserved for the domestic",
+      "published_at": "2026-09-10T07:00:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 40,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 33.0,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "australia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Naming ceremony held for new LNG carrier built by Samsung Heavy Industries",
+      "url": "https://www.offshore-energy.biz/naming-ceremony-held-for-new-lng-carrier-built-by-samsung-heavy-industries/",
+      "snippet": "A naming ceremony has been held in South Korea for a new LNG carrier [&#8230;] The post Naming ceremony held for new LNG carrier built by Samsung Heavy Industries appeared first on Offshore Energy .",
+      "published_at": "2026-09-10T06:50:48+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 38,
       "tags": [
-        "supply_disruption"
+        "lng"
       ],
-      "alert": "normal",
-      "nature": "unplanned",
+      "alert": "low",
+      "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
+        "authority": 12.4,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 38.6,
+        "raw": 32.0,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "geography": [
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Yangzijiang’s first LNG carrier wraps up maiden voyage",
+      "url": "https://lngprime.com/asia/yangzijiangs-first-lng-carrier-wraps-up-maiden-voyage/196573/",
+      "snippet": "Yangzijiang Shipbuilding's 175,000-cbm Yangze LNG 01, the first large LNG carrier built by a private Chinese shipbuilder, has completed its maiden voyage.",
+      "published_at": "2026-09-10T08:38:43+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.7,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
+        "lng": [
+          "lng",
+          "carrier"
         ]
       },
-      "duplicate_count": 2,
-      "also_reported_by": [
-        "Al Jazeera"
-      ],
-      "first_seen_at": "2026-09-10T02:50:36+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Olkiluoto 3 - B3",
@@ -210,12 +502,12 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": true,
-      "score": 45,
+      "score": 35,
       "tags": [
         "supply_disruption",
         "nuclear"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -226,7 +518,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 82.7,
-        "recency_multiplier": 0.45
+        "recency_multiplier": 0.32
       },
       "matched": {
         "supply_disruption": [
@@ -241,133 +533,6 @@
         ],
         "urgency": [
           "unplanned"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-09T14:14:11+00:00"
-    },
-    {
-      "title": "U.S. Crude Stocks Edge Lower as Oil Tops $100",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Stocks-Edge-Lower-as-Oil-Tops-100.html",
-      "snippet": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States fell 300,000 barrels in the week ending September 4. In the week prior, US crude oil inventories fell by 2.6 million barrels. Commercial crude oil inventories excluding the SPR have lost just over 48 mil",
-      "published_at": "2026-09-09T21:02:17+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
-      "tags": [
-        "gas_storage",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 18.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 44.6,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "gas_storage": [
-          "stocks",
-          "inventories"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Trump says the US-Iran war will end right after midterms",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/trump-says-the-us-iran-war-will-end-right-after-midterms?traffic_source=rss",
-      "snippet": "Seven months after launching the war on Iran, US President Donald Trump says it will end immediately after midterms.",
-      "published_at": "2026-09-09T23:22:46+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "urgency": [
-          "immediately"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Canadian Oil Pushes Deeper Into U.S. Gulf Coast Market",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Canadian-Oil-Pushes-Deeper-Into-US-Gulf-Coast-Market.html",
-      "snippet": "For decades, the United States has been Canada’s most important energy partner, absorbing the lion’s share of its oil and gas production. After meeting its domestic refining needs, Canada exports ~80% of its crude output, with roughly 90% going to the U.S. thanks to integrated oil infrastructure bui",
-      "published_at": "2026-09-09T23:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 30.2,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "united states",
-          "gulf"
         ]
       },
       "duplicate_count": 0,
