@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-11T03:39:09.067631+00:00",
-  "item_count": 9,
+  "generated_at": "2026-09-11T08:18:58.339320+00:00",
+  "item_count": 8,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 3
+    "high": 1,
+    "normal": 5
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,489 +17,453 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1702
+        "ms": 1689
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 24750
+        "ms": 35612
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4194
+        "ms": 3484
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 270
+        "ms": 878
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 460
+        "ms": 713
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 176
+        "ms": 148
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1428
+        "ms": 1065
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 236
+        "ms": 565
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 713
+        "ms": 645
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 408
+        "ms": 278
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 664
+        "ms": 676
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 23,
+        "count": 24,
         "error": null,
-        "ms": 147
+        "ms": 199
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 182
+        "ms": 152
       }
     ]
   },
   "items": [
     {
-      "title": "Iran claims to have captured a US ‘sail drone’ near Hormuz Strait",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss",
-      "snippet": "Iran’s Revolutionary Guard says its navy struck a US-operated surface drone at the entrance of the Strait of Hormuz.",
-      "published_at": "2026-09-11T00:24:24+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 53,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-11T00:00:00+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, FLEMALLE TH1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/7c093a77-62fa-4c8d-8bee-113b099fc2e2/4",
-      "snippet": "Published: 10.09.2026 23:13:44 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-09-10T21:13:44+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Corduff Flexgen (FG2) (GU_403680)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/c19c458c-2cb7-425a-8be0-7f5c1ad62c4c/2",
+      "snippet": "Published: 11.09.2026 09:36:02 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unit Trip Remarks: Unit Trip Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power ",
+      "published_at": "2026-09-11T07:36:02+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 53,
+      "score": 68,
       "tags": [
-        "supply_disruption"
+        "supply_disruption",
+        "nuclear"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 12.8,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.71
+        "raw": 70.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
           "unplanned"
         ],
+        "nuclear": [
+          "trip"
+        ],
         "unplanned": [
           "unplanned",
-          "failure"
+          "failure",
+          "trip"
         ],
         "urgency": [
           "unplanned"
         ]
       },
-      "duplicate_count": 3,
+      "duplicate_count": 4,
       "also_reported_by": [],
       "first_seen_at": "2026-09-10T15:48:51+00:00"
     },
     {
-      "title": "UN envoy warns Security Council Yemen’s war has entered ‘dangerous phase’",
-      "url": "https://www.aljazeera.com/news/2026/9/10/un-envoy-warns-security-council-yemens-war-has-entered-dangerous-phase?traffic_source=rss",
-      "snippet": "Envoy for Yemen Hans Grundberg demands urgent steps to protect civilians and trade routes amid Houthi escalation.",
-      "published_at": "2026-09-10T23:46:07+00:00",
+      "title": "US weekly LNG exports rise to 36 shipments",
+      "url": "https://lngprime.com/americas/us-weekly-lng-exports-rise-to-36-shipments/196624/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending September 9, up by three shipments from the week before, according to the Energy Information Administration.",
+      "published_at": "2026-09-11T06:09:46+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
+      "has_magnitude": true,
+      "score": 56,
       "tags": [
-        "geopolitics"
+        "lng"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 17.9,
+        "authority": 13.1,
+        "themes": 26.0,
         "geography": 0.0,
         "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 43.4,
-        "recency_multiplier": 0.86
+        "raw": 51.1,
+        "recency_multiplier": 0.99
       },
       "matched": {
-        "geopolitics": [
-          "escalation",
-          "war"
-        ],
-        "urgency": [
-          "urgent"
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "OPEC Sees Oil Demand Growth Explode Sixfold in 2027",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Sees-Oil-Demand-Growth-Explode-Sixfold-in-2027.html",
-      "snippet": "OPEC now expects global oil demand growth to jump from just 380,000 barrels per day this year to 2.36 million bpd in 2027—a more than sixfold increase in the space of a year. The cartel trimmed its 2026 demand-growth forecast in its September Monthly Oil Market Report, putting total consumption this",
-      "published_at": "2026-09-10T21:30:00+00:00",
+      "title": "Oil Prices Could Top $120 as Middle East Conflict Escalates",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Could-Top-120-as-Middle-East-Conflict-Escalates.html",
+      "snippet": "Crude oil prices could top $120 per barrel of Brent crude by the end of the year if fighting in the Middle East continues, RBC Capital Markets’ Helima Croft has warned, as quoted by Reuters. “Maritime traffic through the Bab el-Mandeb is gravely imperiled by the Houthi advances,” the analyst said. T",
+      "published_at": "2026-09-11T08:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
+      "has_magnitude": false,
+      "score": 53,
       "tags": [
-        "oil_macro",
-        "weather"
+        "geopolitics",
+        "oil_macro"
       ],
-      "alert": "low",
+      "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 17.1,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "oil_macro": [
-          "opec",
-          "barrels",
-          "demand"
-        ],
-        "weather": [
-          "forecast"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Soars as Hormuz Risks Rattle Markets",
-      "url": "https://www.rigzone.com/news/wire/oil_soars_as_hormuz_risks_rattle_markets-10-sep-2026-184590-article/?rss=true",
-      "snippet": "Brent surged more than 6% to $107.63 as escalating Middle East tensions heightened global supply concerns.",
-      "published_at": "2026-09-10T19:56:15+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 4.5,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 43.4,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "oil_macro": [
-          "brent"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Yemen's Houthis reportedly seize strategic Red Sea port of Mokha",
-      "url": "https://www.bbc.co.uk/news/articles/c4g7vr0lngwo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Mokha's capture would bring the Iran-backed group closer to controlling the Bab al-Mandab Strait waterway, a key shipping route.",
-      "published_at": "2026-09-10T18:15:47+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 32.0,
+        "themes": 33.7,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": -12.0,
-        "raw": 46.2,
-        "recency_multiplier": 0.57
+        "raw": 46.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "bab al-mandab",
-          "red sea"
+          "conflict",
+          "bab el-mandeb"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
         ],
         "geography": [
-          "bab al-mandab",
-          "red sea"
+          "bab el-mandeb"
         ],
         "speculative": [
-          "reportedly"
+          "could"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "More than 20 children killed in DR Congo school fire",
-      "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Officials say there was a stampede as they fled a fire that engulfed two schools in the eastern rebel-held city of Bukavu.",
-      "published_at": "2026-09-10T19:16:24+00:00",
+      "title": "Hanwha Ocean launches Singapore’s first FSRU",
+      "url": "https://lngprime.com/asia/hanwha-ocean-launches-singapores-first-fsru/196617/",
+      "snippet": "South Korean shipbuilder Hanwha Ocean has launched MOL’s floating storage and regasification unit (FSRU), which will serve Singapore’s second LNG import terminal.",
+      "published_at": "2026-09-11T05:51:46+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 53,
       "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.6,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "IEA: Global Coal Demand Set to Hit Record High as Iran War Chokes LNG Supply",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/IEA-Global-Coal-Demand-Set-to-Hit-Record-High-as-Iran-War-Chokes-LNG-Supply.html",
-      "snippet": "Soaring LNG prices due to the Strait of Hormuz blockage are prompting economies to shift to alternative energy sources, pushing coal demand to a another record high this year, the International Energy Agency (IEA) said in a new report on Thursday. The surge in LNG prices have pushed markets includin",
-      "published_at": "2026-09-10T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
         "lng",
-        "oil_macro"
+        "infrastructure",
+        "gas_storage"
       ],
-      "alert": "low",
+      "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 31.5,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 13.1,
+        "themes": 35.7,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 56.3,
-        "recency_multiplier": 0.42
+        "raw": 48.9,
+        "recency_multiplier": 0.97
       },
       "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz"
-        ],
         "lng": [
-          "lng"
+          "lng",
+          "regasification",
+          "fsru"
         ],
-        "oil_macro": [
-          "demand"
+        "infrastructure": [
+          "terminal",
+          "import terminal"
         ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
+        "gas_storage": [
+          "storage"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Iran war live: IRGC attacks US unmanned vessel in Hormuz; two ships hit",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/9/11/iran-war-live-irgc-attacks-us-unmanned-vessel-in-hormuz-two-ships-hit?traffic_source=rss",
-      "snippet": "IRGC says it attacked a US unmanned vessel in Hormuz, while UKMTO says projectiles hit two ships off Oman.",
-      "published_at": "2026-09-11T00:00:00+00:00",
+      "title": "Hundreds flee as fire destroys migrant shelters in Ceuta",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/aje-onl-nf_migrants-flee-as-fire-destroys-shelteres-in-ceuta-110926?traffic_source=rss",
+      "snippet": "Hundreds of people fled a massive fire that destroyed dozens of migrant shelters in Ceuta, Spain.",
+      "published_at": "2026-09-11T05:35:12+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 18,
+      "score": 52,
       "tags": [
-        "geopolitics"
+        "supply_disruption"
       ],
-      "alert": "low",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 8.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 63.4,
-        "recency_multiplier": 0.88
+        "raw": 47.9,
+        "recency_multiplier": 0.95
       },
       "matched": {
-        "geopolitics": [
-          "war",
-          "attacked"
+        "supply_disruption": [
+          "fire"
         ],
         "geography": [
-          "hormuz"
+          "spain"
         ],
         "unplanned": [
-          "attacked"
+          "fire"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss",
-        "title": "Iran claims to have captured a US ‘sail drone’ near Hormuz Strait",
-        "published_at": "2026-09-11T00:24:24+00:00"
+      "also_reported_by": []
+    },
+    {
+      "title": "Spanish LNG imports up in August",
+      "url": "https://lngprime.com/europe/spanish-lng-imports-up-in-august/196669/",
+      "snippet": "Spanish liquefied natural gas (LNG) imports rose in August compared to the same month in the previous year, according to the preliminary monthly report by LNG terminal operator Enagas.",
+      "published_at": "2026-09-11T08:07:53+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 30.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.2,
+        "recency_multiplier": 1.0
       },
-      "hidden": true
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal",
+          "lng imports"
+        ],
+        "infrastructure": [
+          "terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Prices Surge to Four-Month Highs as War Risks Mount",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-to-Four-Month-Highs-as-War-Risks-Mount.html",
+      "snippet": "Crude oil prices extended their climb this week, reaching the highest since May as hostilities in the Gulf continue and the prospect of peace gets even more remote. At the time of writing, Brent crude was trading at $107.86 per barrel, and West Texas Intermediate was changing hands for $102.28 per b",
+      "published_at": "2026-09-11T05:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 27.7,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "geopolitics": [
+          "hostilities",
+          "war"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "geography": [
+          "gulf"
+        ],
+        "speculative": [
+          "may"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Atlantic spot LNG rates rise to $20,000 per day",
+      "url": "https://lngprime.com/americas/atlantic-spot-lng-rates-rise-to-20000-per-day/196640/",
+      "snippet": "Atlantic spot LNG shipping rates rose for the second week in a row, rising $4,500 week-on-week to $20,000 per day, according to Spark Commodities.",
+      "published_at": "2026-09-11T08:08:09+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 10.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "rates"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     }
   ]
 }
