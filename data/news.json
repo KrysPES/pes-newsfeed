@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-11T08:18:58.339320+00:00",
-  "item_count": 8,
+  "generated_at": "2026-09-11T12:53:01.004619+00:00",
+  "item_count": 19,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 5
+    "high": 0,
+    "normal": 12
   },
   "superseded_count": 0,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1689
+        "ms": 1486
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 35612
+        "ms": 13441
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3484
+        "ms": 2986
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 878
+        "ms": 445
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 713
+        "ms": 437
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 148
+        "ms": 232
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 45,
+        "count": 40,
         "error": null,
-        "ms": 1065
+        "ms": 1156
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 565
+        "ms": 221
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 645
+        "ms": 584
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 278
+        "ms": 221
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 676
+        "ms": 444
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 24,
+        "count": 25,
         "error": null,
-        "ms": 199
+        "ms": 189
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 152
+        "ms": 207
       }
     ]
   },
   "items": [
+    {
+      "title": "Houthis Advance on Bab al-Mandeb as Saudi Oil Route Comes Under Threat",
+      "url": "https://oilprice.com/Energy/Energy-General/Houthis-Advance-on-Bab-al-Mandeb-as-Saudi-Oil-Route-Comes-Under-Threat.html",
+      "snippet": "Politics, Geopolitics & Conflict Yemen's Houthis captured the Red Sea port of Mocha on Thursday, taking the approach to the Bab al-Mandeb Strait, which connects the Red Sea (and the Suez Canal, beyond it) to the Gulf of Aden and the Indian Ocean. Bab al-Mandeb is 12 miles wide and carries 6.2 millio",
+      "published_at": "2026-09-11T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 60,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "suez canal",
+          "red sea"
+        ],
+        "geography": [
+          "suez",
+          "suez canal",
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Corduff Flexgen (FG2) (GU_403680)",
       "url": "https://umm.nordpoolgroup.com/#/messages/c19c458c-2cb7-425a-8be0-7f5c1ad62c4c/2",
@@ -117,12 +161,12 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 68,
+      "score": 59,
       "tags": [
         "supply_disruption",
         "nuclear"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -133,7 +177,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 70.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.78
       },
       "matched": {
         "supply_disruption": [
@@ -151,22 +195,195 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 4,
+      "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-09-10T15:48:51+00:00"
+      "first_seen_at": "2026-09-10T21:13:44+00:00"
     },
     {
-      "title": "US weekly LNG exports rise to 36 shipments",
-      "url": "https://lngprime.com/americas/us-weekly-lng-exports-rise-to-36-shipments/196624/",
-      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending September 9, up by three shipments from the week before, according to the Energy Information Administration.",
-      "published_at": "2026-09-11T06:09:46+00:00",
+      "title": "Houthis control key shipping route after gains along Yemen’s Red Sea coast",
+      "url": "https://www.aljazeera.com/news/2026/9/11/houthis-take-control-of-yemens-red-sea-coast-key-shipping-route?traffic_source=rss",
+      "snippet": "Rapid advance of Iran-backed force threatens key alternative shipping route to Strait of Hormuz.",
+      "published_at": "2026-09-11T10:11:17+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 58,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 57.5,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "red sea"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Pro-Palestine student suspended by King’s College London returns to campus",
+      "url": "https://www.aljazeera.com/news/2026/9/11/pro-palestine-student-suspended-by-kings-college-london-returns-to-campus?traffic_source=rss",
+      "snippet": "College lifts suspension amid criticism from student groups over crackdown on pro-Palestine sentiments.",
+      "published_at": "2026-09-11T08:22:02+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 56,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.3,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended",
+          "suspension"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Hormuz Shipping Traffic Plunges as Middle East War Escalates",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Shipping-Traffic-Plunges-as-Middle-East-War-Escalates.html",
+      "snippet": "Ship traffic through the Strait of Hormuz slumped to single digits on Thursday, down from a 10-day average of 15 vessels that transited the chokepoint in both directions, Reuters reports, citing preliminary vessel-tracking data by Kpler as of early Friday. Only seven vessels, two outbound and five i",
+      "published_at": "2026-09-11T10:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 50.4,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "WTI Breaks $100 as Middle East Supply Crisis Deepens",
+      "url": "https://oilprice.com/Energy/Energy-General/WTI-Breaks-100-as-Middle-East-Supply-Crisis-Deepens.html",
+      "snippet": "October WTI crude oil futures are trading at $101.26 early Friday, up $10.04 or 11.01% for the week so far. The contract traded as low as $90.87 before reaching $104.46, its strongest level since May. Last week, the market was testing whether escorted cargoes and alternate routes could keep enough G",
+      "published_at": "2026-09-11T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 47,
+      "tags": [
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 39.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "wti"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "TotalEnergies and T&T join forces on LNG-to-power project in Vietnam",
+      "url": "https://lngprime.com/asia/totalenergies-and-tt-join-forces-on-lng-to-power-project-in-vietnam/196699/",
+      "snippet": "French energy giant TotalEnergies and Vietnamese conglomerate T&#038;T have signed a memorandum of understanding to jointly develop the 1,500 MW Long Son LNG-to-power project in Vietnam.",
+      "published_at": "2026-09-11T09:40:06+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 56,
+      "score": 46,
       "tags": [
         "lng"
       ],
@@ -174,20 +391,61 @@
       "nature": "",
       "why": {
         "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.99
+        "raw": 42.4,
+        "recency_multiplier": 0.91
       },
       "matched": {
         "lng": [
-          "lng",
-          "cargoes",
-          "lng exports"
+          "lng"
+        ],
+        "geography": [
+          "french"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Family members wait after deadly Philippines ferry fire",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/family-members-wait-after-deadly-philippines-ferry-fire?traffic_source=rss",
+      "snippet": "Dozens of passengers are missing after a fire tore through a ferry in the Philippines, killing at least 5 people.",
+      "published_at": "2026-09-11T10:29:53+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -204,7 +462,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 45,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -221,7 +479,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 46.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -244,6 +502,125 @@
       "also_reported_by": []
     },
     {
+      "title": "Vostok Oil: One Tanker, Four Trillion Rubles",
+      "url": "https://oilprice.com/Energy/Energy-General/Vostok-Oil-One-Tanker-Four-Trillion-Rubles.html",
+      "snippet": "Every headline number behind Vostok Oil — from the tanker fleet and shipping target to the resource base and flagship well — has failed to survive contact with what Rosneft has actually drilled, built, or shipped. Four trillion rubles into the project, Rosneft has filled a single tanker. The Valenti",
+      "published_at": "2026-09-11T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "tanker"
+        ],
+        "unplanned": [
+          "failed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US weekly LNG exports rise to 36 shipments",
+      "url": "https://lngprime.com/americas/us-weekly-lng-exports-rise-to-36-shipments/196624/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending September 9, up by three shipments from the week before, according to the Energy Information Administration.",
+      "published_at": "2026-09-11T06:09:46+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 44,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.7
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Spanish LNG imports up in August",
+      "url": "https://lngprime.com/europe/spanish-lng-imports-up-in-august/196669/",
+      "snippet": "Spanish liquefied natural gas (LNG) imports rose in August compared to the same month in the previous year, according to the preliminary monthly report by LNG terminal operator Enagas.",
+      "published_at": "2026-09-11T08:07:53+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 30.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.2,
+        "recency_multiplier": 0.81
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal",
+          "lng imports"
+        ],
+        "infrastructure": [
+          "terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Hanwha Ocean launches Singapore’s first FSRU",
       "url": "https://lngprime.com/asia/hanwha-ocean-launches-singapores-first-fsru/196617/",
       "snippet": "South Korean shipbuilder Hanwha Ocean has launched MOL’s floating storage and regasification unit (FSRU), which will serve Singapore’s second LNG import terminal.",
@@ -254,13 +631,13 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 41,
       "tags": [
         "lng",
         "infrastructure",
         "gas_storage"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -271,7 +648,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.9,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.68
       },
       "matched": {
         "lng": [
@@ -301,11 +678,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 40,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -317,7 +694,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.9,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.67
       },
       "matched": {
         "supply_disruption": [
@@ -334,132 +711,199 @@
       "also_reported_by": []
     },
     {
-      "title": "Spanish LNG imports up in August",
-      "url": "https://lngprime.com/europe/spanish-lng-imports-up-in-august/196669/",
-      "snippet": "Spanish liquefied natural gas (LNG) imports rose in August compared to the same month in the previous year, according to the preliminary monthly report by LNG terminal operator Enagas.",
-      "published_at": "2026-09-11T08:07:53+00:00",
+      "title": "Myanmar airport closed following reported drone attack",
+      "url": "https://www.aljazeera.com/news/2026/9/11/myanmar-airport-closed-following-reported-drone-attack?traffic_source=rss",
+      "snippet": "Military government pins attack on pro-democracy rebels it has been battling since seizing power in 2021.",
+      "published_at": "2026-09-11T12:22:12+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 36,
       "tags": [
-        "lng",
-        "infrastructure"
+        "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 30.0,
+        "authority": 9.5,
+        "themes": 17.9,
         "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.2,
+        "raw": 27.4,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "lng",
-          "lng terminal",
-          "lng imports"
-        ],
-        "infrastructure": [
-          "terminal"
+        "geopolitics": [
+          "drone",
+          "attack"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Oil Prices Surge to Four-Month Highs as War Risks Mount",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-to-Four-Month-Highs-as-War-Risks-Mount.html",
-      "snippet": "Crude oil prices extended their climb this week, reaching the highest since May as hostilities in the Gulf continue and the prospect of peace gets even more remote. At the time of writing, Brent crude was trading at $107.86 per barrel, and West Texas Intermediate was changing hands for $102.28 per b",
-      "published_at": "2026-09-11T05:30:00+00:00",
+      "title": "RIIO-2 Network Asset Risk Metric reporting and closeout",
+      "url": "https://www.ofgem.gov.uk/guidance/riio-2-network-asset-risk-metric-reporting-and-closeout",
+      "snippet": "Our guidance on reporting RIIO-2 NARM performance and understanding how Ofgem will assess delivery at closeout.",
+      "published_at": "2026-09-11T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "infrastructure",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 10.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "network"
+        ],
+        "regulation": [
+          "ofgem"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Saipem Signs New Preliminary Contract for Rovuma LNG",
+      "url": "https://www.rigzone.com/news/saipem_signs_new_preliminary_contract_for_rovuma_lng-11-sep-2026-184592-article/?rss=true",
+      "snippet": "A consortium of Belgium's Jan De Nul and Italy's Saipem signed a letter of intent with ExxonMobil for the upstream infrastructure of the planned Rovuma LNG project in Mozambique.",
+      "published_at": "2026-09-11T10:09:58+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.2,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "belgium",
+          "italy"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China’s 70% EV Target Deals Another Blow to Oil Demand",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-70-EV-Target-Deals-Another-Blow-to-Oil-Demand.html",
+      "snippet": "China aims to have electric and hybrid vehicles account for as much as 70% of all passenger car sales by 2030, in a massive transport shift set to further dent oil demand for road fuels. As of the end of last year, the share of the so-called new energy vehicles was 54% of all passenger vehicle sales",
+      "published_at": "2026-09-11T09:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
+      "has_magnitude": true,
+      "score": 35,
       "tags": [
-        "geopolitics",
         "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 26.0,
+        "themes": 4.5,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 27.7,
-        "recency_multiplier": 0.94
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 30.2,
+        "recency_multiplier": 0.9
       },
       "matched": {
-        "geopolitics": [
-          "hostilities",
-          "war"
-        ],
         "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
+          "demand"
         ],
         "geography": [
-          "gulf"
-        ],
-        "speculative": [
-          "may"
+          "china"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Atlantic spot LNG rates rise to $20,000 per day",
-      "url": "https://lngprime.com/americas/atlantic-spot-lng-rates-rise-to-20000-per-day/196640/",
-      "snippet": "Atlantic spot LNG shipping rates rose for the second week in a row, rising $4,500 week-on-week to $20,000 per day, according to Spark Commodities.",
-      "published_at": "2026-09-11T08:08:09+00:00",
+      "title": "China's Crude Imports Set to Hold at 7.2 Million Bpd in September",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Crude-Imports-Set-to-Hold-at-72-Million-Bpd-in-September.html",
+      "snippet": "China is on track to import roughly the same volumes of crude oil in September as it did in August, extending the trend of recovering shipments just as crude oil prices soared to above $100 per barrel again. Kpler’s preliminary vessel-tracking data puts Chinese crude imports at about 7.2 million bar",
+      "published_at": "2026-09-11T11:30:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
       "score": 31,
       "tags": [
-        "lng",
         "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 10.0,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 23.1,
+        "raw": 22.7,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "lng"
-        ],
         "oil_macro": [
-          "rates"
+          "crude",
+          "barrel"
+        ],
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
