@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-11T23:35:14.764519+00:00",
-  "item_count": 12,
+  "generated_at": "2026-09-12T01:34:28.466208+00:00",
+  "item_count": 9,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 3
+    "high": 1,
+    "normal": 1
   },
-  "superseded_count": 0,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,138 +17,149 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1343
+        "ms": 1359
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 63230
+        "ms": 263562
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 19395
+        "ms": 4262
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 1,
+        "count": 0,
         "error": null,
-        "ms": 1178
+        "ms": 240
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 190
+        "ms": 268
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 305
+        "ms": 77
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1326
+        "ms": 872
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 276
+        "ms": 179
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 657
+        "ms": 577
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 305
+        "ms": 124
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 684
+        "ms": 462
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 262
+        "ms": 57
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 119
+        "ms": 54
       }
     ]
   },
   "items": [
     {
-      "title": "Houthis claim major advance in Yemen and tighten grip on Red Sea shipping lane",
-      "url": "https://www.bbc.co.uk/news/articles/c23x72yx2rvo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The Iran-backed Houthis are also reported to have seized Perim - a strategic island on the major shipping route.",
-      "published_at": "2026-09-11T22:17:45+00:00",
+      "title": "Iran war live: Houthis control Red Sea coast, Saudi pipeline shut down",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/12/iran-war-live-houthis-control-red-sea-coast-saudi-pipeline-shut-down?traffic_source=rss",
+      "snippet": "Houthi forces seize Yemen&#039;s Red Sea coast while Saudi Arabia suspends crucial oil pipeline following drone attack.",
+      "published_at": "2026-09-12T00:00:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 79,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "infrastructure"
       ],
-      "alert": "normal",
-      "nature": "",
+      "alert": "high",
+      "nature": "unplanned",
       "why": {
-        "authority": 10.2,
-        "themes": 25.6,
+        "authority": 9.5,
+        "themes": 36.0,
         "geo_band": "chokepoint",
         "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 51.8,
+        "raw": 97.5,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "seized",
+          "drone",
+          "war",
+          "attack",
           "red sea"
+        ],
+        "infrastructure": [
+          "pipeline"
         ],
         "geography": [
           "red sea"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "shut"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ],
-      "first_seen_at": "2026-09-11T19:01:07+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-09-11T12:30:00+00:00"
     },
     {
       "title": "UK Interest Rates Could Rise Four Times Over the Next Year",
@@ -161,7 +172,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 48,
+      "score": 43,
       "tags": [
         "oil_macro"
       ],
@@ -177,7 +188,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 52.8,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.65
       },
       "matched": {
         "oil_macro": [
@@ -204,11 +215,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -220,7 +231,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
@@ -245,7 +256,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 36,
       "tags": [
         "supply_disruption"
       ],
@@ -260,7 +271,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.72
       },
       "matched": {
         "supply_disruption": [
@@ -284,7 +295,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -300,7 +311,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -308,50 +319,6 @@
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Houthis Advance on Bab al-Mandeb as Saudi Oil Route Comes Under Threat",
-      "url": "https://oilprice.com/Energy/Energy-General/Houthis-Advance-on-Bab-al-Mandeb-as-Saudi-Oil-Route-Comes-Under-Threat.html",
-      "snippet": "Politics, Geopolitics & Conflict Yemen's Houthis captured the Red Sea port of Mocha on Thursday, taking the approach to the Bab al-Mandeb Strait, which connects the Red Sea (and the Suez Canal, beyond it) to the Gulf of Aden and the Indian Ocean. Bab al-Mandeb is 12 miles wide and carries 6.2 millio",
-      "published_at": "2026-09-11T12:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 32.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 56.8,
-        "recency_multiplier": 0.5
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "suez canal",
-          "red sea"
-        ],
-        "geography": [
-          "suez",
-          "suez canal",
-          "red sea"
         ]
       },
       "duplicate_count": 0,
@@ -368,7 +335,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 31,
       "tags": [
         "geopolitics"
       ],
@@ -384,7 +351,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.8,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.57
       },
       "matched": {
         "geopolitics": [
@@ -402,54 +369,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Corduff Flexgen (FG2) (GU_403680)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/c19c458c-2cb7-425a-8be0-7f5c1ad62c4c/2",
-      "snippet": "Published: 11.09.2026 09:36:02 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unit Trip Remarks: Unit Trip Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power ",
-      "published_at": "2026-09-11T07:36:02+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "supply_disruption",
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 12.8,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 70.7,
-        "recency_multiplier": 0.34
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "nuclear": [
-          "trip"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "trip"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "UN extends partial Sudan arms embargo for a month",
       "url": "https://www.aljazeera.com/news/2026/9/11/un-extends-partial-sudan-arms-embargo-for-a-month?traffic_source=rss",
       "snippet": "Sudan’s UN ambassador said a total arms embargo goes against the UN Charter that guarantees a right to self-defence.",
@@ -460,7 +379,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics",
         "lng"
@@ -476,7 +395,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 22.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.97
       },
       "matched": {
         "geopolitics": [
@@ -490,133 +409,106 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump's Grid Battery Ban Leaves Developers Guessing",
-      "url": "https://oilprice.com/Energy/Energy-General/Trumps-Grid-Battery-Ban-Leaves-Developers-Guessing.html",
-      "snippet": "The United States is trying to build up its energy storage capacities at a rapid scale. At the same time, it is trying to wean itself off of Chinese battery tech. In many ways, these two goals are in direct opposition to each other. China dominates global supply chains for clean energy tech in gener",
-      "published_at": "2026-09-11T20:00:00+00:00",
+      "title": "Houthis claim major advance in Yemen and tighten grip on Red Sea shipping lane",
+      "url": "https://www.bbc.co.uk/news/articles/c23x72yx2rvo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The Iran-backed Houthis are also reported to have seized Perim - a strategic island on the major shipping route.",
+      "published_at": "2026-09-11T22:17:45+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "gas_storage",
-        "infrastructure",
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 12.7,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.5,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "gas_storage": [
-          "storage"
-        ],
-        "infrastructure": [
-          "grid"
-        ],
-        "power_system": [
-          "battery"
-        ],
-        "geography": [
-          "united states",
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudi Arabia says East-West pipeline hit by drones launched from Iraq",
-      "url": "https://www.aljazeera.com/news/2026/9/11/saudi-arabia-says-east-west-pipeline-hit-by-drones-launched-from-iraq?traffic_source=rss",
-      "snippet": "Iraq condemns the attack, dismisses a military commander who led operations in Maysan province.",
-      "published_at": "2026-09-11T21:30:47+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 13.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.5,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Posts Biggest Weekly Gain Since July",
-      "url": "https://www.rigzone.com/news/wire/oil_posts_biggest_weekly_gain_since_july-11-sep-2026-184602-article/?rss=true",
-      "snippet": "Oil posted a strong weekly gain as Middle East conflict and mounting supply risks kept markets on edge.",
-      "published_at": "2026-09-11T20:04:51+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
+      "score": 16,
       "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.9,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 10.2,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.9,
-        "recency_multiplier": 0.89
+        "raw": 51.8,
+        "recency_multiplier": 0.91
       },
       "matched": {
         "geopolitics": [
-          "conflict"
+          "seized",
+          "red sea"
         ],
         "geography": [
-          "middle east"
+          "red sea"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "first_seen_at": "2026-09-11T19:01:07+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/liveblog/2026/9/12/iran-war-live-houthis-control-red-sea-coast-saudi-pipeline-shut-down?traffic_source=rss",
+        "title": "Iran war live: Houthis control Red Sea coast, Saudi pipeline shut down",
+        "published_at": "2026-09-12T00:00:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Houthis Advance on Bab al-Mandeb as Saudi Oil Route Comes Under Threat",
+      "url": "https://oilprice.com/Energy/Energy-General/Houthis-Advance-on-Bab-al-Mandeb-as-Saudi-Oil-Route-Comes-Under-Threat.html",
+      "snippet": "Politics, Geopolitics & Conflict Yemen's Houthis captured the Red Sea port of Mocha on Thursday, taking the approach to the Bab al-Mandeb Strait, which connects the Red Sea (and the Suez Canal, beyond it) to the Gulf of Aden and the Indian Ocean. Bab al-Mandeb is 12 miles wide and carries 6.2 millio",
+      "published_at": "2026-09-11T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 10,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.8,
+        "recency_multiplier": 0.43
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "suez canal",
+          "red sea"
+        ],
+        "geography": [
+          "suez",
+          "suez canal",
+          "red sea"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/liveblog/2026/9/12/iran-war-live-houthis-control-red-sea-coast-saudi-pipeline-shut-down?traffic_source=rss",
+        "title": "Iran war live: Houthis control Red Sea coast, Saudi pipeline shut down",
+        "published_at": "2026-09-12T00:00:00+00:00"
+      },
+      "hidden": true
     }
   ]
 }
