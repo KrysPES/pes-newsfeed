@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-14T04:53:25.469002+00:00",
-  "item_count": 6,
+  "generated_at": "2026-09-14T10:14:13.301627+00:00",
+  "item_count": 16,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 1
+    "high": 2,
+    "normal": 4
   },
-  "superseded_count": 0,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,245 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1148
+        "ms": 1543
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 20879
+        "ms": 34397
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 17499
+        "ms": 57667
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 358
+        "ms": 865
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 329
+        "ms": 614
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 124
+        "ms": 181
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 985
+        "ms": 1215
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 361
+        "ms": 534
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 570
+        "ms": 673
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 76
+        "ms": 283
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 457
+        "ms": 780
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 23,
+        "count": 25,
         "error": null,
-        "ms": 55
+        "ms": 240
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 151
+        "ms": 128
       }
     ]
   },
   "items": [
+    {
+      "title": "Middle East Oil Routes Under Pressure as Hormuz Traffic Tumbles",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Middle-East-Oil-Routes-Under-Pressure-as-Hormuz-Traffic-Tumbles.html",
+      "snippet": "The number of commodity vessels observed to have transited the Strait of Hormuz crumbled to single digits this weekend, and risks to supply from the Middle East soared after Saudi Arabia shut down the key East-West pipeline it uses to ship crude from the Red Sea to bypass Hormuz. The number of commo",
+      "published_at": "2026-09-14T09:15:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 80,
+      "tags": [
+        "geopolitics",
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 98.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "red sea"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ballylumford CCGT - GU_503730(B32)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/d533805b-eddf-4b45-91ff-205e388176ee/2",
+      "snippet": "Published: 14.09.2026 11:45:51 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unit unable to synch - suspect excitation panel fault Remarks: Fault Repaired Production Units Unit Name Unit EIC Area Installed Capac",
+      "published_at": "2026-09-14T09:45:51+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 74.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "fault"
+        ],
+        "unplanned": [
+          "unplanned",
+          "fault",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oman Energy Minister Says Middle East Needs to Diversify LNG Export Routes",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oman-Energy-Minister-Says-Middle-East-Needs-to-Diversify-LNG-Export-Routes.html",
+      "snippet": "The Middle East needs alternative export routes for liquefied natural gas that bypass the Strait of Hormuz, Oman’s Minister of Energy and Minerals said at Gastech today. LNG exports from the Persian Gulf have collapsed since the start of the war between the United States and Israel and Iran. “Let’s ",
+      "published_at": "2026-09-14T07:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 44.5,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 69.2,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz",
+          "persian gulf"
+        ],
+        "lng": [
+          "lng",
+          "lng exports"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "StanChart Warns Oil Is Now Built for Sharper, More Frequent Spikes",
       "url": "https://oilprice.com/Energy/Oil-Prices/StanChart-Warns-Oil-Is-Now-Built-for-Sharper-More-Frequent-Spikes.html",
@@ -117,12 +267,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 68,
+      "score": 53,
       "tags": [
         "geopolitics",
         "oil_macro"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -134,7 +284,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 95.4,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.49
       },
       "matched": {
         "geopolitics": [
@@ -161,51 +311,91 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Prices Surge as Middle East Attacks Continue and Diplomacy Stumbles",
-      "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Surge-as-Middle-East-Attacks-Continue-and-Diplomacy-Stumbles.html",
-      "snippet": "Oil prices initially jumped by over 3% in early Asian trade on Monday as fears of a major and extended supply disruption were stoked by continued attacks in the Middle East and the postponement of a crunch meeting between Gulf states and Iran. At the time of writing, both benchmarks had fallen back ",
-      "published_at": "2026-09-14T02:39:17+00:00",
+      "title": "Soaring Oil Prices Put Fed on Track for September Rate Hike",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Soaring-Oil-Prices-Put-Fed-on-Track-for-September-Rate-Hike.html",
+      "snippet": "The recent spike in crude oil prices will likely result in a fresh rate hike by the Fed this week, according to data from CME Group, cited by The National today. As much as 90% of respondents from trading circles expect a rate hike of 25 basis points, after last week, the European Central Bank hiked",
+      "published_at": "2026-09-14T08:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 50,
       "tags": [
-        "supply_disruption"
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 8.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 12.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 34.2,
+        "raw": 43.6,
         "recency_multiplier": 0.98
       },
       "matched": {
-        "supply_disruption": [
-          "disruption"
+        "oil_macro": [
+          "crude",
+          "central bank"
         ],
         "geography": [
-          "middle east",
-          "gulf"
+          "european"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Adnoc, RWE working on up to two LNG supply deals",
-      "url": "https://lngprime.com/contracts-and-tenders/adnoc-rwe-working-on-up-to-two-lng-supply-deals/196735/",
-      "snippet": "UAE’s ADNOC and German energy firm RWE have signed a letter of intent to progress up to two liquefied natural gas (LNG) sale and purchase agreements.",
-      "published_at": "2026-09-14T04:22:00+00:00",
+      "title": "MET buys more US LNG from Shell",
+      "url": "https://lngprime.com/americas/met-buys-more-us-lng-from-shell/196799/",
+      "snippet": "Switzerland-based energy trader MET Group has agreed to buy more US liquefied natural gas (LNG) from UK-based energy giant Shell to supply its European customers.",
+      "published_at": "2026-09-14T09:05:19+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "TotalEnergies, GS Energy pen long-term LNG SPA",
+      "url": "https://lngprime.com/asia/totalenergies-gs-energy-pen-long-term-lng-spa/196784/",
+      "snippet": "French energy giant TotalEnergies has entered into a long-term agreement with South Korea’s GS Energy to supply the latter with liquefied natural gas (LNG).",
+      "published_at": "2026-09-14T08:27:30+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
@@ -235,59 +425,98 @@
           "lng"
         ],
         "geography": [
-          "german"
+          "french"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Trump says he will remove all Irish whiskey tariffs as he ends two-day visit",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z79n0eeno?at_medium=RSS&at_campaign=rss",
-      "snippet": "Whiskey distilled in the Republic of Ireland faces the standard 15% tariff which applies to EU goods entering the US.",
-      "published_at": "2026-09-13T19:34:36+00:00",
+      "title": "South Korea’s Samsung Heavy secures order for LNG carrier quartet",
+      "url": "https://lngprime.com/asia/south-koreas-samsung-heavy-secures-order-for-lng-carrier-quartet/196760/",
+      "snippet": "South Korean shipbuilding giant Samsung Heavy Industries has secured an order to build four liquefied natural gas (LNG) carriers for approximately $1.05 billion.",
+      "published_at": "2026-09-14T07:11:26+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 37,
+      "has_magnitude": false,
+      "score": 39,
       "tags": [
-        "geopolitics"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 50.1,
-        "recency_multiplier": 0.57
+        "raw": 32.7,
+        "recency_multiplier": 0.92
       },
       "matched": {
-        "geopolitics": [
-          "tariff",
-          "tariffs"
+        "lng": [
+          "lng",
+          "carrier"
         ],
         "geography": [
-          "eu",
-          "ireland"
+          "korea"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Iran war live: Oman says Hormuz talks with Iran, Gulf states postponed",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/9/14/iran-war-live-oman-says-hormuz-talks-with-iran-gulf-states-postponed?traffic_source=rss",
-      "snippet": "Oman says Hormuz talks with Iran and Gulf states are postponed &#039;in the interests of consensus&#039;.",
-      "published_at": "2026-09-14T00:00:00+00:00",
+      "title": "Fulkrum steps up Norwegian offshore oil & gas presence with Vår Energi deal",
+      "url": "https://www.offshore-energy.biz/fulkrum-steps-up-norwegian-offshore-oil-gas-presence-with-var-energi-deal/",
+      "snippet": "Fulkrum, a London-headquartered technical services company providing inspection, expediting, auditing and technical staffing solutions to energy and industrial projects, has landed an inspection services contract with Vår Energi, an independent oil and gas operator on the Norwegian Continental Shelf",
+      "published_at": "2026-09-14T07:40:57+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 8.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.8,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "supply_disruption": [
+          "inspection"
+        ],
+        "geography": [
+          "norwegian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Yemen gov’t forces advance in Taiz as Houthis claim attack on Saudi Arabia",
+      "url": "https://www.aljazeera.com/news/2026/9/14/yemen-govt-forces-advance-in-taiz-as-houthis-claim-attack-on-saudi-arabia?traffic_source=rss",
+      "snippet": "Yemeni government forces have advanced in western Taiz after successfully repelling a Houthi offensive.",
+      "published_at": "2026-09-14T09:21:56+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
@@ -302,66 +531,297 @@
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 17.9,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.8
+        "raw": 27.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "war"
+          "offensive",
+          "attack"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-09-14T00:00:00+00:00"
+    },
+    {
+      "title": "Venture Global, China Gas ink another 20-year LNG SPA",
+      "url": "https://lngprime.com/americas/venture-global-china-gas-ink-another-20-year-lng-spa/196792/",
+      "snippet": "US LNG exporter Venture Global LNG has signed another 20-year LNG sales and purchase deal with Chinese natural gas operator China Gas.",
+      "published_at": "2026-09-14T09:08:56+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
         ],
         "geography": [
-          "hormuz"
+          "china"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-14T06:03:43+00:00"
+    },
+    {
+      "title": "Brent Oil Passes $108 Per Barrel",
+      "url": "https://www.rigzone.com/news/brent_oil_passes_108_per_barrel-14-sep-2026-184604-article/?rss=true",
+      "snippet": "Brent crude spiked to $108.49 per barrel at the Asian opening, Saxo Bank highlighted.",
+      "published_at": "2026-09-14T09:47:23+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 13.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Poland, Ukraine accuse Russia of ‘escalation’ after strikes near border",
-      "url": "https://www.aljazeera.com/news/2026/9/13/poland-ukraine-accuse-russia-of-escalation-after-strikes-near-border?traffic_source=rss",
-      "snippet": "Western officials including ex-UK PM Boris Johnson were nearby when Russia hit a train at the Poland-Ukraine border.",
-      "published_at": "2026-09-13T21:10:07+00:00",
+      "title": "Adnoc, RWE working on up to two LNG supply deals",
+      "url": "https://lngprime.com/contracts-and-tenders/adnoc-rwe-working-on-up-to-two-lng-supply-deals/196735/",
+      "snippet": "UAE’s ADNOC and German energy firm RWE have signed a letter of intent to progress up to two liquefied natural gas (LNG) sale and purchase agreements.",
+      "published_at": "2026-09-14T04:22:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 0.74
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "german"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Prices Surge as Middle East Attacks Continue and Diplomacy Stumbles",
+      "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Surge-as-Middle-East-Attacks-Continue-and-Diplomacy-Stumbles.html",
+      "snippet": "Oil prices initially jumped by over 3% in early Asian trade on Monday as fears of a major and extended supply disruption were stoked by continued attacks in the Middle East and the postponement of a crunch meeting between Gulf states and Iran. At the time of writing, both benchmarks had fallen back ",
+      "published_at": "2026-09-14T02:39:17+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 30,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.2,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "supply_disruption": [
+          "disruption"
+        ],
+        "geography": [
+          "middle east",
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Brent Hits $108 as Saudi Pipeline Shutdown Deepens Supply Fears",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Hits-108-as-Saudi-Pipeline-Shutdown-Deepens-Supply-Fears.html",
+      "snippet": "Brent crude hit $108 per barrel earlier today, following the latest escalation in the Middle East, before retreating to $107.22 per barrel at the time of writing. West Texas Intermediate was trading at $102.66 per barrel. The surge follows the news of a drone attack on Saudi Arabia’s East-West pipel",
+      "published_at": "2026-09-14T05:37:04+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 15,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 39.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.0,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "escalation",
+          "attack"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "supply_disruption": [
+          "shutdown"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/9/14/yemen-govt-forces-advance-in-taiz-as-houthis-claim-attack-on-saudi-arabia?traffic_source=rss",
+        "title": "Yemen gov’t forces advance in Taiz as Houthis claim attack on Saudi Arabia",
+        "published_at": "2026-09-14T09:21:56+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Iran war live: Houthis claim ‘direct hits’ on Saudi airbase after strikes",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/14/iran-war-live-oman-says-hormuz-talks-with-iran-gulf-states-postponed?traffic_source=rss",
+      "snippet": "No response from Saudi Arabia after Yemen&#039;s rebels say drone-and-missile attack inflicted damage on key military site.",
+      "published_at": "2026-09-14T00:00:00+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 12,
       "tags": [
         "geopolitics"
       ],
       "alert": "low",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
         "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
+        "themes": 32.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.64
+        "raw": 61.5,
+        "recency_multiplier": 0.53
       },
       "matched": {
         "geopolitics": [
-          "escalation"
+          "missile",
+          "drone",
+          "war",
+          "attack"
         ],
-        "geography": [
-          "uk"
+        "unplanned": [
+          "damage"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/9/14/yemen-govt-forces-advance-in-taiz-as-houthis-claim-attack-on-saudi-arabia?traffic_source=rss",
+        "title": "Yemen gov’t forces advance in Taiz as Houthis claim attack on Saudi Arabia",
+        "published_at": "2026-09-14T09:21:56+00:00"
+      },
+      "hidden": true
     }
   ]
 }
