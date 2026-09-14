@@ -1,111 +1,165 @@
 {
-  "generated_at": "2026-09-13T22:08:13.649836+00:00",
+  "generated_at": "2026-09-14T00:09:42.905246+00:00",
   "item_count": 5,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 4
+    "high": 1,
+    "normal": 3
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1138
+        "ms": 1244
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18452
+        "ms": 12702
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 10119
+        "ms": 13610
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 325
+        "ms": 840
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 489
+        "ms": 585
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 168
+        "ms": 174
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 912
+        "ms": 1284
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 166
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 131
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 567
+        "ms": 659
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 202
+        "ms": 237
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 266
+        "ms": 572
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 47
+        "ms": 146
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 94
+        "ms": 180
       }
     ]
   },
   "items": [
+    {
+      "title": "StanChart Warns Oil Is Now Built for Sharper, More Frequent Spikes",
+      "url": "https://oilprice.com/Energy/Oil-Prices/StanChart-Warns-Oil-Is-Now-Built-for-Sharper-More-Frequent-Spikes.html",
+      "snippet": "Oil prices hit nearly $110 per barrel on Thursday for the first time since July, with no end in sight for the Middle East conflict. The IRGC announced on Wednesday that it had attacked and heavily damaged eight oil tankers and two U.S. Navy destroyers in the Strait of Hormuz, in retaliation after th",
+      "published_at": "2026-09-13T23:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 79,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 34.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 95.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "retaliation",
+          "conflict",
+          "attacked",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "barrel"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "attacked"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Trump says he will remove all Irish whiskey tariffs as he ends two-day visit",
       "url": "https://www.bbc.co.uk/news/articles/cx2z79n0eeno?at_medium=RSS&at_campaign=rss",
@@ -117,7 +171,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 54,
+      "score": 48,
       "tags": [
         "geopolitics"
       ],
@@ -133,7 +187,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.1,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -151,6 +205,46 @@
       ]
     },
     {
+      "title": "Iran war live: Oman says Hormuz talks with Iran, Gulf states postponed",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/14/iran-war-live-oman-says-hormuz-talks-with-iran-gulf-states-postponed?traffic_source=rss",
+      "snippet": "Oman says Hormuz talks with Iran and Gulf states are postponed &#039;in the interests of consensus&#039;.",
+      "published_at": "2026-09-14T00:00:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "US Envoy Jared Kushner says Doha attack left Israel ‘globally isolated’",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/09-13-kushner-doha-attack-comments-clip?traffic_source=rss",
       "snippet": "Jared Kushner, says Israel’s failed attack on Hamas leadership in Doha was ‘terrible’ and left the country ‘isolated&#039;",
@@ -161,7 +255,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 42,
       "tags": [
         "geopolitics"
       ],
@@ -176,7 +270,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -184,58 +278,6 @@
         ],
         "unplanned": [
           "failed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukrainian drone evades Russian helicopter fire to strike oil tanker",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/09-12-ukraine-drone-russian-tanker-sv?traffic_source=rss",
-      "snippet": "Ukraine has released footage showing a drone evading fire from a Russian helicopter before striking a Russian oil tanker",
-      "published_at": "2026-09-13T16:11:43+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 46,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.0,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "geopolitics": [
-          "drone"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
-        ],
-        "unplanned": [
-          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -252,11 +294,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -268,7 +310,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -276,57 +318,6 @@
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Further Oil Price Spikes Could Rekindle Recession Fears",
-      "url": "https://oilprice.com/Energy/Oil-Prices/Further-Oil-Price-Spikes-Could-Rekindle-Recession-Fears.html",
-      "snippet": "This week’s oil price surge sharply raised the odds of a Fed interest rate hike next week and re-launched the recession conversation, for the first time since the early weeks of the Iran war. The price spike this week saw Brent Crude prices topping $100 per barrel for the first time since July and t",
-      "published_at": "2026-09-13T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "oil_macro",
-        "power_system",
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 25.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 22.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel",
-          "recession",
-          "interest rate"
-        ],
-        "power_system": [
-          "price spike"
-        ],
-        "geopolitics": [
-          "war"
-        ],
-        "speculative": [
-          "could"
         ]
       },
       "duplicate_count": 0,
