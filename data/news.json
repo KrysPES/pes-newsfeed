@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-09-14T00:09:42.905246+00:00",
-  "item_count": 5,
+  "generated_at": "2026-09-14T04:53:25.469002+00:00",
+  "item_count": 6,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 3
+    "normal": 1
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1244
+        "ms": 1148
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 12702
+        "ms": 20879
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 13610
+        "ms": 17499
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 840
+        "ms": 358
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 585
+        "ms": 329
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 174
+        "ms": 124
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1284
+        "ms": 985
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 131
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 361
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 659
+        "ms": 570
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 237
+        "ms": 76
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 572
+        "ms": 457
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 146
+        "ms": 55
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 180
+        "ms": 151
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 79,
+      "score": 68,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -134,7 +134,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 95.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -161,6 +161,87 @@
       "also_reported_by": []
     },
     {
+      "title": "Oil Prices Surge as Middle East Attacks Continue and Diplomacy Stumbles",
+      "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Surge-as-Middle-East-Attacks-Continue-and-Diplomacy-Stumbles.html",
+      "snippet": "Oil prices initially jumped by over 3% in early Asian trade on Monday as fears of a major and extended supply disruption were stoked by continued attacks in the Middle East and the postponement of a crunch meeting between Gulf states and Iran. At the time of writing, both benchmarks had fallen back ",
+      "published_at": "2026-09-14T02:39:17+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 42,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.2,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "supply_disruption": [
+          "disruption"
+        ],
+        "geography": [
+          "middle east",
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Adnoc, RWE working on up to two LNG supply deals",
+      "url": "https://lngprime.com/contracts-and-tenders/adnoc-rwe-working-on-up-to-two-lng-supply-deals/196735/",
+      "snippet": "UAE’s ADNOC and German energy firm RWE have signed a letter of intent to progress up to two liquefied natural gas (LNG) sale and purchase agreements.",
+      "published_at": "2026-09-14T04:22:00+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "german"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Trump says he will remove all Irish whiskey tariffs as he ends two-day visit",
       "url": "https://www.bbc.co.uk/news/articles/cx2z79n0eeno?at_medium=RSS&at_campaign=rss",
       "snippet": "Whiskey distilled in the Republic of Ireland faces the standard 15% tariff which applies to EU goods entering the US.",
@@ -171,11 +252,11 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": true,
-      "score": 48,
+      "score": 37,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.2,
@@ -187,7 +268,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.1,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.57
       },
       "matched": {
         "geopolitics": [
@@ -199,10 +280,8 @@
           "ireland"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ]
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Iran war live: Oman says Hormuz talks with Iran, Gulf states postponed",
@@ -215,11 +294,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
@@ -231,7 +310,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -239,45 +318,6 @@
         ],
         "geography": [
           "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US Envoy Jared Kushner says Doha attack left Israel ‘globally isolated’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/09-13-kushner-doha-attack-comments-clip?traffic_source=rss",
-      "snippet": "Jared Kushner, says Israel’s failed attack on Hamas leadership in Doha was ‘terrible’ and left the country ‘isolated&#039;",
-      "published_at": "2026-09-13T20:33:28+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.5,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "unplanned": [
-          "failed"
         ]
       },
       "duplicate_count": 0,
@@ -294,7 +334,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -310,7 +350,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.64
       },
       "matched": {
         "geopolitics": [
