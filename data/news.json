@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-15T12:07:47.506044+00:00",
-  "item_count": 14,
+  "generated_at": "2026-09-15T16:54:00.810239+00:00",
+  "item_count": 21,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 7
+    "high": 4,
+    "normal": 6
   },
-  "superseded_count": 0,
+  "superseded_count": 3,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,400 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1465
+        "ms": 1497
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 71447
+        "ms": 11252
       },
       {
         "id": "gie_agsi",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 10349
+        "ms": 3774
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 183
+        "ms": 290
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 118
+        "ms": 577
       },
       {
         "id": "eia_today",
         "ok": true,
-        "count": 15,
+        "count": 16,
         "error": null,
-        "ms": 183
+        "ms": 237
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 49,
+        "count": 51,
         "error": null,
-        "ms": 1337
+        "ms": 1112
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 228
+        "ms": 256
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 668
+        "ms": 571
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 322
+        "ms": 129
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 525
+        "ms": 283
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 29,
+        "count": 25,
         "error": null,
-        "ms": 270
+        "ms": 215
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 61
+        "ms": 191
       }
     ]
   },
   "items": [
+    {
+      "title": "Two sailors missing after tanker attacked in Strait of Hormuz, Oman says",
+      "url": "https://www.bbc.co.uk/news/articles/c3n07ydqdzlvo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Iran says El Gaia caught fire after hitting mines, but the US says the oil tanker was struck by a missile and then a drone.",
+      "published_at": "2026-09-15T16:13:41+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 75,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "lng"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 39.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 85.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "missile",
+          "drone",
+          "attacked",
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "fire",
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Saudi Aramco Cancels European Crude Cargoes as Key Pipeline Stays Shut",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Aramco-Cancels-European-Crude-Cargoes-as-Key-Pipeline-Stays-Shut.html",
+      "snippet": "Saudi Aramco has canceled or delayed crude deliveries to European refiners after the shutdown of the kingdom’s East-West pipeline cut into one of its remaining routes around the Strait of Hormuz. At least three European refiners have had late-September cargoes canceled or pushed as far out as Novemb",
+      "published_at": "2026-09-15T15:34:11+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 75,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "lng",
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 86.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "shutdown"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "delayed"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Libya Threatens Force Majeure as Oil Guards Shut Fields",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Libya-Threatens-Force-Majeure-as-Oil-Guards-Shut-Fields.html",
+      "snippet": "Libya’s National Oil Corporation is threatening to declare force majeure after members of the security force assigned to protect the country’s oil infrastructure shut a pipeline valve and halted production at two fields. Production has stopped completely at the Hamada and Tahara oilfields and at a p",
+      "published_at": "2026-09-15T16:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 69,
+      "tags": [
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 28.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 72.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "halted",
+          "force majeure"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "unplanned": [
+          "force majeure",
+          "halted"
+        ],
+        "urgency": [
+          "halted",
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, FLEMALLE TH1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/fbd8a713-21d9-40c4-b496-61984653e06a/1",
+      "snippet": "Published: 15.09.2026 17:54:33 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
+      "published_at": "2026-09-15T15:54:33+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Satellite image reveals major damage that shut crucial oil pipeline",
+      "url": "https://www.bbc.co.uk/news/articles/c65yw2gq2nrno?at_medium=RSS&at_campaign=rss",
+      "snippet": "Experts tell BBC Verify the pipeline's closure could cut oil supplies by as much as 3.6 million barrels per day.",
+      "published_at": "2026-09-15T14:21:14+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 58,
+      "tags": [
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 55.6,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "barrels"
+        ],
+        "unplanned": [
+          "damage"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Suspected sabotage causes major Netherlands rail disruption",
+      "url": "https://www.bbc.co.uk/news/articles/c8ly49w9g1edo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Trains were cancelled or delayed on Tuesday after objects were found on tracks at multiple locations.",
+      "published_at": "2026-09-15T13:33:16+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 14.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 54.2,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "geopolitics": [
+          "sabotage"
+        ],
+        "supply_disruption": [
+          "disruption"
+        ],
+        "geography": [
+          "netherlands"
+        ],
+        "unplanned": [
+          "delayed",
+          "sabotage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Saudi Oil Pipeline Repairs Could Take Weeks After Drone Attack",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Oil-Pipeline-Repairs-Could-Take-Weeks-After-Drone-Attack.html",
@@ -117,14 +422,14 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 68,
+      "score": 55,
       "tags": [
         "supply_disruption",
         "geopolitics",
         "infrastructure",
         "oil_macro"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -136,7 +441,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 89.0,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.55
       },
       "matched": {
         "supply_disruption": [
@@ -169,56 +474,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Australia's Energy Minister Heads to Saudi Arabia for Pipeline Answers",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Australias-Energy-Minister-Heads-to-Saudi-Arabia-for-Pipeline-Answers.html",
-      "snippet": "Australian Energy Minister Chris Bowen will travel to Saudi Arabia next week to meet with Saudi Energy Minister, Prince Abdulaziz bin Salman, and get the latest updates on the state of operations and oil supply after the Kingdom shut down the East-West pipeline following drone attacks late last week",
-      "published_at": "2026-09-15T11:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 64,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 62.8,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "drone"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "australia"
-        ],
-        "unplanned": [
-          "shut down"
-        ],
-        "urgency": [
-          "shut"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "What Does the Yanbu Outage Mean?",
       "url": "https://www.rigzone.com/news/what_does_the_yanbu_outage_mean-15-sep-2026-184616-article/?rss=true",
       "snippet": "The East-West Pipeline was subjected to multiple attacks and subsequently shut down, a statement posted on the official X page of Saudi Arabia's Ministry of Energy revealed.",
@@ -229,7 +484,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 62,
+      "score": 50,
       "tags": [
         "supply_disruption",
         "infrastructure"
@@ -245,7 +500,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.73
       },
       "matched": {
         "supply_disruption": [
@@ -265,54 +520,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Suspected sabotage causes major Netherlands rail disruption",
-      "url": "https://www.bbc.co.uk/news/articles/c8ly49w9g1edo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Trains were cancelled or delayed on Tuesday after objects were found on tracks at multiple locations.",
-      "published_at": "2026-09-15T11:55:36+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 58,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 14.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "sabotage"
-        ],
-        "supply_disruption": [
-          "disruption"
-        ],
-        "geography": [
-          "netherlands"
-        ],
-        "unplanned": [
-          "delayed",
-          "sabotage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Fluxys: Dunkirk LNG sendout reduced due to strike",
       "url": "https://lngprime.com/europe/fluxys-dunkirk-lng-sendout-reduced-due-to-strike/196872/",
       "snippet": "France’s Dunkirk LNG import terminal has reduced sendout to the grid on Tuesday due to a strike, according to Belgian LNG terminal operator Fluxys.",
@@ -323,7 +530,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 45,
       "tags": [
         "infrastructure",
         "lng"
@@ -340,7 +547,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.6,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.62
       },
       "matched": {
         "infrastructure": [
@@ -361,47 +568,166 @@
       "also_reported_by": []
     },
     {
-      "title": "Internet shutdown crosses 100 days in Pakistan-administered Kashmir",
-      "url": "https://www.aljazeera.com/news/2026/9/15/internet-shutdown-crosses-100-days-in-pakistan-administered-kashmir?traffic_source=rss",
-      "snippet": "Mobile data, broadband services suspended in the territory since protests calling for electoral reform in June.",
-      "published_at": "2026-09-15T05:47:52+00:00",
+      "title": "Canada, the UK and Australia should investigate the WCK attack in Gaza",
+      "url": "https://www.aljazeera.com/opinions/2026/9/15/canada-the-uk-and-australia-should-investigate-the-wck-attack-in-gaza?traffic_source=rss",
+      "snippet": "Israel has made clear it is unwilling to hold to account those responsible for the deaths of seven humanitarian workers.",
+      "published_at": "2026-09-15T15:25:39+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 43,
       "tags": [
-        "supply_disruption",
-        "regulation"
+        "geopolitics"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 20.5,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
+        "themes": 9.0,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.0,
-        "recency_multiplier": 0.72
+        "raw": 34.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "shutdown",
-          "suspended"
+        "geopolitics": [
+          "attack"
         ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-09-15T11:30:00+00:00"
+    },
+    {
+      "title": "Commission launches Energy Regulation Academy to support public officials to implement EU energy measures",
+      "url": "https://energy.ec.europa.eu/news/commission-launches-energy-regulation-academy-support-public-officials-implement-eu-energy-measures-2026-09-15_en",
+      "snippet": "The Commission and the European University Institute are launching the Energy Regulation Academy (EnRA), a new EU-funded initiative designed to help national authorities translate electricity market reforms into practical results across all members.",
+      "published_at": "2026-09-15T15:35:05+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 6.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
         "regulation": [
-          "reform"
+          "regulation"
         ],
-        "unplanned": [
-          "suspended"
+        "geography": [
+          "european",
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Corpus Christi LNG expansion makes facility the second-largest in the United States",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68144",
+      "snippet": "On August 28, 2026, Cheniere Energy, Inc., completed its Corpus Christi Liquefaction Stage 3 Project (CCL Stage 3) in Texas, taking custody and control of the seventh and last liquefied natural gas (LNG) train in the project.",
+      "published_at": "2026-09-15T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.2,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "liquefaction"
         ],
-        "urgency": [
-          "suspended"
+        "geography": [
+          "united states",
+          "corpus christi"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Can The Power Grid Handle AI And Wildfires At The Same Time?",
+      "url": "https://oilprice.com/Energy/Energy-General/Can-The-Power-Grid-Handle-AI-And-Wildfires-At-The-Same-Time.html",
+      "snippet": "Federal regulators handed utilities a deadline this summer that has nothing to do with a storm or a heat wave. On July 16, the Federal Energy Regulatory Commission ordered the North American Electric Reliability Corporation to write mandatory reliability standards for a new class of grid customer: t",
+      "published_at": "2026-09-15T15:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "weather",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "storm",
+          "heat wave"
+        ],
+        "infrastructure": [
+          "grid"
         ]
       },
       "duplicate_count": 0,
@@ -418,13 +744,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 39,
       "tags": [
         "geopolitics",
         "supply_disruption",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -436,7 +762,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 60.8,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.51
       },
       "matched": {
         "geopolitics": [
@@ -456,6 +782,51 @@
       "also_reported_by": []
     },
     {
+      "title": "China launches Global Network for SMR Innovation",
+      "url": "https://www.world-nuclear-news.org/articles/china-launches-global-network-for-smr-innovation",
+      "snippet": "China Atomic Energy Authority has launched the Global Network for SMR Innovation with the aim of supporting small modular reactor technology progress, standards and deployment helping make nuclear energy safer, more affordable and more accessible in support of climate action and sustainable developm",
+      "published_at": "2026-09-15T09:50:21+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "nuclear",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 18.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.5,
+        "recency_multiplier": 0.68
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactor"
+        ],
+        "infrastructure": [
+          "network"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "EIB backs Finnish nuclear-technology company Steady Energy with €40 million financing",
       "url": "https://www.eib.org/en/press/all/2026-294-eib-backs-finnish-nuclear-technology-company-steady-energy-with-eur40-million-financing",
       "snippet": "The European Investment Bank (EIB) is investing up to €40 million in Finnish nuclear-technology company Steady Energy as part of a broader financing package involving institutional, strategic and retail investors.",
@@ -466,11 +837,11 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 33,
       "tags": [
         "nuclear"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 16.1,
@@ -482,7 +853,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.75
       },
       "matched": {
         "nuclear": [
@@ -496,244 +867,178 @@
       "also_reported_by": []
     },
     {
-      "title": "Ukraine's postal workers deliver lifeline under Russian fire",
-      "url": "https://www.bbc.co.uk/news/articles/c33kmred368o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The state post service delivers pensions, medicine and letters to people just miles from the front.",
-      "published_at": "2026-09-15T05:01:46+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.6,
-        "recency_multiplier": 0.68
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Kogas reports lower gas sales in August",
-      "url": "https://lngprime.com/asia/kogas-reports-lower-gas-sales-in-august/196855/",
-      "snippet": "South Korean LNG importer Kogas said its gas sales decreased by 7.4 percent in August compared to last year.",
-      "published_at": "2026-09-15T08:15:42+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.87
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Santos Signs Long-Term LNG Agreements",
-      "url": "https://www.rigzone.com/news/santos_signs_longterm_lng_agreements-15-sep-2026-184615-article/?rss=true",
-      "snippet": "The Australian company signed a preliminary agreement to supply liquefied natural gas to a South Korean industrial customer and another preliminary deal to offtake from the proposed Ksi Lisims LNG in Canada for the Asian market.",
-      "published_at": "2026-09-15T09:31:40+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.5,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "offtake"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "LNG Demand in China and India Could Surge When Prices Normalize",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/LNG-Demand-in-China-and-India-Could-Surge-When-Prices-Normalize.html",
-      "snippet": "Depressed LNG demand in recent months in China and India is the result of spiking LNG prices due to the Middle East conflict, and consumption in the key Asian gas import markets is set to rebound once the war ends and prices normalize, industry executives say. The war in Iran and the closure of the ",
-      "published_at": "2026-09-15T08:30:00+00:00",
+      "title": "Russia and Ukraine Exchange Strikes Despite Trump’s Claim of a Truce",
+      "url": "https://oilprice.com/Geopolitics/Europe/Russia-and-Ukraine-Exchange-Strikes-Despite-Trumps-Claim-of-a-Truce.html",
+      "snippet": "Russia and Ukraine exchanged strikes overnight, hitting a gas station and an oil refinery, according to local authorities and monitoring Telegram channels. The attacks on September 14-15 came just hours after US President Donald Trump said Moscow and Kyiv had agreed not to target each other's energy",
+      "published_at": "2026-09-15T14:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 32,
       "tags": [
         "geopolitics",
-        "lng",
         "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 23.9,
+        "themes": 11.6,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 25.6,
-        "recency_multiplier": 0.88
+        "speculative": 0.0,
+        "raw": 25.4,
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
-          "conflict",
-          "war"
-        ],
-        "lng": [
-          "lng"
+          "truce"
         ],
         "oil_macro": [
-          "demand"
+          "refinery"
         ],
         "geography": [
-          "china",
-          "india",
-          "middle east"
-        ],
-        "speculative": [
-          "could"
+          "russia",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-09-15T12:30:00+00:00"
     },
     {
-      "title": "Wood bags PNG LNG gig",
-      "url": "https://lngprime.com/australia-and-oceania/wood-bags-png-lng-gig/196812/",
-      "snippet": "UK-based consulting and engineering firm Wood has secured a contract for the ExxonMobil-operated PNG LNG project in Papua New Guinea.",
-      "published_at": "2026-09-15T04:18:00+00:00",
+      "title": "Will Russia and Ukraine halt attacks on energy infrastructure?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/15/will-russia-and-ukraine-halt-attacks-on-energy-infrastructure?traffic_source=rss",
+      "snippet": "Will Russia and Ukraine halt attacks on energy infrastructure?",
+      "published_at": "2026-09-15T15:50:51+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
       "score": 31,
       "tags": [
-        "lng"
+        "supply_disruption"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "primary",
-        "geography": 16.0,
+        "authority": 9.5,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.64
+        "raw": 22.9,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "lng"
+        "supply_disruption": [
+          "halt"
         ],
         "geography": [
-          "uk"
+          "russia",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Nato jets down drone that entered Lithuanian airspace",
-      "url": "https://www.bbc.co.uk/news/articles/cjx2zgk7edlzo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The origin of the drone is currently unknown, but authorities say it likely entered Lithuania from neighbouring Belarus, an ally of Russia.",
-      "published_at": "2026-09-15T09:07:35+00:00",
+      "title": "Australia's Energy Minister Heads to Saudi Arabia for Pipeline Answers",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Australias-Energy-Minister-Heads-to-Saudi-Arabia-for-Pipeline-Answers.html",
+      "snippet": "Australian Energy Minister Chris Bowen will travel to Saudi Arabia next week to meet with Saudi Energy Minister, Prince Abdulaziz bin Salman, and get the latest updates on the state of operations and oil supply after the Kingdom shut down the East-West pipeline following drone attacks late last week",
+      "published_at": "2026-09-15T11:30:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 30,
+      "score": 16,
+      "tags": [
+        "geopolitics",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.8,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "geopolitics": [
+          "drone"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "australia"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/opinions/2026/9/15/canada-the-uk-and-australia-should-investigate-the-wck-attack-in-gaza?traffic_source=rss",
+        "title": "Canada, the UK and Australia should investigate the WCK attack in Gaza",
+        "published_at": "2026-09-15T15:25:39+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Drone Strikes Cripple Half of Russia's Top Diesel Refineries",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Drone-Strikes-Cripple-Half-of-Russias-Top-Diesel-Refineries.html",
+      "snippet": "Three of Russia's six largest diesel-producing refineries are now either shut or operating at roughly one-quarter capacity after Ukrainian drone attacks damaged plants that together form the backbone of the country's fuel system. The six refineries—Omsk, Kirishi, Taneco, Volgograd, NORSI and Perm—ac",
+      "published_at": "2026-09-15T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 12,
       "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 10.2,
+        "authority": 8.8,
         "themes": 9.0,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.93
+        "raw": 38.7,
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -741,10 +1046,68 @@
         ],
         "geography": [
           "russia"
+        ],
+        "urgency": [
+          "shut"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Geopolitics/Europe/Russia-and-Ukraine-Exchange-Strikes-Despite-Trumps-Claim-of-a-Truce.html",
+        "title": "Russia and Ukraine Exchange Strikes Despite Trump’s Claim of a Truce",
+        "published_at": "2026-09-15T14:00:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Carney visits Europe: Can Canada seek refuge with the EU amid US trade war?",
+      "url": "https://www.aljazeera.com/news/2026/9/15/carney-visits-europe-can-canada-seek-refuge-with-the-eu-amid-us-trade-war?traffic_source=rss",
+      "snippet": "Prime Minister Mark Carney is seeking a &#039;unique alliance&#039; with Europe as transatlantic relations sour.",
+      "published_at": "2026-09-15T14:49:42+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.5,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "europe",
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/opinions/2026/9/15/canada-the-uk-and-australia-should-investigate-the-wck-attack-in-gaza?traffic_source=rss",
+        "title": "Canada, the UK and Australia should investigate the WCK attack in Gaza",
+        "published_at": "2026-09-15T15:25:39+00:00"
+      },
+      "hidden": true
     }
   ]
 }
