@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-16T14:56:09.505363+00:00",
-  "item_count": 18,
+  "generated_at": "2026-09-16T18:40:10.827333+00:00",
+  "item_count": 19,
   "alert_counts": {
     "critical": 0,
-    "high": 2,
-    "normal": 7
+    "high": 1,
+    "normal": 11
   },
-  "superseded_count": 2,
+  "superseded_count": 1,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,236 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1318
+        "ms": 1469
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 14721
+        "ms": 14443
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3237
+        "ms": 14686
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 136
+        "ms": 187
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 321
+        "ms": 101
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 174
+        "ms": 124
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 50,
+        "count": 51,
         "error": null,
-        "ms": 771
+        "ms": 1533
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 180
+        "ms": 218
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 525
+        "ms": 699
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 94
+        "ms": 346
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 413
+        "ms": 667
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 26,
+        "count": 25,
         "error": null,
-        "ms": 72
+        "ms": 105
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 133
+        "ms": 116
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, FLEMALLE TH1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/e644eb44-5a02-4710-b364-2cbf9e5f3db3/1",
+      "snippet": "Published: 16.09.2026 20:00:59 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; ",
+      "published_at": "2026-09-16T18:00:59+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "delay"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-16T17:57:29+00:00"
+    },
+    {
+      "title": "Saudi Oil Crisis Is About to Hit Europe",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Oil-Crisis-Is-About-to-Hit-Europe.html",
+      "snippet": "Saudi Arabia’s oil supply crisis is rapidly becoming Europe’s problem. The September 10 attacks on Saudi Arabia’s East-West Pipeline struck the system at multiple locations and damaged at least one pumping station, forcing Riyadh to shut down the Kingdom’s critical alternative to the Strait of Hormu",
+      "published_at": "2026-09-16T18:32:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 63,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 61.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "europe"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Export Constraints Curb Kazakhstan’s Ability to Offset the Global Oil Shortage",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Export-Constraints-Curb-Kazakhstans-Ability-to-Offset-the-Global-Oil-Shortage.html",
+      "snippet": "Kazakhstan, which has major oil reserves, is not in a position to help offset a looming energy crisis by expanding production, industry analysts say. With the Strait of Hormuz blocked, Russia sanctioned and Saudi Arabia’s East-West pipeline knocked out of action by Iranian drones, experts are predic",
+      "published_at": "2026-09-16T18:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 60,
+      "tags": [
+        "geopolitics",
+        "infrastructure",
+        "carbon"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 31.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctioned",
+          "strait of hormuz"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "carbon": [
+          "offset"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Saudi Arabia Pivots to Spot Oil Sales After Key Pipeline Goes Offline",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Pivots-to-Spot-Oil-Sales-After-Key-Pipeline-Goes-Offline.html",
@@ -117,14 +258,14 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 69,
+      "score": 58,
       "tags": [
         "geopolitics",
         "oil_macro",
         "supply_disruption",
         "infrastructure"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -136,7 +277,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 87.1,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.62
       },
       "matched": {
         "geopolitics": [
@@ -167,43 +308,55 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, FLEMALLE TH1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/cffa536c-52ca-4282-9bd4-f4e410ff1a93/1",
-      "snippet": "Published: 16.09.2026 15:20:15 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
-      "published_at": "2026-09-16T13:20:15+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
+      "title": "Russia Extends Diesel Export Ban Through October",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Extends-Diesel-Export-Ban-Through-October.html",
+      "snippet": "Russia will extend its ban on diesel exports for all fuel producers to October 31, Vedomosti reported Tuesday, citing delayed refinery maintenance and the need to rebuild fuel reserves before winter. The ban, expanded in July from traders and small refineries to cover all producers, had been due to ",
+      "published_at": "2026-09-16T15:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
       "has_magnitude": false,
-      "score": 66,
+      "score": 55,
       "tags": [
-        "supply_disruption"
+        "regulation",
+        "geopolitics",
+        "supply_disruption",
+        "oil_macro"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 20.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 1.0
+        "raw": 54.4,
+        "recency_multiplier": 0.91
       },
       "matched": {
+        "regulation": [
+          "ban on"
+        ],
+        "geopolitics": [
+          "export ban"
+        ],
         "supply_disruption": [
-          "unplanned"
+          "maintenance"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "russia"
         ],
         "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
+          "delayed"
         ]
       },
       "duplicate_count": 0,
@@ -220,7 +373,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 65,
+      "score": 55,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -239,7 +392,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 85.7,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.58
       },
       "matched": {
         "geopolitics": [
@@ -269,6 +422,50 @@
       "also_reported_by": []
     },
     {
+      "title": "Angry Dutch farmers blamed for railway sabotage: What happened?",
+      "url": "https://www.aljazeera.com/news/2026/9/16/angry-farmers-blamed-for-dutch-railways-sabotage-what-happened?traffic_source=rss",
+      "snippet": "Farmers in the Netherlands have taken action in the past, protesting against the government’s nitrogen policy.",
+      "published_at": "2026-09-16T16:35:28+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 54,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 48.5,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "sabotage"
+        ],
+        "geography": [
+          "netherlands",
+          "dutch"
+        ],
+        "unplanned": [
+          "sabotage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "FSRU docks in Stade as LNG terminal prepares to feed gas into German grid from November",
       "url": "https://www.offshore-energy.biz/fsru-docks-in-stade-as-lng-terminal-prepares-to-feed-gas-into-german-grid-from-november/",
       "snippet": "A 294-meter floating storage and regasification unit (FSRU) has arrived at the new liquefied natural gas (LNG) terminal in Stade, marking the start of commissioning preparations and bringing the facility a step closer to operations, with gas feed-in to Germany’s grid expected from November. The post",
@@ -279,7 +476,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 63,
+      "score": 52,
       "tags": [
         "lng",
         "infrastructure",
@@ -297,7 +494,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.9,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.73
       },
       "matched": {
         "lng": [
@@ -322,8 +519,100 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-09-16T06:19:38+00:00"
+      "update_count": 1,
+      "thread_started_at": "2026-09-16T07:20:58+00:00"
+    },
+    {
+      "title": "TechnipFMC picks up multimillion-dollar subsea scope for Petronas’ deepwater project",
+      "url": "https://www.offshore-energy.biz/technipfmc-picks-up-multimillion-dollar-subsea-scope-for-petronas-deepwater-project/",
+      "snippet": "UK-headquartered energy technology provider TechnipFMC has been tasked with an integrated engineering, procurement, construction, and installation (iEPCI) assignment for the development of a long-delayed deepwater project off the coast of Sabah, Malaysia. The post TechnipFMC picks up multimillion-do",
+      "published_at": "2026-09-16T14:29:00+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 12.4,
+        "themes": 4.5,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 52.9,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "oil_macro": [
+          "dollar"
+        ],
+        "geography": [
+          "uk"
+        ],
+        "unplanned": [
+          "delayed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Equinor Targets 15 Million Tons of LNG as Qatar Exports Stay Blocked",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Equinor-Targets-15-Million-Tons-of-LNG-as-Qatar-Exports-Stay-Blocked.html",
+      "snippet": "Equinor plans to expand its global LNG portfolio to between 10 million and 15 million tons a year in the early 2030s, targeting European and Asian buyers left short on supply by the Strait of Hormuz blockade, Reuters reported Wednesday. The company expects to announce a second Asian supply agreement",
+      "published_at": "2026-09-16T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 30.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 42.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "plans to"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "U.S. Oil Inventories Edge Lower as Fuel Demand Softens",
@@ -336,7 +625,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 50,
+      "score": 45,
       "tags": [
         "oil_macro",
         "gas_storage"
@@ -353,7 +642,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.86
       },
       "matched": {
         "oil_macro": [
@@ -375,14 +664,14 @@
       "title": "Cameco in offtake agreement for US laser enrichment plant",
       "url": "https://www.world-nuclear-news.org/articles/cameco-in-offtake-agreement-for-us-laser-enrichment-plant",
       "snippet": "Canadian company Cameco Corporation is to buy all of the future production of GLE's planned Paducah Laser Enrichment Facility in Kentucky under a newly announced exclusive offtake agreement.",
-      "published_at": "2026-09-16T13:24:20+00:00",
+      "published_at": "2026-09-16T16:24:20+00:00",
       "type": "news",
       "source": "world_nuclear_news",
       "source_name": "World Nuclear News",
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 44,
       "tags": [
         "lng"
       ],
@@ -397,7 +686,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.98
       },
       "matched": {
         "lng": [
@@ -411,40 +700,80 @@
       "also_reported_by": []
     },
     {
-      "title": "Supporting Great Britain’s electricity network supply chains",
-      "url": "https://www.ofgem.gov.uk/blog/supporting-great-britains-electricity-network-supply-chains",
-      "snippet": "Our blog on the work we have been doing to regulate supply chains.",
-      "published_at": "2026-09-16T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
+      "title": "Energy Shock Puts Bank of England Under Pressure to Raise Rates",
+      "url": "https://oilprice.com/Energy/Energy-General/Energy-Shock-Puts-Bank-of-England-Under-Pressure-to-Raise-Rates.html",
+      "snippet": "The Bank of England is facing mounting pressure to raise interest rates on Thursday amid a global bond market rout fuelled by concerns over runaway government borrowing and sticky inflation. Investors told Threadneedle Street it was “essential” to rein in prices before the energy shock triggered by ",
+      "published_at": "2026-09-16T16:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 40,
       "tags": [
-        "infrastructure"
+        "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
-        "authority": 16.1,
-        "themes": 6.7,
+        "authority": 8.8,
+        "themes": 9.0,
         "geo_band": "primary",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 38.8,
-        "recency_multiplier": 0.93
+        "raw": 33.7,
+        "recency_multiplier": 0.95
       },
       "matched": {
-        "infrastructure": [
-          "network"
+        "oil_macro": [
+          "inflation",
+          "rates"
         ],
         "geography": [
-          "britain"
+          "england"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Continental Strikes Venezuela Oil Deal with PDVSA",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Continental-Strikes-Venezuela-Oil-Deal-with-PDVSA.html",
+      "snippet": "Continental Resources signed a memorandum of understanding with Venezuela's state oil company PDVSA on Wednesday to operate and develop the Ayacucho 2 Block in the Orinoco Belt, the company announced, with an estimated 30 billion barrels of resource in place across roughly 126,000 acres in Anzoátegu",
+      "published_at": "2026-09-16T18:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 4.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "barrels"
+        ],
+        "urgency": [
+          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -461,13 +790,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 38,
       "tags": [
         "geopolitics",
         "supply_disruption",
         "gas_storage"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -479,7 +808,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -511,12 +840,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 37,
       "tags": [
         "geopolitics",
         "regulation"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -528,7 +857,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -546,6 +875,46 @@
       "also_reported_by": []
     },
     {
+      "title": "Supporting Great Britain’s electricity network supply chains",
+      "url": "https://www.ofgem.gov.uk/blog/supporting-great-britains-electricity-network-supply-chains",
+      "snippet": "Our blog on the work we have been doing to regulate supply chains.",
+      "published_at": "2026-09-16T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 6.7,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.8,
+        "recency_multiplier": 0.7
+      },
+      "matched": {
+        "infrastructure": [
+          "network"
+        ],
+        "geography": [
+          "britain"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Buru Says Rafael Gas Project Holds Over 15 MMboe 2P Reserves",
       "url": "https://www.rigzone.com/news/buru_says_rafael_gas_project_holds_over_15_mmboe_2p_reserves-16-sep-2026-184628-article/?rss=true",
       "snippet": "The initial development of the Rafael field in Western Australia's onshore Canning Basin has been assessed to contain 15.25 million barrels of oil equivalent proven and probable reserves, with potential for 65.74 billion cubic feet of sales gas.",
@@ -556,7 +925,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 38,
+      "score": 30,
       "tags": [
         "oil_macro"
       ],
@@ -572,7 +941,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.69
       },
       "matched": {
         "oil_macro": [
@@ -580,251 +949,6 @@
         ],
         "geography": [
           "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "South Africa’s Transnet seeks operator for East London LNG terminal",
-      "url": "https://lngprime.com/contracts-and-tenders/south-africas-transnet-seeks-operator-for-east-london-lng-terminal/196928/",
-      "snippet": "South Africa’s Transnet National Ports Authority, part of Transnet, is seeking an operator to finance, build, and operate a small- to medium-scale LNG import facility at the Port of East London.",
-      "published_at": "2026-09-16T08:55:42+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 24.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.0,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "China Could Curb Fuel Exports as Diesel and Gasoline Stocks Sink",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Could-Curb-Fuel-Exports-as-Diesel-and-Gasoline-Stocks-Sink.html",
-      "snippet": "China’s diesel fuel and gasoline inventories are declining, which may eventually lead to the imposition of export curbs, Bloomberg has reported, citing recent fuel inventory data. Gasoline inventories at state-owned energy majors were down by 2.9% last week to their lowest level since 2022, accordin",
-      "published_at": "2026-09-16T05:45:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 35,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 20.2,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 45.9,
-        "recency_multiplier": 0.57
-      },
-      "matched": {
-        "gas_storage": [
-          "stocks",
-          "inventory",
-          "inventories"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Germany Weighs Market Incentives to Boost Record Low Gas Storage Level",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Germany-Weighs-Market-Incentives-to-Boost-Record-Low-Gas-Storage-Level.html",
-      "snippet": "Germany is considering expanding a key market incentive to encourage traders to raise gas storage levels ahead of the winter, a government source told Reuters on Wednesday as German gas sites are barely half full at present. Europe’s biggest economy has the world’s fourth-largest natural gas storage",
-      "published_at": "2026-09-16T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 19.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 26.0,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "gas_storage": [
-          "storage",
-          "storage levels"
-        ],
-        "geography": [
-          "europe",
-          "germany",
-          "german"
-        ],
-        "speculative": [
-          "considering",
-          "weighs"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Taiz camps overflow with Yemenis fleeing fighting after Houthi offensive",
-      "url": "https://www.aljazeera.com/features/2026/9/16/taiz-camps-overflow-with-yemenis-fleeing-fighting-after-houthi-offensive?traffic_source=rss",
-      "snippet": "The recent flare-up in the Yemen conflict has seen tens of thousands of people displaced in Taiz governorate.",
-      "published_at": "2026-09-16T12:10:55+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.94
-      },
-      "matched": {
-        "geopolitics": [
-          "offensive",
-          "conflict"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Fore-accommodation LNG carrier with four Wind Challenger sails clears LR design appraisal",
-      "url": "https://www.offshore-energy.biz/fore-accommodation-lng-carrier-with-four-wind-challenger-sails-clears-lr-design-appraisal/",
-      "snippet": "A new liquefied natural gas (LNG) carrier design that moves the accommodation block and bridge to the bow to make room for four wind-assisted sails has cleared a key technical milestone, with Lloyd’s Register, a maritime classification society, affirming technical readiness of the HD Hyundai Heavy I",
-      "published_at": "2026-09-16T11:26:00+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.0,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Commission launches Energy Regulation Academy to support public officials to implement EU energy measures",
-      "url": "https://energy.ec.europa.eu/news/commission-launches-energy-regulation-academy-support-public-officials-implement-eu-energy-measures-2026-09-15_en",
-      "snippet": "The Commission and the European University Institute are launching the Energy Regulation Academy (EnRA), a new EU-funded initiative designed to help national authorities translate electricity market reforms into practical results across all members.",
-      "published_at": "2026-09-16T08:11:15+00:00",
-      "type": "regulation",
-      "source": "ec_energy",
-      "source_name": "European Commission energy",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 6.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.2,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "regulation": [
-          "regulation"
-        ],
-        "geography": [
-          "european",
-          "eu"
         ]
       },
       "duplicate_count": 0,
@@ -841,7 +965,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 10,
       "tags": [
         "lng",
         "infrastructure"
@@ -858,7 +982,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.2,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.49
       },
       "matched": {
         "lng": [
@@ -871,56 +995,6 @@
         ],
         "geography": [
           "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.offshore-energy.biz/fsru-docks-in-stade-as-lng-terminal-prepares-to-feed-gas-into-german-grid-from-november/",
-        "title": "FSRU docks in Stade as LNG terminal prepares to feed gas into German grid from November",
-        "published_at": "2026-09-16T12:36:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Finland’s Gasgrid offers Inkoo FSRU capacity",
-      "url": "https://lngprime.com/europe/finlands-gasgrid-offers-inkoo-fsru-capacity/196903/",
-      "snippet": "A unit of Finland’s Gasgrid is offering regasification capacity for 2028-2032 at the FSRU-based LNG import terminal in Inkoo.",
-      "published_at": "2026-09-16T06:19:38+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 11,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 33.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.5,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "regasification",
-          "fsru"
-        ],
-        "infrastructure": [
-          "terminal",
-          "import terminal"
         ]
       },
       "duplicate_count": 0,
