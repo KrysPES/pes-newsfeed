@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-16T10:07:59.710134+00:00",
-  "item_count": 13,
+  "generated_at": "2026-09-16T14:56:09.505363+00:00",
+  "item_count": 18,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 4
+    "high": 2,
+    "normal": 7
   },
-  "superseded_count": 3,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,198 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1637
+        "ms": 1318
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 44604
+        "ms": 14721
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4729
+        "ms": 3237
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 584
+        "ms": 136
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 787
+        "ms": 321
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 218
+        "ms": 174
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 1331
+        "ms": 771
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 262
+        "ms": 180
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 648
+        "ms": 525
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 294
+        "ms": 94
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 665
+        "ms": 413
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 143
+        "ms": 72
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 116
+        "ms": 133
       }
     ]
   },
   "items": [
+    {
+      "title": "Saudi Arabia Pivots to Spot Oil Sales After Key Pipeline Goes Offline",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Pivots-to-Spot-Oil-Sales-After-Key-Pipeline-Goes-Offline.html",
+      "snippet": "So far this week, Saudi Arabia has sold as many as 20 million barrels of crude oil in the spot market to be picked up from just outside the Strait of Hormuz, after the Kingdom was forced to shut down the key onshore pipeline that helps it bypass the chokepoint, unnamed traders with knowledge of the ",
+      "published_at": "2026-09-16T10:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 69,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 87.1,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "supply_disruption": [
+          "offline"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, FLEMALLE TH1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/cffa536c-52ca-4282-9bd4-f4e410ff1a93/1",
+      "snippet": "Published: 16.09.2026 15:20:15 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
+      "published_at": "2026-09-16T13:20:15+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Japanese Refiners Rush for Oman Crude After Saudi Pipeline Shutdown",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Japanese-Refiners-Rush-for-Oman-Crude-After-Saudi-Pipeline-Shutdown.html",
@@ -117,14 +220,14 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 75,
+      "score": 65,
       "tags": [
         "geopolitics",
         "supply_disruption",
         "infrastructure",
         "oil_macro"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -136,7 +239,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 85.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -163,57 +266,324 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-15T16:13:41+00:00"
+      "also_reported_by": []
     },
     {
-      "title": "DET: FSRU returns to Stade",
-      "url": "https://lngprime.com/europe/det-fsru-returns-to-stade/196912/",
-      "snippet": "The 2021-built 174,000-cbm FSRU Energos Force has returned to Germany’s Stade as state-owned LNG terminal operator DET prepares to launch its fourth FSRU-based LNG import facility in Germany.",
-      "published_at": "2026-09-16T07:20:58+00:00",
+      "title": "FSRU docks in Stade as LNG terminal prepares to feed gas into German grid from November",
+      "url": "https://www.offshore-energy.biz/fsru-docks-in-stade-as-lng-terminal-prepares-to-feed-gas-into-german-grid-from-november/",
+      "snippet": "A 294-meter floating storage and regasification unit (FSRU) has arrived at the new liquefied natural gas (LNG) terminal in Stade, marking the start of commissioning preparations and bringing the facility a step closer to operations, with gas feed-in to Germany’s grid expected from November. The post",
+      "published_at": "2026-09-16T12:36:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 63,
       "tags": [
         "lng",
-        "infrastructure"
+        "infrastructure",
+        "gas_storage"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 30.0,
+        "authority": 12.4,
+        "themes": 40.4,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 53.2,
-        "recency_multiplier": 0.94
+        "raw": 62.9,
+        "recency_multiplier": 0.97
       },
       "matched": {
         "lng": [
           "lng",
+          "regasification",
+          "feed gas",
           "fsru",
           "lng terminal"
         ],
         "infrastructure": [
-          "terminal"
+          "terminal",
+          "grid",
+          "commissioning"
+        ],
+        "gas_storage": [
+          "storage"
         ],
         "geography": [
-          "germany"
+          "germany",
+          "german"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 1,
+      "update_count": 2,
       "thread_started_at": "2026-09-16T06:19:38+00:00"
+    },
+    {
+      "title": "U.S. Oil Inventories Edge Lower as Fuel Demand Softens",
+      "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-Edge-Lower-as-Fuel-Demand-Softens.html",
+      "snippet": "Crude oil inventories in the United States saw a decrease of 600,000 barrels during the week ending September 11, according to new data from the U.S. Energy Information Administration (EIA) released on Wednesday. The decrease brings commercial stockpiles to 423.4 million barrels, according to govern",
+      "published_at": "2026-09-16T14:41:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 50,
+      "tags": [
+        "oil_macro",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 43.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "barrels",
+          "demand"
+        ],
+        "gas_storage": [
+          "inventories"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Cameco in offtake agreement for US laser enrichment plant",
+      "url": "https://www.world-nuclear-news.org/articles/cameco-in-offtake-agreement-for-us-laser-enrichment-plant",
+      "snippet": "Canadian company Cameco Corporation is to buy all of the future production of GLE's planned Paducah Laser Enrichment Facility in Kentucky under a newly announced exclusive offtake agreement.",
+      "published_at": "2026-09-16T13:24:20+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "offtake"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Supporting Great Britain’s electricity network supply chains",
+      "url": "https://www.ofgem.gov.uk/blog/supporting-great-britains-electricity-network-supply-chains",
+      "snippet": "Our blog on the work we have been doing to regulate supply chains.",
+      "published_at": "2026-09-16T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 6.7,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.8,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "infrastructure": [
+          "network"
+        ],
+        "geography": [
+          "britain"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "TTF Gas Hits $92.95 as Gulf Tensions Weigh on Energy Markets",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Hits-9295-as-Gulf-Tensions-Weigh-on-Energy-Markets.html",
+      "snippet": "Europe’s benchmark natural gas prices held above the 80-euro mark early on Wednesday, staying close to 2022 highs, as low gas volumes in storage sites fuel concerns about winter supplies amid continued disruption and widening conflict in the Middle East. The front-month price at the Dutch Title Tran",
+      "published_at": "2026-09-16T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict"
+        ],
+        "supply_disruption": [
+          "disruption"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "europe",
+          "ttf",
+          "dutch"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Sweeping Russia-Iran Sanctions Bill Advances Toward House Vote",
+      "url": "https://oilprice.com/Geopolitics/Europe/Sweeping-Russia-Iran-Sanctions-Bill-Advances-Toward-House-Vote.html",
+      "snippet": "The US House Rules Committee has advanced legislation imposing tougher sanctions on Russia and Iran, clearing a key procedural hurdle for a possible House vote later this week but exposing deep Democratic concerns over the measure's expansion of presidential tariff authority. The committee voted 7-3",
+      "published_at": "2026-09-16T14:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics",
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "tariff"
+        ],
+        "regulation": [
+          "legislation"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Buru Says Rafael Gas Project Holds Over 15 MMboe 2P Reserves",
+      "url": "https://www.rigzone.com/news/buru_says_rafael_gas_project_holds_over_15_mmboe_2p_reserves-16-sep-2026-184628-article/?rss=true",
+      "snippet": "The initial development of the Rafael field in Western Australia's onshore Canning Basin has been assessed to contain 15.25 million barrels of oil equivalent proven and probable reserves, with potential for 65.74 billion cubic feet of sales gas.",
+      "published_at": "2026-09-16T11:50:49+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 38,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 0.92
+      },
+      "matched": {
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "australia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "South Africa’s Transnet seeks operator for East London LNG terminal",
@@ -226,12 +596,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 36,
       "tags": [
         "lng",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -242,7 +612,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.73
       },
       "matched": {
         "lng": [
@@ -254,9 +624,7 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-16T01:53:27+00:00"
+      "also_reported_by": []
     },
     {
       "title": "China Could Curb Fuel Exports as Diesel and Gasoline Stocks Sink",
@@ -269,11 +637,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 46,
+      "score": 35,
       "tags": [
         "gas_storage"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -285,7 +653,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 45.9,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.57
       },
       "matched": {
         "gas_storage": [
@@ -301,56 +669,64 @@
       "also_reported_by": []
     },
     {
-      "title": "Former Kosovo President Hashim Thaci convicted of war crimes",
-      "url": "https://www.aljazeera.com/news/2026/9/16/former-kosovo-president-hashim-thaci-convicted-of-war-crimes?traffic_source=rss",
-      "snippet": "This is a breaking news story.",
-      "published_at": "2026-09-16T09:46:24+00:00",
+      "title": "Germany Weighs Market Incentives to Boost Record Low Gas Storage Level",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Germany-Weighs-Market-Incentives-to-Boost-Record-Low-Gas-Storage-Level.html",
+      "snippet": "Germany is considering expanding a key market incentive to encourage traders to raise gas storage levels ahead of the winter, a government source told Reuters on Wednesday as German gas sites are barely half full at present. Europe’s biggest economy has the world’s fourth-largest natural gas storage",
+      "published_at": "2026-09-16T13:30:00+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 34,
       "tags": [
-        "geopolitics"
+        "gas_storage"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geography": 0.0,
+        "authority": 8.8,
+        "themes": 19.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
+        "speculative": -12.0,
+        "raw": 26.0,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "war"
+        "gas_storage": [
+          "storage",
+          "storage levels"
         ],
-        "urgency": [
-          "breaking"
+        "geography": [
+          "europe",
+          "germany",
+          "german"
+        ],
+        "speculative": [
+          "considering",
+          "weighs"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "At least five killed in Russian drone strike near Ukraine front line",
-      "url": "https://www.aljazeera.com/news/2026/9/16/at-least-five-killed-in-russian-drone-strike-near-ukraine-front-line?traffic_source=rss",
-      "snippet": "At least seven people also injured in attack near Nikopol in southeastern Ukraine, Dnipropetrovsk governor says.",
-      "published_at": "2026-09-16T09:32:52+00:00",
+      "title": "Taiz camps overflow with Yemenis fleeing fighting after Houthi offensive",
+      "url": "https://www.aljazeera.com/features/2026/9/16/taiz-camps-overflow-with-yemenis-fleeing-fighting-after-houthi-offensive?traffic_source=rss",
+      "snippet": "The recent flare-up in the Yemen conflict has seen tens of thousands of people displaced in Taiz governorate.",
+      "published_at": "2026-09-16T12:10:55+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -359,23 +735,55 @@
       "why": {
         "authority": 9.5,
         "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 1.0
+        "raw": 27.4,
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
-          "drone",
-          "attack"
-        ],
-        "geography": [
-          "russian",
-          "ukraine"
+          "offensive",
+          "conflict"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Fore-accommodation LNG carrier with four Wind Challenger sails clears LR design appraisal",
+      "url": "https://www.offshore-energy.biz/fore-accommodation-lng-carrier-with-four-wind-challenger-sails-clears-lr-design-appraisal/",
+      "snippet": "A new liquefied natural gas (LNG) carrier design that moves the accommodation block and bridge to the bow to make room for four wind-assisted sails has cleared a key technical milestone, with Lloyd’s Register, a maritime classification society, affirming technical readiness of the HD Hyundai Heavy I",
+      "published_at": "2026-09-16T11:26:00+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.0,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
         ]
       },
       "duplicate_count": 0,
@@ -392,7 +800,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 30,
       "tags": [
         "regulation"
       ],
@@ -408,7 +816,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.69
       },
       "matched": {
         "regulation": [
@@ -423,196 +831,55 @@
       "also_reported_by": []
     },
     {
-      "title": "No Trump Truce Seen as Kyiv Hits Volga Refinery",
-      "url": "https://www.rigzone.com/news/wire/no_trump_truce_seen_as_kyiv_hits_volga_refinery-16-sep-2026-184625-article/?rss=true",
-      "snippet": "Ukraine said it hit the Syzran refinery in Russia's Volga region, underlining that the two nations have not signed up to the energy truce claimed by U.S. President Donald Trump.",
-      "published_at": "2026-09-16T08:22:21+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 11.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.6,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "truce"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hormuz Risk Opens $40-Plus Price Gap Between Crude Grades",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Hormuz-Risk-Opens-40-Plus-Price-Gap-Between-Crude-Grades.html",
-      "snippet": "Back in late June, after the United States and Iran agreed to cease hostilities in the Persian Gulf for 60 days, oil prices took a dive. Two months later, Brent is trading at over $107 per barrel, and WTI is moving closer to $103, as a deep chasm opens up between the price for oil stuck in the Gulf ",
-      "published_at": "2026-09-15T22:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 35.2,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 60.0,
-        "recency_multiplier": 0.46
-      },
-      "matched": {
-        "geopolitics": [
-          "hostilities",
-          "persian gulf"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent",
-          "wti",
-          "barrel"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "China’s ENN inks LNG cooperation pact with Trafigura",
-      "url": "https://lngprime.com/asia/chinas-enn-inks-lng-cooperation-pact-with-trafigura/196943/",
-      "snippet": "Chinese independent gas distributor ENN has signed a memorandum of understanding with commodity trader Trafigura to explore cooperation in liquefied natural gas (LNG).",
-      "published_at": "2026-09-16T09:55:00+00:00",
+      "title": "DET: FSRU returns to Stade",
+      "url": "https://lngprime.com/europe/det-fsru-returns-to-stade/196912/",
+      "snippet": "The 2021-built 174,000-cbm FSRU Energos Force has returned to Germany’s Stade as state-owned LNG terminal operator DET prepares to launch its fourth FSRU-based LNG import facility in Germany.",
+      "published_at": "2026-09-16T07:20:58+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 13,
       "tags": [
-        "lng"
+        "lng",
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 30.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 1.0
+        "raw": 53.2,
+        "recency_multiplier": 0.65
       },
       "matched": {
         "lng": [
-          "lng"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudi Arabia cancels oil to Europe over East-West pipeline blast",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/16/saudi-arabia-cancels-oil-to-europe-over-east-west-pipeline-blast?traffic_source=rss",
-      "snippet": "Saudi Arabia has cancelled some oil deliveries to Europe after attacks shut down its export pipeline to the Red Sea.",
-      "published_at": "2026-09-16T01:53:27+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 17,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 24.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 85.5,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "geopolitics": [
-          "red sea"
-        ],
-        "supply_disruption": [
-          "blast"
+          "lng",
+          "fsru",
+          "lng terminal"
         ],
         "infrastructure": [
-          "pipeline"
+          "terminal"
         ],
         "geography": [
-          "red sea"
-        ],
-        "unplanned": [
-          "shut down"
-        ],
-        "urgency": [
-          "shut"
+          "germany"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://lngprime.com/contracts-and-tenders/south-africas-transnet-seeks-operator-for-east-london-lng-terminal/196928/",
-        "title": "South Africa’s Transnet seeks operator for East London LNG terminal",
-        "published_at": "2026-09-16T08:55:42+00:00"
+        "url": "https://www.offshore-energy.biz/fsru-docks-in-stade-as-lng-terminal-prepares-to-feed-gas-into-german-grid-from-november/",
+        "title": "FSRU docks in Stade as LNG terminal prepares to feed gas into German grid from November",
+        "published_at": "2026-09-16T12:36:00+00:00"
       },
       "hidden": true
     },
@@ -627,7 +894,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 11,
       "tags": [
         "lng",
         "infrastructure"
@@ -643,7 +910,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.5,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.6
       },
       "matched": {
         "lng": [
@@ -660,72 +927,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://lngprime.com/europe/det-fsru-returns-to-stade/196912/",
-        "title": "DET: FSRU returns to Stade",
-        "published_at": "2026-09-16T07:20:58+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Two sailors missing after tanker attacked in Strait of Hormuz, Oman says",
-      "url": "https://www.bbc.co.uk/news/articles/c3n07ydqdzlvo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Iran says El Gaia caught fire after hitting mines, but the US says the oil tanker was struck by a missile and then a drone.",
-      "published_at": "2026-09-15T16:13:41+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 39.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 85.8,
-        "recency_multiplier": 0.29
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "drone",
-          "attacked",
-          "strait of hormuz"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "unplanned": [
-          "fire",
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Japanese-Refiners-Rush-for-Oman-Crude-After-Saudi-Pipeline-Shutdown.html",
-        "title": "Japanese Refiners Rush for Oman Crude After Saudi Pipeline Shutdown",
-        "published_at": "2026-09-16T09:30:00+00:00"
+        "url": "https://www.offshore-energy.biz/fsru-docks-in-stade-as-lng-terminal-prepares-to-feed-gas-into-german-grid-from-november/",
+        "title": "FSRU docks in Stade as LNG terminal prepares to feed gas into German grid from November",
+        "published_at": "2026-09-16T12:36:00+00:00"
       },
       "hidden": true
     }
