@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-16T18:40:10.827333+00:00",
-  "item_count": 19,
+  "generated_at": "2026-09-16T21:43:50.623870+00:00",
+  "item_count": 16,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 11
+    "high": 0,
+    "normal": 8
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1469
+        "ms": 1656
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 14443
+        "ms": 30883
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 14686
+        "ms": 3813
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 187
+        "ms": 718
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 101
+        "ms": 2261
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 124
+        "ms": 238
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 51,
         "error": null,
-        "ms": 1533
+        "ms": 1322
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 218
+        "ms": 559
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 699
+        "ms": 638
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 346
+        "ms": 302
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 667
+        "ms": 632
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 25,
+        "count": 27,
         "error": null,
-        "ms": 105
+        "ms": 149
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 116
+        "ms": 193
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 61,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "supply_disruption": [
@@ -162,7 +162,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 63,
+      "score": 60,
       "tags": [
         "infrastructure"
       ],
@@ -178,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 61.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.91
       },
       "matched": {
         "infrastructure": [
@@ -208,7 +208,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 55,
       "tags": [
         "geopolitics",
         "infrastructure",
@@ -226,7 +226,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 56.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
@@ -248,66 +248,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Saudi Arabia Pivots to Spot Oil Sales After Key Pipeline Goes Offline",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Pivots-to-Spot-Oil-Sales-After-Key-Pipeline-Goes-Offline.html",
-      "snippet": "So far this week, Saudi Arabia has sold as many as 20 million barrels of crude oil in the spot market to be picked up from just outside the Strait of Hormuz, after the Kingdom was forced to shut down the key onshore pipeline that helps it bypass the chokepoint, unnamed traders with knowledge of the ",
-      "published_at": "2026-09-16T10:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 58,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 26.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 87.1,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "supply_disruption": [
-          "offline"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "unplanned": [
-          "shut down"
-        ],
-        "urgency": [
-          "shut"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Russia Extends Diesel Export Ban Through October",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Extends-Diesel-Export-Ban-Through-October.html",
       "snippet": "Russia will extend its ban on diesel exports for all fuel producers to October 31, Vedomosti reported Tuesday, citing delayed refinery maintenance and the need to rebuild fuel reserves before winter. The ban, expanded in July from traders and small refineries to cover all producers, had been due to ",
@@ -318,7 +258,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 47,
       "tags": [
         "regulation",
         "geopolitics",
@@ -337,7 +277,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.4,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.72
       },
       "matched": {
         "regulation": [
@@ -363,65 +303,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Japanese Refiners Rush for Oman Crude After Saudi Pipeline Shutdown",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Japanese-Refiners-Rush-for-Oman-Crude-After-Saudi-Pipeline-Shutdown.html",
-      "snippet": "Some refiners in Japan this week rushed to buy Oman’s crude for earlier loadings after Saudi Arabia shut down its key pipeline bypassing the Strait of Hormuz, traders with knowledge of the purchases told Bloomberg on Wednesday. Late last week, Saudi Arabia was forced to temporarily shut down the Eas",
-      "published_at": "2026-09-16T09:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 55,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "infrastructure",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 24.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 85.7,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "supply_disruption": [
-          "shutdown"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "unplanned": [
-          "shut down"
-        ],
-        "urgency": [
-          "shut"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Angry Dutch farmers blamed for railway sabotage: What happened?",
       "url": "https://www.aljazeera.com/news/2026/9/16/angry-farmers-blamed-for-dutch-railways-sabotage-what-happened?traffic_source=rss",
       "snippet": "Farmers in the Netherlands have taken action in the past, protesting against the government’s nitrogen policy.",
@@ -432,7 +313,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 46,
       "tags": [
         "geopolitics"
       ],
@@ -448,7 +329,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.5,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -476,7 +357,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 44,
       "tags": [
         "lng",
         "infrastructure",
@@ -494,7 +375,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.9,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.58
       },
       "matched": {
         "lng": [
@@ -518,51 +399,6 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-16T07:20:58+00:00"
-    },
-    {
-      "title": "TechnipFMC picks up multimillion-dollar subsea scope for Petronas’ deepwater project",
-      "url": "https://www.offshore-energy.biz/technipfmc-picks-up-multimillion-dollar-subsea-scope-for-petronas-deepwater-project/",
-      "snippet": "UK-headquartered energy technology provider TechnipFMC has been tasked with an integrated engineering, procurement, construction, and installation (iEPCI) assignment for the development of a long-delayed deepwater project off the coast of Sabah, Malaysia. The post TechnipFMC picks up multimillion-do",
-      "published_at": "2026-09-16T14:29:00+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 51,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 12.4,
-        "themes": 4.5,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 52.9,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "oil_macro": [
-          "dollar"
-        ],
-        "geography": [
-          "uk"
-        ],
-        "unplanned": [
-          "delayed"
-        ]
-      },
-      "duplicate_count": 0,
       "also_reported_by": []
     },
     {
@@ -576,7 +412,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 43,
       "tags": [
         "geopolitics",
         "lng"
@@ -593,7 +429,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 42.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -615,6 +451,86 @@
       "also_reported_by": []
     },
     {
+      "title": "TechnipFMC picks up multimillion-dollar subsea scope for Petronas’ deepwater project",
+      "url": "https://www.offshore-energy.biz/technipfmc-picks-up-multimillion-dollar-subsea-scope-for-petronas-deepwater-project/",
+      "snippet": "UK-headquartered energy technology provider TechnipFMC has been tasked with an integrated engineering, procurement, construction, and installation (iEPCI) assignment for the development of a long-delayed deepwater project off the coast of Sabah, Malaysia. The post TechnipFMC picks up multimillion-do",
+      "published_at": "2026-09-16T14:29:00+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 12.4,
+        "themes": 4.5,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 52.9,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "oil_macro": [
+          "dollar"
+        ],
+        "geography": [
+          "uk"
+        ],
+        "unplanned": [
+          "delayed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Shale Oil Now Makes Up 72% of Argentina's Crude Output, Data Shows",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Shale-Oil-Now-Makes-Up-72-of-Argentinas-Crude-Output-Data-Shows.html",
+      "snippet": "Argentina's controversial right-wing president, Javier Milei, slashed inflation with a brutal dose of economic austerity, but this came at a steep social cost. The cost of living is spiraling higher, fueling household debt, loan delinquencies, and economic hardship. Industrial output, since Milei to",
+      "published_at": "2026-09-16T21:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 38,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 29.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "inflation"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "U.S. Oil Inventories Edge Lower as Fuel Demand Softens",
       "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-Edge-Lower-as-Fuel-Demand-Softens.html",
       "snippet": "Crude oil inventories in the United States saw a decrease of 600,000 barrels during the week ending September 11, according to new data from the U.S. Energy Information Administration (EIA) released on Wednesday. The decrease brings commercial stockpiles to 423.4 million barrels, according to govern",
@@ -625,12 +541,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 45,
+      "score": 38,
       "tags": [
         "oil_macro",
         "gas_storage"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -642,7 +558,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.68
       },
       "matched": {
         "oil_macro": [
@@ -671,11 +587,11 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 37,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.9,
@@ -686,11 +602,86 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.1,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.77
       },
       "matched": {
         "lng": [
           "offtake"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US interest rates raised for first time in three years",
+      "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The Federal Reserve unanimously voted to increase interest rates to 3.75%-4% from 3.5%-3.75% on Wednesday.",
+      "published_at": "2026-09-16T21:02:11+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 35,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 4.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 26.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "rates"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Continental Strikes Venezuela Oil Deal with PDVSA",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Continental-Strikes-Venezuela-Oil-Deal-with-PDVSA.html",
+      "snippet": "Continental Resources signed a memorandum of understanding with Venezuela's state oil company PDVSA on Wednesday to operate and develop the Ayacucho 2 Block in the Orinoco Belt, the company announced, with an estimated 30 billion barrels of resource in place across roughly 126,000 acres in Anzoátegu",
+      "published_at": "2026-09-16T18:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 4.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.2,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "oil_macro": [
+          "barrels"
         ],
         "urgency": [
           "announced"
@@ -710,7 +701,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 34,
       "tags": [
         "oil_macro"
       ],
@@ -726,7 +717,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.7,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.75
       },
       "matched": {
         "oil_macro": [
@@ -735,45 +726,6 @@
         ],
         "geography": [
           "england"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Continental Strikes Venezuela Oil Deal with PDVSA",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Continental-Strikes-Venezuela-Oil-Deal-with-PDVSA.html",
-      "snippet": "Continental Resources signed a memorandum of understanding with Venezuela's state oil company PDVSA on Wednesday to operate and develop the Ayacucho 2 Block in the Orinoco Belt, the company announced, with an estimated 30 billion barrels of resource in place across roughly 126,000 acres in Anzoátegu",
-      "published_at": "2026-09-16T18:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "oil_macro": [
-          "barrels"
-        ],
-        "urgency": [
-          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -790,7 +742,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 32,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -808,7 +760,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.1,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -840,7 +792,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 31,
       "tags": [
         "geopolitics",
         "regulation"
@@ -857,7 +809,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.4,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.64
       },
       "matched": {
         "geopolitics": [
@@ -873,139 +825,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Supporting Great Britain’s electricity network supply chains",
-      "url": "https://www.ofgem.gov.uk/blog/supporting-great-britains-electricity-network-supply-chains",
-      "snippet": "Our blog on the work we have been doing to regulate supply chains.",
-      "published_at": "2026-09-16T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 6.7,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.8,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "infrastructure": [
-          "network"
-        ],
-        "geography": [
-          "britain"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Buru Says Rafael Gas Project Holds Over 15 MMboe 2P Reserves",
-      "url": "https://www.rigzone.com/news/buru_says_rafael_gas_project_holds_over_15_mmboe_2p_reserves-16-sep-2026-184628-article/?rss=true",
-      "snippet": "The initial development of the Rafael field in Western Australia's onshore Canning Basin has been assessed to contain 15.25 million barrels of oil equivalent proven and probable reserves, with potential for 65.74 billion cubic feet of sales gas.",
-      "published_at": "2026-09-16T11:50:49+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 4.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "oil_macro": [
-          "barrels"
-        ],
-        "geography": [
-          "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "DET: FSRU returns to Stade",
-      "url": "https://lngprime.com/europe/det-fsru-returns-to-stade/196912/",
-      "snippet": "The 2021-built 174,000-cbm FSRU Energos Force has returned to Germany’s Stade as state-owned LNG terminal operator DET prepares to launch its fourth FSRU-based LNG import facility in Germany.",
-      "published_at": "2026-09-16T07:20:58+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 30.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.2,
-        "recency_multiplier": 0.49
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "fsru",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal"
-        ],
-        "geography": [
-          "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.offshore-energy.biz/fsru-docks-in-stade-as-lng-terminal-prepares-to-feed-gas-into-german-grid-from-november/",
-        "title": "FSRU docks in Stade as LNG terminal prepares to feed gas into German grid from November",
-        "published_at": "2026-09-16T12:36:00+00:00"
-      },
-      "hidden": true
     }
   ]
 }
