@@ -1,111 +1,200 @@
 {
-  "generated_at": "2026-09-17T02:29:00.720809+00:00",
-  "item_count": 13,
+  "generated_at": "2026-09-17T07:56:54.702504+00:00",
+  "item_count": 14,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 6
+    "high": 1,
+    "normal": 4
   },
-  "superseded_count": 3,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1043
+        "ms": 1413
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 20058
+        "ms": 13918
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2348
+        "ms": 2869
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 658
+        "ms": 265
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 245
+        "ms": 504
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 78
+        "ms": 75
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 51,
         "error": null,
-        "ms": 943
+        "ms": 1004
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 58
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 183
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 493
+        "ms": 631
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 149
+        "ms": 170
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 509
+        "ms": 406
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 63
+        "ms": 161
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 55
+        "ms": 196
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
+      "url": "https://umm.nordpoolgroup.com/#/messages/c5463e96-da3c-45cd-ba0c-481994e9aaaf/2",
+      "snippet": "Published: 17.09.2026 09:51:44 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-09-17T07:51:44+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-16T17:57:29+00:00"
+    },
+    {
+      "title": "Exmar seals Ivory Coast FSRU deal",
+      "url": "https://lngprime.com/africa/exmar-seals-ivory-coast-fsru-deal/196981/",
+      "snippet": "Belgian shipowner Exmar has entered into agreements with CI-Energies and Petroci for a 10-year lease of a floating storage and regasification unit in the Port of Abidjan, Cote d’Ivoire (Ivory Coast).",
+      "published_at": "2026-09-17T06:23:25+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "lng",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 18.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "regasification",
+          "fsru"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "belgian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Reports: US, Houthis make secret deal over Yemen war",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/17/reports-us-houthis-make-secret-deal-over-yemen-war?traffic_source=rss",
@@ -117,7 +206,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 45,
       "tags": [
         "geopolitics"
       ],
@@ -133,7 +222,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -142,6 +231,50 @@
         ],
         "geography": [
           "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Soaring LNG Prices Push Asian Demand Toward Second Annual Decline",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Soaring-LNG-Prices-Push-Asian-Demand-Toward-Second-Annual-Decline.html",
+      "snippet": "Demand for liquefied natural gas in Asia is set to decline this year by between 3% and 10% on higher prices, according to analysts cited by Reuters. This would be the second annual decline in Asian LNG demand, with the northeastern parts of the continent accounting for most of it, the publication re",
+      "published_at": "2026-09-17T06:40:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 44,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 10.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 35.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "asia"
         ]
       },
       "duplicate_count": 0,
@@ -158,7 +291,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 42,
       "tags": [
         "geopolitics"
       ],
@@ -174,7 +307,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
@@ -192,6 +325,122 @@
       "thread_started_at": "2026-09-16T23:14:46+00:00"
     },
     {
+      "title": "Singapore LNG bunkering volumes down in August",
+      "url": "https://lngprime.com/asia/singapore-lng-bunkering-volumes-down-in-august/196971/",
+      "snippet": "Singapore’s monthly LNG bunkering sales fell in August compared with the same month last year, but volumes rose 23.5 percent year-on-year during January-August this year, according to the Maritime and Port Authority of Singapore.",
+      "published_at": "2026-09-17T05:30:53+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 40,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Argentinian judge orders suspension of Falklands oil project",
+      "url": "https://www.aljazeera.com/news/2026/9/17/argentinian-judge-orders-suspension-of-falklands-oil-project?traffic_source=rss",
+      "snippet": "The symbolic move comes as Argentina escalates its claim over the British-administered territory.",
+      "published_at": "2026-09-17T04:52:07+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.9,
+        "recency_multiplier": 0.92
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspension"
+        ],
+        "geography": [
+          "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "India’s BPCL inks LNG pact with Eni",
+      "url": "https://lngprime.com/asia/indias-bpcl-inks-lng-pact-with-eni/196976/",
+      "snippet": "India’s state-run Bharat Petroleum Corp (BPCL) has signed an agreement with Italy's Eni as it works to further diversify its liquefied natural gas (LNG) supply sources.",
+      "published_at": "2026-09-17T06:08:35+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "italy"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Tanker Rates Smash $1 Million a Day as Oil Shipping Crisis Deepens",
       "url": "https://oilprice.com/Energy/Crude-Oil/Tanker-Rates-Smash-1-Million-a-Day-as-Oil-Shipping-Crisis-Deepens.html",
       "snippet": "The daily rate for commissioning a tanker topped $1 million for the first time in history amid a tightening supply of vessels to carry crude oil and fuels whose owners are willing to dare the Strait of Hormuz. The squeeze is adding extra costs to the price of oil for physical delivery, just as tanke",
@@ -202,14 +451,14 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 38,
       "tags": [
         "geopolitics",
         "oil_macro",
         "lng",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -221,7 +470,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.7,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.59
       },
       "matched": {
         "geopolitics": [
@@ -246,49 +495,46 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, FLEMALLE TH1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/e644eb44-5a02-4710-b364-2cbf9e5f3db3/1",
-      "snippet": "Published: 16.09.2026 20:00:59 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; ",
-      "published_at": "2026-09-16T18:00:59+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
+      "title": "Oil Prices Slide as Saudi Arabia Reroutes Crude via Oman",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Slide-as-Saudi-Arabia-Reroutes-Crude-via-Oman.html",
+      "snippet": "Crude oil prices, which dipped yesterday, extended their losses earlier today following reports that Saudi Arabia will be exporting more oil through Oman while the East-West pipeline is repaired. At the time of writing, Brent crude was trading at $105.89 per barrel, with West Texas Intermediate at $",
+      "published_at": "2026-09-17T05:20:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 33,
       "tags": [
-        "supply_disruption"
+        "oil_macro",
+        "infrastructure"
       ],
-      "alert": "normal",
-      "nature": "unplanned",
+      "alert": "low",
+      "nature": "",
       "why": {
-        "authority": 21.9,
-        "themes": 8.4,
+        "authority": 8.8,
+        "themes": 17.5,
         "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.61
+        "raw": 26.2,
+        "recency_multiplier": 0.95
       },
       "matched": {
-        "supply_disruption": [
-          "unplanned"
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
         ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "delay"
-        ],
-        "urgency": [
-          "unplanned"
+        "infrastructure": [
+          "pipeline"
         ]
       },
-      "duplicate_count": 2,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-16T17:57:29+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Oil Above $100 Pushes U.S. Fuel Prices to New Records",
@@ -301,13 +547,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 33,
       "tags": [
         "geopolitics",
         "gas_storage",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -319,7 +565,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.2,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.54
       },
       "matched": {
         "geopolitics": [
@@ -351,13 +597,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 30,
       "tags": [
         "geopolitics",
         "infrastructure",
         "carbon"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -369,7 +615,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 56.2,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.4
       },
       "matched": {
         "geopolitics": [
@@ -391,176 +637,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Congress passes sweeping US sanctions bill targeting Russia",
-      "url": "https://www.aljazeera.com/news/2026/9/17/congress-passes-sweeping-us-sanctions-bill-targeting-russia?traffic_source=rss",
-      "snippet": "The bill marks the first time in more than two years the US Congress has passed legislation supporting Ukraine",
-      "published_at": "2026-09-17T00:55:13+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "geopolitics",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 12.7,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "regulation": [
-          "legislation"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-16T15:30:00+00:00"
-    },
-    {
-      "title": "Iran war live: Trump says US nearing end of war, claims Tehran direct talks",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/9/17/iran-war-live-trump-says-us-nearing-end-of-war-claims-tehran-direct-talks?traffic_source=rss",
-      "snippet": "President Trump says the US is nearing the end of the conflict with Iran and claims direct talks with Tehran.",
-      "published_at": "2026-09-17T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Equinor Targets 15 Million Tons of LNG as Qatar Exports Stay Blocked",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Equinor-Targets-15-Million-Tons-of-LNG-as-Qatar-Exports-Stay-Blocked.html",
-      "snippet": "Equinor plans to expand its global LNG portfolio to between 10 million and 15 million tons a year in the early 2030s, targeting European and Asian buyers left short on supply by the Strait of Hormuz blockade, Reuters reported Wednesday. The company expects to announce a second Asian supply agreement",
-      "published_at": "2026-09-16T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 30.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 42.7,
-        "recency_multiplier": 0.56
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade",
-          "strait of hormuz"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "speculative": [
-          "plans to"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Shale Oil Now Makes Up 72% of Argentina's Crude Output, Data Shows",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Shale-Oil-Now-Makes-Up-72-of-Argentinas-Crude-Output-Data-Shows.html",
-      "snippet": "Argentina's controversial right-wing president, Javier Milei, slashed inflation with a brutal dose of economic austerity, but this came at a steep social cost. The cost of living is spiraling higher, fueling household debt, loan delinquencies, and economic hardship. Industrial output, since Milei to",
-      "published_at": "2026-09-16T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 29.7,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "inflation"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "StanChart Sees Higher Oil Floor as Hormuz Crisis Spreads to Saudi Export Routes",
       "url": "https://oilprice.com/Energy/Crude-Oil/StanChart-Sees-Higher-Oil-Floor-as-Hormuz-Crisis-Spreads-to-Saudi-Export-Routes.html",
       "snippet": "Oil prices pulled back but remained elevated ahead of a critical Fed decision on Wednesday, with market expectations shifting towards a prolonged US-Iran conflict. Brent crude for November delivery fell 2.88% at 2:18 p.m. ET, to trade at $105.6 per barrel, while WTI crude for October delivery declin",
@@ -571,7 +647,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 18,
+      "score": 14,
       "tags": [
         "oil_macro",
         "geopolitics"
@@ -588,7 +664,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 58.1,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.63
       },
       "matched": {
         "oil_macro": [
@@ -626,7 +702,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 16,
+      "score": 12,
       "tags": [
         "geopolitics"
       ],
@@ -642,7 +718,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
@@ -661,68 +737,6 @@
         "url": "https://www.aljazeera.com/video/newsfeed/2026/9/17/us-centcom-tells-al-jazeera-hormuz-blockade-highly?traffic_source=rss",
         "title": "US CENTCOM tells Al Jazeera Hormuz blockade ‘highly effective’",
         "published_at": "2026-09-17T00:32:54+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Russia Extends Diesel Export Ban Through October",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Extends-Diesel-Export-Ban-Through-October.html",
-      "snippet": "Russia will extend its ban on diesel exports for all fuel producers to October 31, Vedomosti reported Tuesday, citing delayed refinery maintenance and the need to rebuild fuel reserves before winter. The ban, expanded in July from traders and small refineries to cover all producers, had been due to ",
-      "published_at": "2026-09-16T15:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 11,
-      "tags": [
-        "regulation",
-        "geopolitics",
-        "supply_disruption",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 20.7,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.4,
-        "recency_multiplier": 0.5
-      },
-      "matched": {
-        "regulation": [
-          "ban on"
-        ],
-        "geopolitics": [
-          "export ban"
-        ],
-        "supply_disruption": [
-          "maintenance"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "russia"
-        ],
-        "unplanned": [
-          "delayed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/9/17/congress-passes-sweeping-us-sanctions-bill-targeting-russia?traffic_source=rss",
-        "title": "Congress passes sweeping US sanctions bill targeting Russia",
-        "published_at": "2026-09-17T00:55:13+00:00"
       },
       "hidden": true
     }
