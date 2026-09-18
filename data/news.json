@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-18T20:13:59.357839+00:00",
-  "item_count": 18,
+  "generated_at": "2026-09-18T22:36:48.889834+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 8
+    "high": 1,
+    "normal": 6
   },
   "superseded_count": 0,
   "sources": {
@@ -17,95 +17,190 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1754
+        "ms": 1355
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 31522
+        "ms": 18836
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 20583
+        "ms": 25783
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 1101
+        "ms": 1250
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 563
+        "ms": 298
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 190
+        "ms": 410
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1192
+        "ms": 1352
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 276
+        "ms": 264
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 791
+        "ms": 778
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 383
+        "ms": 289
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 622
+        "ms": 681
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 26,
         "error": null,
-        "ms": 140
+        "ms": 450
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 139
+        "ms": 261
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
+      "url": "https://umm.nordpoolgroup.com/#/messages/9195a4f0-2c04-406e-ac55-362b5e7e2ce3/2",
+      "snippet": "Published: 18.09.2026 23:31:53 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
+      "published_at": "2026-09-18T21:31:53+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-18T10:39:30+00:00"
+    },
+    {
+      "title": "Macron Calls for Another Emergency Oil Release as Europe Loses Supply",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Macron-Calls-for-Another-Emergency-Oil-Release-as-Europe-Loses-Supply.html",
+      "snippet": "French President Emmanuel Macron is calling the G7 back to the table to discuss another release of emergency oil stocks as Europe loses Saudi crude deliveries and diesel prices push deeper into record territory. Macron said Friday that he will convene G7 countries in the coming weeks to coordinate s",
+      "published_at": "2026-09-18T21:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "gas_storage",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 64.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "gas_storage": [
+          "stocks"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "europe",
+          "french"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Saudi Arabia Cuts Europe Off From October Crude as Gulf Exports Surge",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Cuts-Europe-Off-From-October-Crude-as-Gulf-Exports-Surge.html",
@@ -117,7 +212,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 62,
+      "score": 55,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -135,7 +230,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 63.1,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -160,6 +255,47 @@
       "also_reported_by": []
     },
     {
+      "title": "Oil Falls as Supply Fears Ease",
+      "url": "https://www.rigzone.com/news/wire/oil_falls_as_supply_fears_ease-18-sep-2026-184657-article/?rss=true",
+      "snippet": "Oil fell for a third session as easing Saudi supply concerns outweighed lingering risks around the Strait of Hormuz.",
+      "published_at": "2026-09-18T20:23:56+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.6,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "The Oil Market’s Backup Plan Is Breaking Down",
       "url": "https://oilprice.com/Energy/Energy-General/The-Oil-Markets-Backup-Plan-Is-Breaking-Down.html",
       "snippet": "For decades, the biggest geopolitical risk hanging over the oil market has been the Strait of Hormuz. Before the conflict in Iran began in late February, roughly one-fifth of the world’s petroleum liquids moved through the narrow waterway separating Iran from Oman, making it the most important oil c",
@@ -170,7 +306,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 47,
       "tags": [
         "geopolitics"
       ],
@@ -186,7 +322,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.4,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
@@ -205,6 +341,46 @@
       "also_reported_by": []
     },
     {
+      "title": "Watch: Trump says ban on some news outlets is 'because they're fake news'",
+      "url": "https://www.bbc.co.uk/news/videos/cm93e7p1wkndo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The US president on Friday announced he is \"immediately\" banning CNN, MS NOW and Politico from the White House.",
+      "published_at": "2026-09-18T20:35:03+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 11.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "ban on"
+        ],
+        "urgency": [
+          "immediately",
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "LNG Tankers Push Through Hormuz Again as Qatar, UAE Fight Supply Crunch",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/LNG-Tankers-Push-Through-Hormuz-Again-as-Qatar-UAE-Fight-Supply-Crunch.html",
       "snippet": "At least two LNG carriers have transited the Strait of Hormuz so far this week, while two others were detected to have engaged in ship-to-ship transfers outside the Strait offshore Oman, tanker-tracking and satellite data compiled by Bloomberg showed on Friday. The uptick in LNG cargoes managing to ",
@@ -215,7 +391,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 43,
       "tags": [
         "lng",
         "geopolitics"
@@ -232,7 +408,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 56.6,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.62
       },
       "matched": {
         "lng": [
@@ -242,61 +418,6 @@
         ],
         "geopolitics": [
           "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudi Oil Exports Rebound at Hormuz While East-West Pipeline Remains Offline",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Oil-Exports-Rebound-at-Hormuz-While-East-West-Pipeline-Remains-Offline.html",
-      "snippet": "Saudi Arabia has sold as many as 60 million barrels of crude oil from the Persian Gulf port of Ras Tanura for September and October loadings outside the Strait of Hormuz via ship-to-ship transfers, trade sources told Reuters on Friday. Saudi oil giant Aramco has offered buyers of the crude from the ",
-      "published_at": "2026-09-18T12:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 48,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 41.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.4,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz",
-          "persian gulf"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "supply_disruption": [
-          "offline"
-        ],
-        "infrastructure": [
-          "pipeline"
         ],
         "geography": [
           "strait of hormuz",
@@ -317,11 +438,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 41,
       "tags": [
         "gas_storage"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -333,7 +454,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.8,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.67
       },
       "matched": {
         "gas_storage": [
@@ -345,55 +466,8 @@
           "uk"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Offshore Energy"
-      ],
-      "first_seen_at": "2026-09-18T11:25:00+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, DK1, Skærbækværket - SKV3",
-      "url": "https://umm.nordpoolgroup.com/#/messages/26c9df8d-64ee-463b-9f08-36cd0d8da52c/1",
-      "snippet": "Published: 18.09.2026 12:39:30 Publisher: &#xd8;rsted Bioenergy Thermal Power A/S Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Turbine failure Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity F",
-      "published_at": "2026-09-18T10:39:30+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.56
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-18T06:19:31+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Nigerian forces fire at protesters rallying over deaths of detained miners",
@@ -406,12 +480,12 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 38,
       "tags": [
         "geopolitics",
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -422,7 +496,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
@@ -449,14 +523,14 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 37,
       "tags": [
         "geopolitics",
         "oil_macro",
         "supply_disruption",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -468,7 +542,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.1,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.71
       },
       "matched": {
         "geopolitics": [
@@ -492,6 +566,43 @@
       "also_reported_by": []
     },
     {
+      "title": "Mexico’s Sheinbaum says she spoke with Trump as trade negotiations continue",
+      "url": "https://www.aljazeera.com/news/2026/9/18/mexicos-sheinbaum-says-she-spoke-with-trump-as-trade-negotiations-continue?traffic_source=rss",
+      "snippet": "Mexican president says she is seeking a decrease in tariffs as both countries seek new bilateral trade deal.",
+      "published_at": "2026-09-18T18:46:51+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 0.87
+      },
+      "matched": {
+        "geopolitics": [
+          "tariffs",
+          "negotiations"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Russia’s drones threaten Kyiv-bound Western officials as war effort stalls",
       "url": "https://www.aljazeera.com/news/2026/9/18/russia-targets-ukraines-peaceful-borders?traffic_source=rss",
       "snippet": "Russia strikes Ukraine’s border crossings with Poland and Moldova as its offensives peter out in the east.",
@@ -502,7 +613,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
@@ -518,7 +629,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -542,7 +653,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 32,
       "tags": [
         "lng",
         "infrastructure"
@@ -558,7 +669,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.3,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.56
       },
       "matched": {
         "lng": [
@@ -568,349 +679,6 @@
         "infrastructure": [
           "terminal",
           "receiving terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Mexico’s Sheinbaum says she spoke with Trump as trade negotiations continue",
-      "url": "https://www.aljazeera.com/news/2026/9/18/mexicos-sheinbaum-says-she-spoke-with-trump-as-trade-negotiations-continue?traffic_source=rss",
-      "snippet": "Mexican president says she is seeking a decrease in tariffs as both countries seek new bilateral trade deal.",
-      "published_at": "2026-09-18T18:46:51+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "tariffs",
-          "negotiations"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Worley helps propel $21B Asian LNG and CCS project forward with FEEDs now out of the way",
-      "url": "https://www.offshore-energy.biz/worley-helps-propel-21b-asian-lng-and-ccs-project-forward-with-feeds-now-out-of-the-way/",
-      "snippet": "Australia’s engineering firm Worley has delivered front-end engineering designs (FEEDs) for two critical infrastructure packages related to a multibillion-dollar liquefied natural gas (LNG) and carbon capture and storage (CCS) development project in Indonesia’s Masela block, operated by Inpex Masela",
-      "published_at": "2026-09-18T11:05:02+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "gas_storage",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 24.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.7,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "geopolitics": [
-          "critical infrastructure"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "oil_macro": [
-          "dollar"
-        ],
-        "geography": [
-          "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Post construction review of the Greenlink interconnector to Ireland",
-      "url": "https://www.ofgem.gov.uk/consultation/post-construction-review-greenlink-interconnector-ireland",
-      "snippet": "Our minded-to position on Greenlink Interconnector Limited's Post Construction Review, in particular our views on the proposed values for the Post Construction Adjustment terms and proposed final cap and floor levels for the project.",
-      "published_at": "2026-09-18T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "infrastructure",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 10.4,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.5,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "infrastructure": [
-          "interconnector"
-        ],
-        "regulation": [
-          "cap"
-        ],
-        "geography": [
-          "ireland"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Eurostat: 54% of EU’s electricity came from renewables in Q2 2026",
-      "url": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20260918-1",
-      "snippet": "In the second quarter of 2026, 54.1% of the electricity generated in the EU came from renewable energy sources, a slight decrease from 54.3% in the same period of 2025.",
-      "published_at": "2026-09-18T09:42:21+00:00",
-      "type": "regulation",
-      "source": "ec_energy",
-      "source_name": "European Commission energy",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 5.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 43.7,
-        "recency_multiplier": 0.52
-      },
-      "matched": {
-        "power_system": [
-          "renewables"
-        ],
-        "geography": [
-          "eu"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hormuz Sees More LNG Traffic",
-      "url": "https://www.rigzone.com/news/wire/hormuz_sees_more_lng_traffic-18-sep-2026-184648-article/?rss=true",
-      "snippet": "At least two liquefied natural gas shipments transited the Strait of Hormuz this week as producers look for ways to increase flows to a market struggling with a lack of supply and surging prices.",
-      "published_at": "2026-09-18T08:37:51+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 21.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 48.0,
-        "recency_multiplier": 0.48
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "India’s LNG imports almost flat in August",
-      "url": "https://lngprime.com/asia/indias-lng-imports-almost-flat-in-august/197061/",
-      "snippet": "India’s liquefied natural gas (LNG) imports were almost flat in August, down just 0.11 percent from the same month last year, according to preliminary data from the oil ministry’s Petroleum Planning and Analysis Cell.",
-      "published_at": "2026-09-18T07:40:26+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 20.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 50.9,
-        "recency_multiplier": 0.44
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng imports"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russia’s $118 Billion Arctic Oil Bet Pushes Ahead Despite Sanctions",
-      "url": "https://oilprice.com/Energy/Energy-General/Russias-118-Billion-Arctic-Oil-Bet-Pushes-Ahead-Despite-Sanctions.html",
-      "snippet": "For the Kremlin, the giant Vostok Oil project in the frigid Far North is crucial to two goals: bolstering Russia’s presence in the Arctic and keeping production of the key export commodity going as reserves in more accessible parts of the country are depleted. It’s also a case study of how a huge, s",
-      "published_at": "2026-09-18T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.8,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "gas_storage": [
-          "depleted"
-        ],
-        "geography": [
-          "russia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "BP to sell Browse LNG stake to Osaka Gas",
-      "url": "https://lngprime.com/australia-and-oceania/bp-to-sell-browse-lng-stake-to-osaka-gas/197082/",
-      "snippet": "UK-based energy giant BP has agreed to sell a 5 percent stake in the planned Woodside-led Browse LNG project in Australia, which would deliver natural gas from the Calliance, Torosa, and Brecknock fields to the existing Karratha gas plant, to Japan's Osaka Gas.",
-      "published_at": "2026-09-18T07:59:58+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 48.4,
-        "recency_multiplier": 0.45
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "uk"
         ]
       },
       "duplicate_count": 0,
