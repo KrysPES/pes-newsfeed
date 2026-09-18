@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-18T05:57:59.034731+00:00",
-  "item_count": 7,
+  "generated_at": "2026-09-18T10:52:50.937864+00:00",
+  "item_count": 21,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 5
+    "high": 1,
+    "normal": 10
   },
   "superseded_count": 1,
   "sources": {
@@ -17,95 +17,436 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1130
+        "ms": 1729
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 23369
+        "ms": 97183
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2457
+        "ms": 3159
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 3,
+        "count": 4,
         "error": null,
-        "ms": 329
+        "ms": 213
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 249
+        "ms": 374
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 131
+        "ms": 202
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 860
+        "ms": 1334
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 166
+        "ms": 208
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 491
+        "ms": 710
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 199
+        "ms": 365
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 272
+        "ms": 605
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 41,
+        "count": 28,
         "error": null,
-        "ms": 66
+        "ms": 52
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 145
+        "ms": 76
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, DK1, Skærbækværket - SKV3",
+      "url": "https://umm.nordpoolgroup.com/#/messages/26c9df8d-64ee-463b-9f08-36cd0d8da52c/1",
+      "snippet": "Published: 18.09.2026 12:39:30 Publisher: &#xd8;rsted Bioenergy Thermal Power A/S Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Turbine failure Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity F",
+      "published_at": "2026-09-18T10:39:30+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-18T06:19:31+00:00"
+    },
+    {
+      "title": "Hormuz Tanker Traffic Slumps as Saudi Arabia Scrambles for New Oil Routes",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Slumps-as-Saudi-Arabia-Scrambles-for-New-Oil-Routes.html",
+      "snippet": "Only four commodity vessels were detected to have moved inbound or out of the Strait of Hormuz on Thursday, shipping data showed early on Friday, while oil shipping options out of the Middle East became fewer with the closure of the Saudi pipeline to the Red Sea port of Yanbu. Three vessels moved in",
+      "published_at": "2026-09-18T09:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 38.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 63.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "red sea"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Hormuz Sees More LNG Traffic",
+      "url": "https://www.rigzone.com/news/wire/hormuz_sees_more_lng_traffic-18-sep-2026-184648-article/?rss=true",
+      "snippet": "At least two liquefied natural gas shipments transited the Strait of Hormuz this week as producers look for ways to increase flows to a market struggling with a lack of supply and surging prices.",
+      "published_at": "2026-09-18T08:37:51+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 21.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 48.0,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "India’s LNG imports almost flat in August",
+      "url": "https://lngprime.com/asia/indias-lng-imports-almost-flat-in-august/197061/",
+      "snippet": "India’s liquefied natural gas (LNG) imports were almost flat in August, down just 0.11 percent from the same month last year, according to preliminary data from the oil ministry’s Petroleum Planning and Analysis Cell.",
+      "published_at": "2026-09-18T07:40:26+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 53,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 20.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 50.9,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng imports"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-18T06:44:54+00:00"
+    },
+    {
+      "title": "BP to sell Browse LNG stake to Osaka Gas",
+      "url": "https://lngprime.com/australia-and-oceania/bp-to-sell-browse-lng-stake-to-osaka-gas/197082/",
+      "snippet": "UK-based energy giant BP has agreed to sell a 5 percent stake in the planned Woodside-led Browse LNG project in Australia, which would deliver natural gas from the Calliance, Torosa, and Brecknock fields to the existing Karratha gas plant, to Japan's Osaka Gas.",
+      "published_at": "2026-09-18T07:59:58+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 52,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 48.4,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Eurostat: 54% of EU’s electricity came from renewables in Q2 2026",
+      "url": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20260918-1",
+      "snippet": "In the second quarter of 2026, 54.1% of the electricity generated in the EU came from renewable energy sources, a slight decrease from 54.3% in the same period of 2025.",
+      "published_at": "2026-09-18T09:42:21+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 51,
+      "tags": [
+        "power_system"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 5.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 43.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "power_system": [
+          "renewables"
+        ],
+        "geography": [
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Denmark opens EU’s first full-scale CO2 storage site",
+      "url": "https://www.offshore-energy.biz/denmark-opens-eus-first-full-scale-co2-storage-site/",
+      "snippet": "King Frederik X of Denmark is set to open the first full-scale CO2 storage [&#8230;] The post Denmark opens EU&#8217;s first full-scale CO2 storage site appeared first on Offshore Energy .",
+      "published_at": "2026-09-18T08:03:54+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 19.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.6,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "storage site"
+        ],
+        "geography": [
+          "eu",
+          "denmark"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "SOCAR spreads its wings into Africa’s oil & gas arena by coming aboard Eni’s project",
+      "url": "https://www.offshore-energy.biz/socar-spreads-its-wings-into-africas-oil-gas-arena-by-coming-aboard-enis-project/",
+      "snippet": "The State Oil Company of the Republic of Azerbaijan (SOCAR) has entered Africa’s offshore energy realm by acquiring a stake in an oil and gas field development off the coast of Côte d’Ivoire. The post SOCAR spreads its wings into Africa’s oil gas arena by coming aboard Eni’s project appeared first o",
+      "published_at": "2026-09-18T09:48:32+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 24.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "gas field",
+          "field development"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Oil Prices Head for Weekly Loss as Saudi Export Fears Ease",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-for-Weekly-Loss-as-Saudi-Export-Fears-Ease.html",
@@ -117,7 +458,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 44,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -134,7 +475,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.8,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -152,6 +493,208 @@
       "also_reported_by": []
     },
     {
+      "title": "Bomb attack at Pakistan mosque kills at least 15, injures 50",
+      "url": "https://www.aljazeera.com/news/2026/9/18/bomb-attack-at-pakistan-mosque-kills-at-least-15-injures-50?traffic_source=rss",
+      "snippet": "This is a breaking news story.",
+      "published_at": "2026-09-18T10:18:43+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "urgency": [
+          "breaking"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China’s Fuel Exports Surge as Global Diesel Shortage Deepens",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Fuel-Exports-Surge-as-Global-Diesel-Shortage-Deepens.html",
+      "snippet": "China exported 6.01 million tons of refined fuels in August, an annual increase of 12.7%, according to Chinese customs data cited by Reuters today. The total volume exceeded pre-war levels, with jet fuel exports at an all-time high. The total for the first eight months of the year, however, was down",
+      "published_at": "2026-09-18T08:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 42,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.7,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Post construction review of the Greenlink interconnector to Ireland",
+      "url": "https://www.ofgem.gov.uk/consultation/post-construction-review-greenlink-interconnector-ireland",
+      "snippet": ".",
+      "published_at": "2026-09-18T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "interconnector"
+        ],
+        "geography": [
+          "ireland"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US LNG shipments remain steady",
+      "url": "https://lngprime.com/americas/us-lng-shipments-remain-steady/197034/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 36 cargoes during the week ending September 16, unchanged from the previous week, according to the Energy Information Administration.",
+      "published_at": "2026-09-18T06:15:43+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 39.7,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Fire engulfs Zaporizhzhia shopping centre after Russian strike",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/18/fire-engulfs-zaporizhzhia-shopping-centre-after-russian-strike?traffic_source=rss",
+      "snippet": "A Russian strike hit a shopping centre in Zaporizhzhia, southeastern Ukraine, sparking a major fire.",
+      "published_at": "2026-09-18T05:03:29+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.9,
+        "recency_multiplier": 0.74
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "russian",
+          "ukraine"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-09-17T19:15:00+00:00"
+    },
+    {
       "title": "Saudi Pipeline Outage Could Deepen the Global Fuel Crunch",
       "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Pipeline-Outage-Could-Deepen-the-Global-Fuel-Crunch.html",
       "snippet": "The temporary closure of the key onshore pipeline Saudi Arabia uses to bypass the Strait of Hormuz has added another shock to an oil market already struggling with six months of Middle East supply disruptions. And the damage now appears to be more extensive than initially believed. Three pumping sta",
@@ -162,13 +705,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 40,
       "tags": [
         "geopolitics",
         "supply_disruption",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -180,7 +723,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 68.8,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.47
       },
       "matched": {
         "geopolitics": [
@@ -204,79 +747,113 @@
       "also_reported_by": []
     },
     {
-      "title": "Fire engulfs Zaporizhzhia shopping centre after Russian strike",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/18/fire-engulfs-zaporizhzhia-shopping-centre-after-russian-strike?traffic_source=rss",
-      "snippet": "A Russian strike hit a shopping centre in Zaporizhzhia, southeastern Ukraine, sparking a major fire.",
-      "published_at": "2026-09-18T05:03:29+00:00",
+      "title": "New contracts for Vallourec in Brazil and Greece for oil & gas and CO2 storage",
+      "url": "https://www.offshore-energy.biz/new-contracts-for-vallourec-in-brazil-and-greece-for-oil-gas-and-co2-storage/",
+      "snippet": "French provider of tubular solutions Vallourec has won a contract with Subsea7 to supply carbon [&#8230;] The post New contracts for Vallourec in Brazil and Greece for oil gas and CO2 storage appeared first on Offshore Energy .",
+      "published_at": "2026-09-18T09:44:58+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 37,
       "tags": [
-        "supply_disruption"
+        "gas_storage"
       ],
-      "alert": "normal",
-      "nature": "unplanned",
+      "alert": "low",
+      "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
+        "authority": 12.4,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 42.9,
+        "raw": 29.1,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "fire"
+        "gas_storage": [
+          "storage"
         ],
         "geography": [
-          "russian",
-          "ukraine"
-        ],
-        "unplanned": [
-          "fire"
+          "french"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-17T19:15:00+00:00"
+      "also_reported_by": []
     },
     {
-      "title": "Bank of Japan raises rates to 31-year high of 1.25% as inflation rises",
-      "url": "https://www.aljazeera.com/news/2026/9/18/japans-interest-rate-hiked-to-31-year-high-at-1-25-as-inflation-rises?traffic_source=rss",
-      "snippet": "Bank of Japan raises benchmark interest rate from 1 to 1.25 percent, pledging to help counter inflation risks.",
-      "published_at": "2026-09-18T03:20:20+00:00",
+      "title": "Equinor seals long-term LNG SPA with Thailand’s PTT",
+      "url": "https://lngprime.com/contracts-and-tenders/equinor-seals-long-term-lng-spa-with-thailands-ptt/197098/",
+      "snippet": "Norwegian energy firm Equinor has signed a long-term LNG sales and purchase agreement with a unit of Thailand’s PTT.",
+      "published_at": "2026-09-18T08:18:44+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 48,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "norwegian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Japan raises interest rate to new 31-year high to curb rising prices",
+      "url": "https://www.bbc.co.uk/news/articles/cqn74jeek06no?at_medium=RSS&at_campaign=rss",
+      "snippet": "Central banks around the world have hiked rates as high energy prices are pushing up inflation.",
+      "published_at": "2026-09-18T07:14:57+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
       "tags": [
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
+        "authority": 10.2,
         "themes": 16.0,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 42.5,
-        "recency_multiplier": 0.95
+        "raw": 31.2,
+        "recency_multiplier": 0.88
       },
       "matched": {
         "oil_macro": [
@@ -288,89 +865,87 @@
           "japan"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "first_seen_at": "2026-09-18T03:20:20+00:00"
     },
     {
-      "title": "Trinidad and Tobago ends state of emergency amid pushback over mass arrests",
-      "url": "https://www.aljazeera.com/news/2026/9/17/trinidad-and-tobago-ends-state-of-emergency-amid-pushback-over-mass-arrests?traffic_source=rss",
-      "snippet": "Lawyers criticised mass arrests under emergency powers that allowed authorities to detain people without charge.",
-      "published_at": "2026-09-17T22:12:22+00:00",
+      "title": "Oman oil escape route: How ship-to-ship transfers work — despite big risks",
+      "url": "https://www.aljazeera.com/news/2026/9/18/oman-oil-escape-route-how-ship-to-ship-transfers-work-despite-big?traffic_source=rss",
+      "snippet": "Oman’s Sohar port is becoming a popular spot for ship-to-ship oil transfers amid continued Hormuz blockade.",
+      "published_at": "2026-09-18T06:02:08+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
-      "nature": "unplanned",
+      "alert": "low",
+      "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 16.6,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
+        "themes": 9.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 62.1,
-        "recency_multiplier": 0.64
+        "raw": 34.5,
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
-          "state of emergency"
+          "blockade"
         ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
+        "geography": [
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "America Is Paying a Lot for Fuel, Not Running Out of Gasoline",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/America-Is-Paying-a-Lot-for-Fuel-Not-Running-Out-of-Gasoline.html",
-      "snippet": "Gasoline is expensive. Diesel is worse. Social media is melting down and has apparently decided America is running out of fuel. U.S. gasoline inventories rose 800,000 barrels last week to 207.7 million barrels, according to the EIA. Stocks are 5% below the five-year average for this time of year. Ti",
-      "published_at": "2026-09-17T19:30:00+00:00",
+      "title": "Glencore pens Chinese LNG supply deal",
+      "url": "https://lngprime.com/asia/glencore-pens-chinese-lng-supply-deal/197109/",
+      "snippet": "Switzerland-based energy trader Glencore has signed a long-term deal to supply liquefied natural gas (LNG) to a unit of China Suntien Green Energy.",
+      "published_at": "2026-09-18T09:43:32+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
+      "has_magnitude": false,
+      "score": 34,
       "tags": [
-        "gas_storage",
-        "oil_macro"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 26.7,
-        "geography": 0.0,
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 47.4,
-        "recency_multiplier": 0.52
+        "raw": 25.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "gas_storage": [
-          "stocks",
-          "inventories",
-          "below the five-year average",
-          "five-year average"
+        "lng": [
+          "lng"
         ],
-        "oil_macro": [
-          "barrels"
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
@@ -387,7 +962,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 14,
+      "score": 11,
       "tags": [
         "supply_disruption"
       ],
@@ -403,7 +978,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 78.6,
-        "recency_multiplier": 0.51
+        "recency_multiplier": 0.35
       },
       "matched": {
         "supply_disruption": [
