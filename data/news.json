@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-19T18:50:11.381660+00:00",
-  "item_count": 6,
+  "generated_at": "2026-09-19T21:07:26.603331+00:00",
+  "item_count": 5,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 3
+    "high": 1,
+    "normal": 1
   },
-  "superseded_count": 1,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,217 +17,185 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1666
+        "ms": 1722
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 16688
+        "ms": 32507
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 32448
+        "ms": 4048
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 566
+        "ms": 808
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 455
+        "ms": 332
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 246
+        "ms": 170
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1362
+        "ms": 1402
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 508
+        "ms": 513
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 668
+        "ms": 696
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 279
+        "ms": 397
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 637
+        "ms": 671
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 213
+        "ms": 157
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 276
+        "ms": 151
       }
     ]
   },
   "items": [
     {
-      "title": "Houthis claim attack on Saudi capital after smoke seen rising near Riyadh airport",
-      "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The King Khalid International Airport incident caused hours of flight disruptions and comes amid an escalating conflict with Houthi rebels in Yemen.",
-      "published_at": "2026-09-19T17:50:14+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, EEMS 6",
+      "url": "https://umm.nordpoolgroup.com/#/messages/73ac26c0-03fe-493e-8680-89dbd3b745b8/1",
+      "snippet": "Published: 19.09.2026 21:16:06 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
+      "published_at": "2026-09-19T19:16:06+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
       "has_magnitude": false,
-      "score": 54,
+      "score": 66,
       "tags": [
-        "geopolitics"
+        "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
-        "authority": 10.2,
-        "themes": 17.9,
+        "authority": 21.9,
+        "themes": 8.4,
         "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 48.1,
+        "raw": 66.3,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "conflict",
-          "attack"
+        "supply_disruption": [
+          "unplanned"
         ],
         "unplanned": [
-          "incident"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-19T12:21:01+00:00"
-    },
-    {
-      "title": "US lifts sanctions on Eritrea ‘to advance US regional interests’ in Red Sea",
-      "url": "https://www.aljazeera.com/news/2026/9/19/us-lifts-sanctions-on-eritrea-imposed-during-conflict-in-ethiopias-tigray?traffic_source=rss",
-      "snippet": "The sanctions, introduced during the Biden administration, targeted Eritrea&#039;s governing party and the military.",
-      "published_at": "2026-09-19T12:34:37+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "red sea"
+          "unplanned",
+          "failure"
         ],
-        "geography": [
-          "red sea"
+        "urgency": [
+          "unplanned"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Shark attack prompts rare kill order in Western Australia as victim named",
-      "url": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Greg O'Neill \"loved the ocean\", his family say, as police boats and helicopters patrol Perth's beaches in search of his body and the shark that attacked him.",
-      "published_at": "2026-09-19T11:50:22+00:00",
+      "title": "Britain Faces £150 Billion Grid Overhaul to Power Renewable Energy Boom",
+      "url": "https://oilprice.com/Energy/Energy-General/Britain-Faces-150-Billion-Grid-Overhaul-to-Power-Renewable-Energy-Boom.html",
+      "snippet": "The United Kingdom will need to invest heavily in expanding its electricity grid to meet rising power demand and ensure that new renewable energy projects can connect to it. The U.K. National Energy System Operator (NESO) has announced that more than an estimated £150 million will be required to upd",
+      "published_at": "2026-09-19T19:00:00+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 65,
       "tags": [
-        "geopolitics"
+        "infrastructure",
+        "supply_disruption",
+        "oil_macro"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
+        "authority": 8.8,
+        "themes": 25.8,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 53.1,
-        "recency_multiplier": 0.68
+        "raw": 66.6,
+        "recency_multiplier": 0.99
       },
       "matched": {
-        "geopolitics": [
-          "attack",
-          "attacked"
+        "infrastructure": [
+          "grid",
+          "system operator"
+        ],
+        "supply_disruption": [
+          "overhaul"
+        ],
+        "oil_macro": [
+          "demand"
         ],
         "geography": [
-          "australia"
+          "britain"
         ],
-        "unplanned": [
-          "attacked"
+        "urgency": [
+          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -244,7 +212,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 39,
       "tags": [
         "power_system",
         "geopolitics",
@@ -262,7 +230,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.92
       },
       "matched": {
         "power_system": [
@@ -282,6 +250,50 @@
       "also_reported_by": []
     },
     {
+      "title": "Shark attack prompts rare kill order in Western Australia as victim named",
+      "url": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Greg O'Neill \"loved the ocean\", his family say, as police boats and helicopters patrol Perth's beaches in search of his body and the shark that attacked him.",
+      "published_at": "2026-09-19T11:50:22+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.1,
+        "recency_multiplier": 0.57
+      },
+      "matched": {
+        "geopolitics": [
+          "attack",
+          "attacked"
+        ],
+        "geography": [
+          "australia"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Iran says conditions to re-engage in talks, end war sent to US via Qatar",
       "url": "https://www.aljazeera.com/news/2026/9/19/iran-says-conditions-to-re-engage-in-talks-end-war-sent-to-us-via-qatar?traffic_source=rss",
       "snippet": "Mohsen Rezaei, secretary of Iran’s Supreme National Security Council, tells Al Jazeera Tehran awaiting Trump response.",
@@ -292,7 +304,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -308,7 +320,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -320,53 +332,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Saudi-led naval coalition prepares to secure Red Sea waterways",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/saudi-led-naval-coalition-prepares-to-secure-red-sea-waterways?traffic_source=rss",
-      "snippet": "Saudi Arabia has hosted a multinational naval coalition meeting aimed at protecting shipping in the Red Sea.",
-      "published_at": "2026-09-19T12:21:01+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 11,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 0.71
-      },
-      "matched": {
-        "geopolitics": [
-          "red sea"
-        ],
-        "geography": [
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
-        "title": "Houthis claim attack on Saudi capital after smoke seen rising near Riyadh airport",
-        "published_at": "2026-09-19T17:50:14+00:00"
-      },
-      "hidden": true
     }
   ]
 }
