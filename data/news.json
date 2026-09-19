@@ -1,111 +1,157 @@
 {
-  "generated_at": "2026-09-19T00:36:46.094158+00:00",
-  "item_count": 11,
+  "generated_at": "2026-09-19T05:02:46.309493+00:00",
+  "item_count": 8,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 5
+    "normal": 3
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1623
+        "ms": 2001
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 16800
+        "ms": 93030
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3989
+        "ms": 4015
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 550
+        "ms": 878
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 2430
+        "ms": 784
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 214
+        "ms": 225
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1424
+        "ms": 1464
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 131
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 249
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 683
+        "ms": 821
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 295
+        "ms": 366
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 442
+        "ms": 713
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 130
+        "ms": 189
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 193
+        "ms": 183
       }
     ]
   },
   "items": [
+    {
+      "title": "Trump signs sweeping Russia sanctions over Ukraine war",
+      "url": "https://www.aljazeera.com/news/2026/9/19/trump-signs-sweeping-russia-sanctions-over-ukraine-war?traffic_source=rss",
+      "snippet": "New law allows tariffs of up to 100 percent on major buyers of Russian oil, including China and India.",
+      "published_at": "2026-09-19T00:46:04+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 51,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 26.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 53.4,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "war",
+          "tariffs"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "ukraine",
+          "china"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-19T00:00:26+00:00"
+    },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
       "url": "https://umm.nordpoolgroup.com/#/messages/9195a4f0-2c04-406e-ac55-362b5e7e2ce3/2",
@@ -117,7 +163,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 63,
+      "score": 50,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.65
       },
       "matched": {
         "supply_disruption": [
@@ -146,9 +192,8 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-18T10:39:30+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Macron Calls for Another Emergency Oil Release as Europe Loses Supply",
@@ -161,7 +206,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 48,
       "tags": [
         "gas_storage",
         "oil_macro"
@@ -178,7 +223,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 64.2,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.63
       },
       "matched": {
         "gas_storage": [
@@ -212,13 +257,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 39,
       "tags": [
         "geopolitics",
         "oil_macro",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -230,7 +275,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 63.1,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.48
       },
       "matched": {
         "geopolitics": [
@@ -265,11 +310,11 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -281,7 +326,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
@@ -306,11 +351,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 32,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -322,7 +367,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.4,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.37
       },
       "matched": {
         "geopolitics": [
@@ -351,7 +396,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 31,
       "tags": [
         "regulation"
       ],
@@ -366,7 +411,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.7,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.61
       },
       "matched": {
         "regulation": [
@@ -381,219 +426,40 @@
       "also_reported_by": []
     },
     {
-      "title": "LNG Tankers Push Through Hormuz Again as Qatar, UAE Fight Supply Crunch",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/LNG-Tankers-Push-Through-Hormuz-Again-as-Qatar-UAE-Fight-Supply-Crunch.html",
-      "snippet": "At least two LNG carriers have transited the Strait of Hormuz so far this week, while two others were detected to have engaged in ship-to-ship transfers outside the Strait offshore Oman, tanker-tracking and satellite data compiled by Bloomberg showed on Friday. The uptick in LNG cargoes managing to ",
-      "published_at": "2026-09-18T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "lng",
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 31.8,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 56.6,
-        "recency_multiplier": 0.54
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "tanker"
-        ],
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "INEOS Opens EU's First Full-Scale Carbon Storage Site in Denmark",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/INEOS-Opens-EUs-First-Full-Scale-Carbon-Storage-Site-in-Denmark.html",
-      "snippet": "An INEOS-led carbon capture and storage project in Denmark was launched on Friday to become the first full-scale CO2 storage site in the European Union, UK-based chemicals and energy group INEOS said. The Greensand CO2 storage facility, led by INEOS Energy, with partners Harbour Energy and the Danis",
-      "published_at": "2026-09-18T15:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 24.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 48.8,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "gas_storage": [
-          "storage",
-          "storage site",
-          "storage facility"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran war live: Trump extends sanctions on Iran, Houthi supporters in Sanaa",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/9/19/iran-war-live-trump-extends-sanctions-on-iran-houthi-supporters-in-sanaa?traffic_source=rss",
-      "snippet": "Thousands take to the streets in support of Houthis in Sanaa, Trump extends sanctions on Iran.",
-      "published_at": "2026-09-19T00:00:26+00:00",
+      "title": "North Korea dismisses UN nuclear watchdog resolution",
+      "url": "https://www.aljazeera.com/news/2026/9/19/north-korea-dismisses-un-nuclear-watchdog-resolution?traffic_source=rss",
+      "snippet": "The country rebukes the UN atomic agency&#039;s &#039;double standards&#039; and says nuclear status is &#039;irreversible&#039;.",
+      "published_at": "2026-09-19T03:29:54+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 30,
       "tags": [
-        "geopolitics"
+        "nuclear"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudi Export Pivot Sends Brent Below $105",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Export-Pivot-Sends-Brent-Below-105.html",
-      "snippet": "Saudi Aramco shifts crude exports to the Persian Gulf, easing supply fears and pushing Brent below $105. Friday, September 18, 2026 Last week’s market panic about the 7 million b/d East-West pipeline remaining offline for weeks gave way to a slightly more nuanced outlook this week, with Saudi Aramco",
-      "published_at": "2026-09-18T16:15:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 26.3,
+        "themes": 7.3,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 40.1,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "geopolitics": [
-          "persian gulf"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent"
-        ],
-        "supply_disruption": [
-          "offline"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "A four-minute warning isn't enough: Russia's new relentless missile tactics exhaust Kyiv residents",
-      "url": "https://www.bbc.co.uk/news/articles/cwp93k9gpnv1o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Increasingly frequent and ferocious attacks on the Ukrainian capital have left many on edge.",
-      "published_at": "2026-09-18T23:03:38+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
+        "raw": 21.8,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "missile"
+        "nuclear": [
+          "nuclear"
         ],
         "geography": [
-          "russia"
+          "korea"
         ]
       },
       "duplicate_count": 0,
