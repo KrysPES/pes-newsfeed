@@ -1,195 +1,144 @@
 {
-  "generated_at": "2026-09-20T05:33:44.189607+00:00",
-  "item_count": 5,
+  "generated_at": "2026-09-20T10:04:50.198730+00:00",
+  "item_count": 3,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 2
+    "normal": 1
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1400
+        "ms": 1533
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 64640
+        "ms": 56574
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3777
+        "ms": 23152
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 518
+        "ms": 376
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 229
+        "ms": 323
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 134
+        "ms": 226
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1559
+        "ms": 1508
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 44
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 525
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 801
+        "ms": 701
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 673
+        "ms": 382
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 731
+        "ms": 687
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 90
+        "ms": 92
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 79
+        "ms": 161
       }
     ]
   },
   "items": [
     {
-      "title": "Two killed in 'massive' Ukrainian drone attack on Moscow region, says Russia",
-      "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
-      "snippet": "An oil refinery was also reportedly hit in Moscow, and flights were suspended at two capital airports.",
-      "published_at": "2026-09-20T05:04:54+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 71,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "oil_macro"
-      ],
-      "alert": "high",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 24.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 75.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "attack"
-        ],
-        "supply_disruption": [
-          "suspended"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "russia"
-        ],
-        "unplanned": [
-          "suspended"
-        ],
-        "urgency": [
-          "suspended"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, FLEVO 5",
-      "url": "https://umm.nordpoolgroup.com/#/messages/84255dbf-e9a8-4314-8de0-7a834792ffee/3",
-      "snippet": "Published: 20.09.2026 00:38:55 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
-      "published_at": "2026-09-19T22:38:55+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Vuosaari B - VuB6",
+      "url": "https://umm.nordpoolgroup.com/#/messages/c1ade2ee-cc03-4a04-aef9-e87eefd3b0b6/2",
+      "snippet": "Published: 20.09.2026 10:18:03 Publisher: Helen Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: VuB Kt5 Transitioning to faster start-up is taking longer than expected. Remarks: VuKT4 works limits HT6 to half power. Also VuB Kt5 UMM affects to ",
+      "published_at": "2026-09-20T08:18:03+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 52,
+      "score": 70,
       "tags": [
+        "infrastructure",
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 17.5,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.68
+        "raw": 75.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
+        "infrastructure": [
+          "start-up"
+        ],
         "supply_disruption": [
           "unplanned"
         ],
@@ -201,9 +150,57 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 3,
       "also_reported_by": [],
-      "first_seen_at": "2026-09-19T19:16:06+00:00"
+      "first_seen_at": "2026-09-19T22:38:55+00:00"
+    },
+    {
+      "title": "Two killed in 'massive' Ukrainian drone attack on Moscow region, Russia says",
+      "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
+      "snippet": "A major oil refinery was also hit as Moscow's mayor says 450 drones were downed during the \"unprecedented attack\".",
+      "published_at": "2026-09-20T08:41:36+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 20.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "attack"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "first_seen_at": "2026-09-20T06:57:05+00:00"
     },
     {
       "title": "Britain Faces £150 Billion Grid Overhaul to Power Renewable Energy Boom",
@@ -216,13 +213,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 32,
       "tags": [
         "infrastructure",
         "supply_disruption",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -234,7 +231,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.6,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.37
       },
       "matched": {
         "infrastructure": [
@@ -252,89 +249,6 @@
         ],
         "urgency": [
           "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Europe Outbids Asia for LNG as Prices Surge 150%",
-      "url": "https://oilprice.com/Energy/Natural-Gas/Europe-Outbids-Asia-for-LNG-as-Prices-Surge-150.html",
-      "snippet": "Liquefied natural gas prices on the spot market are moving higher as demand picks up seasonally and Asian importers are souring on the fuel. European buyers are stepping up purchases, however, despite the price. They have no choice. Asian demand for liquefied gas is set to decline this month—and ove",
-      "published_at": "2026-09-19T23:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 37,
-      "tags": [
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 10.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 40.7,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "oil_macro": [
-          "demand"
-        ],
-        "geography": [
-          "europe",
-          "european"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran war live: Tehran sets terms for talks; Saudi forces foil Riyadh attack",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/9/20/iran-war-live-tehran-calls-for-end-to-war-lifting-of-us-naval-blockade?traffic_source=rss",
-      "snippet": "Iran security chief says Tehran&#039;s demands include an end to war on all fronts and the lifting of the US naval blockade.",
-      "published_at": "2026-09-20T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 26.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade",
-          "war",
-          "attack"
         ]
       },
       "duplicate_count": 0,
