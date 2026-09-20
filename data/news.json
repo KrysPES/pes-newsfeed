@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-20T17:28:28.109621+00:00",
+  "generated_at": "2026-09-20T19:41:06.079169+00:00",
   "item_count": 6,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 2
+    "normal": 4
   },
   "superseded_count": 0,
   "sources": {
@@ -17,100 +17,100 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1225
+        "ms": 1293
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 38978
+        "ms": 30102
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 10920
+        "ms": 27308
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 453
+        "ms": 405
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 341
+        "ms": 361
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 249
+        "ms": 125
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 53,
         "error": null,
-        "ms": 1144
+        "ms": 960
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 245
+        "ms": 182
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 694
+        "ms": 571
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 218
+        "ms": 144
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 520
+        "ms": 476
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 25,
+        "count": 26,
         "error": null,
-        "ms": 281
+        "ms": 311
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 170
+        "ms": 134
       }
     ]
   },
   "items": [
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Whitegate Power Station - Whitegate Power Station",
-      "url": "https://umm.nordpoolgroup.com/#/messages/2a38de67-a7d3-43e2-be1e-c9514210aed2/1",
-      "snippet": "Published: 20.09.2026 17:58:32 Publisher: Bord Gais Energy Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unit derated to 365mw - under investigation Remarks: Unit derated to 365mw - under investigation Production Units Unit Name Unit EIC Are",
-      "published_at": "2026-09-20T15:58:32+00:00",
+      "url": "https://umm.nordpoolgroup.com/#/messages/2a38de67-a7d3-43e2-be1e-c9514210aed2/4",
+      "snippet": "Published: 20.09.2026 21:33:16 Publisher: Bord Gais Energy Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unit derated to 365mw - under investigation. Unit declared to 385mw at 20:06. Unit declared to 405mw at 20:19. Unit declared to 425mw at",
+      "published_at": "2026-09-20T19:33:16+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
@@ -144,7 +144,8 @@
           "failure"
         ],
         "urgency": [
-          "unplanned"
+          "unplanned",
+          "declared"
         ]
       },
       "duplicate_count": 4,
@@ -162,7 +163,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 64,
+      "score": 61,
       "tags": [
         "weather",
         "supply_disruption"
@@ -178,7 +179,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.93
       },
       "matched": {
         "weather": [
@@ -199,6 +200,97 @@
       "also_reported_by": []
     },
     {
+      "title": "Hormuz Crisis to Push Global Coal Demand to Record High",
+      "url": "https://oilprice.com/Energy/Coal/Hormuz-Crisis-to-Push-Global-Coal-Demand-to-Record-High.html",
+      "snippet": "The International Energy Agency expects coal demand to increase this year in response to ongoing oil and gas trade constraints stemming from the closure of the Strait of Hormuz. Several countries have been forced to turn back to coal to fill the gap, as oil inventories are depleted and countries gra",
+      "published_at": "2026-09-20T19:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 56,
+      "tags": [
+        "geopolitics",
+        "gas_storage",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 51.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "gas_storage": [
+          "inventories",
+          "depleted"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Trump tariffs hit Canada’s dairy farmers as US sales stall",
+      "url": "https://www.aljazeera.com/features/2026/9/20/trump-tariffs-hit-canadas-dairy-farmers-as-us-sales-stall?traffic_source=rss",
+      "snippet": "A 50 percent tariff has disrupted dairy exports, leaving Canadian farmers with milk that cannot be redirected overnight.",
+      "published_at": "2026-09-20T17:35:12+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 51,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 23.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 44.5,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "tariff",
+          "tariffs"
+        ],
+        "supply_disruption": [
+          "disrupted"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Moscow attacked by more than 1,000 Ukrainian drones",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/moscow-attacked-by-more-than-1000-ukrainian-drones?traffic_source=rss",
       "snippet": "This is the moment a drone exploded as it hit an apartment building in Moscow.",
@@ -209,7 +301,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 42,
       "tags": [
         "geopolitics"
       ],
@@ -224,7 +316,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.4,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.71
       },
       "matched": {
         "geopolitics": [
@@ -252,7 +344,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 34,
+      "score": 33,
       "tags": [
         "nuclear"
       ],
@@ -268,7 +360,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "nuclear": [
@@ -276,89 +368,6 @@
         ],
         "geography": [
           "france"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "European Commission Approves Grants for 3 Cross-Border RE Projects",
-      "url": "https://www.rigzone.com/news/european_commission_approves_grants_for_3_crossborder_re_projects-20-sep-2026-184655-article/?rss=true",
-      "snippet": "The European Commission approved around $145 million in grants from the Connecting Europe Facility for two climate-neutral German-Polish district heating projects and an onshore wind park near the Latvia-Lithuania border.",
-      "published_at": "2026-09-20T11:00:00+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 11.4,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.71
-      },
-      "matched": {
-        "regulation": [
-          "european commission"
-        ],
-        "geography": [
-          "europe",
-          "european",
-          "german"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "What are Iran’s latest conditions to end its war with the US?",
-      "url": "https://www.aljazeera.com/news/2026/9/20/what-are-irans-new-conditions-to-end-its-war-with-the-us?traffic_source=rss",
-      "snippet": "Iran&#039;s latest stipulations come as growing regional escalation causes oil prices to cross $100 per barrel.",
-      "published_at": "2026-09-20T11:21:06+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 20.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.1,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "geopolitics": [
-          "escalation",
-          "war"
-        ],
-        "oil_macro": [
-          "barrel"
         ]
       },
       "duplicate_count": 0,
