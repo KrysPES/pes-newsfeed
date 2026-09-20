@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-20T14:09:52.458405+00:00",
-  "item_count": 4,
+  "generated_at": "2026-09-20T17:28:28.109621+00:00",
+  "item_count": 6,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "normal": 2
   },
   "superseded_count": 0,
@@ -17,130 +17,127 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1428
+        "ms": 1225
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19774
+        "ms": 38978
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 13756
+        "ms": 10920
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 295
+        "ms": 453
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 292
+        "ms": 341
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 104
+        "ms": 249
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 52,
+        "count": 53,
         "error": null,
-        "ms": 916
+        "ms": 1144
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 166
+        "ms": 245
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 593
+        "ms": 694
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 205
+        "ms": 218
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 395
+        "ms": 520
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 24,
+        "count": 25,
         "error": null,
-        "ms": 152
+        "ms": 281
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 134
+        "ms": 170
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Vuosaari B - VuB6",
-      "url": "https://umm.nordpoolgroup.com/#/messages/c1ade2ee-cc03-4a04-aef9-e87eefd3b0b6/2",
-      "snippet": "Published: 20.09.2026 10:18:03 Publisher: Helen Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: VuB Kt5 Transitioning to faster start-up is taking longer than expected. Remarks: VuKT4 works limits HT6 to half power. Also VuB Kt5 UMM affects to ",
-      "published_at": "2026-09-20T08:18:03+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Whitegate Power Station - Whitegate Power Station",
+      "url": "https://umm.nordpoolgroup.com/#/messages/2a38de67-a7d3-43e2-be1e-c9514210aed2/1",
+      "snippet": "Published: 20.09.2026 17:58:32 Publisher: Bord Gais Energy Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unit derated to 365mw - under investigation Remarks: Unit derated to 365mw - under investigation Production Units Unit Name Unit EIC Are",
+      "published_at": "2026-09-20T15:58:32+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
-      "has_magnitude": false,
-      "score": 59,
+      "has_magnitude": true,
+      "score": 75,
       "tags": [
-        "infrastructure",
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 17.5,
+        "themes": 16.8,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 75.4,
-        "recency_multiplier": 0.74
+        "raw": 86.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "infrastructure": [
-          "start-up"
-        ],
         "supply_disruption": [
-          "unplanned"
+          "unplanned",
+          "derated"
         ],
         "unplanned": [
           "unplanned",
@@ -150,9 +147,56 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 3,
+      "duplicate_count": 4,
       "also_reported_by": [],
-      "first_seen_at": "2026-09-19T22:38:55+00:00"
+      "first_seen_at": "2026-09-20T07:54:06+00:00"
+    },
+    {
+      "title": "Central Colombia forest fire threatens tourist town of Villa de Leyva",
+      "url": "https://www.aljazeera.com/news/2026/9/20/central-colombia-forest-fire-threatens-tourist-town-of-villa-de-leyva?traffic_source=rss",
+      "snippet": "The country has battled multiple wildfires amid record-breaking temperatures fuelled by El Nino and drought conditions.",
+      "published_at": "2026-09-20T16:47:33+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "weather",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "drought",
+          "temperatures"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ],
+        "urgency": [
+          "breaking"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Moscow attacked by more than 1,000 Ukrainian drones",
@@ -165,7 +209,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 47,
       "tags": [
         "geopolitics"
       ],
@@ -180,7 +224,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -191,11 +235,51 @@
           "attacked"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 1,
       "also_reported_by": [
         "BBC World"
       ],
-      "first_seen_at": "2026-09-20T06:57:05+00:00"
+      "first_seen_at": "2026-09-20T10:45:39+00:00"
+    },
+    {
+      "title": "China Will Dominate Global Nuclear Energy Through 2035, Analyst Says",
+      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/China-Will-Dominate-Global-Nuclear-Energy-Through-2035-Analyst-Says.html",
+      "snippet": "The future of nuclear energy is in China’s hands. While the United States remains the world’s largest producer of nuclear energy, China’s sector is growing at such a rapid clip that it is expected to overtake France as well as the United States to become the world’s leading nuclear power producer wi",
+      "published_at": "2026-09-20T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "france"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "European Commission Approves Grants for 3 Cross-Border RE Projects",
@@ -208,7 +292,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 31,
       "tags": [
         "regulation"
       ],
@@ -224,7 +308,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.4,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.71
       },
       "matched": {
         "regulation": [
@@ -250,7 +334,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 30,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -266,7 +350,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 30.1,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
