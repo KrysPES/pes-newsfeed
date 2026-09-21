@@ -1,111 +1,158 @@
 {
-  "generated_at": "2026-09-21T19:23:20.031614+00:00",
-  "item_count": 24,
+  "generated_at": "2026-09-21T22:41:06.596543+00:00",
+  "item_count": 17,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 7
+    "normal": 5
   },
-  "superseded_count": 0,
+  "superseded_count": 1,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1105
+        "ms": 1456
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 12175
+        "ms": 13919
       },
       {
         "id": "gie_agsi",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 22003
+        "ms": 3920
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 280
+        "ms": 208
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 378
+        "ms": 214
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 75
+        "ms": 166
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 895
+        "ms": 1479
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 170
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 58
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 611
+        "ms": 659
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 142
+        "ms": 384
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 312
+        "ms": 675
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 239
+        "ms": 60
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 133
+        "ms": 120
       }
     ]
   },
   "items": [
+    {
+      "title": "Crude Falls on Iran Diplomacy Hopes",
+      "url": "https://www.rigzone.com/news/wire/crude_falls_on_iran_diplomacy_hopes-21-sep-2026-184667-article/?rss=true",
+      "snippet": "Oil fell as Saudi exports through Hormuz increased and hopes grew for diplomatic progress in the Iran war.",
+      "published_at": "2026-09-21T20:31:52+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 20.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.6,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "diplomatic"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-09-21T19:10:52+00:00"
+    },
     {
       "title": "Prague Caps Fuel Prices, Taxes Orlen's ‘Windfall’ Refining Margins",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Prague-Caps-Fuel-Prices-Taxes-Orlens-Windfall-Refining-Margins.html",
@@ -117,7 +164,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 60,
+      "score": 51,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -134,7 +181,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -152,33 +199,76 @@
       "also_reported_by": []
     },
     {
+      "title": "China Confirms Xi's First Trip to USA in Nearly 3 Years",
+      "url": "https://www.rigzone.com/news/wire/china_confirms_xis_first_trip_to_usa_in_nearly_3_years-21-sep-2026-184663-article/?rss=true",
+      "snippet": "China said President Xi Jinping will travel to the U.S. to meet Donald Trump.",
+      "published_at": "2026-09-21T20:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.9,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.2,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "nuclear": [
+          "trip"
+        ],
+        "geography": [
+          "china"
+        ],
+        "unplanned": [
+          "trip"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Airlines criticise air traffic control as second glitch causes more disruption in UK",
       "url": "https://www.bbc.co.uk/news/articles/cqp80p78mxx5o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Airlines are angry about the delays, with EasyJet saying the latest incident \"once again calls into question the resilience\" of the system.",
-      "published_at": "2026-09-21T16:39:16+00:00",
+      "snippet": "Prime Minister Andy Burnham said further issues today \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it.",
+      "published_at": "2026-09-21T20:21:18+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 42,
       "tags": [
         "supply_disruption"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
         "authority": 10.2,
         "themes": 8.4,
         "geo_band": "primary",
         "geography": 16.0,
-        "event_nature": 20.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 54.6,
-        "recency_multiplier": 0.95
+        "raw": 34.6,
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
@@ -186,9 +276,6 @@
         ],
         "geography": [
           "uk"
-        ],
-        "unplanned": [
-          "incident"
         ]
       },
       "duplicate_count": 0,
@@ -205,7 +292,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 42,
       "tags": [
         "geopolitics",
         "gas_storage"
@@ -221,7 +308,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.4,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
@@ -249,11 +336,11 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.2,
@@ -265,7 +352,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.8,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.61
       },
       "matched": {
         "geopolitics": [
@@ -290,11 +377,11 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 39,
       "tags": [
         "nuclear"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.9,
@@ -306,7 +393,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.4,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.56
       },
       "matched": {
         "nuclear": [
@@ -334,12 +421,12 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 45,
+      "score": 37,
       "tags": [
         "infrastructure",
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -350,7 +437,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 75.4,
-        "recency_multiplier": 0.49
+        "recency_multiplier": 0.38
       },
       "matched": {
         "infrastructure": [
@@ -371,6 +458,47 @@
       "also_reported_by": []
     },
     {
+      "title": "Global Refinery Crunch Pushes Diesel Prices to New Records",
+      "url": "https://oilprice.com/Energy/Oil-Prices/Global-Refinery-Crunch-Pushes-Diesel-Prices-to-New-Records.html",
+      "snippet": "U.S. diesel prices broke another record last week, topping $6.50 per gallon. In Europe, fuel prices are soaring, and shortages are looming over already struggling economies. There is simply not enough refining capacity in the world to make up for the loss of Middle Eastern and Russian barrels. And t",
+      "published_at": "2026-09-21T22:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "refinery",
+          "barrels"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Masdar Raises Its Gross Renewables Capacity in Serbia to Over 300MW",
       "url": "https://www.rigzone.com/news/masdar_raises_its_gross_renewables_capacity_in_serbia_to_over_300mw-21-sep-2026-184665-article/?rss=true",
       "snippet": "'Beyond the operational Cibuk complex, Masdar has a Serbian development pipeline of more than 200 MW spanning solar, wind and battery storage projects'.",
@@ -381,13 +509,13 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 34,
       "tags": [
         "power_system",
         "gas_storage",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -398,7 +526,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 40.5,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.64
       },
       "matched": {
         "power_system": [
@@ -416,50 +544,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Indian plants celebrate fuel loading milestones",
-      "url": "https://www.world-nuclear-news.org/articles/indian-plants-celebrate-fuel-loading-milestones",
-      "snippet": "As fuel loading begins at Rajasthan Atomic Power Project unit 8, Nuclear Power Corporation of India Ltd has started geotechnical investigations for the next two units at the plant. Meanwhile, fuel loading has begun at Kaiga unit 1 as the unit begins the process to return to service after refurbishme",
-      "published_at": "2026-09-21T14:57:50+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "supply_disruption",
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 20.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.8,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "supply_disruption": [
-          "return to service"
-        ],
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Hormuz Blockage Puts Qatar's $83 Billion LNG Bet at Risk",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Blockage-Puts-Qatars-83-Billion-LNG-Bet-at-Risk.html",
       "snippet": "QatarEnergy CEO and Qatar Energy Minister Saad al-Kaabi says the Strait of Hormuz crisis could delay the company's LNG expansion because critical equipment cannot reach Qatar, Reuters reported on Monday. North Field East's first production train remains on schedule for the first half of 2027, Al-Kaa",
@@ -470,7 +554,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 33,
       "tags": [
         "geopolitics",
         "lng"
@@ -487,7 +571,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.8,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.72
       },
       "matched": {
         "geopolitics": [
@@ -508,6 +592,50 @@
       "also_reported_by": []
     },
     {
+      "title": "Indian plants celebrate fuel loading milestones",
+      "url": "https://www.world-nuclear-news.org/articles/indian-plants-celebrate-fuel-loading-milestones",
+      "snippet": "As fuel loading begins at Rajasthan Atomic Power Project unit 8, Nuclear Power Corporation of India Ltd has started geotechnical investigations for the next two units at the plant. Meanwhile, fuel loading has begun at Kaiga unit 1 as the unit begins the process to return to service after refurbishme",
+      "published_at": "2026-09-21T14:57:50+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "supply_disruption",
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 20.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.8,
+        "recency_multiplier": 0.64
+      },
+      "matched": {
+        "supply_disruption": [
+          "return to service"
+        ],
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "India's Coal Demand Set to Jump 4.2% as Plant Stocks Hit Critical Lows",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Coal-Demand-Set-to-Jump-42-as-Plant-Stocks-Hit-Critical-Lows.html",
       "snippet": "The share of coal-fired power plants in India running on critically low levels of coal inventory has soared in recent weeks to nearly 40% of all operational coal plants, Reuters reported on Monday, citing government data. As many as 74 coal-fired power plants had fewer than three days’ worth of coal",
@@ -518,7 +646,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 39,
+      "score": 32,
       "tags": [
         "gas_storage",
         "oil_macro"
@@ -535,7 +663,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.9,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.58
       },
       "matched": {
         "gas_storage": [
@@ -563,7 +691,7 @@
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 32,
       "tags": [
         "regulation"
       ],
@@ -579,7 +707,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.7,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.54
       },
       "matched": {
         "regulation": [
@@ -606,7 +734,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 38,
+      "score": 31,
       "tags": [
         "lng",
         "supply_disruption"
@@ -623,7 +751,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.7,
-        "recency_multiplier": 0.52
+        "recency_multiplier": 0.4
       },
       "matched": {
         "lng": [
@@ -654,7 +782,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -670,7 +798,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.5,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.77
       },
       "matched": {
         "geopolitics": [
@@ -685,466 +813,51 @@
       "also_reported_by": []
     },
     {
-      "title": "P515 Balancing and Settlement Code (BSC) proposed changes",
-      "url": "https://www.ofgem.gov.uk/publications/p515-balancing-and-settlement-code-bsc-proposed-changes",
-      "snippet": "Our decision to approve Balancing and Settlement Code (BSC) P515: Enabling the Delay of Settlement and Payment Runs.",
-      "published_at": "2026-09-21T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 16.1,
-        "themes": 5.6,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.7,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "power_system": [
-          "balancing"
-        ],
-        "unplanned": [
-          "delay"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Watch: Timelapse shows typhoon barrelling towards Japan",
-      "url": "https://www.bbc.co.uk/news/videos/cm0j3224p6j8o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The typhoon is passing Japan's eastern coast, bringing major disruption and heavy rainfall in its wake.",
-      "published_at": "2026-09-21T16:52:12+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "supply_disruption",
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.1,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.3,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "supply_disruption": [
-          "disruption"
-        ],
-        "weather": [
-          "typhoon"
-        ],
-        "geography": [
-          "japan"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudi Arabia Reroutes Oil Exports as Houthi Strikes Target Yanbu",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Reroutes-Oil-Exports-as-Houthi-Strikes-Target-Yanbu.html",
-      "snippet": "Satellite images gathered by Bloomberg show supertankers with capacity for 14 million barrels at Saudi Arabia's Gulf export terminals over the weekend, the highest tanker count observed since at least June, according to data compiled from the European Union's Sentinel-2 satellite. Overall Hormuz tra",
-      "published_at": "2026-09-21T13:51:13+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 10.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.7,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "lng": [
-          "tanker"
-        ],
-        "oil_macro": [
-          "barrels"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "‘Licence to kill:’ French protests decry police use-of-force bill",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/licence-to-kill-french-protests-decry-police-use-of-force-bill?traffic_source=rss",
-      "snippet": "Thousands of protesters across France rallied against a new law they say will give police a licence to kill”.",
-      "published_at": "2026-09-21T17:38:07+00:00",
+      "title": "Trump approval rating hits career low of 32% amid Iran war, high costs",
+      "url": "https://www.aljazeera.com/news/2026/9/21/trumps-approval-rating-hits-record-low-amid-iran-war-economy-fallout?traffic_source=rss",
+      "snippet": "Republican support for Trump dips to 73 percent, down from 82 percent, as war and inflation concerns dominate polls.",
+      "published_at": "2026-09-21T19:10:52+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
+      "has_magnitude": true,
+      "score": 11,
       "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 6.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.6,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "regulation": [
-          "licence"
-        ],
-        "geography": [
-          "france",
-          "french"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Is it a missile? Is it a drone? What’s the Pelican used by Ukraine?",
-      "url": "https://www.aljazeera.com/news/2026/9/21/is-it-a-missile-is-it-a-drone-whats-the-pelican-used-by-ukraine?traffic_source=rss",
-      "snippet": "The use of the Pelican has provoked interest among military analysts as to whether it is a tactical ballistic missile.",
-      "published_at": "2026-09-21T14:19:46+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.4,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "drone"
-        ],
-        "geography": [
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Norway's Arctic Oil Pitch Falls Flat in Brussels",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Norways-Arctic-Oil-Pitch-Falls-Flat-in-Brussels.html",
-      "snippet": "The European Commission is expected to keep its current ban on oil and gas drilling in the Arctic despite months-long campaigning from Norway to lift the moratorium, a spokesperson for the EC has told Euronews. The Commission, the European Union’s legislative arm, is expected to announce a revamped ",
-      "published_at": "2026-09-21T11:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 22.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 40.8,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "regulation": [
-          "european commission",
-          "ban on"
-        ],
-        "geography": [
-          "european",
-          "norway"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Wholesale Gas Prices Are Reaching Consumers Faster, ECB Says",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Wholesale-Gas-Prices-Are-Reaching-Consumers-Faster-ECB-Says.html",
-      "snippet": "The surge in wholesale natural gas prices is set to pass through the retail and electricity inflation in the Eurozone faster than in the past, the European Central Bank (ECB) said in its Economic Bulletin on Monday. While the pass-through is faster and can manifest in the inflation numbers within on",
-      "published_at": "2026-09-21T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
+        "geopolitics",
         "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 12.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.6,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "oil_macro": [
-          "inflation",
-          "central bank"
-        ],
-        "geography": [
-          "european"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "WIND acquires stake in UK firm to strengthen cable lifecycle expertise",
-      "url": "https://www.offshore-energy.biz/wind-acquires-stake-in-uk-firm-to-strengthen-cable-lifecycle-expertise/",
-      "snippet": "WIND, a Dutch subsea cable logistics, cable recovery, and related services company, has acquired [&#8230;] The post WIND acquires stake in UK firm to strengthen cable lifecycle expertise appeared first on Offshore Energy .",
-      "published_at": "2026-09-21T07:56:46+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 20.7,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.1,
-        "recency_multiplier": 0.48
-      },
-      "matched": {
-        "geopolitics": [
-          "subsea cable"
-        ],
-        "infrastructure": [
-          "cable"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Akkuyu 1 set for next stage of pre-commissioning activities",
-      "url": "https://www.world-nuclear-news.org/articles/akkuyu-1-set-for-next-stage-of-pre-commissioning-activities",
-      "snippet": "The first unit at Turkey's Akkuyu Nuclear Power Plant is being prepared for the reactor's next stage of pre-start-up testing.",
-      "published_at": "2026-09-21T09:28:25+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "infrastructure",
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 27.9,
+        "authority": 9.5,
+        "themes": 11.6,
         "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 41.8,
-        "recency_multiplier": 0.54
-      },
-      "matched": {
-        "infrastructure": [
-          "commissioning",
-          "start-up"
-        ],
-        "nuclear": [
-          "nuclear",
-          "reactor"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "TotalEnergies, Staatsolie and APA advancing $12.2B oil project ahead of 2027 drilling ops",
-      "url": "https://www.offshore-energy.biz/totalenergies-staatsolie-and-apa-advancing-12-2b-oil-project-ahead-of-2027-drilling-ops/",
-      "snippet": "As large-scale production components stack up at the Kuldipsingh Port Facility (KPF), representatives of France’s energy giant TotalEnergies and Surinamese officials have met to discuss the progress on a multibillion-dollar deepwater oil project in Block 58 off the coast of Suriname, confirming that",
-      "published_at": "2026-09-21T15:04:19+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 4.5,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.9,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "oil_macro": [
-          "dollar"
-        ],
-        "geography": [
-          "france"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Flylogix expands low-emission methane playbook with cross-border North Sea oil platform drone flight",
-      "url": "https://www.offshore-energy.biz/flylogix-expands-low-emission-methane-playbook-with-cross-border-north-sea-oil-platform-drone-flight/",
-      "snippet": "Low-emission uncrewed aviation specialist Flylogix has crossed an international maritime boundary to survey an oil platform for methane emissions, marking the UK’s first civilian cross-border offshore drone operation. The post Flylogix expands low-emission methane playbook with cross-border North Se",
-      "published_at": "2026-09-21T09:03:06+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 13.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.4,
-        "recency_multiplier": 0.53
+        "raw": 33.1,
+        "recency_multiplier": 0.89
       },
       "matched": {
         "geopolitics": [
-          "drone"
+          "war"
         ],
-        "infrastructure": [
-          "platform"
-        ],
-        "geography": [
-          "uk"
+        "oil_macro": [
+          "inflation"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.rigzone.com/news/wire/crude_falls_on_iran_diplomacy_hopes-21-sep-2026-184667-article/?rss=true",
+        "title": "Crude Falls on Iran Diplomacy Hopes",
+        "published_at": "2026-09-21T20:31:52+00:00"
+      },
+      "hidden": true
     }
   ]
 }
