@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-22T11:43:56.694572+00:00",
-  "item_count": 14,
+  "generated_at": "2026-09-22T15:47:04.085039+00:00",
+  "item_count": 17,
   "alert_counts": {
     "critical": 0,
     "high": 2,
-    "normal": 5
+    "normal": 7
   },
   "superseded_count": 0,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1466
+        "ms": 1346
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19022
+        "ms": 151195
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 4450
+        "ms": 23596
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 318
+        "ms": 496
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 218
+        "ms": 439
       },
       {
         "id": "eia_today",
         "ok": true,
-        "count": 17,
+        "count": 18,
         "error": null,
-        "ms": 184
+        "ms": 222
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 49,
+        "count": 51,
         "error": null,
-        "ms": 1346
+        "ms": 1046
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 209
+        "ms": 450
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 681
+        "ms": 680
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 303
+        "ms": 254
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 699
+        "ms": 339
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 27,
+        "count": 26,
         "error": null,
-        "ms": 63
+        "ms": 177
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 76
+        "ms": 281
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, FLEVO 5",
+      "url": "https://umm.nordpoolgroup.com/#/messages/9aeeeab1-98ba-438e-875f-4e85f4d910f1/4",
+      "snippet": "Published: 22.09.2026 17:27:43 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Test Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; plea",
+      "published_at": "2026-09-22T15:27:43+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 4,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-22T05:55:36+00:00"
+    },
     {
       "title": "Saudi Oil Lifeline May Reopen as Aramco Eyes Yanbu Restart",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Oil-Lifeline-May-Reopen-as-Aramco-Eyes-Yanbu-Restart.html",
@@ -117,7 +161,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 75,
+      "score": 66,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -136,7 +180,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 85.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -165,51 +209,316 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Whitegate Power Station - Whitegate Power Station",
-      "url": "https://umm.nordpoolgroup.com/#/messages/7bffed3b-0d2c-460a-b483-ea934c5b484e/1",
-      "snippet": "Published: 22.09.2026 10:48:13 Publisher: Bord Gais Energy Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Oil Leak Repair Remarks: Oil Leak Repair Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capa",
-      "published_at": "2026-09-22T08:48:13+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 71,
+      "title": "Framatome secures first contract for higher enriched fuel",
+      "url": "https://www.world-nuclear-news.org/articles/framatome-secures-first-contract-for-higher-enriched-fuel",
+      "snippet": "Framatome announced it has signed a commercial contract to deliver the world's first nuclear fuel reload with uranium-235 enrichment above the industry standard of 5% to an operating nuclear reactor in the USA.",
+      "published_at": "2026-09-22T14:16:17+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 60,
       "tags": [
-        "supply_disruption"
+        "nuclear"
       ],
-      "alert": "high",
-      "nature": "unplanned",
+      "alert": "normal",
+      "nature": "",
       "why": {
-        "authority": 21.9,
-        "themes": 25.2,
+        "authority": 13.9,
+        "themes": 14.6,
         "geography": 0.0,
-        "event_nature": 20.0,
+        "event_nature": 0.0,
         "urgency": 16.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 83.1,
-        "recency_multiplier": 0.93
+        "raw": 56.4,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "leak",
-          "repair"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "leak"
+        "nuclear": [
+          "nuclear",
+          "reactor"
         ],
         "urgency": [
-          "unplanned"
+          "announced"
         ]
       },
-      "duplicate_count": 4,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-22T05:55:36+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "QatarEnergy’s CEO: Repairs on damaged LNG trains to take three years",
+      "url": "https://www.offshore-energy.biz/qatarenergys-ceo-repairs-on-damaged-lng-trains-to-take-three-years/",
+      "snippet": "While dismissing alternative pipeline routes as economically unviable, the Chief Executive Officer (CEO) of Qatar’s state-owned oil and gas giant QatarEnergy has highlighted that the country’s liquefied natural gas (LNG) player remains fully committed to maritime transit through the Strait of Hormuz",
+      "published_at": "2026-09-22T15:07:04+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 58,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 54.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "repairs"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Tumbles 3% as Iran Floats Hormuz Reopening Within a Week",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Tumbles-3-as-Iran-Floats-Hormuz-Reopening-Within-a-Week.html",
+      "snippet": "Iran has offered to open the Strait of Hormuz within seven days if the United States eases its pressure including taking steps toward ending the U.S. military blockade of Iranian ports and halting military operations in the Strait, a senior Iranian government official told Japan’s news agency Kyodo ",
+      "published_at": "2026-09-22T11:57:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 58,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 62.4,
+        "recency_multiplier": 0.87
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "“We're Living On An Oil Market Credit Card”: Analyst Sounds Alarm",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Were-Living-On-An-Oil-Market-Credit-Card-Analyst-Sounds-Alarm.html",
+      "snippet": "The oil market is living on borrowed time as flows through the Strait of Hormuz remain disrupted and the cushions such as stock draws and low Asian demand are running thin, according to Saul Kavonic, Senior Research Analyst at MST Marquee. “We are living on an oil market credit card, we can’t draw s",
+      "published_at": "2026-09-22T13:37:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 23.2,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 48.0,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "disrupted"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Yemen Escalation Raises New Risks for Global Oil Markets",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/Yemen-Escalation-Raises-New-Risks-for-Global-Oil-Markets.html",
+      "snippet": "A conflict that has simmered in Yemen for years has flared in recent weeks, with consequences that could reach far beyond the Middle East. The Houthi rebels have seized nearly all of Yemen’s Red Sea coastline, giving the Iran-aligned militant group control of the Bab al-Mandab Strait, a key chokepoi",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 44.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "seized",
+          "escalation",
+          "conflict",
+          "bab al-mandab",
+          "red sea"
+        ],
+        "geography": [
+          "bab al-mandab",
+          "red sea"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Why is the Bab al-Mandab Strait so important?",
+      "url": "https://www.bbc.co.uk/news/videos/c6kgw4xklvx3o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The BBC's Frank Gardner explains why the narrow waterway is key to oil transportation and the world economy.",
+      "published_at": "2026-09-22T12:57:59+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.9,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "geopolitics": [
+          "bab al-mandab"
+        ],
+        "geography": [
+          "bab al-mandab"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Public companies produce most U.S. crude oil and natural gas",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68184",
+      "snippet": "Publicly traded companies represent a tiny share of the total number of companies producing crude oil and natural gas in the United States, but they make up a large share of U.S. production. In 2025, publicly traded companies accounted for just 2% of about 12,000 oil and natural gas producers but pr",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 44,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 36.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Elengy’s Fos Tonkin LNG terminal undergoing maintenance",
@@ -222,13 +531,13 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 41,
       "tags": [
         "lng",
         "infrastructure",
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "planned",
       "why": {
         "authority": 13.1,
@@ -240,7 +549,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.4,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.7
       },
       "matched": {
         "lng": [
@@ -275,12 +584,12 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 38,
       "tags": [
         "infrastructure",
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 12.4,
@@ -291,7 +600,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.5,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.68
       },
       "matched": {
         "infrastructure": [
@@ -300,6 +609,54 @@
         ],
         "lng": [
           "final investment decision"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Libya’s Largest Oilfield Hit by New Armed Group Blockade",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Libyas-Largest-Oilfield-Hit-by-New-Armed-Group-Blockade.html",
+      "snippet": "Crude oil production at Libya’s largest oilfield, Sharara, has slumped over the past day after an armed military group closed a valve on the pipeline that carries crude oil from the field to the Zawiya port for exports, in yet another global supply scare amid ongoing disruptions in the Middle East. ",
+      "published_at": "2026-09-22T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics",
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "middle east"
         ]
       },
       "duplicate_count": 0,
@@ -316,11 +673,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 46,
+      "score": 36,
       "tags": [
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -332,7 +689,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 43.6,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.64
       },
       "matched": {
         "oil_macro": [
@@ -342,89 +699,6 @@
         "geography": [
           "europe",
           "european"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "India’s Oil Import Bill Jumps 48% as Crude Prices Soar",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Oil-Import-Bill-Jumps-48-as-Crude-Prices-Soar.html",
-      "snippet": "India paid $24.4 billion more on crude oil purchases between April and August compared to a year earlier as the spikes in international oil prices raised the import bill by 48% despite a 0.4% decline in volumes, government data showed on Tuesday. The oil price surge amid the war and the uneven flows",
-      "published_at": "2026-09-22T09:15:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 44,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 37.4,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Attacker opens fire near high school in western Turkiye, wounding 11",
-      "url": "https://www.aljazeera.com/news/2026/9/22/gunman-wounds-eight-in-shooting-near-high-school-in-western-turkiye?traffic_source=rss",
-      "snippet": "Police arrest suspect after shooting near high school; injured people rushed to local hospitals for treatment.",
-      "published_at": "2026-09-22T09:04:13+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -441,7 +715,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 41,
+      "score": 35,
       "tags": [
         "oil_macro",
         "supply_disruption"
@@ -458,7 +732,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.84
       },
       "matched": {
         "oil_macro": [
@@ -477,6 +751,90 @@
       "also_reported_by": []
     },
     {
+      "title": "India’s Oil Import Bill Jumps 48% as Crude Prices Soar",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Oil-Import-Bill-Jumps-48-as-Crude-Prices-Soar.html",
+      "snippet": "India paid $24.4 billion more on crude oil purchases between April and August compared to a year earlier as the spikes in international oil prices raised the import bill by 48% despite a 0.4% decline in volumes, government data showed on Tuesday. The oil price surge amid the war and the uneven flows",
+      "published_at": "2026-09-22T09:15:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 35,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.4,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China Gas Raises LNG Order from Venture Global to 2.5 MMtpa",
+      "url": "https://www.rigzone.com/news/china_gas_raises_lng_order_from_venture_global_to_25_mmtpa-22-sep-2026-184673-article/?rss=true",
+      "snippet": "Venture Global secured a new agreement to supply 0.5 million metric tons per annum of United State liquefied natural gas to China Gas for 20 years from 2030.",
+      "published_at": "2026-09-22T13:17:31+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.2,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Aramco Poised to Resume Oil Exports at Red Sea Port",
       "url": "https://www.rigzone.com/news/wire/aramco_poised_to_resume_oil_exports_at_red_sea_port-22-sep-2026-184668-article/?rss=true",
       "snippet": "Several Asian refiners have been told informally by Saudi Aramco they will soon be able to pick up oil from the Red Sea port of Yanbu, according to traders familiar with the matter.",
@@ -487,7 +845,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -503,7 +861,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 31.6,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.71
       },
       "matched": {
         "geopolitics": [
@@ -514,215 +872,6 @@
         ],
         "speculative": [
           "poised"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "FortisBC gets environmental approval for Tilbury LNG expansion",
-      "url": "https://lngprime.com/americas/fortisbc-gets-environmental-approval-for-tilbury-lng-expansion/197228/",
-      "snippet": "Canadian utility and operator of the Tilbury LNG facility in the province of British Columbia, FortisBC, has secured environmental approval for the Tilbury Phase 2 LNG expansion project.",
-      "published_at": "2026-09-22T06:35:24+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "british"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "GasEntec, Samsung Heavy ink small-scale LNG pact",
-      "url": "https://lngprime.com/asia/gasentec-samsung-heavy-ink-small-scale-lng-pact/197276/",
-      "snippet": "South Korea-based LNG technology and assets firm GasEntec has entered into a memorandum of understanding with shipbuilder Samsung Heavy Industries to license the latter's liquefaction technology for small-scale applications between 50,000 and 1 million tons per annum.",
-      "published_at": "2026-09-22T06:32:00+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "lng",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 18.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 36.4,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "liquefaction"
-        ],
-        "regulation": [
-          "license"
-        ],
-        "geography": [
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Power start-up for Mochovce 4",
-      "url": "https://www.world-nuclear-news.org/articles/power-start-up-for-mochovce-4",
-      "snippet": "Slovakia's Mochovce 4 began power generation at 15:33 on Monday, which operator Slovenske elektr rne describes as the last major stage before the unit is put into operation.",
-      "published_at": "2026-09-22T10:17:48+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 12.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "infrastructure": [
-          "start-up"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Qatar’s LNG Loss Revives Projects From Argentina to Timor-Leste",
-      "url": "https://oilprice.com/Energy/Natural-Gas/Qatars-LNG-Loss-Revives-Projects-From-Argentina-to-Timor-Leste.html",
-      "snippet": "With 17% of Qatar’s LNG export capacity disabled and Gulf shipments disrupted, buyers arrived at Gastech looking for gas from somewhere else. Organizers valued the agreements announced or advanced in Bangkok at an estimated $60 billion, including a 20-year U.S. LNG contract and a 35-year production ",
-      "published_at": "2026-09-22T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 34,
-      "tags": [
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 12.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 54.5,
-        "recency_multiplier": 0.47
-      },
-      "matched": {
-        "supply_disruption": [
-          "disrupted"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "qatar",
-          "gulf"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ecuador in LNG import move",
-      "url": "https://lngprime.com/americas/ecuador-in-lng-import-move/197246/",
-      "snippet": "Ecuador's state-run oil and gas company, Petroecuador, has invited international market participants to participate in a non-binding request for information to identify liquefied natural gas (LNG) supply alternatives that can help meet Ecuador’s growing natural gas demand.",
-      "published_at": "2026-09-22T09:04:10+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 10.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.1,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "oil_macro": [
-          "demand"
         ]
       },
       "duplicate_count": 0,
