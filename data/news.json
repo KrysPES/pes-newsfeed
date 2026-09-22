@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-09-22T19:16:20.051873+00:00",
-  "item_count": 15,
+  "generated_at": "2026-09-22T22:16:29.420681+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 9
+    "high": 1,
+    "normal": 5
   },
   "superseded_count": 2,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1556
+        "ms": 1553
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 81692
+        "ms": 77400
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4854
+        "ms": 10823
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 530
+        "ms": 487
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 747
+        "ms": 404
       },
       {
         "id": "eia_today",
@@ -59,243 +59,238 @@
         "ok": true,
         "count": 51,
         "error": null,
-        "ms": 1127
+        "ms": 1048
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 336
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 228
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 660
+        "ms": 615
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 287
+        "ms": 277
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 462
+        "ms": 550
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 22,
+        "count": 24,
         "error": null,
-        "ms": 254
+        "ms": 166
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 212
+        "ms": 290
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, FLEVO 5",
-      "url": "https://umm.nordpoolgroup.com/#/messages/9aeeeab1-98ba-438e-875f-4e85f4d910f1/8",
-      "snippet": "Published: 22.09.2026 18:40:55 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Test Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; plea",
-      "published_at": "2026-09-22T16:40:55+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Vuosaari B - VuB4",
+      "url": "https://umm.nordpoolgroup.com/#/messages/8784de6c-6f8d-4d94-8269-7286a4b730c8/1",
+      "snippet": "Published: 22.09.2026 21:19:41 Publisher: Helen Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Automation malfunction Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Feed-In F",
+      "published_at": "2026-09-22T19:19:41+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 64,
+      "score": 67,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 16.8,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.96
+        "raw": 74.7,
+        "recency_multiplier": 0.93
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "unplanned",
+          "malfunction"
         ],
         "unplanned": [
           "unplanned",
-          "failure"
+          "failure",
+          "malfunction"
         ],
         "urgency": [
           "unplanned"
         ]
       },
-      "duplicate_count": 4,
+      "duplicate_count": 5,
       "also_reported_by": [],
       "first_seen_at": "2026-09-22T05:55:36+00:00"
     },
     {
-      "title": "Rubio defends Trump’s White House ban on CNN, MS NOW and Politico",
-      "url": "https://www.aljazeera.com/news/2026/9/22/rubio-defends-trumps-white-house-ban-on-cnn-ms-now-and-politico?traffic_source=rss",
-      "snippet": "The White House launched &#039;Trump TV&#039; as major networks suspended the television pool covering the US president.",
-      "published_at": "2026-09-22T15:27:49+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 58,
-      "tags": [
-        "regulation",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.5,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 62.0,
-        "recency_multiplier": 0.87
-      },
-      "matched": {
-        "regulation": [
-          "ban on"
-        ],
-        "supply_disruption": [
-          "suspended"
-        ],
-        "unplanned": [
-          "suspended"
-        ],
-        "urgency": [
-          "suspended"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudi Oil Lifeline May Reopen as Aramco Eyes Yanbu Restart",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Oil-Lifeline-May-Reopen-as-Aramco-Eyes-Yanbu-Restart.html",
-      "snippet": "Saudi Aramco officials have informally told at least three Asian refiners that they would soon be able to pick up crude oil cargoes at the Yanbu port on the Red Sea, anonymous traders with knowledge of the matter told Bloomberg on Tuesday. Saudi Arabia has halted loadings at the Yanbu port, its key ",
-      "published_at": "2026-09-22T10:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 56,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 25.1,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 85.9,
-        "recency_multiplier": 0.59
-      },
-      "matched": {
-        "geopolitics": [
-          "red sea"
-        ],
-        "supply_disruption": [
-          "halted"
-        ],
-        "lng": [
-          "cargoes"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "red sea"
-        ],
-        "unplanned": [
-          "halted"
-        ],
-        "urgency": [
-          "halted"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "India’s Russian Oil Imports Slide as Refiners Hunt for Alternatives",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Russian-Oil-Imports-Slide-as-Refiners-Hunt-for-Alternatives.html",
-      "snippet": "India’s imports of Russian crude fell 16.5% in August and are expected to decline again in September, just as a new U.S. sanctions law gives Washington authority to hit major Russian oil buyers with tariffs of up to 100%. Russian shipments to India dropped to about 2.1 million barrels per day in Aug",
-      "published_at": "2026-09-22T17:30:00+00:00",
+      "title": "Global Energy Demand Set to Jump 60% by 2060 as Developing Nations Power Up",
+      "url": "https://oilprice.com/Energy/Energy-General/Global-Energy-Demand-Set-to-Jump-60-by-2060-as-Developing-Nations-Power-Up.html",
+      "snippet": "Emerging economies are going to see an explosion of energy demand over the coming decades. Countries like Brazil, India, Nigeria, and Indonesia are racing to expand their energy production and imports in order to keep up with rapid economic development. While the leaders of these and other emerging ",
+      "published_at": "2026-09-22T21:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 55,
+      "score": 60,
       "tags": [
-        "geopolitics",
+        "supply_disruption",
         "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.1,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 56.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "explosion"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "nigeria",
+          "india"
+        ],
+        "unplanned": [
+          "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Qatar urges diplomacy, rejects Strait of Hormuz ‘bargaining’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/qatar-urges-diplomacy-rejects-strait-of-hormuz?traffic_source=rss",
+      "snippet": "Qatari Emir Sheikh Tamim bin Hamad Al Thani called for the reopening of the Strait of Hormuz while speaking at the UN.",
+      "published_at": "2026-09-22T18:27:01+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "geopolitics"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 23.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 9.5,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 49.1,
-        "recency_multiplier": 1.0
+        "raw": 42.1,
+        "recency_multiplier": 0.87
       },
       "matched": {
         "geopolitics": [
-          "sanctions",
-          "tariffs"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
+          "strait of hormuz"
         ],
         "geography": [
-          "russian",
-          "india"
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-09-22T12:57:59+00:00"
+    },
+    {
+      "title": "QatarEnergy’s CEO: Repairs on damaged LNG trains to take three years",
+      "url": "https://www.offshore-energy.biz/qatarenergys-ceo-repairs-on-damaged-lng-trains-to-take-three-years/",
+      "snippet": "While dismissing alternative pipeline routes as economically unviable, the Chief Executive Officer (CEO) of Qatar’s state-owned oil and gas giant QatarEnergy has highlighted that the country’s liquefied natural gas (LNG) player remains fully committed to maritime transit through the Strait of Hormuz",
+      "published_at": "2026-09-22T15:07:04+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 54.0,
+        "recency_multiplier": 0.67
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "repairs"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -312,7 +307,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 44,
       "tags": [
         "nuclear"
       ],
@@ -327,7 +322,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.4,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.63
       },
       "matched": {
         "nuclear": [
@@ -352,7 +347,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 42,
       "tags": [
         "geopolitics",
         "infrastructure",
@@ -370,7 +365,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.0,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.72
       },
       "matched": {
         "geopolitics": [
@@ -391,92 +386,88 @@
       "also_reported_by": []
     },
     {
-      "title": "Qatar urges diplomacy, rejects Strait of Hormuz ‘bargaining’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/qatar-urges-diplomacy-rejects-strait-of-hormuz?traffic_source=rss",
-      "snippet": "Qatari Emir Sheikh Tamim bin Hamad Al Thani called for the reopening of the Strait of Hormuz while speaking at the UN.",
-      "published_at": "2026-09-22T18:27:01+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 49,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-09-22T11:57:00+00:00"
-    },
-    {
-      "title": "“We're Living On An Oil Market Credit Card”: Analyst Sounds Alarm",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Were-Living-On-An-Oil-Market-Credit-Card-Analyst-Sounds-Alarm.html",
-      "snippet": "The oil market is living on borrowed time as flows through the Strait of Hormuz remain disrupted and the cushions such as stock draws and low Asian demand are running thin, according to Saul Kavonic, Senior Research Analyst at MST Marquee. “We are living on an oil market credit card, we can’t draw s",
-      "published_at": "2026-09-22T13:37:00+00:00",
+      "title": "US Gasoline, Distillate Inventories Continue to Fall as Crude Stocks Hold",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Gasoline-Distillate-Inventories-Continue-to-Fall-as-Crude-Stocks-Hold.html",
+      "snippet": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States rose by 1.786 million barrels in the week ending September 18. In the week prior, US crude oil inventories grew by a substantial 7.14 million barrels. Commercial crude oil inventories excluding the SPR h",
+      "published_at": "2026-09-22T21:08:45+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 44,
+      "score": 41,
       "tags": [
-        "geopolitics",
-        "supply_disruption",
+        "gas_storage",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 23.2,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 18.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 48.0,
-        "recency_multiplier": 0.75
+        "raw": 32.6,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "supply_disruption": [
-          "disrupted"
+        "gas_storage": [
+          "stocks",
+          "inventories"
         ],
         "oil_macro": [
-          "demand"
+          "crude",
+          "barrels"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "united states"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Macron Urges EU to Relax Diesel Rules",
+      "url": "https://www.rigzone.com/news/wire/macron_urges_eu_to_relax_diesel_rules-22-sep-2026-184675-article/?rss=true",
+      "snippet": "French President Emmanuel Macron called on European Commission President Ursula von der Leyen to relax rules on oil products like diesel and kerosene.",
+      "published_at": "2026-09-22T20:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 11.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.4,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "regulation": [
+          "european commission"
+        ],
+        "geography": [
+          "european",
+          "eu",
+          "french"
         ]
       },
       "duplicate_count": 0,
@@ -493,11 +484,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 36,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -509,7 +500,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 44.8,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.62
       },
       "matched": {
         "geopolitics": [
@@ -531,6 +522,48 @@
       "also_reported_by": []
     },
     {
+      "title": "Ukraine anger as EU removes Russian oligarchs from sanctions list",
+      "url": "https://www.bbc.co.uk/news/articles/c6dj4k98107do?at_medium=RSS&at_campaign=rss",
+      "snippet": "Alisher Usmanov and Mikhail Fridman both have close ties to President Putin, and Kyiv said the move sent Moscow the wrong signals.",
+      "published_at": "2026-09-22T19:06:06+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.2,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-09-22T17:30:00+00:00"
+    },
+    {
       "title": "Public companies produce most U.S. crude oil and natural gas",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68184",
       "snippet": "Publicly traded companies represent a tiny share of the total number of companies producing crude oil and natural gas in the United States, but they make up a large share of U.S. production. In 2025, publicly traded companies accounted for just 2% of about 12,000 oil and natural gas producers but pr",
@@ -541,7 +574,7 @@
       "authority": 20,
       "tier": 2,
       "has_magnitude": true,
-      "score": 36,
+      "score": 30,
       "tags": [
         "oil_macro"
       ],
@@ -557,7 +590,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 36.1,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.62
       },
       "matched": {
         "oil_macro": [
@@ -571,196 +604,56 @@
       "also_reported_by": []
     },
     {
-      "title": "Saudi Pipeline Restart Fails to End Oil Market Tightness",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Pipeline-Restart-Fails-to-End-Oil-Market-Tightness.html",
-      "snippet": "Saudi pipeline flows resume, but soaring freight and diesel prices signal persistent oil market tightness. Oil Freight Costs Explode as Gulf Risk Traps the VLCC Fleet - The ultimate showdown of the US-Iran conflict seems to be unfolding in the freight market as costs of VLCC tankers continue to push",
-      "published_at": "2026-09-22T16:10:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.8,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Elengy’s Fos Tonkin LNG terminal undergoing maintenance",
-      "url": "https://lngprime.com/europe/elengys-fos-tonkin-lng-terminal-undergoing-maintenance/197270/",
-      "snippet": "Elengy's Fos Tonkin LNG import terminal on the French Mediterranean coast is currently undergoing planned annual maintenance.",
-      "published_at": "2026-09-22T09:03:51+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "lng",
-        "infrastructure",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "planned",
-      "why": {
-        "authority": 13.1,
-        "themes": 35.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": -12.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.4,
-        "recency_multiplier": 0.53
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal",
-          "import terminal"
-        ],
-        "supply_disruption": [
-          "maintenance"
-        ],
-        "geography": [
-          "french"
-        ],
-        "planned": [
-          "annual maintenance"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Libya’s Largest Oilfield Hit by New Armed Group Blockade",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Libyas-Largest-Oilfield-Hit-by-New-Armed-Group-Blockade.html",
-      "snippet": "Crude oil production at Libya’s largest oilfield, Sharara, has slumped over the past day after an armed military group closed a valve on the pipeline that carries crude oil from the field to the Zawiya port for exports, in yet another global supply scare amid ongoing disruptions in the Middle East. ",
-      "published_at": "2026-09-22T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "infrastructure",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.3,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Tumbles 3% as Iran Floats Hormuz Reopening Within a Week",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Tumbles-3-as-Iran-Floats-Hormuz-Reopening-Within-a-Week.html",
-      "snippet": "Iran has offered to open the Strait of Hormuz within seven days if the United States eases its pressure including taking steps toward ending the U.S. military blockade of Iranian ports and halting military operations in the Strait, a senior Iranian government official told Japan’s news agency Kyodo ",
-      "published_at": "2026-09-22T11:57:00+00:00",
+      "title": "India’s Russian Oil Imports Slide as Refiners Hunt for Alternatives",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Russian-Oil-Imports-Slide-as-Refiners-Hunt-for-Alternatives.html",
+      "snippet": "India’s imports of Russian crude fell 16.5% in August and are expected to decline again in September, just as a new U.S. sanctions law gives Washington authority to hit major Russian oil buyers with tariffs of up to 100%. Russian shipments to India dropped to about 2.1 million barrels per day in Aug",
+      "published_at": "2026-09-22T17:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 15,
+      "score": 14,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 23.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 62.4,
-        "recency_multiplier": 0.66
+        "raw": 49.1,
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
-          "blockade",
-          "strait of hormuz"
+          "sanctions",
+          "tariffs"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "russian",
+          "india"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/qatar-urges-diplomacy-rejects-strait-of-hormuz?traffic_source=rss",
-        "title": "Qatar urges diplomacy, rejects Strait of Hormuz ‘bargaining’",
-        "published_at": "2026-09-22T18:27:01+00:00"
+        "url": "https://www.bbc.co.uk/news/articles/c6dj4k98107do?at_medium=RSS&at_campaign=rss",
+        "title": "Ukraine anger as EU removes Russian oligarchs from sanctions list",
+        "published_at": "2026-09-22T19:06:06+00:00"
       },
       "hidden": true
     },
@@ -775,7 +668,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
@@ -791,7 +684,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.9,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.57
       },
       "matched": {
         "geopolitics": [
