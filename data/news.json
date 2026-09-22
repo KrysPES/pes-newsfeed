@@ -1,157 +1,158 @@
 {
-  "generated_at": "2026-09-21T22:41:06.596543+00:00",
-  "item_count": 17,
+  "generated_at": "2026-09-22T01:11:33.908534+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 5
+    "normal": 4
   },
-  "superseded_count": 1,
+  "superseded_count": 2,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1456
+        "ms": 1100
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 13919
+        "ms": 34073
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 3920
+        "ms": 4879
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 2,
+        "count": 0,
         "error": null,
-        "ms": 208
+        "ms": 482
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 214
+        "ms": 461
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 166
+        "ms": 230
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1479
+        "ms": 1052
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 58
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 214
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 659
+        "ms": 662
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 384
+        "ms": 315
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 675
+        "ms": 494
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 60
+        "ms": 289
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 120
+        "ms": 445
       }
     ]
   },
   "items": [
     {
-      "title": "Crude Falls on Iran Diplomacy Hopes",
-      "url": "https://www.rigzone.com/news/wire/crude_falls_on_iran_diplomacy_hopes-21-sep-2026-184667-article/?rss=true",
-      "snippet": "Oil fell as Saudi exports through Hormuz increased and hopes grew for diplomatic progress in the Iran war.",
-      "published_at": "2026-09-21T20:31:52+00:00",
+      "title": "Qatar’s LNG Loss Revives Projects From Argentina to Timor-Leste",
+      "url": "https://oilprice.com/Energy/Natural-Gas/Qatars-LNG-Loss-Revives-Projects-From-Argentina-to-Timor-Leste.html",
+      "snippet": "With 17% of Qatar’s LNG export capacity disabled and Gulf shipments disrupted, buyers arrived at Gastech looking for gas from somewhere else. Organizers valued the agreements announced or advanced in Bangkok at an estimated $60 billion, including a 20-year U.S. LNG contract and a 35-year production ",
+      "published_at": "2026-09-22T00:00:00+00:00",
       "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 53,
+      "has_magnitude": true,
+      "score": 59,
       "tags": [
-        "geopolitics",
-        "oil_macro"
+        "supply_disruption",
+        "lng"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 10.9,
-        "themes": 20.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 8.8,
+        "themes": 12.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 47.6,
-        "recency_multiplier": 0.99
+        "raw": 54.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "war",
-          "diplomatic"
+        "supply_disruption": [
+          "disrupted"
         ],
-        "oil_macro": [
-          "crude"
+        "lng": [
+          "lng"
         ],
         "geography": [
-          "hormuz"
+          "qatar",
+          "gulf"
+        ],
+        "urgency": [
+          "announced"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-21T19:10:52+00:00"
+      "also_reported_by": []
     },
     {
       "title": "Prague Caps Fuel Prices, Taxes Orlen's ‘Windfall’ Refining Margins",
@@ -164,7 +165,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 51,
+      "score": 44,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -181,7 +182,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.1,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.65
       },
       "matched": {
         "geopolitics": [
@@ -199,6 +200,53 @@
       "also_reported_by": []
     },
     {
+      "title": "New U.S. Sanctions Law Threatens India’s Huge Russian Oil Trade",
+      "url": "https://oilprice.com/Energy/Crude-Oil/New-US-Sanctions-Law-Threatens-Indias-Huge-Russian-Oil-Trade.html",
+      "snippet": "India’s imports of cheaper Russian crude oil have come under scrutiny in recent days after U.S. lawmakers passed a new sanctions bill against Russia’s energy sector. The “Lindsey O. Graham Sanctioning Russia and Iran Act of 2026,” which authorizes and expands statutory sanctions, tariffs, and prohib",
+      "published_at": "2026-09-21T23:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 20.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.4,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "tariffs"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "China Confirms Xi's First Trip to USA in Nearly 3 Years",
       "url": "https://www.rigzone.com/news/wire/china_confirms_xis_first_trip_to_usa_in_nearly_3_years-21-sep-2026-184663-article/?rss=true",
       "snippet": "China said President Xi Jinping will travel to the U.S. to meet Donald Trump.",
@@ -209,7 +257,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 42,
       "tags": [
         "nuclear"
       ],
@@ -225,7 +273,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.78
       },
       "matched": {
         "nuclear": [
@@ -252,11 +300,11 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 36,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.2,
@@ -268,7 +316,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.6,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.8
       },
       "matched": {
         "supply_disruption": [
@@ -282,44 +330,41 @@
       "also_reported_by": []
     },
     {
-      "title": "Poor storage or sabotage? Series of explosions in Syria raises fears",
-      "url": "https://www.aljazeera.com/news/2026/9/21/poor-storage-or-sabotage-series-of-explosions-in-syria-raises-fears?traffic_source=rss",
-      "snippet": "Repeated blasts at military sites expose the risks facing Syria as it rebuilds its army after years of war.",
-      "published_at": "2026-09-21T15:16:03+00:00",
+      "title": "Typhoon Dujuan kills two in Japan, causes travel chaos near Tokyo",
+      "url": "https://www.aljazeera.com/news/2026/9/22/typhoon-dujuan-hits-japan-with-deadly-floods-travel-chaos-near-tokyo?traffic_source=rss",
+      "snippet": "Storm is moving northeast away from Japan&#039;s eastern coast into the Pacific, leaving a path of destruction behind.",
+      "published_at": "2026-09-22T00:09:59+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 35,
       "tags": [
-        "geopolitics",
-        "gas_storage"
+        "weather"
       ],
-      "alert": "normal",
-      "nature": "unplanned",
+      "alert": "low",
+      "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 22.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
+        "themes": 12.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 51.4,
-        "recency_multiplier": 0.66
+        "raw": 26.8,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "war",
-          "sabotage"
+        "weather": [
+          "typhoon",
+          "storm"
         ],
-        "gas_storage": [
-          "storage"
-        ],
-        "unplanned": [
-          "sabotage"
+        "geography": [
+          "japan"
         ]
       },
       "duplicate_count": 0,
@@ -336,7 +381,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 40,
+      "score": 34,
       "tags": [
         "geopolitics"
       ],
@@ -352,7 +397,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.8,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.5
       },
       "matched": {
         "geopolitics": [
@@ -361,6 +406,47 @@
         ],
         "geography": [
           "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Global Refinery Crunch Pushes Diesel Prices to New Records",
+      "url": "https://oilprice.com/Energy/Oil-Prices/Global-Refinery-Crunch-Pushes-Diesel-Prices-to-New-Records.html",
+      "snippet": "U.S. diesel prices broke another record last week, topping $6.50 per gallon. In Europe, fuel prices are soaring, and shortages are looming over already struggling economies. There is simply not enough refining capacity in the world to make up for the loss of Middle Eastern and Russian barrels. And t",
+      "published_at": "2026-09-21T22:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.7,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "oil_macro": [
+          "refinery",
+          "barrels"
+        ],
+        "geography": [
+          "europe"
         ]
       },
       "duplicate_count": 0,
@@ -377,7 +463,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 33,
       "tags": [
         "nuclear"
       ],
@@ -393,7 +479,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.4,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.46
       },
       "matched": {
         "nuclear": [
@@ -421,7 +507,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 37,
+      "score": 32,
       "tags": [
         "infrastructure",
         "supply_disruption"
@@ -437,7 +523,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 75.4,
-        "recency_multiplier": 0.38
+        "recency_multiplier": 0.32
       },
       "matched": {
         "infrastructure": [
@@ -458,324 +544,10 @@
       "also_reported_by": []
     },
     {
-      "title": "Global Refinery Crunch Pushes Diesel Prices to New Records",
-      "url": "https://oilprice.com/Energy/Oil-Prices/Global-Refinery-Crunch-Pushes-Diesel-Prices-to-New-Records.html",
-      "snippet": "U.S. diesel prices broke another record last week, topping $6.50 per gallon. In Europe, fuel prices are soaring, and shortages are looming over already struggling economies. There is simply not enough refining capacity in the world to make up for the loss of Middle Eastern and Russian barrels. And t",
-      "published_at": "2026-09-21T22:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "oil_macro": [
-          "refinery",
-          "barrels"
-        ],
-        "geography": [
-          "europe"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Masdar Raises Its Gross Renewables Capacity in Serbia to Over 300MW",
-      "url": "https://www.rigzone.com/news/masdar_raises_its_gross_renewables_capacity_in_serbia_to_over_300mw-21-sep-2026-184665-article/?rss=true",
-      "snippet": "'Beyond the operational Cibuk complex, Masdar has a Serbian development pipeline of more than 200 MW spanning solar, wind and battery storage projects'.",
-      "published_at": "2026-09-21T14:56:40+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 34,
-      "tags": [
-        "power_system",
-        "gas_storage",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 17.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 40.5,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "power_system": [
-          "renewables",
-          "battery"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hormuz Blockage Puts Qatar's $83 Billion LNG Bet at Risk",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Blockage-Puts-Qatars-83-Billion-LNG-Bet-at-Risk.html",
-      "snippet": "QatarEnergy CEO and Qatar Energy Minister Saad al-Kaabi says the Strait of Hormuz crisis could delay the company's LNG expansion because critical equipment cannot reach Qatar, Reuters reported on Monday. North Field East's first production train remains on schedule for the first half of 2027, Al-Kaa",
-      "published_at": "2026-09-21T16:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "planned",
-      "why": {
-        "authority": 8.8,
-        "themes": 21.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": -12.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.8,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "planned": [
-          "on schedule"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Indian plants celebrate fuel loading milestones",
-      "url": "https://www.world-nuclear-news.org/articles/indian-plants-celebrate-fuel-loading-milestones",
-      "snippet": "As fuel loading begins at Rajasthan Atomic Power Project unit 8, Nuclear Power Corporation of India Ltd has started geotechnical investigations for the next two units at the plant. Meanwhile, fuel loading has begun at Kaiga unit 1 as the unit begins the process to return to service after refurbishme",
-      "published_at": "2026-09-21T14:57:50+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "supply_disruption",
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 20.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.8,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "supply_disruption": [
-          "return to service"
-        ],
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "India's Coal Demand Set to Jump 4.2% as Plant Stocks Hit Critical Lows",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Coal-Demand-Set-to-Jump-42-as-Plant-Stocks-Hit-Critical-Lows.html",
-      "snippet": "The share of coal-fired power plants in India running on critically low levels of coal inventory has soared in recent weeks to nearly 40% of all operational coal plants, Reuters reported on Monday, citing government data. As many as 74 coal-fired power plants had fewer than three days’ worth of coal",
-      "published_at": "2026-09-21T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 32,
-      "tags": [
-        "gas_storage",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.1,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 41.9,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "gas_storage": [
-          "stocks",
-          "inventory"
-        ],
-        "oil_macro": [
-          "demand"
-        ],
-        "geography": [
-          "india"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Minimum performance standards for data centres in Europe - public consultation launched",
-      "url": "https://energy.ec.europa.eu/news/minimum-performance-standards-data-centres-europe-public-consultation-launched-2026-09-21_en",
-      "snippet": "The European Commission has launched a 12-week open public consultation and call for evidence on minimum performance standards for data centres in the EU.",
-      "published_at": "2026-09-21T12:44:08+00:00",
-      "type": "regulation",
-      "source": "ec_energy",
-      "source_name": "European Commission energy",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 17.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.7,
-        "recency_multiplier": 0.54
-      },
-      "matched": {
-        "regulation": [
-          "consultation",
-          "european commission"
-        ],
-        "geography": [
-          "europe",
-          "european",
-          "eu"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "QatarEnergy CEO says damaged Ras Laffan LNG trains to take three years to repair",
-      "url": "https://lngprime.com/lng-terminals/qatarenergy-ceo-says-damaged-ras-laffan-lng-trains-to-take-three-years-to-repair/197220/",
-      "snippet": "State-owned LNG giant QatarEnergy expects the damage to two liquefaction trains at its giant Ras Laffan complex to take three years to repair, according to Qatar’s energy minister and CEO of QatarEnergy, Saad Sherida Al-Kaabi.",
-      "published_at": "2026-09-21T08:56:39+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 13.1,
-        "themes": 19.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 57.7,
-        "recency_multiplier": 0.4
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "liquefaction"
-        ],
-        "supply_disruption": [
-          "repair"
-        ],
-        "geography": [
-          "qatar"
-        ],
-        "unplanned": [
-          "damage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "How is Europe dealing with ‘hybrid war’?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/9/21/how-is-europe-dealing-with-hybrid-war?traffic_source=rss",
-      "snippet": "European leaders accuse Russia of hybrid warfare.",
-      "published_at": "2026-09-21T17:12:32+00:00",
+      "title": "Iran war live: IRGC says US, Israel ‘must accept withdrawal’ from region",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/22/iran-war-live-irgc-says-us-israel-must-accept-withdrawal-from-region?traffic_source=rss",
+      "snippet": "The IRGC says the US and Israel must accept the region&#039;s freedom from their vile and criminal presence .",
+      "published_at": "2026-09-22T00:00:00+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
@@ -784,33 +556,86 @@
       "has_magnitude": false,
       "score": 30,
       "tags": [
-        "geopolitics"
+        "geopolitics",
+        "gas_storage"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "themes": 13.0,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 28.5,
-        "recency_multiplier": 0.77
+        "raw": 22.5,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
           "war"
         ],
-        "geography": [
-          "europe",
-          "european"
+        "gas_storage": [
+          "withdrawal"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-09-21T19:10:52+00:00"
+    },
+    {
+      "title": "Crude Falls on Iran Diplomacy Hopes",
+      "url": "https://www.rigzone.com/news/wire/crude_falls_on_iran_diplomacy_hopes-21-sep-2026-184667-article/?rss=true",
+      "snippet": "Oil fell as Saudi exports through Hormuz increased and hopes grew for diplomatic progress in the Iran war.",
+      "published_at": "2026-09-21T20:31:52+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 14,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 20.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.6,
+        "recency_multiplier": 0.81
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "diplomatic"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/liveblog/2026/9/22/iran-war-live-irgc-says-us-israel-must-accept-withdrawal-from-region?traffic_source=rss",
+        "title": "Iran war live: IRGC says US, Israel ‘must accept withdrawal’ from region",
+        "published_at": "2026-09-22T00:00:00+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Trump approval rating hits career low of 32% amid Iran war, high costs",
@@ -823,7 +648,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": true,
-      "score": 11,
+      "score": 10,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -839,7 +664,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 33.1,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -853,9 +678,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/crude_falls_on_iran_diplomacy_hopes-21-sep-2026-184667-article/?rss=true",
-        "title": "Crude Falls on Iran Diplomacy Hopes",
-        "published_at": "2026-09-21T20:31:52+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/9/22/iran-war-live-irgc-says-us-israel-must-accept-withdrawal-from-region?traffic_source=rss",
+        "title": "Iran war live: IRGC says US, Israel ‘must accept withdrawal’ from region",
+        "published_at": "2026-09-22T00:00:00+00:00"
       },
       "hidden": true
     }
