@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-22T01:11:33.908534+00:00",
-  "item_count": 13,
+  "generated_at": "2026-09-22T06:13:55.256018+00:00",
+  "item_count": 9,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 4
+    "high": 1,
+    "normal": 2
   },
-  "superseded_count": 2,
+  "superseded_count": 0,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,138 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1100
+        "ms": 1676
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 34073
+        "ms": 19198
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 4879
+        "ms": 3786
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 482
+        "ms": 633
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 461
+        "ms": 207
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 230
+        "ms": 153
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1052
+        "ms": 1134
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 214
+        "ms": 569
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 662
+        "ms": 697
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 315
+        "ms": 246
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 494
+        "ms": 595
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 32,
+        "count": 34,
         "error": null,
-        "ms": 289
+        "ms": 137
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 445
+        "ms": 71
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, ZANDVLIET 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/3e3b26ac-e039-4059-bcb8-830842b50250/3",
+      "snippet": "Published: 22.09.2026 07:55:36 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-09-22T05:55:36+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Qatar’s LNG Loss Revives Projects From Argentina to Timor-Leste",
       "url": "https://oilprice.com/Energy/Natural-Gas/Qatars-LNG-Loss-Revives-Projects-From-Argentina-to-Timor-Leste.html",
@@ -117,7 +160,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 59,
+      "score": 47,
       "tags": [
         "supply_disruption",
         "lng"
@@ -134,7 +177,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 54.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.72
       },
       "matched": {
         "supply_disruption": [
@@ -155,6 +198,132 @@
       "also_reported_by": []
     },
     {
+      "title": "FortisBC gets environmental approval for Tilbury LNG expansion",
+      "url": "https://lngprime.com/americas/fortisbc-gets-environmental-approval-for-tilbury-lng-expansion/197228/",
+      "snippet": "Canadian utility and operator of the Tilbury LNG facility in the province of British Columbia, FortisBC, has secured environmental approval for the Tilbury Phase 2 LNG expansion project.",
+      "published_at": "2026-09-22T05:41:24+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Four dead after powerful Typhoon Dujuan lashes Japan",
+      "url": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The storm pulled away from Japan after bringing heavy rains and strong winds to Tokyo and surrounding areas.",
+      "published_at": "2026-09-22T05:58:35+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 12.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "weather": [
+          "typhoon",
+          "storm"
+        ],
+        "geography": [
+          "japan"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Crude Falls on Iran Diplomacy Hopes",
+      "url": "https://www.rigzone.com/news/wire/crude_falls_on_iran_diplomacy_hopes-21-sep-2026-184667-article/?rss=true",
+      "snippet": "Oil fell as Saudi exports through Hormuz increased and hopes grew for diplomatic progress in the Iran war.",
+      "published_at": "2026-09-21T20:31:52+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 20.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.6,
+        "recency_multiplier": 0.55
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "diplomatic"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Prague Caps Fuel Prices, Taxes Orlen's ‘Windfall’ Refining Margins",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Prague-Caps-Fuel-Prices-Taxes-Orlens-Windfall-Refining-Margins.html",
       "snippet": "The Czech government will reinstate price caps on gasoline and diesel from October 1 and tax refiners on 50% of any margin increase over 2025 levels, Reuters reported Monday, as Saudi Arabia's cut of October crude allocations to Europe compounds pressure from the closed Strait of Hormuz. According t",
@@ -165,12 +334,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 44,
+      "score": 33,
       "tags": [
         "geopolitics",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -182,7 +351,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.1,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.44
       },
       "matched": {
         "geopolitics": [
@@ -200,6 +369,47 @@
       "also_reported_by": []
     },
     {
+      "title": "Oil Prices Reverse Course as Traders Watch US-Iran Diplomacy",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Reverse-Course-as-Traders-Watch-US-Iran-Diplomacy.html",
+      "snippet": "Crude oil prices, which had been falling since last week, today reversed course and made gains ahead of a UN General Assembly session that many hope will yield some progress on peace talks between the U.S. and Iran. As indicated by the latest oil price move, not everyone shares that hope, with Brent",
+      "published_at": "2026-09-22T05:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 14.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "peace talks"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "New U.S. Sanctions Law Threatens India’s Huge Russian Oil Trade",
       "url": "https://oilprice.com/Energy/Crude-Oil/New-US-Sanctions-Law-Threatens-Indias-Huge-Russian-Oil-Trade.html",
       "snippet": "India’s imports of cheaper Russian crude oil have come under scrutiny in recent days after U.S. lawmakers passed a new sanctions bill against Russia’s energy sector. The “Lindsey O. Graham Sanctioning Russia and Iran Act of 2026,” which authorizes and expands statutory sanctions, tariffs, and prohib",
@@ -210,12 +420,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 31,
       "tags": [
         "geopolitics",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -227,7 +437,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.4,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.67
       },
       "matched": {
         "geopolitics": [
@@ -257,11 +467,11 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 31,
       "tags": [
         "nuclear"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 10.9,
@@ -273,7 +483,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.53
       },
       "matched": {
         "nuclear": [
@@ -288,401 +498,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Airlines criticise air traffic control as second glitch causes more disruption in UK",
-      "url": "https://www.bbc.co.uk/news/articles/cqp80p78mxx5o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Prime Minister Andy Burnham said further issues today \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it.",
-      "published_at": "2026-09-21T20:21:18+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.6,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "supply_disruption": [
-          "disruption"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Typhoon Dujuan kills two in Japan, causes travel chaos near Tokyo",
-      "url": "https://www.aljazeera.com/news/2026/9/22/typhoon-dujuan-hits-japan-with-deadly-floods-travel-chaos-near-tokyo?traffic_source=rss",
-      "snippet": "Storm is moving northeast away from Japan&#039;s eastern coast into the Pacific, leaving a path of destruction behind.",
-      "published_at": "2026-09-22T00:09:59+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 12.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.8,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "weather": [
-          "typhoon",
-          "storm"
-        ],
-        "geography": [
-          "japan"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Yemenis flee across Red Sea as Houthis and Saudi-backed forces escalate war",
-      "url": "https://www.bbc.co.uk/news/articles/cw4gm7l742dmo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The BBC's Frank Gardner speaks to some of those who have fled the war by crossing the Red Sea to Djibouti.",
-      "published_at": "2026-09-21T14:14:16+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 51.8,
-        "recency_multiplier": 0.5
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "red sea"
-        ],
-        "geography": [
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Global Refinery Crunch Pushes Diesel Prices to New Records",
-      "url": "https://oilprice.com/Energy/Oil-Prices/Global-Refinery-Crunch-Pushes-Diesel-Prices-to-New-Records.html",
-      "snippet": "U.S. diesel prices broke another record last week, topping $6.50 per gallon. In Europe, fuel prices are soaring, and shortages are looming over already struggling economies. There is simply not enough refining capacity in the world to make up for the loss of Middle Eastern and Russian barrels. And t",
-      "published_at": "2026-09-21T22:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.7,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "oil_macro": [
-          "refinery",
-          "barrels"
-        ],
-        "geography": [
-          "europe"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "France prepares to start dismantling first UNGG reactor",
-      "url": "https://www.world-nuclear-news.org/articles/france-prepares-to-start-dismantling-first-ungg-reactor",
-      "snippet": "EDF subsidiary Cyclife announced the Chinon A nuclear power plant dismantling project has reached a major milestone with the validation of the contractual strategy for dismantling the Chinon A2 plant's heat exchangers.",
-      "published_at": "2026-09-21T13:13:38+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 14.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.4,
-        "recency_multiplier": 0.46
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor"
-        ],
-        "geography": [
-          "france"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Vuosaari B - VuB6",
-      "url": "https://umm.nordpoolgroup.com/#/messages/c1ade2ee-cc03-4a04-aef9-e87eefd3b0b6/3",
-      "snippet": "Published: 21.09.2026 10:14:34 Publisher: Helen Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: VuB Kt5 Transitioning to faster start-up is taking longer than expected. Remarks: VuKT4 works limits HT6 to half power. Update: VuB kt5 is now avail",
-      "published_at": "2026-09-21T08:14:34+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "infrastructure",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 17.5,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 75.4,
-        "recency_multiplier": 0.32
-      },
-      "matched": {
-        "infrastructure": [
-          "start-up"
-        ],
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran war live: IRGC says US, Israel ‘must accept withdrawal’ from region",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/9/22/iran-war-live-irgc-says-us-israel-must-accept-withdrawal-from-region?traffic_source=rss",
-      "snippet": "The IRGC says the US and Israel must accept the region&#039;s freedom from their vile and criminal presence .",
-      "published_at": "2026-09-22T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 13.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "gas_storage": [
-          "withdrawal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-09-21T19:10:52+00:00"
-    },
-    {
-      "title": "Crude Falls on Iran Diplomacy Hopes",
-      "url": "https://www.rigzone.com/news/wire/crude_falls_on_iran_diplomacy_hopes-21-sep-2026-184667-article/?rss=true",
-      "snippet": "Oil fell as Saudi exports through Hormuz increased and hopes grew for diplomatic progress in the Iran war.",
-      "published_at": "2026-09-21T20:31:52+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 14,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 20.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.6,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "diplomatic"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/9/22/iran-war-live-irgc-says-us-israel-must-accept-withdrawal-from-region?traffic_source=rss",
-        "title": "Iran war live: IRGC says US, Israel ‘must accept withdrawal’ from region",
-        "published_at": "2026-09-22T00:00:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Trump approval rating hits career low of 32% amid Iran war, high costs",
-      "url": "https://www.aljazeera.com/news/2026/9/21/trumps-approval-rating-hits-record-low-amid-iran-war-economy-fallout?traffic_source=rss",
-      "snippet": "Republican support for Trump dips to 73 percent, down from 82 percent, as war and inflation concerns dominate polls.",
-      "published_at": "2026-09-21T19:10:52+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 10,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 11.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 33.1,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "oil_macro": [
-          "inflation"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/9/22/iran-war-live-irgc-says-us-israel-must-accept-withdrawal-from-region?traffic_source=rss",
-        "title": "Iran war live: IRGC says US, Israel ‘must accept withdrawal’ from region",
-        "published_at": "2026-09-22T00:00:00+00:00"
-      },
-      "hidden": true
     }
   ]
 }
