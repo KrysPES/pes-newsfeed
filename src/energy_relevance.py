@@ -150,14 +150,22 @@ def _load_anchor_terms(themes_path):
     name in a football result is still a football result, which is how the
     Fenerbahce item would have scored on proximity alone."""
     terms = list(FALLBACK_ANCHORS)
+    geo_terms = []
     if themes_path is not None:
         try:
             cfg = json.loads(Path(themes_path).read_text(encoding="utf8"))
         except (OSError, ValueError):
             cfg = {}
-        for theme in (cfg.get("themes") or {}).values():
+        for name, theme in (cfg.get("themes") or {}).items():
+            # QA W13 (14 Sep 2026): geopolitics vocabulary is context, not a
+            # market anchor. "Irish whiskey tariffs" reached the terminal
+            # because "tariff" promoted the story on its own; geopolitics
+            # terms now count as WEAK anchors, keeping a story only when a
+            # second signal appears beside them. An energy story about
+            # sanctions still passes instantly on its energy vocabulary.
+            dest = geo_terms if name == "geopolitics" else terms
             for key in ("terms", "phrases"):
-                terms.extend(theme.get(key) or [])
+                dest.extend(theme.get(key) or [])
 
     weak = {w.lower() for w in WEAK_ANCHORS}
     strong = []
@@ -168,7 +176,12 @@ def _load_anchor_terms(themes_path):
             continue
         seen.add(t)
         strong.append(t)
-    return strong
+    extra_weak = []
+    for t in geo_terms:
+        t = str(t).strip().lower()
+        if t and t not in seen and t not in weak and t not in extra_weak:
+            extra_weak.append(t)
+    return strong, extra_weak
 
 
 def _compile(terms):
@@ -184,8 +197,9 @@ def _compile(terms):
 
 class RelevanceFilter:
     def __init__(self, themes_path=None):
-        self.anchors = _compile(_load_anchor_terms(themes_path))
-        self.weak = _compile(WEAK_ANCHORS)
+        strong, extra_weak = _load_anchor_terms(themes_path)
+        self.anchors = _compile(strong)
+        self.weak = _compile(list(WEAK_ANCHORS) + extra_weak)
         self.blocked = _compile(BLOCKED_TERMS)
         self.anchor_count = len(self.anchors)
         self.weak_count = len(self.weak)
