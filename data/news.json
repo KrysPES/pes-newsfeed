@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-23T18:41:36.440374+00:00",
-  "item_count": 13,
+  "generated_at": "2026-09-23T21:49:25.793335+00:00",
+  "item_count": 11,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 5
+    "high": 1,
+    "normal": 4
   },
   "superseded_count": 0,
   "sources": {
@@ -17,138 +17,314 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1163
+        "ms": 1219
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 11693
+        "ms": 16932
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3725
+        "ms": 67490
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 682
+        "ms": 625
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 556
+        "ms": 303
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 109
+        "ms": 193
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 51,
         "error": null,
-        "ms": 1132
+        "ms": 828
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 214
+        "ms": 168
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 557
+        "ms": 523
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 244
+        "ms": 133
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 436
+        "ms": 247
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 22,
         "error": null,
-        "ms": 85
+        "ms": 135
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 233
+        "ms": 122
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, FLEVO 5",
-      "url": "https://umm.nordpoolgroup.com/#/messages/9683b4d1-f669-476b-af46-636948f4b58b/1",
-      "snippet": "Published: 23.09.2026 18:11:46 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Test Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type",
-      "published_at": "2026-09-23T16:11:46+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Huntstown - Huntstown 1 (HNC)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/0f30310d-a216-49cf-97e2-3335b54ed635/1",
+      "snippet": "Published: 23.09.2026 21:27:09 Publisher: Huntstown Power Company Limited Status: Active Type of Unavailability: Unplanned Reason Code: Foreseen maintenance Reason for the Unavailability: ST Brush replacement Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable ",
+      "published_at": "2026-09-23T19:27:09+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 64,
+      "score": 69,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 16.8,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.96
+        "raw": 74.7,
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "unplanned",
+          "maintenance"
         ],
         "unplanned": [
-          "unplanned",
-          "failure"
+          "unplanned"
         ],
         "urgency": [
           "unplanned"
         ]
       },
-      "duplicate_count": 9,
+      "duplicate_count": 10,
       "also_reported_by": [],
       "first_seen_at": "2026-09-23T06:11:39+00:00"
+    },
+    {
+      "title": "Hormuz Supply Crisis to Change LNG Market Forever",
+      "url": "https://oilprice.com/Energy/Natural-Gas/Hormuz-Supply-Crisis-to-Change-LNG-Market-Forever.html",
+      "snippet": "The Strait of Hormuz crisis has turned roughly 20% of global LNG supply into something buyers now have to treat as interruptible. Nearly seven months after traffic through the strait collapsed, LNG exports from Qatar and the UAE remain severely constrained. Buyers in Europe and Asia are responding b",
+      "published_at": "2026-09-23T19:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 64,
+      "tags": [
+        "lng",
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 30.8,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 67.5,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng exports"
+        ],
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Rises as Diesel Export Talk Swirls",
+      "url": "https://www.rigzone.com/news/wire/oil_rises_as_diesel_export_talk_swirls-23-sep-2026-184689-article/?rss=true",
+      "snippet": "Brent rose nearly 4% as tight fuel supplies, Hormuz risks and diesel export concerns drove trading.",
+      "published_at": "2026-09-23T19:58:50+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 50,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 4.5,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 43.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "brent"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Hormuz Workarounds Keep Gulf Oil Flowing—at a Steep Cost",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Hormuz-Workarounds-Keep-Gulf-Oil-Flowingat-a-Steep-Cost.html",
+      "snippet": "Ship-to-ship transfers and pipelines bypassing the Strait of Hormuz, where available, have become the primary export route for most Middle Eastern oil. Oil producers in the region have demonstrated what some see as remarkable adaptability to the new circumstances. In fact, it is a matter of survival",
+      "published_at": "2026-09-23T20:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China's Newest Power Plant Swaps Steam for Supercritical CO2",
+      "url": "https://oilprice.com/Energy/Energy-General/Chinas-Newest-Power-Plant-Swaps-Steam-for-Supercritical-CO2.html",
+      "snippet": "China just broke ground on a revolutionary new hybridized energy production and storage facility. The power plant will store excess energy in the form of molten salt, and then produce electricity during peak demand times through a supercritical carbon dioxide system. The goal of the project is to li",
+      "published_at": "2026-09-23T21:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "gas_storage",
+        "power_system",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 27.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 40.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "storage facility"
+        ],
+        "power_system": [
+          "peak demand"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "EIA Reports 3M Barrel Crude Build as Distillate Stocks Fall 12% Below Average",
@@ -161,12 +337,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 48,
+      "score": 40,
       "tags": [
         "gas_storage",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -178,7 +354,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 47.3,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.68
       },
       "matched": {
         "gas_storage": [
@@ -198,41 +374,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Iran: Strait of Hormuz won’t be used to ‘impose insecurity on us’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/iran-strait-of-hormuz-wont-be-used-to-impose-insecurity-on?traffic_source=rss",
-      "snippet": "Iranian President Masoud Pezeshkian told the UN General Assembly that ‘warfare knows no borders’.",
-      "published_at": "2026-09-23T15:24:13+00:00",
+      "title": "Trump Fuel Export Ban Threat Sends European Diesel Soaring",
+      "url": "https://www.rigzone.com/news/wire/trump_fuel_export_ban_threat_sends_european_diesel_soaring-23-sep-2026-184685-article/?rss=true",
+      "snippet": "President Donald Trump's push to ban American diesel exports sent European prices for the fuel surging.",
+      "published_at": "2026-09-23T20:00:00+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 38,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 10.9,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 0.91
+        "raw": 29.9,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
-          "strait of hormuz"
+          "export ban"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "european"
         ]
       },
       "duplicate_count": 0,
@@ -249,12 +424,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 44,
+      "score": 36,
       "tags": [
         "infrastructure",
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -266,7 +441,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 47.6,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.59
       },
       "matched": {
         "infrastructure": [
@@ -279,13 +454,10 @@
           "french"
         ]
       },
-      "duplicate_count": 3,
+      "duplicate_count": 1,
       "also_reported_by": [
-        "Offshore Energy",
-        "Rigzone",
-        "LNG Prime"
-      ],
-      "first_seen_at": "2026-09-23T07:34:08+00:00"
+        "Offshore Energy"
+      ]
     },
     {
       "title": "Dangote's Kenya Refinery Project Launches This Week at Up to $20B",
@@ -298,11 +470,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 35,
       "tags": [
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -313,13 +485,54 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.2,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.77
       },
       "matched": {
         "oil_macro": [
           "crude",
           "refinery",
           "barrels"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ukraine’s Zelenskyy calls for sustained pressure to end ‘Putin’s crazy war’",
+      "url": "https://www.aljazeera.com/news/2026/9/23/zelenskyy-calls-for-sustained-pressure-on-patient-zero-putin-in-un-speech?traffic_source=rss",
+      "snippet": "Ukrainian president urges world leaders to keep choking Russia&#039;s revenues to impede its war efforts.",
+      "published_at": "2026-09-23T19:31:12+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
         ]
       },
       "duplicate_count": 0,
@@ -336,7 +549,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 37,
+      "score": 30,
       "tags": [
         "geopolitics"
       ],
@@ -352,7 +565,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.7,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.64
       },
       "matched": {
         "geopolitics": [
@@ -360,289 +573,6 @@
         ],
         "geography": [
           "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ethiopia faces renewed war as armed groups launch offensive",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/09-23-26-ethiopia-armed-groups-sv-mp4?traffic_source=rss",
-      "snippet": "There are fears of a renewed war in Ethiopia after seven armed groups formed an alliance to overthrow the government.",
-      "published_at": "2026-09-23T17:10:33+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "offensive",
-          "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "How much is UK supporting Saudi Arabia in its war with Iran-backed Houthis?",
-      "url": "https://www.aljazeera.com/news/2026/9/23/how-much-is-uk-supporting-saudi-arabia-in-its-war-with-iran-backed-houthis?traffic_source=rss",
-      "snippet": "UK to refuel Saudi fighter jets and France to secure energy infrastructure amid fighting with Yemen&#039;s Houthi group.",
-      "published_at": "2026-09-23T13:57:50+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Subsea Cable Assets wins first contract with Saipem, worth $20 million",
-      "url": "https://www.offshore-energy.biz/subsea-cable-assets-wins-first-contract-with-saipem-worth-20-million/",
-      "snippet": "Netherlands-headquartered Subsea Cable Assets (SCA) has won its first contract with Saipem for cable [&#8230;] The post Subsea Cable Assets wins first contract with Saipem, worth $20 million appeared first on Offshore Energy .",
-      "published_at": "2026-09-23T10:52:33+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 20.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.1,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "geopolitics": [
-          "subsea cable"
-        ],
-        "infrastructure": [
-          "cable"
-        ],
-        "geography": [
-          "netherlands"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Trump pushes Russia-Ukraine ‘energy truce’: Can it work?",
-      "url": "https://www.aljazeera.com/news/2026/9/23/trump-pushes-russia-ukraine-energy-truce-can-it-work?traffic_source=rss",
-      "snippet": "Talks of a possible halt in attacks on energy facilities come as strikes on such targets continue unabated.",
-      "published_at": "2026-09-23T14:49:04+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 14.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.5,
-        "recency_multiplier": 0.87
-      },
-      "matched": {
-        "geopolitics": [
-          "truce"
-        ],
-        "supply_disruption": [
-          "halt"
-        ],
-        "geography": [
-          "russia",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Azerbaijan pardons Frenchman after EU lifts sanctions on Russian billionaire",
-      "url": "https://www.bbc.co.uk/news/articles/cwp84rrrymd0o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Martin Ryan is pardoned months after he was jailed on charges of spying, but a second Frenchman remains in prison.",
-      "published_at": "2026-09-23T14:32:42+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.2,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "eu"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hurricane Polo downgraded but remains 'very powerful' off coast of Mexico",
-      "url": "https://www.bbc.co.uk/news/articles/ckddvlrlr5qeo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The large storm in the Pacific Ocean is being driven by warm waters caused by the El Niño weather phenomenon.",
-      "published_at": "2026-09-23T17:58:19+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "weather": [
-          "hurricane",
-          "storm"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Syria’s al-Sharaa warns Israeli attacks endanger delicate post-war recovery",
-      "url": "https://www.aljazeera.com/news/2026/9/23/syrias-al-sharaa-warns-israeli-attacks-endanger-delicate-post-war-recovery?traffic_source=rss",
-      "snippet": "President Ahmed al-Sharaa calls for Israeli withdrawal, condemning its attacks as Syria emerges from civil war.",
-      "published_at": "2026-09-23T16:44:01+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 13.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "gas_storage": [
-          "withdrawal"
         ]
       },
       "duplicate_count": 0,
