@@ -1,111 +1,155 @@
 {
-  "generated_at": "2026-09-23T05:11:23.554972+00:00",
-  "item_count": 5,
+  "generated_at": "2026-09-23T09:59:26.838733+00:00",
+  "item_count": 13,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 3
+    "high": 1,
+    "normal": 5
   },
-  "superseded_count": 0,
+  "superseded_count": 1,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1360
+        "ms": 1114
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 25310
+        "ms": 24242
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 17112
+        "ms": 18517
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 714
+        "ms": 201
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 508
+        "ms": 291
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 209
+        "ms": 86
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 51,
         "error": null,
-        "ms": 1220
+        "ms": 864
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 122
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 137
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 661
+        "ms": 558
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 247
+        "ms": 138
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 460
+        "ms": 259
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 24,
+        "count": 26,
         "error": null,
-        "ms": 191
+        "ms": 141
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 174
+        "ms": 98
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, NL, FLEVO 5",
+      "url": "https://umm.nordpoolgroup.com/#/messages/bc89ed57-8a0f-438a-b921-a0336bb5c167/2",
+      "snippet": "Published: 23.09.2026 10:21:32 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Test Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel T",
+      "published_at": "2026-09-23T08:21:32+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-23T06:11:39+00:00"
+    },
     {
       "title": "US, Iran hold mediated UNGA talks on ending war, opening Strait of Hormuz",
       "url": "https://www.aljazeera.com/news/2026/9/23/us-iran-hold-mediated-unga-talks-on-ending-war-opening-strait-of-hormuz?traffic_source=rss",
@@ -117,7 +161,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 60,
+      "score": 51,
       "tags": [
         "geopolitics"
       ],
@@ -133,7 +177,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.5,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -151,50 +195,253 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Vuosaari B - VuB4",
-      "url": "https://umm.nordpoolgroup.com/#/messages/8784de6c-6f8d-4d94-8269-7286a4b730c8/1",
-      "snippet": "Published: 22.09.2026 21:19:41 Publisher: Helen Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Automation malfunction Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Feed-In F",
-      "published_at": "2026-09-22T19:19:41+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
+      "title": "TotalEnergies, Amni take FID on Ima gas project to supply Nigeria LNG",
+      "url": "https://lngprime.com/africa/totalenergies-amni-take-fid-on-ima-gas-project-to-supply-nigeria-lng/197303/",
+      "snippet": "French energy giant TotalEnergies and its partner Amni have taken the final investment decision for the development of the Ima gas project offshore Nigeria to supply Nigeria LNG’s Bonny Island export plant.",
+      "published_at": "2026-09-23T07:34:08+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 50,
       "tags": [
-        "supply_disruption"
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 20.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.9,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "final investment decision"
+        ],
+        "geography": [
+          "french"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Seatrium wraps up seventh FSRU conversion for Karpowership",
+      "url": "https://lngprime.com/asia/seatrium-wraps-up-seventh-fsru-conversion-for-karpowership/197301/",
+      "snippet": "Singapore’s Seatrium has completed the conversion of the seventh LNG carrier into a floating storage and regasification unit for Turkiye’s Karpowership.",
+      "published_at": "2026-09-23T07:33:58+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "lng",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 30.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.2,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "regasification",
+          "carrier",
+          "fsru"
+        ],
+        "gas_storage": [
+          "storage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Hurricane Polo intensifies into rare category 5 storm off the coast of Mexico",
+      "url": "https://www.bbc.co.uk/news/articles/ckddvlrlr5qeo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The storm's sudden intensification is \"truly remarkable\", the US hurricane monitoring agency said.",
+      "published_at": "2026-09-23T02:54:56+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "weather"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 21.9,
-        "themes": 16.8,
+        "authority": 10.2,
+        "themes": 12.3,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 74.7,
-        "recency_multiplier": 0.55
+        "raw": 58.5,
+        "recency_multiplier": 0.68
       },
       "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "malfunction"
+        "weather": [
+          "hurricane",
+          "storm"
         ],
         "unplanned": [
-          "unplanned",
-          "failure",
-          "malfunction"
+          "sudden"
         ],
         "urgency": [
-          "unplanned"
+          "sudden"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-22T16:40:55+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Engineers India to Deliver $16B Kenya Refinery",
+      "url": "https://www.rigzone.com/news/wire/engineers_india_to_deliver_16b_kenya_refinery-23-sep-2026-184679-article/?rss=true",
+      "snippet": "Aliko Dangote, Africa's richest person, has hired the engineers that built his Lagos refinery to work on the new crude processing plant in Kenya that he is set to start constructing this month.",
+      "published_at": "2026-09-23T08:29:08+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "processing plant"
+        ],
+        "oil_macro": [
+          "crude",
+          "refinery"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "South Korea Aims to Cut Middle East Crude Reliance to 50% by 2035",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Aims-to-Cut-Middle-East-Crude-Reliance-to-50-by-2035.html",
+      "snippet": "South Korea will try to cut its reliance on Middle East crude imports to 50% by 2035, Reuters has reported, citing the country’s industry ministry. The ministry has drafted a 10-year natural resource security plan, which envisages a “fundamental shift” in the way South Korea sources its imports. The",
+      "published_at": "2026-09-23T06:29:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 35,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 4.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 30.2,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "korea",
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Feed-in Tariffs (FIT) Quarterly Report Issue 65",
+      "url": "https://www.ofgem.gov.uk/transparency-document/feed-tariffs-fit-quarterly-report-issue-65",
+      "snippet": "This quarterly report covers the 1 April to 30 June 2026 period of the Feed-In Tariffs (FIT) scheme",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "tariffs"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Global Energy Demand Set to Jump 60% by 2060 as Developing Nations Power Up",
@@ -207,12 +454,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 43,
+      "score": 33,
       "tags": [
         "supply_disruption",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -224,7 +471,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 56.8,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.43
       },
       "matched": {
         "supply_disruption": [
@@ -245,44 +492,77 @@
       "also_reported_by": []
     },
     {
-      "title": "Washington Needs This LNG Deal More Than Beijing Does",
-      "url": "https://oilprice.com/Energy/Natural-Gas/Washington-Needs-This-LNG-Deal-More-Than-Beijing-Does.html",
-      "snippet": "Xi Jinping arrives in Washington September 24, prepared to discuss reviving a $6 billion-a-year trade in US liquefied natural gas, contingent on lifting a 15% Chinese tariff that has blocked American gas since Q1 2025. Iranian missiles destroyed 17% of Qatar's LNG export capacity in March, and China",
-      "published_at": "2026-09-23T00:00:00+00:00",
+      "title": "Glenfarne’s Magnolia LNG secures FERC extension",
+      "url": "https://lngprime.com/americas/glenfarnes-magnolia-lng-secures-ferc-extension/197296/",
+      "snippet": "Glenfarne’s Magnolia LNG has secured a five-year extension from the US FERC to complete construction and place into service its planned liquefaction and export plant in Louisiana.",
+      "published_at": "2026-09-23T06:15:33+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 39,
+      "has_magnitude": false,
+      "score": 32,
       "tags": [
-        "geopolitics",
         "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.7,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "liquefaction"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "$100 Brent Keeping China's Oil Buying in Check, Goldman Says",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/100-Brent-Keeping-Chinas-Oil-Buying-in-Check-Goldman-Says.html",
+      "snippet": "China's crude oil exports will rise only slightly in the fourth quarter from the third quarter if oil prices remain high, potentially easing the upward pressure on benchmark crude prices, Goldman Sachs says. China's crude oil imports rose for the second consecutive month in August as refiners turned",
+      "published_at": "2026-09-23T09:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
         "authority": 8.8,
-        "themes": 13.3,
+        "themes": 9.0,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 39.1,
-        "recency_multiplier": 0.78
+        "raw": 22.7,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "tariff"
-        ],
-        "lng": [
-          "lng"
+        "oil_macro": [
+          "crude",
+          "brent"
         ],
         "geography": [
-          "qatar",
           "china"
         ]
       },
@@ -290,51 +570,97 @@
       "also_reported_by": []
     },
     {
-      "title": "India’s Russian Oil Imports Slide as Refiners Hunt for Alternatives",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Russian-Oil-Imports-Slide-as-Refiners-Hunt-for-Alternatives.html",
-      "snippet": "India’s imports of Russian crude fell 16.5% in August and are expected to decline again in September, just as a new U.S. sanctions law gives Washington authority to hit major Russian oil buyers with tariffs of up to 100%. Russian shipments to India dropped to about 2.1 million barrels per day in Aug",
-      "published_at": "2026-09-22T17:30:00+00:00",
+      "title": "Pakistan’s latest Trump bet is on drone firm already selling to India",
+      "url": "https://www.aljazeera.com/news/2026/9/23/pakistans-new-drone-deal-is-with-trump-backed-firm-also-selling-to-india?traffic_source=rss",
+      "snippet": "The company&#039;s cofounder is also an ex-Israeli soldier. Pakistan does not recognise Israel.",
+      "published_at": "2026-09-23T07:18:54+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "geopolitics": [
+          "drone"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-09-23T05:35:19+00:00"
+    },
+    {
+      "title": "Trump Backs Diesel Export Ban as Prices Hit Record Highs",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Backs-Diesel-Export-Ban-as-Prices-Hit-Record-Highs.html",
+      "snippet": "President Trump has declared his support for a potential ban on diesel fuel exports amid record-breaking prices at the pump. “I've said let's not send out the diesel. We make a lot of diesel ... I've called for it. I've called for it within my people,” Trump said, as quoted by Reuters, on the sideli",
+      "published_at": "2026-09-23T05:35:19+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
+      "has_magnitude": false,
+      "score": 13,
       "tags": [
-        "geopolitics",
-        "oil_macro"
+        "regulation",
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 23.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 16.8,
+        "geography": 0.0,
         "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 49.1,
-        "recency_multiplier": 0.47
+        "raw": 41.6,
+        "recency_multiplier": 0.83
       },
       "matched": {
+        "regulation": [
+          "ban on"
+        ],
         "geopolitics": [
-          "sanctions",
-          "tariffs"
+          "export ban"
         ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "russian",
-          "india"
+        "urgency": [
+          "breaking",
+          "declared"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/9/23/pakistans-new-drone-deal-is-with-trump-backed-firm-also-selling-to-india?traffic_source=rss",
+        "title": "Pakistan’s latest Trump bet is on drone firm already selling to India",
+        "published_at": "2026-09-23T07:18:54+00:00"
+      },
+      "hidden": true
     }
   ]
 }
