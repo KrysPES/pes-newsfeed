@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-09-24T14:22:34.973535+00:00",
-  "item_count": 18,
+  "generated_at": "2026-09-24T18:29:53.024835+00:00",
+  "item_count": 15,
   "alert_counts": {
     "critical": 0,
-    "high": 2,
+    "high": 0,
     "normal": 8
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1601
+        "ms": 1876
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 41428
+        "ms": 22220
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3973
+        "ms": 4310
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 348
+        "ms": 452
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 634
+        "ms": 113
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 195
+        "ms": 162
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 47,
+        "count": 50,
         "error": null,
-        "ms": 949
+        "ms": 1472
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 141
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 325
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 684
+        "ms": 713
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 261
+        "ms": 387
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 350
+        "ms": 567
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 26,
+        "count": 30,
         "error": null,
-        "ms": 231
+        "ms": 94
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 157
+        "ms": 64
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 70,
+      "score": 60,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.76
       },
       "matched": {
         "supply_disruption": [
@@ -146,9 +146,58 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-09-23T23:43:40+00:00"
+      "first_seen_at": "2026-09-24T12:13:28+00:00"
+    },
+    {
+      "title": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
+      "url": "https://www.bbc.co.uk/news/articles/cmp30r1klk37o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The satellite station is used in part to provide internet coverage to neighbouring Ukraine, the government says.",
+      "published_at": "2026-09-24T16:00:29+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 14.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 54.2,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "sabotage"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "denmark",
+          "poland"
+        ],
+        "unplanned": [
+          "fire",
+          "sabotage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Saudi Arabia Sells 100 Million Barrels of Crude to Asia via Hormuz",
@@ -161,13 +210,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 66,
+      "score": 56,
       "tags": [
         "geopolitics",
         "oil_macro",
         "infrastructure"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -179,7 +228,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 67.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -204,6 +253,52 @@
       "also_reported_by": []
     },
     {
+      "title": "Vitol Scoops Up 25 Million Barrels of Discounted Iraqi Crude",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Vitol-Scoops-Up-25-Million-Barrels-of-Discounted-Iraqi-Crude.html",
+      "snippet": "Vitol has bought at least 25 million barrels of Iraqi crude for September loading, making the world’s largest independent oil trader Iraq’s second-biggest buyer behind ADNOC as Baghdad pays steep discounts to keep barrels moving through the Strait of Hormuz. Iraq’s SOMO offered September crude at di",
+      "published_at": "2026-09-24T17:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 46.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Europe’s Gas Prices Jump as Hormuz Standoff Drags On",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Europes-Gas-Prices-Jump-as-Hormuz-Standoff-Drags-On.html",
       "snippet": "Europe’s benchmark natural gas prices jumped by 4% at trade open in Amsterdam on Thursday, as the United States and Iran remain distant on how to end the war and put an end to the blocked LNG shipments at the Strait of Hormuz. After surging 4% at open, the front-month price at the Dutch Title Transf",
@@ -214,7 +309,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 65,
+      "score": 53,
       "tags": [
         "geopolitics",
         "lng"
@@ -231,7 +326,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 66.7,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.71
       },
       "matched": {
         "geopolitics": [
@@ -250,91 +345,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
-      "url": "https://www.bbc.co.uk/news/articles/cmp30r1klk37o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The satellite station is used in part to provide internet coverage to neighbouring Ukraine, the government says.",
-      "published_at": "2026-09-24T11:59:23+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "title": "54% of EU’s electricity came from renewables in Q2 2026",
+      "url": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20260918-1",
+      "snippet": "In the second quarter of 2026, 54.1% of the electricity generated in the EU came from renewable energy sources, a slight decrease from 54.3% in the same period of 2025.",
+      "published_at": "2026-09-24T15:11:30+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 57,
+      "has_magnitude": true,
+      "score": 47,
       "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 14.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.2,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "geopolitics": [
-          "sabotage"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "geography": [
-          "denmark",
-          "poland"
-        ],
-        "unplanned": [
-          "fire",
-          "sabotage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Just One Commodity Vessel Left the Strait of Hormuz on Wednesday",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Just-One-Commodity-Vessel-Left-the-Strait-of-Hormuz-on-Wednesday.html",
-      "snippet": "The number of commodity vessels observed to have moved in and out of the Strait of Hormuz remained stubbornly low on Wednesday and below the 10-day moving average as the United States and Iran remain distant on how to end the war. On Wednesday, only ten commodity vessels transited the Strait, includ",
-      "published_at": "2026-09-24T11:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 52,
-      "tags": [
-        "geopolitics"
+        "power_system"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 16.1,
+        "themes": 5.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 50.4,
+        "raw": 43.7,
         "recency_multiplier": 0.9
       },
       "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz"
+        "power_system": [
+          "renewables"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "eu"
         ]
       },
       "duplicate_count": 0,
@@ -351,7 +395,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 50,
+      "score": 44,
       "tags": [
         "power_system"
       ],
@@ -367,7 +411,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 42.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.84
       },
       "matched": {
         "power_system": [
@@ -375,6 +419,180 @@
         ],
         "geography": [
           "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Last FSRU in seven-vessel conversion program boosts Karpowership’s LNG-to-power value chain",
+      "url": "https://www.offshore-energy.biz/last-fsru-in-seven-vessel-conversion-program-boosts-karpowerships-lng-to-power-value-chain/",
+      "snippet": "Karpowership, Türkiye’s floating power solutions provider and owner and operator of powerships, has finished its multi-vessel liquefied natural gas (LNG) carrier-to-floating storage and regasification unit (FSRU) conversion program with the completion of the seventh FSRU at a yard belonging to Singa",
+      "published_at": "2026-09-24T13:45:26+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "lng",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 30.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.4,
+        "recency_multiplier": 0.81
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "regasification",
+          "carrier",
+          "fsru"
+        ],
+        "gas_storage": [
+          "storage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Just One Commodity Vessel Left the Strait of Hormuz on Wednesday",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Just-One-Commodity-Vessel-Left-the-Strait-of-Hormuz-on-Wednesday.html",
+      "snippet": "The number of commodity vessels observed to have moved in and out of the Strait of Hormuz remained stubbornly low on Wednesday and below the 10-day moving average as the United States and Iran remain distant on how to end the war. On Wednesday, only ten commodity vessels transited the Strait, includ",
+      "published_at": "2026-09-24T11:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 50.4,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Russia Begins Oil Exports From Its Giant Vostok Arctic Project",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Begins-Oil-Exports-From-Its-Giant-Vostok-Arctic-Project.html",
+      "snippet": "Russia has begun commercial crude exports from Rosneft’s Vostok Oil project, putting barrels on the water from its new Arctic terminal after years of sanctions, investor exits, and construction delays. Three ice-class tankers loaded about 250,000 metric tons of crude from the Bukhta Sever terminal o",
+      "published_at": "2026-09-24T15:35:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "infrastructure": [
+          "terminal"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China Could Cut Fuel Exports in October as Inventories Plunge",
+      "url": "https://oilprice.com/Energy/Energy-General/China-Could-Cut-Fuel-Exports-in-October-as-Inventories-Plunge.html",
+      "snippet": "China could lower its fuel exports again in October, potentially tightening the global fuel market further, as domestic gasoline and diesel inventories have slumped to multi-year lows. China’s fuel exports recovered in August as refiners exported 6.01 million tons of petroleum products, up by 12.7% ",
+      "published_at": "2026-09-24T15:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 37,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 6.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 32.5,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "gas_storage": [
+          "inventories"
+        ],
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
@@ -391,12 +609,12 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 37,
       "tags": [
         "geopolitics",
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -408,7 +626,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.3,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
@@ -437,11 +655,11 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 34,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -453,7 +671,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.76
       },
       "matched": {
         "lng": [
@@ -477,11 +695,11 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 33,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -492,7 +710,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.9,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
@@ -516,13 +734,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 33,
       "tags": [
         "geopolitics",
         "lng",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -534,7 +752,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.7,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.48
       },
       "matched": {
         "geopolitics": [
@@ -552,344 +770,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Indian Refiners Lift LPG Output Nearly 20% as Hormuz Blockage Chokes Imports",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Refiners-Lift-LPG-Output-Nearly-20-as-Hormuz-Blockage-Chokes-Imports.html",
-      "snippet": "Indian state refiners are ramping up their production of liquefied petroleum gas amid a seasonal jump in demand as the country enters festive season and imports from the Middle East remain strangled. So far in September, local production of LPG has averaged 44,000 tons daily, Indian media reported, ",
-      "published_at": "2026-09-24T08:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 38,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 41.2,
-        "recency_multiplier": 0.71
-      },
-      "matched": {
-        "oil_macro": [
-          "demand"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Italy's Senate approves a return to nuclear power",
-      "url": "https://www.world-nuclear-news.org/articles/italys-senate-approves-a-return-to-nuclear-power",
-      "snippet": "Prime Minister Giorgia Meloni's bill paving the way for a return to nuclear power in Italy after four decades was passed in the Senate by 81 votes to 51, with seven abstentions.",
-      "published_at": "2026-09-24T11:11:17+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.1,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "italy"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Brent Holds Above $102 as Iran Talks Stall Over Hormuz Conditions",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Holds-Above-102-as-Iran-Talks-Stall-Over-Hormuz-Conditions.html",
-      "snippet": "Crude oil prices took a dip today amid reports that there was willingness for peace in the Middle East on both sides of the conflict. The dip partially offset gains made earlier in the week, keeping oil benchmarks elevated. At the time of writing, Brent crude was trading at $102.20 per barrel, and W",
-      "published_at": "2026-09-24T05:08:03+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "oil_macro",
-        "geopolitics",
-        "carbon"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 20.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.3,
-        "recency_multiplier": 0.57
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "geopolitics": [
-          "conflict"
-        ],
-        "carbon": [
-          "offset"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Russian LNG production up 13.7 percent in January-August",
-      "url": "https://lngprime.com/asia/russian-lng-production-up-13-7-percent-in-january-august/197374/",
-      "snippet": "Russian liquefied natural gas (LNG) production rose 13.7 percent in January-August this year, according to the Russian statistics agency Rosstat.",
-      "published_at": "2026-09-24T07:09:37+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 37.4,
-        "recency_multiplier": 0.67
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "russian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "South Korea Follows Japan's Playbook With $22.3 Billion Texas Gas Bet",
-      "url": "https://oilprice.com/Energy/Natural-Gas/South-Korea-Follows-Japans-Playbook-With-223-Billion-Texas-Gas-Bet.html",
-      "snippet": "Ten months, one tariff threat and several \"sleepless nights\" later, South Korea has finally found somewhere to put the first piece of the $350 billion it promised to invest in America. The winner is a gas-fired power complex in Encinal, Texas (population 540, where real estate is about to go ballist",
-      "published_at": "2026-09-24T14:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "tariff"
-        ],
-        "geography": [
-          "japan",
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "First Louisiana LNG tank taking shape",
-      "url": "https://lngprime.com/americas/first-louisiana-lng-tank-taking-shape/197396/",
-      "snippet": "Australian LNG player Woodside continues to make progress on the first phase of its Louisiana LNG export terminal, including the first 235,000-cbm storage tank.",
-      "published_at": "2026-09-24T10:14:46+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng",
-        "gas_storage",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 13.7,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 26.8,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "infrastructure": [
-          "terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Deadly attack on Indian cargo ship off coast of Oman",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/deadly-attack-on-indian-cargo-ship-off-coast-of-oman?traffic_source=rss",
-      "snippet": "A crew member was killed in an attack on an Indian cargo vessel off the coast of Oman.",
-      "published_at": "2026-09-24T11:44:21+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 13.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.8,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "geopolitics": [
-          "attack"
-        ],
-        "lng": [
-          "cargo"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US EXIM to back YPF’s Argentina LNG project",
-      "url": "https://lngprime.com/americas/us-exim-to-back-ypfs-argentina-lng-project/197405/",
-      "snippet": "The Export-Import Bank of the United States is offering to lend up to $6 billion for the YPF-led Argentina LNG export project.",
-      "published_at": "2026-09-24T10:45:49+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "united states"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "OilPrice.com"
-      ],
-      "first_seen_at": "2026-09-24T10:00:00+00:00"
     }
   ]
 }
