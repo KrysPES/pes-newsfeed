@@ -1,111 +1,510 @@
 {
-  "generated_at": "2026-09-24T09:29:54.488520+00:00",
-  "item_count": 10,
+  "generated_at": "2026-09-24T14:22:34.973535+00:00",
+  "item_count": 18,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 5
+    "high": 2,
+    "normal": 8
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1429
+        "ms": 1601
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 30230
+        "ms": 41428
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4850
+        "ms": 3973
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 536
+        "ms": 348
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 635
+        "ms": 634
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 201
+        "ms": 195
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 51,
+        "count": 47,
         "error": null,
-        "ms": 1371
+        "ms": 949
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 279
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
+        "ms": 141
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 680
+        "ms": 684
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 1943
+        "ms": 261
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 459
+        "ms": 350
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 23,
+        "count": 26,
         "error": null,
-        "ms": 174
+        "ms": 231
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 204
+        "ms": 157
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Huntstown - Huntstown 1 (HNC)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/0f30310d-a216-49cf-97e2-3335b54ed635/3",
+      "snippet": "Published: 24.09.2026 14:52:25 Publisher: Huntstown Power Company Limited Status: Active Type of Unavailability: Unplanned Reason Code: Foreseen maintenance Reason for the Unavailability: ST Brush replacement now complete. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacit",
+      "published_at": "2026-09-24T12:52:25+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 74.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "maintenance"
+        ],
+        "unplanned": [
+          "unplanned"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-23T23:43:40+00:00"
+    },
+    {
+      "title": "Saudi Arabia Sells 100 Million Barrels of Crude to Asia via Hormuz",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Sells-100-Million-Barrels-of-Crude-to-Asia-via-Hormuz.html",
+      "snippet": "Saudi Arabia has sold almost 100 million barrels of crude to Asian buyers via the Strait of Hormuz since the middle of last week, when it pivoted to the chokepoint it wanted to avoid with the East-West pipeline to the Red Sea. With the pipeline out of service, the Kingdom has sold 100 million barrel",
+      "published_at": "2026-09-24T13:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "infrastructure"
+      ],
+      "alert": "high",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 42.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 67.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "red sea"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrel",
+          "barrels"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Europe’s Gas Prices Jump as Hormuz Standoff Drags On",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Europes-Gas-Prices-Jump-as-Hormuz-Standoff-Drags-On.html",
+      "snippet": "Europe’s benchmark natural gas prices jumped by 4% at trade open in Amsterdam on Thursday, as the United States and Iran remain distant on how to end the war and put an end to the blocked LNG shipments at the Strait of Hormuz. After surging 4% at open, the front-month price at the Dutch Title Transf",
+      "published_at": "2026-09-24T12:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 65,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 30.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 66.7,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
+      "url": "https://www.bbc.co.uk/news/articles/cmp30r1klk37o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The satellite station is used in part to provide internet coverage to neighbouring Ukraine, the government says.",
+      "published_at": "2026-09-24T11:59:23+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 14.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 54.2,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "geopolitics": [
+          "sabotage"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "denmark",
+          "poland"
+        ],
+        "unplanned": [
+          "fire",
+          "sabotage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Just One Commodity Vessel Left the Strait of Hormuz on Wednesday",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Just-One-Commodity-Vessel-Left-the-Strait-of-Hormuz-on-Wednesday.html",
+      "snippet": "The number of commodity vessels observed to have moved in and out of the Strait of Hormuz remained stubbornly low on Wednesday and below the 10-day moving average as the United States and Iran remain distant on how to end the war. On Wednesday, only ten commodity vessels transited the Strait, includ",
+      "published_at": "2026-09-24T11:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 50.4,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Record Fuel Prices Send European EV Sales Soaring",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Record-Fuel-Prices-Send-European-EV-Sales-Soaring.html",
+      "snippet": "Record-high gasoline and diesel prices in many European markets did what European policymakers couldn’t do in years - shift consumer choice to low-emission vehicles. Battery electric vehicle sales in Europe, including the UK, Switzerland, and Norway, surged by 52.2% in August from a year earlier as ",
+      "published_at": "2026-09-24T14:15:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 50,
+      "tags": [
+        "power_system"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 5.6,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 42.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "power_system": [
+          "battery"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Qatar Ramps Up LNG Shipping via Hormuz",
+      "url": "https://www.rigzone.com/news/wire/qatar_ramps_up_lng_shipping_via_hormuz-24-sep-2026-184690-article/?rss=true",
+      "snippet": "Qatar has ramped up liquefied natural gas tanker traffic through the Strait of Hormuz to the highest in more than two months.",
+      "published_at": "2026-09-24T08:45:11+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 25.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 52.3,
+        "recency_multiplier": 0.76
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng",
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "FortisBC Gets BC Environmental Clearance for Tilbury LNG Expansion",
+      "url": "https://www.rigzone.com/news/fortisbc_gets_bc_environmental_clearance_for_tilbury_lng_expansion-24-sep-2026-184694-article/?rss=true",
+      "snippet": "'The Tilbury Phase 2 LNG expansion has been prioritized by the province as part of BC's Look West strategy for jobs and prosperity', British Columbia's government said.",
+      "published_at": "2026-09-24T12:51:36+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 7.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Gas Company Worker Passes Away Following Shark Attack",
+      "url": "https://www.rigzone.com/news/gas_company_worker_passes_away_following_shark_attack-24-sep-2026-184693-article/?rss=true",
+      "snippet": "Amplitude Energy announced that one of its workers had passed away following a shark attack.",
+      "published_at": "2026-09-24T11:41:46+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.9,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Southeast Asia Keeps Building Gas Plants Despite Hormuz LNG Shock",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Southeast-Asia-Keeps-Building-Gas-Plants-Despite-Hormuz-LNG-Shock.html",
@@ -117,7 +516,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 55,
+      "score": 42,
       "tags": [
         "geopolitics",
         "lng",
@@ -135,7 +534,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.7,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.66
       },
       "matched": {
         "geopolitics": [
@@ -165,11 +564,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 49,
+      "score": 38,
       "tags": [
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -181,7 +580,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 41.2,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.71
       },
       "matched": {
         "oil_macro": [
@@ -189,6 +588,46 @@
         ],
         "geography": [
           "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Italy's Senate approves a return to nuclear power",
+      "url": "https://www.world-nuclear-news.org/articles/italys-senate-approves-a-return-to-nuclear-power",
+      "snippet": "Prime Minister Giorgia Meloni's bill paving the way for a return to nuclear power in Italy after four decades was passed in the Senate by 81 votes to 51, with seven abstentions.",
+      "published_at": "2026-09-24T11:11:17+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.1,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "italy"
         ]
       },
       "duplicate_count": 0,
@@ -205,13 +644,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 34,
       "tags": [
         "oil_macro",
         "geopolitics",
         "carbon"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -223,7 +662,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.3,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.57
       },
       "matched": {
         "oil_macro": [
@@ -255,11 +694,11 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 44,
+      "score": 33,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -271,7 +710,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 37.4,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.67
       },
       "matched": {
         "lng": [
@@ -285,176 +724,51 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, DK1, Skærbækværket - SKV3",
-      "url": "https://umm.nordpoolgroup.com/#/messages/26c9df8d-64ee-463b-9f08-36cd0d8da52c/2",
-      "snippet": "Published: 24.09.2026 01:43:40 Publisher: &#xd8;rsted Bioenergy Thermal Power A/S Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Turbine failure Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity F",
-      "published_at": "2026-09-23T23:43:40+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-23T19:27:09+00:00"
-    },
-    {
-      "title": "Volvo receives record order for LNG-powered trucks",
-      "url": "https://lngprime.com/europe/volvo-receives-record-order-for-lng-powered-trucks/197385/",
-      "snippet": "Sweden-based Volvo Trucks said it had received its largest order to date for LNG-powered trucks, with the purchase of 500 Volvo FH Aero trucks by German transport company Reinert Logistics.",
-      "published_at": "2026-09-24T05:58:20+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.4,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "german"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Hormuz Supply Crisis to Change LNG Market Forever",
-      "url": "https://oilprice.com/Energy/Natural-Gas/Hormuz-Supply-Crisis-to-Change-LNG-Market-Forever.html",
-      "snippet": "The Strait of Hormuz crisis has turned roughly 20% of global LNG supply into something buyers now have to treat as interruptible. Nearly seven months after traffic through the strait collapsed, LNG exports from Qatar and the UAE remain severely constrained. Buyers in Europe and Asia are responding b",
-      "published_at": "2026-09-23T19:00:00+00:00",
+      "title": "South Korea Follows Japan's Playbook With $22.3 Billion Texas Gas Bet",
+      "url": "https://oilprice.com/Energy/Natural-Gas/South-Korea-Follows-Japans-Playbook-With-223-Billion-Texas-Gas-Bet.html",
+      "snippet": "Ten months, one tariff threat and several \"sleepless nights\" later, South Korea has finally found somewhere to put the first piece of the $350 billion it promised to invest in America. The winner is a gas-fired power complex in Encinal, Texas (population 540, where real estate is about to go ballist",
+      "published_at": "2026-09-24T14:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 34,
+      "has_magnitude": false,
+      "score": 31,
       "tags": [
-        "lng",
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 30.8,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 67.5,
-        "recency_multiplier": 0.38
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng exports"
-        ],
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Subsea7’s scope at Türkiye’s largest natural gas field extended once again",
-      "url": "https://www.offshore-energy.biz/subsea7s-scope-at-turkiyes-largest-natural-gas-field-extended-once-again/",
-      "snippet": "Subsea7 has secured yet another contract extension with Turkish Petroleum Offshore Technology Center (TP-OTC) [&#8230;] The post Subsea7&#8217;s scope at Türkiye’s largest natural gas field extended once again appeared first on Offshore Energy .",
-      "published_at": "2026-09-24T07:32:20+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 12.5,
-        "geography": 0.0,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 24.9,
+        "raw": 22.7,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "infrastructure": [
-          "gas field"
+        "geopolitics": [
+          "tariff"
+        ],
+        "geography": [
+          "japan",
+          "korea"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "CLdN orders LNG-powered duo in South Korea",
-      "url": "https://lngprime.com/asia/cldn-orders-lng-powered-duo-in-south-korea/197360/",
-      "snippet": "Luxembourg-based CLdN has ordered two new LNG dual-fuel RoRo vessels from South Korea's HD Hyundai Heavy Industries.",
-      "published_at": "2026-09-24T06:03:16+00:00",
+      "title": "First Louisiana LNG tank taking shape",
+      "url": "https://lngprime.com/americas/first-louisiana-lng-tank-taking-shape/197396/",
+      "snippet": "Australian LNG player Woodside continues to make progress on the first phase of its Louisiana LNG export terminal, including the first 235,000-cbm storage tank.",
+      "published_at": "2026-09-24T10:14:46+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
@@ -462,6 +776,90 @@
       "tier": 2,
       "has_magnitude": false,
       "score": 31,
+      "tags": [
+        "lng",
+        "gas_storage",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 13.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.8,
+        "recency_multiplier": 0.85
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "infrastructure": [
+          "terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Deadly attack on Indian cargo ship off coast of Oman",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/deadly-attack-on-indian-cargo-ship-off-coast-of-oman?traffic_source=rss",
+      "snippet": "A crew member was killed in an attack on an Indian cargo vessel off the coast of Oman.",
+      "published_at": "2026-09-24T11:44:21+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 13.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.8,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "geopolitics": [
+          "attack"
+        ],
+        "lng": [
+          "cargo"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US EXIM to back YPF’s Argentina LNG project",
+      "url": "https://lngprime.com/americas/us-exim-to-back-ypfs-argentina-lng-project/197405/",
+      "snippet": "The Export-Import Bank of the United States is offering to lend up to $6 billion for the YPF-led Argentina LNG export project.",
+      "published_at": "2026-09-24T10:45:49+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
       "tags": [
         "lng"
       ],
@@ -477,54 +875,21 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.4,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.88
       },
       "matched": {
         "lng": [
           "lng"
         ],
         "geography": [
-          "korea"
+          "united states"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Low carbon technology information: proposed changes to the electricity and gas supply standard licence conditions",
-      "url": "https://www.ofgem.gov.uk/publications/low-carbon-technology-information-proposed-changes-electricity-and-gas-supply-standard-licence-conditions",
-      "snippet": "We are consulting on licence changes to clarify that suppliers and installers can provide information on low carbon technologies during smart meter installation visits.",
-      "published_at": "2026-09-24T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "regulation"
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "OilPrice.com"
       ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 6.2,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 22.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "regulation": [
-          "licence"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "first_seen_at": "2026-09-24T10:00:00+00:00"
     }
   ]
 }
