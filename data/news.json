@@ -1,111 +1,298 @@
 {
-  "generated_at": "2026-09-25T18:57:50.075575+00:00",
-  "item_count": 14,
+  "generated_at": "2026-09-25T22:06:09.729040+00:00",
+  "item_count": 9,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 5
+    "normal": 6
   },
   "superseded_count": 0,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1601
+        "ms": 1393
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 12643
+        "ms": 60680
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3923
+        "ms": 4056
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 749
+        "ms": 180
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 773
+        "ms": 347
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 371
+        "ms": 107
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 1257
+        "ms": 836
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.offshore-energy.biz/feed/",
-        "ms": 122
+        "ok": true,
+        "count": 10,
+        "error": null,
+        "ms": 159
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 701
+        "ms": 487
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 282
+        "ms": 73
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 370
+        "ms": 461
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 31,
+        "count": 33,
         "error": null,
-        "ms": 301
+        "ms": 64
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 281
+        "ms": 120
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Corduff Flexgen (FG2) (GU_403680)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/31226945-be04-4c91-aba9-6214e9492432/1",
+      "snippet": "Published: 25.09.2026 21:18:41 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Flame Detector Fault Remarks: Flame Detector Fault Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Cap",
+      "published_at": "2026-09-25T19:18:41+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "supply_disruption",
+        "regulation"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 20.5,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 78.4,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "fault"
+        ],
+        "regulation": [
+          "cap"
+        ],
+        "unplanned": [
+          "unplanned",
+          "fault",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-25T09:34:49+00:00"
+    },
+    {
+      "title": "Why Record Heat Failed to Lift U.S. Natural Gas Prices",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Why-Record-Heat-Failed-to-Lift-US-Natural-Gas-Prices.html",
+      "snippet": "Henry Hub natural gas averaged $2.93 per million British thermal units from June through August, 6% below the same period last year, even with the Lower 48 posting its hottest July on record. Average temperatures across the Lower 48 reached 77°F in July, according to NOAA, pushing electricity demand",
+      "published_at": "2026-09-25T20:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 65,
+      "tags": [
+        "weather",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 8.8,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 65.6,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "weather": [
+          "temperatures"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "british"
+        ],
+        "unplanned": [
+          "failed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Huge fire on vehicle ferry off Mykonos prompts mass evacuation",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/huge-fire-on-vehicle-ferry-off-mykonos-prompts-mass-evacuation?traffic_source=rss",
+      "snippet": "A fire erupted aboard the vehicle ferry Blue Carrier 2 north of the Greek island of Mykonos, prompting a major emergency",
+      "published_at": "2026-09-25T20:46:15+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 61,
+      "tags": [
+        "supply_disruption",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 12.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 58.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "lng": [
+          "carrier"
+        ],
+        "unplanned": [
+          "emergency",
+          "fire"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran threatens widespread disruption as Iraq halts Iran flights",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/iran-threatens-widespread-disruption-as-iraq-halts-iran-flights?traffic_source=rss",
+      "snippet": "Iraq has suspended Iranian flights at all four airports where they operated",
+      "published_at": "2026-09-25T19:11:03+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 61,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.3,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "supply_disruption": [
+          "disruption",
+          "suspended"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "EU Shrugs Off Gas Supply Fears Despite Low Storage Levels",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Shrugs-Off-Gas-Supply-Fears-Despite-Low-Storage-Levels.html",
@@ -117,12 +304,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 69,
+      "score": 60,
       "tags": [
         "gas_storage",
         "regulation"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -134,7 +321,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 80.8,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.7
       },
       "matched": {
         "gas_storage": [
@@ -159,50 +346,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, HERDERSBRUG 1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/17f3e0a2-6fa2-4e92-ac54-7abca4d05403/2",
-      "snippet": "Published: 25.09.2026 18:46:40 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
-      "published_at": "2026-09-25T16:46:40+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 65,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-09-25T09:34:49+00:00"
-    },
-    {
       "title": "Why WTI Is Suddenly Trading $12 Below Brent",
       "url": "https://oilprice.com/Energy/Crude-Oil/Why-WTI-Is-Suddenly-Trading-12-Below-Brent.html",
       "snippet": "Oil prices edge higher as Hormuz diplomacy, soaring freight costs and diesel market fears drive a widening Brent-WTI spread. Oil prices are set for a slight 2% weekly gain, despite rumours that this week’s opening of the 2026 UN General Assembly sparked yet another diplomatic push to end Middle East",
@@ -213,7 +356,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 54,
+      "score": 46,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -230,7 +373,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.74
       },
       "matched": {
         "geopolitics": [
@@ -258,7 +401,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 42,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -276,7 +419,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 58.1,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.58
       },
       "matched": {
         "geopolitics": [
@@ -309,11 +452,11 @@
       "authority": 20,
       "tier": 2,
       "has_magnitude": true,
-      "score": 45,
+      "score": 38,
       "tags": [
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 14.6,
@@ -325,7 +468,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 47.1,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.62
       },
       "matched": {
         "oil_macro": [
@@ -333,100 +476,6 @@
         ],
         "geography": [
           "british"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Ukraine Drone Strike Knocks Out Russia's Novoshakhtinsk Refinery",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Drone-Strike-Knocks-Out-Russias-Novoshakhtinsk-Refinery.html",
-      "snippet": "Another Russian refinery was taken offline on Friday following a Ukrainian drone attack, in a sign that Ukraine and Russia continue to trade strikes on energy infrastructure despite separate talks with U.S. officials in New York aimed at de-escalation. The Novoshakhtinsk refinery in the southern Rus",
-      "published_at": "2026-09-25T11:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 42.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 56.6,
-        "recency_multiplier": 0.63
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "escalation",
-          "attack"
-        ],
-        "supply_disruption": [
-          "offline",
-          "taken offline"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "russia",
-          "russian",
-          "ukraine"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Israeli shelling continues as Lebanon’s PM demands withdrawal in UN speech",
-      "url": "https://www.aljazeera.com/news/2026/9/25/israeli-shelling-continues-as-lebanons-pm-demands-withdrawal-in-un-speech?traffic_source=rss",
-      "snippet": "Lebanese Prime Minister Nawaf Salam wants a US-brokered ceasefire to be consolidated and for Israel to retreat.",
-      "published_at": "2026-09-25T16:57:39+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
-      "tags": [
-        "geopolitics",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 22.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "shelling",
-          "ceasefire"
-        ],
-        "gas_storage": [
-          "withdrawal"
         ]
       },
       "duplicate_count": 0,
@@ -443,7 +492,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 37,
+      "score": 30,
       "tags": [
         "supply_disruption"
       ],
@@ -459,7 +508,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.2,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.68
       },
       "matched": {
         "supply_disruption": [
@@ -467,259 +516,6 @@
         ],
         "geography": [
           "britain"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "WTI Whipsaws as Hormuz Hopes Collide With Diesel Crunch",
-      "url": "https://oilprice.com/Energy/Energy-General/WTI-Whipsaws-as-Hormuz-Hopes-Collide-With-Diesel-Crunch.html",
-      "snippet": "November WTI crude oil futures spent the week trading a possible reopening of the Strait of Hormuz against the risk that shipping conditions have not normalized. The contract fell to $88.67 Tuesday after reports that Iran could reopen the Strait within seven days, then recovered to $96.78 Thursday a",
-      "published_at": "2026-09-25T13:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 22.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 34.8,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "wti"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "speculative": [
-          "could"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Trump Advisers Study Impact of Diesel Export Ban",
-      "url": "https://www.rigzone.com/news/wire/trump_advisers_study_impact_of_diesel_export_ban-25-sep-2026-184707-article/?rss=true",
-      "snippet": "President Donald Trump's economic advisers are analyzing the ramifications of a potential short-term ban on U.S. diesel exports, underscoring the seriousness of the administration's consideration of the idea.",
-      "published_at": "2026-09-25T15:19:48+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "regulation",
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 16.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.8,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "regulation": [
-          "ban on"
-        ],
-        "geopolitics": [
-          "export ban"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Revisions proposed by the Electricity Market Reform Delivery Body to the Relevant Balancing Services Guidelines 2026",
-      "url": "https://www.ofgem.gov.uk/guidance/revisions-proposed-electricity-market-reform-delivery-body-relevant-balancing-services-guidelines-2026",
-      "snippet": "Our decision to approve revisions proposed by the Electricity Market Reform Delivery Body to the Relevant Balancing Services Guidelines.",
-      "published_at": "2026-09-25T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "regulation",
-        "power_system"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 21.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.0,
-        "recency_multiplier": 0.68
-      },
-      "matched": {
-        "regulation": [
-          "reform",
-          "market reform"
-        ],
-        "power_system": [
-          "balancing"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iraqi airports halt Iranian flights after new US aviation sanctions",
-      "url": "https://www.aljazeera.com/news/2026/9/25/iraqi-airports-halt-iranian-flights-after-new-us-aviation-sanctions?traffic_source=rss",
-      "snippet": "Baghdad, Najaf, Erbil and Sulaimaniyah airports suspend flights as US ramps up pressure on Iran&#039;s aviation sector.",
-      "published_at": "2026-09-25T18:30:20+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 14.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "supply_disruption": [
-          "halt"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Internet restricted after fighting breaks out in Ethiopia's Tigray region",
-      "url": "https://www.bbc.co.uk/news/articles/cqp8dxxg325no?at_medium=RSS&at_campaign=rss",
-      "snippet": "During the two-year civil war in Tigray, the region was totally cut off from the outside world.",
-      "published_at": "2026-09-25T17:13:55+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 14.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "supply_disruption": [
-          "restricted"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Dutch to Ask EU to End Mandatory Gas Storage Targets",
-      "url": "https://www.rigzone.com/news/wire/dutch_to_ask_eu_to_end_mandatory_gas_storage_targets-25-sep-2026-184701-article/?rss=true",
-      "snippet": "The Netherlands wants to scrap mandatory gas storage targets under a revamp of the European Union's energy supply security rules after spending nearly EUR 1 billion this year to fill the country's reserves.",
-      "published_at": "2026-09-25T09:48:56+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 6.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 39.7,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "european",
-          "eu",
-          "netherlands",
-          "dutch"
         ]
       },
       "duplicate_count": 0,
