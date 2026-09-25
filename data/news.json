@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-25T04:47:41.543896+00:00",
-  "item_count": 8,
+  "generated_at": "2026-09-25T09:51:35.169036+00:00",
+  "item_count": 11,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 2
+    "high": 1,
+    "normal": 5
   },
   "superseded_count": 1,
   "sources": {
@@ -17,95 +17,303 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1482
+        "ms": 1769
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 21771
+        "ms": 37134
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 57989
+        "ms": 19814
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 4,
         "error": null,
-        "ms": 369
+        "ms": 1211
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 463
+        "ms": 180
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 130
+        "ms": 196
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 1077
+        "ms": 1345
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 442
+        "ms": 280
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 678
+        "ms": 665
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 298
+        "ms": 290
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 403
+        "ms": 556
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 35,
+        "count": 31,
         "error": null,
-        "ms": 128
+        "ms": 87
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 156
+        "ms": 114
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Coolkeeragh - GU_500040 (C30)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/dde1845e-fde1-4531-bf46-e4797021629b/2",
+      "snippet": "Published: 25.09.2026 11:34:49 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Annual Inspection and Stack replacement Remarks: Annual Inspection and Stack replacement Production Units Unit Name Unit EIC Area Installed Capac",
+      "published_at": "2026-09-25T09:34:49+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 74.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "inspection"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Hormuz Tanker Transits Crash to Single Digits as Crisis Deepens",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Transits-Crash-to-Single-Digits-as-Crisis-Deepens.html",
+      "snippet": "Only nine commodity carriers passed through the Strait of Hormuz on Thursday, eight of them exiting the waterway, Reuters reported in its now regular update on tanker numbers in the strait. The Thursday total is a further decline on already depressed numbers that have now gone from double to single ",
+      "published_at": "2026-09-25T07:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.8,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US LNG exports drop to 33 shipments",
+      "url": "https://lngprime.com/americas/us-lng-exports-drop-to-33-shipments/197437/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 33 cargoes during the week ending September 23, down three shipments from the previous week, according to the Energy Information Administration.",
+      "published_at": "2026-09-25T05:18:19+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 49,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Revisions proposed by the Electricity Market Reform Delivery Body to the Relevant Balancing Services Guidelines 2026",
+      "url": "https://www.ofgem.gov.uk/guidance/revisions-proposed-electricity-market-reform-delivery-body-relevant-balancing-services-guidelines-2026",
+      "snippet": "Our decision to approve revisions proposed by the Electricity Market Reform Delivery Body to the Relevant Balancing Services Guidelines.",
+      "published_at": "2026-09-25T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 45,
+      "tags": [
+        "regulation",
+        "power_system"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 21.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "reform",
+          "market reform"
+        ],
+        "power_system": [
+          "balancing"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Inpex exercises right to buy Jera’s Ichthys LNG stake",
+      "url": "https://lngprime.com/asia/inpex-exercises-right-to-buy-jeras-ichthys-lng-stake/197479/",
+      "snippet": "Japan’s Inpex has exercised its right to pre-empt the sale of Jera’s 0.735 percent participating stake in the Inpex-operated 8.9 mtpa Ichthys LNG project to EIG's MidOcean Energy.",
+      "published_at": "2026-09-25T07:09:28+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 44,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.4,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "japan"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Oil prices jump after Yemen’s Houthis claim attacks on Saudi facilities",
       "url": "https://www.aljazeera.com/economy/2026/9/25/oil-prices-jump-after-yemens-houthis-claim-attacks-on-saudi-facilities?traffic_source=rss",
@@ -117,7 +325,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 54,
+      "score": 43,
       "tags": [
         "oil_macro",
         "geopolitics"
@@ -133,7 +341,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.73
       },
       "matched": {
         "oil_macro": [
@@ -164,12 +372,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 36,
       "tags": [
         "geopolitics",
         "gas_storage"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -180,7 +388,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.7,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
@@ -198,46 +406,82 @@
       "also_reported_by": []
     },
     {
-      "title": "Soaring Freight Costs Make Japan’s Crude Imports the World’s Most Expensive",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Soaring-Freight-Costs-Make-Japans-Crude-Imports-the-Worlds-Most-Expensive.html",
-      "snippet": "Oil is increasingly getting more expensive before it even reaches a refinery. Freight now accounts for roughly a fifth of the cost of a crude cargo, turning the tanker market into a major driver of the price buyers pay. At the center of the squeeze is the very large crude carrier, or VLCC, the super",
-      "published_at": "2026-09-24T23:00:00+00:00",
+      "title": "NYK’s LNG carrier named in South Korea",
+      "url": "https://lngprime.com/asia/nyks-lng-carrier-named-in-south-korea/197461/",
+      "snippet": "South Korea’s Hyundai Samho hosted a naming ceremony for a new liquefied natural gas (LNG) carrier owned by Japan's NYK and chartered by Mitsubishi’s unit Diamond Global Energy.",
+      "published_at": "2026-09-25T04:54:43+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 34,
       "tags": [
-        "lng",
-        "oil_macro"
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 27.2,
+        "authority": 13.1,
+        "themes": 14.6,
         "geo_band": "tertiary",
         "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 41.0,
-        "recency_multiplier": 0.75
+        "raw": 32.7,
+        "recency_multiplier": 0.8
       },
       "matched": {
         "lng": [
-          "cargo",
-          "tanker",
+          "lng",
           "carrier"
         ],
-        "oil_macro": [
-          "crude",
-          "refinery"
+        "geography": [
+          "japan",
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Inpex beefs up stake in Australian LNG project",
+      "url": "https://www.offshore-energy.biz/inpex-beefs-up-stake-in-australian-lng-project/",
+      "snippet": "Japan’s exploration and production (E&#38;P) company Inpex has moved to solidify its foothold in a liquefied natural gas (LNG) project off the northwest coast of Western Australia (WA), with its Australian subsidiaries taking steps to obtain an additional participating interest by exercising pre-emp",
+      "published_at": "2026-09-25T08:41:57+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
         ],
         "geography": [
+          "australia",
           "japan"
         ]
       },
@@ -245,183 +489,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Crude Gains on Tight Supply Signals",
-      "url": "https://www.rigzone.com/news/wire/crude_gains_on_tight_supply_signals-24-sep-2026-184700-article/?rss=true",
-      "snippet": "Oil rose as tight global supplies outweighed optimism over a potential US-Iran deal to reopen the Strait of Hormuz.",
-      "published_at": "2026-09-24T20:14:10+00:00",
+      "title": "Australian interconnector granted final approval before construction",
+      "url": "https://www.offshore-energy.biz/australian-interconnector-granted-final-approval-before-construction/",
+      "snippet": "The Marinus Link electricity and telecommunications interconnector to be built in Australia has secured [&#8230;] The post Australian interconnector granted final approval before construction appeared first on Offshore Energy .",
+      "published_at": "2026-09-25T07:32:41+00:00",
       "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 19.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.3,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Huntstown - Huntstown 1 (HNC)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/0f30310d-a216-49cf-97e2-3335b54ed635/3",
-      "snippet": "Published: 24.09.2026 14:52:25 Publisher: Huntstown Power Company Limited Status: Active Type of Unavailability: Unplanned Reason Code: Foreseen maintenance Reason for the Unavailability: ST Brush replacement now complete. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacit",
-      "published_at": "2026-09-24T12:52:25+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 16.8,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 74.7,
-        "recency_multiplier": 0.34
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "maintenance"
-        ],
-        "unplanned": [
-          "unplanned"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
-      "url": "https://www.bbc.co.uk/news/articles/cmp30r1klk37o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The satellite station is used in part to provide internet coverage to neighbouring Ukraine, the government says.",
-      "published_at": "2026-09-24T16:00:29+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
       "has_magnitude": false,
       "score": 32,
       "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 14.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.2,
-        "recency_multiplier": 0.44
-      },
-      "matched": {
-        "geopolitics": [
-          "sabotage"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "geography": [
-          "denmark",
-          "poland"
-        ],
-        "unplanned": [
-          "fire",
-          "sabotage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Vitol Scoops Up 25 Million Barrels of Discounted Iraqi Crude",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Vitol-Scoops-Up-25-Million-Barrels-of-Discounted-Iraqi-Crude.html",
-      "snippet": "Vitol has bought at least 25 million barrels of Iraqi crude for September loading, making the world’s largest independent oil trader Iraq’s second-biggest buyer behind ADNOC as Baghdad pays steep discounts to keep barrels moving through the Strait of Hormuz. Iraq’s SOMO offered September crude at di",
-      "published_at": "2026-09-24T17:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 22.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 12.4,
+        "themes": 6.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 46.8,
-        "recency_multiplier": 0.49
+        "raw": 24.1,
+        "recency_multiplier": 0.98
       },
       "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
+        "infrastructure": [
+          "interconnector"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "australia"
         ]
       },
       "duplicate_count": 0,
@@ -438,7 +539,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 13,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
@@ -454,7 +555,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 68.8,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.36
       },
       "matched": {
         "geopolitics": [
