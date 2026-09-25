@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-25T09:51:35.169036+00:00",
-  "item_count": 11,
+  "generated_at": "2026-09-25T14:48:19.277900+00:00",
+  "item_count": 15,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 5
+    "high": 0,
+    "normal": 6
   },
-  "superseded_count": 1,
+  "superseded_count": 3,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,146 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1769
+        "ms": 1523
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 37134
+        "ms": 28847
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19814
+        "ms": 3063
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 1211
+        "ms": 510
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 180
+        "ms": 716
       },
       {
         "id": "eia_today",
         "ok": true,
-        "count": 18,
+        "count": 19,
         "error": null,
-        "ms": 196
+        "ms": 141
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 50,
+        "count": 47,
         "error": null,
-        "ms": 1345
+        "ms": 924
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 280
+        "ms": 433
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 665
+        "ms": 635
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 290
+        "ms": 267
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 556
+        "ms": 458
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 87
+        "ms": 157
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 114
+        "ms": 159
       }
     ]
   },
   "items": [
+    {
+      "title": "Aramco Restores East-West Pipeline as War Risk Closes In on Yanbu",
+      "url": "https://oilprice.com/Energy/Energy-General/Aramco-Restores-East-West-Pipeline-as-War-Risk-Closes-In-on-Yanbu.html",
+      "snippet": "Saudi Aramco has restarted its East-West pipeline (Petroline) less than two weeks after attacks knocked out the 7 million bpd system, restoring at least some of the route that has carried the bulk of Saudi crude around the Strait of Hormuz since the war began. Pumping has resumed at reduced rates, w",
+      "published_at": "2026-09-25T13:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 61,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 33.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 58.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "rates"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Coolkeeragh - GU_500040 (C30)",
       "url": "https://umm.nordpoolgroup.com/#/messages/dde1845e-fde1-4531-bf46-e4797021629b/2",
@@ -117,11 +168,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 70,
+      "score": 61,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +183,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.78
       },
       "matched": {
         "supply_disruption": [
@@ -151,45 +202,228 @@
       "also_reported_by": []
     },
     {
-      "title": "Hormuz Tanker Transits Crash to Single Digits as Crisis Deepens",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Transits-Crash-to-Single-Digits-as-Crisis-Deepens.html",
-      "snippet": "Only nine commodity carriers passed through the Strait of Hormuz on Thursday, eight of them exiting the waterway, Reuters reported in its now regular update on tanker numbers in the strait. The Thursday total is a further decline on already depressed numbers that have now gone from double to single ",
-      "published_at": "2026-09-25T07:30:00+00:00",
+      "title": "Ukraine Drone Strike Knocks Out Russia's Novoshakhtinsk Refinery",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Drone-Strike-Knocks-Out-Russias-Novoshakhtinsk-Refinery.html",
+      "snippet": "Another Russian refinery was taken offline on Friday following a Ukrainian drone attack, in a sign that Ukraine and Russia continue to trade strikes on energy infrastructure despite separate talks with U.S. officials in New York aimed at de-escalation. The Novoshakhtinsk refinery in the southern Rus",
+      "published_at": "2026-09-25T11:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 55,
       "tags": [
         "geopolitics",
-        "lng"
+        "supply_disruption",
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 21.0,
+        "themes": 42.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.6,
+        "recency_multiplier": 0.87
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "escalation",
+          "attack"
+        ],
+        "supply_disruption": [
+          "offline",
+          "taken offline"
+        ],
+        "oil_macro": [
+          "refinery"
+        ],
+        "geography": [
+          "russia",
+          "russian",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Henry Hub natural gas prices this summer were 6% lower than last summer",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68204",
+      "snippet": "The Henry Hub natural gas spot price averaged $2.93 per million British thermal units from June through August, 6% less than the same period last year. Prices were lower this summer despite exceptionally hot weather that increased electricity demand for air conditioning. Natural gas-fired power plan",
+      "published_at": "2026-09-25T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 53,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 4.5,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 47.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "WTI Whipsaws as Hormuz Hopes Collide With Diesel Crunch",
+      "url": "https://oilprice.com/Energy/Energy-General/WTI-Whipsaws-as-Hormuz-Hopes-Collide-With-Diesel-Crunch.html",
+      "snippet": "November WTI crude oil futures spent the week trading a possible reopening of the Strait of Hormuz against the risk that shipping conditions have not normalized. The contract fell to $88.67 Tuesday after reports that Iran could reopen the Strait within seven days, then recovered to $96.78 Thursday a",
+      "published_at": "2026-09-25T13:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.0,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.8,
-        "recency_multiplier": 0.97
+        "speculative": -12.0,
+        "raw": 34.8,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
           "strait of hormuz"
         ],
-        "lng": [
-          "tanker"
+        "oil_macro": [
+          "crude",
+          "wti"
         ],
         "geography": [
           "strait of hormuz",
           "hormuz"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-09-25T07:30:00+00:00"
+    },
+    {
+      "title": "Revisions proposed by the Electricity Market Reform Delivery Body to the Relevant Balancing Services Guidelines 2026",
+      "url": "https://www.ofgem.gov.uk/guidance/revisions-proposed-electricity-market-reform-delivery-body-relevant-balancing-services-guidelines-2026",
+      "snippet": "Our decision to approve revisions proposed by the Electricity Market Reform Delivery Body to the Relevant Balancing Services Guidelines.",
+      "published_at": "2026-09-25T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "regulation",
+        "power_system"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 21.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.0,
+        "recency_multiplier": 0.94
+      },
+      "matched": {
+        "regulation": [
+          "reform",
+          "market reform"
+        ],
+        "power_system": [
+          "balancing"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Dutch to Ask EU to End Mandatory Gas Storage Targets",
+      "url": "https://www.rigzone.com/news/wire/dutch_to_ask_eu_to_end_mandatory_gas_storage_targets-25-sep-2026-184701-article/?rss=true",
+      "snippet": "The Netherlands wants to scrap mandatory gas storage targets under a revamp of the European Union's energy supply security rules after spending nearly EUR 1 billion this year to fill the country's reserves.",
+      "published_at": "2026-09-25T09:48:56+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 40,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 39.7,
+        "recency_multiplier": 0.79
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "european",
+          "eu",
+          "netherlands",
+          "dutch"
         ]
       },
       "duplicate_count": 0,
@@ -206,11 +440,11 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": true,
-      "score": 49,
+      "score": 37,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -221,7 +455,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.56
       },
       "matched": {
         "lng": [
@@ -234,348 +468,321 @@
       "also_reported_by": []
     },
     {
-      "title": "Revisions proposed by the Electricity Market Reform Delivery Body to the Relevant Balancing Services Guidelines 2026",
-      "url": "https://www.ofgem.gov.uk/guidance/revisions-proposed-electricity-market-reform-delivery-body-relevant-balancing-services-guidelines-2026",
-      "snippet": "Our decision to approve revisions proposed by the Electricity Market Reform Delivery Body to the Relevant Balancing Services Guidelines.",
-      "published_at": "2026-09-25T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
+      "title": "INPEX Pre-Empts JERA's Sale of Ichthys LNG Stake to MidOcean",
+      "url": "https://www.rigzone.com/news/inpex_preempts_jeras_sale_of_ichthys_lng_stake_to_midocean-25-sep-2026-184702-article/?rss=true",
+      "snippet": "INPEX raises its stake to over 68 percent.",
+      "published_at": "2026-09-25T11:18:11+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
+      "has_magnitude": true,
+      "score": 35,
       "tags": [
-        "regulation",
-        "power_system"
+        "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
-        "authority": 16.1,
-        "themes": 21.0,
+        "authority": 10.9,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 30.2,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "LNG Prime"
+      ],
+      "first_seen_at": "2026-09-25T07:09:28+00:00"
+    },
+    {
+      "title": "Internet restricted after fighting breaks out in Ethiopia's Tigray region",
+      "url": "https://www.bbc.co.uk/news/articles/cqp8dxxg325no?at_medium=RSS&at_campaign=rss",
+      "snippet": "During the two-year civil war in Tigray, the region was totally cut off from the outside world.",
+      "published_at": "2026-09-25T14:44:16+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 14.0,
         "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 37.0,
+        "raw": 24.2,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "regulation": [
-          "reform",
-          "market reform"
+        "geopolitics": [
+          "war"
         ],
-        "power_system": [
-          "balancing"
+        "supply_disruption": [
+          "restricted"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-09-25T12:30:05+00:00"
     },
     {
-      "title": "Inpex exercises right to buy Jera’s Ichthys LNG stake",
-      "url": "https://lngprime.com/asia/inpex-exercises-right-to-buy-jeras-ichthys-lng-stake/197479/",
-      "snippet": "Japan’s Inpex has exercised its right to pre-empt the sale of Jera’s 0.735 percent participating stake in the Inpex-operated 8.9 mtpa Ichthys LNG project to EIG's MidOcean Energy.",
-      "published_at": "2026-09-25T07:09:28+00:00",
+      "title": "Netherlands Pushes to Scrap EU Gas Storage Mandate After $1.14 Billion Bill",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Netherlands-Pushes-to-Scrap-EU-Gas-Storage-Mandate-After-114-Billion-Bill.html",
+      "snippet": "The Netherlands considers that the current EU system of gas storage targets ahead of winter is inadequate and burdens governments that have to pay for meeting the EU-wide obligations. The Dutch government has already spent almost $1.14 billion (1 billion euros) this summer season alone on building u",
+      "published_at": "2026-09-25T10:00:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 44,
+      "has_magnitude": false,
+      "score": 32,
       "tags": [
-        "lng"
+        "gas_storage",
+        "regulation"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 8.8,
+        "themes": 22.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 37.4,
-        "recency_multiplier": 0.95
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 29.7,
+        "recency_multiplier": 0.81
       },
       "matched": {
-        "lng": [
-          "lng"
+        "gas_storage": [
+          "storage",
+          "storage mandate"
+        ],
+        "regulation": [
+          "mandate"
         ],
         "geography": [
-          "japan"
+          "eu",
+          "netherlands",
+          "dutch"
+        ],
+        "speculative": [
+          "considers"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Oil prices jump after Yemen’s Houthis claim attacks on Saudi facilities",
-      "url": "https://www.aljazeera.com/economy/2026/9/25/oil-prices-jump-after-yemens-houthis-claim-attacks-on-saudi-facilities?traffic_source=rss",
-      "snippet": "Brent crude tops $106 a barrel after Iran-aligned rebel group claims to have successfully attacked Aramco facilities.",
-      "published_at": "2026-09-25T03:41:25+00:00",
+      "title": "Why Canada is not ruling out a possible war with the US",
+      "url": "https://www.aljazeera.com/news/2026/9/25/why-canada-is-not-ruling-out-a-possible-war-with-the-us?traffic_source=rss",
+      "snippet": "Trump’s annexation threats have prompted Carney to examine even remote risks to Canada’s sovereignty.",
+      "published_at": "2026-09-25T14:05:41+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "oil_macro",
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 18.8,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 48.3,
-        "recency_multiplier": 0.73
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "geopolitics": [
-          "attacked"
-        ],
-        "unplanned": [
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-09-24T18:30:00+00:00"
-    },
-    {
-      "title": "5 Energy Stocks Positioned for a Prolonged Iran War",
-      "url": "https://oilprice.com/Energy/Crude-Oil/5-Energy-Stocks-Positioned-for-a-Prolonged-Iran-War.html",
-      "snippet": "For the first time since the Iran war began, JPMorgan says it no longer has a clear baseline for how the oil market gets out of it. The bank had previously worked on the assumption that rising oil prices and the economic damage they caused would eventually put limits on how far the conflict could go",
-      "published_at": "2026-09-25T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
+      "score": 30,
       "tags": [
         "geopolitics",
-        "gas_storage"
+        "regulation"
       ],
       "alert": "low",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 22.0,
+        "authority": 9.5,
+        "themes": 12.7,
         "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 50.7,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "war"
-        ],
-        "gas_storage": [
-          "stocks"
-        ],
-        "unplanned": [
-          "damage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "NYK’s LNG carrier named in South Korea",
-      "url": "https://lngprime.com/asia/nyks-lng-carrier-named-in-south-korea/197461/",
-      "snippet": "South Korea’s Hyundai Samho hosted a naming ceremony for a new liquefied natural gas (LNG) carrier owned by Japan's NYK and chartered by Mitsubishi’s unit Diamond Global Energy.",
-      "published_at": "2026-09-25T04:54:43+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geo_band": "tertiary",
-        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 32.7,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier"
-        ],
-        "geography": [
-          "japan",
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Inpex beefs up stake in Australian LNG project",
-      "url": "https://www.offshore-energy.biz/inpex-beefs-up-stake-in-australian-lng-project/",
-      "snippet": "Japan’s exploration and production (E&#38;P) company Inpex has moved to solidify its foothold in a liquefied natural gas (LNG) project off the northwest coast of Western Australia (WA), with its Australian subsidiaries taking steps to obtain an additional participating interest by exercising pre-emp",
-      "published_at": "2026-09-25T08:41:57+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.7,
+        "raw": 22.1,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "lng": [
-          "lng"
+        "geopolitics": [
+          "war"
         ],
-        "geography": [
-          "australia",
-          "japan"
+        "regulation": [
+          "ruling"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "Australian interconnector granted final approval before construction",
-      "url": "https://www.offshore-energy.biz/australian-interconnector-granted-final-approval-before-construction/",
-      "snippet": "The Marinus Link electricity and telecommunications interconnector to be built in Australia has secured [&#8230;] The post Australian interconnector granted final approval before construction appeared first on Offshore Energy .",
-      "published_at": "2026-09-25T07:32:41+00:00",
+      "title": "What’s in Iran’s seven-day plan to reopen the Strait of Hormuz?",
+      "url": "https://www.aljazeera.com/news/2026/9/25/whats-in-irans-seven-day-plan-to-reopen-the-strait-of-hormuz?traffic_source=rss",
+      "snippet": "Tehran’s offer comes as high fuel prices put pressure on Trump ahead of the US midterm elections.",
+      "published_at": "2026-09-25T10:49:48+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 6.7,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.1,
-        "recency_multiplier": 0.98
-      },
-      "matched": {
-        "infrastructure": [
-          "interconnector"
-        ],
-        "geography": [
-          "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Saudi Oil Export Costs Surge as Red Sea Risks Mount",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Oil-Export-Costs-Surge-as-Red-Sea-Risks-Mount.html",
-      "snippet": "Saudi Arabia’s workaround for the Strait of Hormuz now carries a war-risk insurance bill nearly as expensive as sending tankers through Hormuz itself. Quoted premiums for Saudi-linked tankers calling at the Red Sea port of Yanbu have tripled to around 3% of a vessel’s value from less than 1% in earl",
-      "published_at": "2026-09-24T18:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 10,
+      "score": 13,
       "tags": [
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 32.0,
+        "authority": 9.5,
+        "themes": 16.6,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 68.8,
-        "recency_multiplier": 0.36
+        "raw": 42.1,
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
-          "war",
-          "strait of hormuz",
-          "red sea"
+          "strait of hormuz"
         ],
         "geography": [
           "strait of hormuz",
-          "hormuz",
-          "red sea"
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/economy/2026/9/25/oil-prices-jump-after-yemens-houthis-claim-attacks-on-saudi-facilities?traffic_source=rss",
-        "title": "Oil prices jump after Yemen’s Houthis claim attacks on Saudi facilities",
-        "published_at": "2026-09-25T03:41:25+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/WTI-Whipsaws-as-Hormuz-Hopes-Collide-With-Diesel-Crunch.html",
+        "title": "WTI Whipsaws as Hormuz Hopes Collide With Diesel Crunch",
+        "published_at": "2026-09-25T13:00:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Fighting in northern Ethiopia spurs fears of blackout and blockade",
+      "url": "https://www.aljazeera.com/news/2026/9/25/fighting-in-northern-ethiopia-spurs-fears-of-blackout-and-blockade?traffic_source=rss",
+      "snippet": "Tigray was cut off from the world during the 2020-2022 civil war, which killed around 600,000 people.",
+      "published_at": "2026-09-25T12:30:05+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 12,
+      "tags": [
+        "geopolitics",
+        "power_system"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 24.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.7,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "war"
+        ],
+        "power_system": [
+          "blackout"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/cqp8dxxg325no?at_medium=RSS&at_campaign=rss",
+        "title": "Internet restricted after fighting breaks out in Ethiopia's Tigray region",
+        "published_at": "2026-09-25T14:44:16+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Hormuz Tanker Transits Crash to Single Digits as Crisis Deepens",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Transits-Crash-to-Single-Digits-as-Crisis-Deepens.html",
+      "snippet": "Only nine commodity carriers passed through the Strait of Hormuz on Thursday, eight of them exiting the waterway, Reuters reported in its now regular update on tanker numbers in the strait. The Thursday total is a further decline on already depressed numbers that have now gone from double to single ",
+      "published_at": "2026-09-25T07:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 12,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.8,
+        "recency_multiplier": 0.66
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Energy/Energy-General/WTI-Whipsaws-as-Hormuz-Hopes-Collide-With-Diesel-Crunch.html",
+        "title": "WTI Whipsaws as Hormuz Hopes Collide With Diesel Crunch",
+        "published_at": "2026-09-25T13:00:00+00:00"
       },
       "hidden": true
     }
