@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-26T17:51:58.015395+00:00",
-  "item_count": 6,
+  "generated_at": "2026-09-26T20:16:14.806631+00:00",
+  "item_count": 7,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 4
+    "normal": 3
   },
   "superseded_count": 0,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1193
+        "ms": 1253
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 25312
+        "ms": 69552
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 9646
+        "ms": 3201
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 214
+        "ms": 429
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 452
+        "ms": 294
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 174
+        "ms": 94
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 907
+        "ms": 845
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 154
+        "ms": 172
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 504
+        "ms": 546
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 88
+        "ms": 73
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 339
+        "ms": 418
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 24,
+        "count": 26,
         "error": null,
-        "ms": 123
+        "ms": 142
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 44
+        "ms": 214
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 72,
+      "score": 70,
       "tags": [
         "supply_disruption",
         "regulation"
@@ -133,7 +133,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 78.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "supply_disruption": [
@@ -156,10 +156,53 @@
       "also_reported_by": []
     },
     {
+      "title": "Nor'easter storm brings coastal flooding, as New York and New Jersey declare emergency",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Tens of millions of people from Maine to Virginia are in the path of the powerful storm.",
+      "published_at": "2026-09-26T17:47:09+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 60,
+      "tags": [
+        "weather"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 12.3,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 58.5,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "weather": [
+          "storm",
+          "flooding"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
       "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
       "snippet": "The US president says Tehran had only put forward the proposal because it is losing the war.",
-      "published_at": "2026-09-26T16:58:39+00:00",
+      "published_at": "2026-09-26T18:17:12+00:00",
       "type": "news",
       "source": "bbc_world",
       "source_name": "BBC World",
@@ -194,7 +237,7 @@
           "hormuz"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 2,
       "also_reported_by": [
         "Al Jazeera"
       ],
@@ -211,7 +254,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 44,
       "tags": [
         "supply_disruption"
       ],
@@ -227,7 +270,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.6,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.66
       },
       "matched": {
         "supply_disruption": [
@@ -254,11 +297,11 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 40,
       "tags": [
         "geopolitics"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -270,7 +313,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.4,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.78
       },
       "matched": {
         "geopolitics": [
@@ -295,13 +338,13 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 37,
       "tags": [
         "lng",
         "geopolitics",
         "oil_macro"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 10.9,
@@ -313,7 +356,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.9,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.57
       },
       "matched": {
         "lng": [
@@ -345,7 +388,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 35,
+      "score": 33,
       "tags": [
         "regulation",
         "geopolitics"
@@ -361,7 +404,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 26.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.95
       },
       "matched": {
         "regulation": [
