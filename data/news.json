@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-28T07:33:28.989541+00:00",
-  "item_count": 9,
+  "generated_at": "2026-09-28T15:53:03.368405+00:00",
+  "item_count": 19,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 7
+    "high": 3,
+    "normal": 5
   },
-  "superseded_count": 0,
+  "superseded_count": 2,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,126 +17,188 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1811
+        "ms": 1413
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 56477
+        "ms": 21981
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3137
+        "ms": 26605
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 249
+        "ms": 447
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 216
+        "ms": 328
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 127
+        "ms": 89
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 48,
+        "count": 47,
         "error": null,
-        "ms": 1340
+        "ms": 960
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 307
+        "ms": 352
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 677
+        "ms": 580
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 340
+        "ms": 164
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 657
+        "ms": 220
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 48
+        "ms": 126
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 99
+        "ms": 256
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
-      "url": "https://umm.nordpoolgroup.com/#/messages/af284d1f-9b81-4633-8748-33f39f299efa/2",
-      "snippet": "Published: 28.09.2026 04:04:32 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-09-28T02:04:32+00:00",
+      "title": "Qatar Extends LNG Force Majeure as Hormuz Crisis Drags On",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Qatar-Extends-LNG-Force-Majeure-as-Hormuz-Crisis-Drags-On.html",
+      "snippet": "State-owned QatarEnergy has extended the force majeure on LNG deliveries to Asia and Europe by another month through the end of November, as LNG cargo traffic through the Strait of Hormuz remains largely blocked amid the protracted U.S.-Iran stalemate over the chokepoint and pathways to end the war.",
+      "published_at": "2026-09-28T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 77,
+      "tags": [
+        "lng",
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 46.8,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 91.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargo",
+          "lng cargo"
+        ],
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "force majeure"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "force majeure"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-09-28T09:17:29+00:00"
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ringsend Flexgen (IS3) (GU_403610)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/6cef68f4-ccfd-4c52-9dc3-2add7cf9d193/1",
+      "snippet": "Published: 28.09.2026 17:28:57 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Gas Compressor Failure Remarks: Gas Compressor Failure Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable",
+      "published_at": "2026-09-28T15:28:57+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 56,
+      "score": 75,
       "tags": [
-        "supply_disruption"
+        "supply_disruption",
+        "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 28.0,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.76
+        "raw": 85.9,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "unplanned",
+          "compressor failure"
+        ],
+        "infrastructure": [
+          "compressor"
         ],
         "unplanned": [
           "unplanned",
@@ -144,6 +206,388 @@
         ],
         "urgency": [
           "unplanned"
+        ]
+      },
+      "duplicate_count": 5,
+      "also_reported_by": [],
+      "first_seen_at": "2026-09-28T02:04:32+00:00"
+    },
+    {
+      "title": "Edison says QatarEnergy extends force majeure until early December",
+      "url": "https://lngprime.com/europe/edison-says-qatarenergy-extends-force-majeure-until-early-december/197592/",
+      "snippet": "Italian energy firm Edison, a unit of EDF, said it received a new force majeure notification from state-owned LNG giant QatarEnergy, affecting supplies scheduled for delivery at the Adriatic LNG terminal in Italy until the beginning of December.",
+      "published_at": "2026-09-28T15:31:01+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "lng",
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 13.1,
+        "themes": 32.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 75.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng terminal"
+        ],
+        "supply_disruption": [
+          "force majeure"
+        ],
+        "infrastructure": [
+          "terminal"
+        ],
+        "geography": [
+          "italy"
+        ],
+        "unplanned": [
+          "force majeure"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "European Gas Prices Rally on U.S.-Iran Stalemate",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Gas-Prices-Rally-on-US-Iran-Stalemate.html",
+      "snippet": "Europe’s benchmark natural gas prices rose by 2% in early trade in Amsterdam on Monday, as the United States and Iran are again locked in a stalemate over negotiations and conditions for reopening of the Strait of Hormuz. The front-month futures of the Dutch Title Transfer Facility (TTF), the benchm",
+      "published_at": "2026-09-28T11:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 57,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 62.4,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "geopolitics": [
+          "negotiations",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Electrical fault triggers oil output deferral and rig intervention plans at Karoon’s Brazilian field",
+      "url": "https://offshore-energy.biz/2026/09/28/electrical-fault-triggers-oil-output-deferral-and-rig-intervention-plans-at-karoons-brazilian-field",
+      "snippet": "An electrical fault has forced Karoon to throttle back a key well, slashing production outlook and putting a rig-based intervention on the table.",
+      "published_at": "2026-09-28T13:51:03+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 12.4,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 40.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fault"
+        ],
+        "unplanned": [
+          "fault"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "High Freight Costs Push More U.S. LNG Toward Europe",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/High-Freight-Costs-Push-More-US-LNG-Toward-Europe.html",
+      "snippet": "Europe is currently benefiting from the closed arbitrage between the U.S. Gulf Coast and Asia and is taking more LNG supplies in possible relief from concerns about winter gas supply. The Atlantic-Pacific arbitrage is closed for the rest of this year, due to high shipping costs, and this has led to ",
+      "published_at": "2026-09-28T15:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 20.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "arbitrage"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UK Grid Operator Warns of Tight Power Margins",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/UK-Grid-Operator-Warns-of-Tight-Power-Margins.html",
+      "snippet": "The UK power system faces a margin shortfall of 1.4 gigawatts (GW) on Monday evening local time, the National Energy System Operator said in a routine precautionary notice. During the spring and the summer record heatwaves, the National Energy System Operator (NESO) has issued electricity margin not",
+      "published_at": "2026-09-28T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 19.2,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 44.0,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "infrastructure": [
+          "grid",
+          "system operator"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Indonesia's Coal Exports Sink 23% as Global Demand Heads for a Record",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indonesias-Coal-Exports-Sink-23-as-Global-Demand-Heads-for-a-Record.html",
+      "snippet": "The world’s biggest exporter of thermal coal, Indonesia, is not benefiting from tightening global coal markets amid an Asian switch to coal from gas due to the Middle East crisis choking LNG supply. Indonesian thermal coal exports have been crimped this year by government production quotas and heigh",
+      "published_at": "2026-09-28T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 43,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 10.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 35.7,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Middle East Oil Exports Rebound to 12.8 Million Bpd",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Middle-East-Oil-Exports-Rebound-to-128-Million-Bpd.html",
+      "snippet": "Crude oil exports from the Middle East have risen to 12.8 million barrels daily this month, preliminary data from Kpler cited by Reuters has suggested. The rebound was led by Saudi Arabia, which redirected oil flows from the west to the east, where it loads the crude on tankers in the Gulf of Oman v",
+      "published_at": "2026-09-28T07:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 46.8,
+        "recency_multiplier": 0.59
+      },
+      "matched": {
+        "geopolitics": [
+          "gulf of oman"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "gulf of oman"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "TotalEnergies’ Caspian Sea gas and condensate field expansion is a go",
+      "url": "https://offshore-energy.biz/2026/09/28/totalenergies-caspian-sea-gas-and-condensate-field-expansion-is-a-go",
+      "snippet": "This expansion will boost the overall production to 6 billion cubic meters per annum of gas and 47,000 barrels per day of condensate.",
+      "published_at": "2026-09-28T12:44:32+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 35,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 4.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 28.9,
+        "recency_multiplier": 0.92
+      },
+      "matched": {
+        "oil_macro": [
+          "barrels"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Germany's Gas Storage Sits at 57%, but VNG Says Winter Supply Is Covered",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Germanys-Gas-Storage-Sits-at-57-but-VNG-Says-Winter-Supply-Is-Covered.html",
+      "snippet": "Thanks to diversified import capabilities, Germany doesn’t face a gas supply shortage despite record-low levels of natural gas in storage sites, according to one of the biggest German gas importers, VNG. “Compared to 2022, the system is much more robust overall. We have more access to liquefied natu",
+      "published_at": "2026-09-28T09:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 34,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.5,
+        "recency_multiplier": 0.69
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "germany",
+          "german"
         ]
       },
       "duplicate_count": 0,
@@ -160,13 +604,13 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 34,
       "tags": [
         "infrastructure",
         "lng",
         "gas_storage"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -178,7 +622,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.9,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.48
       },
       "matched": {
         "infrastructure": [
@@ -201,51 +645,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Middle East Oil Exports Rebound to 12.8 Million Bpd",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Middle-East-Oil-Exports-Rebound-to-128-Million-Bpd.html",
-      "snippet": "Crude oil exports from the Middle East have risen to 12.8 million barrels daily this month, preliminary data from Kpler cited by Reuters has suggested. The rebound was led by Saudi Arabia, which redirected oil flows from the west to the east, where it loads the crude on tankers in the Gulf of Oman v",
-      "published_at": "2026-09-28T07:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 53,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 22.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.8,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "gulf of oman"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "gulf of oman"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "PV Gas seeks another spot LNG shipment",
       "url": "https://lngprime.com/asia/pv-gas-seeks-another-spot-lng-shipment/197553/",
       "snippet": "Petrovietnam Gas, a unit of state-owned Petrovietnam, has released a new tender inviting firms to submit bids for one spot LNG cargo for delivery to the Thi Vai LNG import terminal.",
@@ -256,12 +655,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 52,
+      "score": 32,
       "tags": [
         "lng",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -272,7 +671,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.7,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.48
       },
       "matched": {
         "lng": [
@@ -290,41 +689,81 @@
       "also_reported_by": []
     },
     {
-      "title": "Nord Gas Solutions clinches contract for Polish bio-LNG plant",
-      "url": "https://lngprime.com/contracts-and-tenders/nord-gas-solutions-clinches-contract-for-polish-bio-lng-plant/197547/",
-      "snippet": "Nord Gas Solutions, formerly Wartsila Gas Solutions, has secured a contract for what it says is Poland's first bio-LNG production plant.",
-      "published_at": "2026-09-28T04:17:27+00:00",
+      "title": "Hanwha Ocean bags order for LNG carrier duo",
+      "url": "https://lngprime.com/asia/hanwha-ocean-bags-order-for-lng-carrier-duo/197578/",
+      "snippet": "South Korea’s Hanwha Ocean has secured a contract valued at approximately $500 million to build two liquefied natural gas (LNG) carriers.",
+      "published_at": "2026-09-28T09:17:33+00:00",
       "type": "news",
       "source": "lng_prime",
       "source_name": "LNG Prime",
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 31,
       "tags": [
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
-        "themes": 20.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 43.9,
-        "recency_multiplier": 0.91
+        "raw": 32.7,
+        "recency_multiplier": 0.7
       },
       "matched": {
         "lng": [
           "lng",
-          "lng plant"
+          "carrier"
         ],
         "geography": [
-          "poland"
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Southeast Asian oil field development clears key environmental hurdle to move toward FID",
+      "url": "https://offshore-energy.biz/2026/09/28/southeast-asian-oil-field-development-clears-key-environmental-hurdle-to-move-toward-fid",
+      "snippet": "Finder Energy is edging closer to a final investment decision (FID) for the development of its offshore oil field in Timor-Leste.",
+      "published_at": "2026-09-28T09:11:24+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 21.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.4,
+        "recency_multiplier": 0.7
+      },
+      "matched": {
+        "lng": [
+          "final investment decision"
+        ],
+        "infrastructure": [
+          "field development"
         ]
       },
       "duplicate_count": 0,
@@ -341,12 +780,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 31,
       "tags": [
         "lng",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -357,7 +796,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.6
       },
       "matched": {
         "lng": [
@@ -382,12 +821,12 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 46,
+      "score": 30,
       "tags": [
         "lng",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 13.1,
@@ -398,7 +837,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.0,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.57
       },
       "matched": {
         "lng": [
@@ -413,83 +852,108 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Moves Higher on Rekindled War Fears",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Moves-Higher-on-Rekindled-War-Fears.html",
-      "snippet": "Crude oil prices started the week with a jump after President Trump rejected a peace deal proposal tabled by Iran last week at the UN General Assembly. At the time of writing, Brent crude was trading at $107.24 per barrel, with West Texas Intermediate at $94.10 per barrel, the latter pressured by ne",
-      "published_at": "2026-09-28T05:37:00+00:00",
+      "title": "Iraq looks for oil export alternatives to the troubled Strait of Hormuz",
+      "url": "https://www.aljazeera.com/economy/2026/9/28/iraq-looks-for-oil-export-alternatives-to-the-troubled-strait-of-hormuz?traffic_source=rss",
+      "snippet": "The continued blockade of the Strait of Hormuz has forced Iraq to look for alternatives to export its oil.",
+      "published_at": "2026-09-28T13:53:28+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 36,
+      "score": 17,
       "tags": [
-        "oil_macro",
         "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 18.8,
-        "geography": 0.0,
+        "authority": 9.5,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 27.6,
+        "raw": 51.1,
         "recency_multiplier": 1.0
       },
       "matched": {
+        "geopolitics": [
+          "blockade",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Qatar-Extends-LNG-Force-Majeure-as-Hormuz-Crisis-Drags-On.html",
+        "title": "Qatar Extends LNG Force Majeure as Hormuz Crisis Drags On",
+        "published_at": "2026-09-28T14:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Oil prices surge after Trump rejects Iran’s plan to reopen Strait of Hormuz",
+      "url": "https://www.aljazeera.com/economy/2026/9/28/oil-prices-surge-after-trump-rejects-irans-plan-to-reopen-strait-of-hormuz?traffic_source=rss",
+      "snippet": "Brent crude rises more than 3 percent to top $107 a barrel as Washington dismisses Tehran&#039;s proposal to end war.",
+      "published_at": "2026-09-28T09:17:29+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 16,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 33.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 71.2,
+        "recency_multiplier": 0.7
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
         "oil_macro": [
           "crude",
           "brent",
           "barrel"
         ],
-        "geopolitics": [
-          "war"
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Egypt was top destination for US LNG shipments in July",
-      "url": "https://lngprime.com/americas/egypt-was-top-destination-for-us-lng-shipments-in-july/197520/",
-      "snippet": "FSRU-based LNG import terminals in Egypt were the top destinations for US liquefied natural gas shipments for the second month in a row in July, according to the Department of Energy’s LNG monthly report.",
-      "published_at": "2026-09-28T04:20:00+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.7,
-        "recency_multiplier": 0.91
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Qatar-Extends-LNG-Force-Majeure-as-Hormuz-Crisis-Drags-On.html",
+        "title": "Qatar Extends LNG Force Majeure as Hormuz Crisis Drags On",
+        "published_at": "2026-09-28T14:30:00+00:00"
       },
-      "matched": {
-        "lng": [
-          "lng",
-          "fsru"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "hidden": true
     }
   ]
 }
