@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-01T08:48:14.057162+00:00",
-  "item_count": 18,
+  "generated_at": "2026-10-01T15:43:16.121511+00:00",
+  "item_count": 30,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 6
+    "high": 1,
+    "normal": 9
   },
   "superseded_count": 0,
   "sources": {
@@ -17,133 +17,284 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1470
+        "ms": 1467
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 112210
+        "ms": 21375
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5136
+        "ms": 5371
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 460
+        "ms": 387
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 95
+        "ms": 252
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 128
+        "ms": 211
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1240
+        "ms": 1151
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 325
+        "ms": 380
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 722
+        "ms": 668
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 312
+        "ms": 249
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 565
+        "ms": 578
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 33,
+        "count": 34,
         "error": null,
-        "ms": 53
+        "ms": 151
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 81
+        "ms": 248
       }
     ]
   },
   "items": [
     {
-      "title": "PV Gas seeks November spot LNG cargo",
-      "url": "https://lngprime.com/asia/pv-gas-seeks-november-spot-lng-cargo/197743/",
-      "snippet": "Petrovietnam Gas, a unit of state-owned Petrovietnam, has released a new tender inviting firms to submit bids for one spot liquefied natural gas (LNG) cargo for delivery to the Thi Vai LNG import terminal.",
-      "published_at": "2026-10-01T06:45:13+00:00",
+      "title": "U.S. Threatens Diesel Export Ban Unless Europe Releases Stockpiles",
+      "url": "https://oilprice.com/Energy/Energy-General/US-Threatens-Diesel-Export-Ban-Unless-Europe-Releases-Stockpiles.html",
+      "snippet": "The U.S. Administration has urged Germany and France, Europe’s largest economies that hold a sizeable chunk of the EU’s emergency reserves, to release diesel from emergency stockpiles or face a potential U.S. diesel export ban, sources close to the discussions told Reuters on Thursday. Since crude o",
+      "published_at": "2026-10-01T14:00:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 56,
+      "score": 66,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "export ban"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "europe",
+          "eu",
+          "germany",
+          "france"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Dutch LNG terminal capacity rises to 20 billion cubic meters with 4th tank",
+      "url": "https://offshore-energy.biz/2026/10/01/dutch-lng-terminal-capacity-rises-to-20-billion-cubic-meters-with-4th-tank",
+      "snippet": "The Gate LNG terminal on Rotterdam’s Maasvlakte is bringing a massive 180,000-cubic-meter (cbm) storage tank online.",
+      "published_at": "2026-10-01T12:35:25+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 60,
       "tags": [
         "lng",
+        "gas_storage",
         "infrastructure"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 37.5,
-        "geography": 0.0,
+        "authority": 12.4,
+        "themes": 27.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 50.7,
-        "recency_multiplier": 1.0
+        "raw": 61.6,
+        "recency_multiplier": 0.92
       },
       "matched": {
         "lng": [
           "lng",
-          "cargo",
-          "lng cargo"
+          "lng terminal"
+        ],
+        "gas_storage": [
+          "storage"
         ],
         "infrastructure": [
-          "terminal",
-          "import terminal"
+          "terminal"
+        ],
+        "geography": [
+          "dutch"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Indian Refiners Seek Tankers for Hormuz Oil",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Refiners-Seek-Tankers-for-Hormuz-Oil.html",
+      "snippet": "Indian refining companies are looking for tankers for hire to carry oil out of the Persian Gulf via the Strait of Hormuz, according to a Bloomberg report citing unnamed sources. Two shipping companies have won tenders for Persian Gulf oil, the sources told Bloomberg, while another two submitted bids",
+      "published_at": "2026-10-01T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 57,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.8,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "persian gulf"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China Halts Fuel Exports Until Further Notice",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Halts-Fuel-Exports-Until-Further-Notice.html",
+      "snippet": "China’s refiners have halted fuel exports until further notice, multiple sources briefed on the matter told Reuters on Thursday in a development that could further tighten the global fuel market. PetroChina, the state major, has canceled some gasoline and jet fuel cargoes that were expected to be sh",
+      "published_at": "2026-10-01T10:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 54,
+      "tags": [
+        "supply_disruption",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 12.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.5,
+        "recency_multiplier": 0.78
+      },
+      "matched": {
+        "supply_disruption": [
+          "halted"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "geography": [
+          "china"
+        ],
+        "unplanned": [
+          "halted"
+        ],
+        "urgency": [
+          "halted"
         ]
       },
       "duplicate_count": 0,
@@ -198,46 +349,47 @@
       "also_reported_by": []
     },
     {
-      "title": "Brent Tumbles to $96 as Gulf Oil Flows Bounce Back",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Tumbles-to-96-as-Gulf-Oil-Flows-Bounce-Back.html",
-      "snippet": "Crude oil prices moved markedly lower on Wednesday and stayed there earlier today, after booking a solid jump for September. The decline came in response to reports from JP Morgan, Goldman, and Kpler, suggesting oil flows out of the Persian Gulf had virtually returned to pre-war levels. At the time ",
-      "published_at": "2026-10-01T05:17:00+00:00",
+      "title": "CEZ says Eemshaven LNG imports same as last year",
+      "url": "https://lngprime.com/europe/cez-says-eemshaven-lng-imports-same-as-last-year/197759/",
+      "snippet": "Czech utility CEZ said on Thursday that liquefied natural gas (LNG) imports via the Dutch FSRU-based Eemshaven LNG import terminal have not slowed this year despite the ongoing crisis in the Middle East.",
+      "published_at": "2026-10-01T08:58:49+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 49,
       "tags": [
-        "geopolitics",
-        "oil_macro"
+        "lng",
+        "infrastructure"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 31.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 13.1,
+        "themes": 37.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 44.7,
-        "recency_multiplier": 0.89
+        "raw": 60.7,
+        "recency_multiplier": 0.69
       },
       "matched": {
-        "geopolitics": [
-          "war",
-          "persian gulf"
+        "lng": [
+          "lng",
+          "fsru",
+          "lng imports"
         ],
-        "oil_macro": [
-          "crude",
-          "brent"
+        "infrastructure": [
+          "terminal",
+          "import terminal"
         ],
         "geography": [
-          "gulf"
+          "dutch"
         ]
       },
       "duplicate_count": 0,
@@ -280,7 +432,7 @@
           "failed"
         ]
       },
-      "duplicate_count": 0,
+      "duplicate_count": 1,
       "also_reported_by": []
     },
     {
@@ -324,37 +476,85 @@
       "also_reported_by": []
     },
     {
-      "title": "Ofgem’s determination of Variable Values for the 2026 Annual Iteration Process",
-      "url": "https://www.ofgem.gov.uk/decision/ofgems-determination-variable-values-2026-annual-iteration-process",
-      "snippet": "Our determination of Price Control Financial Model (PCFM) Variable Values for the Annual Iteration Process 2026.",
-      "published_at": "2026-10-01T12:00:00+00:00",
+      "title": "Commission grants CB RES status to three additional cross-border renewable energy projects",
+      "url": "https://cinea.ec.europa.eu/news-events/news/commission-grants-cb-res-status-three-additional-cross-border-renewable-energy-projects-2026-10-01_en",
+      "snippet": "The European Commission has approved three new cross-border renewable energy projects under the fifth call for CB RES status: WIND, DEPLOY and ZEGA-LINNK. Following this update, and after the withdrawal of PONTIS from the list, the number of projects holding CB RES status now stands at 15.",
+      "published_at": "2026-10-01T11:36:01+00:00",
       "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
       "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 43,
       "tags": [
-        "regulation"
+        "regulation",
+        "gas_storage"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
         "authority": 16.1,
-        "themes": 17.6,
-        "geography": 0.0,
+        "themes": 15.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 33.7,
-        "recency_multiplier": 1.0
+        "raw": 41.5,
+        "recency_multiplier": 0.85
       },
       "matched": {
         "regulation": [
-          "ofgem",
-          "price control"
+          "european commission"
+        ],
+        "gas_storage": [
+          "withdrawal"
+        ],
+        "geography": [
+          "european"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Three Tankers Struck by Unknown Projectiles in Strait of Hormuz",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Three-Tankers-Struck-by-Unknown-Projectiles-in-Strait-of-Hormuz.html",
+      "snippet": "Three oil tankers have been hit by unknown projectiles while transiting the Strait of Hormuz this week, shipping intelligence and security companies say. Three Liberia-flagged tankers with their transponders switched off were transiting the Strait on Tuesday and Wednesday when they were hit by proje",
+      "published_at": "2026-10-01T11:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.4,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -410,6 +610,86 @@
       "also_reported_by": []
     },
     {
+      "title": "Uranium Hits Record High While Nuclear Stocks Slide",
+      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Uranium-Hits-Record-High-While-Nuclear-Stocks-Slide.html",
+      "snippet": "If you only looked at the price of the fuel, you'd think the nuclear trade has never been better. Long-term uranium prices are sitting at $96/lb, an all-time record and up ~12% YTD, taking out the $95/lb high set in mid-2007 at the peak of the last uranium mania (per UxC data compiled by TD Cowen). ",
+      "published_at": "2026-10-01T15:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 40,
+      "tags": [
+        "nuclear",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 32.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "gas_storage": [
+          "stocks"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Serica’s UK gas footprint widens as it brings Spirit Energy's North Sea assets into its fold",
+      "url": "https://offshore-energy.biz/2026/10/01/sericas-uk-gas-footprint-widens-as-it-brings-spirit-energys-north-sea-assets-into-its-fold",
+      "snippet": "This Southern North Sea gas portfolio acquisition boosts Serica's production by 10,000 barrels of oil equivalent per day (boepd).",
+      "published_at": "2026-10-01T09:16:47+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 40,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 4.5,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 44.9,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "South Korea weighs Alaska LNG investment",
       "url": "https://lngprime.com/asia/south-korea-weighs-alaska-lng-investment/197746/",
       "snippet": "US energy firm and LNG terminal developer Glenfarne said on Thursday that the announcment of a $50 billion-plus South Korean investment in Alaska LNG represents a \"major\" financing milestone for the project.",
@@ -452,6 +732,86 @@
         ],
         "speculative": [
           "weighs"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ofgem’s determination of Variable Values for the 2026 Annual Iteration Process",
+      "url": "https://www.ofgem.gov.uk/decision/ofgems-determination-variable-values-2026-annual-iteration-process",
+      "snippet": "Our determination of Price Control Financial Model (PCFM) Variable Values for the Annual Iteration Process 2026.",
+      "published_at": "2026-10-01T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 17.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 33.7,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "regulation": [
+          "ofgem",
+          "price control"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "PV Gas seeks November spot LNG cargo",
+      "url": "https://lngprime.com/asia/pv-gas-seeks-november-spot-lng-cargo/197743/",
+      "snippet": "Petrovietnam Gas, a unit of state-owned Petrovietnam, has released a new tender inviting firms to submit bids for one spot liquefied natural gas (LNG) cargo for delivery to the Thi Vai LNG import terminal.",
+      "published_at": "2026-10-01T06:45:13+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 37.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 50.7,
+        "recency_multiplier": 0.58
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargo",
+          "lng cargo"
+        ],
+        "infrastructure": [
+          "terminal",
+          "import terminal"
         ]
       },
       "duplicate_count": 0,
@@ -685,6 +1045,131 @@
       "also_reported_by": []
     },
     {
+      "title": "Constellation, Amazon agree nuclear-focused power purchase deal",
+      "url": "https://www.world-nuclear-news.org/articles/constellation-amazon-agree-nuclear-focused-power-purchase-deal",
+      "snippet": "A 20-year power purchase agreement signed by tech giant Amazon will enable Constellation to add 190 MW of capacity and extend the operating life of the Calvert Cliffs nuclear power plant in Maryland in the US.",
+      "published_at": "2026-10-01T10:32:26+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 34,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 33.1,
+        "recency_multiplier": 0.78
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "India Emphasizes That Shipping Chaos, Not Supply, Is Driving High Oil Prices",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Emphasizes-That-Shipping-Chaos-Not-Supply-Is-Driving-High-Oil-Prices.html",
+      "snippet": "Oil prices are high not because the world is short on oil but because the trade routes have been severely disrupted, driving up freight and other costs, India’s Oil Minister Hardeep Singh Puri said. “There's no supply shortage in the world. The world has 104 million barrels of oil a day. It's only t",
+      "published_at": "2026-10-01T14:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.1,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "disrupted"
+        ],
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Gasunie and Vopak launch fourth Gate LNG tank",
+      "url": "https://lngprime.com/europe/gasunie-and-vopak-launch-fourth-gate-lng-tank/197770/",
+      "snippet": "Dutch partners Gasunie and Vopak have launched the fourth LNG tank at their Gate terminal in the port of Rotterdam.",
+      "published_at": "2026-10-01T09:08:13+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 11.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.5,
+        "recency_multiplier": 0.7
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "terminal"
+        ],
+        "geography": [
+          "dutch",
+          "gate terminal"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "The World’s Diesel Problem Runs Deeper Than the Iran War",
       "url": "https://oilprice.com/Energy/Energy-General/The-Worlds-Diesel-Problem-Runs-Deeper-Than-the-Iran-War.html",
       "snippet": "The nature of the shortage of diesel and jet fuel is more complex than most people realize. Based on my analysis, a shortfall has existed since at least 2020. The shortage is not simply the result of the closure of the Strait of Hormuz. In this post, I will provide background information regarding t",
@@ -724,6 +1209,52 @@
         ],
         "speculative": [
           "analysis"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Brent Tumbles to $96 as Gulf Oil Flows Bounce Back",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Tumbles-to-96-as-Gulf-Oil-Flows-Bounce-Back.html",
+      "snippet": "Crude oil prices moved markedly lower on Wednesday and stayed there earlier today, after booking a solid jump for September. The decline came in response to reports from JP Morgan, Goldman, and Kpler, suggesting oil flows out of the Persian Gulf had virtually returned to pre-war levels. At the time ",
+      "published_at": "2026-10-01T05:17:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 31.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 44.7,
+        "recency_multiplier": 0.52
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "persian gulf"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ],
+        "geography": [
+          "gulf"
         ]
       },
       "duplicate_count": 0,
