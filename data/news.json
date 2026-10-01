@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-01T15:43:16.121511+00:00",
-  "item_count": 30,
+  "generated_at": "2026-10-01T20:33:30.559480+00:00",
+  "item_count": 36,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 9
+    "high": 0,
+    "normal": 10
   },
   "superseded_count": 0,
   "sources": {
@@ -17,95 +17,141 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1467
+        "ms": 1429
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 21375
+        "ms": 43734
       },
       {
         "id": "gie_agsi",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 5371
+        "ms": 3538
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 387
+        "ms": 319
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 252
+        "ms": 95
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 211
+        "ms": 141
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1151
+        "ms": 1189
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 380
+        "ms": 337
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 668
+        "ms": 660
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 249
+        "ms": 330
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 578
+        "ms": 575
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 34,
+        "count": 30,
         "error": null,
-        "ms": 151
+        "ms": 65
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 248
+        "ms": 54
       }
     ]
   },
   "items": [
+    {
+      "title": "India Oil Refiners Shift Tactics",
+      "url": "https://www.rigzone.com/news/wire/india_oil_refiners_shift_tactics-01-oct-2026-184750-article/?rss=true",
+      "snippet": "Indian oil refiners are hiring tankers to sail through the Strait of Hormuz to pick up crude from within the Persian Gulf.",
+      "published_at": "2026-10-01T20:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 63,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 34.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 61.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "persian gulf"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "U.S. Threatens Diesel Export Ban Unless Europe Releases Stockpiles",
       "url": "https://oilprice.com/Energy/Energy-General/US-Threatens-Diesel-Export-Ban-Unless-Europe-Releases-Stockpiles.html",
@@ -117,12 +163,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 66,
+      "score": 53,
       "tags": [
         "geopolitics",
         "oil_macro"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -134,7 +180,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.4,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
@@ -154,147 +200,6 @@
         ],
         "urgency": [
           "emergency"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Dutch LNG terminal capacity rises to 20 billion cubic meters with 4th tank",
-      "url": "https://offshore-energy.biz/2026/10/01/dutch-lng-terminal-capacity-rises-to-20-billion-cubic-meters-with-4th-tank",
-      "snippet": "The Gate LNG terminal on Rotterdam’s Maasvlakte is bringing a massive 180,000-cubic-meter (cbm) storage tank online.",
-      "published_at": "2026-10-01T12:35:25+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 60,
-      "tags": [
-        "lng",
-        "gas_storage",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 27.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 61.6,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng terminal"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "infrastructure": [
-          "terminal"
-        ],
-        "geography": [
-          "dutch"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Indian Refiners Seek Tankers for Hormuz Oil",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Refiners-Seek-Tankers-for-Hormuz-Oil.html",
-      "snippet": "Indian refining companies are looking for tankers for hire to carry oil out of the Persian Gulf via the Strait of Hormuz, according to a Bloomberg report citing unnamed sources. Two shipping companies have won tenders for Persian Gulf oil, the sources told Bloomberg, while another two submitted bids",
-      "published_at": "2026-10-01T12:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 57,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 32.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 56.8,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz",
-          "persian gulf"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "China Halts Fuel Exports Until Further Notice",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Halts-Fuel-Exports-Until-Further-Notice.html",
-      "snippet": "China’s refiners have halted fuel exports until further notice, multiple sources briefed on the matter told Reuters on Thursday in a development that could further tighten the global fuel market. PetroChina, the state major, has canceled some gasoline and jet fuel cargoes that were expected to be sh",
-      "published_at": "2026-10-01T10:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 54,
-      "tags": [
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 12.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 62.5,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "supply_disruption": [
-          "halted"
-        ],
-        "lng": [
-          "cargoes"
-        ],
-        "geography": [
-          "china"
-        ],
-        "unplanned": [
-          "halted"
-        ],
-        "urgency": [
-          "halted"
         ]
       },
       "duplicate_count": 0,
@@ -349,47 +254,137 @@
       "also_reported_by": []
     },
     {
-      "title": "CEZ says Eemshaven LNG imports same as last year",
-      "url": "https://lngprime.com/europe/cez-says-eemshaven-lng-imports-same-as-last-year/197759/",
-      "snippet": "Czech utility CEZ said on Thursday that liquefied natural gas (LNG) imports via the Dutch FSRU-based Eemshaven LNG import terminal have not slowed this year despite the ongoing crisis in the Middle East.",
-      "published_at": "2026-10-01T08:58:49+00:00",
+      "title": "Middle East Oil Exports Stage a Remarkable Comeback",
+      "url": "https://oilprice.com/Energy/Energy-General/Middle-East-Oil-Exports-Stage-a-Remarkable-Comeback.html",
+      "snippet": "Exports of crude oil from the Middle East hit their highest level in September since the war with Iran began, reinforcing a trend of increased supplies despite Iranian attacks on shipping in the Strait of Hormuz, according to analysis of shipping and commodity market data by industry observers. But ",
+      "published_at": "2026-10-01T19:00:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 48,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 28.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 41.0,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "analysis"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Dutch LNG terminal capacity rises to 20 billion cubic meters with 4th tank",
+      "url": "https://offshore-energy.biz/2026/10/01/dutch-lng-terminal-capacity-rises-to-20-billion-cubic-meters-with-4th-tank",
+      "snippet": "The Gate LNG terminal on Rotterdam’s Maasvlakte is bringing a massive 180,000-cubic-meter (cbm) storage tank online.",
+      "published_at": "2026-10-01T12:35:25+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 47,
       "tags": [
         "lng",
+        "gas_storage",
         "infrastructure"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 37.5,
+        "authority": 12.4,
+        "themes": 27.2,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 60.7,
-        "recency_multiplier": 0.69
+        "raw": 61.6,
+        "recency_multiplier": 0.63
       },
       "matched": {
         "lng": [
           "lng",
-          "fsru",
-          "lng imports"
+          "lng terminal"
+        ],
+        "gas_storage": [
+          "storage"
         ],
         "infrastructure": [
-          "terminal",
-          "import terminal"
+          "terminal"
         ],
         "geography": [
           "dutch"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Saudi-led coalition says power station attacked in Medina, blames Houthis",
+      "url": "https://www.aljazeera.com/news/2026/10/1/saudi-led-coalition-says-power-station-attacked-in-medina-blames-houthis?traffic_source=rss",
+      "snippet": "At the same time in Yemen, the Saudi-backed government army says it is inflicting heavy losses on the Houthis in Taiz.",
+      "published_at": "2026-10-01T19:03:14+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "attacked"
+        ],
+        "unplanned": [
+          "attacked"
         ]
       },
       "duplicate_count": 0,
@@ -436,6 +431,48 @@
       "also_reported_by": []
     },
     {
+      "title": "Indian Refiners Seek Tankers for Hormuz Oil",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Refiners-Seek-Tankers-for-Hormuz-Oil.html",
+      "snippet": "Indian refining companies are looking for tankers for hire to carry oil out of the Persian Gulf via the Strait of Hormuz, according to a Bloomberg report citing unnamed sources. Two shipping companies have won tenders for Persian Gulf oil, the sources told Bloomberg, while another two submitted bids",
+      "published_at": "2026-10-01T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.8,
+        "recency_multiplier": 0.63
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "persian gulf"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Centrica pens preliminary Ksi Lisims LNG deal",
       "url": "https://lngprime.com/americas/centrica-pens-preliminary-ksi-lisims-lng-deal/197739/",
       "snippet": "UK-based energy firm Centrica has signed a preliminary deal with Ksi Lisims LNG to buy LNG from the latter’s planned export project in Canada.",
@@ -476,85 +513,89 @@
       "also_reported_by": []
     },
     {
-      "title": "Commission grants CB RES status to three additional cross-border renewable energy projects",
-      "url": "https://cinea.ec.europa.eu/news-events/news/commission-grants-cb-res-status-three-additional-cross-border-renewable-energy-projects-2026-10-01_en",
-      "snippet": "The European Commission has approved three new cross-border renewable energy projects under the fifth call for CB RES status: WIND, DEPLOY and ZEGA-LINNK. Following this update, and after the withdrawal of PONTIS from the list, the number of projects holding CB RES status now stands at 15.",
-      "published_at": "2026-10-01T11:36:01+00:00",
-      "type": "regulation",
-      "source": "ec_energy",
-      "source_name": "European Commission energy",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "regulation",
-        "gas_storage"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 15.5,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.5,
-        "recency_multiplier": 0.85
-      },
-      "matched": {
-        "regulation": [
-          "european commission"
-        ],
-        "gas_storage": [
-          "withdrawal"
-        ],
-        "geography": [
-          "european"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Three Tankers Struck by Unknown Projectiles in Strait of Hormuz",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Three-Tankers-Struck-by-Unknown-Projectiles-in-Strait-of-Hormuz.html",
-      "snippet": "Three oil tankers have been hit by unknown projectiles while transiting the Strait of Hormuz this week, shipping intelligence and security companies say. Three Liberia-flagged tankers with their transponders switched off were transiting the Strait on Tuesday and Wednesday when they were hit by proje",
-      "published_at": "2026-10-01T11:30:00+00:00",
+      "title": "China Halts Fuel Exports Until Further Notice",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Halts-Fuel-Exports-Until-Further-Notice.html",
+      "snippet": "China’s refiners have halted fuel exports until further notice, multiple sources briefed on the matter told Reuters on Thursday in a development that could further tighten the global fuel market. PetroChina, the state major, has canceled some gasoline and jet fuel cargoes that were expected to be sh",
+      "published_at": "2026-10-01T10:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 43,
+      "score": 42,
       "tags": [
-        "geopolitics"
+        "supply_disruption",
+        "lng"
       ],
       "alert": "normal",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
         "authority": 8.8,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
+        "themes": 12.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 41.4,
-        "recency_multiplier": 0.84
+        "raw": 62.5,
+        "recency_multiplier": 0.54
       },
       "matched": {
-        "geopolitics": [
-          "strait of hormuz"
+        "supply_disruption": [
+          "halted"
+        ],
+        "lng": [
+          "cargoes"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "china"
+        ],
+        "unplanned": [
+          "halted"
+        ],
+        "urgency": [
+          "halted"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Canada to fast track oil pipeline meant to diversify economy away from US",
+      "url": "https://www.aljazeera.com/economy/2026/10/1/canada-to-fast-track-oil-pipeline-meant-to-diversify-economy-away-from-us?traffic_source=rss",
+      "snippet": "Carney declared the pipeline a project of national interest, smoothening its way to a single federal regulatory review.",
+      "published_at": "2026-10-01T18:56:06+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 6.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "pipeline"
+        ],
+        "urgency": [
+          "declared"
         ]
       },
       "duplicate_count": 0,
@@ -604,86 +645,6 @@
         ],
         "unplanned": [
           "delay"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Uranium Hits Record High While Nuclear Stocks Slide",
-      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Uranium-Hits-Record-High-While-Nuclear-Stocks-Slide.html",
-      "snippet": "If you only looked at the price of the fuel, you'd think the nuclear trade has never been better. Long-term uranium prices are sitting at $96/lb, an all-time record and up ~12% YTD, taking out the $95/lb high set in mid-2007 at the peak of the last uranium mania (per UxC data compiled by TD Cowen). ",
-      "published_at": "2026-10-01T15:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 40,
-      "tags": [
-        "nuclear",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 32.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "gas_storage": [
-          "stocks"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Serica’s UK gas footprint widens as it brings Spirit Energy's North Sea assets into its fold",
-      "url": "https://offshore-energy.biz/2026/10/01/sericas-uk-gas-footprint-widens-as-it-brings-spirit-energys-north-sea-assets-into-its-fold",
-      "snippet": "This Southern North Sea gas portfolio acquisition boosts Serica's production by 10,000 barrels of oil equivalent per day (boepd).",
-      "published_at": "2026-10-01T09:16:47+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 40,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 4.5,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 44.9,
-        "recency_multiplier": 0.71
-      },
-      "matched": {
-        "oil_macro": [
-          "barrels"
-        ],
-        "geography": [
-          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -859,6 +820,93 @@
         ],
         "geography": [
           "norwegian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "ICC ends contract with French insurer amid US sanctions threat",
+      "url": "https://www.aljazeera.com/economy/2026/10/1/icc-ends-contract-with-french-insurer-amid-us-sanctions-threat?traffic_source=rss",
+      "snippet": "ICC and Axa terminate agreement amid mounting US criticism and looming financial restrictions on the court, FT reports.",
+      "published_at": "2026-10-01T20:20:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "french"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "CEZ says Eemshaven LNG imports same as last year",
+      "url": "https://lngprime.com/europe/cez-says-eemshaven-lng-imports-same-as-last-year/197759/",
+      "snippet": "Czech utility CEZ said on Thursday that liquefied natural gas (LNG) imports via the Dutch FSRU-based Eemshaven LNG import terminal have not slowed this year despite the ongoing crisis in the Middle East.",
+      "published_at": "2026-10-01T08:58:49+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 37.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 60.7,
+        "recency_multiplier": 0.48
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "fsru",
+          "lng imports"
+        ],
+        "infrastructure": [
+          "terminal",
+          "import terminal"
+        ],
+        "geography": [
+          "dutch"
         ]
       },
       "duplicate_count": 0,
@@ -1081,6 +1129,86 @@
       "also_reported_by": []
     },
     {
+      "title": "Oil Jumps on Renewed Conflict Fears",
+      "url": "https://www.rigzone.com/news/wire/oil_jumps_on_renewed_conflict_fears-01-oct-2026-184754-article/?rss=true",
+      "snippet": "Oil surged above $100 as renewed US-Iran tensions heightened concerns about Middle East supply disruptions.",
+      "published_at": "2026-10-01T19:42:58+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Uranium Hits Record High While Nuclear Stocks Slide",
+      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Uranium-Hits-Record-High-While-Nuclear-Stocks-Slide.html",
+      "snippet": "If you only looked at the price of the fuel, you'd think the nuclear trade has never been better. Long-term uranium prices are sitting at $96/lb, an all-time record and up ~12% YTD, taking out the $95/lb high set in mid-2007 at the peak of the last uranium mania (per UxC data compiled by TD Cowen). ",
+      "published_at": "2026-10-01T15:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 33,
+      "tags": [
+        "nuclear",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 32.1,
+        "recency_multiplier": 0.76
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "gas_storage": [
+          "stocks"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "India Emphasizes That Shipping Chaos, Not Supply, Is Driving High Oil Prices",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Emphasizes-That-Shipping-Chaos-Not-Supply-Is-Driving-High-Oil-Prices.html",
       "snippet": "Oil prices are high not because the world is short on oil but because the trade routes have been severely disrupted, driving up freight and other costs, India’s Oil Minister Hardeep Singh Puri said. “There's no supply shortage in the world. The world has 104 million barrels of oil a day. It's only t",
@@ -1119,6 +1247,91 @@
         ],
         "geography": [
           "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Commission grants CB RES status to three additional cross-border renewable energy projects",
+      "url": "https://cinea.ec.europa.eu/news-events/news/commission-grants-cb-res-status-three-additional-cross-border-renewable-energy-projects-2026-10-01_en",
+      "snippet": "The European Commission has approved three new cross-border renewable energy projects under the fifth call for CB RES status: WIND, DEPLOY and ZEGA-LINNK. Following this update, and after the withdrawal of PONTIS from the list, the number of projects holding CB RES status now stands at 15.",
+      "published_at": "2026-10-01T11:36:01+00:00",
+      "type": "regulation",
+      "source": "ec_energy",
+      "source_name": "European Commission energy",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "regulation",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 15.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.5,
+        "recency_multiplier": 0.59
+      },
+      "matched": {
+        "regulation": [
+          "european commission"
+        ],
+        "gas_storage": [
+          "withdrawal"
+        ],
+        "geography": [
+          "european"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Three Tankers Struck by Unknown Projectiles in Strait of Hormuz",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Three-Tankers-Struck-by-Unknown-Projectiles-in-Strait-of-Hormuz.html",
+      "snippet": "Three oil tankers have been hit by unknown projectiles while transiting the Strait of Hormuz this week, shipping intelligence and security companies say. Three Liberia-flagged tankers with their transponders switched off were transiting the Strait on Tuesday and Wednesday when they were hit by proje",
+      "published_at": "2026-10-01T11:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.4,
+        "recency_multiplier": 0.58
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -1338,6 +1551,46 @@
         "geography": [
           "strait of hormuz",
           "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Serica’s UK gas footprint widens as it brings Spirit Energy's North Sea assets into its fold",
+      "url": "https://offshore-energy.biz/2026/10/01/sericas-uk-gas-footprint-widens-as-it-brings-spirit-energys-north-sea-assets-into-its-fold",
+      "snippet": "This Southern North Sea gas portfolio acquisition boosts Serica's production by 10,000 barrels of oil equivalent per day (boepd).",
+      "published_at": "2026-10-01T09:16:47+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 30,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 4.5,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 44.9,
+        "recency_multiplier": 0.49
+      },
+      "matched": {
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "uk"
         ]
       },
       "duplicate_count": 0,
