@@ -209,6 +209,23 @@ def run(demo: bool = False) -> dict:
         item["published_at"] = _iso(item.get("published_at"))
         scored.append(item)
 
+    # ---- carry the stored feed forward -----------------------------------
+    # The sources only expose their current window (a snapshot of hours),
+    # but data/news.json is the product's 14-day memory: the drawer's
+    # history AND the annotation job's attribution window both read it.
+    # Without this merge every run overwrote the file with the snapshot, the
+    # retention filter below had nothing to retain, and attribution's
+    # in-window gate could never see yesterday's news — found 1 Oct 2026
+    # when chart annotations had been silent since 25 Aug. Items the feeds
+    # still expose are taken fresh; stored ones fill in the history.
+    if not demo:
+        try:
+            prev = json.loads((DATA_DIR / "news.json").read_text(encoding="utf-8")).get("items", [])
+            have = {i.get("url") for i in scored if i.get("url")}
+            scored.extend(i for i in prev if i.get("url") and i["url"] not in have)
+        except (OSError, ValueError):
+            pass  # first run, or an unreadable file: this fetch stands alone
+
     # ---- dedupe ----------------------------------------------------------
     deduped = cluster(scored)
     deduped.sort(key=lambda i: (i.get("score", 0), i.get("published_at") or ""), reverse=True)
