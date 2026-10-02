@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-02T05:31:55.012267+00:00",
-  "item_count": 41,
+  "generated_at": "2026-10-02T11:19:52.204324+00:00",
+  "item_count": 53,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 9
+    "high": 1,
+    "normal": 10
   },
-  "superseded_count": 4,
+  "superseded_count": 7,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,233 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1617
+        "ms": 1190
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18203
+        "ms": 124825
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 4777
+        "ms": 2727
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 3,
         "error": null,
-        "ms": 682
+        "ms": 255
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 314
+        "ms": 304
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 135
+        "ms": 66
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 45,
+        "count": 41,
         "error": null,
-        "ms": 1119
+        "ms": 842
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 361
+        "ms": 282
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 670
+        "ms": 610
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 290
+        "ms": 99
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 608
+        "ms": 489
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 29,
         "error": null,
-        "ms": 215
+        "ms": 143
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 138
+        "ms": 79
       }
     ]
   },
   "items": [
+    {
+      "title": "WTI Sinks Nearly 4% as EU Weighs Emergency Stockpile Release",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/WTI-Sinks-Nearly-4-as-EU-Weighs-Emergency-Stockpile-Release.html",
+      "snippet": "Oil prices fell sharply on Friday as Europe moved closer to another emergency stock release under pressure from the Trump administration, with WTI dropping nearly 4% and Brent falling below $100. At 6:54 a.m. ET, WTI was trading at $89.36, down 3.78%, while Brent was trading at $99.79/barrel, down 2",
+      "published_at": "2026-10-02T11:02:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 73,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 80.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "oil_macro": [
+          "brent",
+          "wti",
+          "barrel"
+        ],
+        "geography": [
+          "europe",
+          "eu"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "JERA CEO Warns LNG Prices Have Further to Climb",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/JERA-CEO-Warns-LNG-Prices-Have-Further-to-Climb.html",
+      "snippet": "The biggest Japanese LNG importer and largest power producer, JERA, does not expect the shipping hurdles for Qatari supply at the Strait of Hormuz to end in time for the winter. “We don’t expect Qatar LNG coming back to the market soon,” Yukio Kani, chairman and global chief executive officer of JER",
+      "published_at": "2026-10-02T10:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "U.S. Diesel Export Ban Would Hit Latin America Hardest: Goldman",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Diesel-Export-Ban-Would-Hit-Latin-America-Hardest-Goldman.html",
+      "snippet": "A potential ban on exports of diesel fuel from the United States would affect Latin America the most, Goldman Sachs has said, despite reports that the pain from such a ban would be the greatest for Europe. U.S. diesel imports cover as much as 50% of the fuel’s consumption across Mexico, Ecuador, Chi",
+      "published_at": "2026-10-02T08:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 50,
+      "tags": [
+        "regulation",
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.8,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 47.6,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "regulation": [
+          "ban on"
+        ],
+        "geopolitics": [
+          "export ban"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
     {
       "title": "Gunmen kill 7 on bus in Syria as pipeline blast knocks out 3 power plants",
       "url": "https://www.aljazeera.com/news/2026/9/30/gas-pipeline-explodes-in-syria-knocks-three-power-plants-offline?traffic_source=rss",
@@ -155,73 +293,19 @@
       "also_reported_by": []
     },
     {
-      "title": "Brent Holds Above $102 as Gulf Export Rebound Offsets U.S. Military Moves",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Holds-Above-102-as-Gulf-Export-Rebound-Offsets-US-Military-Moves.html",
-      "snippet": "Crude oil prices are set for a modest weekly decline today, as reports of a strong rebound in oil flows out of the Persian Gulf trumped news of more U.S. troops moving to the Middle East and China’s Thursday decision to halt fuel exports this month. At the time of writing, Brent crude was trading at",
-      "published_at": "2026-10-02T05:06:59+00:00",
+      "title": "ConocoPhillips Signs 20-Year LNG Deal With Venture Global",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/ConocoPhillips-Signs-20-Year-LNG-Deal-With-Venture-Global.html",
+      "snippet": "ConocoPhillips and Venture Global have signed a deal that would see the liquefied natural gas major supply 1 million tons to Conoco beginning in 2030. The deal is part of a broader trend in energy to boost LNG exposure after QatarEnergy’s force majeure, with the outlook for LNG demand remaining robu",
+      "published_at": "2026-10-02T07:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 47,
+      "score": 49,
       "tags": [
-        "geopolitics",
-        "oil_macro",
         "supply_disruption",
-        "carbon"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 26.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 39.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "persian gulf"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent"
-        ],
-        "supply_disruption": [
-          "halt"
-        ],
-        "carbon": [
-          "offsets"
-        ],
-        "geography": [
-          "china",
-          "middle east",
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Venezuela’s Oil Exports Drop 9% as Freight Costs Bite",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Venezuelas-Oil-Exports-Drop-9-as-Freight-Costs-Bite.html",
-      "snippet": "Venezuela’s oil exports fell nearly 9% in September to 1.08 million barrels per day as soaring tanker costs forced traders to demand steeper discounts and delayed cargoes leaving the country. Global trading houses, including Vitol and Trafigura, pressed PDVSA for better terms as freight costs chew i",
-      "published_at": "2026-10-01T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 45,
-      "tags": [
         "lng",
         "oil_macro"
       ],
@@ -229,76 +313,111 @@
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
-        "themes": 19.9,
+        "themes": 21.5,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 60.7,
-        "recency_multiplier": 0.6
+        "raw": 50.3,
+        "recency_multiplier": 0.84
       },
       "matched": {
+        "supply_disruption": [
+          "force majeure"
+        ],
         "lng": [
-          "cargoes",
-          "tanker"
+          "lng"
         ],
         "oil_macro": [
-          "barrels",
           "demand"
         ],
         "unplanned": [
-          "delayed"
+          "force majeure"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "LNG Prime"
+      ]
+    },
+    {
+      "title": "US LNG exports rise to 37 shipments",
+      "url": "https://lngprime.com/americas/us-lng-exports-rise-to-37-shipments/197816/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 37 cargoes during the week ending September 30, up four shipments from the previous week, according to the Energy Information Administration.",
+      "published_at": "2026-10-02T06:34:19+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 49,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.81
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
     },
     {
-      "title": "China Halts October Fuel Exports as Global Diesel Crunch Deepens",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Halts-October-Fuel-Exports-as-Global-Diesel-Crunch-Deepens.html",
-      "snippet": "China’s major refiners have suspended most refined fuel exports for October as Beijing prioritizes domestic supply security, removing another source of diesel, gasoline and jet fuel from an already severely constrained global market. PetroChina has cancelled several gasoline and jet fuel cargoes sch",
-      "published_at": "2026-10-01T20:40:00+00:00",
+      "title": "Lawyers for US inmate who survived lethal injections demand release",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/clip-christia-pike-execution-mp4?traffic_source=rss",
+      "snippet": "Christa Pike is in critical condition after two failed attempts to execute her by lethal injection, her lawyer says.",
+      "published_at": "2026-10-02T07:58:08+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 48,
       "tags": [
-        "supply_disruption",
-        "lng"
+        "gas_storage",
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
-        "authority": 8.8,
-        "themes": 12.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "authority": 9.5,
+        "themes": 16.1,
+        "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 16.0,
+        "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 62.5,
-        "recency_multiplier": 0.59
+        "raw": 45.6,
+        "recency_multiplier": 0.9
       },
       "matched": {
-        "supply_disruption": [
-          "suspended"
+        "gas_storage": [
+          "injection",
+          "injections"
         ],
-        "lng": [
-          "cargoes"
-        ],
-        "geography": [
-          "china"
+        "oil_macro": [
+          "demand"
         ],
         "unplanned": [
-          "suspended"
-        ],
-        "urgency": [
-          "suspended"
+          "failed"
         ]
       },
       "duplicate_count": 0,
@@ -432,52 +551,6 @@
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "India Oil Refiners Shift Tactics",
-      "url": "https://www.rigzone.com/news/wire/india_oil_refiners_shift_tactics-01-oct-2026-184750-article/?rss=true",
-      "snippet": "Indian oil refiners are hiring tankers to sail through the Strait of Hormuz to pick up crude from within the Persian Gulf.",
-      "published_at": "2026-10-01T20:00:00+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 34.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 61.6,
-        "recency_multiplier": 0.56
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz",
-          "persian gulf"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
         ]
       },
       "duplicate_count": 0,
@@ -710,52 +783,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Iran war live: US moves 2,000 Marines to Middle East, tanker hit in Hormuz",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz?traffic_source=rss",
-      "snippet": "US deploys Roosevelt strike group and 2,000 Marines to the Middle East as part of a wider buildup around Iran.",
-      "published_at": "2026-10-02T00:00:00+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 13.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.8,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 4,
-      "thread_started_at": "2026-09-30T16:00:00+00:00"
-    },
-    {
       "title": "Dutch LNG terminal capacity rises to 20 billion cubic meters with 4th tank",
       "url": "https://offshore-energy.biz/2026/10/01/dutch-lng-terminal-capacity-rises-to-20-billion-cubic-meters-with-4th-tank",
       "snippet": "The Gate LNG terminal on Rotterdam’s Maasvlakte is bringing a massive 180,000-cubic-meter (cbm) storage tank online.",
@@ -932,6 +959,61 @@
       "also_reported_by": []
     },
     {
+      "title": "Brent Holds Above $102 as Gulf Export Rebound Offsets U.S. Military Moves",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Holds-Above-102-as-Gulf-Export-Rebound-Offsets-US-Military-Moves.html",
+      "snippet": "Crude oil prices are set for a modest weekly decline today, as reports of a strong rebound in oil flows out of the Persian Gulf trumped news of more U.S. troops moving to the Middle East and China’s Thursday decision to halt fuel exports this month. At the time of writing, Brent crude was trading at",
+      "published_at": "2026-10-02T05:06:59+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption",
+        "carbon"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.7,
+        "recency_multiplier": 0.72
+      },
+      "matched": {
+        "geopolitics": [
+          "persian gulf"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ],
+        "supply_disruption": [
+          "halt"
+        ],
+        "carbon": [
+          "offsets"
+        ],
+        "geography": [
+          "china",
+          "middle east",
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Norway's CO2 transport and storage project gets second Swedish customer",
       "url": "https://offshore-energy.biz/2026/10/01/norways-co2-transport-and-storage-project-gets-second-swedish-customer",
       "snippet": "Northern Lights, a joint venture (JV) encompassing Equinor, Shell and TotalEnergies, has signed an agreement with Öresundskraft Kraft & Värme,...",
@@ -966,6 +1048,79 @@
         ],
         "geography": [
           "norway"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "RIIO-ED2 ESR Re-opener: proposed Price Control Deliverables for SP Distribution and SP Manweb",
+      "url": "https://www.ofgem.gov.uk/consultation/riio-ed2-esr-re-opener-proposed-price-control-deliverables-sp-distribution-and-sp-manweb",
+      "snippet": "We are consulting on proposed modifications to Special Condition 3.2 to attach a Price Control Deliverable to SP Distribution and SP Manweb’s Electricity System Restoration Re-opener.",
+      "published_at": "2026-10-02T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 11.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "price control"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
+      "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
+      "published_at": "2026-10-02T10:04:56+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "diplomatic"
         ]
       },
       "duplicate_count": 0,
@@ -1300,6 +1455,101 @@
       "also_reported_by": []
     },
     {
+      "title": "Venezuela’s Oil Exports Drop 9% as Freight Costs Bite",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Venezuelas-Oil-Exports-Drop-9-as-Freight-Costs-Bite.html",
+      "snippet": "Venezuela’s oil exports fell nearly 9% in September to 1.08 million barrels per day as soaring tanker costs forced traders to demand steeper discounts and delayed cargoes leaving the country. Global trading houses, including Vitol and Trafigura, pressed PDVSA for better terms as freight costs chew i",
+      "published_at": "2026-10-01T21:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 32,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 19.9,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 60.7,
+        "recency_multiplier": 0.39
+      },
+      "matched": {
+        "lng": [
+          "cargoes",
+          "tanker"
+        ],
+        "oil_macro": [
+          "barrels",
+          "demand"
+        ],
+        "unplanned": [
+          "delayed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "China Halts October Fuel Exports as Global Diesel Crunch Deepens",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Halts-October-Fuel-Exports-as-Global-Diesel-Crunch-Deepens.html",
+      "snippet": "China’s major refiners have suspended most refined fuel exports for October as Beijing prioritizes domestic supply security, removing another source of diesel, gasoline and jet fuel from an already severely constrained global market. PetroChina has cancelled several gasoline and jet fuel cargoes sch",
+      "published_at": "2026-10-01T20:40:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "supply_disruption",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 12.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.5,
+        "recency_multiplier": 0.38
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "geography": [
+          "china"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Commission grants CB RES status to three additional cross-border renewable energy projects",
       "url": "https://cinea.ec.europa.eu/news-events/news/commission-grants-cb-res-status-three-additional-cross-border-renewable-energy-projects-2026-10-01_en",
       "snippet": "The European Commission has approved three new cross-border renewable energy projects under the fifth call for CB RES status: WIND, DEPLOY and ZEGA-LINNK. Following this update, and after the withdrawal of PONTIS from the list, the number of projects holding CB RES status now stands at 15.",
@@ -1389,49 +1639,86 @@
       "also_reported_by": []
     },
     {
-      "title": "The World’s Diesel Problem Runs Deeper Than the Iran War",
-      "url": "https://oilprice.com/Energy/Energy-General/The-Worlds-Diesel-Problem-Runs-Deeper-Than-the-Iran-War.html",
-      "snippet": "The nature of the shortage of diesel and jet fuel is more complex than most people realize. Based on my analysis, a shortfall has existed since at least 2020. The shortage is not simply the result of the closure of the Strait of Hormuz. In this post, I will provide background information regarding t",
-      "published_at": "2026-09-30T18:00:00+00:00",
+      "title": "Atlantic LNG rates rise to $31,500 per day",
+      "url": "https://lngprime.com/asia/atlantic-lng-rates-rise-to-31500-per-day/197834/",
+      "snippet": "Atlantic spot LNG shipping rates rose for the fifth week in a row, reaching $31,500 per day, according to Spark Commodities.",
+      "published_at": "2026-10-02T10:07:43+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 32,
+      "score": 31,
       "tags": [
-        "geopolitics"
+        "lng",
+        "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 25.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 13.1,
+        "themes": 10.0,
+        "geography": 0.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 38.4,
-        "recency_multiplier": 0.63
+        "speculative": 0.0,
+        "raw": 23.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz"
+        "lng": [
+          "lng"
         ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "speculative": [
-          "analysis"
+        "oil_macro": [
+          "rates"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "New aircraft carrier, 10,000 US troops: Is the Iran war about to escalate?",
+      "url": "https://www.aljazeera.com/news/2026/10/2/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate?traffic_source=rss",
+      "snippet": "By the end of November, three US aircraft carriers and two amphibious landing groups will be positioned near Iran.",
+      "published_at": "2026-10-02T10:06:21+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 13.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "lng": [
+          "carrier"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 7,
+      "thread_started_at": "2026-09-30T14:00:00+00:00"
     },
     {
       "title": "Brent Tumbles to $96 as Gulf Oil Flows Bounce Back",
@@ -1521,38 +1808,114 @@
       "also_reported_by": []
     },
     {
-      "title": "Iran Warns No Energy Infrastructure Will Be Safe If It Can't Sell Oil",
-      "url": "https://oilprice.com/Energy/Energy-General/Iran-Warns-No-Energy-Infrastructure-Will-Be-Safe-If-It-Cant-Sell-Oil.html",
-      "snippet": "Iran threatened to attack energy infrastructure across the Middle East if its security isn't guaranteed as it ratcheted up its rhetoric while waiting for the United States to officially respond to a plan Tehran says would reopen the Strait of Hormuz. While air attacks by both sides have subsided rec",
-      "published_at": "2026-09-30T14:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "title": "GSR036 Security and Quality of Supply Standard (SQSS) System Access Reform Authority Decision",
+      "url": "https://www.ofgem.gov.uk/publications/gsr036-security-and-quality-supply-standard-sqss-system-access-reform-authority-decision",
+      "snippet": "Our decision to approve the proposed changes to the SQSS.",
+      "published_at": "2026-10-02T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
       "tier": 2,
       "has_magnitude": false,
-      "score": 31,
+      "score": 30,
       "tags": [
-        "geopolitics"
+        "regulation"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 25.6,
+        "authority": 16.1,
+        "themes": 6.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "reform"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ofgem agreement on alternative Gate 2 to Whole Queue (G2tWQ) timetable",
+      "url": "https://www.ofgem.gov.uk/transparency-document/ofgem-agreement-alternative-gate-2-whole-queue-g2twq-timetable",
+      "snippet": "Outcome of a further request from NESO for an alternative timetable for issuing Gate 2 Phase 1 connection offers under the Gate 2 to Whole Queue process.",
+      "published_at": "2026-10-02T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 6.2,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "regulation": [
+          "ofgem"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "India Oil Refiners Shift Tactics",
+      "url": "https://www.rigzone.com/news/wire/india_oil_refiners_shift_tactics-01-oct-2026-184750-article/?rss=true",
+      "snippet": "Indian oil refiners are hiring tankers to sail through the Strait of Hormuz to pick up crude from within the Persian Gulf.",
+      "published_at": "2026-10-01T20:00:00+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 34.7,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 50.4,
-        "recency_multiplier": 0.46
+        "raw": 61.6,
+        "recency_multiplier": 0.36
       },
       "matched": {
         "geopolitics": [
-          "attack",
-          "strait of hormuz"
+          "strait of hormuz",
+          "persian gulf"
+        ],
+        "oil_macro": [
+          "crude"
         ],
         "geography": [
           "strait of hormuz",
@@ -1755,17 +2118,70 @@
       "also_reported_by": []
     },
     {
-      "title": "Indian Refiners Seek Tankers for Hormuz Oil",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Refiners-Seek-Tankers-for-Hormuz-Oil.html",
-      "snippet": "Indian refining companies are looking for tankers for hire to carry oil out of the Persian Gulf via the Strait of Hormuz, according to a Bloomberg report citing unnamed sources. Two shipping companies have won tenders for Persian Gulf oil, the sources told Bloomberg, while another two submitted bids",
-      "published_at": "2026-10-01T12:30:00+00:00",
+      "title": "Iran war live: US moves 2,000 Marines to Middle East, tanker hit in Hormuz",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz?traffic_source=rss",
+      "snippet": "US deploys Roosevelt strike group and 2,000 Marines to the Middle East as part of a wider buildup around Iran.",
+      "published_at": "2026-10-02T00:00:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 13.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.8,
+        "recency_multiplier": 0.76
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 4,
+      "thread_started_at": "2026-09-30T16:00:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/10/2/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate?traffic_source=rss",
+        "title": "New aircraft carrier, 10,000 US troops: Is the Iran war about to escalate?",
+        "published_at": "2026-10-02T10:06:21+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "The World’s Diesel Problem Runs Deeper Than the Iran War",
+      "url": "https://oilprice.com/Energy/Energy-General/The-Worlds-Diesel-Problem-Runs-Deeper-Than-the-Iran-War.html",
+      "snippet": "The nature of the shortage of diesel and jet fuel is more complex than most people realize. Based on my analysis, a shortfall has existed since at least 2020. The shortage is not simply the result of the closure of the Strait of Hormuz. In this post, I will provide background information regarding t",
+      "published_at": "2026-09-30T18:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 10,
       "tags": [
         "geopolitics"
       ],
@@ -1773,20 +2189,72 @@
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 32.0,
+        "themes": 25.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 38.4,
+        "recency_multiplier": 0.63
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "analysis"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/10/2/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate?traffic_source=rss",
+        "title": "New aircraft carrier, 10,000 US troops: Is the Iran war about to escalate?",
+        "published_at": "2026-10-02T10:06:21+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Iran Warns No Energy Infrastructure Will Be Safe If It Can't Sell Oil",
+      "url": "https://oilprice.com/Energy/Energy-General/Iran-Warns-No-Energy-Infrastructure-Will-Be-Safe-If-It-Cant-Sell-Oil.html",
+      "snippet": "Iran threatened to attack energy infrastructure across the Middle East if its security isn't guaranteed as it ratcheted up its rhetoric while waiting for the United States to officially respond to a plan Tehran says would reopen the Strait of Hormuz. While air attacks by both sides have subsided rec",
+      "published_at": "2026-09-30T14:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.6,
         "geo_band": "chokepoint",
         "geography": 16.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 56.8,
-        "recency_multiplier": 0.63
+        "raw": 50.4,
+        "recency_multiplier": 0.46
       },
       "matched": {
         "geopolitics": [
-          "strait of hormuz",
-          "persian gulf"
+          "attack",
+          "strait of hormuz"
         ],
         "geography": [
           "strait of hormuz",
@@ -1797,9 +2265,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz?traffic_source=rss",
-        "title": "Iran war live: US moves 2,000 Marines to Middle East, tanker hit in Hormuz",
-        "published_at": "2026-10-02T00:00:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/2/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate?traffic_source=rss",
+        "title": "New aircraft carrier, 10,000 US troops: Is the Iran war about to escalate?",
+        "published_at": "2026-10-02T10:06:21+00:00"
       },
       "hidden": true
     },
@@ -1814,7 +2282,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 4,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -1853,9 +2321,106 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz?traffic_source=rss",
-        "title": "Iran war live: US moves 2,000 Marines to Middle East, tanker hit in Hormuz",
-        "published_at": "2026-10-02T00:00:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/2/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate?traffic_source=rss",
+        "title": "New aircraft carrier, 10,000 US troops: Is the Iran war about to escalate?",
+        "published_at": "2026-10-02T10:06:21+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Indian Refiners Seek Tankers for Hormuz Oil",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Refiners-Seek-Tankers-for-Hormuz-Oil.html",
+      "snippet": "Indian refining companies are looking for tankers for hire to carry oil out of the Persian Gulf via the Strait of Hormuz, according to a Bloomberg report citing unnamed sources. Two shipping companies have won tenders for Persian Gulf oil, the sources told Bloomberg, while another two submitted bids",
+      "published_at": "2026-10-01T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 4,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.8,
+        "recency_multiplier": 0.63
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "persian gulf"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/10/2/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate?traffic_source=rss",
+        "title": "New aircraft carrier, 10,000 US troops: Is the Iran war about to escalate?",
+        "published_at": "2026-10-02T10:06:21+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Three Tankers Struck by Unknown Projectiles in Strait of Hormuz",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Three-Tankers-Struck-by-Unknown-Projectiles-in-Strait-of-Hormuz.html",
+      "snippet": "Three oil tankers have been hit by unknown projectiles while transiting the Strait of Hormuz this week, shipping intelligence and security companies say. Three Liberia-flagged tankers with their transponders switched off were transiting the Strait on Tuesday and Wednesday when they were hit by proje",
+      "published_at": "2026-10-01T11:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 3,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.6,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.4,
+        "recency_multiplier": 0.58
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/10/2/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate?traffic_source=rss",
+        "title": "New aircraft carrier, 10,000 US troops: Is the Iran war about to escalate?",
+        "published_at": "2026-10-02T10:06:21+00:00"
       },
       "hidden": true
     },
@@ -1870,7 +2435,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 11,
+      "score": 3,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -1911,57 +2476,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz?traffic_source=rss",
-        "title": "Iran war live: US moves 2,000 Marines to Middle East, tanker hit in Hormuz",
-        "published_at": "2026-10-02T00:00:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Three Tankers Struck by Unknown Projectiles in Strait of Hormuz",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Three-Tankers-Struck-by-Unknown-Projectiles-in-Strait-of-Hormuz.html",
-      "snippet": "Three oil tankers have been hit by unknown projectiles while transiting the Strait of Hormuz this week, shipping intelligence and security companies say. Three Liberia-flagged tankers with their transponders switched off were transiting the Strait on Tuesday and Wednesday when they were hit by proje",
-      "published_at": "2026-10-01T11:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 10,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.6,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.4,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz?traffic_source=rss",
-        "title": "Iran war live: US moves 2,000 Marines to Middle East, tanker hit in Hormuz",
-        "published_at": "2026-10-02T00:00:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/2/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate?traffic_source=rss",
+        "title": "New aircraft carrier, 10,000 US troops: Is the Iran war about to escalate?",
+        "published_at": "2026-10-02T10:06:21+00:00"
       },
       "hidden": true
     }
