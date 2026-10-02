@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-02T16:42:55.459563+00:00",
-  "item_count": 63,
+  "generated_at": "2026-10-02T21:02:23.915926+00:00",
+  "item_count": 67,
   "alert_counts": {
     "critical": 0,
-    "high": 2,
-    "normal": 11
+    "high": 1,
+    "normal": 14
   },
   "superseded_count": 9,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1933
+        "ms": 1907
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 44407
+        "ms": 108109
       },
       {
         "id": "gie_agsi",
         "ok": true,
-        "count": 1,
+        "count": 0,
         "error": null,
-        "ms": 3627
+        "ms": 19461
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 185
+        "ms": 659
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 270
+        "ms": 521
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 139
+        "ms": 212
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1216
+        "ms": 1393
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 291
+        "ms": 411
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 683
+        "ms": 709
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 338
+        "ms": 425
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 652
+        "ms": 409
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 33,
         "error": null,
-        "ms": 62
+        "ms": 135
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 140
+        "ms": 191
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, HERDERSBRUG 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/6340e235-5349-4614-9434-8c43e2f82f6e/1",
+      "snippet": "Published: 02.10.2026 21:45:49 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Test Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type",
+      "published_at": "2026-10-02T19:45:49+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-02T19:44:44+00:00"
+    },
     {
       "title": "G7 Moves to Release 100 Million Barrels to Counter Diesel Crisis",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/G7-Moves-to-Release-100-Million-Barrels-to-Counter-Diesel-Crisis.html",
@@ -117,12 +161,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 71,
+      "score": 60,
       "tags": [
         "gas_storage",
         "oil_macro"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
@@ -134,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 76.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.75
       },
       "matched": {
         "gas_storage": [
@@ -170,12 +214,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 68,
+      "score": 57,
       "tags": [
         "geopolitics",
         "lng"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -187,7 +231,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 71.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -209,6 +253,52 @@
       "thread_started_at": "2026-09-30T14:00:00+00:00"
     },
     {
+      "title": "Dated Brent Above $120 Signals a Serious Oil Squeeze",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Dated-Brent-Above-120-Signals-a-Serious-Oil-Squeeze.html",
+      "snippet": "Physical oil markets tighten sharply as Dated Brent surges above $120 despite ICE Brent slipping toward $101. Friday, October 02, 2026 The European diesel stock release, droned tankers in the Strait of Hormuz, and China reinstating its refined product export ban have all played their part in this we",
+      "published_at": "2026-10-02T16:50:45+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 51,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 28.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.0,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "geopolitics": [
+          "export ban",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "brent"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Hinkley Point B becomes second AGR plant transferred for decommissioning",
       "url": "https://www.world-nuclear-news.org/articles/hinkley-pointb-second-agr-transferred-for-decommissioning",
       "snippet": "Ownership of the Hinkley Point B nuclear power station in Somerset, England - which was permanently shut down four years ago - has transferred from EDF Energy to the Nuclear Decommissioning Authority for the plant's decommissioning.",
@@ -219,7 +309,7 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 63,
+      "score": 51,
       "tags": [
         "nuclear"
       ],
@@ -235,7 +325,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 80.4,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.55
       },
       "matched": {
         "nuclear": [
@@ -266,7 +356,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 62,
+      "score": 50,
       "tags": [
         "oil_macro"
       ],
@@ -282,7 +372,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 80.2,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.54
       },
       "matched": {
         "oil_macro": [
@@ -299,150 +389,6 @@
         ],
         "urgency": [
           "emergency"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Trump vs Europe as US presses for release of emergency diesel stocks",
-      "url": "https://www.aljazeera.com/news/2026/10/2/trump-vs-europe-as-us-presses-for-release-of-emergency-diesel-stocks?traffic_source=rss",
-      "snippet": "Europe&#039;s leaders are mulling proposals to respond to Trump&#039;s diesel demands.",
-      "published_at": "2026-10-02T13:16:44+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 59,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 6.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 62.2,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "gas_storage": [
-          "stocks"
-        ],
-        "geography": [
-          "europe"
-        ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [
-        "BBC World"
-      ],
-      "first_seen_at": "2026-10-02T05:26:06+00:00"
-    },
-    {
-      "title": "WTI Whipsaws as Gulf Supply Improves and Middle East Risk Returns",
-      "url": "https://oilprice.com/Energy/Energy-General/WTI-Whipsaws-as-Gulf-Supply-Improves-and-Middle-East-Risk-Returns.html",
-      "snippet": "November WTI crude oil futures spent the week caught between two opposing trades. Gulf crude flows improved as Saudi Arabia restored export routes and producers found ways around the Strait of Hormuz disruption. That was the supply relief sellers needed. The fuel market would not let them run with i",
-      "published_at": "2026-10-02T14:45:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 55,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 25.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "wti"
-        ],
-        "supply_disruption": [
-          "disruption"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-01T19:00:00+00:00"
-    },
-    {
-      "title": "U.S. Deploys Patriots to Shield Saudi Oil and Qatari Gas Facilities",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Deploys-Patriots-to-Shield-Saudi-Oil-and-Qatari-Gas-Facilities.html",
-      "snippet": "The U.S. last month sent two additional Patriot missile batteries to protect energy infrastructure in Saudi Arabia and Qatar from Iranian strikes in case the war escalates again, U.S. officials and a Persian Gulf regional source told Axios on Friday. The U.S. military sent one Patriot missile batter",
-      "published_at": "2026-10-02T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 52,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 32.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.8,
-        "recency_multiplier": 0.98
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "war",
-          "persian gulf"
-        ],
-        "geography": [
-          "qatar",
-          "gulf"
         ]
       },
       "duplicate_count": 0,
@@ -541,6 +487,96 @@
       "also_reported_by": []
     },
     {
+      "title": "Trump vs Europe as US presses for release of emergency diesel stocks",
+      "url": "https://www.aljazeera.com/news/2026/10/2/trump-vs-europe-as-us-presses-for-release-of-emergency-diesel-stocks?traffic_source=rss",
+      "snippet": "Europe&#039;s leaders are mulling proposals to respond to Trump&#039;s diesel demands.",
+      "published_at": "2026-10-02T13:16:44+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.2,
+        "recency_multiplier": 0.64
+      },
+      "matched": {
+        "gas_storage": [
+          "stocks"
+        ],
+        "geography": [
+          "europe"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iranian Oil Starts Flowing to Tajikistan Despite U.S. Sanctions Risk",
+      "url": "https://oilprice.com/Energy/Energy-General/Iranian-Oil-Starts-Flowing-to-Tajikistan-Despite-US-Sanctions-Risk.html",
+      "snippet": "Tajikistan announced that it is now receiving oil and petroleum products from Iran, opening a potential new energy source for a country whose fuel supplies have long been dominated by Russia. The deliveries began in late August, Tajikistan's Energy and Water Resources Ministry told the Asia-Plus new",
+      "published_at": "2026-10-02T19:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "russia",
+          "asia"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Execution of US woman Christa Pike fails after botched lethal injection",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/execution-of-us-woman-christa-pike-fails-after-botched-lethal-injection?traffic_source=rss",
       "snippet": "The high-profile execution of murderer Christa Pike is in disarray after two lethal injections failed to kill her.",
@@ -579,6 +615,58 @@
       },
       "duplicate_count": 1,
       "also_reported_by": []
+    },
+    {
+      "title": "WTI Whipsaws as Gulf Supply Improves and Middle East Risk Returns",
+      "url": "https://oilprice.com/Energy/Energy-General/WTI-Whipsaws-as-Gulf-Supply-Improves-and-Middle-East-Risk-Returns.html",
+      "snippet": "November WTI crude oil futures spent the week caught between two opposing trades. Gulf crude flows improved as Saudi Arabia restored export routes and producers found ways around the Strait of Hormuz disruption. That was the supply relief sellers needed. The fuel market would not let them run with i",
+      "published_at": "2026-10-02T14:45:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 25.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 49.7,
+        "recency_multiplier": 0.72
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "wti"
+        ],
+        "supply_disruption": [
+          "disruption"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-10-01T19:00:00+00:00"
     },
     {
       "title": "U.S. Threatens Diesel Export Ban Unless Europe Releases Stockpiles",
@@ -724,10 +812,10 @@
       "also_reported_by": []
     },
     {
-      "title": "JERA CEO Warns LNG Prices Have Further to Climb",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/JERA-CEO-Warns-LNG-Prices-Have-Further-to-Climb.html",
-      "snippet": "The biggest Japanese LNG importer and largest power producer, JERA, does not expect the shipping hurdles for Qatari supply at the Strait of Hormuz to end in time for the winter. “We don’t expect Qatar LNG coming back to the market soon,” Yukio Kani, chairman and global chief executive officer of JER",
-      "published_at": "2026-10-02T10:30:00+00:00",
+      "title": "U.S. Deploys Patriots to Shield Saudi Oil and Qatari Gas Facilities",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Deploys-Patriots-to-Shield-Saudi-Oil-and-Qatari-Gas-Facilities.html",
+      "snippet": "The U.S. last month sent two additional Patriot missile batteries to protect energy infrastructure in Saudi Arabia and Qatar from Iranian strikes in case the war escalates again, U.S. officials and a Persian Gulf regional source told Axios on Friday. The U.S. military sent one Patriot missile batter",
+      "published_at": "2026-10-02T14:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
@@ -736,33 +824,31 @@
       "has_magnitude": false,
       "score": 41,
       "tags": [
-        "geopolitics",
-        "lng"
+        "geopolitics"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 21.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "themes": 32.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.8,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.7
       },
       "matched": {
         "geopolitics": [
-          "strait of hormuz"
-        ],
-        "lng": [
-          "lng"
+          "missile",
+          "war",
+          "persian gulf"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "qatar",
+          "gulf"
         ]
       },
       "duplicate_count": 0,
@@ -1033,6 +1119,46 @@
       "also_reported_by": []
     },
     {
+      "title": "Canada PM Invokes New Powers to Fast-Track Oil Pipeline",
+      "url": "https://www.rigzone.com/news/wire/canada_pm_invokes_new_powers_to_fasttrack_oil_pipeline-02-oct-2026-184763-article/?rss=true",
+      "snippet": "Prime Minister Mark Carney is expediting regulatory approval for a new, high-capacity oil pipeline to expand Canada's access to Asian markets.",
+      "published_at": "2026-10-02T20:00:01+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "nuclear",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 17.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "regulatory approval"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "U.S. Diesel Export Ban Would Hit Latin America Hardest: Goldman",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Diesel-Export-Ban-Would-Hit-Latin-America-Hardest-Goldman.html",
       "snippet": "A potential ban on exports of diesel fuel from the United States would affect Latin America the most, Goldman Sachs has said, despite reports that the pain from such a ban would be the greatest for Europe. U.S. diesel imports cover as much as 50% of the fuel’s consumption across Mexico, Ecuador, Chi",
@@ -1170,46 +1296,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
-      "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
-      "published_at": "2026-10-02T16:08:25+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "diplomatic"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ],
-      "first_seen_at": "2026-10-02T13:53:24+00:00"
     },
     {
       "title": "ConocoPhillips Signs 20-Year LNG Deal With Venture Global",
@@ -1748,6 +1834,51 @@
       "thread_started_at": "2026-10-01T07:56:30+00:00"
     },
     {
+      "title": "JERA CEO Warns LNG Prices Have Further to Climb",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/JERA-CEO-Warns-LNG-Prices-Have-Further-to-Climb.html",
+      "snippet": "The biggest Japanese LNG importer and largest power producer, JERA, does not expect the shipping hurdles for Qatari supply at the Strait of Hormuz to end in time for the winter. “We don’t expect Qatar LNG coming back to the market soon,” Yukio Kani, chairman and global chief executive officer of JER",
+      "published_at": "2026-10-02T10:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 45.8,
+        "recency_multiplier": 0.52
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Venezuela’s Oil Exports Drop 9% as Freight Costs Bite",
       "url": "https://oilprice.com/Energy/Crude-Oil/Venezuelas-Oil-Exports-Drop-9-as-Freight-Costs-Bite.html",
       "snippet": "Venezuela’s oil exports fell nearly 9% in September to 1.08 million barrels per day as soaring tanker costs forced traders to demand steeper discounts and delayed cargoes leaving the country. Global trading houses, including Vitol and Trafigura, pressed PDVSA for better terms as freight costs chew i",
@@ -2093,6 +2224,43 @@
         ],
         "geography": [
           "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
+      "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
+      "published_at": "2026-10-02T16:08:25+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.1,
+        "recency_multiplier": 0.8
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "diplomatic"
         ]
       },
       "duplicate_count": 0,
@@ -2495,7 +2663,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 12,
+      "score": 4,
       "tags": [
         "lng",
         "infrastructure"
@@ -2550,7 +2718,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 9,
+      "score": 3,
       "tags": [
         "geopolitics",
         "lng"
@@ -2599,7 +2767,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 3,
+      "score": 1,
       "tags": [
         "geopolitics",
         "lng"
@@ -2652,7 +2820,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 3,
+      "score": 1,
       "tags": [
         "geopolitics"
       ],
@@ -2704,7 +2872,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 3,
+      "score": 1,
       "tags": [
         "geopolitics"
       ],
@@ -2753,7 +2921,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 1,
+      "score": 0,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -2809,7 +2977,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 1,
+      "score": 0,
       "tags": [
         "geopolitics"
       ],
@@ -2858,7 +3026,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 1,
+      "score": 0,
       "tags": [
         "geopolitics"
       ],
@@ -2906,7 +3074,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 1,
+      "score": 0,
       "tags": [
         "geopolitics",
         "oil_macro",
