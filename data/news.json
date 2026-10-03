@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-03T05:32:32.775701+00:00",
-  "item_count": 68,
+  "generated_at": "2026-10-03T10:34:30.556247+00:00",
+  "item_count": 69,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 8
+    "normal": 7
   },
   "superseded_count": 9,
   "sources": {
@@ -17,139 +17,95 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1284
+        "ms": 1616
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 45389
+        "ms": 27056
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 31433
+        "ms": 3895
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 249
+        "ms": 610
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 321
+        "ms": 450
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 62
+        "ms": 222
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 862
+        "ms": 1155
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 451
+        "ms": 482
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 535
+        "ms": 643
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 184
+        "ms": 283
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 358
+        "ms": 442
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 37,
+        "count": 41,
         "error": null,
-        "ms": 58
+        "ms": 164
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 179
+        "ms": 197
       }
     ]
   },
   "items": [
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, GU_504120 (GT7)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/11d19d55-172d-4831-9c5d-b8111a9ae434/1",
-      "snippet": "Published: 03.10.2026 01:35:19 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Excitation issue Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power F",
-      "published_at": "2026-10-02T23:35:19+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 55,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-02T19:44:44+00:00"
-    },
     {
       "title": "Gunmen kill 7 on bus in Syria as pipeline blast knocks out 3 power plants",
       "url": "https://www.aljazeera.com/news/2026/9/30/gas-pipeline-explodes-in-syria-knocks-three-power-plants-offline?traffic_source=rss",
@@ -472,6 +428,50 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, GU_504120 (GT7)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/11d19d55-172d-4831-9c5d-b8111a9ae434/1",
+      "snippet": "Published: 03.10.2026 01:35:19 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Excitation issue Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power F",
+      "published_at": "2026-10-02T23:35:19+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 0.5
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-02T19:44:44+00:00"
     },
     {
       "title": "EU Gas Crunch Forces Rethink of Methane Rules",
@@ -1247,6 +1247,51 @@
       "also_reported_by": [],
       "update_count": 7,
       "thread_started_at": "2026-09-30T14:00:00+00:00"
+    },
+    {
+      "title": "G7 to release 100 million barrels of oil and diesel, will it curb prices?",
+      "url": "https://www.aljazeera.com/news/2026/10/3/g7-to-release-100-million-barrels-of-oil-and-diesel-will-it-curb-prices?traffic_source=rss",
+      "snippet": "Global energy prices have been soaring due to the US and Israel&#039;s war on Iran and Russia&#039;s war on Ukraine.",
+      "published_at": "2026-10-03T09:27:38+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 11.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Constellation, Amazon agree nuclear-focused power purchase deal",
