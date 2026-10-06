@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-06T02:02:16.010409+00:00",
-  "item_count": 100,
+  "generated_at": "2026-10-06T08:53:01.052755+00:00",
+  "item_count": 104,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 15
+    "high": 1,
+    "normal": 16
   },
   "superseded_count": 20,
   "sources": {
@@ -17,63 +17,63 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1815
+        "ms": 1928
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 96586
+        "ms": 32785
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 8292
+        "ms": 4462
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 7,
+        "count": 1,
         "error": null,
-        "ms": 760
+        "ms": 657
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 352
+        "ms": 802
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 13,
         "error": null,
-        "ms": 499
+        "ms": 206
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1144
+        "ms": 1256
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 2279
+        "ms": 479
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 715
+        "ms": 667
       },
       {
         "id": "rigzone",
@@ -87,37 +87,86 @@
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 388
+        "ms": 503
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 23,
+        "count": 22,
         "error": null,
-        "ms": 238
+        "ms": 267
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 230
+        "ms": 185
       }
     ]
   },
   "items": [
     {
-      "title": "Standard Chartered Says Hormuz Oil Flows Are Far From Normal",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Standard-Chartered-Says-Hormuz-Oil-Flows-Are-Far-From-Normal.html",
-      "snippet": "Oil flows through the Middle East have staged an impressive rebound, with export volumes recovering to near pre-war levels even as traffic through the Strait of Hormuz remains well below normal. Standard Chartered estimates crude and condensate exports from the Gulf, excluding Iran and including byp",
-      "published_at": "2026-10-06T00:00:00+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ringsend Flexgen (IS3) (GU_403610)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/2aefc88a-0eff-4f3e-b4dc-c2ad290c2094/2",
+      "snippet": "Published: 06.10.2026 09:58:24 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Tripped on startup Remarks: Tripped on startup Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacit",
+      "published_at": "2026-10-06T07:58:24+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 68,
+      "tags": [
+        "supply_disruption",
+        "nuclear"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 12.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 70.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "nuclear": [
+          "tripped"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "tripped"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-05T11:57:18+00:00"
+    },
+    {
+      "title": "Gulf Oil Exports Recover to 81% of Pre-War Levels",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Gulf-Oil-Exports-Recover-to-81-of-Pre-War-Levels.html",
+      "snippet": "Crude oil exports out of the Persian Gulf reached 81% of pre-war levels last month, according to fresh data from Kpler and Vortexa, cited by Reuters. The data excludes Iranian oil exports, which have dropped to zero, according to the analytics firms. The recovery was led by Saudi Arabia, whose oil e",
+      "published_at": "2026-10-06T08:00:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 57,
+      "has_magnitude": true,
+      "score": 58,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -127,32 +176,31 @@
       "why": {
         "authority": 8.8,
         "themes": 28.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 53.0,
+        "raw": 54.0,
         "recency_multiplier": 1.0
       },
       "matched": {
         "geopolitics": [
           "war",
-          "strait of hormuz"
+          "persian gulf"
         ],
         "oil_macro": [
           "crude"
         ],
         "geography": [
-          "strait of hormuz",
-          "hormuz"
+          "gulf"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 9,
-      "thread_started_at": "2026-09-30T16:00:00+00:00"
+      "update_count": 3,
+      "thread_started_at": "2026-10-01T05:17:00+00:00"
     },
     {
       "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
@@ -293,6 +341,48 @@
       "also_reported_by": []
     },
     {
+      "title": "Watch: Moment Indonesian shoe shop is torn apart by explosion",
+      "url": "https://www.bbc.co.uk/news/videos/cmkg7dx8wpygo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Police have said it is “strongly suspected” that the incident was caused by a gas leak.",
+      "published_at": "2026-10-06T04:57:16+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.0,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "supply_disruption": [
+          "leak",
+          "explosion"
+        ],
+        "unplanned": [
+          "leak",
+          "explosion",
+          "incident"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Lawyers for US inmate who survived lethal injections demand release",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/clip-christia-pike-execution-mp4?traffic_source=rss",
       "snippet": "Christa Pike is in critical condition after two failed attempts to execute her by lethal injection, her lawyer says.",
@@ -383,59 +473,6 @@
       "also_reported_by": [
         "BBC World"
       ]
-    },
-    {
-      "title": "Freeport LNG Ramps Up Gas Intake After Train 2 Shutdown",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Freeport-LNG-Ramps-Up-Gas-Intake-After-Train-2-Shutdown.html",
-      "snippet": "Freeport LNG was ramping natural gas intake back toward normal levels on Monday after maintenance shut one of its three liquefaction trains on Friday, putting a major source of U.S. natural gas demand on track to return to normal levels. Gas flows to the Texas LNG export plant were on track to reach",
-      "published_at": "2026-10-05T18:45:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 46,
-      "tags": [
-        "supply_disruption",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 27.1,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 56.9,
-        "recency_multiplier": 0.67
-      },
-      "matched": {
-        "supply_disruption": [
-          "shutdown",
-          "maintenance"
-        ],
-        "lng": [
-          "lng",
-          "liquefaction"
-        ],
-        "oil_macro": [
-          "demand"
-        ],
-        "geography": [
-          "freeport"
-        ],
-        "urgency": [
-          "shut"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "Execution of US woman Christa Pike fails after botched lethal injection",
@@ -648,8 +685,49 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 4,
-      "thread_started_at": "2026-10-01T05:17:00+00:00"
+      "update_count": 1,
+      "thread_started_at": "2026-10-01T19:00:00+00:00"
+    },
+    {
+      "title": "MISC and QatarEnergy name first of three new LNG vessels for greener seas era",
+      "url": "https://offshore-energy.biz/2026/10/06/misc-and-qatarenergy-name-first-of-three-new-lng-vessels-for-greener-seas-era",
+      "snippet": "MISC has held a naming ceremony for its newest LNG carrier, kicking off a 15-year charter with QatarEnergy and advancing a low-carbon maritime epoch.",
+      "published_at": "2026-10-06T07:31:36+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 21.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier",
+          "charter"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "LNG Prime"
+      ],
+      "first_seen_at": "2026-10-06T06:29:32+00:00"
     },
     {
       "title": "Ukraine says Russian drone attack sinks ship in Romanian waters",
@@ -886,6 +964,54 @@
       "also_reported_by": []
     },
     {
+      "title": "Standard Chartered Says Hormuz Oil Flows Are Far From Normal",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Standard-Chartered-Says-Hormuz-Oil-Flows-Are-Far-From-Normal.html",
+      "snippet": "Oil flows through the Middle East have staged an impressive rebound, with export volumes recovering to near pre-war levels even as traffic through the Strait of Hormuz remains well below normal. Standard Chartered estimates crude and condensate exports from the Gulf, excluding Iran and including byp",
+      "published_at": "2026-10-06T00:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 28.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.0,
+        "recency_multiplier": 0.59
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 9,
+      "thread_started_at": "2026-09-30T16:00:00+00:00"
+    },
+    {
       "title": "Possible Fire Reported at Saudi Refinery as Attack Claims Circulate",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Possible-Fire-Reported-at-Saudi-Refinery-as-Attack-Claims-Circulate.html",
       "snippet": "Reports of a possible attack on Saudi Arabia's Petro Rabigh refining and petrochemical complex north of Jeddah emerged on Monday, although Saudi authorities have so far not confirmed that an attack took place. Iran's Tasnim news agency, citing Yemeni sources, reported that an oil refinery in the Jed",
@@ -970,55 +1096,6 @@
         ],
         "geography": [
           "poland"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Corduff Flexgen (FG2) (GU_403680)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/93467f16-a955-4f75-9b7d-d825d010108b/3",
-      "snippet": "Published: 05.10.2026 13:57:18 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Flame Detector Fault Remarks: Flame Detector Fault Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Cap",
-      "published_at": "2026-10-05T11:57:18+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "supply_disruption",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 20.5,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 78.4,
-        "recency_multiplier": 0.39
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "fault"
-        ],
-        "regulation": [
-          "cap"
-        ],
-        "unplanned": [
-          "unplanned",
-          "fault",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
         ]
       },
       "duplicate_count": 0,
@@ -2834,6 +2911,42 @@
       "also_reported_by": []
     },
     {
+      "title": "0920 Uniform Network Code (UNC) proposed changes",
+      "url": "https://www.ofgem.gov.uk/publications/0920-uniform-network-code-unc-proposed-changes",
+      "snippet": "Outcome of proposed changes to Uniform Network Code (UNC) 0920 PARCA Security Amount.",
+      "published_at": "2026-10-06T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 6.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "network"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Oil Slides on Saudi Price Cut",
       "url": "https://www.rigzone.com/news/wire/oil_slides_on_saudi_price_cut-05-oct-2026-184777-article/?rss=true",
       "snippet": "Crude prices declined as Saudi Arabia cut Asian prices and Hormuz oil flows improved.",
@@ -3122,6 +3235,59 @@
         ],
         "oil_macro": [
           "rates"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Freeport LNG Ramps Up Gas Intake After Train 2 Shutdown",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Freeport-LNG-Ramps-Up-Gas-Intake-After-Train-2-Shutdown.html",
+      "snippet": "Freeport LNG was ramping natural gas intake back toward normal levels on Monday after maintenance shut one of its three liquefaction trains on Friday, putting a major source of U.S. natural gas demand on track to return to normal levels. Gas flows to the Texas LNG export plant were on track to reach",
+      "published_at": "2026-10-05T18:45:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "supply_disruption",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 27.1,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 56.9,
+        "recency_multiplier": 0.39
+      },
+      "matched": {
+        "supply_disruption": [
+          "shutdown",
+          "maintenance"
+        ],
+        "lng": [
+          "lng",
+          "liquefaction"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "freeport"
+        ],
+        "urgency": [
+          "shut"
         ]
       },
       "duplicate_count": 0,
@@ -3610,7 +3776,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 17,
+      "score": 5,
       "tags": [
         "geopolitics",
         "lng"
@@ -3665,7 +3831,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 3,
+      "score": 1,
       "tags": [
         "geopolitics"
       ],
@@ -3713,7 +3879,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 3,
+      "score": 1,
       "tags": [
         "geopolitics"
       ],
@@ -3759,7 +3925,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 3,
+      "score": 1,
       "tags": [
         "geopolitics"
       ],
@@ -3807,7 +3973,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 1,
+      "score": 0,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -3851,121 +4017,6 @@
         "url": "https://oilprice.com/Energy/Crude-Oil/Standard-Chartered-Says-Hormuz-Oil-Flows-Are-Far-From-Normal.html",
         "title": "Standard Chartered Says Hormuz Oil Flows Are Far From Normal",
         "published_at": "2026-10-06T00:00:00+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Brent Holds Above $102 as Gulf Export Rebound Offsets U.S. Military Moves",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Holds-Above-102-as-Gulf-Export-Rebound-Offsets-US-Military-Moves.html",
-      "snippet": "Crude oil prices are set for a modest weekly decline today, as reports of a strong rebound in oil flows out of the Persian Gulf trumped news of more U.S. troops moving to the Middle East and China’s Thursday decision to halt fuel exports this month. At the time of writing, Brent crude was trading at",
-      "published_at": "2026-10-02T05:06:59+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 1,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "supply_disruption",
-        "carbon"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 26.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 39.7,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "geopolitics": [
-          "persian gulf"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent"
-        ],
-        "supply_disruption": [
-          "halt"
-        ],
-        "carbon": [
-          "offsets"
-        ],
-        "geography": [
-          "china",
-          "middle east",
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/5/middle-east-oil-exports-surpass-pre-war-levels-despite-tensions-data-shows?traffic_source=rss",
-        "title": "Middle East oil exports surpass pre-war levels despite tensions, data shows",
-        "published_at": "2026-10-05T05:20:57+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Brent Tumbles to $96 as Gulf Oil Flows Bounce Back",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Tumbles-to-96-as-Gulf-Oil-Flows-Bounce-Back.html",
-      "snippet": "Crude oil prices moved markedly lower on Wednesday and stayed there earlier today, after booking a solid jump for September. The decline came in response to reports from JP Morgan, Goldman, and Kpler, suggesting oil flows out of the Persian Gulf had virtually returned to pre-war levels. At the time ",
-      "published_at": "2026-10-01T05:17:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 1,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 31.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 44.7,
-        "recency_multiplier": 0.52
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "persian gulf"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/5/middle-east-oil-exports-surpass-pre-war-levels-despite-tensions-data-shows?traffic_source=rss",
-        "title": "Middle East oil exports surpass pre-war levels despite tensions, data shows",
-        "published_at": "2026-10-05T05:20:57+00:00"
       },
       "hidden": true
     },
@@ -4134,9 +4185,9 @@
       "thread_started_at": "2026-10-01T19:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/5/middle-east-oil-exports-surpass-pre-war-levels-despite-tensions-data-shows?traffic_source=rss",
-        "title": "Middle East oil exports surpass pre-war levels despite tensions, data shows",
-        "published_at": "2026-10-05T05:20:57+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Gulf-Oil-Exports-Recover-to-81-of-Pre-War-Levels.html",
+        "title": "Gulf Oil Exports Recover to 81% of Pre-War Levels",
+        "published_at": "2026-10-06T08:00:00+00:00"
       },
       "hidden": true
     },
@@ -4186,6 +4237,68 @@
         "url": "https://www.aljazeera.com/news/2026/10/5/ukraine-says-russian-drone-attack-sinks-ship-in-romanian-waters?traffic_source=rss",
         "title": "Ukraine says Russian drone attack sinks ship in Romanian waters",
         "published_at": "2026-10-05T20:03:06+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Brent Holds Above $102 as Gulf Export Rebound Offsets U.S. Military Moves",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Holds-Above-102-as-Gulf-Export-Rebound-Offsets-US-Military-Moves.html",
+      "snippet": "Crude oil prices are set for a modest weekly decline today, as reports of a strong rebound in oil flows out of the Persian Gulf trumped news of more U.S. troops moving to the Middle East and China’s Thursday decision to halt fuel exports this month. At the time of writing, Brent crude was trading at",
+      "published_at": "2026-10-02T05:06:59+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 0,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption",
+        "carbon"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.7,
+        "recency_multiplier": 0.72
+      },
+      "matched": {
+        "geopolitics": [
+          "persian gulf"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ],
+        "supply_disruption": [
+          "halt"
+        ],
+        "carbon": [
+          "offsets"
+        ],
+        "geography": [
+          "china",
+          "middle east",
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Gulf-Oil-Exports-Recover-to-81-of-Pre-War-Levels.html",
+        "title": "Gulf Oil Exports Recover to 81% of Pre-War Levels",
+        "published_at": "2026-10-06T08:00:00+00:00"
       },
       "hidden": true
     },
@@ -4447,6 +4560,59 @@
         "url": "https://offshore-energy.biz/2026/10/02/dollar50-billion-south-korean-investment-pushes-stalled-alaska-lng-project-closer-to-construction",
         "title": "$50 billion South Korean investment pushes stalled Alaska LNG project closer to construction",
         "published_at": "2026-10-02T14:40:21+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Brent Tumbles to $96 as Gulf Oil Flows Bounce Back",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Tumbles-to-96-as-Gulf-Oil-Flows-Bounce-Back.html",
+      "snippet": "Crude oil prices moved markedly lower on Wednesday and stayed there earlier today, after booking a solid jump for September. The decline came in response to reports from JP Morgan, Goldman, and Kpler, suggesting oil flows out of the Persian Gulf had virtually returned to pre-war levels. At the time ",
+      "published_at": "2026-10-01T05:17:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 0,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 31.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 44.7,
+        "recency_multiplier": 0.52
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "persian gulf"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Gulf-Oil-Exports-Recover-to-81-of-Pre-War-Levels.html",
+        "title": "Gulf Oil Exports Recover to 81% of Pre-War Levels",
+        "published_at": "2026-10-06T08:00:00+00:00"
       },
       "hidden": true
     },
