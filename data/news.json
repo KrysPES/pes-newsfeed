@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-07T12:06:11.325974+00:00",
-  "item_count": 133,
+  "generated_at": "2026-10-07T18:54:51.442835+00:00",
+  "item_count": 140,
   "alert_counts": {
     "critical": 0,
     "high": 1,
     "normal": 14
   },
-  "superseded_count": 29,
+  "superseded_count": 32,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,144 +17,197 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1391
+        "ms": 1419
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 139496
+        "ms": 120861
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2389
+        "ms": 3921
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 330
+        "ms": 314
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 351
+        "ms": 283
       },
       {
         "id": "eia_today",
         "ok": true,
-        "count": 13,
+        "count": 14,
         "error": null,
-        "ms": 117
+        "ms": 197
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 42,
+        "count": 44,
         "error": null,
-        "ms": 1064
+        "ms": 1330
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 221
+        "ms": 473
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 575
+        "ms": 719
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 74
+        "ms": 317
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 258
+        "ms": 686
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 22,
+        "count": 21,
         "error": null,
-        "ms": 62
+        "ms": 159
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 115
+        "ms": 228
       }
     ]
   },
   "items": [
     {
-      "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-      "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-      "snippet": "India&#039;s Foreign Ministry says 11 out of 12 injured crew members on board the On Peace are Indian nationals.",
-      "published_at": "2026-10-07T03:16:32+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Corduff Flexgen (FG2) (GU_403680)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/93467f16-a955-4f75-9b7d-d825d010108b/4",
+      "snippet": "Published: 07.10.2026 17:20:55 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Flame Detector Fault Remarks: Flame Detector Fault Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Cap",
+      "published_at": "2026-10-07T15:20:55+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
       "has_magnitude": false,
-      "score": 69,
+      "score": 67,
       "tags": [
-        "geopolitics",
-        "lng"
+        "supply_disruption",
+        "regulation"
       ],
       "alert": "high",
       "nature": "unplanned",
       "why": {
-        "authority": 9.5,
-        "themes": 30.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 21.9,
+        "themes": 20.5,
+        "geography": 0.0,
         "event_nature": 20.0,
-        "urgency": 0.0,
+        "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 75.5,
-        "recency_multiplier": 0.96
+        "raw": 78.4,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "fault"
+        ],
+        "regulation": [
+          "cap"
+        ],
+        "unplanned": [
+          "unplanned",
+          "fault",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-06T07:58:24+00:00"
+    },
+    {
+      "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+      "snippet": "Iraq devalued the dinar by 14.5% on Wednesday, setting the exchange rate at 1,520 per dollar after months of disruption to oil exports through the Strait of Hormuz cut into the government’s main source of revenue. The cabinet adopted the new exchange-rate structure on Tuesday, with the changes takin",
+      "published_at": "2026-10-07T15:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 58,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 23.2,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 60.0,
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
-          "attacked",
           "strait of hormuz"
         ],
-        "lng": [
-          "tanker"
+        "supply_disruption": [
+          "disruption"
+        ],
+        "oil_macro": [
+          "dollar"
         ],
         "geography": [
           "strait of hormuz",
           "hormuz"
-        ],
-        "unplanned": [
-          "attacked"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 12,
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Rigzone"
+      ],
+      "first_seen_at": "2026-10-07T13:31:16+00:00",
+      "update_count": 13,
       "thread_started_at": "2026-09-30T16:00:00+00:00"
     },
     {
@@ -241,50 +294,6 @@
         ],
         "unplanned": [
           "explosion"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Approval of the proposed revised Interconnection Agreement and Pressure Service Charges Agreement between BBL Company V.O.F. and National Gas Transmission",
-      "url": "https://www.ofgem.gov.uk/decision/approval-proposed-revised-interconnection-agreement-and-pressure-service-charges-agreement-between-bbl-company-vof-and-national-gas-transmission",
-      "snippet": "Our decision regarding the proposed revised Interconnection Agreement and Pressure Service Charges Agreement between BBL Company V.O.F. and National Gas Transmission.",
-      "published_at": "2026-10-07T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 49,
-      "tags": [
-        "infrastructure",
-        "power_system"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 10.1,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 42.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "infrastructure": [
-          "transmission"
-        ],
-        "power_system": [
-          "interconnection"
-        ],
-        "geography": [
-          "bbl"
         ]
       },
       "duplicate_count": 0,
@@ -1268,6 +1277,48 @@
       "also_reported_by": []
     },
     {
+      "title": "German uranium oxide storage facility commissioned",
+      "url": "https://www.world-nuclear-news.org/articles/german-uranium-oxide-storage-facility-commissioned",
+      "snippet": "Uranium enrichment services provider Urenco has officially commissioned the uranium oxide storage facility at its site in Gronau, Germany. Construction of the facility was completed several years ago.",
+      "published_at": "2026-10-07T11:55:24+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 19.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.1,
+        "recency_multiplier": 0.68
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "storage facility"
+        ],
+        "geography": [
+          "germany",
+          "german"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Heat network regulation: authorisation application arrangements",
       "url": "https://www.ofgem.gov.uk/consultation/heat-network-regulation-authorisation-application-arrangements",
       "snippet": "Proposals for how new heat network operators and suppliers apply for authorisation and register with Ofgem.",
@@ -1582,6 +1633,97 @@
       "also_reported_by": []
     },
     {
+      "title": "Qatar Brings Empty LNG Ships Into Gulf",
+      "url": "https://www.rigzone.com/news/wire/qatar_brings_empty_lng_ships_into_gulf-07-oct-2026-184793-article/?rss=true",
+      "snippet": "Qatar has amassed a fleet of empty liquefied natural gas tankers in the Persian Gulf.",
+      "published_at": "2026-10-07T13:37:15+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 21.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.0,
+        "recency_multiplier": 0.78
+      },
+      "matched": {
+        "geopolitics": [
+          "persian gulf"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "qatar",
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 6,
+      "thread_started_at": "2026-10-01T05:17:00+00:00"
+    },
+    {
+      "title": "Approval of the proposed revised Interconnection Agreement and Pressure Service Charges Agreement between BBL Company V.O.F. and National Gas Transmission",
+      "url": "https://www.ofgem.gov.uk/decision/approval-proposed-revised-interconnection-agreement-and-pressure-service-charges-agreement-between-bbl-company-vof-and-national-gas-transmission",
+      "snippet": "Our decision regarding the proposed revised Interconnection Agreement and Pressure Service Charges Agreement between BBL Company V.O.F. and National Gas Transmission.",
+      "published_at": "2026-10-07T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "infrastructure",
+        "power_system"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 10.1,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.1,
+        "recency_multiplier": 0.68
+      },
+      "matched": {
+        "infrastructure": [
+          "transmission"
+        ],
+        "power_system": [
+          "interconnection"
+        ],
+        "geography": [
+          "bbl"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Equinor says Hammerfest LNG upgrade costs climb further",
       "url": "https://lngprime.com/europe/equinor-says-hammerfest-lng-upgrade-costs-climb-further/198023/",
       "snippet": "Costs for Equinor’s Snohvit Future project, which includes upgrading the 4.3 mtpa Hammerfest LNG export facility on Melkoya Island in Norway, have increased further from the original estimates.",
@@ -1780,6 +1922,52 @@
         ],
         "geography": [
           "norway"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "U.S. Crude Stocks Dip But Distillates Hold Steady",
+      "url": "https://oilprice.com/Energy/Crude-Oil/US-Crude-Stocks-Dip-But-Distillates-Hold-Steady.html",
+      "snippet": "Crude oil inventories in the United States saw a decrease of 3.2 million barrels during the week ending October 2, according to new data from the U.S. Energy Information Administration (EIA) released on Wednesday. The decrease brings commercial stockpiles to 424.1 million barrels, according to gover",
+      "published_at": "2026-10-07T14:40:54+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "gas_storage",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 18.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.6,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "gas_storage": [
+          "stocks",
+          "inventories"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "united states"
         ]
       },
       "duplicate_count": 0,
@@ -2244,8 +2432,8 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 4,
-      "thread_started_at": "2026-10-01T05:17:00+00:00"
+      "update_count": 2,
+      "thread_started_at": "2026-10-01T19:00:00+00:00"
     },
     {
       "title": "EU Delays Methane Rules, Opens Refinery Talks as Fuel Prices Hit Records",
@@ -2288,6 +2476,47 @@
         "geography": [
           "european",
           "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Deployable Energy to test its Unity nuclear battery in DOME",
+      "url": "https://www.world-nuclear-news.org/articles/deployable-energy-to-test-its-unity-nuclear-battery-in-dome",
+      "snippet": "Deployable Energy's Unity demonstration reactor has been selected by the US Department of Energy's National Reactor Innovation Center for testing inside the Demonstration of Microreactor Experiments, or DOME, testbed at the Idaho National Laboratory in 2027.",
+      "published_at": "2026-10-07T14:16:05+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "nuclear",
+        "power_system"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.8,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactor"
+        ],
+        "power_system": [
+          "battery"
         ]
       },
       "duplicate_count": 0,
@@ -2594,6 +2823,51 @@
       "also_reported_by": []
     },
     {
+      "title": "IEA Discusses G7's 100 Million-Barrel Oil and Diesel Release",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/IEA-Discusses-G7s-100-Million-Barrel-Oil-and-Diesel-Release.html",
+      "snippet": "The International Energy Agency (IEA) is holding an informal meeting on Wednesday to discuss the planned release of 100 million barrels of oil and diesel stocks to ease the fuel supply crunch, two EU diplomats told Reuters today. The IEA’s Governing Board, the highest decision-making body of the int",
+      "published_at": "2026-10-07T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "oil_macro",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.8,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "oil_macro": [
+          "barrel",
+          "barrels"
+        ],
+        "gas_storage": [
+          "stocks"
+        ],
+        "geography": [
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "US Crude Inventories Slide",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Inventories-Slide.html",
       "snippet": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States fell by 2.09 million barrels in the week ending Oct 2. In the week prior, US crude oil inventories grew by 1.019 million barrels. Commercial crude oil inventories excluding the SPR have lost more than 38",
@@ -2637,52 +2911,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Aramco hires KBR for work on oil & gas project in Arabian Gulf",
-      "url": "https://offshore-energy.biz/2026/10/06/aramco-hires-kbr-for-work-on-oil-and-gas-project-in-arabian-gulf",
-      "snippet": "This offshore engineering contract enables KBR to support Aramco’s field development program off the coast of Saudi Arabia.",
-      "published_at": "2026-10-06T11:55:10+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "geopolitics",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 24.1,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.5,
-        "recency_multiplier": 0.6
-      },
-      "matched": {
-        "geopolitics": [
-          "arabian gulf"
-        ],
-        "infrastructure": [
-          "field development"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-10-02T05:06:59+00:00"
     },
     {
       "title": "Ship sinks and crew missing after Black Sea drone attack",
@@ -3135,54 +3363,6 @@
         ],
         "gas_storage": [
           "inventories"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ringsend Flexgen (IS3) (GU_403610)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/2aefc88a-0eff-4f3e-b4dc-c2ad290c2094/2",
-      "snippet": "Published: 06.10.2026 09:58:24 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Tripped on startup Remarks: Tripped on startup Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacit",
-      "published_at": "2026-10-06T07:58:24+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "supply_disruption",
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 12.8,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 70.7,
-        "recency_multiplier": 0.34
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "nuclear": [
-          "tripped"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "tripped"
-        ],
-        "urgency": [
-          "unplanned"
         ]
       },
       "duplicate_count": 0,
@@ -3878,46 +4058,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Adnoc, Gulf seal LNG supply deal",
-      "url": "https://lngprime.com/asia/adnoc-gulf-seal-lng-supply-deal/197946/",
-      "snippet": "UAE’s Adnoc has entered into a multi-year LNG sales agreement with Thailand’s Gulf Development.",
-      "published_at": "2026-10-05T11:48:11+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "gulf"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Russia’s nuclear plants are ageing. Who will pay to dismantle them?",
       "url": "https://www.aljazeera.com/opinions/2026/10/4/russias-nuclear-plants-are-ageing-who-will-pay-to-dismantle-them?traffic_source=rss",
       "snippet": "Moscow faces a huge decommissioning bill at home even as it expands its nuclear industry abroad.",
@@ -4126,6 +4266,51 @@
         ],
         "oil_macro": [
           "rates"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Swiss citizens may get to vote on construction of new reactors",
+      "url": "https://www.world-nuclear-news.org/articles/swiss-citizens-may-get-to-vote-on-construction-of-new-reactors",
+      "snippet": "The Alliance for Secure Electricity Supply has launched a campaign for the lifting of the ban on new nuclear power plant construction in Switzerland. It comes as a broad coalition claims to have collected enough signatures in support of a referendum against the construction of new plants.",
+      "published_at": "2026-10-07T12:00:25+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "regulation",
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 30.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 32.6,
+        "recency_multiplier": 0.69
+      },
+      "matched": {
+        "regulation": [
+          "ban on",
+          "vote on"
+        ],
+        "nuclear": [
+          "nuclear",
+          "reactors"
+        ],
+        "speculative": [
+          "may"
         ]
       },
       "duplicate_count": 0,
@@ -4657,6 +4842,164 @@
       "also_reported_by": []
     },
     {
+      "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
+      "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
+      "snippet": "India&#039;s Foreign Ministry says 11 out of 12 injured crew members on board the On Peace are Indian nationals.",
+      "published_at": "2026-10-07T03:16:32+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 21,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 30.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 75.5,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "attacked",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 12,
+      "thread_started_at": "2026-09-30T16:00:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Aramco hires KBR for work on oil & gas project in Arabian Gulf",
+      "url": "https://offshore-energy.biz/2026/10/06/aramco-hires-kbr-for-work-on-oil-and-gas-project-in-arabian-gulf",
+      "snippet": "This offshore engineering contract enables KBR to support Aramco’s field development program off the coast of Saudi Arabia.",
+      "published_at": "2026-10-06T11:55:10+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 10,
+      "tags": [
+        "geopolitics",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 24.1,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.5,
+        "recency_multiplier": 0.6
+      },
+      "matched": {
+        "geopolitics": [
+          "arabian gulf"
+        ],
+        "infrastructure": [
+          "field development"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-10-02T05:06:59+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.rigzone.com/news/wire/qatar_brings_empty_lng_ships_into_gulf-07-oct-2026-184793-article/?rss=true",
+        "title": "Qatar Brings Empty LNG Ships Into Gulf",
+        "published_at": "2026-10-07T13:37:15+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Adnoc, Gulf seal LNG supply deal",
+      "url": "https://lngprime.com/asia/adnoc-gulf-seal-lng-supply-deal/197946/",
+      "snippet": "UAE’s Adnoc has entered into a multi-year LNG sales agreement with Thailand’s Gulf Development.",
+      "published_at": "2026-10-05T11:48:11+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.4,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.rigzone.com/news/wire/qatar_brings_empty_lng_ships_into_gulf-07-oct-2026-184793-article/?rss=true",
+        "title": "Qatar Brings Empty LNG Ships Into Gulf",
+        "published_at": "2026-10-07T13:37:15+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "MISC and QatarEnergy name first of three new LNG vessels for greener seas era",
       "url": "https://offshore-energy.biz/2026/10/06/misc-and-qatarenergy-name-first-of-three-new-lng-vessels-for-greener-seas-era",
       "snippet": "MISC has held a naming ceremony for its newest LNG carrier, kicking off a 15-year charter with QatarEnergy and advancing a low-carbon maritime epoch.",
@@ -4667,7 +5010,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 13,
+      "score": 4,
       "tags": [
         "lng"
       ],
@@ -4715,7 +5058,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 11,
+      "score": 3,
       "tags": [
         "geopolitics",
         "lng",
@@ -4755,9 +5098,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -4772,7 +5115,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 1,
+      "score": 0,
       "tags": [
         "geopolitics"
       ],
@@ -4808,9 +5151,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -4912,9 +5255,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://offshore-energy.biz/2026/10/06/aramco-hires-kbr-for-work-on-oil-and-gas-project-in-arabian-gulf",
-        "title": "Aramco hires KBR for work on oil & gas project in Arabian Gulf",
-        "published_at": "2026-10-06T11:55:10+00:00"
+        "url": "https://www.rigzone.com/news/wire/qatar_brings_empty_lng_ships_into_gulf-07-oct-2026-184793-article/?rss=true",
+        "title": "Qatar Brings Empty LNG Ships Into Gulf",
+        "published_at": "2026-10-07T13:37:15+00:00"
       },
       "hidden": true
     },
@@ -4967,9 +5310,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -5123,9 +5466,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -5232,9 +5575,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -5431,9 +5774,9 @@
       "thread_started_at": "2026-09-30T14:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -5487,9 +5830,9 @@
       "thread_started_at": "2026-09-30T14:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -5546,9 +5889,9 @@
       "thread_started_at": "2026-10-01T19:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-East-West-Pipeline-Moves-58-Million-Barrels-as-Red-Sea-Route-Recovers.html",
-        "title": "Saudi East-West Pipeline Moves 5.8 Million Barrels as Red Sea Route Recovers",
-        "published_at": "2026-10-06T16:30:00+00:00"
+        "url": "https://www.rigzone.com/news/wire/qatar_brings_empty_lng_ships_into_gulf-07-oct-2026-184793-article/?rss=true",
+        "title": "Qatar Brings Empty LNG Ships Into Gulf",
+        "published_at": "2026-10-07T13:37:15+00:00"
       },
       "hidden": true
     },
@@ -5657,9 +6000,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://offshore-energy.biz/2026/10/06/aramco-hires-kbr-for-work-on-oil-and-gas-project-in-arabian-gulf",
-        "title": "Aramco hires KBR for work on oil & gas project in Arabian Gulf",
-        "published_at": "2026-10-06T11:55:10+00:00"
+        "url": "https://www.rigzone.com/news/wire/qatar_brings_empty_lng_ships_into_gulf-07-oct-2026-184793-article/?rss=true",
+        "title": "Qatar Brings Empty LNG Ships Into Gulf",
+        "published_at": "2026-10-07T13:37:15+00:00"
       },
       "hidden": true
     },
@@ -5710,9 +6053,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -5815,9 +6158,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -5863,9 +6206,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -5971,9 +6314,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-East-West-Pipeline-Moves-58-Million-Barrels-as-Red-Sea-Route-Recovers.html",
-        "title": "Saudi East-West Pipeline Moves 5.8 Million Barrels as Red Sea Route Recovers",
-        "published_at": "2026-10-06T16:30:00+00:00"
+        "url": "https://www.rigzone.com/news/wire/qatar_brings_empty_lng_ships_into_gulf-07-oct-2026-184793-article/?rss=true",
+        "title": "Qatar Brings Empty LNG Ships Into Gulf",
+        "published_at": "2026-10-07T13:37:15+00:00"
       },
       "hidden": true
     },
@@ -6019,9 +6362,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -6129,9 +6472,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-        "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-        "published_at": "2026-10-07T03:16:32+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+        "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+        "published_at": "2026-10-07T15:30:00+00:00"
       },
       "hidden": true
     },
