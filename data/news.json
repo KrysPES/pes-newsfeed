@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-07T18:54:51.442835+00:00",
-  "item_count": 140,
+  "generated_at": "2026-10-07T23:24:27.011378+00:00",
+  "item_count": 145,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 14
+    "high": 0,
+    "normal": 17
   },
-  "superseded_count": 32,
+  "superseded_count": 33,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,199 +17,95 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1419
+        "ms": 3323
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 120861
+        "ms": 38032
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3921
+        "ms": 6675
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 314
+        "ms": 536
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 283
+        "ms": 862
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 14,
         "error": null,
-        "ms": 197
+        "ms": 178
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 44,
         "error": null,
-        "ms": 1330
+        "ms": 1245
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 473
+        "ms": 589
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 719
+        "ms": 653
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 317
+        "ms": 263
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 686
+        "ms": 566
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 21,
+        "count": 22,
         "error": null,
-        "ms": 159
+        "ms": 70
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 228
+        "ms": 124
       }
     ]
   },
   "items": [
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Corduff Flexgen (FG2) (GU_403680)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/93467f16-a955-4f75-9b7d-d825d010108b/4",
-      "snippet": "Published: 07.10.2026 17:20:55 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Flame Detector Fault Remarks: Flame Detector Fault Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Cap",
-      "published_at": "2026-10-07T15:20:55+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 67,
-      "tags": [
-        "supply_disruption",
-        "regulation"
-      ],
-      "alert": "high",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 20.5,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 78.4,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "fault"
-        ],
-        "regulation": [
-          "cap"
-        ],
-        "unplanned": [
-          "unplanned",
-          "fault",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-06T07:58:24+00:00"
-    },
-    {
-      "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
-      "snippet": "Iraq devalued the dinar by 14.5% on Wednesday, setting the exchange rate at 1,520 per dollar after months of disruption to oil exports through the Strait of Hormuz cut into the government’s main source of revenue. The cabinet adopted the new exchange-rate structure on Tuesday, with the changes takin",
-      "published_at": "2026-10-07T15:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 58,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.2,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 60.0,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "supply_disruption": [
-          "disruption"
-        ],
-        "oil_macro": [
-          "dollar"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Rigzone"
-      ],
-      "first_seen_at": "2026-10-07T13:31:16+00:00",
-      "update_count": 13,
-      "thread_started_at": "2026-09-30T16:00:00+00:00"
-    },
     {
       "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
       "url": "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat?traffic_source=rss",
@@ -246,6 +142,55 @@
         ],
         "geography": [
           "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Corduff Flexgen (FG2) (GU_403680)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/93467f16-a955-4f75-9b7d-d825d010108b/4",
+      "snippet": "Published: 07.10.2026 17:20:55 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Flame Detector Fault Remarks: Flame Detector Fault Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Cap",
+      "published_at": "2026-10-07T15:20:55+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "supply_disruption",
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 20.5,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 78.4,
+        "recency_multiplier": 0.63
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "fault"
+        ],
+        "regulation": [
+          "cap"
+        ],
+        "unplanned": [
+          "unplanned",
+          "fault",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
         ]
       },
       "duplicate_count": 0,
@@ -393,6 +338,52 @@
       "also_reported_by": []
     },
     {
+      "title": "Depleted Global Stocks Set Higher Floor Under Oil Prices",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Depleted-Global-Stocks-Set-Higher-Floor-Under-Oil-Prices.html",
+      "snippet": "The world is nearly out of buffers to cushion the supply shock of the Iran war, which raises the floor under oil prices each time re-escalation threatens oil supply from the Middle East, top industry executives said this week. Global oil stocks have been depleted as the war enters its eighth month, ",
+      "published_at": "2026-10-07T22:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "geopolitics",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "escalation",
+          "war"
+        ],
+        "gas_storage": [
+          "stocks",
+          "depleted"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Trump vs Europe as US presses for release of emergency diesel stocks",
       "url": "https://www.aljazeera.com/news/2026/10/2/trump-vs-europe-as-us-presses-for-release-of-emergency-diesel-stocks?traffic_source=rss",
       "snippet": "Europe&#039;s leaders are mulling proposals to respond to Trump&#039;s diesel demands.",
@@ -439,6 +430,110 @@
       "also_reported_by": [
         "BBC World"
       ]
+    },
+    {
+      "title": "Global Diesel Crunch Fuels New Wave of Energy Nationalism",
+      "url": "https://oilprice.com/Energy/Energy-General/Global-Diesel-Crunch-Fuels-New-Wave-of-Energy-Nationalism.html",
+      "snippet": "Global fuel stocks are tighter than they have probably ever been. China just imposed a ban on all fuel exports for the month. Russia has had a diesel export ban in place for months. The United States threatened Europe with a diesel export ban unless European countries released some fuel from storage",
+      "published_at": "2026-10-07T20:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "gas_storage",
+        "regulation",
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 23.4,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.2,
+        "recency_multiplier": 0.9
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "stocks"
+        ],
+        "regulation": [
+          "ban on"
+        ],
+        "geopolitics": [
+          "export ban"
+        ],
+        "geography": [
+          "europe",
+          "european"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
+      "snippet": "Iraq devalued the dinar by 14.5% on Wednesday, setting the exchange rate at 1,520 per dollar after months of disruption to oil exports through the Strait of Hormuz cut into the government’s main source of revenue. The cabinet adopted the new exchange-rate structure on Tuesday, with the changes takin",
+      "published_at": "2026-10-07T15:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 46,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 23.2,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 60.0,
+        "recency_multiplier": 0.63
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "supply_disruption": [
+          "disruption"
+        ],
+        "oil_macro": [
+          "dollar"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Rigzone"
+      ],
+      "first_seen_at": "2026-10-07T13:31:16+00:00",
+      "update_count": 13,
+      "thread_started_at": "2026-09-30T16:00:00+00:00"
     },
     {
       "title": "Execution of US woman Christa Pike fails after botched lethal injection",
@@ -1229,6 +1324,48 @@
       "also_reported_by": []
     },
     {
+      "title": "Oil Dips as Middle East Flows Recover",
+      "url": "https://www.rigzone.com/news/wire/oil_dips_as_middle_east_flows_recover-07-oct-2026-184796-article/?rss=true",
+      "snippet": "Brent closed near $100 as traders weighed escalating Hormuz threats against resilient regional oil exports.",
+      "published_at": "2026-10-07T20:43:41+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 4.5,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.4,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "oil_macro": [
+          "brent"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-10-01T19:00:00+00:00"
+    },
+    {
       "title": "Enabling greater self-build of transmission connections",
       "url": "https://www.ofgem.gov.uk/consultation/enabling-greater-self-build-transmission-connections",
       "snippet": "Our consultation on giving demand, generation and storage connecting greater choice about how their connections to the electricity transmission system are delivered.",
@@ -1627,6 +1764,50 @@
         ],
         "geography": [
           "norwegian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Google Secures 890 MW Of Nuclear Power from Constellation Energy",
+      "url": "https://oilprice.com/Energy/Energy-General/Google-Secures-890-MW-Of-Nuclear-Power-from-Constellation-Energy.html",
+      "snippet": "Google/Alphabet (NASDAQ:GOOG) says it has contracted 3,590 megawatts of power from Constellation Energy (NASDAQ:CEG) in the largest US power grid, PJM Interconnection, which serves 67 million people across 13 states and Washington, D.C. New nuclear energy will account for about a quarter of that sup",
+      "published_at": "2026-10-07T19:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 37,
+      "tags": [
+        "nuclear",
+        "infrastructure",
+        "power_system"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.0,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "infrastructure": [
+          "grid"
+        ],
+        "power_system": [
+          "interconnection"
         ]
       },
       "duplicate_count": 0,
@@ -2380,60 +2561,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Saudi East-West Pipeline Moves 5.8 Million Barrels as Red Sea Route Recovers",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-East-West-Pipeline-Moves-58-Million-Barrels-as-Red-Sea-Route-Recovers.html",
-      "snippet": "Saudi Arabia’s East-West pipeline had moved 5.8 million barrels of crude as of Tuesday morning, Energy Minister Prince Abdulaziz bin Salman said, adding more oil to the kingdom’s Red Sea export route as Gulf producers continue working around the Strait of Hormuz. The pipeline carries crude across Sa",
-      "published_at": "2026-10-06T16:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 39.7,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 64.5,
-        "recency_multiplier": 0.42
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz",
-          "red sea"
-        ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz",
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-10-01T19:00:00+00:00"
     },
     {
       "title": "EU Delays Methane Rules, Opens Refinery Talks as Fuel Prices Hit Records",
@@ -4272,6 +4399,46 @@
       "also_reported_by": []
     },
     {
+      "title": "Who Is Going to Pay for Alaska LNG?",
+      "url": "https://oilprice.com/Energy/Natural-Gas/Who-Is-Going-to-Pay-for-Alaska-LNG.html",
+      "snippet": "Washington’s tariff pressure is giving Alaska LNG something its economics have struggled to secure: a potential investor. Discussed for decades, the costly and technically complex project has regained momentum under President Donald Trump, who is using tariff threats to press foreign partners into b",
+      "published_at": "2026-10-07T23:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 22.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "tariff"
+        ],
+        "lng": [
+          "lng"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Swiss citizens may get to vote on construction of new reactors",
       "url": "https://www.world-nuclear-news.org/articles/swiss-citizens-may-get-to-vote-on-construction-of-new-reactors",
       "snippet": "The Alliance for Secure Electricity Supply has launched a campaign for the lifting of the ban on new nuclear power plant construction in Switzerland. It comes as a broad coalition claims to have collected enough signatures in support of a referendum against the construction of new plants.",
@@ -4842,6 +5009,67 @@
       "also_reported_by": []
     },
     {
+      "title": "Saudi East-West Pipeline Moves 5.8 Million Barrels as Red Sea Route Recovers",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-East-West-Pipeline-Moves-58-Million-Barrels-as-Red-Sea-Route-Recovers.html",
+      "snippet": "Saudi Arabia’s East-West pipeline had moved 5.8 million barrels of crude as of Tuesday morning, Energy Minister Prince Abdulaziz bin Salman said, adding more oil to the kingdom’s Red Sea export route as Gulf producers continue working around the Strait of Hormuz. The pipeline carries crude across Sa",
+      "published_at": "2026-10-06T16:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 10,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 39.7,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 64.5,
+        "recency_multiplier": 0.42
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "red sea"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-10-01T19:00:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.rigzone.com/news/wire/oil_dips_as_middle_east_flows_recover-07-oct-2026-184796-article/?rss=true",
+        "title": "Oil Dips as Middle East Flows Recover",
+        "published_at": "2026-10-07T20:43:41+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
       "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
       "snippet": "India&#039;s Foreign Ministry says 11 out of 12 injured crew members on board the On Peace are Indian nationals.",
@@ -4852,7 +5080,7 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 21,
+      "score": 6,
       "tags": [
         "geopolitics",
         "lng"
@@ -4910,7 +5138,7 @@
       "authority": 17,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 3,
       "tags": [
         "geopolitics",
         "infrastructure"
@@ -4963,7 +5191,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 9,
+      "score": 3,
       "tags": [
         "lng"
       ],
@@ -5000,54 +5228,6 @@
       "hidden": true
     },
     {
-      "title": "MISC and QatarEnergy name first of three new LNG vessels for greener seas era",
-      "url": "https://offshore-energy.biz/2026/10/06/misc-and-qatarenergy-name-first-of-three-new-lng-vessels-for-greener-seas-era",
-      "snippet": "MISC has held a naming ceremony for its newest LNG carrier, kicking off a 15-year charter with QatarEnergy and advancing a low-carbon maritime epoch.",
-      "published_at": "2026-10-06T07:31:36+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 4,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 21.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier",
-          "charter"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "LNG Prime"
-      ],
-      "first_seen_at": "2026-10-06T06:29:32+00:00",
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/QatarEnergy-Secures-3-Billion-Loan-From-Chinese-Banks-as-LNG-Exports-Stall.html",
-        "title": "QatarEnergy Secures $3 Billion Loan From Chinese Banks as LNG Exports Stall",
-        "published_at": "2026-10-07T09:30:00+00:00"
-      },
-      "hidden": true
-    },
-    {
       "title": "5 Natural Gas Stocks Profiting From the Strait of Hormuz Standoff",
       "url": "https://oilprice.com/Energy/Natural-Gas/5-Natural-Gas-Stocks-Profiting-From-the-Strait-of-Hormuz-Standoff.html",
       "snippet": "When Iran struck Qatar's Ras Laffan complex in March and knocked out 17% of the country's LNG export capacity, the trade seemed pretty straightforward. Buy the American exporters, sit back and wait for Europe and Asia to come knocking for cargoes that didn't need to sail through the Strait of Hormuz",
@@ -5058,7 +5238,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 3,
+      "score": 1,
       "tags": [
         "geopolitics",
         "lng",
@@ -5101,6 +5281,54 @@
         "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Devalues-Dinar-145-as-Hormuz-Disruption-Drains-Oil-Revenue.html",
         "title": "Iraq Devalues Dinar 14.5% as Hormuz Disruption Drains Oil Revenue",
         "published_at": "2026-10-07T15:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "MISC and QatarEnergy name first of three new LNG vessels for greener seas era",
+      "url": "https://offshore-energy.biz/2026/10/06/misc-and-qatarenergy-name-first-of-three-new-lng-vessels-for-greener-seas-era",
+      "snippet": "MISC has held a naming ceremony for its newest LNG carrier, kicking off a 15-year charter with QatarEnergy and advancing a low-carbon maritime epoch.",
+      "published_at": "2026-10-06T07:31:36+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 1,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 21.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier",
+          "charter"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "LNG Prime"
+      ],
+      "first_seen_at": "2026-10-06T06:29:32+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/QatarEnergy-Secures-3-Billion-Loan-From-Chinese-Banks-as-LNG-Exports-Stall.html",
+        "title": "QatarEnergy Secures $3 Billion Loan From Chinese Banks as LNG Exports Stall",
+        "published_at": "2026-10-07T09:30:00+00:00"
       },
       "hidden": true
     },
@@ -5624,9 +5852,9 @@
       "thread_started_at": "2026-10-01T19:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-East-West-Pipeline-Moves-58-Million-Barrels-as-Red-Sea-Route-Recovers.html",
-        "title": "Saudi East-West Pipeline Moves 5.8 Million Barrels as Red Sea Route Recovers",
-        "published_at": "2026-10-06T16:30:00+00:00"
+        "url": "https://www.rigzone.com/news/wire/oil_dips_as_middle_east_flows_recover-07-oct-2026-184796-article/?rss=true",
+        "title": "Oil Dips as Middle East Flows Recover",
+        "published_at": "2026-10-07T20:43:41+00:00"
       },
       "hidden": true
     },
@@ -6109,9 +6337,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-East-West-Pipeline-Moves-58-Million-Barrels-as-Red-Sea-Route-Recovers.html",
-        "title": "Saudi East-West Pipeline Moves 5.8 Million Barrels as Red Sea Route Recovers",
-        "published_at": "2026-10-06T16:30:00+00:00"
+        "url": "https://www.rigzone.com/news/wire/oil_dips_as_middle_east_flows_recover-07-oct-2026-184796-article/?rss=true",
+        "title": "Oil Dips as Middle East Flows Recover",
+        "published_at": "2026-10-07T20:43:41+00:00"
       },
       "hidden": true
     },
