@@ -19,7 +19,13 @@ name: news feed ingest
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # The scheduler is only the RESTARTER now. Measured 25 Sep - 8 Oct 2026:
+    # GitHub fired this repo's */5 schedule once every ~3.5 h (median; worst
+    # 12.2 h), so the 5-minute cadence lives inside the job instead - each
+    # run is a daemon looping the ingest every 5 minutes for ~5.5 hours
+    # (tools/ingest_loop.sh), and a schedule tick that lands mid-daemon just
+    # QUEUES the next daemon behind it (the concurrency group below).
+    - cron: "*/30 * * * *"
   workflow_dispatch:        # lets Alex trigger a run by hand from the Actions tab
 
 permissions:
@@ -32,7 +38,7 @@ concurrency:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 350
 
     steps:
       - uses: actions/checkout@v4
@@ -45,48 +51,15 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run ingestion
+      - name: Ingest daemon (5-minute ticks for ~5.5 hours)
         env:
           ENTSOE_TOKEN: ${{ secrets.ENTSOE_TOKEN }}
           AGSI_KEY: ${{ secrets.AGSI_KEY }}
-        # touch .env first: on a machine with no .env the script creates a
-        # template and exits 0 so a human can fill it in - a desktop
-        # convenience that turns every CI run into a green no-op. An empty
-        # file satisfies the check; real env vars (the secrets above) win.
-        run: |
-          touch .env
-          python src/ingest.py
-
-      - name: Commit the feed if it changed
-        run: |
-          git config user.name  "pes-newsfeed"
-          git config user.email "actions@github.com"
-          git add data/news.json
-          if git diff --staged --quiet; then
-            echo "no change, nothing to commit"
-            exit 0
-          fi
-          git commit -m "feed update $(date -u +'%Y-%m-%dT%H:%MZ')"
-          # A push can fail transiently (GitHub-side 500s surface as git
-          # fatal / exit 128) or lose a race with the calendar job pushing
-          # between our rebase and our push. Rebase on whatever landed and
-          # retry a few times before calling the run failed. The old
-          # "pull --rebase || true" swallowed rebase errors and then let the
-          # push fail anyway - never mask the pull here.
-          # -X theirs: news.json is a regenerated artefact, so on a conflict
-          # THIS run's version wins (rebase flips ours/theirs - "theirs" is
-          # the commit being replayed, i.e. ours). Without it, re-running an
-          # old attempt (stale checkout SHA) conflicts on every retry.
-          for attempt in 1 2 3; do
-            if git pull --rebase --autostash -X theirs origin ${{ github.ref_name }} && git push; then
-              exit 0
-            fi
-            git rebase --abort 2>/dev/null || true
-            echo "push attempt ${attempt} failed - retrying"
-            sleep $((attempt * 10))
-          done
-          echo "push failed after 3 attempts" >&2
-          exit 1
+        # touch .env inside the loop: on a machine with no .env the script
+        # creates a template and exits 0 - an empty file satisfies the
+        # check; real env vars (the secrets above) win. Commit policy and
+        # push retries live in the loop script.
+        run: bash tools/ingest_loop.sh
 
   # Runs once a day and fails loudly if sources have gone dark. Feeds rot
   # silently otherwise: a dead URL just means fewer items, which looks like
