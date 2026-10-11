@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-11T09:44:17.306796+00:00",
-  "item_count": 225,
+  "generated_at": "2026-10-11T09:49:08.270156+00:00",
+  "item_count": 226,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "normal": 17
   },
-  "superseded_count": 62,
+  "superseded_count": 63,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,145 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 883
+        "ms": 1859
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 37862
+        "ms": 44452
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18377
+        "ms": 2510
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 153
+        "ms": 27
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 241
+        "ms": 324
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 366
+        "ms": 276
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 825
+        "ms": 881
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 379
+        "ms": 216
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 557
+        "ms": 487
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 117
+        "ms": 97
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 415
+        "ms": 409
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 132
+        "ms": 129
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 141
+        "ms": 86
       }
     ]
   },
   "items": [
+    {
+      "title": "Russia’s Yandex says data centre in Vladimir shut down after drone attack",
+      "url": "https://www.aljazeera.com/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack?traffic_source=rss",
+      "snippet": "Third strike on Yandex facilities in a week comes as Russia and Ukraine escalate attacks on tech infrastructure.",
+      "published_at": "2026-10-11T09:33:03+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 67,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 68.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "attack"
+        ],
+        "geography": [
+          "russia",
+          "ukraine"
+        ],
+        "unplanned": [
+          "shut down"
+        ],
+        "urgency": [
+          "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 4,
+      "thread_started_at": "2026-10-06T09:48:37+00:00"
+    },
     {
       "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
       "url": "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat?traffic_source=rss",
@@ -461,54 +511,6 @@
       "thread_started_at": "2026-09-30T14:00:00+00:00"
     },
     {
-      "title": "Emergency Oil Releases Risk Draining the World’s Last Supply Cushion",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Emergency-Oil-Releases-Risk-Draining-the-Worlds-Last-Supply-Cushion.html",
-      "snippet": "Earlier this week, the International Energy Agency, after consulting with G7, said it would release another 100 million barrels of diesel, gasoline, and crude oil. The release is part of a plan announced in March to release 400 million barrels of oil in response to the Hormuz squeeze. But there is a",
-      "published_at": "2026-10-10T23:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 69.7,
-        "recency_multiplier": 0.51
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "hormuz"
-        ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency",
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Hurricane Isaias: Four dead and thousands without power in US Southeast",
       "url": "https://www.aljazeera.com/news/2026/10/10/hurricane-isaias-leaves-two-dead-and-800000-without-power-in-us-southeast?traffic_source=rss",
       "snippet": "Storm damage stretches across Florida and Alabama as officials warn of continued flooding and possible tornadoes.",
@@ -727,6 +729,54 @@
         ],
         "geography": [
           "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Emergency Oil Releases Risk Draining the World’s Last Supply Cushion",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Emergency-Oil-Releases-Risk-Draining-the-Worlds-Last-Supply-Cushion.html",
+      "snippet": "Earlier this week, the International Energy Agency, after consulting with G7, said it would release another 100 million barrels of diesel, gasoline, and crude oil. The release is part of a plan announced in March to release 400 million barrels of oil in response to the Hormuz squeeze. But there is a",
+      "published_at": "2026-10-10T23:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 69.7,
+        "recency_multiplier": 0.51
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "hormuz"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency",
+          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -4503,7 +4553,7 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 10,
+      "update_count": 8,
       "thread_started_at": "2026-10-02T10:06:21+00:00"
     },
     {
@@ -4559,48 +4609,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Why is US turning to Russia for diesel despite sanctions?",
-      "url": "https://www.aljazeera.com/news/2026/10/10/why-is-us-turning-to-russia-for-diesel-despite-sanctions?traffic_source=rss",
-      "snippet": "President Donald Trump&#039;s deal with Putin comes amid surging fuel prices and looming US midterm elections.",
-      "published_at": "2026-10-10T12:16:12+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 23.5,
-        "recency_multiplier": 0.93
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "russia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-08T12:30:00+00:00"
     },
     {
       "title": "Israeli drone attack wounds six in Lebanon near Syria border",
@@ -7177,6 +7185,55 @@
       "hidden": true
     },
     {
+      "title": "Why is US turning to Russia for diesel despite sanctions?",
+      "url": "https://www.aljazeera.com/news/2026/10/10/why-is-us-turning-to-russia-for-diesel-despite-sanctions?traffic_source=rss",
+      "snippet": "President Donald Trump&#039;s deal with Putin comes amid surging fuel prices and looming US midterm elections.",
+      "published_at": "2026-10-10T12:16:12+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 23.5,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-10-08T12:30:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack?traffic_source=rss",
+        "title": "Russia’s Yandex says data centre in Vladimir shut down after drone attack",
+        "published_at": "2026-10-11T09:33:03+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "Photos: Thousands march across Europe to demand end to Israel’s war on Gaza",
       "url": "https://www.aljazeera.com/gallery/2026/10/10/photos-thousands-march-across-europe-to-demand-end-to-israels-war-on-gaza?traffic_source=rss",
       "snippet": "Demonstrations in London, Berlin, and Rome denounce ongoing Israeli attacks on Gaza &#039;ceasefire&#039; anniversary.",
@@ -7804,9 +7861,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/10/why-is-us-turning-to-russia-for-diesel-despite-sanctions?traffic_source=rss",
-        "title": "Why is US turning to Russia for diesel despite sanctions?",
-        "published_at": "2026-10-10T12:16:12+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack?traffic_source=rss",
+        "title": "Russia’s Yandex says data centre in Vladimir shut down after drone attack",
+        "published_at": "2026-10-11T09:33:03+00:00"
       },
       "hidden": true
     },
@@ -8708,9 +8765,9 @@
       "thread_started_at": "2026-10-04T12:09:04+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
-        "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
-        "published_at": "2026-10-11T01:41:29+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack?traffic_source=rss",
+        "title": "Russia’s Yandex says data centre in Vladimir shut down after drone attack",
+        "published_at": "2026-10-11T09:33:03+00:00"
       },
       "hidden": true
     },
@@ -8813,9 +8870,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
-        "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
-        "published_at": "2026-10-11T01:41:29+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack?traffic_source=rss",
+        "title": "Russia’s Yandex says data centre in Vladimir shut down after drone attack",
+        "published_at": "2026-10-11T09:33:03+00:00"
       },
       "hidden": true
     },
