@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-12T14:21:57.788397+00:00",
+  "generated_at": "2026-10-12T14:26:50.367216+00:00",
   "item_count": 251,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 24
+    "high": 1,
+    "normal": 23
   },
   "superseded_count": 77,
   "sources": {
@@ -17,21 +17,21 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1005
+        "ms": 1473
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 117840
+        "ms": 106618
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 17959
+        "ms": 21187
       },
       {
         "id": "ofgem",
@@ -45,83 +45,83 @@
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 269
+        "ms": 296
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 103
+        "ms": 221
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1001
+        "ms": 982
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 299
+        "ms": 313
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 551
+        "ms": 623
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 159
+        "ms": 127
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 347
+        "ms": 442
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 23,
+        "count": 24,
         "error": null,
-        "ms": 47
+        "ms": 85
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 162
+        "ms": 135
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, ZANDVLIET 1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/736efbc6-62db-4b7f-ae01-174004d05d93/1",
-      "snippet": "Published: 12.10.2026 13:59:22 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
-      "published_at": "2026-10-12T11:59:22+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, SAINT-GHISLAIN 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/adc21c09-6bbd-45c5-90bd-38d5138c52a4/2",
+      "snippet": "Published: 12.10.2026 16:19:40 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfil",
+      "published_at": "2026-10-12T14:19:40+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 65,
+      "score": 66,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -140,7 +140,8 @@
         ],
         "unplanned": [
           "unplanned",
-          "failure"
+          "failure",
+          "delay"
         ],
         "urgency": [
           "unplanned"
@@ -148,7 +149,7 @@
       },
       "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-10-12T11:31:05+00:00"
+      "first_seen_at": "2026-10-12T11:59:22+00:00"
     },
     {
       "title": "Oil Jumps 2% as Saudi Attacks and Tanker Strikes Revive Hormuz Fears",
@@ -208,7 +209,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 57,
       "tags": [
         "geopolitics",
         "oil_macro",
@@ -226,7 +227,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 57.0,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -321,7 +322,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.2,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.84
       },
       "matched": {
         "lng": [
@@ -474,47 +475,6 @@
       "thread_started_at": "2026-10-11T15:26:29+00:00"
     },
     {
-      "title": "Energy price cap: updating the time-of-use methodology",
-      "url": "https://www.ofgem.gov.uk/call-for-input/energy-price-cap-updating-time-use-methodology",
-      "snippet": "Our case for change and the broad options to update the time-of-use methodology in the price cap.",
-      "published_at": "2026-10-12T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 50,
-      "tags": [
-        "regulation",
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 27.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.6,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "regulation": [
-          "cap",
-          "price cap"
-        ],
-        "geopolitics": [
-          "price cap"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Can emergency reserves ease the diesel crisis?",
       "url": "https://www.aljazeera.com/video/counting-the-cost/2026/10/8/can-emergency-reserves-ease-the-diesel-crisis?traffic_source=rss",
       "snippet": "The G7 plans to release emergency fuel stocks as diesel shortages raise transport costs and squeeze household budgets.",
@@ -642,6 +602,47 @@
         ],
         "urgency": [
           "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Energy price cap: updating the time-of-use methodology",
+      "url": "https://www.ofgem.gov.uk/call-for-input/energy-price-cap-updating-time-use-methodology",
+      "snippet": "Our case for change and the broad options to update the time-of-use methodology in the price cap.",
+      "published_at": "2026-10-12T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "regulation",
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 27.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.6,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "regulation": [
+          "cap",
+          "price cap"
+        ],
+        "geopolitics": [
+          "price cap"
         ]
       },
       "duplicate_count": 0,
@@ -815,7 +816,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.7,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "lng": [
@@ -1660,7 +1661,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.7,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.68
       },
       "matched": {
         "regulation": [
@@ -2857,7 +2858,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.7,
-        "recency_multiplier": 0.54
+        "recency_multiplier": 0.53
       },
       "matched": {
         "lng": [
@@ -4398,7 +4399,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.2,
-        "recency_multiplier": 0.54
+        "recency_multiplier": 0.53
       },
       "matched": {
         "lng": [
@@ -7697,7 +7698,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.4,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
