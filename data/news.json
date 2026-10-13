@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-13T14:18:58.569573+00:00",
-  "item_count": 284,
+  "generated_at": "2026-10-13T16:42:54.900842+00:00",
+  "item_count": 291,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 21
+    "high": 0,
+    "normal": 27
   },
-  "superseded_count": 101,
+  "superseded_count": 104,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1194
+        "ms": 1250
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 106855
+        "ms": 104983
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 11511
+        "ms": 2983
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 257
+        "ms": 238
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 248
+        "ms": 412
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 172
+        "ms": 115
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 1590
+        "ms": 800
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 567
+        "ms": 290
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 645
+        "ms": 550
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 264
+        "ms": 145
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 476
+        "ms": 460
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 23,
+        "count": 25,
         "error": null,
-        "ms": 254
+        "ms": 67
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 231
+        "ms": 193
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 64,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.96
       },
       "matched": {
         "supply_disruption": [
@@ -152,53 +152,103 @@
       "first_seen_at": "2026-10-13T07:12:25+00:00"
     },
     {
-      "title": "Trump Defends Russian Diesel Deal as Energy Ceasefire Claims Unravel",
-      "url": "https://oilprice.com/Energy/Energy-General/Trump-Defends-Russian-Diesel-Deal-as-Energy-Ceasefire-Claims-Unravel.html",
-      "snippet": "US President Donald Trump, in the face of sharp criticism from officials in Ukraine, Europe, and even his Republican party, defended his decision to allow Russian diesel exports and insisted an energy cease-fire between Kyiv and Moscow is in place despite a lack of confirmation from either side. Spe",
-      "published_at": "2026-10-13T14:00:00+00:00",
+      "title": "Japanese Refiners Buy Middle East Crude Through Ship-to-Ship Transfers",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Japanese-Refiners-Buy-Middle-East-Crude-Through-Ship-to-Ship-Transfers.html",
+      "snippet": "Several Japanese oil tankers are returning to the Middle East to pick up crude cargoes for Japan’s refineries, but none of these are moving into the Persian Gulf through the Strait of Hormuz. Instead, a rising number of Japan-owned or Japan-bound tankers – most of which have steered clear of the Mid",
+      "published_at": "2026-10-13T14:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 57,
+      "score": 63,
       "tags": [
         "geopolitics",
-        "supply_disruption"
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 62.7,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz",
+          "persian gulf"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 4,
+      "thread_started_at": "2026-10-05T12:30:00+00:00"
+    },
+    {
+      "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+      "snippet": "Houthi attacks threaten Saudi oil infrastructure and Gulf shipping as Brent hovers near $105 per barrel. Trump’s Fuel-Price Problem Is Becoming a Political One - The Trump administration’s Russia diesel deal has failed to bring about substantial change in US fuel prices, triggering a 3-4% decline in",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 59,
+      "tags": [
+        "oil_macro"
       ],
       "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 8.8,
-        "themes": 14.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 20.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 52.8,
+        "raw": 54.7,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "geopolitics": [
-          "ceasefire"
-        ],
-        "supply_disruption": [
-          "fire"
+        "oil_macro": [
+          "brent",
+          "barrel"
         ],
         "geography": [
-          "europe"
+          "russia",
+          "gulf"
         ],
         "unplanned": [
-          "fire"
+          "failed"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 29,
-      "thread_started_at": "2026-09-30T14:00:00+00:00"
+      "update_count": 28,
+      "thread_started_at": "2026-09-30T16:00:00+00:00"
     },
     {
       "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
@@ -242,56 +292,95 @@
       "also_reported_by": []
     },
     {
-      "title": "DET kicks off maintenance at second Wilhelmshaven FSRU",
-      "url": "https://lngprime.com/europe/det-kicks-off-maintenance-at-second-wilhelmshaven-fsru/198364/",
-      "snippet": "Germany’s LNG import terminal operator, DET, has begun maintenance at its second FSRU-based terminal in Wilhelmshaven.",
-      "published_at": "2026-10-13T10:36:37+00:00",
+      "title": "Trump Defends Russian Diesel Deal as Energy Ceasefire Claims Unravel",
+      "url": "https://oilprice.com/Energy/Energy-General/Trump-Defends-Russian-Diesel-Deal-as-Energy-Ceasefire-Claims-Unravel.html",
+      "snippet": "US President Donald Trump, in the face of sharp criticism from officials in Ukraine, Europe, and even his Republican party, defended his decision to allow Russian diesel exports and insisted an energy cease-fire between Kyiv and Moscow is in place despite a lack of confirmation from either side. Spe",
+      "published_at": "2026-10-13T14:00:00+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 55,
       "tags": [
-        "infrastructure",
-        "lng",
+        "geopolitics",
         "supply_disruption"
       ],
       "alert": "normal",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 13.1,
-        "themes": 30.9,
+        "authority": 8.8,
+        "themes": 14.0,
         "geo_band": "secondary",
         "geography": 10.0,
-        "event_nature": 0.0,
+        "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 54.0,
-        "recency_multiplier": 0.88
+        "raw": 52.8,
+        "recency_multiplier": 0.95
       },
       "matched": {
-        "infrastructure": [
-          "terminal",
-          "import terminal"
-        ],
-        "lng": [
-          "lng",
-          "fsru"
+        "geopolitics": [
+          "ceasefire"
         ],
         "supply_disruption": [
-          "maintenance"
+          "fire"
         ],
         "geography": [
-          "germany"
+          "europe"
+        ],
+        "unplanned": [
+          "fire"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-10-05T06:25:58+00:00"
+      "update_count": 29,
+      "thread_started_at": "2026-09-30T14:00:00+00:00"
+    },
+    {
+      "title": "BBC FM radio transmissions suspended in Afghanistan",
+      "url": "https://www.bbc.co.uk/news/articles/cm8ezp4g7p6po?at_medium=RSS&at_campaign=rss",
+      "snippet": "BBC programming is still reaching audiences on shortwave, medium wave, via satellite and online.",
+      "published_at": "2026-10-13T12:13:57+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 54.6,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "supply_disruption": [
+          "suspended"
+        ],
+        "unplanned": [
+          "suspended"
+        ],
+        "urgency": [
+          "suspended"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Can emergency reserves ease the diesel crisis?",
@@ -433,85 +522,50 @@
       "also_reported_by": []
     },
     {
-      "title": "Equinor to feed Dutch grid with low-emission Norwegian gas through 2031",
-      "url": "https://offshore-energy.biz/2026/10/13/equinor-to-feed-dutch-grid-with-low-emission-norwegian-gas-through-2031",
-      "snippet": "Equinor has secured a multi-year deal to supply Eneco with roughly 0.9 billion cubic meters of Norwegian natural gas annually.",
-      "published_at": "2026-10-13T12:52:01+00:00",
+      "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+      "snippet": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+      "published_at": "2026-10-13T15:44:44+00:00",
       "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
-      "has_magnitude": true,
+      "has_magnitude": false,
       "score": 48,
       "tags": [
-        "infrastructure"
+        "geopolitics",
+        "lng"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 12.4,
-        "themes": 6.7,
+        "authority": 9.5,
+        "themes": 21.0,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 41.1,
+        "raw": 40.5,
         "recency_multiplier": 1.0
       },
       "matched": {
-        "infrastructure": [
-          "grid"
+        "geopolitics": [
+          "shadow fleet"
+        ],
+        "lng": [
+          "tanker"
         ],
         "geography": [
-          "dutch",
-          "norwegian"
+          "france"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Inter-array cable installation about to start at 2.9 GW UK offshore wind farm",
-      "url": "https://offshore-energy.biz/2026/10/13/inter-array-cable-installation-about-to-start-at-29-gw-uk-offshore-wind-farm",
-      "snippet": "Seaway7 is expected to start installing inter-array cables at the Hornsea 3 offshore wind farm site in the UK in the coming days. According to a...",
-      "published_at": "2026-10-13T10:20:47+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 48,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 6.7,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 47.1,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "infrastructure": [
-          "cable"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 9,
+      "thread_started_at": "2026-10-06T09:48:37+00:00"
     },
     {
       "title": "Lawyers for US inmate who survived lethal injections demand release",
@@ -556,6 +610,58 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "DET kicks off maintenance at second Wilhelmshaven FSRU",
+      "url": "https://lngprime.com/europe/det-kicks-off-maintenance-at-second-wilhelmshaven-fsru/198364/",
+      "snippet": "Germany’s LNG import terminal operator, DET, has begun maintenance at its second FSRU-based terminal in Wilhelmshaven.",
+      "published_at": "2026-10-13T10:36:37+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "infrastructure",
+        "lng",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 30.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 54.0,
+        "recency_multiplier": 0.73
+      },
+      "matched": {
+        "infrastructure": [
+          "terminal",
+          "import terminal"
+        ],
+        "lng": [
+          "lng",
+          "fsru"
+        ],
+        "supply_disruption": [
+          "maintenance"
+        ],
+        "geography": [
+          "germany"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-10-05T06:25:58+00:00"
     },
     {
       "title": "Northern Israel explosion kills at least 1 person, injures 19",
@@ -646,6 +752,56 @@
       ]
     },
     {
+      "title": "India's 97 GW Coal Expansion Plan Looks Too Small, Senior Official Says",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-97-GW-Coal-Expansion-Plan-Looks-Too-Small-Senior-Official-Says.html",
+      "snippet": "India may need to revise up its planned new coal-fired capacity installations through 2035 amid soaring electricity demand that needs grid stability and flexibility, a senior Indian official said on Tuesday. Last year, India planned to raise its coal-fired power capacity by a total of 97 gigawatts (",
+      "published_at": "2026-10-13T15:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 45,
+      "tags": [
+        "infrastructure",
+        "power_system",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 37.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "grid"
+        ],
+        "power_system": [
+          "flexibility"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-10-11T15:26:29+00:00"
+    },
+    {
       "title": "Execution of US woman Christa Pike fails after botched lethal injection",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/execution-of-us-woman-christa-pike-fails-after-botched-lethal-injection?traffic_source=rss",
       "snippet": "The high-profile execution of murderer Christa Pike is in disarray after two lethal injections failed to kill her.",
@@ -686,6 +842,92 @@
       "also_reported_by": []
     },
     {
+      "title": "Equinor to feed Dutch grid with low-emission Norwegian gas through 2031",
+      "url": "https://offshore-energy.biz/2026/10/13/equinor-to-feed-dutch-grid-with-low-emission-norwegian-gas-through-2031",
+      "snippet": "Equinor has secured a multi-year deal to supply Eneco with roughly 0.9 billion cubic meters of Norwegian natural gas annually.",
+      "published_at": "2026-10-13T12:52:01+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 44,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 6.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 41.1,
+        "recency_multiplier": 0.87
+      },
+      "matched": {
+        "infrastructure": [
+          "grid"
+        ],
+        "geography": [
+          "dutch",
+          "norwegian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "NND applies to take over Kjeller nuclear facilities",
+      "url": "https://www.world-nuclear-news.org/articles/nnd-applies-to-take-over-kjeller-nuclear-facilities",
+      "snippet": "Norwegian Nuclear Decommissioning has submitted a licence application to the country's nuclear regulator to take over responsibility for the nuclear facilities at Kjeller from the Institute of Energy Engineering ahead of their decommissioning.",
+      "published_at": "2026-10-13T12:30:19+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "nuclear",
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 18.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 42.1,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "decommissioning"
+        ],
+        "regulation": [
+          "licence"
+        ],
+        "geography": [
+          "norwegian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Drone attack sinks ship off Bulgaria’s Black Sea coast, PM says",
       "url": "https://www.aljazeera.com/news/2026/10/13/drone-attack-sinks-ship-off-bulgarias-black-sea-coast-pm-says?traffic_source=rss",
       "snippet": "Two ships were hit in the attack, including the Ukrainian-owned Chelsea 3, which sustained damage.",
@@ -722,7 +964,7 @@
           "damage"
         ]
       },
-      "duplicate_count": 15,
+      "duplicate_count": 16,
       "also_reported_by": [
         "BBC World"
       ]
@@ -907,47 +1149,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Taiwan’s LNG imports slightly down in September",
-      "url": "https://lngprime.com/asia/taiwans-lng-imports-slightly-down-in-september/198332/",
-      "snippet": "Taiwan’s monthly liquefied natural gas (LNG) imports fell slightly year-on-year in September, with Australia and the US supplying most of the volume, according to customs data.",
-      "published_at": "2026-10-13T10:59:14+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 20.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.9,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "lng imports"
-        ],
-        "geography": [
-          "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Ofgem appoints Tim Jarvis as Chief Executive",
       "url": "https://www.ofgem.gov.uk/press-release/ofgem-appoints-tim-jarvis-chief-executive",
       "snippet": "The Board of Ofgem has confirmed the appointment of Tim Jarvis as Chief Executive following a rigorous and competitive recruitment process.",
@@ -981,6 +1182,46 @@
         ],
         "urgency": [
           "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Inter-array cable installation about to start at 2.9 GW UK offshore wind farm",
+      "url": "https://offshore-energy.biz/2026/10/13/inter-array-cable-installation-about-to-start-at-29-gw-uk-offshore-wind-farm",
+      "snippet": "Seaway7 is expected to start installing inter-array cables at the Hornsea 3 offshore wind farm site in the UK in the coming days. According to a...",
+      "published_at": "2026-10-13T10:20:47+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 42,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 6.7,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 47.1,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "infrastructure": [
+          "cable"
+        ],
+        "geography": [
+          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -1079,6 +1320,44 @@
         ]
       },
       "duplicate_count": 1,
+      "also_reported_by": []
+    },
+    {
+      "title": "Shell, GTT, and Lloyd’s Register eye hybrid-electric LNG carrier design",
+      "url": "https://offshore-energy.biz/2026/10/13/shell-gtt-and-lloyds-register-eye-hybrid-electric-lng-carrier-design",
+      "snippet": "The trio has teamed up on a conceptual hybrid-electric tech 200,000-cubic-meter (cbm) LNG carrier to cut emissions without sacrificing cargo space.",
+      "published_at": "2026-10-13T14:14:12+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 41,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 21.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.2,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargo",
+          "carrier"
+        ]
+      },
+      "duplicate_count": 0,
       "also_reported_by": []
     },
     {
@@ -1266,46 +1545,6 @@
       "thread_started_at": "2026-10-05T20:07:58+00:00"
     },
     {
-      "title": "Agreement signed on second Polish nuclear power plant",
-      "url": "https://www.world-nuclear-news.org/articles/agreement-signed-on-second-polish-nuclear-power-plant",
-      "snippet": "Poland's Ministry of Energy, Polskie Elektrownie Jądrowe and Polska Grupa Energetyczna have signed an agreement defining the division of tasks and principles of cooperation in preparing the construction of the country's second nuclear power plant.",
-      "published_at": "2026-10-13T13:46:42+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.1,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "poland"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "DOE offers Vistra loan for reactor upgrades and uprates",
       "url": "https://www.world-nuclear-news.org/articles/doe-offers-vistra-loan-for-reactor-upgrades-and-uprates",
       "snippet": "The US Department of Energy has announced a conditional loan commitment of up to USD4.2 billion to finance uprates and modernisation projects at Vistra Corp's Beaver Valley, Davis-Besse and Perry nuclear power plants.",
@@ -1380,6 +1619,47 @@
         ],
         "geography": [
           "poland"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Taiwan’s LNG imports slightly down in September",
+      "url": "https://lngprime.com/asia/taiwans-lng-imports-slightly-down-in-september/198332/",
+      "snippet": "Taiwan’s monthly liquefied natural gas (LNG) imports fell slightly year-on-year in September, with Australia and the US supplying most of the volume, according to customs data.",
+      "published_at": "2026-10-13T10:59:14+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 20.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.9,
+        "recency_multiplier": 0.75
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng imports"
+        ],
+        "geography": [
+          "australia"
         ]
       },
       "duplicate_count": 0,
@@ -1840,55 +2120,44 @@
       "also_reported_by": []
     },
     {
-      "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
-      "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
-      "snippet": "Warsaw says the 2 suspects held in Germany will face sabotage charges.",
-      "published_at": "2026-10-12T22:44:00+00:00",
+      "title": "Agreement signed on second Polish nuclear power plant",
+      "url": "https://www.world-nuclear-news.org/articles/agreement-signed-on-second-polish-nuclear-power-plant",
+      "snippet": "Poland's Ministry of Energy, Polskie Elektrownie Jądrowe and Polska Grupa Energetyczna have signed an agreement defining the division of tasks and principles of cooperation in preparing the construction of the country's second nuclear power plant.",
+      "published_at": "2026-10-13T13:46:42+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
       "tier": 2,
       "has_magnitude": false,
       "score": 37,
       "tags": [
-        "geopolitics",
-        "supply_disruption"
+        "nuclear"
       ],
       "alert": "low",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 14.0,
+        "authority": 13.9,
+        "themes": 7.3,
         "geo_band": "secondary",
         "geography": 10.0,
-        "event_nature": 20.0,
+        "event_nature": 0.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 53.5,
-        "recency_multiplier": 0.53
+        "raw": 31.1,
+        "recency_multiplier": 0.93
       },
       "matched": {
-        "geopolitics": [
-          "sabotage"
-        ],
-        "supply_disruption": [
-          "fire"
+        "nuclear": [
+          "nuclear"
         ],
         "geography": [
-          "germany",
           "poland"
-        ],
-        "unplanned": [
-          "fire",
-          "sabotage"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 5,
-      "thread_started_at": "2026-10-06T09:48:37+00:00"
+      "also_reported_by": []
     },
     {
       "title": "New York Mayor Mamdani under fire for attending October 7 vigil",
@@ -2135,114 +2404,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Super El Niño Could Ease Asia’s LNG Supply Concerns",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Super-El-Nio-Could-Ease-Asias-LNG-Supply-Concerns.html",
-      "snippet": "The super El Niño is expected to raise the winter temperatures in South Korea, Japan, and parts of China, potentially easing the gas supply needs in these key Asian LNG importers and leaving more cargoes for Europe, which struggles to fill its gas storage sites to adequate levels for this time of ye",
-      "published_at": "2026-10-13T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "lng",
-        "gas_storage",
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 20.7,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 27.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "weather": [
-          "temperatures"
-        ],
-        "geography": [
-          "europe"
-        ],
-        "speculative": [
-          "could"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 7,
-      "thread_started_at": "2026-10-05T12:30:00+00:00"
-    },
-    {
-      "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-      "snippet": "Saudi Arabia plans to raise the capacity of its East-West onshore oil pipeline that helps it bypass the Strait of Hormuz to 10 million barrels per day (bpd) within two to three years, Saudi Energy Minister Prince Abdulaziz bin Salman said at the WPC Energy Congress in Riyadh. The pipeline, which ret",
-      "published_at": "2026-10-13T09:20:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics",
-        "infrastructure",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 22.2,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 35.0,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "barrels"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "speculative": [
-          "plans to"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 27,
-      "thread_started_at": "2026-09-30T16:00:00+00:00"
     },
     {
       "title": "U.S. Crude Stocks Dip But Distillates Hold Steady",
@@ -3177,54 +3338,56 @@
       "also_reported_by": []
     },
     {
-      "title": "CREA: India Curtailed Over 4% of Its Solar Output in July and August",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/CREA-India-Curtailed-Over-4-of-Its-Solar-Output-in-July-and-August.html",
-      "snippet": "India’s record renewable power generation and solar output were overshadowed by curtailments in July and August when India experienced power availability shortages. Over 4% of the solar power generated in July and August had to be curtailed because of grid and operational constraints, the Finland-ba",
-      "published_at": "2026-10-12T13:30:00+00:00",
+      "title": "Super El Niño Could Ease Asia’s LNG Supply Concerns",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Super-El-Nio-Could-Ease-Asias-LNG-Supply-Concerns.html",
+      "snippet": "The super El Niño is expected to raise the winter temperatures in South Korea, Japan, and parts of China, potentially easing the gas supply needs in these key Asian LNG importers and leaving more cargoes for Europe, which struggles to fill its gas storage sites to adequate levels for this time of ye",
+      "published_at": "2026-10-13T13:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
+      "has_magnitude": false,
       "score": 33,
       "tags": [
-        "power_system",
-        "supply_disruption",
-        "infrastructure"
+        "lng",
+        "gas_storage",
+        "weather"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 17.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
+        "themes": 20.7,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 43.6,
-        "recency_multiplier": 0.56
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 27.5,
+        "recency_multiplier": 0.91
       },
       "matched": {
-        "power_system": [
-          "solar output"
+        "lng": [
+          "lng",
+          "cargoes"
         ],
-        "supply_disruption": [
-          "curtailed"
+        "gas_storage": [
+          "storage"
         ],
-        "infrastructure": [
-          "grid"
+        "weather": [
+          "temperatures"
         ],
         "geography": [
-          "india"
+          "europe"
+        ],
+        "speculative": [
+          "could"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-10-11T15:26:29+00:00"
+      "also_reported_by": []
     },
     {
       "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
@@ -8036,7 +8199,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 15,
+      "score": 13,
       "tags": [
         "geopolitics",
         "lng",
@@ -8054,7 +8217,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 67.1,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.52
       },
       "matched": {
         "geopolitics": [
@@ -8077,9 +8240,183 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Super-El-Nio-Could-Ease-Asias-LNG-Supply-Concerns.html",
-        "title": "Super El Niño Could Ease Asia’s LNG Supply Concerns",
-        "published_at": "2026-10-13T13:30:00+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Japanese-Refiners-Buy-Middle-East-Crude-Through-Ship-to-Ship-Transfers.html",
+        "title": "Japanese Refiners Buy Middle East Crude Through Ship-to-Ship Transfers",
+        "published_at": "2026-10-13T14:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
+      "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
+      "snippet": "Warsaw says the 2 suspects held in Germany will face sabotage charges.",
+      "published_at": "2026-10-12T22:44:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 14.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.5,
+        "recency_multiplier": 0.53
+      },
+      "matched": {
+        "geopolitics": [
+          "sabotage"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "germany",
+          "poland"
+        ],
+        "unplanned": [
+          "fire",
+          "sabotage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 5,
+      "thread_started_at": "2026-10-06T09:48:37+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+        "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+        "published_at": "2026-10-13T15:44:44+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "CREA: India Curtailed Over 4% of Its Solar Output in July and August",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/CREA-India-Curtailed-Over-4-of-Its-Solar-Output-in-July-and-August.html",
+      "snippet": "India’s record renewable power generation and solar output were overshadowed by curtailments in July and August when India experienced power availability shortages. Over 4% of the solar power generated in July and August had to be curtailed because of grid and operational constraints, the Finland-ba",
+      "published_at": "2026-10-12T13:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 10,
+      "tags": [
+        "power_system",
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 17.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 43.6,
+        "recency_multiplier": 0.56
+      },
+      "matched": {
+        "power_system": [
+          "solar output"
+        ],
+        "supply_disruption": [
+          "curtailed"
+        ],
+        "infrastructure": [
+          "grid"
+        ],
+        "geography": [
+          "india"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-10-11T15:26:29+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-97-GW-Coal-Expansion-Plan-Looks-Too-Small-Senior-Official-Says.html",
+        "title": "India's 97 GW Coal Expansion Plan Looks Too Small, Senior Official Says",
+        "published_at": "2026-10-13T15:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
+      "snippet": "Saudi Arabia plans to raise the capacity of its East-West onshore oil pipeline that helps it bypass the Strait of Hormuz to 10 million barrels per day (bpd) within two to three years, Saudi Energy Minister Prince Abdulaziz bin Salman said at the WPC Energy Congress in Riyadh. The pipeline, which ret",
+      "published_at": "2026-10-13T09:20:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics",
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.2,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 35.0,
+        "recency_multiplier": 0.66
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "plans to"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -8180,9 +8517,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -8279,9 +8616,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -8379,9 +8716,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -8442,9 +8779,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -8663,9 +9000,9 @@
       "thread_started_at": "2026-10-01T19:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Super-El-Nio-Could-Ease-Asias-LNG-Supply-Concerns.html",
-        "title": "Super El Niño Could Ease Asia’s LNG Supply Concerns",
-        "published_at": "2026-10-13T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+        "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+        "published_at": "2026-10-13T15:44:44+00:00"
       },
       "hidden": true
     },
@@ -8714,9 +9051,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/CREA-India-Curtailed-Over-4-of-Its-Solar-Output-in-July-and-August.html",
-        "title": "CREA: India Curtailed Over 4% of Its Solar Output in July and August",
-        "published_at": "2026-10-12T13:30:00+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-97-GW-Coal-Expansion-Plan-Looks-Too-Small-Senior-Official-Says.html",
+        "title": "India's 97 GW Coal Expansion Plan Looks Too Small, Senior Official Says",
+        "published_at": "2026-10-13T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -8860,9 +9197,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/CREA-India-Curtailed-Over-4-of-Its-Solar-Output-in-July-and-August.html",
-        "title": "CREA: India Curtailed Over 4% of Its Solar Output in July and August",
-        "published_at": "2026-10-12T13:30:00+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-97-GW-Coal-Expansion-Plan-Looks-Too-Small-Senior-Official-Says.html",
+        "title": "India's 97 GW Coal Expansion Plan Looks Too Small, Senior Official Says",
+        "published_at": "2026-10-13T15:30:00+00:00"
       },
       "hidden": true
     },
@@ -8904,9 +9241,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -8961,9 +9298,9 @@
       "thread_started_at": "2026-10-06T09:48:37+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
-        "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
-        "published_at": "2026-10-12T22:44:00+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+        "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+        "published_at": "2026-10-13T15:44:44+00:00"
       },
       "hidden": true
     },
@@ -9173,9 +9510,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Super-El-Nio-Could-Ease-Asias-LNG-Supply-Concerns.html",
-        "title": "Super El Niño Could Ease Asia’s LNG Supply Concerns",
-        "published_at": "2026-10-13T13:30:00+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Japanese-Refiners-Buy-Middle-East-Crude-Through-Ship-to-Ship-Transfers.html",
+        "title": "Japanese Refiners Buy Middle East Crude Through Ship-to-Ship Transfers",
+        "published_at": "2026-10-13T14:30:00+00:00"
       },
       "hidden": true
     },
@@ -9274,9 +9611,9 @@
       "thread_started_at": "2026-10-08T12:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
-        "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
-        "published_at": "2026-10-12T22:44:00+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+        "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+        "published_at": "2026-10-13T15:44:44+00:00"
       },
       "hidden": true
     },
@@ -9373,9 +9710,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Super-El-Nio-Could-Ease-Asias-LNG-Supply-Concerns.html",
-        "title": "Super El Niño Could Ease Asia’s LNG Supply Concerns",
-        "published_at": "2026-10-13T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+        "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+        "published_at": "2026-10-13T15:44:44+00:00"
       },
       "hidden": true
     },
@@ -9784,9 +10121,9 @@
       "thread_started_at": "2026-10-01T11:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -9831,9 +10168,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -9940,9 +10277,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -10155,9 +10492,9 @@
       "thread_started_at": "2026-10-05T12:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Super-El-Nio-Could-Ease-Asias-LNG-Supply-Concerns.html",
-        "title": "Super El Niño Could Ease Asia’s LNG Supply Concerns",
-        "published_at": "2026-10-13T13:30:00+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Japanese-Refiners-Buy-Middle-East-Crude-Through-Ship-to-Ship-Transfers.html",
+        "title": "Japanese Refiners Buy Middle East Crude Through Ship-to-Ship Transfers",
+        "published_at": "2026-10-13T14:30:00+00:00"
       },
       "hidden": true
     },
@@ -10261,9 +10598,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
-        "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
-        "published_at": "2026-10-12T22:44:00+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+        "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+        "published_at": "2026-10-13T15:44:44+00:00"
       },
       "hidden": true
     },
@@ -10658,9 +10995,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true,
       "update_count": 14,
@@ -10912,9 +11249,9 @@
       "thread_started_at": "2026-10-01T19:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Super-El-Nio-Could-Ease-Asias-LNG-Supply-Concerns.html",
-        "title": "Super El Niño Could Ease Asia’s LNG Supply Concerns",
-        "published_at": "2026-10-13T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+        "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+        "published_at": "2026-10-13T15:44:44+00:00"
       },
       "hidden": true
     },
@@ -11027,9 +11364,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -11243,9 +11580,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -11304,9 +11641,9 @@
       "thread_started_at": "2026-10-01T19:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -11357,9 +11694,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -11408,9 +11745,9 @@
       "thread_started_at": "2026-10-04T12:09:04+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
-        "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
-        "published_at": "2026-10-12T22:44:00+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+        "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+        "published_at": "2026-10-13T15:44:44+00:00"
       },
       "hidden": true
     },
@@ -11513,9 +11850,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
-        "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
-        "published_at": "2026-10-12T22:44:00+00:00"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+        "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+        "published_at": "2026-10-13T15:44:44+00:00"
       },
       "hidden": true
     },
@@ -11668,9 +12005,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -11873,9 +12210,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -11921,9 +12258,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Super-El-Nio-Could-Ease-Asias-LNG-Supply-Concerns.html",
-        "title": "Super El Niño Could Ease Asia’s LNG Supply Concerns",
-        "published_at": "2026-10-13T13:30:00+00:00"
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Japanese-Refiners-Buy-Middle-East-Crude-Through-Ship-to-Ship-Transfers.html",
+        "title": "Japanese Refiners Buy Middle East Crude Through Ship-to-Ship Transfers",
+        "published_at": "2026-10-13T14:30:00+00:00"
       },
       "hidden": true
     },
@@ -12023,9 +12360,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -12184,9 +12521,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -12233,9 +12570,9 @@
       "thread_started_at": "2026-10-01T19:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -12383,9 +12720,9 @@
       "thread_started_at": "2026-09-30T14:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -12548,9 +12885,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -12712,9 +13049,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -12758,9 +13095,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -12814,9 +13151,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -12909,9 +13246,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -12957,9 +13294,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -13113,9 +13450,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
@@ -13223,9 +13560,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Plans-Massive-Expansion-of-Oil-Pipeline-to-Bypass-Hormuz.html",
-        "title": "Saudi Arabia Plans Massive Expansion of Oil Pipeline to Bypass Hormuz",
-        "published_at": "2026-10-13T09:20:00+00:00"
+        "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+        "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+        "published_at": "2026-10-13T15:00:00+00:00"
       },
       "hidden": true
     },
