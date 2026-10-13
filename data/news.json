@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-10-13T23:27:58.721189+00:00",
+  "generated_at": "2026-10-13T23:32:49.210453+00:00",
   "item_count": 298,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 22
+    "normal": 21
   },
   "superseded_count": 108,
   "sources": {
-    "healthy": 11,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1033
+        "ms": 1115
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 65780
+        "ms": 84772
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2925
+        "ms": 2933
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 168
+        "ms": 476
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 292
+        "ms": 350
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 339
+        "ms": 278
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 1074
+        "ms": 1112
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
-        "ms": 10170
+        "ok": true,
+        "count": 50,
+        "error": null,
+        "ms": 1190
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 644
+        "ms": 589
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20177
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 231
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 450
+        "ms": 514
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 139
+        "ms": 129
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 326
+        "ms": 219
       }
     ]
   },
@@ -522,7 +522,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 46,
+      "score": 45,
       "tags": [
         "supply_disruption"
       ],
@@ -941,53 +941,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
-      "snippet": "Houthi attacks threaten Saudi oil infrastructure and Gulf shipping as Brent hovers near $105 per barrel. Trump’s Fuel-Price Problem Is Becoming a Political One - The Trump administration’s Russia diesel deal has failed to bring about substantial change in US fuel prices, triggering a 3-4% decline in",
-      "published_at": "2026-10-13T15:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 42,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 54.7,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "oil_macro": [
-          "brent",
-          "barrel"
-        ],
-        "geography": [
-          "russia",
-          "gulf"
-        ],
-        "unplanned": [
-          "failed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 28,
-      "thread_started_at": "2026-09-30T16:00:00+00:00"
-    },
-    {
       "title": "Crude oil prices and refinery margins generally increased throughout the third quarter",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68245",
       "snippet": "Petroleum markets in the third quarter of 2026 (3Q26) were characterized by increasing prices for crude oil and petroleum products amid persistent conflict in the Middle East.",
@@ -1081,6 +1034,53 @@
       },
       "duplicate_count": 1,
       "also_reported_by": []
+    },
+    {
+      "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+      "snippet": "Houthi attacks threaten Saudi oil infrastructure and Gulf shipping as Brent hovers near $105 per barrel. Trump’s Fuel-Price Problem Is Becoming a Political One - The Trump administration’s Russia diesel deal has failed to bring about substantial change in US fuel prices, triggering a 3-4% decline in",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 54.7,
+        "recency_multiplier": 0.6
+      },
+      "matched": {
+        "oil_macro": [
+          "brent",
+          "barrel"
+        ],
+        "geography": [
+          "russia",
+          "gulf"
+        ],
+        "unplanned": [
+          "failed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 28,
+      "thread_started_at": "2026-09-30T16:00:00+00:00"
     },
     {
       "title": "QatarEnergy Secures $3 Billion Loan From Chinese Banks as LNG Exports Stall",
@@ -8320,7 +8320,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 14,
+      "score": 13,
       "tags": [
         "geopolitics",
         "lng",
