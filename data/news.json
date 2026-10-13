@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-13T07:13:18.139850+00:00",
-  "item_count": 266,
+  "generated_at": "2026-10-13T08:53:35.975709+00:00",
+  "item_count": 273,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 18
+    "high": 1,
+    "normal": 20
   },
-  "superseded_count": 92,
+  "superseded_count": 96,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,192 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 889
+        "ms": 1303
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 100291
+        "ms": 91722
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 2275
+        "ms": 3236
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 180
+        "ms": 339
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 316
+        "ms": 637
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 77
+        "ms": 333
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 47,
         "error": null,
-        "ms": 1120
+        "ms": 1157
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 295
+        "ms": 367
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 525
+        "ms": 695
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 132
+        "ms": 216
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 431
+        "ms": 530
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 37,
+        "count": 38,
         "error": null,
-        "ms": 76
+        "ms": 146
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 115
+        "ms": 147
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, ZANDVLIET 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/736efbc6-62db-4b7f-ae01-174004d05d93/2",
+      "snippet": "Published: 13.10.2026 09:12:25 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-10-13T07:12:25+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-12T15:13:16+00:00"
+    },
+    {
+      "title": "Wood Mackenzie: South Asia LNG demand growth derailed due to Middle East conflict",
+      "url": "https://lngprime.com/asia/wood-mackenzie-south-asia-lng-demand-growth-derailed-due-to-middle-east-conflict/198352/",
+      "snippet": "South Asian LNG markets have absorbed one of the most severe supply shocks in the history of the global gas trade, as the war in the Middle East and the closure of the Strait of Hormuz cut off Qatari and UAE LNG flows to a region that had made itself critically dependent on them, according to a new ",
+      "published_at": "2026-10-13T06:15:11+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 64,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 37.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 67.1,
+        "recency_multiplier": 0.95
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 6,
+      "thread_started_at": "2026-10-05T12:30:00+00:00"
+    },
     {
       "title": "Oil tanker reportedly attacked in Strait of Hormuz region",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/oil-tanker-reportedly-attacked-in-strait-of-hormuz-region?traffic_source=rss",
@@ -198,6 +295,46 @@
         ],
         "geography": [
           "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Drone attack sinks ship off Bulgaria’s Black Sea coast, PM says",
+      "url": "https://www.aljazeera.com/news/2026/10/13/drone-attack-sinks-ship-off-bulgarias-black-sea-coast-pm-says?traffic_source=rss",
+      "snippet": "Two ships were hit in the attack, including the Ukrainian-owned Chelsea 3, which sustained damage.",
+      "published_at": "2026-10-13T07:36:38+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 53,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "attack"
+        ],
+        "unplanned": [
+          "damage"
         ]
       },
       "duplicate_count": 0,
@@ -429,6 +566,47 @@
         ],
         "unplanned": [
           "failed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Taiwan’s LNG imports slightly down in September",
+      "url": "https://lngprime.com/asia/taiwans-lng-imports-slightly-down-in-september/198332/",
+      "snippet": "Taiwan’s monthly liquefied natural gas (LNG) imports fell slightly year-on-year in September, with Australia and the US supplying most of the volume, according to customs data.",
+      "published_at": "2026-10-13T07:30:14+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 47,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 20.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "lng imports"
+        ],
+        "geography": [
+          "australia"
         ]
       },
       "duplicate_count": 0,
@@ -742,50 +920,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Germany’s HEH offers additional Stade LNG long-term capacity",
-      "url": "https://lngprime.com/europe/germanys-heh-offers-additional-stade-lng-long-term-capacity/198324/",
-      "snippet": "Germany’s Hanseatic Energy Hub will offer additional long-term capacity to the market at its land-based liquefied natural gas (LNG) terminal in Stade.",
-      "published_at": "2026-10-13T06:24:22+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 11.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.5,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "terminal"
-        ],
-        "geography": [
-          "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Ofgem appoints Tim Jarvis as Chief Executive",
       "url": "https://www.ofgem.gov.uk/press-release/ofgem-appoints-tim-jarvis-chief-executive",
       "snippet": "The Board of Ofgem has confirmed the appointment of Tim Jarvis as Chief Executive following a rigorous and competitive recruitment process.",
@@ -920,109 +1054,48 @@
       "also_reported_by": []
     },
     {
-      "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
-      "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
-      "snippet": "Warsaw says the 2 suspects held in Germany will face sabotage charges.",
-      "published_at": "2026-10-12T22:44:00+00:00",
+      "title": "Germany’s HEH offers additional Stade LNG long-term capacity",
+      "url": "https://lngprime.com/europe/germanys-heh-offers-additional-stade-lng-long-term-capacity/198324/",
+      "snippet": "Germany’s Hanseatic Energy Hub will offer additional long-term capacity to the market at its land-based liquefied natural gas (LNG) terminal in Stade.",
+      "published_at": "2026-10-13T06:24:22+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
       "score": 41,
       "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 14.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 53.5,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "geopolitics": [
-          "sabotage"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "geography": [
-          "germany",
-          "poland"
-        ],
-        "unplanned": [
-          "fire",
-          "sabotage"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 8,
-      "thread_started_at": "2026-10-06T09:48:37+00:00"
-    },
-    {
-      "title": "Global Coal Demand Rises as LNG Shortage Deepens",
-      "url": "https://oilprice.com/Energy/Natural-Gas/Global-Coal-Demand-Rises-as-LNG-Shortage-Deepens.html",
-      "snippet": "Liquefied natural gas flows from the Persian Gulf are still over 75% lower than they were before February 28th. Yet heating demand is rising ahead of winter. In Europe, the November natural gas benchmark contract is trading at over 81 euros per MWh. In Asia, the spot market LNG price topped prices f",
-      "published_at": "2026-10-12T22:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 41,
-      "tags": [
-        "geopolitics",
-        "weather",
         "lng",
-        "oil_macro"
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 26.9,
+        "authority": 13.1,
+        "themes": 11.3,
         "geo_band": "secondary",
         "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 12.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 57.7,
-        "recency_multiplier": 0.57
+        "raw": 34.5,
+        "recency_multiplier": 0.96
       },
       "matched": {
-        "geopolitics": [
-          "persian gulf"
-        ],
-        "weather": [
-          "heating demand"
-        ],
         "lng": [
           "lng"
         ],
-        "oil_macro": [
-          "demand"
+        "infrastructure": [
+          "terminal"
         ],
         "geography": [
-          "europe"
+          "germany"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 4,
-      "thread_started_at": "2026-10-07T20:00:00+00:00"
+      "also_reported_by": []
     },
     {
       "title": "QatarEnergy Secures $3 Billion Loan From Chinese Banks as LNG Exports Stall",
@@ -1209,6 +1282,48 @@
       "thread_started_at": "2026-10-05T20:07:58+00:00"
     },
     {
+      "title": "GSI delivers new LNG-fueled PCTC to HMM and Hyundai Glovis",
+      "url": "https://lngprime.com/asia/gsi-delivers-new-lng-fueled-pctc-to-hmm-and-hyundai-glovis/198347/",
+      "snippet": "China’s Guangzhou Shipyard International has handed over a new LNG-fueled pure car and truck carrier to South Korea's HMM and Hyundai Glovis.",
+      "published_at": "2026-10-13T06:00:54+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.7,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "geography": [
+          "china",
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "DOE offers Vistra loan for reactor upgrades and uprates",
       "url": "https://www.world-nuclear-news.org/articles/doe-offers-vistra-loan-for-reactor-upgrades-and-uprates",
       "snippet": "The US Department of Energy has announced a conditional loan commitment of up to USD4.2 billion to finance uprates and modernisation projects at Vistra Corp's Beaver Valley, Davis-Besse and Perry nuclear power plants.",
@@ -1283,6 +1398,133 @@
         ],
         "geography": [
           "poland"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Oil Carriers Linked to Japan Return to MidEast",
+      "url": "https://www.rigzone.com/news/wire/oil_carriers_linked_to_japan_return_to_mideast-13-oct-2026-184831-article/?rss=true",
+      "snippet": "Oil tankers with links to Japan appear to be picking up Middle East cargoes directly in the region once again, a tentative but significant return for the first time since the war began in February that speaks to soaring freight and logistics costs.",
+      "published_at": "2026-10-13T08:44:10+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 13.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "geography": [
+          "japan",
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-10-08T06:10:44+00:00"
+    },
+    {
+      "title": "2002-built jack-up comes to Asian yard for MOPU conversion ahead of gas field deployment",
+      "url": "https://offshore-energy.biz/2026/10/13/2002-built-jack-up-comes-to-asian-yard-for-mopu-conversion-ahead-of-gas-field-deployment",
+      "snippet": "A 24-year-old jack-up will undergo a rig-to-MOPU conversion before it embarks on its upcoming job at a gas development in Southeast Asia.",
+      "published_at": "2026-10-13T07:52:48+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 12.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "gas field"
+        ],
+        "geography": [
+          "asia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "North Sea operator appoints DOF for subsea decommissioning",
+      "url": "https://offshore-energy.biz/2026/10/13/north-sea-operator-appoints-dof-for-subsea-decommissioning",
+      "snippet": "Norway's DOF Group has been awarded a contract it describes as significant to deliver a subsea decommissioning campaign for a North Sea operator....",
+      "published_at": "2026-10-13T07:35:14+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "nuclear": [
+          "decommissioning"
+        ],
+        "geography": [
+          "norway"
         ]
       },
       "duplicate_count": 0,
@@ -1743,6 +1985,111 @@
       "also_reported_by": []
     },
     {
+      "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
+      "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
+      "snippet": "Warsaw says the 2 suspects held in Germany will face sabotage charges.",
+      "published_at": "2026-10-12T22:44:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 14.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 53.5,
+        "recency_multiplier": 0.53
+      },
+      "matched": {
+        "geopolitics": [
+          "sabotage"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "germany",
+          "poland"
+        ],
+        "unplanned": [
+          "fire",
+          "sabotage"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 5,
+      "thread_started_at": "2026-10-06T09:48:37+00:00"
+    },
+    {
+      "title": "Global Coal Demand Rises as LNG Shortage Deepens",
+      "url": "https://oilprice.com/Energy/Natural-Gas/Global-Coal-Demand-Rises-as-LNG-Shortage-Deepens.html",
+      "snippet": "Liquefied natural gas flows from the Persian Gulf are still over 75% lower than they were before February 28th. Yet heating demand is rising ahead of winter. In Europe, the November natural gas benchmark contract is trading at over 81 euros per MWh. In Asia, the spot market LNG price topped prices f",
+      "published_at": "2026-10-12T22:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 37,
+      "tags": [
+        "geopolitics",
+        "weather",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 26.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 57.7,
+        "recency_multiplier": 0.5
+      },
+      "matched": {
+        "geopolitics": [
+          "persian gulf"
+        ],
+        "weather": [
+          "heating demand"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 4,
+      "thread_started_at": "2026-10-07T20:00:00+00:00"
+    },
+    {
       "title": "New York Mayor Mamdani under fire for attending October 7 vigil",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/new-york-mayor-mamdani-under-fire-for-attending-october-7-vigil?traffic_source=rss",
       "snippet": "New York City’s Mayor Zohran Mamdani was met by crowds calling him a ‘traitor’ for attending a vigil for October 7.",
@@ -1987,50 +2334,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Oil Prices Retreat as Saudi Arabia Pledges to Keep Exports Flowing",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Retreat-as-Saudi-Arabia-Pledges-to-Keep-Exports-Flowing.html",
-      "snippet": "Crude oil prices, which topped $106 per barrel yesterday, have eased today, as traders process the latest Houthi attacks on Saudi Arabia and the related risk to energy supply, while also waiting to see if the Russian diesel deal would affect end prices. At the time of writing, Brent crude was tradin",
-      "published_at": "2026-10-13T05:38:59+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.4,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.2,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "geography": [
-          "russian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-12T16:50:00+00:00"
     },
     {
       "title": "U.S. Crude Stocks Dip But Distillates Hold Steady",
@@ -2588,57 +2891,6 @@
       "also_reported_by": []
     },
     {
-      "title": "European Natural Gas Prices Headed for Multi-Year Highs",
-      "url": "https://oilprice.com/Energy/Natural-Gas/European-Natural-Gas-Prices-Headed-for-Multi-Year-Highs.html",
-      "snippet": "Europe's main natural gas price benchmark is headed for multi-year highs despite the \"energy ceasefire\" reported between Russia and Ukraine over the weekend and improving Strait of Hormuz energy flows. Europe is heading into the Northern Hemisphere winter without Qatari LNG exports and with storage ",
-      "published_at": "2026-10-12T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 40.4,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 65.2,
-        "recency_multiplier": 0.39
-      },
-      "matched": {
-        "geopolitics": [
-          "ceasefire",
-          "strait of hormuz"
-        ],
-        "lng": [
-          "lng",
-          "lng exports"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Ireland Catholic residents react to UK ban on Protestant march",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/ireland-catholic-residents-react-to-uk-ban-on-protestant-march?traffic_source=rss",
       "snippet": "Ireland Catholic residents react to UK ban on Protestant march",
@@ -2973,6 +3225,50 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Oil Prices Retreat as Saudi Arabia Pledges to Keep Exports Flowing",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Retreat-as-Saudi-Arabia-Pledges-to-Keep-Exports-Flowing.html",
+      "snippet": "Crude oil prices, which topped $106 per barrel yesterday, have eased today, as traders process the latest Houthi attacks on Saudi Arabia and the related risk to energy supply, while also waiting to see if the Russian diesel deal would affect end prices. At the time of writing, Brent crude was tradin",
+      "published_at": "2026-10-13T05:38:59+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.2,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "geography": [
+          "russian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-10-12T16:50:00+00:00"
     },
     {
       "title": "CREA: India Curtailed Over 4% of Its Solar Output in July and August",
@@ -4685,6 +4981,57 @@
       "also_reported_by": []
     },
     {
+      "title": "European Natural Gas Prices Headed for Multi-Year Highs",
+      "url": "https://oilprice.com/Energy/Natural-Gas/European-Natural-Gas-Prices-Headed-for-Multi-Year-Highs.html",
+      "snippet": "Europe's main natural gas price benchmark is headed for multi-year highs despite the \"energy ceasefire\" reported between Russia and Ukraine over the weekend and improving Strait of Hormuz energy flows. Europe is heading into the Northern Hemisphere winter without Qatari LNG exports and with storage ",
+      "published_at": "2026-10-12T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 40.4,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 65.2,
+        "recency_multiplier": 0.34
+      },
+      "matched": {
+        "geopolitics": [
+          "ceasefire",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng",
+          "lng exports"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Small Indian Factories Face Blackouts as Coal Stocks Plunge",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Small-Indian-Factories-Face-Blackouts-as-Coal-Stocks-Plunge.html",
       "snippet": "Blackouts have started to hit households and smaller Indian factories and steel mills as coal inventories at many power plants plunge while electricity demand soars amid warmer weather and much lower hydropower output. Demand has been exceeding supply in recent weeks, leading to power cuts for house",
@@ -4764,50 +5111,6 @@
         ],
         "gas_storage": [
           "stocks"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
-      "url": "https://umm.nordpoolgroup.com/#/messages/82d843ab-4b68-4428-a3fe-5060d75b3a9b/5",
-      "snippet": "Published: 12.10.2026 17:13:16 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfil",
-      "published_at": "2026-10-12T15:13:16+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.34
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "delay"
-        ],
-        "urgency": [
-          "unplanned"
         ]
       },
       "duplicate_count": 0,
@@ -5423,60 +5726,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Southeast Asia Needs More Power, But Its Weak Grid Could Be a Problem",
-      "url": "https://oilprice.com/Energy/Energy-General/Southeast-Asia-Needs-More-Power-But-Its-Weak-Grid-Could-Be-a-Problem.html",
-      "snippet": "The war in Iran has exposed a critical vulnerability in Southeast Asia’s energy markets. The region is heavily dependent on fossil fuel imports, and demand is continuing its steep growth trajectory even as global crude oil prices remain punishingly high. Though the Strait of Hormuz is finally reopen",
-      "published_at": "2026-10-10T19:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 33.3,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 46.1,
-        "recency_multiplier": 0.47
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "demand"
-        ],
-        "infrastructure": [
-          "grid"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "speculative": [
-          "could"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Israeli drone attack wounds six in Lebanon near Syria border",
       "url": "https://www.aljazeera.com/news/2026/10/10/israeli-drone-attack-wounds-six-in-lebanon-near-syria-border?traffic_source=rss",
       "snippet": "Five Syrians and one Lebanese wounded in latest Israeli attack, Lebanon&#039;s health authorities say.",
@@ -5638,46 +5887,6 @@
         ],
         "geography": [
           "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "European states, Canada, Japan and UN back ICC against US sanctions",
-      "url": "https://www.aljazeera.com/news/2026/10/9/european-states-canada-japan-and-un-back-icc-against-us-sanctions?traffic_source=rss",
-      "snippet": "Several US allies call to &#039;defend&#039; and &#039;protect&#039; the ICC following Washington&#039;s decision to sanction the judiciary body.",
-      "published_at": "2026-10-09T19:32:13+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.5,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "european"
         ]
       },
       "duplicate_count": 0,
@@ -6424,51 +6633,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Equinor Finds Up to 10.3 Million Barrels of Oil Equivalent at Gullfaks South",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Equinor-Finds-Up-to-103-Million-Barrels-of-Oil-Equivalent-at-Gullfaks-South.html",
-      "snippet": "Equinor and its partners have discovered an estimated 3.3 million to 10.3 million barrels of recoverable oil equivalent in gas at Norway’s Gullfaks South field, using an exploration sidetrack drilled during work on a production well. The discovery, announced on October 8, highlights the role of targ",
-      "published_at": "2026-10-08T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 39.2,
-        "recency_multiplier": 0.55
-      },
-      "matched": {
-        "oil_macro": [
-          "barrels"
-        ],
-        "geography": [
-          "norway"
-        ],
-        "urgency": [
-          "announced"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-05T12:30:00+00:00"
-    },
-    {
       "title": "EU gas system prepared for the winter despite lower storage levels",
       "url": "https://energy.ec.europa.eu/news/eu-gas-system-prepared-winter-despite-lower-storage-levels-2026-10-08_en",
       "snippet": "The Gas Coordination Group has met again today to take stock of the current gas market situation in Europe.",
@@ -6837,48 +7001,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Japan’s first LNG bunkering ship wraps up 200th STS op",
-      "url": "https://lngprime.com/asia/japans-first-lng-bunkering-ship-wraps-up-200th-sts-op/198096/",
-      "snippet": "Japan’s first LNG bunkering vessel Kaguya has completed its 200th ship-to-ship fueling operation since October 2020.",
-      "published_at": "2026-10-08T08:53:20+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "japan"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-08T06:10:44+00:00"
     },
     {
       "title": "Elenger secures additional LNG cargoes",
@@ -7648,6 +7770,215 @@
       "also_reported_by": []
     },
     {
+      "title": "Southeast Asia Needs More Power, But Its Weak Grid Could Be a Problem",
+      "url": "https://oilprice.com/Energy/Energy-General/Southeast-Asia-Needs-More-Power-But-Its-Weak-Grid-Could-Be-a-Problem.html",
+      "snippet": "The war in Iran has exposed a critical vulnerability in Southeast Asia’s energy markets. The region is heavily dependent on fossil fuel imports, and demand is continuing its steep growth trajectory even as global crude oil prices remain punishingly high. Though the Strait of Hormuz is finally reopen",
+      "published_at": "2026-10-10T19:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 33.3,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 46.1,
+        "recency_multiplier": 0.47
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "demand"
+        ],
+        "infrastructure": [
+          "grid"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "speculative": [
+          "could"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://lngprime.com/asia/wood-mackenzie-south-asia-lng-demand-growth-derailed-due-to-middle-east-conflict/198352/",
+        "title": "Wood Mackenzie: South Asia LNG demand growth derailed due to Middle East conflict",
+        "published_at": "2026-10-13T06:15:11+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "European states, Canada, Japan and UN back ICC against US sanctions",
+      "url": "https://www.aljazeera.com/news/2026/10/9/european-states-canada-japan-and-un-back-icc-against-us-sanctions?traffic_source=rss",
+      "snippet": "Several US allies call to &#039;defend&#039; and &#039;protect&#039; the ICC following Washington&#039;s decision to sanction the judiciary body.",
+      "published_at": "2026-10-09T19:32:13+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.5,
+        "recency_multiplier": 0.76
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "european"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.rigzone.com/news/wire/oil_carriers_linked_to_japan_return_to_mideast-13-oct-2026-184831-article/?rss=true",
+        "title": "Oil Carriers Linked to Japan Return to MidEast",
+        "published_at": "2026-10-13T08:44:10+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Equinor Finds Up to 10.3 Million Barrels of Oil Equivalent at Gullfaks South",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Equinor-Finds-Up-to-103-Million-Barrels-of-Oil-Equivalent-at-Gullfaks-South.html",
+      "snippet": "Equinor and its partners have discovered an estimated 3.3 million to 10.3 million barrels of recoverable oil equivalent in gas at Norway’s Gullfaks South field, using an exploration sidetrack drilled during work on a production well. The discovery, announced on October 8, highlights the role of targ",
+      "published_at": "2026-10-08T16:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 4.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.2,
+        "recency_multiplier": 0.55
+      },
+      "matched": {
+        "oil_macro": [
+          "barrels"
+        ],
+        "geography": [
+          "norway"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-10-05T12:30:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://lngprime.com/asia/wood-mackenzie-south-asia-lng-demand-growth-derailed-due-to-middle-east-conflict/198352/",
+        "title": "Wood Mackenzie: South Asia LNG demand growth derailed due to Middle East conflict",
+        "published_at": "2026-10-13T06:15:11+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Japan’s first LNG bunkering ship wraps up 200th STS op",
+      "url": "https://lngprime.com/asia/japans-first-lng-bunkering-ship-wraps-up-200th-sts-op/198096/",
+      "snippet": "Japan’s first LNG bunkering vessel Kaguya has completed its 200th ship-to-ship fueling operation since October 2020.",
+      "published_at": "2026-10-08T08:53:20+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.4,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "japan"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-10-08T06:10:44+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.rigzone.com/news/wire/oil_carriers_linked_to_japan_return_to_mideast-13-oct-2026-184831-article/?rss=true",
+        "title": "Oil Carriers Linked to Japan Return to MidEast",
+        "published_at": "2026-10-13T08:44:10+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "Oil Prices Jump 2% on Saudi Attacks as OPEC Sees Demand Rebound",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Jump-2-on-Saudi-Attacks-as-OPEC-Sees-Demand-Rebound.html",
       "snippet": "Oil prices climbed to their highest levels in nearly two weeks on Monday morning as fresh attacks on Saudi Arabia and oil tankers near the Strait of Hormuz put Middle East supply risks back at the center of the market, outweighing President Donald Trump's announcements of additional Russian diesel s",
@@ -7658,7 +7989,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 9,
+      "score": 3,
       "tags": [
         "geopolitics",
         "oil_macro"
@@ -8060,9 +8391,9 @@
       "thread_started_at": "2026-10-01T19:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
-        "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
-        "published_at": "2026-10-12T22:44:00+00:00"
+        "url": "https://lngprime.com/asia/wood-mackenzie-south-asia-lng-demand-growth-derailed-due-to-middle-east-conflict/198352/",
+        "title": "Wood Mackenzie: South Asia LNG demand growth derailed due to Middle East conflict",
+        "published_at": "2026-10-13T06:15:11+00:00"
       },
       "hidden": true
     },
@@ -8709,9 +9040,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
-        "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
-        "published_at": "2026-10-12T22:44:00+00:00"
+        "url": "https://lngprime.com/asia/wood-mackenzie-south-asia-lng-demand-growth-derailed-due-to-middle-east-conflict/198352/",
+        "title": "Wood Mackenzie: South Asia LNG demand growth derailed due to Middle East conflict",
+        "published_at": "2026-10-13T06:15:11+00:00"
       },
       "hidden": true
     },
@@ -9845,9 +10176,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://lngprime.com/asia/japans-first-lng-bunkering-ship-wraps-up-200th-sts-op/198096/",
-        "title": "Japan’s first LNG bunkering ship wraps up 200th STS op",
-        "published_at": "2026-10-08T08:53:20+00:00"
+        "url": "https://www.rigzone.com/news/wire/oil_carriers_linked_to_japan_return_to_mideast-13-oct-2026-184831-article/?rss=true",
+        "title": "Oil Carriers Linked to Japan Return to MidEast",
+        "published_at": "2026-10-13T08:44:10+00:00"
       },
       "hidden": true
     },
@@ -10050,9 +10381,9 @@
       "thread_started_at": "2026-10-01T19:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
-        "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
-        "published_at": "2026-10-12T22:44:00+00:00"
+        "url": "https://lngprime.com/asia/wood-mackenzie-south-asia-lng-demand-growth-derailed-due-to-middle-east-conflict/198352/",
+        "title": "Wood Mackenzie: South Asia LNG demand growth derailed due to Middle East conflict",
+        "published_at": "2026-10-13T06:15:11+00:00"
       },
       "hidden": true
     },
@@ -11059,9 +11390,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Energy/Crude-Oil/Equinor-Finds-Up-to-103-Million-Barrels-of-Oil-Equivalent-at-Gullfaks-South.html",
-        "title": "Equinor Finds Up to 10.3 Million Barrels of Oil Equivalent at Gullfaks South",
-        "published_at": "2026-10-08T16:00:00+00:00"
+        "url": "https://lngprime.com/asia/wood-mackenzie-south-asia-lng-demand-growth-derailed-due-to-middle-east-conflict/198352/",
+        "title": "Wood Mackenzie: South Asia LNG demand growth derailed due to Middle East conflict",
+        "published_at": "2026-10-13T06:15:11+00:00"
       },
       "hidden": true
     },
