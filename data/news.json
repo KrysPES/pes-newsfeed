@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T20:33:22.336341+00:00",
+  "generated_at": "2026-10-13T20:38:25.400807+00:00",
   "item_count": 292,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 106,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 764
+        "ms": 849
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 128505
+        "ms": 125804
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2477
+        "ms": 2306
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 304
+        "ms": 60
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 254
+        "ms": 393
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 3279
+        "ms": 109
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 987
+        "ms": 1115
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 50,
-        "error": null,
-        "ms": 472
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
+        "ms": 10076
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 661
+        "ms": 516
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 163
+        "ms": 146
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 398
+        "ms": 429
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 69
+        "ms": 151
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 174
+        "ms": 199
       }
     ]
   },
@@ -688,7 +688,7 @@
           "damage"
         ]
       },
-      "duplicate_count": 62,
+      "duplicate_count": 63,
       "also_reported_by": [
         "BBC World"
       ]
@@ -1409,58 +1409,6 @@
       "thread_started_at": "2026-10-11T15:26:29+00:00"
     },
     {
-      "title": "DET kicks off maintenance at second Wilhelmshaven FSRU",
-      "url": "https://lngprime.com/europe/det-kicks-off-maintenance-at-second-wilhelmshaven-fsru/198364/",
-      "snippet": "Germany’s LNG import terminal operator, DET, has begun maintenance at its second FSRU-based terminal in Wilhelmshaven.",
-      "published_at": "2026-10-13T10:36:37+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "infrastructure",
-        "lng",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 30.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.0,
-        "recency_multiplier": 0.54
-      },
-      "matched": {
-        "infrastructure": [
-          "terminal",
-          "import terminal"
-        ],
-        "lng": [
-          "lng",
-          "fsru"
-        ],
-        "supply_disruption": [
-          "maintenance"
-        ],
-        "geography": [
-          "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-10-05T06:25:58+00:00"
-    },
-    {
       "title": "Supertanker Rates Hit Record $1.4 Million a Day",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Supertanker-Rates-Hit-Record-14-Million-a-Day.html",
       "snippet": "The oil crisis has extended into the shipping sector with a large tanker fleet tied up in ship-to-ship transfers outside the Strait of Hormuz, pushing global freight rates to record highs and reducing vessel availability for other routes. Supertanker rates have soared in recent weeks, and hit a reco",
@@ -1913,6 +1861,58 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "DET kicks off maintenance at second Wilhelmshaven FSRU",
+      "url": "https://lngprime.com/europe/det-kicks-off-maintenance-at-second-wilhelmshaven-fsru/198364/",
+      "snippet": "Germany’s LNG import terminal operator, DET, has begun maintenance at its second FSRU-based terminal in Wilhelmshaven.",
+      "published_at": "2026-10-13T10:36:37+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "infrastructure",
+        "lng",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 30.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 54.0,
+        "recency_multiplier": 0.54
+      },
+      "matched": {
+        "infrastructure": [
+          "terminal",
+          "import terminal"
+        ],
+        "lng": [
+          "lng",
+          "fsru"
+        ],
+        "supply_disruption": [
+          "maintenance"
+        ],
+        "geography": [
+          "germany"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-10-05T06:25:58+00:00"
     },
     {
       "title": "New York Mayor Mamdani under fire for attending October 7 vigil",
@@ -2685,7 +2685,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.1,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.62
       },
       "matched": {
         "nuclear": [
@@ -3751,7 +3751,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.1,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
