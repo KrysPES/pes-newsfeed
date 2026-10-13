@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T23:23:58.509493+00:00",
+  "generated_at": "2026-10-13T23:27:58.721189+00:00",
   "item_count": 298,
   "alert_counts": {
     "critical": 0,
@@ -8,65 +8,65 @@
   },
   "superseded_count": 108,
   "sources": {
-    "healthy": 13,
+    "healthy": 11,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 998
+        "ms": 1033
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 134365
+        "ms": 65780
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18687
+        "ms": 2925
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 258
+        "ms": 168
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 618
+        "ms": 292
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 227
+        "ms": 339
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 1068
+        "ms": 1074
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 50,
-        "error": null,
-        "ms": 5268
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
+        "ms": 10170
       },
       {
         "id": "lng_prime",
@@ -77,31 +77,31 @@
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 193
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20177
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 528
+        "ms": 450
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 148
+        "ms": 139
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 171
+        "ms": 326
       }
     ]
   },
@@ -1338,7 +1338,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.5,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.96
       },
       "matched": {
         "gas_storage": [
@@ -3665,58 +3665,6 @@
       "thread_started_at": "2026-10-11T15:26:29+00:00"
     },
     {
-      "title": "DET kicks off maintenance at second Wilhelmshaven FSRU",
-      "url": "https://lngprime.com/europe/det-kicks-off-maintenance-at-second-wilhelmshaven-fsru/198364/",
-      "snippet": "Germany’s LNG import terminal operator, DET, has begun maintenance at its second FSRU-based terminal in Wilhelmshaven.",
-      "published_at": "2026-10-13T10:36:37+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "infrastructure",
-        "lng",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 30.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.0,
-        "recency_multiplier": 0.44
-      },
-      "matched": {
-        "infrastructure": [
-          "terminal",
-          "import terminal"
-        ],
-        "lng": [
-          "lng",
-          "fsru"
-        ],
-        "supply_disruption": [
-          "maintenance"
-        ],
-        "geography": [
-          "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-10-05T06:25:58+00:00"
-    },
-    {
       "title": "Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast",
       "url": "https://www.aljazeera.com/news/2026/10/12/two-deaths-reported-as-hurricane-simon-storm-rachel-batter-mexicos-coast?traffic_source=rss",
       "snippet": "Simon caps a Pacific season of record-breaking intensity, as deadly storms wreak havoc from Hawaii to Mexico.",
@@ -4224,6 +4172,58 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "DET kicks off maintenance at second Wilhelmshaven FSRU",
+      "url": "https://lngprime.com/europe/det-kicks-off-maintenance-at-second-wilhelmshaven-fsru/198364/",
+      "snippet": "Germany’s LNG import terminal operator, DET, has begun maintenance at its second FSRU-based terminal in Wilhelmshaven.",
+      "published_at": "2026-10-13T10:36:37+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "infrastructure",
+        "lng",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 30.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 54.0,
+        "recency_multiplier": 0.43
+      },
+      "matched": {
+        "infrastructure": [
+          "terminal",
+          "import terminal"
+        ],
+        "lng": [
+          "lng",
+          "fsru"
+        ],
+        "supply_disruption": [
+          "maintenance"
+        ],
+        "geography": [
+          "germany"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-10-05T06:25:58+00:00"
     },
     {
       "title": "Redaction policy annex of the re-opener guidance for carbon dioxide transport and storage",
@@ -8338,7 +8338,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "geopolitics": [
@@ -8394,7 +8394,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.8,
-        "recency_multiplier": 0.57
+        "recency_multiplier": 0.56
       },
       "matched": {
         "geopolitics": [
