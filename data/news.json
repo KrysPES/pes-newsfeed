@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T21:19:54.188143+00:00",
+  "generated_at": "2026-10-13T21:24:37.170959+00:00",
   "item_count": 293,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 106,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 793
+        "ms": 786
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 194961
+        "ms": 189210
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 31820
+        "ms": 9560
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 134
+        "ms": 420
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 307
+        "ms": 316
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 114
+        "ms": 144
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 776
+        "ms": 771
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 50,
-        "error": null,
-        "ms": 443
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
+        "ms": 10143
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 504
+        "ms": 588
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 112
+        "ms": 150
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 248
+        "ms": 422
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 59
+        "ms": 308
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 190
+        "ms": 132
       }
     ]
   },
@@ -454,7 +454,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 54.7,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.71
       },
       "matched": {
         "oil_macro": [
@@ -639,7 +639,7 @@
           "damage"
         ]
       },
-      "duplicate_count": 71,
+      "duplicate_count": 72,
       "also_reported_by": [
         "BBC World"
       ]
@@ -4235,53 +4235,6 @@
       "also_reported_by": []
     },
     {
-      "title": "China’s $3 Billion Qatar LNG Deal Raises an Awkward Question",
-      "url": "https://oilprice.com/Energy/Natural-Gas/Chinas-3-Billion-Qatar-LNG-Deal-Raises-an-Awkward-Question.html",
-      "snippet": "Qatar’s highly sensitive geographical positioning -- between a western land border with Saudi Arabia and a northeastern maritime border with Iran -- has necessitated it treading a delicate diplomatic path between regional superpowers and their global superpower backers since it gained independence f",
-      "published_at": "2026-10-13T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 27.1,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "geopolitics": [
-          "diplomatic"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "qatar",
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 3,
-      "thread_started_at": "2026-10-07T09:59:17+00:00"
-    },
-    {
       "title": "Shell, GTT, and Lloyd’s Register eye hybrid-electric LNG carrier design",
       "url": "https://offshore-energy.biz/2026/10/13/shell-gtt-and-lloyds-register-eye-hybrid-electric-lng-carrier-design",
       "snippet": "The trio has teamed up on a conceptual hybrid-electric tech 200,000-cubic-meter (cbm) LNG carrier to cut emissions without sacrificing cargo space.",
@@ -4830,6 +4783,53 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "China’s $3 Billion Qatar LNG Deal Raises an Awkward Question",
+      "url": "https://oilprice.com/Energy/Natural-Gas/Chinas-3-Billion-Qatar-LNG-Deal-Raises-an-Awkward-Question.html",
+      "snippet": "Qatar’s highly sensitive geographical positioning -- between a western land border with Saudi Arabia and a northeastern maritime border with Iran -- has necessitated it treading a delicate diplomatic path between regional superpowers and their global superpower backers since it gained independence f",
+      "published_at": "2026-10-13T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.1,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "geopolitics": [
+          "diplomatic"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "qatar",
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-10-07T09:59:17+00:00"
     },
     {
       "title": "Agreement signed on second Polish nuclear power plant",
@@ -8221,7 +8221,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 67.1,
-        "recency_multiplier": 0.37
+        "recency_multiplier": 0.36
       },
       "matched": {
         "geopolitics": [
