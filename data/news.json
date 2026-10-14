@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T01:18:23.854541+00:00",
+  "generated_at": "2026-10-14T01:23:25.049092+00:00",
   "item_count": 298,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 108,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1347
+        "ms": 1023
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 97221
+        "ms": 97087
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 22350
+        "ms": 17274
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 245
+        "ms": 206
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 619
+        "ms": 342
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 172
+        "ms": 153
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 1115
+        "ms": 1325
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 50,
-        "error": null,
-        "ms": 2967
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
+        "ms": 10162
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 646
+        "ms": 660
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 296
+        "ms": 200
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 403
+        "ms": 431
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 195
+        "ms": 196
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 322
+        "ms": 264
       }
     ]
   },
@@ -1134,51 +1134,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Record Tanker Rates Leave Heavy Crude Stranded in the Americas",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Record-Tanker-Rates-Leave-Heavy-Crude-Stranded-in-the-Americas.html",
-      "snippet": "The Middle East crisis has driven tanker rates to all-time highs and created a shortage of vessels. This oil logistics problem is now causing a ripple effect, tipping the heavy crude market in North and South America into oversupply—while Asia and Europe grapple with a shortage of heavy grades. Cana",
-      "published_at": "2026-10-13T23:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
-      "tags": [
-        "oil_macro",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 32.1,
-        "recency_multiplier": 0.98
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "rates"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "europe"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Brent Back Above $100 as Houthis Hit Saudi Infrastructure",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Back-Above-100-as-Houthis-Hit-Saudi-Infrastructure.html",
       "snippet": "More Top Reads From Oilprice.com IPO Market Stalls Four Months After SpaceX's $75 Billion Debut Europe's Power Grid Is Digitalizing Faster Than Regulators Can Keep Up G7’s 100 Million Barrel Release Is Mostly Already Priced In",
@@ -1224,6 +1179,51 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-10-05T20:07:58+00:00"
+    },
+    {
+      "title": "Record Tanker Rates Leave Heavy Crude Stranded in the Americas",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Record-Tanker-Rates-Leave-Heavy-Crude-Stranded-in-the-Americas.html",
+      "snippet": "The Middle East crisis has driven tanker rates to all-time highs and created a shortage of vessels. This oil logistics problem is now causing a ripple effect, tipping the heavy crude market in North and South America into oversupply—while Asia and Europe grapple with a shortage of heavy grades. Cana",
+      "published_at": "2026-10-13T23:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 32.1,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "rates"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "DOE offers Vistra loan for reactor upgrades and uprates",
@@ -1331,7 +1331,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.2,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.86
       },
       "matched": {
         "oil_macro": [
@@ -1824,7 +1824,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 54.7,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.52
       },
       "matched": {
         "oil_macro": [
@@ -2547,46 +2547,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Five Shale Stocks to Watch Before Third-Quarter Earnings",
-      "url": "https://oilprice.com/Energy/Energy-General/Five-Shale-Stocks-to-Watch-Before-Third-Quarter-Earnings.html",
-      "snippet": "Permian producers spent much of this year paying buyers to haul away the natural gas that comes up with their oil. Waha Hub spot prices stayed below zero for a record 90 days in a row before turning positive on June 16, Reuters reported, and the hub had averaged minus $2.19 per million British therm",
-      "published_at": "2026-10-13T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 6.7,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 31.5,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "gas_storage": [
-          "stocks"
-        ],
-        "geography": [
-          "british"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "BBC FM radio transmissions suspended in Afghanistan",
       "url": "https://www.bbc.co.uk/news/articles/cm8ezp4g7p6po?at_medium=RSS&at_campaign=rss",
       "snippet": "BBC programming is still reaching audiences on shortwave, medium wave, via satellite and online.",
@@ -2722,6 +2682,46 @@
         "geography": [
           "european",
           "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Five Shale Stocks to Watch Before Third-Quarter Earnings",
+      "url": "https://oilprice.com/Energy/Energy-General/Five-Shale-Stocks-to-Watch-Before-Third-Quarter-Earnings.html",
+      "snippet": "Permian producers spent much of this year paying buyers to haul away the natural gas that comes up with their oil. Waha Hub spot prices stayed below zero for a record 90 days in a row before turning positive on June 16, Reuters reported, and the hub had averaged minus $2.19 per million British therm",
+      "published_at": "2026-10-13T21:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 6.7,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 31.5,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "gas_storage": [
+          "stocks"
+        ],
+        "geography": [
+          "british"
         ]
       },
       "duplicate_count": 0,
@@ -8337,7 +8337,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 0.51
+        "recency_multiplier": 0.5
       },
       "matched": {
         "geopolitics": [
