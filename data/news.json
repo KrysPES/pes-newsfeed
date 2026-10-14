@@ -1,111 +1,155 @@
 {
-  "generated_at": "2026-10-14T04:52:35.371863+00:00",
+  "generated_at": "2026-10-14T04:57:39.771736+00:00",
   "item_count": 298,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "normal": 18
   },
   "superseded_count": 108,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1108
+        "ms": 1393
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 46178
+        "ms": 51738
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5359
+        "ms": 9429
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 319
+        "ms": 329
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 100
+        "ms": 102
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 173
+        "ms": 152
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 1445
+        "ms": 1319
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
-        "ms": 10092
+        "ok": true,
+        "count": 50,
+        "error": null,
+        "ms": 5432
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 891
+        "ms": 688
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 368
+        "ms": 305
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 422
+        "ms": 482
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 50
+        "ms": 73
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 80
+        "ms": 74
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
+      "url": "https://umm.nordpoolgroup.com/#/messages/2a44cb2e-43fc-41ce-a235-a742f17c41d9/1",
+      "snippet": "Published: 14.10.2026 06:51:58 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
+      "published_at": "2026-10-14T04:51:58+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-13T14:09:29+00:00"
+    },
     {
       "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
       "url": "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat?traffic_source=rss",
@@ -314,7 +358,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.1,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
@@ -1046,50 +1090,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Albanian police fire tear gas at protesters as Education Ministry attacked",
-      "url": "https://www.aljazeera.com/news/2026/10/13/albanian-police-fire-tear-gas-at-protesters-as-education-ministry-attacked?traffic_source=rss",
-      "snippet": "At least 23 protesters have been arrested in demonstrations in the capital.",
-      "published_at": "2026-10-13T22:33:50+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 14.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 43.5,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked"
-        ],
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire",
-          "attacked"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Brent Back Above $100 as Houthis Hit Saudi Infrastructure",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Back-Above-100-as-Houthis-Hit-Saudi-Infrastructure.html",
       "snippet": "More Top Reads From Oilprice.com IPO Market Stalls Four Months After SpaceX's $75 Billion Debut Europe's Power Grid Is Digitalizing Faster Than Regulators Can Keep Up G7’s 100 Million Barrel Release Is Mostly Already Priced In",
@@ -1135,6 +1135,50 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-10-05T20:07:58+00:00"
+    },
+    {
+      "title": "Albanian police fire tear gas at protesters as Education Ministry attacked",
+      "url": "https://www.aljazeera.com/news/2026/10/13/albanian-police-fire-tear-gas-at-protesters-as-education-ministry-attacked?traffic_source=rss",
+      "snippet": "At least 23 protesters have been arrested in demonstrations in the capital.",
+      "published_at": "2026-10-13T22:33:50+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 14.0,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.5,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "geopolitics": [
+          "attacked"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire",
+          "attacked"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "DOE offers Vistra loan for reactor upgrades and uprates",
@@ -2891,50 +2935,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
-      "url": "https://umm.nordpoolgroup.com/#/messages/82d843ab-4b68-4428-a3fe-5060d75b3a9b/6",
-      "snippet": "Published: 13.10.2026 16:09:29 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfil",
-      "published_at": "2026-10-13T14:09:29+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.38
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "delay"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
       "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
       "snippet": "Several member states of the international tribunal, including the UK, say they \"strongly disagree\" with the sanctions.",
@@ -3998,44 +3998,6 @@
       "also_reported_by": []
     },
     {
-      "title": "OPEC Sees Oil Demand Growth Surging to 2.6 Million Bpd in 2027",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Sees-Oil-Demand-Growth-Surging-to-26-Million-Bpd-in-2027.html",
-      "snippet": "OPEC just put a very large number on next year’s oil market: global demand growth of 2.6 million barrels per day in 2027, after growth of just 200,000 bpd this year. That would push average world oil demand from 105.7 million bpd in 2026 to 108.3 million bpd next year. OPEC also revised its 2027 dem",
-      "published_at": "2026-10-13T21:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.4,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 34.2,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "oil_macro": [
-          "opec",
-          "barrels",
-          "demand"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Redaction policy annex of the re-opener guidance for carbon dioxide transport and storage",
       "url": "https://www.ofgem.gov.uk/consultation/redaction-policy-annex-re-opener-guidance-carbon-dioxide-transport-and-storage",
       "snippet": "Ofgem is seeking views on its proposed redaction policy addition to the re-opener guidance for carbon dioxide transport and storage (CCS).",
@@ -4542,6 +4504,44 @@
         ],
         "urgency": [
           "shut"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "OPEC Sees Oil Demand Growth Surging to 2.6 Million Bpd in 2027",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Sees-Oil-Demand-Growth-Surging-to-26-Million-Bpd-in-2027.html",
+      "snippet": "OPEC just put a very large number on next year’s oil market: global demand growth of 2.6 million barrels per day in 2027, after growth of just 200,000 bpd this year. That would push average world oil demand from 105.7 million bpd in 2026 to 108.3 million bpd next year. OPEC also revised its 2027 dem",
+      "published_at": "2026-10-13T21:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 30,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 34.2,
+        "recency_multiplier": 0.66
+      },
+      "matched": {
+        "oil_macro": [
+          "opec",
+          "barrels",
+          "demand"
         ]
       },
       "duplicate_count": 0,
@@ -8337,7 +8337,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.7,
-        "recency_multiplier": 0.39
+        "recency_multiplier": 0.38
       },
       "matched": {
         "geopolitics": [
