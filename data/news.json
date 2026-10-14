@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-14T15:27:30.241177+00:00",
+  "generated_at": "2026-10-14T15:33:45.430553+00:00",
   "item_count": 319,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 21
+    "normal": 22
   },
-  "superseded_count": 123,
+  "superseded_count": 122,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,136 +17,131 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1832
+        "ms": 1455
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 158064
+        "ms": 239600
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 13589
+        "ms": 7828
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 6,
         "error": null,
-        "ms": 45
+        "ms": 38
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 638
+        "ms": 377
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 146
+        "ms": 206
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 1254
+        "ms": 1267
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 290
+        "ms": 308
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 831
+        "ms": 687
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 371
+        "ms": 324
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 532
+        "ms": 607
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 24,
         "error": null,
-        "ms": 51
+        "ms": 45
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 77
+        "ms": 105
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Corduff Flexgen (FG2) (GU_403680)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/93467f16-a955-4f75-9b7d-d825d010108b/6",
-      "snippet": "Published: 14.10.2026 13:38:58 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Flame Detector Fault Remarks: Flame Detector Fault Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Cap",
-      "published_at": "2026-10-14T11:38:58+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
+      "url": "https://umm.nordpoolgroup.com/#/messages/82d843ab-4b68-4428-a3fe-5060d75b3a9b/9",
+      "snippet": "Published: 14.10.2026 17:25:48 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfil",
+      "published_at": "2026-10-14T15:25:48+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 67,
+      "score": 66,
       "tags": [
-        "supply_disruption",
-        "regulation"
+        "supply_disruption"
       ],
       "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 20.5,
+        "themes": 8.4,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 16.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 78.4,
-        "recency_multiplier": 0.87
+        "raw": 66.3,
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
-          "unplanned",
-          "fault"
-        ],
-        "regulation": [
-          "cap"
+          "unplanned"
         ],
         "unplanned": [
           "unplanned",
-          "fault",
-          "failure"
+          "failure",
+          "delay"
         ],
         "urgency": [
           "unplanned"
@@ -559,6 +554,53 @@
       "also_reported_by": [
         "BBC World"
       ]
+    },
+    {
+      "title": "China's Coal Imports Fall 6% as Prices Hit Nearly 3-Year High",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Coal-Imports-Fall-6-as-Prices-Hit-Nearly-3-Year-High.html",
+      "snippet": "China’s imports of coal fell in September by 6% from a year earlier, customs data showed on Wednesday, as Chinese inventories remain robust, supply from key exporter Indonesia remains restricted, and import prices jump. Last month, China imported 43.37 million tons of all types of coal, up by 3% com",
+      "published_at": "2026-10-14T15:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 46,
+      "tags": [
+        "supply_disruption",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 12.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 38.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "restricted"
+        ],
+        "gas_storage": [
+          "inventories"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "BBC World"
+      ],
+      "first_seen_at": "2026-10-14T07:31:24+00:00"
     },
     {
       "title": "Execution of US woman Christa Pike fails after botched lethal injection",
@@ -981,7 +1023,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.1,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -1277,42 +1319,6 @@
       "also_reported_by": []
     },
     {
-      "title": "JERA deepens Australian LNG foothold with larger stake in Chevron’s project",
-      "url": "https://offshore-energy.biz/2026/10/14/jera-deepens-australian-lng-foothold-with-larger-stake-in-chevrons-project",
-      "snippet": "JERA has boosted its indirect participation in Chevron's LNG project to 50.1% following a strategic share acquisition from JOGMEC.",
-      "published_at": "2026-10-14T13:18:00+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 40,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 7.3,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 31.7,
-        "recency_multiplier": 0.99
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Aramco’s New Chinese JV Refinery Gets First Saudi Crude Cargo",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Aramcos-New-Chinese-JV-Refinery-Gets-First-Saudi-Crude-Cargo.html",
       "snippet": "Saudi Aramco’s newest joint venture refinery in China has received its first cargo of Arab crude as it prepares for start-up, the Saudi oil giant said in a statement to Bloomberg on Wednesday, without providing a timeline for the start of commercial operations. Saudi Arabia and its state-owned oil g",
@@ -1341,7 +1347,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.2,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.92
       },
       "matched": {
         "infrastructure": [
@@ -1454,6 +1460,42 @@
       "thread_started_at": "2026-10-05T20:07:58+00:00"
     },
     {
+      "title": "JERA deepens Australian LNG foothold with larger stake in Chevron’s project",
+      "url": "https://offshore-energy.biz/2026/10/14/jera-deepens-australian-lng-foothold-with-larger-stake-in-chevrons-project",
+      "snippet": "JERA has boosted its indirect participation in Chevron's LNG project to 50.1% following a strategic share acquisition from JOGMEC.",
+      "published_at": "2026-10-14T13:18:00+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 39,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 31.7,
+        "recency_multiplier": 0.98
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "DOE offers Vistra loan for reactor upgrades and uprates",
       "url": "https://www.world-nuclear-news.org/articles/doe-offers-vistra-loan-for-reactor-upgrades-and-uprates",
       "snippet": "The US Department of Energy has announced a conditional loan commitment of up to USD4.2 billion to finance uprates and modernisation projects at Vistra Corp's Beaver Valley, Davis-Besse and Perry nuclear power plants.",
@@ -1559,7 +1601,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 44.0,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.66
       },
       "matched": {
         "lng": [
@@ -2908,46 +2950,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Seadrill hit with $55 million bill after appeals court upholds rig breach ruling",
-      "url": "https://offshore-energy.biz/2026/10/14/seadrill-hit-with-dollar55-million-bill-after-appeals-court-upholds-rig-breach-ruling",
-      "snippet": "SFL Corporation has won a legal battle, with Norway's appeals court ordering Seadrill to pay $55 million over a 2022 rig redelivery breach.",
-      "published_at": "2026-10-14T11:58:37+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 6.2,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.6,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "regulation": [
-          "ruling"
-        ],
-        "geography": [
-          "norway"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Rising Gasoline Prices Fuel Fresh Inflation Fears in the U.S.",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Rising-Gasoline-Prices-Fuel-Fresh-Inflation-Fears-in-the-US.html",
       "snippet": "A surge in energy costs is expected to drive overall U.S. consumer inflation higher, with September numbers seen at 0.6% on a monthly basis by economists polled by Reuters. The official CPI data for September is due out later today. Gasoline prices in the United States went up by 7.1% last month, wi",
@@ -3367,6 +3369,46 @@
       "matched": {
         "nuclear": [
           "nuclear"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Seadrill hit with $55 million bill after appeals court upholds rig breach ruling",
+      "url": "https://offshore-energy.biz/2026/10/14/seadrill-hit-with-dollar55-million-bill-after-appeals-court-upholds-rig-breach-ruling",
+      "snippet": "SFL Corporation has won a legal battle, with Norway's appeals court ordering Seadrill to pay $55 million over a 2022 rig redelivery breach.",
+      "published_at": "2026-10-14T11:58:37+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 6.2,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.6,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "regulation": [
+          "ruling"
+        ],
+        "geography": [
+          "norway"
         ]
       },
       "duplicate_count": 0,
@@ -4430,7 +4472,7 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 2,
+      "update_count": 1,
       "thread_started_at": "2026-10-12T20:00:00+00:00"
     },
     {
@@ -8585,7 +8627,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.1,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.85
       },
       "matched": {
         "lng": [
@@ -8637,7 +8679,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.84
       },
       "matched": {
         "geopolitics": [
@@ -8770,49 +8812,6 @@
       "hidden": true,
       "update_count": 3,
       "thread_started_at": "2026-10-07T20:00:00+00:00"
-    },
-    {
-      "title": "China’s gas imports down in September",
-      "url": "https://lngprime.com/asia/chinas-gas-imports-down-in-september/198390/",
-      "snippet": "China’s natural gas imports, including pipeline gas and LNG, dropped in September compared with the same month in 2025, according to customs data.",
-      "published_at": "2026-10-14T07:31:24+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 0,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 4.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 26.7,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "oil_macro": [
-          "inflation"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/economy/2026/10/14/chinas-exports-sugrge?traffic_source=rss",
-        "title": "China’s exports surge amid AI-driven demand",
-        "published_at": "2026-10-14T09:05:17+00:00"
-      },
-      "hidden": true
     },
     {
       "title": "‘Massive’ Russian attack on Ukraine kills at least six, damages power sites",
