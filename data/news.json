@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T03:27:07.314270+00:00",
+  "generated_at": "2026-10-14T03:32:47.322625+00:00",
   "item_count": 298,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 108,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 831
+        "ms": 990
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 40796
+        "ms": 73117
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3602
+        "ms": 3117
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 263
+        "ms": 320
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 625
+        "ms": 1022
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 230
+        "ms": 181
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 1107
+        "ms": 1115
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 50,
-        "error": null,
-        "ms": 2811
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
+        "ms": 10214
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 703
+        "ms": 753
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 215
+        "ms": 292
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 469
+        "ms": 576
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 103
+        "ms": 137
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 198
+        "ms": 156
       }
     ]
   },
@@ -175,7 +175,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.1,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.76
       },
       "matched": {
         "geopolitics": [
@@ -755,7 +755,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 43.5,
-        "recency_multiplier": 0.8
+        "recency_multiplier": 0.79
       },
       "matched": {
         "geopolitics": [
@@ -2444,7 +2444,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.1,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.82
       },
       "matched": {
         "oil_macro": [
@@ -3005,7 +3005,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.2,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.73
       },
       "matched": {
         "oil_macro": [
@@ -3016,53 +3016,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
-      "snippet": "Houthi attacks threaten Saudi oil infrastructure and Gulf shipping as Brent hovers near $105 per barrel. Trump’s Fuel-Price Problem Is Becoming a Political One - The Trump administration’s Russia diesel deal has failed to bring about substantial change in US fuel prices, triggering a 3-4% decline in",
-      "published_at": "2026-10-13T15:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 54.7,
-        "recency_multiplier": 0.45
-      },
-      "matched": {
-        "oil_macro": [
-          "brent",
-          "barrel"
-        ],
-        "geography": [
-          "russia",
-          "gulf"
-        ],
-        "unplanned": [
-          "failed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 28,
-      "thread_started_at": "2026-09-30T16:00:00+00:00"
     },
     {
       "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
@@ -3572,6 +3525,53 @@
       "also_reported_by": [],
       "update_count": 30,
       "thread_started_at": "2026-09-30T14:00:00+00:00"
+    },
+    {
+      "title": "Saudi Arabia Becomes the Oil Market’s Biggest Wild Card",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Saudi-Arabia-Becomes-the-Oil-Markets-Biggest-Wild-Card.html",
+      "snippet": "Houthi attacks threaten Saudi oil infrastructure and Gulf shipping as Brent hovers near $105 per barrel. Trump’s Fuel-Price Problem Is Becoming a Political One - The Trump administration’s Russia diesel deal has failed to bring about substantial change in US fuel prices, triggering a 3-4% decline in",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 32,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 54.7,
+        "recency_multiplier": 0.44
+      },
+      "matched": {
+        "oil_macro": [
+          "brent",
+          "barrel"
+        ],
+        "geography": [
+          "russia",
+          "gulf"
+        ],
+        "unplanned": [
+          "failed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 28,
+      "thread_started_at": "2026-09-30T16:00:00+00:00"
     },
     {
       "title": "Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast",
@@ -4621,7 +4621,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 31.5,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.7
       },
       "matched": {
         "gas_storage": [
