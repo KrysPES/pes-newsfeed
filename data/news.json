@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T23:35:01.228795+00:00",
+  "generated_at": "2026-10-15T23:39:17.611507+00:00",
   "item_count": 327,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 135,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1243
+        "ms": 1078
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 84212
+        "ms": 41844
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2913
+        "ms": 3991
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 330
+        "ms": 452
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 408
+        "ms": 338
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 284
+        "ms": 210
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 4616
+        "ms": 4781
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 396
+        "ms": 358
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 649
+        "ms": 595
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20193
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 17695
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 524
+        "ms": 348
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 128
+        "ms": 155
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 140
+        "ms": 177
       }
     ]
   },
@@ -892,7 +892,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 33.0,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.95
       },
       "matched": {
         "nuclear": [
@@ -1026,7 +1026,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.0,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.62
       },
       "matched": {
         "geopolitics": [
@@ -1076,7 +1076,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.7,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
@@ -1171,83 +1171,6 @@
         ],
         "geography": [
           "poland"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Oil Prices Diverge as Supply Risks Mount",
-      "url": "https://www.rigzone.com/news/wire/oil_prices_diverge_as_supply_risks_mount-15-oct-2026-184860-article/?rss=true",
-      "snippet": "WTI surged 3% while Brent edged lower amid shifting shipping costs and tight global supplies.",
-      "published_at": "2026-10-15T20:22:24+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 38,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 31.9,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "oil_macro": [
-          "brent",
-          "wti"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Venezuela's Oil Recovery Gains Momentum as New Drilling Rigs Arrive",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Venezuelas-Oil-Recovery-Gains-Momentum-as-New-Drilling-Rigs-Arrive.html",
-      "snippet": "Eleven new 550-horsepower workover rigs will work in Venezuela’s oil fields this month. According to North American Blue Energy Partners (NABEP), which announced the deployment on 13 October, they are the first new mobile repair-and-maintenance units to enter the country’s fields in more than 15 yea",
-      "published_at": "2026-10-15T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.6,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "supply_disruption": [
-          "maintenance",
-          "repair"
-        ],
-        "urgency": [
-          "announced"
         ]
       },
       "duplicate_count": 0,
@@ -1578,6 +1501,83 @@
       "also_reported_by": []
     },
     {
+      "title": "Oil Prices Diverge as Supply Risks Mount",
+      "url": "https://www.rigzone.com/news/wire/oil_prices_diverge_as_supply_risks_mount-15-oct-2026-184860-article/?rss=true",
+      "snippet": "WTI surged 3% while Brent edged lower amid shifting shipping costs and tight global supplies.",
+      "published_at": "2026-10-15T20:22:24+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 37,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 31.9,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "oil_macro": [
+          "brent",
+          "wti"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Venezuela's Oil Recovery Gains Momentum as New Drilling Rigs Arrive",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Venezuelas-Oil-Recovery-Gains-Momentum-as-New-Drilling-Rigs-Arrive.html",
+      "snippet": "Eleven new 550-horsepower workover rigs will work in Venezuela’s oil fields this month. According to North American Blue Energy Partners (NABEP), which announced the deployment on 13 October, they are the first new mobile repair-and-maintenance units to enter the country’s fields in more than 15 yea",
+      "published_at": "2026-10-15T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.6,
+        "recency_multiplier": 0.7
+      },
+      "matched": {
+        "supply_disruption": [
+          "maintenance",
+          "repair"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "New York Mayor Mamdani under fire for attending October 7 vigil",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/new-york-mayor-mamdani-under-fire-for-attending-october-7-vigil?traffic_source=rss",
       "snippet": "New York City’s Mayor Zohran Mamdani was met by crowds calling him a ‘traitor’ for attending a vigil for October 7.",
@@ -1782,6 +1782,45 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+      "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Yemen's information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace.",
+      "published_at": "2026-10-15T23:38:46+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 17.9,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "missile",
+          "attack"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 7,
+      "thread_started_at": "2026-10-02T14:30:00+00:00"
     },
     {
       "title": "U.S. Crude Stocks Dip But Distillates Hold Steady",
@@ -3893,45 +3932,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
-      "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Yemen's information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace.",
-      "published_at": "2026-10-15T17:18:49+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 17.9,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.1,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "geopolitics": [
-          "missile",
-          "attack"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 7,
-      "thread_started_at": "2026-10-02T14:30:00+00:00"
-    },
-    {
       "title": "EIA Says US Crude Inventories Down Nearly 9 Million Barrels",
       "url": "https://oilprice.com/Energy/Crude-Oil/EIA-Says-US-Crude-Inventories-Down-Nearly-9-Million-Barrels.html",
       "snippet": "Crude oil inventories in the United States saw a decrease of 8.6 million barrels during the week ending October 9, according to new data from the U.S. Energy Information Administration (EIA) released on Thursday. The decrease brings commercial stockpiles to 415.6 million barrels, according to govern",
@@ -4296,7 +4296,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 50.8,
-        "recency_multiplier": 0.44
+        "recency_multiplier": 0.43
       },
       "matched": {
         "infrastructure": [
@@ -9053,8 +9053,8 @@
       "superseded": true,
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
-        "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
-        "published_at": "2026-10-15T17:18:49+00:00"
+        "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+        "published_at": "2026-10-15T23:38:46+00:00"
       },
       "hidden": true
     },
@@ -10356,8 +10356,8 @@
       "superseded": true,
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
-        "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
-        "published_at": "2026-10-15T17:18:49+00:00"
+        "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+        "published_at": "2026-10-15T23:38:46+00:00"
       },
       "hidden": true
     },
@@ -11354,8 +11354,8 @@
       "superseded": true,
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
-        "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
-        "published_at": "2026-10-15T17:18:49+00:00"
+        "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+        "published_at": "2026-10-15T23:38:46+00:00"
       },
       "hidden": true
     },
@@ -13848,8 +13848,8 @@
       "superseded": true,
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
-        "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
-        "published_at": "2026-10-15T17:18:49+00:00"
+        "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+        "published_at": "2026-10-15T23:38:46+00:00"
       },
       "hidden": true
     },
@@ -13948,8 +13948,8 @@
       "superseded": true,
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
-        "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
-        "published_at": "2026-10-15T17:18:49+00:00"
+        "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+        "published_at": "2026-10-15T23:38:46+00:00"
       },
       "hidden": true
     },
@@ -14882,8 +14882,8 @@
       "superseded": true,
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
-        "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
-        "published_at": "2026-10-15T17:18:49+00:00"
+        "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+        "published_at": "2026-10-15T23:38:46+00:00"
       },
       "hidden": true
     },
@@ -15197,8 +15197,8 @@
       "superseded": true,
       "superseded_by": {
         "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
-        "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
-        "published_at": "2026-10-15T17:18:49+00:00"
+        "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+        "published_at": "2026-10-15T23:38:46+00:00"
       },
       "hidden": true
     },
