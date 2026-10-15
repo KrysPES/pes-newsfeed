@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T23:23:48.014828+00:00",
+  "generated_at": "2026-10-15T23:29:12.705121+00:00",
   "item_count": 327,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 135,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1599
+        "ms": 1132
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 29000
+        "ms": 31211
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4310
+        "ms": 4089
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 4190
+        "ms": 3677
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 425
+        "ms": 706
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 175
+        "ms": 183
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 997
+        "ms": 4116
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 382
+        "ms": 379
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 643
+        "ms": 609
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 242
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20183
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 509
+        "ms": 629
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 104
+        "ms": 182
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 141
+        "ms": 127
       }
     ]
   },
@@ -194,6 +194,48 @@
       "also_reported_by": []
     },
     {
+      "title": "Can emergency reserves ease the diesel crisis?",
+      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/10/8/can-emergency-reserves-ease-the-diesel-crisis?traffic_source=rss",
+      "snippet": "The G7 plans to release emergency fuel stocks as diesel shortages raise transport costs and squeeze household budgets.",
+      "published_at": "2026-10-08T11:56:18+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 50,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 6.7,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 52.2,
+        "recency_multiplier": 0.81
+      },
+      "matched": {
+        "gas_storage": [
+          "stocks"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Ukraine Strikes Major Russian Oil Refinery",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Strikes-Major-Russian-Oil-Refinery.html",
       "snippet": "It took Ukraine just hours to turn President Volodymyr Zelenskyy’s “we’re done” into a refinery fire. Ukrainian drones struck Russia’s Ryazan refinery on Thursday, ending Kyiv’s brief pause in attacks on Russian energy infrastructure after Zelenskyy said Moscow had ignored the ceasefire promoted by ",
@@ -204,7 +246,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 50,
+      "score": 49,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -247,48 +289,6 @@
       "also_reported_by": [],
       "update_count": 26,
       "thread_started_at": "2026-10-04T12:09:04+00:00"
-    },
-    {
-      "title": "Can emergency reserves ease the diesel crisis?",
-      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/10/8/can-emergency-reserves-ease-the-diesel-crisis?traffic_source=rss",
-      "snippet": "The G7 plans to release emergency fuel stocks as diesel shortages raise transport costs and squeeze household budgets.",
-      "published_at": "2026-10-08T11:56:18+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 50,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 6.7,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 52.2,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "gas_storage": [
-          "stocks"
-        ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "Ship-to-Ship Oil Transfers Surge Off India’s West Coast",
@@ -892,7 +892,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 33.0,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.96
       },
       "matched": {
         "nuclear": [
@@ -1076,7 +1076,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 54.7,
-        "recency_multiplier": 0.57
+        "recency_multiplier": 0.56
       },
       "matched": {
         "geopolitics": [
@@ -8360,7 +8360,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.6,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "gas_storage": [
