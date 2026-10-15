@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-15T08:51:52.646639+00:00",
+  "generated_at": "2026-10-15T08:56:50.131021+00:00",
   "item_count": 326,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "normal": 21
   },
   "superseded_count": 127,
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1331
+        "ms": 1681
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 72106
+        "ms": 80995
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18229
+        "ms": 6728
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 71
+        "ms": 90
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 387
+        "ms": 395
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 16,
         "error": null,
-        "ms": 164
+        "ms": 226
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1111
+        "ms": 1323
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 327
+        "ms": 358
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 625
+        "ms": 739
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 315
+        "ms": 285
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 904
+        "ms": 573
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 65
+        "ms": 67
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 133
+        "ms": 148
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, ZANDVLIET 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/736efbc6-62db-4b7f-ae01-174004d05d93/4",
+      "snippet": "Published: 15.10.2026 10:51:21 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-10-15T08:51:21+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-14T16:27:14+00:00"
+    },
     {
       "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
       "url": "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat?traffic_source=rss",
@@ -221,7 +265,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.0,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.94
       },
       "matched": {
         "lng": [
@@ -278,7 +322,7 @@
           "hormuz"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 2,
       "also_reported_by": [
         "Al Jazeera"
       ],
@@ -1133,62 +1177,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Prices Fall as Trump Considers Easing Sanctions on Shadow Fleet Tankers",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Trump-Considers-Easing-Sanctions-on-Shadow-Fleet-Tankers.html",
-      "snippet": "Crude oil prices retreated from yesterday’s highs earlier today, on the news that President Trump was considering lifting sanctions on tankers used to transport oil and fuels from Venezuela, Russia, and Iran in a bid to ease a deepening tanker crunch. At the time of writing, Brent crude was trading ",
-      "published_at": "2026-10-15T05:19:07+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 33.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 35.3,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "shadow fleet"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "russia"
-        ],
-        "speculative": [
-          "considering",
-          "considers"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 14,
-      "thread_started_at": "2026-10-04T12:09:04+00:00"
-    },
-    {
       "title": "Brent Back Above $100 as Houthis Hit Saudi Infrastructure",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Back-Above-100-as-Houthis-Hit-Saudi-Infrastructure.html",
       "snippet": "More Top Reads From Oilprice.com IPO Market Stalls Four Months After SpaceX's $75 Billion Debut Europe's Power Grid Is Digitalizing Faster Than Regulators Can Keep Up G7’s 100 Million Barrel Release Is Mostly Already Priced In",
@@ -1262,7 +1250,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.93
       },
       "matched": {
         "lng": [
@@ -1277,6 +1265,62 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-10-13T06:00:54+00:00"
+    },
+    {
+      "title": "Oil Prices Fall as Trump Considers Easing Sanctions on Shadow Fleet Tankers",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Trump-Considers-Easing-Sanctions-on-Shadow-Fleet-Tankers.html",
+      "snippet": "Crude oil prices retreated from yesterday’s highs earlier today, on the news that President Trump was considering lifting sanctions on tankers used to transport oil and fuels from Venezuela, Russia, and Iran in a bid to ease a deepening tanker crunch. At the time of writing, Brent crude was trading ",
+      "published_at": "2026-10-15T05:19:07+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 33.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 35.3,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "shadow fleet"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "russia"
+        ],
+        "speculative": [
+          "considering",
+          "considers"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 14,
+      "thread_started_at": "2026-10-04T12:09:04+00:00"
     },
     {
       "title": "DOE offers Vistra loan for reactor upgrades and uprates",
@@ -1353,85 +1397,6 @@
         ],
         "geography": [
           "poland"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "TotalEnergies expects Q3 LNG results to rise sharply",
-      "url": "https://lngprime.com/europe/totalenergies-expects-q3-lng-results-to-rise-sharply/198431/",
-      "snippet": "French energy giant TotalEnergies, one of the world’s largest LNG players, expects its integrated LNG results to rise sharply in the third quarter compared to the prior quarter, driven by higher prices.",
-      "published_at": "2026-10-15T06:21:41+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 30.4,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "french"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Albanian Ministry of Justice on fire as education protesters riot",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/15/albanian-ministry-of-justice-on-fire-as-education-protesters-riot?traffic_source=rss",
-      "snippet": "Hundreds of students joined anti-government protests in Tirana, demanding education reforms.",
-      "published_at": "2026-10-15T03:30:42+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -1848,10 +1813,50 @@
       "also_reported_by": []
     },
     {
-      "title": "OpenAI bugging suspect allegedly booked one-way trip to Saudi Arabia",
-      "url": "https://www.aljazeera.com/economy/2026/10/15/openai-bugging-suspect-allegedly-booked-one-way-trip-to-saudi-arabia?traffic_source=rss",
-      "snippet": "Saudi national Abdulrahman Alfozan was due to fly to Saudi Arabia on October 12, US prosecutors say in court filing.",
-      "published_at": "2026-10-15T03:28:44+00:00",
+      "title": "TotalEnergies expects Q3 LNG results to rise sharply",
+      "url": "https://lngprime.com/europe/totalenergies-expects-q3-lng-results-to-rise-sharply/198431/",
+      "snippet": "French energy giant TotalEnergies, one of the world’s largest LNG players, expects its integrated LNG results to rise sharply in the third quarter compared to the prior quarter, driven by higher prices.",
+      "published_at": "2026-10-15T06:21:41+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "french"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Albanian Ministry of Justice on fire as education protesters riot",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/15/albanian-ministry-of-justice-on-fire-as-education-protesters-riot?traffic_source=rss",
+      "snippet": "Hundreds of students joined anti-government protests in Tirana, demanding education reforms.",
+      "published_at": "2026-10-15T03:30:42+00:00",
       "type": "news",
       "source": "aljazeera",
       "source_name": "Al Jazeera",
@@ -1860,27 +1865,27 @@
       "has_magnitude": false,
       "score": 37,
       "tags": [
-        "nuclear"
+        "supply_disruption"
       ],
       "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
-        "themes": 7.3,
+        "themes": 8.4,
         "geography": 0.0,
         "event_nature": 20.0,
         "urgency": 0.0,
         "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 36.8,
+        "raw": 37.9,
         "recency_multiplier": 0.77
       },
       "matched": {
-        "nuclear": [
-          "trip"
+        "supply_disruption": [
+          "fire"
         ],
         "unplanned": [
-          "trip"
+          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -1916,7 +1921,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.6,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.54
       },
       "matched": {
         "oil_macro": [
@@ -2145,6 +2150,45 @@
         ],
         "geography": [
           "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "OpenAI bugging suspect allegedly booked one-way trip to Saudi Arabia",
+      "url": "https://www.aljazeera.com/economy/2026/10/15/openai-bugging-suspect-allegedly-booked-one-way-trip-to-saudi-arabia?traffic_source=rss",
+      "snippet": "Saudi national Abdulrahman Alfozan was due to fly to Saudi Arabia on October 12, US prosecutors say in court filing.",
+      "published_at": "2026-10-15T03:28:44+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 7.3,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 36.8,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "nuclear": [
+          "trip"
+        ],
+        "unplanned": [
+          "trip"
         ]
       },
       "duplicate_count": 0,
@@ -4771,49 +4815,6 @@
         ],
         "geography": [
           "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, SE3, Forsmark Block3",
-      "url": "https://umm.nordpoolgroup.com/#/messages/a31920a5-061d-445c-9de0-bd8cb9c27230/3",
-      "snippet": "Published: 14.10.2026 18:27:14 Publisher: Forsmarks Kraftgrupp AB Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Troubleshooting with drain valve issue in the turbine drain system Remarks: Increase power postponed due to repairing and testing. &#",
-      "published_at": "2026-10-14T16:27:14+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.33
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
         ]
       },
       "duplicate_count": 0,
