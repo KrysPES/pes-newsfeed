@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-16T21:51:06.200743+00:00",
+  "generated_at": "2026-10-16T21:55:25.009552+00:00",
   "item_count": 330,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 13
+    "high": 1,
+    "normal": 12
   },
   "superseded_count": 142,
   "sources": {
@@ -17,111 +17,111 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1006
+        "ms": 1252
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 116359
+        "ms": 75525
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4475
+        "ms": 4448
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 266
+        "ms": 46
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 418
+        "ms": 222
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 200
+        "ms": 102
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 877
+        "ms": 991
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 300
+        "ms": 237
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 583
+        "ms": 532
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 130
+        "ms": 132
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 359
+        "ms": 344
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 36,
         "error": null,
-        "ms": 154
+        "ms": 40
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 94
+        "ms": 168
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, ZANDVLIET 1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/736efbc6-62db-4b7f-ae01-174004d05d93/5",
-      "snippet": "Published: 16.10.2026 20:54:33 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-10-16T18:54:33+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, LV, CHP-1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/5c57220e-2f9a-4810-a66a-7d1655ca3853/1",
+      "snippet": "Published: 16.10.2026 23:52:51 Publisher: AS Latvenergo Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Failure. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Feed-In From To CH",
+      "published_at": "2026-10-16T21:52:51+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 63,
+      "score": 66,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 1.0
       },
       "matched": {
         "supply_disruption": [
@@ -146,7 +146,7 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 3,
       "also_reported_by": [],
       "first_seen_at": "2026-10-16T08:39:16+00:00"
     },
@@ -816,54 +816,6 @@
       "thread_started_at": "2026-10-05T20:07:58+00:00"
     },
     {
-      "title": "Oil Prices Are Stuck at $105 as Geopolitical Risks Mount",
-      "url": "https://oilprice.com/Energy/Oil-Prices/Oil-Prices-Are-Stuck-at-105-as-Geopolitical-Risks-Mount.html",
-      "snippet": "Brent holds near $105 as Iranian tanker attacks and multiple geopolitical conflicts keep oil markets on edge. October 16, 2026 Oil prices have been relatively rangebound this week as the current modus operandi of frequent Hormuz transits and frequent Iranian drone attacks found an equilibrium point ",
-      "published_at": "2026-10-16T16:13:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 39.7,
-        "recency_multiplier": 0.76
-      },
-      "matched": {
-        "geopolitics": [
-          "drone"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "oil_macro": [
-          "brent"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "DOE offers Vistra loan for reactor upgrades and uprates",
       "url": "https://www.world-nuclear-news.org/articles/doe-offers-vistra-loan-for-reactor-upgrades-and-uprates",
       "snippet": "The US Department of Energy has announced a conditional loan commitment of up to USD4.2 billion to finance uprates and modernisation projects at Vistra Corp's Beaver Valley, Davis-Besse and Perry nuclear power plants.",
@@ -972,7 +924,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.7,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.75
       },
       "matched": {
         "geopolitics": [
@@ -1263,58 +1215,6 @@
       "also_reported_by": []
     },
     {
-      "title": "China’s Sufficient Gas Stocks Could Ease Winter Supply Concerns",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Sufficient-Gas-Stocks-Could-Ease-Winter-Supply-Concerns.html",
-      "snippet": "Chinese LNG buyers acted early to build gas stockpiles amid the Iran war, helping the world’s top LNG importer stock up enough inventories ahead of the winter, industry analysts have told Bloomberg. As of the end of September, China’s underground gas storage was 80% full, according to Rystad Energy’",
-      "published_at": "2026-10-16T11:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 37,
-      "tags": [
-        "gas_storage",
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 28.1,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 53.8,
-        "recency_multiplier": 0.53
-      },
-      "matched": {
-        "gas_storage": [
-          "storage",
-          "stocks",
-          "inventories"
-        ],
-        "geopolitics": [
-          "war"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 7,
-      "thread_started_at": "2026-10-07T09:59:17+00:00"
-    },
-    {
       "title": "New York Mayor Mamdani under fire for attending October 7 vigil",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/new-york-mayor-mamdani-under-fire-for-attending-october-7-vigil?traffic_source=rss",
       "snippet": "New York City’s Mayor Zohran Mamdani was met by crowds calling him a ‘traitor’ for attending a vigil for October 7.",
@@ -1475,6 +1375,58 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "China’s Sufficient Gas Stocks Could Ease Winter Supply Concerns",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Sufficient-Gas-Stocks-Could-Ease-Winter-Supply-Concerns.html",
+      "snippet": "Chinese LNG buyers acted early to build gas stockpiles amid the Iran war, helping the world’s top LNG importer stock up enough inventories ahead of the winter, industry analysts have told Bloomberg. As of the end of September, China’s underground gas storage was 80% full, according to Rystad Energy’",
+      "published_at": "2026-10-16T11:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 36,
+      "tags": [
+        "gas_storage",
+        "geopolitics",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 28.1,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 53.8,
+        "recency_multiplier": 0.52
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "stocks",
+          "inventories"
+        ],
+        "geopolitics": [
+          "war"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 7,
+      "thread_started_at": "2026-10-07T09:59:17+00:00"
     },
     {
       "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
@@ -1817,50 +1769,10 @@
           "barrels"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Norwegian used fuel to be stored in Sweden",
-      "url": "https://www.world-nuclear-news.org/articles/norwegian-used-fuel-to-be-stored-in-sweden",
-      "snippet": "Norwegian Nuclear Decommissioning has signed an agreement with Swedish nuclear technical services provider Studsvik to manage used nuclear fuel from the former research reactors at Halden and Kjeller.",
-      "published_at": "2026-10-16T12:37:56+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 21.8,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 45.7,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactors",
-          "decommissioning"
-        ],
-        "geography": [
-          "norwegian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Offshore Energy"
+      ]
     },
     {
       "title": "Iran war live: Pezeshkian warns of future environmental damage of conflict",
@@ -3122,7 +3034,7 @@
           "compliance"
         ]
       },
-      "duplicate_count": 0,
+      "duplicate_count": 1,
       "also_reported_by": []
     },
     {
@@ -3160,7 +3072,7 @@
           "lng exports"
         ]
       },
-      "duplicate_count": 0,
+      "duplicate_count": 1,
       "also_reported_by": []
     },
     {
@@ -3654,7 +3566,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 25.2,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.86
       },
       "matched": {
         "regulation": [
@@ -3840,93 +3752,6 @@
       "also_reported_by": [],
       "update_count": 55,
       "thread_started_at": "2026-10-03T19:00:00+00:00"
-    },
-    {
-      "title": "Greenlink Interconnector Limited: Certification under the ownership unbundling requirements of the Electricity Act 1989",
-      "url": "https://www.ofgem.gov.uk/decision/greenlink-interconnector-limited-certification-under-ownership-unbundling-requirements-electricity-act-1989",
-      "snippet": "Our final decision on Greenlink Interconnector Limited’s compliance with electricity transmission ownership unbundling requirements.",
-      "published_at": "2026-10-16T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "infrastructure",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 17.1,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 33.2,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "infrastructure": [
-          "interconnector",
-          "transmission"
-        ],
-        "regulation": [
-          "compliance"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Nexans starts manufacturing 525 kV subsea cables for LanWin2 offshore wind grid connection",
-      "url": "https://offshore-energy.biz/2026/10/16/nexans-starts-manufacturing-525-kv-subsea-cables-for-lanwin2-offshore-wind-grid-connection",
-      "snippet": "Nexans has started the production of 525 kV high-voltage direct current (HVDC) subsea cables for the LanWin2 offshore grid connection in Germany....",
-      "published_at": "2026-10-16T11:24:55+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "nuclear",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 17.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 40.0,
-        "recency_multiplier": 0.54
-      },
-      "matched": {
-        "nuclear": [
-          "grid connection"
-        ],
-        "infrastructure": [
-          "grid"
-        ],
-        "geography": [
-          "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-13T07:35:14+00:00"
     },
     {
       "title": "Atlantic, Pacific LNG rates down this week",
@@ -4169,44 +3994,6 @@
       "matched": {
         "lng": [
           "lng"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "US weekly LNG exports rise to 35 shipments",
-      "url": "https://lngprime.com/americas/us-weekly-lng-exports-rise-to-35-shipments/198488/",
-      "snippet": "US liquefied natural gas (LNG) plants sent 35 cargoes during the week ending October 14, up four shipments from the previous week, according to the Energy Information Administration.",
-      "published_at": "2026-10-16T06:19:06+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.42
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "lng exports"
         ]
       },
       "duplicate_count": 0,
