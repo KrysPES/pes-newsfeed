@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-16T18:55:12.823386+00:00",
+  "generated_at": "2026-10-16T18:59:59.814386+00:00",
   "item_count": 331,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 16
+    "high": 1,
+    "normal": 15
   },
   "superseded_count": 142,
   "sources": {
@@ -17,77 +17,77 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 815
+        "ms": 1071
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 72257
+        "ms": 61114
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5296
+        "ms": 4214
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 319
+        "ms": 255
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 565
+        "ms": 274
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 210
+        "ms": 156
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 1151
+        "ms": 1037
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 455
+        "ms": 321
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 643
+        "ms": 610
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 266
+        "ms": 210
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 489
+        "ms": 565
       },
       {
         "id": "bbc_world",
@@ -101,11 +101,55 @@
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 249
+        "ms": 294
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, ZANDVLIET 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/736efbc6-62db-4b7f-ae01-174004d05d93/5",
+      "snippet": "Published: 16.10.2026 20:54:33 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-10-16T18:54:33+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-16T08:39:16+00:00"
+    },
     {
       "title": "U.S. Offers Another 17 Million SPR Barrels as Fuel Crisis Deepens",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Offers-Another-17-Million-SPR-Barrels-as-Fuel-Crisis-Deepens.html",
@@ -453,7 +497,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.7,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -499,7 +543,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.73
+        "recency_multiplier": 0.72
       },
       "matched": {
         "nuclear": [
@@ -515,58 +559,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "China’s Sufficient Gas Stocks Could Ease Winter Supply Concerns",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Sufficient-Gas-Stocks-Could-Ease-Winter-Supply-Concerns.html",
-      "snippet": "Chinese LNG buyers acted early to build gas stockpiles amid the Iran war, helping the world’s top LNG importer stock up enough inventories ahead of the winter, industry analysts have told Bloomberg. As of the end of September, China’s underground gas storage was 80% full, according to Rystad Energy’",
-      "published_at": "2026-10-16T11:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 44,
-      "tags": [
-        "gas_storage",
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 28.1,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 53.8,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "gas_storage": [
-          "storage",
-          "stocks",
-          "inventories"
-        ],
-        "geopolitics": [
-          "war"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 7,
-      "thread_started_at": "2026-10-07T09:59:17+00:00"
     },
     {
       "title": "Drone attack sinks ship off Bulgaria’s Black Sea coast, PM says",
@@ -697,49 +689,56 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
-      "url": "https://umm.nordpoolgroup.com/#/messages/b316d2b3-7d33-4e73-8ecf-ea761bcd398f/1",
-      "snippet": "Published: 16.10.2026 10:39:18 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; ",
-      "published_at": "2026-10-16T08:39:18+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
+      "title": "China’s Sufficient Gas Stocks Could Ease Winter Supply Concerns",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Sufficient-Gas-Stocks-Could-Ease-Winter-Supply-Concerns.html",
+      "snippet": "Chinese LNG buyers acted early to build gas stockpiles amid the Iran war, helping the world’s top LNG importer stock up enough inventories ahead of the winter, industry analysts have told Bloomberg. As of the end of September, China’s underground gas storage was 80% full, according to Rystad Energy’",
+      "published_at": "2026-10-16T11:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
       "score": 43,
       "tags": [
-        "supply_disruption"
+        "gas_storage",
+        "geopolitics",
+        "lng"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
+        "authority": 8.8,
+        "themes": 28.1,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.53
+        "raw": 53.8,
+        "recency_multiplier": 0.65
       },
       "matched": {
-        "supply_disruption": [
-          "unplanned"
+        "gas_storage": [
+          "storage",
+          "stocks",
+          "inventories"
         ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "delay"
+        "geopolitics": [
+          "war"
         ],
-        "urgency": [
-          "unplanned"
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "china"
         ]
       },
-      "duplicate_count": 1,
+      "duplicate_count": 0,
       "also_reported_by": [],
-      "first_seen_at": "2026-10-16T08:39:16+00:00"
+      "update_count": 7,
+      "thread_started_at": "2026-10-07T09:59:17+00:00"
     },
     {
       "title": "Ofgem appoints Tim Jarvis as Chief Executive",
@@ -851,7 +850,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 34.2,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.96
       },
       "matched": {
         "oil_macro": [
@@ -890,7 +889,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 45.7,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.71
       },
       "matched": {
         "nuclear": [
@@ -3214,44 +3213,6 @@
       "also_reported_by": []
     },
     {
-      "title": "US weekly LNG exports rise to 35 shipments",
-      "url": "https://lngprime.com/americas/us-weekly-lng-exports-rise-to-35-shipments/198488/",
-      "snippet": "US liquefied natural gas (LNG) plants sent 35 cargoes during the week ending October 14, up four shipments from the previous week, according to the Energy Information Administration.",
-      "published_at": "2026-10-16T06:19:06+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 51.1,
-        "recency_multiplier": 0.44
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "lng exports"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "MHI delivers replacement steam generators for French reactor",
       "url": "https://www.world-nuclear-news.org/articles/mhi-delivers-replacement-steam-generators-for-french-reactor",
       "snippet": "Japan's Mitsubishi Heavy Industries has delivered a further three replacement steam generators to EDF. They are scheduled to be installed in unit 2 of its Cruas nuclear power plant in southeastern France.",
@@ -4047,6 +4008,44 @@
       "matched": {
         "lng": [
           "lng"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "US weekly LNG exports rise to 35 shipments",
+      "url": "https://lngprime.com/americas/us-weekly-lng-exports-rise-to-35-shipments/198488/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 35 cargoes during the week ending October 14, up four shipments from the previous week, according to the Energy Information Administration.",
+      "published_at": "2026-10-16T06:19:06+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 30,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 51.1,
+        "recency_multiplier": 0.44
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
         ]
       },
       "duplicate_count": 0,
