@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-16T08:39:43.514317+00:00",
+  "generated_at": "2026-10-16T08:44:59.315379+00:00",
   "item_count": 334,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "normal": 15
   },
   "superseded_count": 141,
@@ -17,95 +17,140 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1104
+        "ms": 1402
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 67775
+        "ms": 63368
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2809
+        "ms": 22980
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 498
+        "ms": 190
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 628
+        "ms": 600
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 147
+        "ms": 221
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 991
+        "ms": 1106
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 410
+        "ms": 426
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 678
+        "ms": 658
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 260
+        "ms": 208
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 514
+        "ms": 457
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 34,
         "error": null,
-        "ms": 187
+        "ms": 194
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 211
+        "ms": 230
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
+      "url": "https://umm.nordpoolgroup.com/#/messages/b316d2b3-7d33-4e73-8ecf-ea761bcd398f/1",
+      "snippet": "Published: 16.10.2026 10:39:18 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; ",
+      "published_at": "2026-10-16T08:39:18+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "delay"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-15T10:23:21+00:00"
+    },
     {
       "title": "ScottishPower Renewables completes ‘record-breaking’ cable landfall operation",
       "url": "https://offshore-energy.biz/2026/10/16/scottishpower-renewables-completes-record-breaking-cable-landfall-operation",
@@ -2202,48 +2247,6 @@
       "thread_started_at": "2026-10-05T12:30:00+00:00"
     },
     {
-      "title": "Venture Global gets approval to place first Plaquemines LNG phase in service",
-      "url": "https://lngprime.com/americas/venture-global-gets-approval-to-place-first-plaquemines-lng-phase-in-service/198506/",
-      "snippet": "Venture Global’s Plaquemines LNG has secured approval from the US FERC to place Phase 1 of its LNG export plant in Louisiana into service.",
-      "published_at": "2026-10-16T06:40:57+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "plaquemines"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-15T10:52:21+00:00"
-    },
-    {
       "title": "Trump suggests those who leak government information should ‘be shot’",
       "url": "https://www.aljazeera.com/news/2026/10/15/trump-suggests-those-who-leak-government-information-should-be-shot?traffic_source=rss",
       "snippet": "The US president has long been unhappy with inside information about his administration being leaked to the media.",
@@ -2621,6 +2624,48 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Venture Global gets approval to place first Plaquemines LNG phase in service",
+      "url": "https://lngprime.com/americas/venture-global-gets-approval-to-place-first-plaquemines-lng-phase-in-service/198506/",
+      "snippet": "Venture Global’s Plaquemines LNG has secured approval from the US FERC to place Phase 1 of its LNG export plant in Louisiana into service.",
+      "published_at": "2026-10-16T06:40:57+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 25.4,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "plaquemines"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-10-15T10:52:21+00:00"
     },
     {
       "title": "Albanian Ministry of Justice on fire as education protesters riot",
@@ -4344,50 +4389,6 @@
         ],
         "geography": [
           "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Aughinish Alumina Limited - Sealrock 4 - GU_400121 (SK4)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/d0948c88-7478-4de7-943b-69c84effcf7a/1",
-      "snippet": "Published: 15.10.2026 12:23:21 Publisher: Aughinish Alumia Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: maintenance Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Feed-In From",
-      "published_at": "2026-10-15T10:23:21+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 16.8,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 74.7,
-        "recency_multiplier": 0.29
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "maintenance"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
         ]
       },
       "duplicate_count": 0,
