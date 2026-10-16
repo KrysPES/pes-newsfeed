@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T00:15:32.347125+00:00",
+  "generated_at": "2026-10-16T00:19:28.891033+00:00",
   "item_count": 327,
   "alert_counts": {
     "critical": 0,
@@ -8,9 +8,9 @@
   },
   "superseded_count": 136,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
@@ -24,84 +24,84 @@
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 71519
+        "ms": 64110
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 39588
+        "ms": 3138
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 270
+        "ms": 126
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 136
+        "ms": 662
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 213
+        "ms": 116
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 1087
+        "ms": 1095
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 615
+        "ms": 278
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 641
+        "ms": 634
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20149
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 158
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 380
+        "ms": 375
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 51
+        "ms": 60
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 243
+        "ms": 221
       }
     ]
   },
@@ -494,7 +494,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.2,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.77
       },
       "matched": {
         "oil_macro": [
@@ -1010,7 +1010,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 33.0,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.9
       },
       "matched": {
         "nuclear": [
@@ -1762,7 +1762,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 31.9,
-        "recency_multiplier": 0.88
+        "recency_multiplier": 0.86
       },
       "matched": {
         "oil_macro": [
@@ -1799,7 +1799,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.6,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.66
       },
       "matched": {
         "supply_disruption": [
@@ -8296,7 +8296,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.3,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -8481,69 +8481,6 @@
       "thread_started_at": "2026-10-07T20:00:00+00:00"
     },
     {
-      "title": "Oil Prices Fall as Trump Considers Easing Sanctions on Shadow Fleet Tankers",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Trump-Considers-Easing-Sanctions-on-Shadow-Fleet-Tankers.html",
-      "snippet": "Crude oil prices retreated from yesterday’s highs earlier today, on the news that President Trump was considering lifting sanctions on tankers used to transport oil and fuels from Venezuela, Russia, and Iran in a bid to ease a deepening tanker crunch. At the time of writing, Brent crude was trading ",
-      "published_at": "2026-10-15T05:19:07+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 1,
-      "tags": [
-        "geopolitics",
-        "oil_macro",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 33.5,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": -12.0,
-        "raw": 35.3,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "shadow fleet"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "russia"
-        ],
-        "speculative": [
-          "considering",
-          "considers"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 6,
-      "thread_started_at": "2026-10-08T00:33:03+00:00",
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Energy/Crude-Oil/Standard-Chartered-Trumps-Russian-Diesel-Wont-Add-New-Supply.html",
-        "title": "Standard Chartered: Trump's Russian Diesel Won't Add New Supply",
-        "published_at": "2026-10-16T00:00:00+00:00"
-      },
-      "hidden": true
-    },
-    {
       "title": "Russia says Ukraine resumes attacks on oil refineries",
       "url": "https://www.aljazeera.com/news/2026/10/15/russia-says-ukraine-resumes-attacks-on-oil-refineries?traffic_source=rss",
       "snippet": "Ukraine&#039;s president earlier said Kyiv was &#039;done&#039; with energy ceasefire and that strikes on Russian oil refineries would resume.",
@@ -8639,6 +8576,69 @@
         "url": "https://oilprice.com/Latest-Energy-News/World-News/Pakistan-Faces-Winter-Gas-Shortages-if-Hormuz-LNG-Remains-Choked.html",
         "title": "Pakistan Faces Winter Gas Shortages if Hormuz LNG Remains Choked",
         "published_at": "2026-10-15T15:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Oil Prices Fall as Trump Considers Easing Sanctions on Shadow Fleet Tankers",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Trump-Considers-Easing-Sanctions-on-Shadow-Fleet-Tankers.html",
+      "snippet": "Crude oil prices retreated from yesterday’s highs earlier today, on the news that President Trump was considering lifting sanctions on tankers used to transport oil and fuels from Venezuela, Russia, and Iran in a bid to ease a deepening tanker crunch. At the time of writing, Brent crude was trading ",
+      "published_at": "2026-10-15T05:19:07+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 0,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 33.5,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": -12.0,
+        "raw": 35.3,
+        "recency_multiplier": 0.61
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "shadow fleet"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "russia"
+        ],
+        "speculative": [
+          "considering",
+          "considers"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 6,
+      "thread_started_at": "2026-10-08T00:33:03+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Energy/Crude-Oil/Standard-Chartered-Trumps-Russian-Diesel-Wont-Add-New-Supply.html",
+        "title": "Standard Chartered: Trump's Russian Diesel Won't Add New Supply",
+        "published_at": "2026-10-16T00:00:00+00:00"
       },
       "hidden": true
     },
