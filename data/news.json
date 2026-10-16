@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T00:04:29.478913+00:00",
+  "generated_at": "2026-10-16T00:09:23.706104+00:00",
   "item_count": 327,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 136,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 864
+        "ms": 814
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 44778
+        "ms": 40462
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 23781
+        "ms": 2828
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 154
+        "ms": 76
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 499
+        "ms": 284
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 17,
         "error": null,
-        "ms": 127
+        "ms": 145
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 917
+        "ms": 1081
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 360
+        "ms": 380
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 580
+        "ms": 629
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 183
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20164
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 331
+        "ms": 221
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 113
+        "ms": 50
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 130
+        "ms": 148
       }
     ]
   },
@@ -381,48 +381,6 @@
       "also_reported_by": []
     },
     {
-      "title": "IEA Speeds Emergency Oil Release",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/IEA-Speeds-Emergency-Oil-Release.html",
-      "snippet": "The International Energy Agency will release more than 20 million barrels of diesel as soon as possible and accelerate the rest of its emergency oil draw, Total releases are now set to exceed the 400 million barrels pledged in March. About 330 million barrels have already been released since the Str",
-      "published_at": "2026-10-15T19:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 47,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 4.5,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.2,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "oil_macro": [
-          "barrels"
-        ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Northern Israel explosion kills at least 1 person, injures 19",
       "url": "https://www.aljazeera.com/news/2026/10/12/explosion-in-northern-israel-students-and-teachers-injured?traffic_source=rss",
       "snippet": "The blast occurred in northern Israel near the Lebanese border and is under investigation.",
@@ -509,6 +467,48 @@
       "also_reported_by": [
         "BBC World"
       ]
+    },
+    {
+      "title": "IEA Speeds Emergency Oil Release",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/IEA-Speeds-Emergency-Oil-Release.html",
+      "snippet": "The International Energy Agency will release more than 20 million barrels of diesel as soon as possible and accelerate the rest of its emergency oil draw, Total releases are now set to exceed the 400 million barrels pledged in March. About 330 million barrels have already been released since the Str",
+      "published_at": "2026-10-15T19:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 4.5,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 49.2,
+        "recency_multiplier": 0.78
+      },
+      "matched": {
+        "oil_macro": [
+          "barrels"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Drone attack sinks ship off Bulgaria’s Black Sea coast, PM says",
@@ -930,7 +930,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 33.0,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.91
       },
       "matched": {
         "nuclear": [
@@ -969,7 +969,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 74.7,
-        "recency_multiplier": 0.41
+        "recency_multiplier": 0.4
       },
       "matched": {
         "supply_disruption": [
@@ -1116,8 +1116,8 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 24,
-      "thread_started_at": "2026-10-02T00:00:00+00:00"
+      "update_count": 23,
+      "thread_started_at": "2026-10-02T05:06:59+00:00"
     },
     {
       "title": "Iranian Ship Attacks Threaten Middle East Oil Exports as Tanker Traffic Slows",
@@ -1799,7 +1799,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.6,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.67
       },
       "matched": {
         "supply_disruption": [
@@ -8296,7 +8296,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.3,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.81
       },
       "matched": {
         "geopolitics": [
@@ -8355,7 +8355,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.6,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.55
       },
       "matched": {
         "gas_storage": [
@@ -8437,7 +8437,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 9,
+      "score": 3,
       "tags": [
         "geopolitics",
         "oil_macro",
