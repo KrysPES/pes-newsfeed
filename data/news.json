@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T21:41:53.810441+00:00",
+  "generated_at": "2026-10-17T21:46:09.517116+00:00",
   "item_count": 340,
   "alert_counts": {
     "critical": 0,
@@ -8,86 +8,86 @@
   },
   "superseded_count": 146,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 979
+        "ms": 773
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 108478
+        "ms": 80029
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18542
+        "ms": 2576
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 69
+        "ms": 217
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 292
+        "ms": 442
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 230
+        "ms": 104
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 1011
+        "ms": 972
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 296
+        "ms": 372
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 517
+        "ms": 509
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 112
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://www.rigzone.com/news/rss/rigzone_latest.aspx",
+        "ms": 110
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 254
+        "ms": 443
       },
       {
         "id": "bbc_world",
@@ -101,7 +101,7 @@
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 117
+        "ms": 102
       }
     ]
   },
@@ -222,7 +222,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.65
       },
       "matched": {
         "supply_disruption": [
@@ -536,7 +536,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.97
       },
       "matched": {
         "supply_disruption": [
@@ -2423,7 +2423,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -2821,48 +2821,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
-      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
-      "published_at": "2026-10-17T19:19:19+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "russia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 27,
-      "thread_started_at": "2026-10-04T12:09:04+00:00"
-    },
-    {
       "title": "Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast",
       "url": "https://www.aljazeera.com/news/2026/10/12/two-deaths-reported-as-hurricane-simon-storm-rachel-batter-mexicos-coast?traffic_source=rss",
       "snippet": "Simon caps a Pacific season of record-breaking intensity, as deadly storms wreak havoc from Hawaii to Mexico.",
@@ -2945,6 +2903,48 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+      "published_at": "2026-10-17T19:19:19+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.2,
+        "recency_multiplier": 0.97
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 27,
+      "thread_started_at": "2026-10-04T12:09:04+00:00"
     },
     {
       "title": "Tens of thousands protest for reforms in France amid tear gas and unrest",
