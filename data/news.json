@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T18:11:35.022234+00:00",
+  "generated_at": "2026-10-17T18:15:16.226468+00:00",
   "item_count": 337,
   "alert_counts": {
     "critical": 0,
@@ -8,44 +8,44 @@
   },
   "superseded_count": 146,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 966
+        "ms": 1071
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 75283
+        "ms": 29109
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 41820
+        "ms": 3359
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 118
+        "ms": 3534
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 265
+        "ms": 351
       },
       {
         "id": "eia_today",
@@ -59,49 +59,49 @@
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 1178
+        "ms": 4196
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 408
+        "ms": 345
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 634
+        "ms": 638
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 238
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://www.rigzone.com/news/rss/rigzone_latest.aspx",
+        "ms": 217
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 500
+        "ms": 564
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 106
+        "ms": 84
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 172
+        "ms": 247
       }
     ]
   },
@@ -219,7 +219,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.9,
-        "recency_multiplier": 0.99
+        "recency_multiplier": 0.98
       },
       "matched": {
         "supply_disruption": [
@@ -2698,46 +2698,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Tens of thousands protest for reforms in France amid tear gas and unrest",
-      "url": "https://www.aljazeera.com/news/2026/10/17/france-wave-of-nationwide-protests?traffic_source=rss",
-      "snippet": "Large cross-sector demonstrations in Paris and other cities unite students, teachers, unions and &#039;yellow vests&#039;.",
-      "published_at": "2026-10-17T13:44:42+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 9.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 28.5,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "geopolitics": [
-          "unrest"
-        ],
-        "geography": [
-          "france"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast",
       "url": "https://www.aljazeera.com/news/2026/10/12/two-deaths-reported-as-hurricane-simon-storm-rachel-batter-mexicos-coast?traffic_source=rss",
       "snippet": "Simon caps a Pacific season of record-breaking intensity, as deadly storms wreak havoc from Hawaii to Mexico.",
@@ -2899,6 +2859,46 @@
         ],
         "geography": [
           "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Tens of thousands protest for reforms in France amid tear gas and unrest",
+      "url": "https://www.aljazeera.com/news/2026/10/17/france-wave-of-nationwide-protests?traffic_source=rss",
+      "snippet": "Large cross-sector demonstrations in Paris and other cities unite students, teachers, unions and &#039;yellow vests&#039;.",
+      "published_at": "2026-10-17T13:44:42+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 28.5,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "geopolitics": [
+          "unrest"
+        ],
+        "geography": [
+          "france"
         ]
       },
       "duplicate_count": 0,
