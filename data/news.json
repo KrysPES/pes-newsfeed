@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-18T19:33:11.123012+00:00",
+  "generated_at": "2026-10-18T19:37:05.913090+00:00",
   "item_count": 345,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 15
+    "high": 1,
+    "normal": 14
   },
   "superseded_count": 150,
   "sources": {
@@ -17,95 +17,140 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 869
+        "ms": 1454
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 95758
+        "ms": 45726
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 24922
+        "ms": 9611
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 440
+        "ms": 203
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 870
+        "ms": 296
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 120
+        "ms": 146
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 895
+        "ms": 691
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 293
+        "ms": 367
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 511
+        "ms": 529
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 74
+        "ms": 84
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 442
+        "ms": 453
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 50
+        "ms": 144
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 126
+        "ms": 116
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, SCHELDELAAN EXXONMOBIL",
+      "url": "https://umm.nordpoolgroup.com/#/messages/01cd83ab-58ec-408c-bd6f-965f0e66a3ab/2",
+      "snippet": "Published: 18.10.2026 21:35:19 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity",
+      "published_at": "2026-10-18T19:35:19+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "delay"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-18T09:04:41+00:00"
+    },
     {
       "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
       "url": "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat?traffic_source=rss",
@@ -510,50 +555,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, TIHANGE 3",
-      "url": "https://umm.nordpoolgroup.com/#/messages/57845e87-8a9f-4f6a-b25d-bf42d3d511cb/2",
-      "snippet": "Published: 18.10.2026 12:05:40 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Planned test Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfi",
-      "published_at": "2026-10-18T10:05:40+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.56
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 3,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-18T07:17:10+00:00"
     },
     {
       "title": "Drone attack sinks ship off Bulgaria’s Black Sea coast, PM says",
@@ -3439,7 +3440,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.9,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.78
       },
       "matched": {
         "supply_disruption": [
