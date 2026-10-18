@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-18T01:57:07.540986+00:00",
-  "item_count": 342,
+  "generated_at": "2026-10-18T02:03:00.957798+00:00",
+  "item_count": 343,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 13
+    "high": 1,
+    "normal": 11
   },
-  "superseded_count": 147,
+  "superseded_count": 149,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,150 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 902
+        "ms": 894
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 126859
+        "ms": 164333
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2654
+        "ms": 18346
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 55
+        "ms": 125
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 306
+        "ms": 529
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 88
+        "ms": 80
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 903
+        "ms": 884
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 345
+        "ms": 727
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 537
+        "ms": 568
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 141
+        "ms": 77
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 434
+        "ms": 459
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 236
+        "ms": 485
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 119
+        "ms": 54
       }
     ]
   },
   "items": [
+    {
+      "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+      "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+      "snippet": "The vessels, each carrying about two million barrels of crude oil, used an unauthorised route, the IRGC says.",
+      "published_at": "2026-10-18T01:54:18+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 68,
+      "tags": [
+        "geopolitics",
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 25.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 70.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 51,
+      "thread_started_at": "2026-10-04T18:47:22+00:00"
+    },
     {
       "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
       "url": "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat?traffic_source=rss",
@@ -146,55 +201,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Iranian TV airs video said to show tanker explosion in Hormuz",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/iranian-tv-airs-video-said-to-show-tanker-explosion-in-hormuz?traffic_source=rss",
-      "snippet": "Iranian state TV aired footage claiming to show an oil tanker exploding after striking a naval mine in Hormuz",
-      "published_at": "2026-10-17T20:02:22+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 50,
-      "tags": [
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 12.8,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 58.3,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "supply_disruption": [
-          "explosion"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "geography": [
-          "hormuz"
-        ],
-        "unplanned": [
-          "explosion"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 3,
-      "thread_started_at": "2026-10-15T14:00:00+00:00"
     },
     {
       "title": "Can emergency reserves ease the diesel crisis?",
@@ -425,50 +431,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-      "snippet": "Fires reported on three tankers, as masked settlers attack European politicians in the occupied West Bank.",
-      "published_at": "2026-10-18T00:00:11+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.4,
-        "recency_multiplier": 1.0
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "attack"
-        ],
-        "geography": [
-          "european",
-          "eu"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 46,
-      "thread_started_at": "2026-10-04T18:47:22+00:00"
     },
     {
       "title": "Drone attack sinks ship off Bulgaria’s Black Sea coast, PM says",
@@ -771,51 +733,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
-      "url": "https://umm.nordpoolgroup.com/#/messages/82d843ab-4b68-4428-a3fe-5060d75b3a9b/13",
-      "snippet": "Published: 17.10.2026 16:13:56 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfil",
-      "published_at": "2026-10-17T14:13:56+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 40,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.47
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "delay"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-17T11:49:30+00:00"
-    },
-    {
       "title": "Brent Back Above $100 as Houthis Hit Saudi Infrastructure",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Back-Above-100-as-Houthis-Hit-Saudi-Infrastructure.html",
       "snippet": "More Top Reads From Oilprice.com IPO Market Stalls Four Months After SpaceX's $75 Billion Debut Europe's Power Grid Is Digitalizing Faster Than Regulators Can Keep Up G7’s 100 Million Barrel Release Is Mostly Already Priced In",
@@ -861,6 +778,51 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-10-05T20:07:58+00:00"
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
+      "url": "https://umm.nordpoolgroup.com/#/messages/82d843ab-4b68-4428-a3fe-5060d75b3a9b/13",
+      "snippet": "Published: 17.10.2026 16:13:56 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfil",
+      "published_at": "2026-10-17T14:13:56+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 0.47
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "delay"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-17T11:49:30+00:00"
     },
     {
       "title": "DOE offers Vistra loan for reactor upgrades and uprates",
@@ -968,7 +930,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.78
       },
       "matched": {
         "supply_disruption": [
@@ -1760,7 +1722,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.7
       },
       "matched": {
         "supply_disruption": [
@@ -3560,7 +3522,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 23.6,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -8437,6 +8399,109 @@
       "also_reported_by": []
     },
     {
+      "title": "Iranian TV airs video said to show tanker explosion in Hormuz",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/iranian-tv-airs-video-said-to-show-tanker-explosion-in-hormuz?traffic_source=rss",
+      "snippet": "Iranian state TV aired footage claiming to show an oil tanker exploding after striking a naval mine in Hormuz",
+      "published_at": "2026-10-17T20:02:22+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 15,
+      "tags": [
+        "supply_disruption",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 12.8,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 58.3,
+        "recency_multiplier": 0.73
+      },
+      "matched": {
+        "supply_disruption": [
+          "explosion"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "hormuz"
+        ],
+        "unplanned": [
+          "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
+      "snippet": "Fires reported on three tankers, as masked settlers attack European politicians in the occupied West Bank.",
+      "published_at": "2026-10-18T00:00:11+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 14,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "attack"
+        ],
+        "geography": [
+          "european",
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "Photos: Thousands march across Europe to demand end to Israel’s war on Gaza",
       "url": "https://www.aljazeera.com/gallery/2026/10/10/photos-thousands-march-across-europe-to-demand-end-to-israels-war-on-gaza?traffic_source=rss",
       "snippet": "Demonstrations in London, Berlin, and Rome denounce ongoing Israeli attacks on Gaza &#039;ceasefire&#039; anniversary.",
@@ -8530,9 +8595,9 @@
       "thread_started_at": "2026-10-04T18:47:22+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -8580,9 +8645,9 @@
       "thread_started_at": "2026-10-03T19:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -8627,9 +8692,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -8691,9 +8756,9 @@
       "thread_started_at": "2026-10-04T18:47:22+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -8901,9 +8966,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -8951,9 +9016,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -9000,9 +9065,9 @@
       "thread_started_at": "2026-10-04T18:47:22+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -9171,9 +9236,9 @@
       "thread_started_at": "2026-10-02T05:06:59+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/iranian-tv-airs-video-said-to-show-tanker-explosion-in-hormuz?traffic_source=rss",
-        "title": "Iranian TV airs video said to show tanker explosion in Hormuz",
-        "published_at": "2026-10-17T20:02:22+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -9223,9 +9288,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/iranian-tv-airs-video-said-to-show-tanker-explosion-in-hormuz?traffic_source=rss",
-        "title": "Iranian TV airs video said to show tanker explosion in Hormuz",
-        "published_at": "2026-10-17T20:02:22+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -9278,9 +9343,9 @@
       "thread_started_at": "2026-10-02T10:06:21+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/iranian-tv-airs-video-said-to-show-tanker-explosion-in-hormuz?traffic_source=rss",
-        "title": "Iranian TV airs video said to show tanker explosion in Hormuz",
-        "published_at": "2026-10-17T20:02:22+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -9427,9 +9492,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -9646,9 +9711,9 @@
       "thread_started_at": "2026-10-08T00:33:03+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -9797,9 +9862,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -10002,9 +10067,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -10257,9 +10322,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -10311,9 +10376,9 @@
       "thread_started_at": "2026-10-10T00:22:52+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -10567,9 +10632,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -11108,9 +11173,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -11414,9 +11479,9 @@
       "thread_started_at": "2026-09-30T14:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -11671,9 +11736,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -11724,9 +11789,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -11787,9 +11852,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -12361,9 +12426,9 @@
       "thread_started_at": "2026-10-11T12:28:11+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -12412,9 +12477,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -12562,9 +12627,9 @@
       "thread_started_at": "2026-10-08T00:33:03+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -12614,9 +12679,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -12875,9 +12940,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -12919,9 +12984,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -13119,9 +13184,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -13380,9 +13445,9 @@
       "thread_started_at": "2026-10-01T11:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -13427,9 +13492,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -13586,9 +13651,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -13691,9 +13756,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -14304,9 +14369,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true,
       "update_count": 14,
@@ -14456,9 +14521,9 @@
       "thread_started_at": "2026-09-30T14:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -14673,9 +14738,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -14832,9 +14897,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -14889,9 +14954,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -15003,9 +15068,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -15154,9 +15219,9 @@
       "thread_started_at": "2026-10-02T05:06:59+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -15258,9 +15323,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -15361,9 +15426,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -15461,9 +15526,9 @@
       "thread_started_at": "2026-09-30T14:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -15509,9 +15574,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -15566,9 +15631,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -15624,9 +15689,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -15774,9 +15839,9 @@
       "thread_started_at": "2026-09-30T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -15935,9 +16000,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
@@ -16030,9 +16095,9 @@
       "thread_started_at": "2026-09-30T14:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
-        "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
-        "published_at": "2026-10-18T00:00:11+00:00"
+        "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
+        "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+        "published_at": "2026-10-18T01:54:18+00:00"
       },
       "hidden": true
     },
