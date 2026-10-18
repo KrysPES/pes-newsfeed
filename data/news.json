@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T06:46:34.861935+00:00",
+  "generated_at": "2026-10-18T06:52:00.850143+00:00",
   "item_count": 345,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 149,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 754
+        "ms": 1065
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 57511
+        "ms": 23566
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2866
+        "ms": 29775
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 212
+        "ms": 542
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 337
+        "ms": 594
       },
       {
         "id": "eia_today",
-        "ok": true,
-        "count": 18,
-        "error": null,
-        "ms": 72
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.eia.gov', port=443): Read timed out. (read timeout=20)",
+        "ms": 20134
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 864
+        "ms": 1198
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 324
+        "ms": 472
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 532
+        "ms": 683
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 50
+        "ms": 256
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 269
+        "ms": 363
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 178
+        "ms": 252
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 112
+        "ms": 314
       }
     ]
   },
@@ -146,8 +146,9 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-17T14:13:56+00:00"
     },
     {
       "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
@@ -203,50 +204,6 @@
       "also_reported_by": [],
       "update_count": 43,
       "thread_started_at": "2026-10-04T18:47:22+00:00"
-    },
-    {
-      "title": "Deaths confirmed in major fire at Canada military base",
-      "url": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Number of casualties unknown in \"very, very active and delicate\" situation in Alberta, says defence minister.",
-      "published_at": "2026-10-18T04:00:50+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 56,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.2,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 54.6,
-        "recency_multiplier": 0.94
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ],
-        "urgency": [
-          "confirmed"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ]
     },
     {
       "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
@@ -471,6 +428,48 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Several dead or injured in major fire at Canada military base",
+      "url": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Officials have not given a death toll, citing the \"very active and delicate\" situation at Canadian Forces Base Wainwright.",
+      "published_at": "2026-10-18T06:47:57+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.6,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "first_seen_at": "2026-10-18T04:59:29+00:00"
     },
     {
       "title": "Fuel tanker fire engulfs market in southern Nigeria",
