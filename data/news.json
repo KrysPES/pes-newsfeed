@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T03:33:03.770542+00:00",
+  "generated_at": "2026-10-18T03:38:25.712222+00:00",
   "item_count": 344,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 149,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 898
+        "ms": 941
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 154009
+        "ms": 156670
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3184
+        "ms": 2874
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 137
+        "ms": 227
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 591
+        "ms": 849
       },
       {
         "id": "eia_today",
-        "ok": true,
-        "count": 18,
-        "error": null,
-        "ms": 82
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.eia.gov', port=443): Read timed out. (read timeout=20)",
+        "ms": 20070
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 1176
+        "ms": 936
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 588
+        "ms": 274
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 529
+        "ms": 548
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 87
+        "ms": 75
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 371
+        "ms": 285
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 60
+        "ms": 154
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 106
+        "ms": 139
       }
     ]
   },
@@ -1698,45 +1698,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Ten killed in fire at beach resort in Bangladesh",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/17-10-sv-coxsbazaar-hotel-blaze-_-bd?traffic_source=rss",
-      "snippet": "Ten people, including six members of the same family, were killed in a fire at a beach resort in Bangladesh.",
-      "published_at": "2026-10-17T20:50:01+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Buildings and cars set on fire as cost of living protests rock France",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/17-10-clip-france-clashes-protests-fr?traffic_source=rss",
       "snippet": "Protesters have set fire to cars and buildings in France as demonstrations escalate.",
@@ -2048,6 +2009,45 @@
         "geography": [
           "european",
           "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ten killed in fire at beach resort in Bangladesh",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/17-10-sv-coxsbazaar-hotel-blaze-_-bd?traffic_source=rss",
+      "snippet": "Ten people, including six members of the same family, were killed in a fire at a beach resort in Bangladesh.",
+      "published_at": "2026-10-17T20:50:01+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 0.69
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
         ]
       },
       "duplicate_count": 0,
@@ -2789,48 +2789,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
-      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
-      "snippet": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
-      "published_at": "2026-10-18T01:10:25+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.2,
-        "recency_multiplier": 0.97
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions"
-        ],
-        "geography": [
-          "russia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 24,
-      "thread_started_at": "2026-10-04T12:09:04+00:00"
-    },
-    {
       "title": "Albanian police fire rubber bullets as protests against Rama escalate",
       "url": "https://www.aljazeera.com/news/2026/10/17/albanian-police-fire-rubber-bullets-as-protests-against-rama-escalate?traffic_source=rss",
       "snippet": "Five days of clashes rock Tirana as students join a wider movement demanding Prime Minister Edi Rama&#039;s resignation.",
@@ -2952,6 +2910,48 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+      "published_at": "2026-10-18T01:10:25+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.2,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 24,
+      "thread_started_at": "2026-10-04T12:09:04+00:00"
     },
     {
       "title": "Tens of thousands protest for reforms in France amid tear gas and unrest",
@@ -8519,7 +8519,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.4,
-        "recency_multiplier": 0.89
+        "recency_multiplier": 0.88
       },
       "matched": {
         "geopolitics": [
