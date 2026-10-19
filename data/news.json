@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-19T08:52:25.480892+00:00",
+  "generated_at": "2026-10-19T08:57:46.203348+00:00",
   "item_count": 354,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 17
+    "high": 0,
+    "normal": 18
   },
   "superseded_count": 152,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 732
+        "ms": 1275
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 49506
+        "ms": 53512
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2624
+        "ms": 18694
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 473
+        "ms": 190
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 276
+        "ms": 295
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 143
+        "ms": 155
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 797
+        "ms": 802
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 287
+        "ms": 304
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 529
+        "ms": 587
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 120
+        "ms": 91
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 436
+        "ms": 372
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 89
+        "ms": 121
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 182
+        "ms": 191
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 65,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -346,7 +346,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.7,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.81
       },
       "matched": {
         "lng": [
@@ -456,46 +456,6 @@
       "also_reported_by": []
     },
     {
-      "title": "UKMTO reports LNG carrier incident off Yemen",
-      "url": "https://lngprime.com/middle-east/ukmto-reports-lng-carrier-incident-off-yemen/198582/",
-      "snippet": "The United Kingdom Maritime Trade Operations (UKMTO) Center said it received a report of an incident off Yemen involving a liquefied natural gas (LNG) carrier and a small skiff.",
-      "published_at": "2026-10-19T04:14:48+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 47,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 13.1,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 47.7,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier"
-        ],
-        "unplanned": [
-          "incident"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Northern Israel explosion kills at least 1 person, injures 19",
       "url": "https://www.aljazeera.com/news/2026/10/12/explosion-in-northern-israel-students-and-teachers-injured?traffic_source=rss",
       "snippet": "The blast occurred in northern Israel near the Lebanese border and is under investigation.",
@@ -530,6 +490,46 @@
         ],
         "unplanned": [
           "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UKMTO reports LNG carrier incident off Yemen",
+      "url": "https://lngprime.com/middle-east/ukmto-reports-lng-carrier-incident-off-yemen/198582/",
+      "snippet": "The United Kingdom Maritime Trade Operations (UKMTO) Center said it received a report of an incident off Yemen involving a liquefied natural gas (LNG) carrier and a small skiff.",
+      "published_at": "2026-10-19T04:14:48+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 47.7,
+        "recency_multiplier": 0.81
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "unplanned": [
+          "incident"
         ]
       },
       "duplicate_count": 0,
