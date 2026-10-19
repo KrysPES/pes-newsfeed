@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-19T02:41:58.806720+00:00",
+  "generated_at": "2026-10-19T02:46:57.544009+00:00",
   "item_count": 348,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 15
+    "high": 1,
+    "normal": 14
   },
   "superseded_count": 153,
   "sources": {
@@ -17,95 +17,140 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 911
+        "ms": 1269
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 31268
+        "ms": 30745
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5211
+        "ms": 4454
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 393
+        "ms": 193
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 1228
+        "ms": 320
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 18,
         "error": null,
-        "ms": 262
+        "ms": 316
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 1092
+        "ms": 1321
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 369
+        "ms": 340
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 638
+        "ms": 1286
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 306
+        "ms": 276
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 626
+        "ms": 431
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 63
+        "ms": 100
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 115
+        "ms": 133
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, ZANDVLIET 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/585bbcd0-9f50-4e79-8b1c-b303bc3b2b32/1",
+      "snippet": "Published: 19.10.2026 04:42:41 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Start delay Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; ",
+      "published_at": "2026-10-19T02:42:41+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "delay"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-18T19:35:19+00:00"
+    },
     {
       "title": "What we know so far about deadly fire at Canadian military base",
       "url": "https://www.bbc.co.uk/news/articles/cmgelrq8x92do?at_medium=RSS&at_campaign=rss",
@@ -147,49 +192,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
-      "url": "https://umm.nordpoolgroup.com/#/messages/8c710b18-f837-446f-85c5-fd4d81e48e49/3",
-      "snippet": "Published: 18.10.2026 23:17:36 Publisher: Electrabel SA Status: Dismissed Cancellation reason: Cancellation of unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or TestProfile; please click on the UMM for more details. Type of Unavailability: Unpla",
-      "published_at": "2026-10-18T21:17:36+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 56,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.77
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-18T19:35:19+00:00"
     },
     {
       "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
@@ -634,53 +636,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
-      "url": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss",
-      "snippet": "The US president blocked numerous sanctions on Russia two days before they were due to take effect.",
-      "published_at": "2026-10-18T23:20:15+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "geopolitics",
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 23.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.2,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "geopolitics": [
-          "sanctions",
-          "negotiations"
-        ],
-        "supply_disruption": [
-          "suspension"
-        ],
-        "geography": [
-          "russia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 41,
-      "thread_started_at": "2026-10-05T12:30:00+00:00"
-    },
-    {
       "title": "Ofgem appoints Tim Jarvis as Chief Executive",
       "url": "https://www.ofgem.gov.uk/press-release/ofgem-appoints-tim-jarvis-chief-executive",
       "snippet": "The Board of Ofgem has confirmed the appointment of Tim Jarvis as Chief Executive following a rigorous and competitive recruitment process.",
@@ -718,6 +673,53 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
+      "url": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The US president blocked numerous sanctions on Russia two days before they were due to take effect.",
+      "published_at": "2026-10-18T23:20:15+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "geopolitics",
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 23.0,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.2,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions",
+          "negotiations"
+        ],
+        "supply_disruption": [
+          "suspension"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 41,
+      "thread_started_at": "2026-10-05T12:30:00+00:00"
     },
     {
       "title": "Crude oil prices and refinery margins generally increased throughout the third quarter",
@@ -978,53 +980,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Hormuz Is Turning Shipping’s Fuel Bill Into a Supply Crisis",
-      "url": "https://oilprice.com/Geopolitics/Middle-East/Hormuz-Is-Turning-Shippings-Fuel-Bill-Into-a-Supply-Crisis.html",
-      "snippet": "The Hormuz crisis is not only hitting crude oil and gas, but also container shipping. It is also tightening its grip on global shipping through the fuel tanks of vessels carrying world trade. Disrupted exports, constrained refinery supplies, and increasingly unreliable deliveries are clearly at pres",
-      "published_at": "2026-10-18T21:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "oil_macro",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 14.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 38.8,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "refinery"
-        ],
-        "supply_disruption": [
-          "disrupted"
-        ],
-        "geography": [
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 43,
-      "thread_started_at": "2026-10-05T05:26:00+00:00"
     },
     {
       "title": "Rubio’s Uzbekistan trip underlines Central Asia’s hunt for diverse partners",
@@ -1298,6 +1253,53 @@
       "also_reported_by": []
     },
     {
+      "title": "Hormuz Is Turning Shipping’s Fuel Bill Into a Supply Crisis",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/Hormuz-Is-Turning-Shippings-Fuel-Bill-Into-a-Supply-Crisis.html",
+      "snippet": "The Hormuz crisis is not only hitting crude oil and gas, but also container shipping. It is also tightening its grip on global shipping through the fuel tanks of vessels carrying world trade. Disrupted exports, constrained refinery supplies, and increasingly unreliable deliveries are clearly at pres",
+      "published_at": "2026-10-18T21:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "oil_macro",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 14.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 38.8,
+        "recency_multiplier": 0.75
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "refinery"
+        ],
+        "supply_disruption": [
+          "disrupted"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 43,
+      "thread_started_at": "2026-10-05T05:26:00+00:00"
+    },
+    {
       "title": "New York Mayor Mamdani under fire for attending October 7 vigil",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/new-york-mayor-mamdani-under-fire-for-attending-october-7-vigil?traffic_source=rss",
       "snippet": "New York City’s Mayor Zohran Mamdani was met by crowds calling him a ‘traitor’ for attending a vigil for October 7.",
@@ -1458,47 +1460,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Fire engulfs Albania’s Supreme Court as protests enter fifth day",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/albania-protests-supreme-court-fire?traffic_source=rss",
-      "snippet": "Offices at the Supreme Court in Tirana were set ablaze as anti-government protests continue.",
-      "published_at": "2026-10-18T20:26:03+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.9,
-        "recency_multiplier": 0.72
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-10-14T11:58:37+00:00"
     },
     {
       "title": "China’s Sufficient Gas Stocks Could Ease Winter Supply Concerns",
@@ -1766,6 +1727,47 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Fire engulfs Albania’s Supreme Court as protests enter fifth day",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/albania-protests-supreme-court-fire?traffic_source=rss",
+      "snippet": "Offices at the Supreme Court in Tirana were set ablaze as anti-government protests continue.",
+      "published_at": "2026-10-18T20:26:03+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.9,
+        "recency_multiplier": 0.72
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-10-14T11:58:37+00:00"
     },
     {
       "title": "Nexans starts manufacturing 525 kV subsea cables for LanWin2 offshore wind grid connection",
