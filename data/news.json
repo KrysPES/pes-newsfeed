@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T20:17:28.707634+00:00",
+  "generated_at": "2026-10-19T20:22:17.689383+00:00",
   "item_count": 351,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 161,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 811
+        "ms": 1027
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 304596
+        "ms": 259494
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 12115
+        "ms": 2457
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 108
+        "ms": 297
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 442
+        "ms": 383
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 186
+        "ms": 111
       },
       {
         "id": "world_nuclear_news",
-        "ok": true,
-        "count": 49,
-        "error": null,
-        "ms": 1205
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.world-nuclear-news.org', port=443): Read timed out. (read timeout=20)",
+        "ms": 20535
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 319
+        "ms": 333
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 539
+        "ms": 573
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 84
+        "ms": 49
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 251
+        "ms": 374
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 310
+        "ms": 140
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 237
+        "ms": 123
       }
     ]
   },
@@ -178,7 +178,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.8,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -406,7 +406,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.0,
-        "recency_multiplier": 0.81
+        "recency_multiplier": 0.8
       },
       "matched": {
         "geopolitics": [
@@ -855,51 +855,6 @@
       "thread_started_at": "2026-10-05T20:07:58+00:00"
     },
     {
-      "title": "Ofgem unlocks funding for major electricity grid upgrade while delivering over £60 million of consumer savings",
-      "url": "https://www.ofgem.gov.uk/press-release/ofgem-unlocks-funding-major-electricity-grid-upgrade-while-delivering-over-ps60-million-consumer-savings",
-      "snippet": "Ofgem has greenlit a £642.1 million funding package for National Grid Electricity Transmission’s Bramford to Twinstead project in East Anglia",
-      "published_at": "2026-10-19T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "infrastructure",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 17.1,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.2,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "infrastructure": [
-          "grid",
-          "transmission"
-        ],
-        "regulation": [
-          "ofgem"
-        ],
-        "geography": [
-          "national grid"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "‘It broke my heart’: Limoges residents reel after town hall fire",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/it-broke-my-heart-limoges-residents-reel-after-town-hall-fire?traffic_source=rss",
       "snippet": "Residents in Limoges, France, are expressing shock and anger after protests saw their 140-year-old town hall set ablaze.",
@@ -977,6 +932,51 @@
         ],
         "urgency": [
           "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ofgem unlocks funding for major electricity grid upgrade while delivering over £60 million of consumer savings",
+      "url": "https://www.ofgem.gov.uk/press-release/ofgem-unlocks-funding-major-electricity-grid-upgrade-while-delivering-over-ps60-million-consumer-savings",
+      "snippet": "Ofgem has greenlit a £642.1 million funding package for National Grid Electricity Transmission’s Bramford to Twinstead project in East Anglia",
+      "published_at": "2026-10-19T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 38,
+      "tags": [
+        "infrastructure",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 17.1,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 49.2,
+        "recency_multiplier": 0.61
+      },
+      "matched": {
+        "infrastructure": [
+          "grid",
+          "transmission"
+        ],
+        "regulation": [
+          "ofgem"
+        ],
+        "geography": [
+          "national grid"
         ]
       },
       "duplicate_count": 0,
@@ -1336,52 +1336,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Wright Says Gas Prices Peaked As Brent Holds Above $108",
-      "url": "https://oilprice.com/Energy/Gas-Prices/Wright-Says-Gas-Prices-Peaked-As-Brent-Holds-Above-108.html",
-      "snippet": "Brent crude futures briefly tagged $109.99 a barrel in overnight trading before retreating from five-month highs during the Asian session and into European trading, as signs of recovering Middle Eastern supply offset renewed attacks on energy infrastructure and critical maritime shipping lanes. US E",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "oil_macro",
-        "carbon"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.5,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.2,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "carbon": [
-          "offset"
-        ],
-        "geography": [
-          "european"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
       "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
       "snippet": "Yemen's information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace.",
@@ -1559,6 +1513,52 @@
       "also_reported_by": []
     },
     {
+      "title": "Wright Says Gas Prices Peaked As Brent Holds Above $108",
+      "url": "https://oilprice.com/Energy/Gas-Prices/Wright-Says-Gas-Prices-Peaked-As-Brent-Holds-Above-108.html",
+      "snippet": "Brent crude futures briefly tagged $109.99 a barrel in overnight trading before retreating from five-month highs during the Asian session and into European trading, as signs of recovering Middle Eastern supply offset renewed attacks on energy infrastructure and critical maritime shipping lanes. US E",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "oil_macro",
+        "carbon"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.2,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "carbon": [
+          "offset"
+        ],
+        "geography": [
+          "european"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Hybrid sales rise while battery electric sales remain lower after tax credit expiration",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68325",
       "snippet": "In the third quarter of 2026 (3Q26), 23% of new light-duty vehicles sold in the United States were hybrid electric, battery electric, or plug-in hybrid electric vehicles, down slightly from 24% in 3Q25. Between 3Q25 and 3Q26, hybrid electric vehicles continued to gain market share, reaching 16% of l",
@@ -1585,7 +1585,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 37.2,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.71
       },
       "matched": {
         "power_system": [
@@ -3173,7 +3173,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.9,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.61
       },
       "matched": {
         "weather": [
