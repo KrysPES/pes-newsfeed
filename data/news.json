@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-19T19:28:09.308393+00:00",
+  "generated_at": "2026-10-19T19:33:52.818974+00:00",
   "item_count": 353,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 15
+    "high": 1,
+    "normal": 14
   },
   "superseded_count": 163,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1115
+        "ms": 1094
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 54523
+        "ms": 78971
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2341
+        "ms": 22345
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 331
+        "ms": 137
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 339
+        "ms": 169
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 106
+        "ms": 122
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 933
+        "ms": 946
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 267
+        "ms": 372
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 555
+        "ms": 565
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 68
+        "ms": 119
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 429
+        "ms": 289
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 133
+        "ms": 61
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 102
+        "ms": 55
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, FLEMALLE TH1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/1eaba21e-168d-493e-9497-f2826115a897/1",
+      "snippet": "Published: 19.10.2026 21:28:41 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
+      "published_at": "2026-10-19T19:28:41+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 6,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-19T04:04:45+00:00"
+    },
     {
       "title": "Why Canadian Oil Is Lagging Even As Global Crude Soars",
       "url": "https://oilprice.com/Energy/Crude-Oil/Why-Canadian-Oil-Is-Lagging-Even-As-Global-Crude-Soars.html",
@@ -156,50 +200,6 @@
       "also_reported_by": [],
       "update_count": 11,
       "thread_started_at": "2026-10-06T09:48:37+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, SCHELDELAAN EXXONMOBIL",
-      "url": "https://umm.nordpoolgroup.com/#/messages/9e1cb0ec-b147-4329-bfe9-16f7cff0ea94/1",
-      "snippet": "Published: 19.10.2026 18:11:22 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
-      "published_at": "2026-10-19T16:11:22+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 62,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 5,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-19T04:04:45+00:00"
     },
     {
       "title": "What we know so far about deadly fire at Canadian military base",
@@ -256,7 +256,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 58,
+      "score": 57,
       "tags": [
         "geopolitics",
         "lng"
@@ -273,7 +273,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 72.4,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.73
       },
       "matched": {
         "geopolitics": [
@@ -406,7 +406,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.0,
-        "recency_multiplier": 0.86
+        "recency_multiplier": 0.85
       },
       "matched": {
         "geopolitics": [
@@ -662,7 +662,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 37.4,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -707,7 +707,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 45.9,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.75
       },
       "matched": {
         "regulation": [
@@ -764,51 +764,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Ofgem unlocks funding for major electricity grid upgrade while delivering over £60 million of consumer savings",
-      "url": "https://www.ofgem.gov.uk/press-release/ofgem-unlocks-funding-major-electricity-grid-upgrade-while-delivering-over-ps60-million-consumer-savings",
-      "snippet": "Ofgem has greenlit a £642.1 million funding package for National Grid Electricity Transmission’s Bramford to Twinstead project in East Anglia",
-      "published_at": "2026-10-19T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "infrastructure",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 17.1,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.2,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "infrastructure": [
-          "grid",
-          "transmission"
-        ],
-        "regulation": [
-          "ofgem"
-        ],
-        "geography": [
-          "national grid"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "QatarEnergy Secures $3 Billion Loan From Chinese Banks as LNG Exports Stall",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/QatarEnergy-Secures-3-Billion-Loan-From-Chinese-Banks-as-LNG-Exports-Stall.html",
       "snippet": "State-owned QatarEnergy has secured a five-year $3-billion loan from a group of Chinese banks as Qatar’s LNG exporter continues to struggle with shipping sizeable volumes to international markets. QatarEnergy has secured the loan from Bank of China, Industrial and Commercial Bank of China Limited (I",
@@ -851,6 +806,51 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-10-06T07:31:36+00:00"
+    },
+    {
+      "title": "Ofgem unlocks funding for major electricity grid upgrade while delivering over £60 million of consumer savings",
+      "url": "https://www.ofgem.gov.uk/press-release/ofgem-unlocks-funding-major-electricity-grid-upgrade-while-delivering-over-ps60-million-consumer-savings",
+      "snippet": "Ofgem has greenlit a £642.1 million funding package for National Grid Electricity Transmission’s Bramford to Twinstead project in East Anglia",
+      "published_at": "2026-10-19T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "infrastructure",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 17.1,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 49.2,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "infrastructure": [
+          "grid",
+          "transmission"
+        ],
+        "regulation": [
+          "ofgem"
+        ],
+        "geography": [
+          "national grid"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Brent Back Above $100 as Houthis Hit Saudi Infrastructure",
@@ -1240,7 +1240,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.82
       },
       "matched": {
         "oil_macro": [
@@ -1285,7 +1285,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 37.2,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.76
       },
       "matched": {
         "power_system": [
@@ -2517,50 +2517,6 @@
       ]
     },
     {
-      "title": "Ofgem inquiry into electricity system operation during extreme heat in June 2026",
-      "url": "https://www.ofgem.gov.uk/transparency-document/ofgem-inquiry-electricity-system-operation-during-extreme-heat-june-2026",
-      "snippet": "An update on our areas of focus and NESO's preliminary report on system stress during extreme heat in the week of 22 June.",
-      "published_at": "2026-10-19T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "weather",
-        "power_system",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 19.8,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.9,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "weather": [
-          "extreme heat"
-        ],
-        "power_system": [
-          "system stress"
-        ],
-        "regulation": [
-          "ofgem"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast",
       "url": "https://www.aljazeera.com/news/2026/10/12/two-deaths-reported-as-hurricane-simon-storm-rachel-batter-mexicos-coast?traffic_source=rss",
       "snippet": "Simon caps a Pacific season of record-breaking intensity, as deadly storms wreak havoc from Hawaii to Mexico.",
@@ -2639,6 +2595,50 @@
           "leak",
           "explosion",
           "incident"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ofgem inquiry into electricity system operation during extreme heat in June 2026",
+      "url": "https://www.ofgem.gov.uk/transparency-document/ofgem-inquiry-electricity-system-operation-during-extreme-heat-june-2026",
+      "snippet": "An update on our areas of focus and NESO's preliminary report on system stress during extreme heat in the week of 22 June.",
+      "published_at": "2026-10-19T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "weather",
+        "power_system",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 19.8,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.9,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "weather": [
+          "extreme heat"
+        ],
+        "power_system": [
+          "system stress"
+        ],
+        "regulation": [
+          "ofgem"
         ]
       },
       "duplicate_count": 0,
@@ -8242,7 +8242,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 53.9,
-        "recency_multiplier": 0.57
+        "recency_multiplier": 0.56
       },
       "matched": {
         "geopolitics": [
