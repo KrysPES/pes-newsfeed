@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T22:40:11.173782+00:00",
+  "generated_at": "2026-10-20T22:47:36.891451+00:00",
   "item_count": 354,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 158,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
-        "ok": true,
-        "count": 80,
-        "error": null,
-        "ms": 1023
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='ummrss.nordpoolgroup.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20064
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 63544
+        "ms": 159263
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 6710
+        "ms": 37920
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 84
+        "ms": 495
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 318
+        "ms": 310
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 132
+        "ms": 243
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 1097
+        "ms": 898
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 338
+        "ms": 445
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 680
+        "ms": 625
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 254
+        "ms": 232
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 531
+        "ms": 389
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 33,
         "error": null,
-        "ms": 134
+        "ms": 202
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 225
+        "ms": 187
       }
     ]
   },
@@ -546,52 +546,6 @@
       "thread_started_at": "2026-10-06T07:31:36+00:00"
     },
     {
-      "title": "EU Stands Firm Against Arctic Oil and Gas Drilling Despite Energy Crisis",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Stands-Firm-Against-Arctic-Oil-and-Gas-Drilling-Despite-Energy-Crisis.html",
-      "snippet": "The European Union reaffirmed its opposition to Arctic oil and gas development on Tuesday, even as the bloc prepares for another expensive winter with depleted gas storage and prices approaching levels last seen during the 2022 energy crisis. The European Commission's new Arctic strategy calls for k",
-      "published_at": "2026-10-20T17:45:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
-      "tags": [
-        "gas_storage",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 20.3,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 39.1,
-        "recency_multiplier": 0.8
-      },
-      "matched": {
-        "gas_storage": [
-          "storage",
-          "depleted"
-        ],
-        "regulation": [
-          "european commission"
-        ],
-        "geography": [
-          "european",
-          "eu"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Brent Back Above $100 as Houthis Hit Saudi Infrastructure",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Back-Above-100-as-Houthis-Hit-Saudi-Infrastructure.html",
       "snippet": "More Top Reads From Oilprice.com IPO Market Stalls Four Months After SpaceX's $75 Billion Debut Europe's Power Grid Is Digitalizing Faster Than Regulators Can Keep Up G7’s 100 Million Barrel Release Is Mostly Already Priced In",
@@ -637,6 +591,52 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-10-05T20:07:58+00:00"
+    },
+    {
+      "title": "EU Stands Firm Against Arctic Oil and Gas Drilling Despite Energy Crisis",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Stands-Firm-Against-Arctic-Oil-and-Gas-Drilling-Despite-Energy-Crisis.html",
+      "snippet": "The European Union reaffirmed its opposition to Arctic oil and gas development on Tuesday, even as the bloc prepares for another expensive winter with depleted gas storage and prices approaching levels last seen during the 2022 energy crisis. The European Commission's new Arctic strategy calls for k",
+      "published_at": "2026-10-20T17:45:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "gas_storage",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 20.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.1,
+        "recency_multiplier": 0.79
+      },
+      "matched": {
+        "gas_storage": [
+          "storage",
+          "depleted"
+        ],
+        "regulation": [
+          "european commission"
+        ],
+        "geography": [
+          "european",
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "‘It broke my heart’: Limoges residents reel after town hall fire",
@@ -708,7 +708,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 35.2,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.84
       },
       "matched": {
         "oil_macro": [
@@ -1620,46 +1620,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Philippines advances plans for nuclear power as energy demand rises",
-      "url": "https://www.world-nuclear-news.org/articles/philippines-advances-plans-for-nuclear-power-as-energy-demand-rises",
-      "snippet": "The Philippines is working to establish the policy, regulatory and commercial foundations for its first nuclear power project, with a target of 1.2 GW of capacity by 2032 and a longer-term ambition to reach 4.8 GW by 2050, the World Nuclear Supply Chain conference in Manila heard.",
-      "published_at": "2026-10-20T16:15:21+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 34,
-      "tags": [
-        "nuclear",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 10.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 35.8,
-        "recency_multiplier": 0.71
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "oil_macro": [
-          "demand"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Asian LNG Prices Surge Past $30 as Middle East Shipping Risks Escalate",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Asian-LNG-Prices-Surge-Past-30-as-Middle-East-Shipping-Risks-Escalate.html",
       "snippet": "Liquefied natural gas prices on the Asian spot market topped $30 per million British thermal units for the first time since December 2022, Bloomberg reported earlier today. The price jump follows a report about a strike on an LNG tanker in the Gulf of Aden, off the Yemeni coast. The UK Maritime Trad",
@@ -1959,6 +1919,46 @@
         ],
         "lng": [
           "cargo"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Philippines advances plans for nuclear power as energy demand rises",
+      "url": "https://www.world-nuclear-news.org/articles/philippines-advances-plans-for-nuclear-power-as-energy-demand-rises",
+      "snippet": "The Philippines is working to establish the policy, regulatory and commercial foundations for its first nuclear power project, with a target of 1.2 GW of capacity by 2032 and a longer-term ambition to reach 4.8 GW by 2050, the World Nuclear Supply Chain conference in Manila heard.",
+      "published_at": "2026-10-20T16:15:21+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 33,
+      "tags": [
+        "nuclear",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 10.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 35.8,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "oil_macro": [
+          "demand"
         ]
       },
       "duplicate_count": 0,
@@ -2287,7 +2287,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 55.5,
-        "recency_multiplier": 0.42
+        "recency_multiplier": 0.41
       },
       "matched": {
         "lng": [
