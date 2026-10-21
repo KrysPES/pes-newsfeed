@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-21T16:12:58.494000+00:00",
-  "item_count": 358,
+  "generated_at": "2026-10-21T16:18:01.251246+00:00",
+  "item_count": 359,
   "alert_counts": {
     "critical": 0,
     "high": 1,
@@ -8,7 +8,7 @@
   },
   "superseded_count": 157,
   "sources": {
-    "healthy": 12,
+    "healthy": 11,
     "total": 13,
     "degraded": true,
     "detail": [
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 970
+        "ms": 947
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 96698
+        "ms": 89581
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2388
+        "ms": 2279
       },
       {
         "id": "ofgem",
         "ok": false,
         "count": 0,
-        "error": "HTTPError: 403 Client Error: We have taken down our website on the advice of the National Cyber Security Centre following the disclosure of critical vulnerabilities in a widely used programming langua",
-        "ms": 55
+        "error": "HTTPError: 503 Server Error: We have taken down our website on the advice of the National Cyber Security Centre following the disclosure of critical vulnerabilities in a widely used programming langua",
+        "ms": 98
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 464
+        "ms": 211
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 141
+        "ms": 110
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 733
+        "ms": 1085
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 50,
-        "error": null,
-        "ms": 319
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
+        "ms": 10101
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 529
+        "ms": 530
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 146
+        "ms": 87
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 406
+        "ms": 400
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 38,
         "error": null,
-        "ms": 148
+        "ms": 70
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 115
+        "ms": 121
       }
     ]
   },
@@ -329,12 +329,8 @@
           "delayed"
         ]
       },
-      "duplicate_count": 2,
-      "also_reported_by": [
-        "Rigzone",
-        "Offshore Energy"
-      ],
-      "first_seen_at": "2026-10-21T06:58:56+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "UK Greenlights Major North Sea Gas Field After Years of Legal Battles",
@@ -515,43 +511,6 @@
       "also_reported_by": []
     },
     {
-      "title": "The Nuclear Company proposes 6.6 GW Kentucky project",
-      "url": "https://www.world-nuclear-news.org/articles/nuclear-company-proposes-66-gw-kentucky-project",
-      "snippet": "The Nuclear Company has outlined plans for an energy campus in Lewis County, Kentucky, which could feature up to six AP1000 reactors - this would make its 6.6 GW capacity larger than any current nuclear power plant in the USA.",
-      "published_at": "2026-10-21T13:44:17+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 47,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 14.6,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 40.4,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactors"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Northern Israel explosion kills at least 1 person, injures 19",
       "url": "https://www.aljazeera.com/news/2026/10/12/explosion-in-northern-israel-students-and-teachers-injured?traffic_source=rss",
       "snippet": "The blast occurred in northern Israel near the Lebanese border and is under investigation.",
@@ -586,6 +545,43 @@
         ],
         "unplanned": [
           "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "The Nuclear Company proposes 6.6 GW Kentucky project",
+      "url": "https://www.world-nuclear-news.org/articles/nuclear-company-proposes-66-gw-kentucky-project",
+      "snippet": "The Nuclear Company has outlined plans for an energy campus in Lewis County, Kentucky, which could feature up to six AP1000 reactors - this would make its 6.6 GW capacity larger than any current nuclear power plant in the USA.",
+      "published_at": "2026-10-21T13:44:17+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 46,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 14.6,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 40.4,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactors"
         ]
       },
       "duplicate_count": 0,
@@ -714,7 +710,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.7,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.69
       },
       "matched": {
         "oil_macro": [
@@ -1128,6 +1124,46 @@
       "also_reported_by": []
     },
     {
+      "title": "UK Greenlights $3B Jackdaw Gas Project",
+      "url": "https://www.rigzone.com/news/uk_greenlights_3b_jackdaw_gas_project-21-oct-2026-184892-article/?rss=true",
+      "snippet": "UK Energy Secretary Miatta Fahnbulleh has greenlit the Jackdaw gas field.",
+      "published_at": "2026-10-21T09:58:46+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 12.5,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.4,
+        "recency_multiplier": 0.72
+      },
+      "matched": {
+        "infrastructure": [
+          "gas field"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "New York Mayor Mamdani under fire for attending October 7 vigil",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/new-york-mayor-mamdani-under-fire-for-attending-october-7-vigil?traffic_source=rss",
       "snippet": "New York City’s Mayor Zohran Mamdani was met by crowds calling him a ‘traitor’ for attending a vigil for October 7.",
@@ -1286,7 +1322,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 50.1,
-        "recency_multiplier": 0.54
+        "recency_multiplier": 0.53
       },
       "matched": {
         "lng": [
@@ -1901,7 +1937,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.1,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.61
       },
       "matched": {
         "lng": [
@@ -8660,57 +8696,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Tecnicas Reunidas scores LNG Canada pipeline gig",
-      "url": "https://lngprime.com/americas/tecnicas-reunidas-scores-lng-canada-pipeline-gig/198610/",
-      "snippet": "Shell-led LNG Canada has awarded a contract to Spanish engineering and construction firm Tecnicas Reunidas to provide EPCM services for the second phase of the Coastal GasLink pipeline in British Columbia, on Canada’s west coast.",
-      "published_at": "2026-10-19T08:34:34+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 3,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 11.3,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 40.5,
-        "recency_multiplier": 0.54
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "british"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/economy/longform/2026/10/21/canada-wants-to-expand-its-lng-business-critics-raise-red-flags-2?traffic_source=rss",
-        "title": "Canada wants to expand its LNG business. Critics raise red flags",
-        "published_at": "2026-10-21T15:52:46+00:00"
-      },
-      "hidden": true
-    },
-    {
       "title": "Photos: Thousands march across Europe to demand end to Israel’s war on Gaza",
       "url": "https://www.aljazeera.com/gallery/2026/10/10/photos-thousands-march-across-europe-to-demand-end-to-israels-war-on-gaza?traffic_source=rss",
       "snippet": "Demonstrations in London, Berlin, and Rome denounce ongoing Israeli attacks on Gaza &#039;ceasefire&#039; anniversary.",
@@ -8763,6 +8748,57 @@
       "hidden": true,
       "update_count": 3,
       "thread_started_at": "2026-10-07T20:00:00+00:00"
+    },
+    {
+      "title": "Tecnicas Reunidas scores LNG Canada pipeline gig",
+      "url": "https://lngprime.com/americas/tecnicas-reunidas-scores-lng-canada-pipeline-gig/198610/",
+      "snippet": "Shell-led LNG Canada has awarded a contract to Spanish engineering and construction firm Tecnicas Reunidas to provide EPCM services for the second phase of the Coastal GasLink pipeline in British Columbia, on Canada’s west coast.",
+      "published_at": "2026-10-19T08:34:34+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 1,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 11.3,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 40.5,
+        "recency_multiplier": 0.54
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/economy/longform/2026/10/21/canada-wants-to-expand-its-lng-business-critics-raise-red-flags-2?traffic_source=rss",
+        "title": "Canada wants to expand its LNG business. Critics raise red flags",
+        "published_at": "2026-10-21T15:52:46+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Russia’s Oil Export Revenue Slides as Production Declines",
