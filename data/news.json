@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-21T16:22:34.705632+00:00",
-  "item_count": 358,
+  "generated_at": "2026-10-21T16:27:43.124340+00:00",
+  "item_count": 359,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 13
+    "normal": 12
   },
   "superseded_count": 157,
   "sources": {
-    "healthy": 12,
+    "healthy": 11,
     "total": 13,
     "degraded": true,
     "detail": [
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 939
+        "ms": 920
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 66714
+        "ms": 70980
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2481
+        "ms": 2519
       },
       {
         "id": "ofgem",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 503 Server Error: We have taken down our website on the advice of the National Cyber Security Centre following the disclosure of critical vulnerabilities in a widely used programming langua",
-        "ms": 211
+        "ms": 39
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 223
+        "ms": 354
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 71
+        "ms": 73
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 765
+        "ms": 777
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 50,
-        "error": null,
-        "ms": 6076
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
+        "ms": 10124
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 552
+        "ms": 539
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 76
+        "ms": 90
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 333
+        "ms": 394
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 38,
         "error": null,
-        "ms": 62
+        "ms": 52
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 115
+        "ms": 74
       }
     ]
   },
@@ -295,7 +295,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 53,
+      "score": 52,
       "tags": [
         "infrastructure",
         "geopolitics"
@@ -329,12 +329,8 @@
           "delayed"
         ]
       },
-      "duplicate_count": 2,
-      "also_reported_by": [
-        "Rigzone",
-        "Offshore Energy"
-      ],
-      "first_seen_at": "2026-10-21T06:58:56+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "UK Greenlights Major North Sea Gas Field After Years of Legal Battles",
@@ -696,13 +692,13 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "oil_macro",
         "geopolitics",
         "lng"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -714,7 +710,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 48.7,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.68
       },
       "matched": {
         "oil_macro": [
@@ -1161,6 +1157,46 @@
         ],
         "geography": [
           "corpus christi"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UK Greenlights $3B Jackdaw Gas Project",
+      "url": "https://www.rigzone.com/news/uk_greenlights_3b_jackdaw_gas_project-21-oct-2026-184892-article/?rss=true",
+      "snippet": "UK Energy Secretary Miatta Fahnbulleh has greenlit the Jackdaw gas field.",
+      "published_at": "2026-10-21T09:58:46+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 12.5,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.4,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "infrastructure": [
+          "gas field"
+        ],
+        "geography": [
+          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -1901,7 +1937,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 39.1,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.6
       },
       "matched": {
         "lng": [
