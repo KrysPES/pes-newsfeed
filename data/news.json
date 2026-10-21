@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T22:37:55.266324+00:00",
+  "generated_at": "2026-10-21T22:42:09.968241+00:00",
   "item_count": 359,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 156,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1217
+        "ms": 912
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 39553
+        "ms": 25160
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 41422
+        "ms": 3458
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 6,
         "error": null,
-        "ms": 358
+        "ms": 255
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 767
+        "ms": 269
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 250
+        "ms": 156
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 971
+        "ms": 1202
       },
       {
         "id": "offshore_energy",
-        "ok": true,
-        "count": 50,
-        "error": null,
-        "ms": 1827
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
+        "ms": 10158
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 595
+        "ms": 622
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 253
+        "ms": 188
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 516
+        "ms": 453
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 38,
         "error": null,
-        "ms": 430
+        "ms": 152
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 189
+        "ms": 283
       }
     ]
   },
@@ -1320,7 +1320,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.6,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.93
       },
       "matched": {
         "geopolitics": [
@@ -1337,51 +1337,6 @@
       "also_reported_by": [],
       "update_count": 25,
       "thread_started_at": "2026-10-08T00:33:03+00:00"
-    },
-    {
-      "title": "Ofgem launches biggest ever OFTO tender round for £3.5 billion Hornsea 3 offshore transmission link",
-      "url": "https://www.ofgem.gov.uk/press-release/ofgem-launches-biggest-ever-ofto-tender-round-ps35-billion-hornsea-3-offshore-transmission-link",
-      "snippet": "Ofgem has launched what’s expected to be its largest ever tender round for the offshore transmission assets connecting Hornsea 3 - one of the world’s biggest windfarms - to Britain’s power grid.",
-      "published_at": "2026-10-21T12:00:00+00:00",
-      "type": "regulation",
-      "source": "ofgem",
-      "source_name": "Ofgem",
-      "authority": 22,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "infrastructure",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 16.1,
-        "themes": 17.1,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 49.2,
-        "recency_multiplier": 0.51
-      },
-      "matched": {
-        "infrastructure": [
-          "grid",
-          "transmission"
-        ],
-        "regulation": [
-          "ofgem"
-        ],
-        "geography": [
-          "britain"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "Goldman Sachs Warns of New Oil Price Shock as Tanker Rates Soar",
@@ -1649,6 +1604,51 @@
         ],
         "geography": [
           "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ofgem launches biggest ever OFTO tender round for £3.5 billion Hornsea 3 offshore transmission link",
+      "url": "https://www.ofgem.gov.uk/press-release/ofgem-launches-biggest-ever-ofto-tender-round-ps35-billion-hornsea-3-offshore-transmission-link",
+      "snippet": "Ofgem has launched what’s expected to be its largest ever tender round for the offshore transmission assets connecting Hornsea 3 - one of the world’s biggest windfarms - to Britain’s power grid.",
+      "published_at": "2026-10-21T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "infrastructure",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 17.1,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 49.2,
+        "recency_multiplier": 0.51
+      },
+      "matched": {
+        "infrastructure": [
+          "grid",
+          "transmission"
+        ],
+        "regulation": [
+          "ofgem"
+        ],
+        "geography": [
+          "britain"
         ]
       },
       "duplicate_count": 0,
@@ -1927,7 +1927,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 40.4,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "nuclear": [
@@ -8750,7 +8750,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 29.7,
-        "recency_multiplier": 0.79
+        "recency_multiplier": 0.78
       },
       "matched": {
         "oil_macro": [
