@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-21T08:56:01.384833+00:00",
-  "item_count": 354,
+  "generated_at": "2026-10-21T09:06:28.372006+00:00",
+  "item_count": 356,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 8
+    "high": 0,
+    "normal": 10
   },
   "superseded_count": 157,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1708
+        "ms": 1272
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 74912
+        "ms": 117275
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19913
+        "ms": 6114
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 1,
+        "count": 6,
         "error": null,
-        "ms": 772
+        "ms": 204
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 226
+        "ms": 781
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 178
+        "ms": 141
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 49,
         "error": null,
-        "ms": 1327
+        "ms": 1357
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 418
+        "ms": 398
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 677
+        "ms": 672
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 284
+        "ms": 276
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 1145
+        "ms": 451
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 36,
         "error": null,
-        "ms": 85
+        "ms": 80
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 141
+        "ms": 118
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 65,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -193,6 +193,51 @@
       "also_reported_by": [
         "Al Jazeera"
       ]
+    },
+    {
+      "title": "Ofgem launches biggest ever OFTO tender round for £3.5 billion Hornsea 3 offshore transmission link",
+      "url": "https://www.ofgem.gov.uk/press-release/ofgem-launches-biggest-ever-ofto-tender-round-ps35-billion-hornsea-3-offshore-transmission-link",
+      "snippet": "Ofgem has launched what’s expected to be its largest ever tender round for the offshore transmission assets connecting Hornsea 3 - one of the world’s biggest windfarms - to Britain’s power grid.",
+      "published_at": "2026-10-21T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "infrastructure",
+        "regulation"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 17.1,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 49.2,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "grid",
+          "transmission"
+        ],
+        "regulation": [
+          "ofgem"
+        ],
+        "geography": [
+          "britain"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Can emergency reserves ease the diesel crisis?",
@@ -263,7 +308,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 40.9,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "infrastructure": [
@@ -475,7 +520,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 39.2,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.86
       },
       "matched": {
         "oil_macro": [
@@ -1233,6 +1278,46 @@
         ]
       },
       "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Offshore transmission: generic licence and guidance for tender round 14 (TR14)",
+      "url": "https://www.ofgem.gov.uk/guidance/offshore-transmission-generic-licence-and-guidance-tender-round-14-tr14",
+      "snippet": "Version 1 of the generic OFTO Licence for TR14, which will lead to the grant of an OFTO licence for Hornsea Project Three.",
+      "published_at": "2026-10-21T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 35,
+      "tags": [
+        "infrastructure",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 10.4,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 26.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "transmission"
+        ],
+        "regulation": [
+          "licence"
+        ]
+      },
+      "duplicate_count": 3,
       "also_reported_by": []
     },
     {
