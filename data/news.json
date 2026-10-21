@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-21T16:27:43.124340+00:00",
-  "item_count": 359,
+  "generated_at": "2026-10-21T16:32:49.148440+00:00",
+  "item_count": 358,
   "alert_counts": {
     "critical": 0,
     "high": 1,
@@ -8,7 +8,7 @@
   },
   "superseded_count": 157,
   "sources": {
-    "healthy": 11,
+    "healthy": 12,
     "total": 13,
     "degraded": true,
     "detail": [
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 920
+        "ms": 498
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 70980
+        "ms": 86845
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2519
+        "ms": 2261
       },
       {
         "id": "ofgem",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 503 Server Error: We have taken down our website on the advice of the National Cyber Security Centre following the disclosure of critical vulnerabilities in a widely used programming langua",
-        "ms": 39
+        "ms": 96
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 354
+        "ms": 294
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 19,
         "error": null,
-        "ms": 73
+        "ms": 124
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 48,
         "error": null,
-        "ms": 777
+        "ms": 933
       },
       {
         "id": "offshore_energy",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.offshore-energy.biz/feed",
-        "ms": 10124
+        "ok": true,
+        "count": 50,
+        "error": null,
+        "ms": 956
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 539
+        "ms": 549
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 90
+        "ms": 59
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 394
+        "ms": 237
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 38,
         "error": null,
-        "ms": 52
+        "ms": 51
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 74
+        "ms": 75
       }
     ]
   },
@@ -312,7 +312,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 62.6,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.73
       },
       "matched": {
         "infrastructure": [
@@ -329,8 +329,12 @@
           "delayed"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": []
+      "duplicate_count": 2,
+      "also_reported_by": [
+        "Rigzone",
+        "Offshore Energy"
+      ],
+      "first_seen_at": "2026-10-21T06:58:56+00:00"
     },
     {
       "title": "UK Greenlights Major North Sea Gas Field After Years of Legal Battles",
@@ -576,7 +580,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 40.4,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.94
       },
       "matched": {
         "nuclear": [
@@ -1149,7 +1153,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 37.4,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.74
       },
       "matched": {
         "lng": [
@@ -1157,46 +1161,6 @@
         ],
         "geography": [
           "corpus christi"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "UK Greenlights $3B Jackdaw Gas Project",
-      "url": "https://www.rigzone.com/news/uk_greenlights_3b_jackdaw_gas_project-21-oct-2026-184892-article/?rss=true",
-      "snippet": "UK Energy Secretary Miatta Fahnbulleh has greenlit the Jackdaw gas field.",
-      "published_at": "2026-10-21T09:58:46+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 12.5,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 39.4,
-        "recency_multiplier": 0.71
-      },
-      "matched": {
-        "infrastructure": [
-          "gas field"
-        ],
-        "geography": [
-          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -1289,53 +1253,6 @@
         ],
         "geography": [
           "united states"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Chinese yard wraps up maintenance work on Dynagas LNG carrier",
-      "url": "https://lngprime.com/asia/chinese-yard-wraps-up-maintenance-work-on-dynagas-lng-carrier/198757/",
-      "snippet": "China’s Huarun Dadong yard has completed repair work on the Arc7 ice-class LNG tanker Nikolay Zubov, operated by Greece's Dynagas.",
-      "published_at": "2026-10-21T06:05:58+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "lng",
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 31.9,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 50.1,
-        "recency_multiplier": 0.53
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "tanker",
-          "carrier"
-        ],
-        "supply_disruption": [
-          "maintenance",
-          "repair"
-        ],
-        "geography": [
-          "china"
         ]
       },
       "duplicate_count": 0,
@@ -1519,6 +1436,53 @@
         ],
         "unplanned": [
           "trip"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Chinese yard wraps up maintenance work on Dynagas LNG carrier",
+      "url": "https://lngprime.com/asia/chinese-yard-wraps-up-maintenance-work-on-dynagas-lng-carrier/198757/",
+      "snippet": "China’s Huarun Dadong yard has completed repair work on the Arc7 ice-class LNG tanker Nikolay Zubov, operated by Greece's Dynagas.",
+      "published_at": "2026-10-21T06:05:58+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "lng",
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 31.9,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 50.1,
+        "recency_multiplier": 0.52
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "tanker",
+          "carrier"
+        ],
+        "supply_disruption": [
+          "maintenance",
+          "repair"
+        ],
+        "geography": [
+          "china"
         ]
       },
       "duplicate_count": 0,
