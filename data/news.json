@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-22T20:53:43.283981+00:00",
-  "item_count": 345,
+  "generated_at": "2026-10-22T20:58:50.753374+00:00",
+  "item_count": 344,
   "alert_counts": {
     "critical": 0,
     "high": 1,
     "normal": 9
   },
-  "superseded_count": 149,
+  "superseded_count": 148,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,49 +17,49 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1474
+        "ms": 1372
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 57295
+        "ms": 50800
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 3812
+        "ms": 4072
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 313
+        "ms": 340
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 355
+        "ms": 590
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 385
+        "ms": 235
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1411
+        "ms": 1419
       },
       {
         "id": "offshore_energy",
@@ -73,35 +73,35 @@
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 683
+        "ms": 719
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 328
+        "ms": 349
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 449
+        "ms": 628
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 39,
         "error": null,
-        "ms": 94
+        "ms": 114
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 108
+        "ms": 98
       }
     ]
   },
@@ -417,7 +417,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 58.1,
-        "recency_multiplier": 0.64
+        "recency_multiplier": 0.63
       },
       "matched": {
         "power_system": [
@@ -569,7 +569,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 44.0,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.76
       },
       "matched": {
         "regulation": [
@@ -669,7 +669,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.9,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "infrastructure": [
@@ -978,7 +978,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 49.2,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "infrastructure": [
@@ -996,41 +996,53 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Surges 4% After Deadly Saudi Attacks",
-      "url": "https://www.rigzone.com/news/wire/oil_surges_4_after_deadly_saudi_attacks-22-oct-2026-184912-article/?rss=true",
-      "snippet": "Brent climbed above $113 amid Saudi attacks and renewed Iran tensions, while global diesel supplies remained tight.",
-      "published_at": "2026-10-22T19:55:03+00:00",
+      "title": "Oil Prices Surge Above $111 as Houthis Strike Saudi Targets",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-Above-111-as-Houthis-Strike-Saudi-Targets.html",
+      "snippet": "Crude oil prices extended their earlier gains today, with Brent crude keeping above $111 per barrel after the latest reports from the Middle East, featuring more Houthi attacks on Saudi targets. An order by the U.S. federal government for non-emergency personnel in the kingdom to leave contributed t",
+      "published_at": "2026-10-22T05:30:00+00:00",
       "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 36,
+      "has_magnitude": false,
+      "score": 37,
       "tags": [
         "oil_macro"
       ],
       "alert": "low",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 10.9,
-        "themes": 4.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
+        "authority": 8.8,
+        "themes": 13.4,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
         "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 1.0
+        "raw": 63.2,
+        "recency_multiplier": 0.45
       },
       "matched": {
         "oil_macro": [
-          "brent"
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "geography": [
+          "middle east"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 25,
+      "update_count": 14,
       "thread_started_at": "2026-10-10T00:22:52+00:00"
     },
     {
@@ -1234,7 +1246,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 29.7,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.89
       },
       "matched": {
         "oil_macro": [
@@ -1786,43 +1798,6 @@
       "also_reported_by": []
     },
     {
-      "title": "U.S. refineries have been running at very high rates in 2026",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68344",
-      "snippet": "The U.S. refinery fleet has run at higher-than-normal rates this year, with refinery utilization averaging more than 95% of capacity between May and September, the highest for those months since 1998. Tight global product supplies this year have boosted margins for petroleum products, particularly f",
-      "published_at": "2026-10-22T14:00:00+00:00",
-      "type": "news",
-      "source": "eia_today",
-      "source_name": "EIA Today in Energy",
-      "authority": 20,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 14.6,
-        "themes": 9.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 35.6,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "oil_macro": [
-          "refinery",
-          "rates"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Japan’s LNG imports drop 7.3 percent in September",
       "url": "https://lngprime.com/asia/japans-lng-imports-drop-7-3-percent-in-september/198780/",
       "snippet": "Japan’s liquefied natural gas (LNG) imports fell 7.3 percent in September from the same month last year, according to provisional data released by the country’s Ministry of Finance.",
@@ -2072,6 +2047,43 @@
       ],
       "update_count": 2,
       "thread_started_at": "2026-10-09T15:08:30+00:00"
+    },
+    {
+      "title": "U.S. refineries have been running at very high rates in 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68344",
+      "snippet": "The U.S. refinery fleet has run at higher-than-normal rates this year, with refinery utilization averaging more than 95% of capacity between May and September, the highest for those months since 1998. Tight global product supplies this year have boosted margins for petroleum products, particularly f",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 32,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 9.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 35.6,
+        "recency_multiplier": 0.68
+      },
+      "matched": {
+        "oil_macro": [
+          "refinery",
+          "rates"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Canada wants to expand its LNG business. Critics raise red flags",
