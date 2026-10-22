@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T23:24:53.397053+00:00",
+  "generated_at": "2026-10-22T23:28:42.482674+00:00",
   "item_count": 347,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 150,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1023
+        "ms": 1049
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 58020
+        "ms": 43582
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 40799
+        "ms": 3946
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 179
+        "ms": 33
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 307
+        "ms": 211
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 243
+        "ms": 582
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1271
+        "ms": 1186
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 330
+        "ms": 296
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 683
+        "ms": 779
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20317
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 339
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 577
+        "ms": 595
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 39,
         "error": null,
-        "ms": 47
+        "ms": 45
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 71
+        "ms": 51
       }
     ]
   },
@@ -613,7 +613,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 39.6,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.76
       },
       "matched": {
         "regulation": [
@@ -1626,44 +1626,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Oil Surges 4% After Deadly Saudi Attacks",
-      "url": "https://www.rigzone.com/news/wire/oil_surges_4_after_deadly_saudi_attacks-22-oct-2026-184912-article/?rss=true",
-      "snippet": "Brent climbed above $113 amid Saudi attacks and renewed Iran tensions, while global diesel supplies remained tight.",
-      "published_at": "2026-10-22T19:55:03+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 4.5,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 27.4,
-        "recency_multiplier": 0.9
-      },
-      "matched": {
-        "oil_macro": [
-          "brent"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 25,
-      "thread_started_at": "2026-10-10T00:22:52+00:00"
-    },
-    {
       "title": "Philippines advances plans for nuclear power as energy demand rises",
       "url": "https://www.world-nuclear-news.org/articles/philippines-advances-plans-for-nuclear-power-as-energy-demand-rises",
       "snippet": "The Philippines is working to establish the policy, regulatory and commercial foundations for its first nuclear power project, with a target of 1.2 GW of capacity by 2032 and a longer-term ambition to reach 4.8 GW by 2050, the World Nuclear Supply Chain conference in Manila heard.",
@@ -1899,7 +1861,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.0,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.89
       },
       "matched": {
         "power_system": [
@@ -1916,6 +1878,44 @@
       "also_reported_by": [],
       "update_count": 12,
       "thread_started_at": "2026-10-09T07:00:00+00:00"
+    },
+    {
+      "title": "Oil Surges 4% After Deadly Saudi Attacks",
+      "url": "https://www.rigzone.com/news/wire/oil_surges_4_after_deadly_saudi_attacks-22-oct-2026-184912-article/?rss=true",
+      "snippet": "Brent climbed above $113 amid Saudi attacks and renewed Iran tensions, while global diesel supplies remained tight.",
+      "published_at": "2026-10-22T19:55:03+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 32,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 4.5,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 27.4,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "oil_macro": [
+          "brent"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 25,
+      "thread_started_at": "2026-10-10T00:22:52+00:00"
     },
     {
       "title": "Gas interconnector import capability: proposed modifications to National Gas Transmission's licence",
@@ -2717,7 +2717,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.8,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "geopolitics": [
