@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-23T05:58:54.679796+00:00",
+  "generated_at": "2026-10-23T06:04:59.977150+00:00",
   "item_count": 347,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "normal": 7
   },
-  "superseded_count": 152,
+  "superseded_count": 151,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,35 +17,35 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1324
+        "ms": 1452
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 36429
+        "ms": 92932
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 10546
+        "ms": 18417
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 295
+        "ms": 527
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 275
+        "ms": 186
       },
       {
         "id": "eia_today",
@@ -59,53 +59,97 @@
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 948
+        "ms": 1051
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 364
+        "ms": 367
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 649
+        "ms": 636
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 236
+        "ms": 213
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 366
+        "ms": 518
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 215
+        "ms": 270
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 172
+        "ms": 201
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, LV, CHP-1 - Steam Turbine",
+      "url": "https://umm.nordpoolgroup.com/#/messages/b829bdb1-2de5-4c55-ba78-03577e55cbe6/1",
+      "snippet": "Published: 23.10.2026 08:02:39 Publisher: AS Latvenergo Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Due to CHP-1 Gas Turbine 2 failure (https://umm.nordpoolgroup.com/#/messages/7dc94090-2a5c-43fa-b825-7345bd546a2c/4), steam turbine power limit",
+      "published_at": "2026-10-23T06:02:39+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 8,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-22T14:14:07+00:00"
+    },
     {
       "title": "What we know so far about deadly fire at Canadian military base",
       "url": "https://www.bbc.co.uk/news/articles/cmgelrq8x92do?at_medium=RSS&at_campaign=rss",
@@ -151,48 +195,42 @@
       ]
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, LV, CHP-1 - Gas Turbine 2",
-      "url": "https://umm.nordpoolgroup.com/#/messages/7dc94090-2a5c-43fa-b825-7345bd546a2c/4",
-      "snippet": "Published: 23.10.2026 02:01:44 Publisher: AS Latvenergo Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Failure of Gas Turbine 2, reason unknown. Updates will follow. Remarks: Updated event stop time. Production Units Unit Name Unit EIC Area Insta",
-      "published_at": "2026-10-23T00:01:44+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 55,
+      "title": "US weekly LNG exports remain stable",
+      "url": "https://lngprime.com/lng-terminals/us-weekly-lng-exports-remain-stable/198835/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 35 cargoes during the week ending October 21, the same as in the previous week, according to the Energy Information Administration.",
+      "published_at": "2026-10-23T06:04:37+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 56,
       "tags": [
-        "supply_disruption"
+        "lng"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 21.9,
-        "themes": 8.4,
+        "authority": 13.1,
+        "themes": 26.0,
         "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.74
+        "raw": 51.1,
+        "recency_multiplier": 1.0
       },
       "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
         ]
       },
-      "duplicate_count": 7,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-22T14:14:07+00:00"
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Grenade exercise sparked deadly fire at Canada military base, army says",
@@ -1175,51 +1213,6 @@
       "also_reported_by": []
     },
     {
-      "title": "LNG Canada Doubles Capacity as Asia Looks Beyond the Gulf",
-      "url": "https://oilprice.com/Energy/Natural-Gas/LNG-Canada-Doubles-Capacity-as-Asia-Looks-Beyond-the-Gulf.html",
-      "snippet": "Last month, Shell (NYSE:SHEL), alongside Malaysia's PETRONAS, China's PetroChina, Mitsubishi Corporation and KOGAS, officially approved the Final Investment Decision (FID) for the LNG Canada Phase 2 expansion project, doubling the facility's capacity to 28 million tons per annum (mtpa) and reinforci",
-      "published_at": "2026-10-23T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 20.8,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 34.6,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "final investment decision"
-        ],
-        "geography": [
-          "china",
-          "gulf",
-          "asia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 7,
-      "thread_started_at": "2026-10-14T13:18:00+00:00"
-    },
-    {
       "title": "Goldman Sachs Warns of New Oil Price Shock as Tanker Rates Soar",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Warns-of-New-Oil-Price-Shock-as-Tanker-Rates-Soar.html",
       "snippet": "The average global freight rate to transport oil has surged to $20 per barrel from $3 per barrel last year as the Iran war and the Hormuz crisis have created a shipping crisis that’s unlikely to end soon, Goldman Sachs says. Oil shipping rates are set to remain elevated in the near term amid no end ",
@@ -1530,6 +1523,51 @@
       "also_reported_by": [],
       "update_count": 25,
       "thread_started_at": "2026-10-10T00:22:52+00:00"
+    },
+    {
+      "title": "LNG Canada Doubles Capacity as Asia Looks Beyond the Gulf",
+      "url": "https://oilprice.com/Energy/Natural-Gas/LNG-Canada-Doubles-Capacity-as-Asia-Looks-Beyond-the-Gulf.html",
+      "snippet": "Last month, Shell (NYSE:SHEL), alongside Malaysia's PETRONAS, China's PetroChina, Mitsubishi Corporation and KOGAS, officially approved the Final Investment Decision (FID) for the LNG Canada Phase 2 expansion project, doubling the facility's capacity to 28 million tons per annum (mtpa) and reinforci",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 20.8,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 34.6,
+        "recency_multiplier": 0.73
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "final investment decision"
+        ],
+        "geography": [
+          "china",
+          "gulf",
+          "asia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 7,
+      "thread_started_at": "2026-10-14T13:18:00+00:00"
     },
     {
       "title": "Philippines advances plans for nuclear power as energy demand rises",
@@ -16228,56 +16266,6 @@
         "url": "https://lngprime.com/asia/cma-cgm-in-singapore-bio-lng-move/198437/",
         "title": "CMA CGM in Singapore bio-LNG move",
         "published_at": "2026-10-15T06:10:14+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Vitol’s LNG bunkering newbuild nears delivery in China",
-      "url": "https://lngprime.com/asia/vitols-lng-bunkering-newbuild-nears-delivery-in-china/198186/",
-      "snippet": "Vitol’s liquefied natural gas (LNG) bunkering and supply vessel, Vivit Asia LNG, is expected to start operations later this year after completing its sea trials in China.",
-      "published_at": "2026-10-09T06:02:21+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 0,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 25.4,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "china",
-          "asia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-07T09:59:17+00:00",
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Energy/Energy-General/Rising-Crude-Oil-Imports-Reduce-Chinas-Need-to-Draw-from-Stocks.html",
-        "title": "Rising Crude Oil Imports Reduce China’s Need to Draw from Stocks",
-        "published_at": "2026-10-22T23:00:00+00:00"
       },
       "hidden": true
     }
