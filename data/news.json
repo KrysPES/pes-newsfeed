@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-23T08:45:16.955498+00:00",
-  "item_count": 350,
+  "generated_at": "2026-10-23T08:50:49.354780+00:00",
+  "item_count": 349,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 8
+    "high": 2,
+    "normal": 7
   },
-  "superseded_count": 152,
+  "superseded_count": 151,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,140 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1225
+        "ms": 1069
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 117209
+        "ms": 149400
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 2529
+        "ms": 2677
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 231
+        "ms": 209
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 307
+        "ms": 175
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 85
+        "ms": 235
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 910
+        "ms": 971
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 297
+        "ms": 284
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 527
+        "ms": 543
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 87
+        "ms": 175
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 422
+        "ms": 266
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 57
+        "ms": 168
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 150
+        "ms": 238
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Aghada - GU_400181 (AT11)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/db7978a1-0c34-4450-9475-ba7dd9752b42/1",
+      "snippet": "Published: 23.10.2026 10:44:19 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Essential maintenance Remarks: Essential maintenance Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable C",
+      "published_at": "2026-10-23T08:44:19+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 74.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "maintenance"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 7,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-22T16:24:48+00:00"
+    },
     {
       "title": "Are global oil reserves sufficient to withstand renewed US-Iran war?",
       "url": "https://www.aljazeera.com/news/2026/10/23/are-global-oil-reserves-sufficient-to-withstand-renewed-us-iran-war?traffic_source=rss",
@@ -157,50 +202,6 @@
       "also_reported_by": [],
       "update_count": 28,
       "thread_started_at": "2026-10-09T08:45:18+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, LV, CHP-1 - Steam Turbine",
-      "url": "https://umm.nordpoolgroup.com/#/messages/b829bdb1-2de5-4c55-ba78-03577e55cbe6/1",
-      "snippet": "Published: 23.10.2026 08:02:39 Publisher: AS Latvenergo Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Due to CHP-1 Gas Turbine 2 failure (https://umm.nordpoolgroup.com/#/messages/7dc94090-2a5c-43fa-b825-7345bd546a2c/4), steam turbine power limit",
-      "published_at": "2026-10-23T06:02:39+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 64,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.95
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 6,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-22T16:24:48+00:00"
     },
     {
       "title": "What we know so far about deadly fire at Canadian military base",
@@ -316,7 +317,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 51.1,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.94
       },
       "matched": {
         "lng": [
@@ -1110,7 +1111,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 28.5,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.94
       },
       "matched": {
         "geopolitics": [
@@ -2068,47 +2069,6 @@
       "thread_started_at": "2026-10-10T15:45:36+00:00"
     },
     {
-      "title": "Brent Hits $114 as Houthi Attacks Threaten Saudi Energy Infrastructure",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Hits-114-as-Houthi-Attacks-Threaten-Saudi-Energy-Infrastructure.html",
-      "snippet": "Crude oil prices were on course to book a sharp weekly gain, with Brent crude on track for gains of about $6 per barrel and WTI registering a much more modest tick higher, from around $99 per barrel on Monday to over $100 earlier today. At the time of writing, Brent crude was trading at $114.00 per ",
-      "published_at": "2026-10-23T05:33:50+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16.0,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.8,
-        "recency_multiplier": 0.91
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "wti",
-          "barrel"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 16,
-      "thread_started_at": "2026-10-10T00:22:52+00:00"
-    },
-    {
       "title": "Ofgem consults on proposals to reinforce gas import capability",
       "url": "https://www.ofgem.gov.uk/press-release/ofgem-consults-proposals-reinforce-gas-import-capability",
       "snippet": "Today, Ofgem has approved Interconnector Limited entering into an agreement, under its licence, with National Gas Transmission plc to reinforce gas import capability through the Great Britain-Belgium interconnector.",
@@ -2522,6 +2482,47 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Brent Hits $114 as Houthi Attacks Threaten Saudi Energy Infrastructure",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Hits-114-as-Houthi-Attacks-Threaten-Saudi-Energy-Infrastructure.html",
+      "snippet": "Crude oil prices were on course to book a sharp weekly gain, with Brent crude on track for gains of about $6 per barrel and WTI registering a much more modest tick higher, from around $99 per barrel on Monday to over $100 earlier today. At the time of writing, Brent crude was trading at $114.00 per ",
+      "published_at": "2026-10-23T05:33:50+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 24.8,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "wti",
+          "barrel"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 16,
+      "thread_started_at": "2026-10-10T00:22:52+00:00"
     },
     {
       "title": "US tech stocks tumble as investors fret over AI spending",
@@ -16345,53 +16346,6 @@
       "also_reported_by": [],
       "update_count": 6,
       "thread_started_at": "2026-10-01T11:30:00+00:00",
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/10/23/are-global-oil-reserves-sufficient-to-withstand-renewed-us-iran-war?traffic_source=rss",
-        "title": "Are global oil reserves sufficient to withstand renewed US-Iran war?",
-        "published_at": "2026-10-23T07:37:12+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Saudi, UAE Join Push for SE Asian Oil Reserves",
-      "url": "https://www.rigzone.com/news/wire/saudi_uae_join_push_for_se_asian_oil_reserves-09-oct-2026-184808-article/?rss=true",
-      "snippet": "Saudi Arabia and the United Arab Emirates will support a Japanese initiative to bolster oil supplies in Southeast Asia after war-driven disruptions heightened concerns over energy security.",
-      "published_at": "2026-10-09T08:45:18+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 0,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 9.0,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 24.9,
-        "recency_multiplier": 0.87
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "geography": [
-          "asia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
         "url": "https://www.aljazeera.com/news/2026/10/23/are-global-oil-reserves-sufficient-to-withstand-renewed-us-iran-war?traffic_source=rss",
