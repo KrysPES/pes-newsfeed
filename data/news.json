@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-24T07:03:43.209927+00:00",
+  "generated_at": "2026-10-24T07:07:49.396999+00:00",
   "item_count": 347,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
+    "high": 2,
     "normal": 6
   },
   "superseded_count": 148,
@@ -17,28 +17,28 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 989
+        "ms": 1306
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 107409
+        "ms": 53979
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3199
+        "ms": 2890
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 422
+        "ms": 181
       },
       {
         "id": "ec_energy",
@@ -52,60 +52,104 @@
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 125
+        "ms": 148
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 46,
         "error": null,
-        "ms": 1114
+        "ms": 1018
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 369
+        "ms": 313
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 632
+        "ms": 628
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 196
+        "ms": 226
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 392
+        "ms": 468
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 242
+        "ms": 216
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 165
+        "ms": 128
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
+      "url": "https://umm.nordpoolgroup.com/#/messages/1407ff58-d88c-414b-8bee-eaff797e3e48/1",
+      "snippet": "Published: 24.10.2026 09:04:41 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or Test",
+      "published_at": "2026-10-24T07:04:41+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-23T15:01:15+00:00"
+    },
     {
       "title": "Arrest made after fire at Hitler's famed Eagle's Nest retreat",
       "url": "https://www.bbc.co.uk/news/articles/cr93zwjw1k4qo?at_medium=RSS&at_campaign=rss",
@@ -1795,50 +1839,6 @@
       "also_reported_by": [],
       "update_count": 21,
       "thread_started_at": "2026-10-11T01:41:29+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
-      "url": "https://umm.nordpoolgroup.com/#/messages/dc03616c-3eaf-4f5b-8811-e34e769a483b/1",
-      "snippet": "Published: 23.10.2026 17:49:50 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Ca",
-      "published_at": "2026-10-23T15:49:50+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.36
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-23T15:01:15+00:00"
     },
     {
       "title": "Global Crude Freight Rate Surges",
