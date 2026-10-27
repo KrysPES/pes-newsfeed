@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T23:32:55.212621+00:00",
+  "generated_at": "2026-10-27T23:36:39.261771+00:00",
   "item_count": 330,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 131,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1192
+        "ms": 1195
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 124082
+        "ms": 81876
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 22942
+        "ms": 9271
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 113
+        "ms": 188
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 430
+        "ms": 300
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 241
+        "ms": 275
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 1244
+        "ms": 1119
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 627
+        "ms": 355
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 659
+        "ms": 616
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20295
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 265
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 428
+        "ms": 487
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 212
+        "ms": 167
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 134
+        "ms": 230
       }
     ]
   },
@@ -284,8 +284,10 @@
           "hormuz"
         ]
       },
-      "duplicate_count": 0,
-      "also_reported_by": [],
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Rigzone"
+      ],
       "update_count": 27,
       "thread_started_at": "2026-10-14T04:36:06+00:00"
     },
@@ -548,7 +550,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 75.7,
-        "recency_multiplier": 0.42
+        "recency_multiplier": 0.41
       },
       "matched": {
         "lng": [
@@ -1862,42 +1864,6 @@
       "also_reported_by": []
     },
     {
-      "title": "5 Data Center Power Stocks to Watch Before Earnings",
-      "url": "https://oilprice.com/Energy/Energy-General/5-Data-Center-Power-Stocks-to-Watch-Before-Earnings.html",
-      "snippet": "Wall Street has spent the last three weeks punishing the companies that build and equip AI data centers, which would make more sense if anyone could point to the orders drying up. As of Friday, that group was down a median 23% since the S P 500’s record close on Oct. 6, while the Big Tech companies ",
-      "published_at": "2026-10-27T20:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 33,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 6.7,
-        "geography": 0.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 27.5,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "gas_storage": [
-          "stocks"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Oil slick from tanker in Hormuz Strait washes up on UAE beaches",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/25/oil-slick-from-tanker-in-hormuz-strait-washes-up-on-uae-beaches?traffic_source=rss",
       "snippet": "An oil slick has been filmed washing up on the UAE shoreline, prompting authorities to close beaches in Umm Al Quwain.",
@@ -2144,6 +2110,42 @@
         ],
         "unplanned": [
           "trip"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "5 Data Center Power Stocks to Watch Before Earnings",
+      "url": "https://oilprice.com/Energy/Energy-General/5-Data-Center-Power-Stocks-to-Watch-Before-Earnings.html",
+      "snippet": "Wall Street has spent the last three weeks punishing the companies that build and equip AI data centers, which would make more sense if anyone could point to the orders drying up. As of Friday, that group was down a median 23% since the S P 500’s record close on Oct. 6, while the Big Tech companies ",
+      "published_at": "2026-10-27T20:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 32,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 6.7,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 27.5,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "gas_storage": [
+          "stocks"
         ]
       },
       "duplicate_count": 0,
@@ -8555,7 +8557,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 4,
+      "score": 15,
       "tags": [
         "geopolitics",
         "supply_disruption",
@@ -8573,7 +8575,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 68.9,
-        "recency_multiplier": 0.63
+        "recency_multiplier": 0.62
       },
       "matched": {
         "geopolitics": [
