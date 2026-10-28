@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-28T06:13:09.869413+00:00",
+  "generated_at": "2026-10-28T06:21:08.765459+00:00",
   "item_count": 328,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 6
+    "high": 1,
+    "normal": 5
   },
   "superseded_count": 129,
   "sources": {
@@ -17,95 +17,141 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 759
+        "ms": 1066
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 170561
+        "ms": 38580
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2325
+        "ms": 12196
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 102
+        "ms": 417
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 262
+        "ms": 320
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 71
+        "ms": 59
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 891
+        "ms": 885
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 189
+        "ms": 230
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 535
+        "ms": 568
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 78
+        "ms": 73
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 348
+        "ms": 327
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 61
+        "ms": 48
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 144
+        "ms": 124
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Great Island - Great Island",
+      "url": "https://umm.nordpoolgroup.com/#/messages/9f72a177-91bf-4eab-81d8-1d08e16c228e/1",
+      "snippet": "Published: 28.10.2026 07:16:27 Publisher: SSE Generation Limited Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Feedwater valve fault Remarks: Plant Fault - Boiler Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Una",
+      "published_at": "2026-10-28T06:16:27+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 70,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 74.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "fault"
+        ],
+        "unplanned": [
+          "unplanned",
+          "fault",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-27T16:59:42+00:00"
+    },
     {
       "title": "What we know so far about deadly fire at Canadian military base",
       "url": "https://www.bbc.co.uk/news/articles/cmgelrq8x92do?at_medium=RSS&at_campaign=rss",
@@ -287,50 +333,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, AMERCOEUR 1R",
-      "url": "https://umm.nordpoolgroup.com/#/messages/8babb8b6-3fc6-4682-b486-547f25fb3340/7",
-      "snippet": "Published: 27.10.2026 20:47:55 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-10-27T19:47:55+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 43,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.52
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-27T16:59:42+00:00"
     },
     {
       "title": "U.S. Army Says It Has Helped 1.5 Billion Barrels of Oil Out of Hormuz",
