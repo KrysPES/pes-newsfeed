@@ -55,6 +55,9 @@ jobs:
         env:
           ENTSOE_TOKEN: ${{ secrets.ENTSOE_TOKEN }}
           AGSI_KEY: ${{ secrets.AGSI_KEY }}
+          # Squawk natural voice: the terminal's machine credential, used to
+          # ask /api/squawk-audio for ElevenLabs clips. Unset = feature off.
+          INDEX_APP_CRON_SECRET: ${{ secrets.INDEX_APP_CRON_SECRET }}
         # touch .env inside the loop: on a machine with no .env the script
         # creates a template and exits 0 - an empty file satisfies the
         # check; real env vars (the secrets above) win. Commit policy and
