@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-29T06:14:04.676192+00:00",
-  "item_count": 319,
+  "generated_at": "2026-10-29T06:18:00.549760+00:00",
+  "item_count": 320,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 5
+    "normal": 6
   },
-  "superseded_count": 121,
+  "superseded_count": 122,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,95 +17,148 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1123
+        "ms": 884
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 168272
+        "ms": 90270
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 6669
+        "ms": 20103
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 80
+        "ms": 121
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 1099
+        "ms": 1826
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 111
+        "ms": 79
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 938
+        "ms": 924
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 195
+        "ms": 172
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 630
+        "ms": 549
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 192
+        "ms": 207
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 313
+        "ms": 405
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 46
+        "ms": 105
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 101
+        "ms": 176
       }
     ]
   },
   "items": [
+    {
+      "title": "Deutsche ReGas charters second Mukran FSRU from MOL",
+      "url": "https://lngprime.com/europe/deutsche-regas-charters-second-mukran-fsru-from-mol/199115/",
+      "snippet": "Private German LNG terminal operator Deutsche ReGas has signed a deal with Japan's MOL to charter a second floating sturage and regasification unit and restore full capacity at its Mukran LNG import terminal in Germany.",
+      "published_at": "2026-10-29T06:17:33+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 62,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 37.5,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 60.7,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "regasification",
+          "regas",
+          "fsru",
+          "charter",
+          "lng terminal"
+        ],
+        "infrastructure": [
+          "terminal",
+          "import terminal"
+        ],
+        "geography": [
+          "germany",
+          "german"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-10-26T05:19:00+00:00"
+    },
     {
       "title": "What we know so far about deadly fire at Canadian military base",
       "url": "https://www.bbc.co.uk/news/articles/cmgelrq8x92do?at_medium=RSS&at_campaign=rss",
@@ -1434,50 +1487,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, AMERCOEUR 1R",
-      "url": "https://umm.nordpoolgroup.com/#/messages/00c086e8-c776-4e1b-a2f6-05a3eecad0b1/2",
-      "snippet": "Published: 28.10.2026 16:44:15 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Test Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel T",
-      "published_at": "2026-10-28T15:44:15+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.38
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-10-28T12:22:38+00:00"
-    },
-    {
       "title": "Beijing Pushes Domestic Oil Production as Iranian Supply Dries Up",
       "url": "https://oilprice.com/Energy/Crude-Oil/Beijing-Pushes-Domestic-Oil-Production-as-Iranian-Supply-Dries-Up.html",
       "snippet": "China needs its biggest oil and gas producers to drill more, explore more, and build strategic supply bases as the Iran war forces Beijing to confront an uncomfortable reality: even the world's largest crude stockpile cannot replace a dependable supply of oil indefinitely. China's National Energy Ad",
@@ -1751,6 +1760,50 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, AMERCOEUR 1R",
+      "url": "https://umm.nordpoolgroup.com/#/messages/00c086e8-c776-4e1b-a2f6-05a3eecad0b1/2",
+      "snippet": "Published: 28.10.2026 16:44:15 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Test Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel T",
+      "published_at": "2026-10-28T15:44:15+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 0.38
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-28T12:22:38+00:00"
     },
     {
       "title": "Finland nearing opening of world’s first permanent nuclear waste repository",
@@ -2079,52 +2132,6 @@
       },
       "duplicate_count": 1,
       "also_reported_by": []
-    },
-    {
-      "title": "Stade FSRU cooling down LNG tanks in Rotterdam ahead of November launch",
-      "url": "https://lngprime.com/europe/stade-fsru-cooling-down-lng-tanks-in-rotterdam-ahead-of-november-launch/199081/",
-      "snippet": "The 2021-built 174,000-cbm FSRU Energos Force is in the Dutch port of Rotterdam to cool down its LNG tanks before operations begin in Germany’s Stade next month, state-owned LNG terminal operator DET told LNG Prime.",
-      "published_at": "2026-10-28T10:16:25+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 30.0,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 39.6,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "weather": [
-          "forecast"
-        ],
-        "oil_macro": [
-          "refinery"
-        ],
-        "geography": [
-          "norwegian"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-26T05:19:00+00:00"
     },
     {
       "title": "Huge explosion at a weapons depot in Syria",
@@ -8486,52 +8493,55 @@
       "also_reported_by": []
     },
     {
-      "title": "Iran war live: Tehran presses 7-day Hormuz plan; Trump denies peace talks",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/10/29/iran-war-live-tehran-presses-7-day-hormuz-plan-trump-denies-peace-talks?traffic_source=rss",
-      "snippet": "Araghchi says Iran is in close contact with mediators on ideas to implement its seven-day plan to reopen Hormuz strait.",
-      "published_at": "2026-10-29T00:00:00+00:00",
+      "title": "Stade FSRU cooling down LNG tanks in Rotterdam ahead of November launch",
+      "url": "https://lngprime.com/europe/stade-fsru-cooling-down-lng-tanks-in-rotterdam-ahead-of-november-launch/199081/",
+      "snippet": "The 2021-built 174,000-cbm FSRU Energos Force is in the Dutch port of Rotterdam to cool down its LNG tanks before operations begin in Germany’s Stade next month, state-owned LNG terminal operator DET told LNG Prime.",
+      "published_at": "2026-10-28T10:16:25+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 4,
+      "score": 9,
       "tags": [
-        "geopolitics"
+        "lng",
+        "infrastructure"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
+        "authority": 13.1,
+        "themes": 30.0,
+        "geo_band": "secondary",
+        "geography": 10.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 43.4,
-        "recency_multiplier": 0.8
+        "raw": 39.6,
+        "recency_multiplier": 0.58
       },
       "matched": {
-        "geopolitics": [
-          "war",
-          "peace talks"
+        "weather": [
+          "forecast"
+        ],
+        "oil_macro": [
+          "refinery"
         ],
         "geography": [
-          "hormuz"
+          "norwegian"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 32,
-      "thread_started_at": "2026-10-15T08:34:54+00:00",
+      "update_count": 1,
+      "thread_started_at": "2026-10-26T05:19:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Vance-Moves-to-Restart-Iran-Peace-Talks.html",
-        "title": "Oil Prices Fall as Vance Moves to Restart Iran Peace Talks",
-        "published_at": "2026-10-29T06:05:36+00:00"
+        "url": "https://lngprime.com/europe/deutsche-regas-charters-second-mukran-fsru-from-mol/199115/",
+        "title": "Deutsche ReGas charters second Mukran FSRU from MOL",
+        "published_at": "2026-10-29T06:17:33+00:00"
       },
       "hidden": true
     },
@@ -8584,6 +8594,56 @@
       "hidden": true,
       "update_count": 4,
       "thread_started_at": "2026-10-20T12:37:06+00:00"
+    },
+    {
+      "title": "Iran war live: Tehran presses 7-day Hormuz plan; Trump denies peace talks",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/29/iran-war-live-tehran-presses-7-day-hormuz-plan-trump-denies-peace-talks?traffic_source=rss",
+      "snippet": "Araghchi says Iran is in close contact with mediators on ideas to implement its seven-day plan to reopen Hormuz strait.",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 1,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 43.4,
+        "recency_multiplier": 0.8
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "peace talks"
+        ],
+        "geography": [
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 32,
+      "thread_started_at": "2026-10-15T08:34:54+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Vance-Moves-to-Restart-Iran-Peace-Talks.html",
+        "title": "Oil Prices Fall as Vance Moves to Restart Iran Peace Talks",
+        "published_at": "2026-10-29T06:05:36+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Iran Eyes $130 Oil While at Least 50 Tankers Sit Stuck in the Gulf",
@@ -9895,9 +9955,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://lngprime.com/europe/stade-fsru-cooling-down-lng-tanks-in-rotterdam-ahead-of-november-launch/199081/",
-        "title": "Stade FSRU cooling down LNG tanks in Rotterdam ahead of November launch",
-        "published_at": "2026-10-28T10:16:25+00:00"
+        "url": "https://lngprime.com/europe/deutsche-regas-charters-second-mukran-fsru-from-mol/199115/",
+        "title": "Deutsche ReGas charters second Mukran FSRU from MOL",
+        "published_at": "2026-10-29T06:17:33+00:00"
       },
       "hidden": true
     },
