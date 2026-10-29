@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-29T08:57:39.722651+00:00",
-  "item_count": 321,
+  "generated_at": "2026-10-29T09:04:15.309760+00:00",
+  "item_count": 322,
   "alert_counts": {
     "critical": 0,
-    "high": 2,
-    "normal": 10
+    "high": 1,
+    "normal": 11
   },
-  "superseded_count": 121,
+  "superseded_count": 122,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 872
+        "ms": 819
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 74289
+        "ms": 172617
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4590
+        "ms": 2397
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 1,
+        "count": 2,
         "error": null,
-        "ms": 505
+        "ms": 255
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 420
+        "ms": 364
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 188
+        "ms": 85
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 45,
         "error": null,
-        "ms": 936
+        "ms": 894
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 243
+        "ms": 207
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 619
+        "ms": 562
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 150
+        "ms": 268
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 347
+        "ms": 484
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 106
+        "ms": 202
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 240
+        "ms": 166
       }
     ]
   },
@@ -160,11 +160,11 @@
       "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 66,
+      "score": 65,
       "tags": [
         "geopolitics"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 9.5,
@@ -176,7 +176,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 71.5,
-        "recency_multiplier": 0.93
+        "recency_multiplier": 0.92
       },
       "matched": {
         "geopolitics": [
@@ -208,7 +208,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 61,
+      "score": 60,
       "tags": [
         "lng",
         "infrastructure"
@@ -225,7 +225,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 60.7,
-        "recency_multiplier": 0.95
+        "recency_multiplier": 0.94
       },
       "matched": {
         "lng": [
@@ -414,7 +414,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 41.9,
-        "recency_multiplier": 0.98
+        "recency_multiplier": 0.97
       },
       "matched": {
         "infrastructure": [
@@ -792,6 +792,49 @@
       "also_reported_by": [
         "BBC World"
       ]
+    },
+    {
+      "title": "SEFE, Trafigura seal five-year gas supply deal",
+      "url": "https://lngprime.com/contracts-and-tenders/sefe-trafigura-seal-five-year-gas-supply-deal/199186/",
+      "snippet": "German gas and LNG importer Securing Energy for Europe (SEFE) has signed a new five-year gas supply contract with commodity trader Trafigura.",
+      "published_at": "2026-10-29T09:01:10+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 30.4,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "europe",
+          "german"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 2,
+      "thread_started_at": "2026-10-26T14:10:19+00:00"
     },
     {
       "title": "TotalEnergies reports lower LNG sales, higher LNG profit",
@@ -1642,7 +1685,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.6,
-        "recency_multiplier": 0.94
+        "recency_multiplier": 0.93
       },
       "matched": {
         "oil_macro": [
@@ -2106,57 +2149,6 @@
       "also_reported_by": []
     },
     {
-      "title": "UBS Data Shows Russian Oil Exports Only 10% Below Pre-War Levels",
-      "url": "https://oilprice.com/Energy/Energy-General/UBS-Data-Shows-Russian-Oil-Exports-Only-10-Below-Pre-War-Levels.html",
-      "snippet": "President Trump's US-Russia deal to export diesel and crude cargoes has drawn considerable scrutiny from Western elites as the first shipments could soon reach US shores. Ukrainian drone strikes on Russian refineries, combined with disruptions in the Strait of Hormuz, have intensified pressure on th",
-      "published_at": "2026-10-28T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 32,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 37.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 74.7,
-        "recency_multiplier": 0.32
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "war",
-          "strait of hormuz"
-        ],
-        "lng": [
-          "cargoes"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Global Crude Freight Rate Surges",
       "url": "https://www.rigzone.com/news/global_crude_freight_rate_surges-23-oct-2026-184916-article/?rss=true",
       "snippet": "The global average crude freight rate surged above $20 per barrel, from $3 per barrel a year ago, analysts at Goldman Sachs said.",
@@ -2307,6 +2299,57 @@
         ]
       },
       "duplicate_count": 1,
+      "also_reported_by": []
+    },
+    {
+      "title": "UBS Data Shows Russian Oil Exports Only 10% Below Pre-War Levels",
+      "url": "https://oilprice.com/Energy/Energy-General/UBS-Data-Shows-Russian-Oil-Exports-Only-10-Below-Pre-War-Levels.html",
+      "snippet": "President Trump's US-Russia deal to export diesel and crude cargoes has drawn considerable scrutiny from Western elites as the first shipments could soon reach US shores. Ukrainian drone strikes on Russian refineries, combined with disruptions in the Strait of Hormuz, have intensified pressure on th",
+      "published_at": "2026-10-28T16:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 31,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 74.7,
+        "recency_multiplier": 0.31
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "war",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
       "also_reported_by": []
     },
     {
@@ -3237,49 +3280,6 @@
       "also_reported_by": [],
       "update_count": 5,
       "thread_started_at": "2026-10-21T14:36:59+00:00"
-    },
-    {
-      "title": "Germany’s SEFE firms up two-decade-long offtake deal with Canadian LNG project",
-      "url": "https://offshore-energy.biz/2026/10/28/germanys-sefe-firms-up-two-decade-long-offtake-deal-with-canadian-lng-project",
-      "snippet": "A binding 20-year agreement has enabled Germany’s SEFE to secure 1 mtpa of Canadian LNG starting in the early 2030s.",
-      "published_at": "2026-10-28T12:59:12+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 14.6,
-        "geo_band": "secondary",
-        "geography": 10.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 37.0,
-        "recency_multiplier": 0.59
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "offtake"
-        ],
-        "geography": [
-          "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-26T14:10:19+00:00"
     },
     {
       "title": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs",
@@ -8588,6 +8588,56 @@
       "thread_started_at": "2026-10-12T07:30:09+00:00"
     },
     {
+      "title": "Germany’s SEFE firms up two-decade-long offtake deal with Canadian LNG project",
+      "url": "https://offshore-energy.biz/2026/10/28/germanys-sefe-firms-up-two-decade-long-offtake-deal-with-canadian-lng-project",
+      "snippet": "A binding 20-year agreement has enabled Germany’s SEFE to secure 1 mtpa of Canadian LNG starting in the early 2030s.",
+      "published_at": "2026-10-28T12:59:12+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 14.6,
+        "geo_band": "secondary",
+        "geography": 10.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 37.0,
+        "recency_multiplier": 0.59
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "offtake"
+        ],
+        "geography": [
+          "germany"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-10-26T14:10:19+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://lngprime.com/contracts-and-tenders/sefe-trafigura-seal-five-year-gas-supply-deal/199186/",
+        "title": "SEFE, Trafigura seal five-year gas supply deal",
+        "published_at": "2026-10-29T09:01:10+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "India’s Oil Buyers Squeezed by $123 Crude and Weak Rupee",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Oil-Buyers-Squeezed-by-123-Crude-and-Weak-Rupee.html",
       "snippet": "The Indian crude basket hit $123.29 per barrel last week, approaching levels recorded in March 2012, and adding 86% to the price Indian oil marketing companies pay, local media have reported, also noting the effect of a cheaper rupee. Since Indian companies pay for the oil they buy from abroad in U.",
@@ -9536,9 +9586,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://offshore-energy.biz/2026/10/28/germanys-sefe-firms-up-two-decade-long-offtake-deal-with-canadian-lng-project",
-        "title": "Germany’s SEFE firms up two-decade-long offtake deal with Canadian LNG project",
-        "published_at": "2026-10-28T12:59:12+00:00"
+        "url": "https://lngprime.com/contracts-and-tenders/sefe-trafigura-seal-five-year-gas-supply-deal/199186/",
+        "title": "SEFE, Trafigura seal five-year gas supply deal",
+        "published_at": "2026-10-29T09:01:10+00:00"
       },
       "hidden": true
     },
