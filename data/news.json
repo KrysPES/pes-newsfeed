@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-29T13:19:13.020462+00:00",
+  "generated_at": "2026-10-29T13:24:14.719625+00:00",
   "item_count": 319,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 11
+    "high": 1,
+    "normal": 10
   },
   "superseded_count": 118,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1052
+        "ms": 1313
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 126125
+        "ms": 144204
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 24679
+        "ms": 7011
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 216
+        "ms": 92
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 379
+        "ms": 660
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 21,
         "error": null,
-        "ms": 189
+        "ms": 212
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 44,
         "error": null,
-        "ms": 1287
+        "ms": 1122
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 175
+        "ms": 227
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 668
+        "ms": 692
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 303
+        "ms": 295
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 563
+        "ms": 591
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 67
+        "ms": 385
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 118
+        "ms": 83
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, LV, CHP-1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/e60405af-a9eb-4149-963b-430a1abcba45/4",
+      "snippet": "Published: 29.10.2026 14:20:07 Publisher: AS Latvenergo Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: CHP-1 Gas Turbine 2 failure. Steam turbine power limited. Remarks: Updated event stop time. Production Units Unit Name Unit EIC Area Installed ",
+      "published_at": "2026-10-29T13:20:07+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-10-29T08:38:03+00:00"
+    },
     {
       "title": "Russia’s alleged sabotage campaign in Europe raises fears of escalation",
       "url": "https://www.aljazeera.com/news/2026/10/29/russias-alleged-sabotage-campaign-in-europe-raises-fears-of-escalation?traffic_source=rss",
@@ -199,49 +243,6 @@
       ]
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, COMBIGOLFE",
-      "url": "https://umm.nordpoolgroup.com/#/messages/1407ff58-d88c-414b-8bee-eaff797e3e48/6",
-      "snippet": "Published: 29.10.2026 09:38:03 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-10-29T08:38:03+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 58,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.81
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Seaway7 completes inter-array cable installation at East Anglia Three offshore wind farm",
       "url": "https://offshore-energy.biz/2026/10/29/seaway7-completes-inter-array-cable-installation-at-east-anglia-three-offshore-wind-farm",
       "snippet": "Seaway7 has completed the final inter-array cable lay at the 1.4 GW East Anglia Three offshore wind farm in the UK. Seaway7's teams installed 95...",
@@ -268,7 +269,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 47.1,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "infrastructure": [
@@ -438,7 +439,7 @@
       "authority": 18,
       "tier": 2,
       "has_magnitude": false,
-      "score": 49,
+      "score": 48,
       "tags": [
         "lng",
         "infrastructure"
@@ -455,7 +456,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 60.7,
-        "recency_multiplier": 0.68
+        "recency_multiplier": 0.67
       },
       "matched": {
         "lng": [
@@ -983,7 +984,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 33.9,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.86
       },
       "matched": {
         "lng": [
@@ -997,50 +998,6 @@
       ],
       "update_count": 5,
       "thread_started_at": "2026-10-20T04:56:06+00:00"
-    },
-    {
-      "title": "Huge investment to keep first UK-France interconnector running until at least 2050",
-      "url": "https://offshore-energy.biz/2026/10/29/huge-investment-to-keep-first-uk-france-interconnector-running-until-at-least-2050",
-      "snippet": "The UK's National Grid is investing up to £400 million (around €478 million) in the first cross-border electricity link between the UK and...",
-      "published_at": "2026-10-29T06:40:22+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 13.4,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 41.9,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "infrastructure": [
-          "interconnector",
-          "grid"
-        ],
-        "geography": [
-          "uk",
-          "national grid"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-10-27T10:20:39+00:00"
     },
     {
       "title": "Fire engulfs Seoul’s last shanty-town, forcing hundreds to evacuate",
@@ -1209,6 +1166,50 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Huge investment to keep first UK-France interconnector running until at least 2050",
+      "url": "https://offshore-energy.biz/2026/10/29/huge-investment-to-keep-first-uk-france-interconnector-running-until-at-least-2050",
+      "snippet": "The UK's National Grid is investing up to £400 million (around €478 million) in the first cross-border electricity link between the UK and...",
+      "published_at": "2026-10-29T06:40:22+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 13.4,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.9,
+        "recency_multiplier": 0.69
+      },
+      "matched": {
+        "infrastructure": [
+          "interconnector",
+          "grid"
+        ],
+        "geography": [
+          "uk",
+          "national grid"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-10-27T10:20:39+00:00"
     },
     {
       "title": "Massive chemical plant fire triggers mass evacuations in Mexico",
@@ -1487,7 +1488,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 35.6,
-        "recency_multiplier": 0.75
+        "recency_multiplier": 0.74
       },
       "matched": {
         "weather": [
@@ -1804,7 +1805,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 30.4,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.83
       },
       "matched": {
         "lng": [
@@ -2339,7 +2340,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 30.4,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.77
       },
       "matched": {
         "lng": [
@@ -2496,7 +2497,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 23.8,
-        "recency_multiplier": 0.96
+        "recency_multiplier": 0.95
       },
       "matched": {
         "nuclear": [
