@@ -36,6 +36,21 @@ push_with_retry() {
   return 1
 }
 
+stage_feed() {
+  # data/squawk_audio.json exists only once the voice step has run with its
+  # secret set. git add with ANY missing pathspec stages nothing at all -
+  # that froze the feed from 29 Oct to 5 Nov 2026 - so each path is staged
+  # on its own, and the squawk map only when present.
+  git add data/news.json
+  if [ -f data/squawk_audio.json ]; then git add data/squawk_audio.json; fi
+}
+
+discard_feed() {
+  # Same missing-pathspec trap as stage_feed: checkout each path on its own.
+  git checkout -- data/news.json 2>/dev/null || true
+  git checkout -- data/squawk_audio.json 2>/dev/null || true
+}
+
 end=$((SECONDS + RUN_FOR_SECONDS))
 tick=0
 while [ "$SECONDS" -lt "$end" ]; do
@@ -48,7 +63,7 @@ while [ "$SECONDS" -lt "$end" ]; do
     # One bad sweep (a source timing out hard, a transient DNS wobble) must
     # not kill the daemon; the next tick retries. Leave the tree clean.
     echo "ingest failed on tick ${tick} - will retry next tick"
-    git checkout -- data/news.json data/squawk_audio.json 2>/dev/null || true
+    discard_feed
   else
     # Squawk natural voice: make clips for fresh squawk-worthy items and
     # re-attach audio_url to the regenerated feed (tools/squawk_audio.mjs).
@@ -59,17 +74,17 @@ while [ "$SECONDS" -lt "$end" ]; do
     last_ts=$(git log -1 --format=%ct -- data/news.json 2>/dev/null || echo 0)
     age=$(( $(date +%s) - last_ts ))
     if [ "$new_items" != "$old_items" ]; then
-      git add data/news.json data/squawk_audio.json
+      stage_feed
       git commit -m "feed update $(date -u +'%Y-%m-%dT%H:%MZ')"
       push_with_retry || exit 1
     elif [ "$age" -gt "$HEARTBEAT_SECONDS" ]; then
-      git add data/news.json data/squawk_audio.json
+      stage_feed
       git commit -m "feed heartbeat $(date -u +'%Y-%m-%dT%H:%MZ') (no new items; generated_at refreshed)"
       push_with_retry || exit 1
     else
       # Nothing new and the heartbeat is fresh: drop the timestamp-only
       # rewrite so the tree stays clean.
-      git checkout -- data/news.json data/squawk_audio.json 2>/dev/null || true
+      discard_feed
       echo "no item changes (heartbeat ${age}s old) - nothing to push"
     fi
   fi
