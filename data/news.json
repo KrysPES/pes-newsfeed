@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-07T12:49:33.752564+00:00",
-  "item_count": 158,
+  "generated_at": "2026-11-07T12:54:32.686931+00:00",
+  "item_count": 159,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 12
+    "normal": 13
   },
-  "superseded_count": 48,
+  "superseded_count": 49,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 752
+        "ms": 871
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 89609
+        "ms": 88731
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 17725
+        "ms": 17806
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 179
+        "ms": 104
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 319
+        "ms": 277
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 69
+        "ms": 64
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 789
+        "ms": 672
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 106
+        "ms": 200
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 532
+        "ms": 509
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 37
+        "ms": 217
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 326
+        "ms": 247
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 22,
+        "count": 23,
         "error": null,
-        "ms": 58
+        "ms": 163
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 82
+        "ms": 193
       }
     ]
   },
@@ -338,6 +338,50 @@
         ],
         "unplanned": [
           "leak"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Ukraine's power network suffers further damage after fresh Russian strikes",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&at_campaign=rss",
+      "snippet": "The attacks come before Ukrainian and Russian delegations are due to take part in trilateral talks in Abu Dhabi next week.",
+      "published_at": "2026-11-07T12:49:36+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 6.7,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 41.9,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "infrastructure": [
+          "network"
+        ],
+        "geography": [
+          "russian",
+          "ukraine"
+        ],
+        "unplanned": [
+          "damage"
         ]
       },
       "duplicate_count": 0,
@@ -1038,7 +1082,9 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-10-28T16:00:00+00:00"
     },
     {
       "title": "European Central Bank President Lagarde to step down early",
@@ -1607,57 +1653,6 @@
         ]
       },
       "duplicate_count": 1,
-      "also_reported_by": []
-    },
-    {
-      "title": "UBS Data Shows Russian Oil Exports Only 10% Below Pre-War Levels",
-      "url": "https://oilprice.com/Energy/Energy-General/UBS-Data-Shows-Russian-Oil-Exports-Only-10-Below-Pre-War-Levels.html",
-      "snippet": "President Trump's US-Russia deal to export diesel and crude cargoes has drawn considerable scrutiny from Western elites as the first shipments could soon reach US shores. Ukrainian drone strikes on Russian refineries, combined with disruptions in the Strait of Hormuz, have intensified pressure on th",
-      "published_at": "2026-10-28T16:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 31,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 37.9,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 74.7,
-        "recency_multiplier": 0.31
-      },
-      "matched": {
-        "geopolitics": [
-          "drone",
-          "war",
-          "strait of hormuz"
-        ],
-        "lng": [
-          "cargoes"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
       "also_reported_by": []
     },
     {
@@ -4811,6 +4806,64 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "UBS Data Shows Russian Oil Exports Only 10% Below Pre-War Levels",
+      "url": "https://oilprice.com/Energy/Energy-General/UBS-Data-Shows-Russian-Oil-Exports-Only-10-Below-Pre-War-Levels.html",
+      "snippet": "President Trump's US-Russia deal to export diesel and crude cargoes has drawn considerable scrutiny from Western elites as the first shipments could soon reach US shores. Ukrainian drone strikes on Russian refineries, combined with disruptions in the Strait of Hormuz, have intensified pressure on th",
+      "published_at": "2026-10-28T16:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 9,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 37.9,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 74.7,
+        "recency_multiplier": 0.31
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "war",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
+        "title": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
+        "published_at": "2026-10-29T14:17:35+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "India’s Oil Buyers Squeezed by $123 Crude and Weak Rupee",
