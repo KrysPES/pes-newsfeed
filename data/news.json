@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-08T16:10:24.485548+00:00",
+  "generated_at": "2026-11-08T16:16:11.587622+00:00",
   "item_count": 155,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 12
+    "high": 1,
+    "normal": 11
   },
   "superseded_count": 48,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1038
+        "ms": 1678
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 86700
+        "ms": 133544
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 4647
+        "ms": 3860
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19
+        "ms": 156
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 608
+        "ms": 349
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 142
+        "ms": 121
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1312
+        "ms": 1171
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 243
+        "ms": 1311
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 712
+        "ms": 694
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 301
+        "ms": 436
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 597
+        "ms": 619
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 30
+        "ms": 28
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 96
+        "ms": 127
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
+      "url": "https://umm.nordpoolgroup.com/#/messages/e0c676a7-b6e6-4110-bfa7-f7b22d1787a8/4",
+      "snippet": "Published: 08.11.2026 17:13:44 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-11-08T16:13:44+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-11-08T00:36:41+00:00"
+    },
     {
       "title": "Europe to Release 42 Million Barrels of Oil",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Europe-to-Release-42-Million-Barrels-of-Oil.html",
@@ -442,50 +486,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
-      "url": "https://umm.nordpoolgroup.com/#/messages/e0c676a7-b6e6-4110-bfa7-f7b22d1787a8/3",
-      "snippet": "Published: 08.11.2026 07:16:49 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-11-08T06:16:49+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.54
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-11-08T00:36:41+00:00"
     },
     {
       "title": "Shell’s Q3 profit jumps to $10.8 billion, LNG sales rise",
