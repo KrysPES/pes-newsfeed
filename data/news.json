@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-08T21:13:10.006573+00:00",
+  "generated_at": "2026-11-08T21:17:49.375738+00:00",
   "item_count": 154,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 12
+    "high": 1,
+    "normal": 11
   },
   "superseded_count": 48,
   "sources": {
@@ -17,95 +17,142 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1249
+        "ms": 1602
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 218333
+        "ms": 189779
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 4122
+        "ms": 10726
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 192
+        "ms": 491
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 699
+        "ms": 423
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 249
+        "ms": 208
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1026
+        "ms": 1299
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 271
+        "ms": 193
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 673
+        "ms": 692
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 240
+        "ms": 243
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 276
+        "ms": 309
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 190
+        "ms": 286
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 261
+        "ms": 270
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ballylumford CCGT - GU_503720(B31)",
+      "url": "https://umm.nordpoolgroup.com/#/messages/33683209-19ef-4337-bff5-15289e374c7c/6",
+      "snippet": "Published: 08.11.2026 22:13:29 Publisher: TTEP Kilroot Power Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: B31 HRSG Steam leak Steam Turbine 20 main steam pipework repairs Remarks: B31 HRSG Steam leak Steam Turbine 20 main steam pipework rep",
+      "published_at": "2026-11-08T21:13:29+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 74,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 25.2,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 83.1,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "leak",
+          "repairs"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure",
+          "leak"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-11-08T16:42:48+00:00"
+    },
     {
       "title": "Europe to Release 42 Million Barrels of Oil",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Europe-to-Release-42-Million-Barrels-of-Oil.html",
@@ -207,49 +254,6 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-10-26T13:00:00+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, CYCOFOS",
-      "url": "https://umm.nordpoolgroup.com/#/messages/e0c676a7-b6e6-4110-bfa7-f7b22d1787a8/5",
-      "snippet": "Published: 08.11.2026 17:42:48 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Awaiting information Remarks: Unavailability update. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
-      "published_at": "2026-11-08T16:42:48+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 59,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "What we know so far after Polish gunman opens fire in Krakow main square",
