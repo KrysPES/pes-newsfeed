@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-08T00:36:55.016976+00:00",
+  "generated_at": "2026-11-08T00:41:29.224458+00:00",
   "item_count": 157,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 13
+    "high": 1,
+    "normal": 12
   },
   "superseded_count": 49,
   "sources": {
@@ -17,95 +17,147 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1219
+        "ms": 1279
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 205094
+        "ms": 169610
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 10560
+        "ms": 20716
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 584
+        "ms": 479
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 145
+        "ms": 157
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 294
+        "ms": 161
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1098
+        "ms": 1281
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 435
+        "ms": 176
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 647
+        "ms": 684
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 317
+        "ms": 323
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 551
+        "ms": 620
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 101
+        "ms": 83
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 137
+        "ms": 142
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Rhode - RHODE2",
+      "url": "https://umm.nordpoolgroup.com/#/messages/8a06b035-6b43-4ea7-a03a-46daf8373cf8/1",
+      "snippet": "Published: 08.11.2026 01:36:41 Publisher: SSE Generation Limited Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Fire system fault Remarks: Plant Fault - Auxiliary Equipment Production Units Unit Name Unit EIC Area Installed Capacity Available Cap",
+      "published_at": "2026-11-08T00:36:41+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 75,
+      "tags": [
+        "supply_disruption",
+        "regulation"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 28.9,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 86.8,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned",
+          "fault",
+          "fire"
+        ],
+        "regulation": [
+          "cap"
+        ],
+        "unplanned": [
+          "unplanned",
+          "fault",
+          "failure",
+          "fire"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 2,
+      "also_reported_by": [],
+      "first_seen_at": "2026-11-07T15:42:22+00:00"
+    },
     {
       "title": "Europe to Release 42 Million Barrels of Oil",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Europe-to-Release-42-Million-Barrels-of-Oil.html",
@@ -207,51 +259,6 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-10-26T13:00:00+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Ringsend Flexgen (IS3) (GU_403610)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/7304e37e-645d-4d71-92f5-8783274d980d/2",
-      "snippet": "Published: 07.11.2026 18:18:35 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Operational issue. Remarks: Operational issue. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacit",
-      "published_at": "2026-11-07T17:18:35+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 58,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 24.0,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 81.9,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "operational issue"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [],
-      "first_seen_at": "2026-11-07T15:42:22+00:00"
     },
     {
       "title": "Iran war live: Blasts heard in Qeshm; US moves to block land supply routes",
@@ -1522,7 +1529,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.4,
-        "recency_multiplier": 0.87
+        "recency_multiplier": 0.86
       },
       "matched": {
         "geopolitics": [
