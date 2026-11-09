@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T23:27:20.330414+00:00",
+  "generated_at": "2026-11-09T23:32:24.518140+00:00",
   "item_count": 149,
   "alert_counts": {
     "critical": 0,
@@ -8,51 +8,51 @@
   },
   "superseded_count": 46,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
-        "ok": false,
-        "count": 0,
-        "error": "HTTPError: 522 Server Error: <none> for url: https://ummrss.nordpoolgroup.com/messages/?unavailabilityType=1&fuelTypes=14&fuelTypes=16&fuelTypes=4&limit=100",
-        "ms": 19894
+        "ok": true,
+        "count": 80,
+        "error": null,
+        "ms": 1096
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 148777
+        "ms": 175319
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 9056
+        "ms": 5773
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 486
+        "ms": 824
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 736
+        "ms": 704
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 156
+        "ms": 142
       },
       {
         "id": "world_nuclear_news",
@@ -66,42 +66,42 @@
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 236
+        "ms": 239
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 652
+        "ms": 656
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 333
+        "ms": 288
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 625
+        "ms": 564
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 79
+        "ms": 90
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 101
+        "ms": 149
       }
     ]
   },
@@ -132,7 +132,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 66.3,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.95
       },
       "matched": {
         "supply_disruption": [
@@ -529,46 +529,6 @@
       "thread_started_at": "2026-10-26T02:55:15+00:00"
     },
     {
-      "title": "Explosion at Turkish steel plant kills at least 16 people",
-      "url": "https://www.aljazeera.com/news/2026/11/9/explosion-at-turkish-steel-plant-kills-at-least-16-people?traffic_source=rss",
-      "snippet": "President Erdogan announces an investigation after a crane collapsed into a furnace, triggering the blast near Izmir.",
-      "published_at": "2026-11-09T19:58:40+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 49,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.8,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 46.3,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "supply_disruption": [
-          "explosion",
-          "blast"
-        ],
-        "unplanned": [
-          "explosion"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "MOL and Deutsche ReGas shake hands on FSRU for German LNG terminal",
       "url": "https://offshore-energy.biz/2026/10/29/mol-and-deutsche-regas-shake-hands-on-fsru-for-german-lng-terminal",
       "snippet": "This deal with MOL will enable an LNG carrier to be converted into an FSRU and chartered to Deutsche ReGas from 2028.",
@@ -620,6 +580,46 @@
       "first_seen_at": "2026-10-29T06:17:33+00:00",
       "update_count": 2,
       "thread_started_at": "2026-10-27T13:22:14+00:00"
+    },
+    {
+      "title": "Explosion at Turkish steel plant kills at least 16 people",
+      "url": "https://www.aljazeera.com/news/2026/11/9/explosion-at-turkish-steel-plant-kills-at-least-16-people?traffic_source=rss",
+      "snippet": "President Erdogan announces an investigation after a crane collapsed into a furnace, triggering the blast near Izmir.",
+      "published_at": "2026-11-09T19:58:40+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 48,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.8,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 46.3,
+        "recency_multiplier": 0.89
+      },
+      "matched": {
+        "supply_disruption": [
+          "explosion",
+          "blast"
+        ],
+        "unplanned": [
+          "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "LNG imports make up increasing share of Colombia's natural gas supply",
@@ -780,7 +780,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.92
+        "recency_multiplier": 0.91
       },
       "matched": {
         "supply_disruption": [
@@ -955,7 +955,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 42.6,
-        "recency_multiplier": 0.74
+        "recency_multiplier": 0.73
       },
       "matched": {
         "infrastructure": [
@@ -1555,7 +1555,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.1,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.7
       },
       "matched": {
         "lng": [
@@ -4597,7 +4597,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 55.3,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.9
       },
       "matched": {
         "geopolitics": [
@@ -4654,7 +4654,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.1,
-        "recency_multiplier": 0.59
+        "recency_multiplier": 0.58
       },
       "matched": {
         "geopolitics": [
