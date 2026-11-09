@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T12:53:53.839379+00:00",
+  "generated_at": "2026-11-09T12:58:29.585237+00:00",
   "item_count": 150,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 43,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1122
+        "ms": 799
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 205636
+        "ms": 177914
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 19668
+        "ms": 3088
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 36
+        "ms": 113
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 371
+        "ms": 335
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 164
+        "ms": 105
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 862
+        "ms": 860
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 179
+        "ms": 226
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 519
+        "ms": 528
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 75
+        "ms": 81
       },
       {
         "id": "oilprice",
-        "ok": true,
-        "count": 15,
-        "error": null,
-        "ms": 314
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='oilprice.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20102
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 33,
         "error": null,
-        "ms": 98
+        "ms": 499
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 114
+        "ms": 232
       }
     ]
   },
@@ -1183,46 +1183,6 @@
       "thread_started_at": "2026-10-22T12:00:00+00:00"
     },
     {
-      "title": "QatarEnergy buying 25% interest in Namibian offshore exploration license from Chevron",
-      "url": "https://www.offshore-energy.biz/2026/11/09/qatarenergy-buying-25percent-interest-in-namibian-offshore-exploration-license-from-chevron",
-      "snippet": "Qatar’s state-owned oil & gas firm QatarEnergy has entered into an agreement with Chevron's Namibian subsidiary for the acquisition of a...",
-      "published_at": "2026-11-09T08:21:12+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 38,
-      "tags": [
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 6.2,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 35.6,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "regulation": [
-          "license"
-        ],
-        "geography": [
-          "qatar"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Pro-Russian hackers leak Italian foreign minister’s data on dark web",
       "url": "https://www.aljazeera.com/news/2026/11/7/pro-russian-hackers-leak-italian-foreign-ministers-data-on-dark-web?traffic_source=rss",
       "snippet": "The prime minister blames pro-Russian hackers for the leak, as her top diplomat says the cyberthreat was ongoing.",
@@ -1345,38 +1305,40 @@
       "also_reported_by": []
     },
     {
-      "title": "Elenger gets first winter LNG shipment",
-      "url": "https://lngprime.com/europe/elenger-gets-first-winter-lng-shipment/199718/",
-      "snippet": "Elenger, a unit of Estonian investment firm Infortar, has received the first of five liquefied natural gas (LNG) cargoes scheduled for the winter season.",
-      "published_at": "2026-11-09T06:40:14+00:00",
+      "title": "QatarEnergy buying 25% interest in Namibian offshore exploration license from Chevron",
+      "url": "https://www.offshore-energy.biz/2026/11/09/qatarenergy-buying-25percent-interest-in-namibian-offshore-exploration-license-from-chevron",
+      "snippet": "Qatar’s state-owned oil & gas firm QatarEnergy has entered into an agreement with Chevron's Namibian subsidiary for the acquisition of a...",
+      "published_at": "2026-11-09T08:21:12+00:00",
       "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
       "tier": 2,
-      "has_magnitude": false,
+      "has_magnitude": true,
       "score": 37,
       "tags": [
-        "lng"
+        "regulation"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 13.1,
-        "themes": 26.0,
-        "geography": 0.0,
+        "authority": 12.4,
+        "themes": 6.2,
+        "geo_band": "tertiary",
+        "geography": 5.0,
         "event_nature": 0.0,
         "urgency": 0.0,
-        "magnitude": 0.0,
+        "magnitude": 12.0,
         "speculative": 0.0,
-        "raw": 39.1,
-        "recency_multiplier": 0.72
+        "raw": 35.6,
+        "recency_multiplier": 0.82
       },
       "matched": {
-        "lng": [
-          "lng",
-          "cargoes",
-          "lng shipment"
+        "regulation": [
+          "license"
+        ],
+        "geography": [
+          "qatar"
         ]
       },
       "duplicate_count": 0,
@@ -1532,6 +1494,44 @@
       "matched": {
         "regulation": [
           "price control"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Elenger gets first winter LNG shipment",
+      "url": "https://lngprime.com/europe/elenger-gets-first-winter-lng-shipment/199718/",
+      "snippet": "Elenger, a unit of Estonian investment firm Infortar, has received the first of five liquefied natural gas (LNG) cargoes scheduled for the winter season.",
+      "published_at": "2026-11-09T06:40:14+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26.0,
+        "geography": 0.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 39.1,
+        "recency_multiplier": 0.72
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng shipment"
         ]
       },
       "duplicate_count": 0,
@@ -4701,7 +4701,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 3,
       "tags": [
         "oil_macro"
       ],
