@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-10T13:27:21.415617+00:00",
+  "generated_at": "2026-11-10T13:33:04.110038+00:00",
   "item_count": 164,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 20
+    "high": 1,
+    "normal": 19
   },
   "superseded_count": 49,
   "sources": {
@@ -17,95 +17,139 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1370
+        "ms": 1711
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 200855
+        "ms": 256897
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19087
+        "ms": 5195
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 435
+        "ms": 168
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 243
+        "ms": 367
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 127
+        "ms": 128
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 51,
         "error": null,
-        "ms": 1175
+        "ms": 1177
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 154
+        "ms": 133
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 746
+        "ms": 702
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 370
+        "ms": 364
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 422
+        "ms": 552
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 31,
+        "count": 32,
         "error": null,
-        "ms": 51
+        "ms": 35
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 78
+        "ms": 95
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, TIHANGE 3",
+      "url": "https://umm.nordpoolgroup.com/#/messages/524e729e-9aee-4207-a00a-64bf5caa294e/4",
+      "snippet": "Published: 10.11.2026 14:27:05 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Automatic stop Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capac",
+      "published_at": "2026-11-10T13:27:05+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0.0,
+        "event_nature": 20.0,
+        "urgency": 16.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 66.3,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-11-10T09:14:23+00:00"
+    },
     {
       "title": "Europe to Release 42 Million Barrels of Oil",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Europe-to-Release-42-Million-Barrels-of-Oil.html",
@@ -252,49 +296,6 @@
       "also_reported_by": [],
       "update_count": 21,
       "thread_started_at": "2026-11-05T13:30:00+00:00"
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, TIHANGE 3",
-      "url": "https://umm.nordpoolgroup.com/#/messages/524e729e-9aee-4207-a00a-64bf5caa294e/3",
-      "snippet": "Published: 10.11.2026 10:14:23 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Automatic stop Remarks: Unavailability update. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capac",
-      "published_at": "2026-11-10T09:14:23+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 59,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0.0,
-        "event_nature": 20.0,
-        "urgency": 16.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 66.3,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout",
@@ -469,7 +470,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 52.3,
-        "recency_multiplier": 0.83
+        "recency_multiplier": 0.82
       },
       "matched": {
         "geopolitics": [
@@ -649,7 +650,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 38.6,
-        "recency_multiplier": 1.0
+        "recency_multiplier": 0.99
       },
       "matched": {
         "supply_disruption": [
@@ -997,7 +998,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.6,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.89
       },
       "matched": {
         "oil_macro": [
@@ -1010,46 +1011,6 @@
         ],
         "geography": [
           "europe"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Seabed monitoring starts at UK CCS project to prepare for CO2 injection",
-      "url": "https://www.offshore-energy.biz/2026/11/10/seabed-monitoring-starts-at-uk-ccs-project-to-prepare-for-co2-injection",
-      "snippet": "Six lander systems have been installed at the Northern Endurance Partnership (NEP) project, the UK's first commercial-scale offshore carbon...",
-      "published_at": "2026-11-10T10:22:55+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 41,
-      "tags": [
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 6.7,
-        "geo_band": "primary",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 35.1,
-        "recency_multiplier": 0.92
-      },
-      "matched": {
-        "gas_storage": [
-          "injection"
-        ],
-        "geography": [
-          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -1132,6 +1093,46 @@
         ],
         "geography": [
           "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Seabed monitoring starts at UK CCS project to prepare for CO2 injection",
+      "url": "https://www.offshore-energy.biz/2026/11/10/seabed-monitoring-starts-at-uk-ccs-project-to-prepare-for-co2-injection",
+      "snippet": "Six lander systems have been installed at the Northern Endurance Partnership (NEP) project, the UK's first commercial-scale offshore carbon...",
+      "published_at": "2026-11-10T10:22:55+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 6.7,
+        "geo_band": "primary",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 35.1,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "gas_storage": [
+          "injection"
+        ],
+        "geography": [
+          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -1331,7 +1332,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 38.5,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.76
       },
       "matched": {
         "lng": [
@@ -1786,7 +1787,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 37.9,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.68
       },
       "matched": {
         "supply_disruption": [
@@ -1938,52 +1939,6 @@
       "also_reported_by": []
     },
     {
-      "title": "China’s gas imports up in October",
-      "url": "https://lngprime.com/asia/chinas-gas-imports-up-in-october/199751/",
-      "snippet": "China’s natural gas imports, including pipeline gas and LNG, rose in October compared with the same month in 2025, according to customs data.",
-      "published_at": "2026-11-10T09:03:46+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 33,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 11.3,
-        "geo_band": "tertiary",
-        "geography": 5.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 0.0,
-        "speculative": 0.0,
-        "raw": 29.5,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "china"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-11-10T07:00:05+00:00"
-    },
-    {
       "title": "Molgas buys Prima LNG’s Irish business",
       "url": "https://lngprime.com/europe/molgas-buys-prima-lngs-irish-business/199769/",
       "snippet": "European small-scale LNG player Molgas, backed by French infrastructure fund investor InfraVia, has completed the acquisition of Prima LNG’s business in Ireland, further expanding its LNG platform in Europe.",
@@ -2011,7 +1966,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 34.5,
-        "recency_multiplier": 0.72
+        "recency_multiplier": 0.71
       },
       "matched": {
         "lng": [
@@ -2116,6 +2071,52 @@
       ],
       "update_count": 3,
       "thread_started_at": "2026-10-17T00:00:00+00:00"
+    },
+    {
+      "title": "China’s gas imports up in October",
+      "url": "https://lngprime.com/asia/chinas-gas-imports-up-in-october/199751/",
+      "snippet": "China’s natural gas imports, including pipeline gas and LNG, rose in October compared with the same month in 2025, according to customs data.",
+      "published_at": "2026-11-10T09:03:46+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 11.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 29.5,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "china"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-11-10T07:00:05+00:00"
     },
     {
       "title": "Firms tied to West Bank settlements win $15m UK deals despite sanctions",
@@ -2308,7 +2309,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 27.5,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -5016,7 +5017,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 71.1,
-        "recency_multiplier": 0.7
+        "recency_multiplier": 0.69
       },
       "matched": {
         "geopolitics": [
@@ -5069,7 +5070,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 32.7,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.7
       },
       "matched": {
         "lng": [
