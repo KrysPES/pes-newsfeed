@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-10T00:07:19.821291+00:00",
-  "item_count": 148,
+  "generated_at": "2026-11-10T00:12:11.373558+00:00",
+  "item_count": 149,
   "alert_counts": {
     "critical": 0,
     "high": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 46,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1214
+        "ms": 978
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 157369
+        "ms": 143937
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 18752
+        "ms": 4825
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 738
+        "ms": 421
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 302
+        "ms": 731
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 173
+        "ms": 163
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1186
+        "ms": 1042
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 524
+        "ms": 159
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 692
+        "ms": 610
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 318
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20240
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 477
+        "ms": 606
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 26,
+        "count": 28,
         "error": null,
-        "ms": 449
+        "ms": 79
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 316
+        "ms": 126
       }
     ]
   },
@@ -514,7 +514,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 47.0,
-        "recency_multiplier": 0.9
+        "recency_multiplier": 0.89
       },
       "matched": {
         "supply_disruption": [
@@ -607,7 +607,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 46.3,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.84
       },
       "matched": {
         "supply_disruption": [
@@ -1361,6 +1361,50 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-10-28T16:00:00+00:00"
+    },
+    {
+      "title": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
+      "url": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Kyiv, Washington and Moscow are all sending delegation to the United Arab Emirates for the first trilateral talks since February.",
+      "published_at": "2026-11-10T00:09:49+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics",
+        "power_system"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 12.3,
+        "geo_band": "tertiary",
+        "geography": 5.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 0.0,
+        "speculative": 0.0,
+        "raw": 27.5,
+        "recency_multiplier": 1.0
+      },
+      "matched": {
+        "geopolitics": [
+          "peace talks"
+        ],
+        "power_system": [
+          "flexibility"
+        ],
+        "geography": [
+          "ukraine"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
     },
     {
       "title": "Why we disrupted Annalena Baerbock’s award speech",
@@ -4496,7 +4540,7 @@
         "magnitude": 12.0,
         "speculative": 0.0,
         "raw": 96.5,
-        "recency_multiplier": 0.69
+        "recency_multiplier": 0.68
       },
       "matched": {
         "geopolitics": [
@@ -4616,7 +4660,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 59.1,
-        "recency_multiplier": 0.56
+        "recency_multiplier": 0.55
       },
       "matched": {
         "geopolitics": [
@@ -4707,7 +4751,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 1,
+      "score": 0,
       "tags": [
         "geopolitics",
         "oil_macro"
