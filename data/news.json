@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T08:29:04.478977+00:00",
+  "generated_at": "2026-11-11T08:34:36.846831+00:00",
   "item_count": 170,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 51,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1280
+        "ms": 1649
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 102451
+        "ms": 149033
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 19195
+        "ms": 3592
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 188
+        "ms": 497
       },
       {
         "id": "ec_energy",
-        "ok": true,
-        "count": 30,
-        "error": null,
-        "ms": 777
+        "ok": false,
+        "count": 0,
+        "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://energy.ec.europa.eu/node/2/rss_en",
+        "ms": 579
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 127
+        "ms": 167
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 52,
+        "count": 51,
         "error": null,
-        "ms": 1291
+        "ms": 1126
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 175
+        "ms": 196
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 741
+        "ms": 700
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 335
+        "ms": 358
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 512
+        "ms": 705
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 23,
         "error": null,
-        "ms": 60
+        "ms": 73
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 119
+        "ms": 47
       }
     ]
   },
@@ -155,9 +155,9 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 1,
       "also_reported_by": [],
-      "first_seen_at": "2026-11-10T16:01:13+00:00"
+      "first_seen_at": "2026-11-10T16:28:21+00:00"
     },
     {
       "title": "Orlen terminates QatarEnergy LNG supply contract",
@@ -900,7 +900,7 @@
         "magnitude": 0.0,
         "speculative": 0.0,
         "raw": 36.4,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.9
       },
       "matched": {
         "lng": [
@@ -1399,7 +1399,7 @@
         "magnitude": 0.0,
         "speculative": -12.0,
         "raw": 41.0,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.65
       },
       "matched": {
         "geopolitics": [
@@ -1465,52 +1465,6 @@
       "thread_started_at": "2026-11-10T01:38:49+00:00"
     },
     {
-      "title": "The Truth Behind Iraq’s Oil Rebound And The Secret Red Sea Plan",
-      "url": "https://oilprice.com/Energy/Crude-Oil/The-Truth-Behind-Iraqs-Oil-Rebound-And-The-Secret-Red-Sea-Plan.html",
-      "snippet": "No country aside from Iran itself has felt the economic consequences of the U.S./Israel-Iran war more than Iraq. Over 90 percent of its annual budget historically comes from oil and around 95 percent of that historically had to pass through the Strait of Hormuz before it could be monetised. When Ira",
-      "published_at": "2026-11-10T18:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 35,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 32.0,
-        "geo_band": "chokepoint",
-        "geography": 16.0,
-        "event_nature": 0.0,
-        "urgency": 0.0,
-        "magnitude": 12.0,
-        "speculative": 0.0,
-        "raw": 68.8,
-        "recency_multiplier": 0.38
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz",
-          "red sea"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz",
-          "red sea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 4,
-      "thread_started_at": "2026-11-09T00:00:00+00:00"
-    },
-    {
       "title": "Spain mulls TikTok suspension after investigation into child sex abuse videos",
       "url": "https://www.aljazeera.com/news/2026/11/10/spanish-probe-finds-over-20000-suspected-paedophile-profiles-on-tiktok?traffic_source=rss",
       "snippet": "Ministry of Youth and Children calls for urgent meeting with TikTok leadership in Spain.",
@@ -1557,6 +1511,52 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-11-10T11:25:46+00:00"
+    },
+    {
+      "title": "The Truth Behind Iraq’s Oil Rebound And The Secret Red Sea Plan",
+      "url": "https://oilprice.com/Energy/Crude-Oil/The-Truth-Behind-Iraqs-Oil-Rebound-And-The-Secret-Red-Sea-Plan.html",
+      "snippet": "No country aside from Iran itself has felt the economic consequences of the U.S./Israel-Iran war more than Iraq. Over 90 percent of its annual budget historically comes from oil and around 95 percent of that historically had to pass through the Strait of Hormuz before it could be monetised. When Ira",
+      "published_at": "2026-11-10T18:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 34,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 32.0,
+        "geo_band": "chokepoint",
+        "geography": 16.0,
+        "event_nature": 0.0,
+        "urgency": 0.0,
+        "magnitude": 12.0,
+        "speculative": 0.0,
+        "raw": 68.8,
+        "recency_multiplier": 0.38
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz",
+          "red sea"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz",
+          "red sea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 4,
+      "thread_started_at": "2026-11-09T00:00:00+00:00"
     },
     {
       "title": "Palestine Weekly: West Bank on fire – and Gaza’s tents under water",
