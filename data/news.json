@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-12T06:56:41.505621+00:00",
+  "generated_at": "2026-11-12T07:03:21.975308+00:00",
   "item_count": 170,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 11
+    "high": 1,
+    "normal": 10
   },
   "superseded_count": 58,
   "sources": {
@@ -17,95 +17,141 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1037
+        "ms": 1375
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 90105
+        "ms": 190556
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 3490
+        "ms": 3004
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 402
+        "ms": 278
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 255
+        "ms": 396
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 270
+        "ms": 286
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1251
+        "ms": 1042
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 210
+        "ms": 263
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 573
+        "ms": 590
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 184
+        "ms": 220
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 498
+        "ms": 448
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 196
+        "ms": 336
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 201
+        "ms": 179
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, DK1, Fynsværket Blok 7",
+      "url": "https://umm.nordpoolgroup.com/#/messages/07a9a63b-4174-403d-b1bd-4ef3ded083dd/1",
+      "snippet": "Published: 12.11.2026 07:57:40 Publisher: Fjernvarme Fyn Produktion A/S Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Low oxygen Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power ",
+      "published_at": "2026-11-12T06:57:40+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0,
+        "event_nature": 20,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 66.3,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-11-11T15:33:40+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/ab33b228b1e81fa3368c01c2864fdd4800d0e1cb.mp3",
+      "spoken": "Unplanned, Unavailability of electricity facilities. Production, DK1, Fynsværket Blok 7."
+    },
     {
       "title": "Europe to Release 42 Million Barrels of Oil",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Europe-to-Release-42-Million-Barrels-of-Oil.html",
@@ -264,52 +310,6 @@
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/10a11a207755a602a9153d30541579e1ed524360.mp3",
       "spoken": "What we know so far after Polish gunman opens fire in Krakow main square."
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Poolbeg - GU_400325 (PBB)",
-      "url": "https://umm.nordpoolgroup.com/#/messages/5cfa7fe8-53f4-4099-87ba-8d65b9bb1e16/2",
-      "snippet": "Published: 12.11.2026 00:56:19 Publisher: ESB Trading Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Excitation cabinet door limit.&#xa; Remarks: Excitation cabinet door limit. Production Units Unit Name Unit EIC Area Installed Capacity Available",
-      "published_at": "2026-11-11T23:56:19+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 52,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 16,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 66.3,
-        "recency_multiplier": 0.68
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [],
-      "first_seen_at": "2026-11-11T15:33:40+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/a42e038bef0250b2b4a1ce3bd2c4c761f6e22f00.mp3",
-      "spoken": "Unplanned, Unavailability of electricity facilities. Production, IE, Poolbeg, GU_400325, PBB."
     },
     {
       "title": "North Korea fires missiles as row over landmine blast intensifies",
@@ -823,60 +823,6 @@
       "thread_started_at": "2026-11-06T12:30:00+00:00"
     },
     {
-      "title": "Crude Is Back at 80% in the Gulf, but Refined Products Are Stuck at 35%",
-      "url": "https://oilprice.com/Energy/Energy-General/Crude-Is-Back-at-80-in-the-Gulf-but-Refined-Products-Are-Stuck-at-35.html",
-      "snippet": "The story in the Strait of Hormuz has been that Middle Eastern crude exports have recovered to about 80% to 85% of pre-war levels, including pipeline shipments, while refined-product exports remain muted. The uneven recovery shows how Gulf producers prioritize crude oil shipments over refined produc",
-      "published_at": "2026-11-11T18:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 38,
-      "tags": [
-        "geopolitics",
-        "infrastructure",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 31.2,
-        "geo_band": "chokepoint",
-        "geography": 16,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 12,
-        "speculative": 0,
-        "raw": 68,
-        "recency_multiplier": 0.43
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "crude"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 5,
-      "thread_started_at": "2026-11-06T11:15:00+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/c92bd56e5a3fbd8f5efa95014f82f8176f0862d6.mp3",
-      "spoken": "Update. Crude Is Back at 80 percent in the Gulf, but Refined Products Are Stuck at 35 percent."
-    },
-    {
       "title": "Pro-Russian hackers leak Italian foreign minister’s data on dark web",
       "url": "https://www.aljazeera.com/news/2026/11/7/pro-russian-hackers-leak-italian-foreign-ministers-data-on-dark-web?traffic_source=rss",
       "snippet": "The prime minister blames pro-Russian hackers for the leak, as her top diplomat says the cyberthreat was ongoing.",
@@ -1001,6 +947,60 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/daf37166e74ffb0c539d3844af5193447213ba04.mp3",
       "spoken": "Update. Iran war live. Tehran warns of wider retaliation. Israel kills in Gaza."
+    },
+    {
+      "title": "Crude Is Back at 80% in the Gulf, but Refined Products Are Stuck at 35%",
+      "url": "https://oilprice.com/Energy/Energy-General/Crude-Is-Back-at-80-in-the-Gulf-but-Refined-Products-Are-Stuck-at-35.html",
+      "snippet": "The story in the Strait of Hormuz has been that Middle Eastern crude exports have recovered to about 80% to 85% of pre-war levels, including pipeline shipments, while refined-product exports remain muted. The uneven recovery shows how Gulf producers prioritize crude oil shipments over refined produc",
+      "published_at": "2026-11-11T18:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 37,
+      "tags": [
+        "geopolitics",
+        "infrastructure",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 31.2,
+        "geo_band": "chokepoint",
+        "geography": 16,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 68,
+        "recency_multiplier": 0.43
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 5,
+      "thread_started_at": "2026-11-06T11:15:00+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/c92bd56e5a3fbd8f5efa95014f82f8176f0862d6.mp3",
+      "spoken": "Update. Crude Is Back at 80 percent in the Gulf, but Refined Products Are Stuck at 35 percent."
     },
     {
       "title": "Spain sees widespread disruption in first general strike for 14 years",
