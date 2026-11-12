@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-12T20:57:54.047470+00:00",
-  "item_count": 169,
+  "generated_at": "2026-11-12T21:57:48.816100+00:00",
+  "item_count": 171,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 6
+    "high": 0,
+    "normal": 8
   },
   "superseded_count": 66,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 756
+        "ms": 1118
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 221940
+        "ms": 245253
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2972
+        "ms": 3059
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 89
+        "ms": 671
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 287
+        "ms": 331
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 90
+        "ms": 209
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 849
+        "ms": 936
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 161
+        "ms": 255
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 529
+        "ms": 620
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 62
+        "ms": 192
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 322
+        "ms": 452
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 29,
         "error": null,
-        "ms": 102
+        "ms": 157
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 96
+        "ms": 191
       }
     ]
   },
@@ -117,11 +117,11 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 66,
+      "score": 64,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "high",
+      "alert": "normal",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
@@ -132,7 +132,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 66.3,
-        "recency_multiplier": 1
+        "recency_multiplier": 0.95
       },
       "matched": {
         "supply_disruption": [
@@ -211,6 +211,53 @@
       "spoken": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout."
     },
     {
+      "title": "Europe Enters Winter With Its Lowest Gas Inventory of the 2020s",
+      "url": "https://oilprice.com/Energy/Natural-Gas/Europe-Enters-Winter-With-Its-Lowest-Gas-Inventory-of-the-2020s.html",
+      "snippet": "Asian spot LNG is trading above $30 per million British thermal units and Europe is entering winter with its lowest gas inventory of the 2020s, yet Rystad Energy stops short of predicting a further rally. In its winter LNG outlook, published this week, the consultancy lays out as many ways for price",
+      "published_at": "2026-11-12T21:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 55,
+      "tags": [
+        "lng",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 24.8,
+        "geo_band": "primary",
+        "geography": 16,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 49.6,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "asian spot"
+        ],
+        "gas_storage": [
+          "inventory"
+        ],
+        "geography": [
+          "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/129c5d7ad063e0ec895dd966e3de6137add7ff0a.mp3",
+      "spoken": "Europe Enters Winter With Its Lowest Gas Inventory of the 2020s."
+    },
+    {
       "title": "What we know so far after Polish gunman opens fire in Krakow main square",
       "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
       "snippet": "At least six people were killed by a gunman in military fatigues who opened fire in Poland's second largest city.",
@@ -254,57 +301,6 @@
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/10a11a207755a602a9153d30541579e1ed524360.mp3",
       "spoken": "What we know so far after Polish gunman opens fire in Krakow main square."
-    },
-    {
-      "title": "Brent Briefly Hits $96 After Trump Says U.S. Has No Need for Iran Deal",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Briefly-Hits-94-After-Trump-Says-US-Has-No-Need-for-Iran-Deal.html",
-      "snippet": "President Donald Trump declared Thursday that the United States no longer needs a deal with Iran, just three days after suggesting the eight-month war was nearing its end. Oil prices promptly jumped, adding another round of volatility to a market that has spent November reacting to shifting expectat",
-      "published_at": "2026-11-12T17:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.6,
-        "geo_band": "tertiary",
-        "geography": 5,
-        "event_nature": 0,
-        "urgency": 16,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 41.4,
-        "recency_multiplier": 0.89
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "oil_macro": [
-          "brent"
-        ],
-        "geography": [
-          "united states"
-        ],
-        "urgency": [
-          "declared"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 29,
-      "thread_started_at": "2026-11-05T13:30:00+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/0efe08498700ce72c176d0fd8c50b3a6d83f4ba1.mp3",
-      "spoken": "Update. Brent Briefly Hits $94 After Trump Says U.S. Has No Need for Iran Deal."
     },
     {
       "title": "Why Guinea-Bissau halted a controversial hepatitis vaccine trial for babies",
@@ -445,6 +441,59 @@
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/9ec97a0060650595ddeb99ca7b5ee6d32d5491e6.mp3",
       "spoken": "Ohio State suspends fraternity after video shows two people on fire."
+    },
+    {
+      "title": "Brent Briefly Hits $96 After Trump Says U.S. Has No Need for Iran Deal",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Briefly-Hits-94-After-Trump-Says-US-Has-No-Need-for-Iran-Deal.html",
+      "snippet": "President Donald Trump declared Thursday that the United States no longer needs a deal with Iran, just three days after suggesting the eight-month war was nearing its end. Oil prices promptly jumped, adding another round of volatility to a market that has spent November reacting to shifting expectat",
+      "published_at": "2026-11-12T17:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 42,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.6,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 41.4,
+        "recency_multiplier": 0.83
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "oil_macro": [
+          "brent"
+        ],
+        "geography": [
+          "united states"
+        ],
+        "urgency": [
+          "declared"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Rigzone"
+      ],
+      "update_count": 29,
+      "thread_started_at": "2026-11-05T13:30:00+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/0efe08498700ce72c176d0fd8c50b3a6d83f4ba1.mp3",
+      "spoken": "Update. Brent Briefly Hits $94 After Trump Says U.S. Has No Need for Iran Deal."
     },
     {
       "title": "Ukrainian Drone Attack Sparks Fire at Russia’s Key Baltic Oil Export Hub",
@@ -781,94 +830,41 @@
       "also_reported_by": []
     },
     {
-      "title": "EU Imports of Russian LNG Top 2025 Value Ahead of January Ban",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Imports-of-Russian-LNG-Top-2025-Value-Ahead-of-January-Ban.html",
-      "snippet": "The EU has already paid more to import Russian LNG than it did for the whole of 2025, with a month and a half left until the full EU ban on imports of liquefied natural gas from Russia, German campaign group Urgewald said on Thursday. Between January and October, the EU paid as much as $9.6 billion ",
-      "published_at": "2026-11-12T15:30:00+00:00",
+      "title": "Microsoft outage hits tens of thousands of users",
+      "url": "https://www.aljazeera.com/news/2026/11/12/microsoft-outage-hits-tens-of-thousands-of-users?traffic_source=rss",
+      "snippet": "Microsoft says servers unexpectedly went offline, disrupting Outlook email, Teams, Copilot and other services.",
+      "published_at": "2026-11-12T21:03:09+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
       "score": 35,
       "tags": [
-        "regulation",
-        "lng"
+        "supply_disruption"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 15.8,
-        "geo_band": "secondary",
-        "geography": 10,
+        "authority": 9.5,
+        "themes": 16.8,
+        "geography": 0,
         "event_nature": 0,
         "urgency": 0,
         "magnitude": 0,
         "speculative": 0,
-        "raw": 34.6,
-        "recency_multiplier": 0.77
+        "raw": 26.3,
+        "recency_multiplier": 1
       },
       "matched": {
-        "regulation": [
-          "ban on"
-        ],
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "eu",
-          "german"
+        "supply_disruption": [
+          "outage",
+          "offline"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/6fcd4662198755876634af41b6013dae6c52ccb9.mp3",
-      "spoken": "E U Imports of Russian L N G Top 2025 Value Ahead of January Ban."
-    },
-    {
-      "title": "EIA forecasts Alaskan crude oil production to grow 13% in 2027",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68444",
-      "snippet": "After decades of decline, crude oil production in Alaska is growing, driven by two projects on Alaska's North Slope. In our latest Short-Term Energy Outlook, we expect a 23,000 barrels per day (b/d) (6%) increase in 2026, followed by a 60,000 b/d (13%) rise in 2027. At a forecast 505,000 b/d in 2027",
-      "published_at": "2026-11-12T14:00:00+00:00",
-      "type": "news",
-      "source": "eia_today",
-      "source_name": "EIA Today in Energy",
-      "authority": 20,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 35,
-      "tags": [
-        "oil_macro",
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 14.6,
-        "themes": 12.7,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 12,
-        "speculative": 0,
-        "raw": 39.3,
-        "recency_multiplier": 0.68
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "weather": [
-          "forecast"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/fc67ad70a8aecec09d231b188fbf62fb9fd479a0.mp3",
-      "spoken": "E I A forecasts Alaskan crude oil production to grow 13 percent in 2027."
+      "also_reported_by": []
     },
     {
       "title": "US House begins vote on motion to advance impeachment of Pete Hegseth",
@@ -911,49 +907,6 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-11-10T01:38:49+00:00"
-    },
-    {
-      "title": "Mochovce 4's power increased to 35%",
-      "url": "https://www.world-nuclear-news.org/articles/mochovce-4s-power-increased-to-35",
-      "snippet": "The power output of the fourth unit at Slovakia's Mochovce Nuclear Power Plant has been increased to 35% as the new reactor continues its commissioning process.",
-      "published_at": "2026-11-12T11:55:18+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 34,
-      "tags": [
-        "nuclear",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 18.6,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 12,
-        "speculative": 0,
-        "raw": 44.5,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor"
-        ],
-        "infrastructure": [
-          "commissioning"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/fe6b56e39c4e91b6bff827c7a162fb3cb5308652.mp3",
-      "spoken": "Mochovce 4's power increased to 35 percent."
     },
     {
       "title": "Palestine Weekly: West Bank on fire – and Gaza’s tents under water",
@@ -1045,10 +998,10 @@
       "also_reported_by": []
     },
     {
-      "title": "EIA Data Shows Builds in Crude, Gasoline and Distillates",
-      "url": "https://oilprice.com/Energy/Crude-Oil/EIA-Data-Shows-Builds-in-Crude-Gasoline-and-Distillates.html",
-      "snippet": "Crude oil inventories in the United States saw an increase of 4.7 million barrels during the week ending November 6, according to new data from the U.S. Energy Information Administration (EIA) released on Thursday. The increase brings commercial stockpiles to 414.4 million barrels, according to gove",
-      "published_at": "2026-11-12T17:46:04+00:00",
+      "title": "EU Imports of Russian LNG Top 2025 Value Ahead of January Ban",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Imports-of-Russian-LNG-Top-2025-Value-Ahead-of-January-Ban.html",
+      "snippet": "The EU has already paid more to import Russian LNG than it did for the whole of 2025, with a month and a half left until the full EU ban on imports of liquefied natural gas from Russia, German campaign group Urgewald said on Thursday. Between January and October, the EU paid as much as $9.6 billion ",
+      "published_at": "2026-11-12T15:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
@@ -1057,37 +1010,82 @@
       "has_magnitude": false,
       "score": 33,
       "tags": [
-        "oil_macro",
-        "gas_storage"
+        "regulation",
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 13,
-        "geo_band": "tertiary",
-        "geography": 5,
+        "themes": 15.8,
+        "geo_band": "secondary",
+        "geography": 10,
         "event_nature": 0,
         "urgency": 0,
         "magnitude": 0,
         "speculative": 0,
-        "raw": 26.8,
-        "recency_multiplier": 0.91
+        "raw": 34.6,
+        "recency_multiplier": 0.71
+      },
+      "matched": {
+        "regulation": [
+          "ban on"
+        ],
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "eu",
+          "german"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/6fcd4662198755876634af41b6013dae6c52ccb9.mp3",
+      "spoken": "E U Imports of Russian L N G Top 2025 Value Ahead of January Ban."
+    },
+    {
+      "title": "EIA forecasts Alaskan crude oil production to grow 13% in 2027",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68444",
+      "snippet": "After decades of decline, crude oil production in Alaska is growing, driven by two projects on Alaska's North Slope. In our latest Short-Term Energy Outlook, we expect a 23,000 barrels per day (b/d) (6%) increase in 2026, followed by a 60,000 b/d (13%) rise in 2027. At a forecast 505,000 b/d in 2027",
+      "published_at": "2026-11-12T14:00:00+00:00",
+      "type": "news",
+      "source": "eia_today",
+      "source_name": "EIA Today in Energy",
+      "authority": 20,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 33,
+      "tags": [
+        "oil_macro",
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 14.6,
+        "themes": 12.7,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 39.3,
+        "recency_multiplier": 0.63
       },
       "matched": {
         "oil_macro": [
           "crude",
           "barrels"
         ],
-        "gas_storage": [
-          "inventories"
-        ],
-        "geography": [
-          "united states"
+        "weather": [
+          "forecast"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/fc67ad70a8aecec09d231b188fbf62fb9fd479a0.mp3",
+      "spoken": "E I A forecasts Alaskan crude oil production to grow 13 percent in 2027."
     },
     {
       "title": "Asian Oil Buyers Turn to Africa and Brazil as Tanker Rates Plunge",
@@ -1222,6 +1220,49 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Mochovce 4's power increased to 35%",
+      "url": "https://www.world-nuclear-news.org/articles/mochovce-4s-power-increased-to-35",
+      "snippet": "The power output of the fourth unit at Slovakia's Mochovce Nuclear Power Plant has been increased to 35% as the new reactor continues its commissioning process.",
+      "published_at": "2026-11-12T11:55:18+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 32,
+      "tags": [
+        "nuclear",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 18.6,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 44.5,
+        "recency_multiplier": 0.54
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactor"
+        ],
+        "infrastructure": [
+          "commissioning"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/fe6b56e39c4e91b6bff827c7a162fb3cb5308652.mp3",
+      "spoken": "Mochovce 4's power increased to 35 percent."
     },
     {
       "title": "Singapore launches licensing round for LNG FSUs",
@@ -1504,6 +1545,51 @@
         ],
         "geography": [
           "british"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "EIA Data Shows Builds in Crude, Gasoline and Distillates",
+      "url": "https://oilprice.com/Energy/Crude-Oil/EIA-Data-Shows-Builds-in-Crude-Gasoline-and-Distillates.html",
+      "snippet": "Crude oil inventories in the United States saw an increase of 4.7 million barrels during the week ending November 6, according to new data from the U.S. Energy Information Administration (EIA) released on Thursday. The increase brings commercial stockpiles to 414.4 million barrels, according to gove",
+      "published_at": "2026-11-12T17:46:04+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "oil_macro",
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 26.8,
+        "recency_multiplier": 0.84
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "gas_storage": [
+          "inventories"
+        ],
+        "geography": [
+          "united states"
         ]
       },
       "duplicate_count": 0,
