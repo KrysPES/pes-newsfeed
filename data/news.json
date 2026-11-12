@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-12T17:21:55.325172+00:00",
-  "item_count": 168,
+  "generated_at": "2026-11-12T17:26:18.647289+00:00",
+  "item_count": 169,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 11
+    "high": 1,
+    "normal": 10
   },
-  "superseded_count": 64,
+  "superseded_count": 65,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,49 +17,49 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 996
+        "ms": 1168
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 136230
+        "ms": 126299
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 29265
+        "ms": 3048
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 246
+        "ms": 106
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 202
+        "ms": 370
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 26,
         "error": null,
-        "ms": 71
+        "ms": 94
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 973
+        "ms": 784
       },
       {
         "id": "offshore_energy",
@@ -73,39 +73,85 @@
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 518
+        "ms": 504
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 51
+        "ms": 80
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 325
+        "ms": 366
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 277
+        "ms": 119
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 246
+        "ms": 231
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, LV, CHP-1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/b713acc3-fa17-4f32-94dc-d4e6b755ae4b/7",
+      "snippet": "Published: 12.11.2026 18:22:02 Publisher: AS Latvenergo Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: CHP-1 Gas Turbine 2 failure. Steam turbine power limited. Remarks: Gas turbine 2 test completed successfully. Updated event stop time. Producti",
+      "published_at": "2026-11-12T17:22:02+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0,
+        "event_nature": 20,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 66.3,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-11-12T10:17:52+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/c9eb8b123e493fea0d5134086b8b9a56c198acab.mp3",
+      "spoken": "Unplanned, Unavailability of electricity facilities. Production, LV, CHP-1."
+    },
     {
       "title": "Europe to Release 42 Million Barrels of Oil",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Europe-to-Release-42-Million-Barrels-of-Oil.html",
@@ -161,52 +207,6 @@
       "thread_started_at": "2026-10-26T10:30:00+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/f77133846f21a9c3023cdfa842c0b56591d2ad4e.mp3",
       "spoken": "Update. Europe to Release 42 Million Barrels of Oil."
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, LV, CHP-1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/b713acc3-fa17-4f32-94dc-d4e6b755ae4b/6",
-      "snippet": "Published: 12.11.2026 13:12:08 Publisher: AS Latvenergo Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: CHP-1 Gas Turbine 2 failure. Steam turbine power limited. Remarks: Testing Gas Turbine 2. Production Units Unit Name Unit EIC Area Installed Ca",
-      "published_at": "2026-11-12T12:12:08+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 57,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 8.4,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 16,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 66.3,
-        "recency_multiplier": 0.78
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned"
-        ],
-        "unplanned": [
-          "unplanned",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 2,
-      "also_reported_by": [],
-      "first_seen_at": "2026-11-12T10:17:52+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/bda474a36052d1cf636c343e6e971733f68b0c30.mp3",
-      "spoken": "Unplanned, Unavailability of electricity facilities. Production, LV, CHP-1."
     },
     {
       "title": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout",
@@ -568,7 +568,7 @@
         "magnitude": 12,
         "speculative": 0,
         "raw": 44.5,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.76
       },
       "matched": {
         "nuclear": [
@@ -613,7 +613,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 62,
-        "recency_multiplier": 0.55
+        "recency_multiplier": 0.54
       },
       "matched": {
         "geopolitics": [
@@ -695,6 +695,46 @@
       "thread_started_at": "2026-11-06T08:32:57+00:00"
     },
     {
+      "title": "Explosion at Turkish steel plant kills at least 16 people",
+      "url": "https://www.aljazeera.com/news/2026/11/9/explosion-at-turkish-steel-plant-kills-at-least-16-people?traffic_source=rss",
+      "snippet": "President Erdogan announces an investigation after a crane collapsed into a furnace, triggering the blast near Izmir.",
+      "published_at": "2026-11-09T19:58:40+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 16.8,
+        "geography": 0,
+        "event_nature": 20,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 46.3,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "supply_disruption": [
+          "explosion",
+          "blast"
+        ],
+        "unplanned": [
+          "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Asian Oil Buyers Turn to Africa and Brazil as Tanker Rates Plunge",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Asian-Oil-Buyers-Turn-to-Africa-and-Brazil-as-Tanker-Rates-Plunge.html",
       "snippet": "Asian energy commodity buyers are increasingly turning to African and Brazilian grades, attracted by lower prices as rates for shipping oil out of the Persian Gulf remain near historic highs. Freight rates were at record levels for South American and African cargoes earlier this year, but have now d",
@@ -705,7 +745,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 39,
+      "score": 38,
       "tags": [
         "lng",
         "geopolitics",
@@ -747,46 +787,6 @@
       "thread_started_at": "2026-11-06T07:01:03+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/2c1601e7ffb2a58844ebf47972ebb823f30850fd.mp3",
       "spoken": "Update. Asian Oil Buyers Turn to Africa and Brazil as Tanker Rates Plunge."
-    },
-    {
-      "title": "Explosion at Turkish steel plant kills at least 16 people",
-      "url": "https://www.aljazeera.com/news/2026/11/9/explosion-at-turkish-steel-plant-kills-at-least-16-people?traffic_source=rss",
-      "snippet": "President Erdogan announces an investigation after a crane collapsed into a furnace, triggering the blast near Izmir.",
-      "published_at": "2026-11-09T19:58:40+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.8,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 46.3,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "supply_disruption": [
-          "explosion",
-          "blast"
-        ],
-        "unplanned": [
-          "explosion"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "Pro-Russian hackers leak Italian foreign minister’s data on dark web",
@@ -943,7 +943,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 33.1,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.83
       },
       "matched": {
         "geopolitics": [
@@ -1864,6 +1864,45 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Notice of Determination to Grant Licence (Dogger Bank A) under regulation 28(2)",
+      "url": "https://www.ofgem.gov.uk/decision/notice-determination-grant-licence-dogger-bank-under-regulation-282",
+      "snippet": "This is a statutory notice of the Authority’s determination to grant a licence in respect of the Dogger Bank A project following DBA OFTO Project Limited becoming the successful bidder.",
+      "published_at": "2026-11-12T12:00:00+00:00",
+      "type": "regulation",
+      "source": "ofgem",
+      "source_name": "Ofgem",
+      "authority": 22,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 16.1,
+        "themes": 12.3,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 28.4,
+        "recency_multiplier": 0.77
+      },
+      "matched": {
+        "regulation": [
+          "regulation",
+          "licence"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-11-10T12:30:24+00:00"
     },
     {
       "title": "'No light, no water, no heat': Ukrainians struggle with blackouts as Russia hits power grid",
@@ -2884,50 +2923,6 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-11-09T17:30:00+00:00"
-    },
-    {
-      "title": "Ofgem names preferred bidder for Dogger Bank B offshore transmission assets",
-      "url": "https://www.offshore-energy.biz/2026/11/10/ofgem-names-preferred-bidder-for-dogger-bank-b-offshore-transmission-assets",
-      "snippet": "A consortium of Diamond Transmission UK (DTUK) and Japan’s Chubu Electric Power has been selected as the preferred bidder to acquire and operate...",
-      "published_at": "2026-11-10T12:30:24+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "infrastructure",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 10.4,
-        "geo_band": "primary",
-        "geography": 16,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 38.8,
-        "recency_multiplier": 0.56
-      },
-      "matched": {
-        "infrastructure": [
-          "transmission"
-        ],
-        "regulation": [
-          "ofgem"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
     },
     {
       "title": "China Is Buying Oil Again After Months of Living Off Its Stockpiles",
@@ -4597,6 +4592,57 @@
         "url": "https://oilprice.com/Latest-Energy-News/World-News/ASEAN-Moves-to-Build-Emergency-Oil-Reserves-Amid-Iran-Supply-Crisis.html",
         "title": "ASEAN Moves to Build Emergency Oil Reserves Amid Iran Supply Crisis",
         "published_at": "2026-11-12T07:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Ofgem names preferred bidder for Dogger Bank B offshore transmission assets",
+      "url": "https://www.offshore-energy.biz/2026/11/10/ofgem-names-preferred-bidder-for-dogger-bank-b-offshore-transmission-assets",
+      "snippet": "A consortium of Diamond Transmission UK (DTUK) and Japan’s Chubu Electric Power has been selected as the preferred bidder to acquire and operate...",
+      "published_at": "2026-11-10T12:30:24+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "infrastructure",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 10.4,
+        "geo_band": "primary",
+        "geography": 16,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 38.8,
+        "recency_multiplier": 0.56
+      },
+      "matched": {
+        "infrastructure": [
+          "transmission"
+        ],
+        "regulation": [
+          "ofgem"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.ofgem.gov.uk/decision/notice-determination-grant-licence-dogger-bank-under-regulation-282",
+        "title": "Notice of Determination to Grant Licence (Dogger Bank A) under regulation 28(2)",
+        "published_at": "2026-11-12T12:00:00+00:00"
       },
       "hidden": true
     },
