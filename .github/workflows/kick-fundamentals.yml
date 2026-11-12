@@ -1,0 +1,40 @@
+# Reliable morning kick for the fundamentals scraper (Krys, 12 Nov 2026).
+#
+# index-fundamentals is a PRIVATE repo and GitHub's scheduler fires only a
+# fraction of a private repo's crons on this account (observed for weeks;
+# some mornings none at all). THIS repo is public and its crons fire on
+# time, so it dispatches fundamentals-daily at 08:30 UTC - the guaranteed
+# before-business refresh. The scraper is idempotent (same UK-date file is
+# replaced) and carries `concurrency: fundamentals`, so overlapping with a
+# late-firing native cron is harmless.
+#
+# Secret: GH_DISPATCH_TOKEN - a fine-grained PAT with Actions read/write on
+# KrysPES/index-fundamentals only. Without it the step says so and exits
+# green (this workflow must never be the thing that pages anyone).
+name: kick fundamentals
+on:
+  schedule:
+    - cron: "30 8 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  kick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Dispatch fundamentals-daily
+        env:
+          GH_DISPATCH_TOKEN: ${{ secrets.GH_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$GH_DISPATCH_TOKEN" ]; then
+            echo "GH_DISPATCH_TOKEN is not set - nothing kicked (add the secret to enable)"
+            exit 0
+          fi
+          code=$(curl -s -o /tmp/out -w "%{http_code}" -X POST \
+            -H "Authorization: Bearer $GH_DISPATCH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/KrysPES/index-fundamentals/actions/workflows/fundamentals.yml/dispatches \
+            -d '{"ref":"main"}')
+          echo "dispatch -> HTTP $code"
+          cat /tmp/out
+          [ "$code" = "204" ]
