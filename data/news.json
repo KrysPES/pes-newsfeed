@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-11-17T23:31:28.344284+00:00",
-  "item_count": 270,
+  "generated_at": "2026-11-18T01:09:30.975547+00:00",
+  "item_count": 275,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 9
+    "normal": 10
   },
-  "superseded_count": 113,
+  "superseded_count": 114,
   "sources": {
-    "healthy": 12,
+    "healthy": 13,
     "total": 13,
-    "degraded": true,
+    "degraded": false,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1223
+        "ms": 1277
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 91538
+        "ms": 108222
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 5035
+        "ms": 32180
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 541
+        "ms": 425
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 256
+        "ms": 525
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 193
+        "ms": 380
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 1109
+        "ms": 974
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 212
+        "ms": 277
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 795
+        "ms": 2445
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20291
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 170
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 535
+        "ms": 476
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 132
+        "ms": 244
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 222
+        "ms": 154
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 74,
+      "score": 72,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 83.1,
-        "recency_multiplier": 1
+        "recency_multiplier": 0.94
       },
       "matched": {
         "supply_disruption": [
@@ -154,6 +154,64 @@
       "first_seen_at": "2026-11-17T11:53:12+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/7f9636e020ae8d84be2adb77b0b4aac7047141bc.mp3",
       "spoken": "Unplanned, Unavailability of electricity facilities. Production, IE, Tynagh Energy Limited."
+    },
+    {
+      "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+      "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+      "snippet": "Tight LNG supply and the lowest pre-winter gas inventory levels in Europe in over a decade are prompting Europe to pay up for LNG cargoes, which raises European and Asian gas and LNG prices and curbs demand in Asia. With the Strait of Hormuz crisis still stifling more than two-thirds of Qatari LNG f",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 58,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "gas_storage",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 28.6,
+        "geo_band": "chokepoint",
+        "geography": 16,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 53.4,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng",
+          "cargoes"
+        ],
+        "gas_storage": [
+          "inventory"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 11,
+      "thread_started_at": "2026-11-06T11:15:00+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/49fa0b9844d961ce3e749e7e0c05473921fe78d5.mp3",
+      "spoken": "Update. Europe’s L N G Scramble Sends Shockwaves Through Asian Gas Markets."
     },
     {
       "title": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout",
@@ -259,51 +317,49 @@
       "spoken": "What we know so far after Polish gunman opens fire in Krakow main square."
     },
     {
-      "title": "UK sanctions firms over Israeli West Bank settlements",
-      "url": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o?at_medium=RSS&at_campaign=rss",
-      "snippet": "It marks the first sanctions since the UK announced a tougher approach to Israeli actions in the territory.",
-      "published_at": "2026-11-17T18:27:27+00:00",
+      "title": "Top spy agency suffers network outage, the latest US technical failure",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/top-spy-agency-suffers-network-outage-the-latest-us-technical-failure?traffic_source=rss",
+      "snippet": "A series of unfortunate events has plagued the US. Al Jazeera’s Emma Withrow breaks down what we know.",
+      "published_at": "2026-11-17T23:19:12+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
-      "score": 48,
+      "score": 49,
       "tags": [
-        "geopolitics"
+        "supply_disruption",
+        "infrastructure"
       ],
       "alert": "normal",
-      "nature": "",
+      "nature": "unplanned",
       "why": {
-        "authority": 10.2,
-        "themes": 9,
-        "geo_band": "primary",
-        "geography": 16,
-        "event_nature": 0,
-        "urgency": 16,
+        "authority": 9.5,
+        "themes": 12.4,
+        "geography": 0,
+        "event_nature": 20,
+        "urgency": 0,
         "magnitude": 0,
         "speculative": 0,
-        "raw": 51.2,
-        "recency_multiplier": 0.79
+        "raw": 41.9,
+        "recency_multiplier": 1
       },
       "matched": {
-        "geopolitics": [
-          "sanctions"
+        "supply_disruption": [
+          "outage"
         ],
-        "geography": [
-          "uk"
+        "infrastructure": [
+          "network"
         ],
-        "urgency": [
-          "announced"
+        "unplanned": [
+          "failure"
         ]
       },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "Al Jazeera"
-      ],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/4b6f10c89569f078133ed560a40452d41c939272.mp3",
-      "spoken": "UK sanctions firms over Israeli West Bank settlements."
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/2465872bda54f0e4bd91c77c6ab6dff53c1f0382.mp3",
+      "spoken": "Top spy agency suffers network outage, the latest US technical failure."
     },
     {
       "title": "Why is the Microsoft outage lasting so long?",
@@ -441,6 +497,53 @@
       "spoken": "Why Guinea-Bissau halted a controversial hepatitis vaccine trial for babies."
     },
     {
+      "title": "UK sanctions firms over Israeli West Bank settlements",
+      "url": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o?at_medium=RSS&at_campaign=rss",
+      "snippet": "It marks the first sanctions since the UK announced a tougher approach to Israeli actions in the territory.",
+      "published_at": "2026-11-17T18:27:27+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 44,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 9,
+        "geo_band": "primary",
+        "geography": 16,
+        "event_nature": 0,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 51.2,
+        "recency_multiplier": 0.7
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "uk"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "Al Jazeera"
+      ],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/4b6f10c89569f078133ed560a40452d41c939272.mp3",
+      "spoken": "UK sanctions firms over Israeli West Bank settlements."
+    },
+    {
       "title": "At least 11 killed in blaze on Thailand’s Phuket island",
       "url": "https://www.aljazeera.com/news/2026/11/16/shophouse-fire-on-thai-resort-island-kills-11?traffic_source=rss",
       "snippet": "Authorities are investigating the cause of the fire, which also injured 16, but have ruled out arson.",
@@ -524,95 +627,41 @@
       "spoken": "Ohio State suspends fraternity after video shows two people on fire."
     },
     {
-      "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-      "snippet": "Following a 7% dip on Monday, European benchmark natural gas prices rebounded on Tuesday morning in Amsterdam amid continued attacks on vessels in the Strait of Hormuz, Iran targeting U.S. bases in Bahrain, and forecasts of a cold spell in large parts of Europe beginning later this week. The front-m",
-      "published_at": "2026-11-17T14:30:00+00:00",
+      "title": "DR Congo’s rival peace efforts fail to halt violence in the east",
+      "url": "https://www.aljazeera.com/news/2026/11/18/dr-congos-rival-peace-efforts-fail-to-halt-violence-in-the-east?traffic_source=rss",
+      "snippet": "Diplomatic efforts struggle to end fighting in eastern DRC as civilians continue to bear the cost of conflict.",
+      "published_at": "2026-11-18T00:57:56+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 43,
-      "tags": [
-        "geopolitics",
-        "weather"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 23.5,
-        "geo_band": "chokepoint",
-        "geography": 16,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 12,
-        "speculative": 0,
-        "raw": 60.3,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "weather": [
-          "cold spell"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 19,
-      "thread_started_at": "2026-11-06T15:30:00+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/6abca6e9a7584a4dd4c5a9079113ec7a3ea71265.mp3",
-      "spoken": "Update. T T F Gas Bounces Back to 86 Euros as Hormuz Risks Resurface."
-    },
-    {
-      "title": "API Shows Substantial Crude Oil, Gasoline Inventory Builds",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/API-Shows-Substantial-Crude-Oil-Gasoline-Inventory-Builds.html",
-      "snippet": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States rose by 5.3 million barrels in the week ending November 13. In the week prior, US crude oil inventories rose by 9 million barrels. Commercial crude oil inventories excluding the SPR have lost more than 4",
-      "published_at": "2026-11-17T21:58:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
       "has_magnitude": false,
       "score": 41,
       "tags": [
-        "gas_storage",
-        "oil_macro"
+        "geopolitics",
+        "supply_disruption"
       ],
       "alert": "low",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 18.8,
-        "geo_band": "tertiary",
-        "geography": 5,
+        "authority": 9.5,
+        "themes": 23,
+        "geography": 0,
         "event_nature": 0,
         "urgency": 0,
         "magnitude": 0,
         "speculative": 0,
-        "raw": 32.6,
+        "raw": 32.5,
         "recency_multiplier": 1
       },
       "matched": {
-        "gas_storage": [
-          "inventory",
-          "inventories"
+        "geopolitics": [
+          "conflict",
+          "diplomatic"
         ],
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "geography": [
-          "united states"
+        "supply_disruption": [
+          "halt"
         ]
       },
       "duplicate_count": 0,
@@ -713,44 +762,53 @@
       "spoken": "Update. Southeast Asian leaders to meet as Trump visit highlights trade disruption."
     },
     {
-      "title": "UK Carbon Capture Keeps Advancing Despite Critics",
-      "url": "https://oilprice.com/Energy/Energy-General/UK-Carbon-Capture-Keeps-Advancing-Despite-Critics.html",
-      "snippet": "The United Kingdom just took a major step forward toward building one of the world’s biggest carbon capture and storage projects under the North Sea. Last week the Northern Endurance Partnership (NEP) finished installing the first of its monitoring systems off the shore of Teesside, bringing the fac",
-      "published_at": "2026-11-17T22:00:00+00:00",
+      "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
+      "snippet": "Following a 7% dip on Monday, European benchmark natural gas prices rebounded on Tuesday morning in Amsterdam amid continued attacks on vessels in the Strait of Hormuz, Iran targeting U.S. bases in Bahrain, and forecasts of a cold spell in large parts of Europe beginning later this week. The front-m",
+      "published_at": "2026-11-17T14:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
+      "has_magnitude": true,
+      "score": 39,
       "tags": [
-        "gas_storage"
+        "geopolitics",
+        "weather"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 6.7,
-        "geo_band": "primary",
+        "themes": 23.5,
+        "geo_band": "chokepoint",
         "geography": 16,
         "event_nature": 0,
         "urgency": 0,
-        "magnitude": 0,
+        "magnitude": 12,
         "speculative": 0,
-        "raw": 31.5,
-        "recency_multiplier": 1
+        "raw": 60.3,
+        "recency_multiplier": 0.51
       },
       "matched": {
-        "gas_storage": [
-          "storage"
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "weather": [
+          "cold spell"
         ],
         "geography": [
-          "uk"
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 4,
+      "thread_started_at": "2026-11-09T00:00:00+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/6abca6e9a7584a4dd4c5a9079113ec7a3ea71265.mp3",
+      "spoken": "Update. T T F Gas Bounces Back to 86 Euros as Hormuz Risks Resurface."
     },
     {
       "title": "Explosion at Turkish steel plant kills at least 16 people",
@@ -793,52 +851,50 @@
       "also_reported_by": []
     },
     {
-      "title": "Russian Crude Exports Hit Four-Month High",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russian-Crude-Exports-Hit-Four-Month-High.html",
-      "snippet": "Russia loaded more than 30 million barrels of crude onto tankers last week as Ukrainian drone strikes forced more oil away from domestic refineries and into export markets. The 39 tankers that loaded Russian crude in the week ending November 15 carried 30.27 million barrels, up from 23.6 million bar",
-      "published_at": "2026-11-17T17:30:00+00:00",
+      "title": "API Shows Substantial Crude Oil, Gasoline Inventory Builds",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/API-Shows-Substantial-Crude-Oil-Gasoline-Inventory-Builds.html",
+      "snippet": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States rose by 5.3 million barrels in the week ending November 13. In the week prior, US crude oil inventories rose by 9 million barrels. Commercial crude oil inventories excluding the SPR have lost more than 4",
+      "published_at": "2026-11-17T21:58:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
+      "has_magnitude": false,
       "score": 38,
       "tags": [
-        "geopolitics",
+        "gas_storage",
         "oil_macro"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 14.3,
+        "themes": 18.8,
         "geo_band": "tertiary",
         "geography": 5,
         "event_nature": 0,
         "urgency": 0,
-        "magnitude": 12,
+        "magnitude": 0,
         "speculative": 0,
-        "raw": 40.1,
-        "recency_multiplier": 0.73
+        "raw": 32.6,
+        "recency_multiplier": 0.91
       },
       "matched": {
-        "geopolitics": [
-          "drone"
+        "gas_storage": [
+          "inventory",
+          "inventories"
         ],
         "oil_macro": [
           "crude",
           "barrels"
         ],
         "geography": [
-          "russia",
-          "russian"
+          "united states"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/44e45ba4b6ac5072c83743bd2d9cba2b0437bf35.mp3",
-      "spoken": "Russian Crude Exports Hit Four-Month High."
+      "also_reported_by": []
     },
     {
       "title": "FAA grounds all fights across the US over ‘telecommunication outage’",
@@ -920,6 +976,46 @@
         ],
         "unplanned": [
           "leak"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "UK Carbon Capture Keeps Advancing Despite Critics",
+      "url": "https://oilprice.com/Energy/Energy-General/UK-Carbon-Capture-Keeps-Advancing-Despite-Critics.html",
+      "snippet": "The United Kingdom just took a major step forward toward building one of the world’s biggest carbon capture and storage projects under the North Sea. Last week the Northern Endurance Partnership (NEP) finished installing the first of its monitoring systems off the shore of Teesside, bringing the fac",
+      "published_at": "2026-11-17T22:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 6.7,
+        "geo_band": "primary",
+        "geography": 16,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 31.5,
+        "recency_multiplier": 0.91
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "uk"
         ]
       },
       "duplicate_count": 0,
@@ -1011,6 +1107,81 @@
       "also_reported_by": []
     },
     {
+      "title": "5 Oil and Gas Stocks That Crushed Third-Quarter Earnings Estimates",
+      "url": "https://oilprice.com/Energy/Crude-Oil/5-Oil-and-Gas-Stocks-That-Crushed-Third-Quarter-Earnings-Estimates.html",
+      "snippet": "We are currently at the tail-end of the third quarter earnings season, with more than 90% of S P 500 companies having reported, and it’s proven to be yet another bumper season. According to FactSet data, the index has reported 31.9% Y/Y average earnings growth, marking the third consecutive quarter ",
+      "published_at": "2026-11-18T01:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 36,
+      "tags": [
+        "gas_storage"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 6.7,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 27.5,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "gas_storage": [
+          "stocks"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+      "snippet": "Kuwait intercepts &#039;hostile&#039; drone attacks as Bahrain accuses Iran of &#039;criminal attacks&#039;.",
+      "published_at": "2026-11-18T00:00:27+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 36,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 27.4,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "geopolitics": [
+          "drone",
+          "war"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 50,
+      "thread_started_at": "2026-11-05T13:30:00+00:00"
+    },
+    {
       "title": "Frontera plans Colombian LNG power plant",
       "url": "https://lngprime.com/americas/frontera-plans-colombian-lng-power-plant/200128/",
       "snippet": "Canadian firm Frontera Energy is evaluating entry into power generation, anchored by its FSRU-based LNG import facility in Cartagena, Colombia, which is expected to start operations in 2027.",
@@ -1046,45 +1217,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-      "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-      "snippet": "Trump says Washington doesn&#039;t need a deal with Tehran, while Iran rejects &#039;no war, no peace&#039;. Is the war at an impasse?",
-      "published_at": "2026-11-17T12:33:51+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 27.4,
-        "recency_multiplier": 1
-      },
-      "matched": {
-        "geopolitics": [
-          "conflict",
-          "war"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 34,
-      "thread_started_at": "2026-11-05T13:30:00+00:00"
     },
     {
       "title": "Himalaya’s LNG-fueled bulkers earned $50,900 per day in October",
@@ -1282,6 +1414,54 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-11-10T01:38:49+00:00"
+    },
+    {
+      "title": "Russian Crude Exports Hit Four-Month High",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russian-Crude-Exports-Hit-Four-Month-High.html",
+      "snippet": "Russia loaded more than 30 million barrels of crude onto tankers last week as Ukrainian drone strikes forced more oil away from domestic refineries and into export markets. The 39 tankers that loaded Russian crude in the week ending November 15 carried 30.27 million barrels, up from 23.6 million bar",
+      "published_at": "2026-11-17T17:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 34,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 14.3,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 40.1,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "geopolitics": [
+          "drone"
+        ],
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "geography": [
+          "russia",
+          "russian"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/44e45ba4b6ac5072c83743bd2d9cba2b0437bf35.mp3",
+      "spoken": "Russian Crude Exports Hit Four-Month High."
     },
     {
       "title": "Palestine Weekly: West Bank on fire – and Gaza’s tents under water",
@@ -6772,6 +6952,52 @@
       "also_reported_by": []
     },
     {
+      "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
+      "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
+      "snippet": "Trump says Washington doesn&#039;t need a deal with Tehran, while Iran rejects &#039;no war, no peace&#039;. Is the war at an impasse?",
+      "published_at": "2026-11-17T12:33:51+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 11,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 27.4,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "geopolitics": [
+          "conflict",
+          "war"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 34,
+      "thread_started_at": "2026-11-05T13:30:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "Vessels on fire after naval mine hit in Hormuz Strait, Iran says",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/vessels-on-fire-after-naval-mine-hit-in-hormuz-strait-iran-says?traffic_source=rss",
       "snippet": "Two vessels have caught fire after hitting a naval mine in the Strait of Hormuz.",
@@ -6820,9 +7046,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/3e64cb8bc06da566cccad3fcc1b9d4edcd2a634e.mp3",
@@ -6874,9 +7100,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/0dc577b03976795ef09cdf167cbe487b10e19f41.mp3",
@@ -6983,9 +7209,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -7243,9 +7469,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/4e56eb2b5b973d5a4934d48c132b15997d84c40b.mp3",
@@ -7295,9 +7521,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/b661a809a5cd52803fdfc574f71e2bac1c797a8b.mp3",
@@ -7348,9 +7574,9 @@
       "spoken": "Update. Iran braces for natural gas shortages during winter energy imbalance.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -7805,9 +8031,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/c7e011fee4e7d91b10504c9809e6e707d076f4d1.mp3",
@@ -7853,9 +8079,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -7902,9 +8128,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -8008,9 +8234,9 @@
       "spoken": "Update. Iran war live. Tehran says tanker hit naval mine, caught fire.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -8062,9 +8288,9 @@
       "thread_started_at": "2026-11-12T06:35:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -8108,9 +8334,9 @@
       "thread_started_at": "2026-11-05T21:08:28+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -8267,9 +8493,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -8313,9 +8539,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/7ed19effff532e6f494f613a54a6372f56e8f6a8.mp3",
@@ -8428,9 +8654,9 @@
       "spoken": "Update. Asian Refiners Turn Back to Gulf Oil Despite War Risks.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -8475,9 +8701,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -8522,9 +8748,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -8576,9 +8802,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/12bbb70a7b0f9fc60102d1acc14cfe4eed53d117.mp3",
@@ -8676,9 +8902,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/0efe08498700ce72c176d0fd8c50b3a6d83f4ba1.mp3",
@@ -8838,9 +9064,9 @@
       "spoken": "Update. India Boosts Gulf Oil Imports as Russian Crude Loses Its Price Advantage.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -8899,9 +9125,9 @@
       "spoken": "Update. Asian Oil Buyers Turn to Africa and Brazil as Tanker Rates Plunge.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9008,9 +9234,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/92acfdef1a48bf49efabd72b5bbe470b56cc419b.mp3",
@@ -9060,9 +9286,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -9110,9 +9336,9 @@
       "spoken": "Update. Iran war live. Tehran warns of wider retaliation. Israel kills in Gaza.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -9163,9 +9389,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -9215,9 +9441,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/99f540e58888f404751288936b7e6454665bc509.mp3",
@@ -9274,9 +9500,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/c92bd56e5a3fbd8f5efa95014f82f8176f0862d6.mp3",
@@ -9326,9 +9552,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -9376,9 +9602,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -9433,9 +9659,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -9488,9 +9714,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9532,9 +9758,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -9690,9 +9916,9 @@
       "thread_started_at": "2026-11-06T11:15:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9788,9 +10014,9 @@
       "thread_started_at": "2026-11-10T08:00:20+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9953,9 +10179,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -10111,9 +10337,9 @@
       "thread_started_at": "2026-11-09T01:19:09+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -10260,9 +10486,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -10418,9 +10644,9 @@
       "thread_started_at": "2026-11-09T17:16:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -10723,9 +10949,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -10769,9 +10995,9 @@
       "thread_started_at": "2026-11-09T00:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -10819,9 +11045,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -10978,9 +11204,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11150,9 +11376,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11205,9 +11431,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11261,9 +11487,9 @@
       "thread_started_at": "2026-11-09T00:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11413,9 +11639,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11457,9 +11683,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11507,9 +11733,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11603,9 +11829,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -11655,9 +11881,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11699,9 +11925,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11749,9 +11975,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11848,9 +12074,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -11900,9 +12126,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -11951,9 +12177,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
-        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
-        "published_at": "2026-11-17T14:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -12004,9 +12230,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -12110,9 +12336,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -12216,9 +12442,9 @@
       "thread_started_at": "2026-11-05T16:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/?rss=true",
-        "title": "Oil Prices Swing as Gulf Attacks Continue",
-        "published_at": "2026-11-17T20:53:14+00:00"
+        "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+        "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+        "published_at": "2026-11-18T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -12509,9 +12735,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     },
@@ -12615,9 +12841,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
-        "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
-        "published_at": "2026-11-17T12:33:51+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss",
+        "title": "Iran war live: Kuwait says intercepting ‘hostile’ drone attacks",
+        "published_at": "2026-11-18T00:00:27+00:00"
       },
       "hidden": true
     }
