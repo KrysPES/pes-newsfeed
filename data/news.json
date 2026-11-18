@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-18T06:33:56.935270+00:00",
-  "item_count": 277,
+  "generated_at": "2026-11-18T08:49:55.901909+00:00",
+  "item_count": 282,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 9
+    "high": 1,
+    "normal": 10
   },
-  "superseded_count": 116,
+  "superseded_count": 122,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,42 +17,42 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 929
+        "ms": 985
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 105655
+        "ms": 59763
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 3150
+        "ms": 3351
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 234
+        "ms": 203
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 729
+        "ms": 244
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 255
+        "ms": 107
       },
       {
         "id": "world_nuclear_news",
@@ -66,46 +66,96 @@
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 439
+        "ms": 121
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 594
+        "ms": 552
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 213
+        "ms": 131
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 464
+        "ms": 233
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 28,
+        "count": 26,
         "error": null,
-        "ms": 345
+        "ms": 237
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 271
+        "ms": 65
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FR, DK6 - T2",
+      "url": "https://umm.nordpoolgroup.com/#/messages/689cc7af-c3c1-47d6-a18a-4bb687c0c700/1",
+      "snippet": "Published: 18.11.2026 08:53:39 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Fuel Supply Failure Remarks: New unavailability. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Cap",
+      "published_at": "2026-11-18T07:53:39+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 68,
+      "tags": [
+        "supply_disruption",
+        "regulation"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 12.1,
+        "geography": 0,
+        "event_nature": 20,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 70,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "regulation": [
+          "cap"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 3,
+      "also_reported_by": [],
+      "first_seen_at": "2026-11-17T20:33:23+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/13ff06eaf3a29a53f99adc3fb9f02ed2ae2f81ed.mp3",
+      "spoken": "Unplanned, Unavailability of electricity facilities. Production, FR, DK6, T2."
+    },
     {
       "title": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/drone-attack-on-iraqi-kurdistan-gas-field-triggers-mass-blackout?traffic_source=rss",
@@ -165,53 +215,47 @@
       "spoken": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout."
     },
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Tynagh Energy Limited",
-      "url": "https://umm.nordpoolgroup.com/#/messages/2bb3c1b3-b0e3-41fe-9536-090c4c5fd96f/2",
-      "snippet": "Published: 17.11.2026 23:21:05 Publisher: Tynagh Energy Limited Status: Dismissed Cancellation reason: Steam turbine ACV leak repaired. Plant available.&#xa; Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Steam turbine ACV hydraulic leak Remarks: Repair hydraul",
-      "published_at": "2026-11-17T22:21:05+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
+      "title": "Japan’s LNG imports drop 26.1 percent in October",
+      "url": "https://lngprime.com/asia/japans-lng-imports-drop-26-1-percent-in-october/200156/",
+      "snippet": "Japan’s liquefied natural gas (LNG) imports fell 26.1 percent in October from the same month last year, according to provisional data released by the country’s Ministry of Finance.",
+      "published_at": "2026-11-18T08:18:40+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
       "score": 56,
       "tags": [
-        "supply_disruption"
+        "lng"
       ],
       "alert": "normal",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 21.9,
-        "themes": 25.2,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 16,
-        "magnitude": 0,
+        "authority": 13.1,
+        "themes": 20.8,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
         "speculative": 0,
-        "raw": 83.1,
-        "recency_multiplier": 0.62
+        "raw": 50.9,
+        "recency_multiplier": 1
       },
       "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "leak",
-          "repair"
+        "lng": [
+          "lng",
+          "lng imports"
         ],
-        "unplanned": [
-          "unplanned",
-          "failure",
-          "leak"
-        ],
-        "urgency": [
-          "unplanned"
+        "geography": [
+          "japan"
         ]
       },
-      "duplicate_count": 2,
+      "duplicate_count": 0,
       "also_reported_by": [],
-      "first_seen_at": "2026-11-17T20:33:23+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/7f9636e020ae8d84be2adb77b0b4aac7047141bc.mp3",
-      "spoken": "Unplanned, Unavailability of electricity facilities. Production, IE, Tynagh Energy Limited."
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/744d893763ed3688f072a8393d027a9564118a15.mp3",
+      "spoken": "Japan’s L N G imports drop 26.1 percent in October."
     },
     {
       "title": "What we know so far after Polish gunman opens fire in Krakow main square",
@@ -259,6 +303,96 @@
       "spoken": "What we know so far after Polish gunman opens fire in Krakow main square."
     },
     {
+      "title": "China Gas buys more LNG from Venture Global",
+      "url": "https://lngprime.com/americas/china-gas-buys-more-lng-from-venture-global/200142/",
+      "snippet": "Chinese natural gas operator China Gas has agreed to buy more liquefied natural gas from US LNG exporter Venture Global, upsizing the previous SPA announced in September this year.",
+      "published_at": "2026-11-18T07:33:24+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 49,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 41.4,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "china"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 4,
+      "thread_started_at": "2026-11-12T00:00:00+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/719c567f07273ca87587e50df078f1e6c06b5ae5.mp3",
+      "spoken": "Update. China Gas buys more L N G from Venture Global."
+    },
+    {
+      "title": "ALNG secures charters for LNG carrier duo",
+      "url": "https://lngprime.com/europe/alng-secures-charters-for-lng-carrier-duo/200148/",
+      "snippet": "Norway’s ALNG, formerly Awilco LNG, has secured period contracts for both of its TFDE LNG vessels.",
+      "published_at": "2026-11-18T07:45:33+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 14.6,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 37.7,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "geography": [
+          "norway"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/9d349e40234a62cdb79231ae57747a657e59e964.mp3",
+      "spoken": "ALNG secures charters for L N G carrier duo."
+    },
+    {
       "title": "Why is the Microsoft outage lasting so long?",
       "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
       "snippet": "Microsoft has said the outage was not caused by a cyber-security incident, but efforts to fix the issues have so far been largely unsuccessful.",
@@ -303,64 +437,6 @@
       "thread_started_at": "2026-11-12T21:03:09+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/e1efe6f1af4bbd764b20b0baf9f02e20ee310e69.mp3",
       "spoken": "Update. What we know about the global Microsoft outage."
-    },
-    {
-      "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
-      "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
-      "snippet": "Tight LNG supply and the lowest pre-winter gas inventory levels in Europe in over a decade are prompting Europe to pay up for LNG cargoes, which raises European and Asian gas and LNG prices and curbs demand in Asia. With the Strait of Hormuz crisis still stifling more than two-thirds of Qatari LNG f",
-      "published_at": "2026-11-18T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 45,
-      "tags": [
-        "geopolitics",
-        "lng",
-        "gas_storage",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 28.6,
-        "geo_band": "chokepoint",
-        "geography": 16,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 53.4,
-        "recency_multiplier": 0.7
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "lng": [
-          "lng",
-          "cargoes"
-        ],
-        "gas_storage": [
-          "inventory"
-        ],
-        "oil_macro": [
-          "demand"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 11,
-      "thread_started_at": "2026-11-06T11:15:00+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/49fa0b9844d961ce3e749e7e0c05473921fe78d5.mp3",
-      "spoken": "Update. Europe’s L N G Scramble Sends Shockwaves Through Asian Gas Markets."
     },
     {
       "title": "Carney eyes 'other options' for embattled Canadian auto sector on China trip",
@@ -535,6 +611,46 @@
       "spoken": "Ohio State suspends fraternity after video shows two people on fire."
     },
     {
+      "title": "Western Australia Wins Battle Over Federal Gas Reservation Scheme",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Western-Australia-Wins-Battle-Over-Federal-Gas-Reservation-Scheme.html",
+      "snippet": "Western Australia, home to facilities producing 66% of the country’s LNG for export, will not be included in a federal government scheme mandating gas companies to set aside certain volumes for the domestic market to avoid shortages. The state, where Woodside Energy operates the North West Shelf sit",
+      "published_at": "2026-11-18T07:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 41,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 33,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "australia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "US bank outage: What caused Chase problems and Zelle payment delays?",
       "url": "https://www.aljazeera.com/news/2026/11/17/us-bank-outage-what-caused-chase-problems-and-zelle-payment-delays?traffic_source=rss",
       "snippet": "A Chase software bug disrupted US banking transactions and delayed some Zelle payments. Here&#039;s what happened.",
@@ -627,6 +743,113 @@
       "thread_started_at": "2026-11-10T23:00:00+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/e8661a09b9ff3356ad6651123373992febf3f9e4.mp3",
       "spoken": "Update. Southeast Asian leaders to meet as Trump visit highlights trade disruption."
+    },
+    {
+      "title": "EU Moves to Fast-Track Renewables as Oil Import Costs Soar",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Moves-to-Fast-Track-Renewables-as-Oil-Import-Costs-Soar.html",
+      "snippet": "The European Parliament has reached a provisional agreement for accelerated permit issuance for new energy projects with a focus on wind, solar, grid upgrades, and storage, Reuters has reported, citing the EU Council. Under the terms of the agreement with the EP, member states of the European Union ",
+      "published_at": "2026-11-18T08:45:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "gas_storage",
+        "infrastructure",
+        "power_system"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 12.7,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 31.5,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "gas_storage": [
+          "storage"
+        ],
+        "infrastructure": [
+          "grid"
+        ],
+        "power_system": [
+          "renewables"
+        ],
+        "geography": [
+          "european",
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "Europe’s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+      "url": "https://oilprice.com/Energy/Energy-General/Europes-LNG-Scramble-Sends-Shockwaves-Through-Asian-Gas-Markets.html",
+      "snippet": "Tight LNG supply and the lowest pre-winter gas inventory levels in Europe in over a decade are prompting Europe to pay up for LNG cargoes, which raises European and Asian gas and LNG prices and curbs demand in Asia. With the Strait of Hormuz crisis still stifling more than two-thirds of Qatari LNG f",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 40,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "gas_storage",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 28.6,
+        "geo_band": "chokepoint",
+        "geography": 16,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 53.4,
+        "recency_multiplier": 0.59
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng",
+          "cargoes"
+        ],
+        "gas_storage": [
+          "inventory"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 11,
+      "thread_started_at": "2026-11-06T11:15:00+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/49fa0b9844d961ce3e749e7e0c05473921fe78d5.mp3",
+      "spoken": "Update. Europe’s L N G Scramble Sends Shockwaves Through Asian Gas Markets."
     },
     {
       "title": "Top spy agency suffers network outage, the latest US technical failure",
@@ -842,7 +1065,7 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 4,
+      "update_count": 5,
       "thread_started_at": "2026-11-09T00:00:00+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/6abca6e9a7584a4dd4c5a9079113ec7a3ea71265.mp3",
       "spoken": "Update. T T F Gas Bounces Back to 86 Euros as Hormuz Risks Resurface."
@@ -931,50 +1154,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Oil Prices Drop Despite Escalating U.S.-Iran Conflict",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Drop-Despite-Escalating-US-Iran-Conflict.html",
-      "snippet": "Crude oil prices extended their decline today, following the Tuesday release of the American Petroleum Institute oil stock report, which showed a build across crude and fuels. At the time of writing, Brent crude was trading at $92.49 per barrel, with West Texas Intermediate at $84.73 per barrel, bot",
-      "published_at": "2026-11-18T05:55:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 36,
-      "tags": [
-        "oil_macro",
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 18.8,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 27.6,
-        "recency_multiplier": 1
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "geopolitics": [
-          "conflict"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 51,
-      "thread_started_at": "2026-11-05T13:30:00+00:00"
     },
     {
       "title": "Frontera plans Colombian LNG power plant",
@@ -1209,6 +1388,50 @@
       "also_reported_by": [],
       "update_count": 1,
       "thread_started_at": "2026-11-10T01:38:49+00:00"
+    },
+    {
+      "title": "Oil Prices Drop Despite Escalating U.S.-Iran Conflict",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Drop-Despite-Escalating-US-Iran-Conflict.html",
+      "snippet": "Crude oil prices extended their decline today, following the Tuesday release of the American Petroleum Institute oil stock report, which showed a build across crude and fuels. At the time of writing, Brent crude was trading at $92.49 per barrel, with West Texas Intermediate at $84.73 per barrel, bot",
+      "published_at": "2026-11-18T05:55:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "oil_macro",
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 18.8,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 27.6,
+        "recency_multiplier": 0.93
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "geopolitics": [
+          "conflict"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 51,
+      "thread_started_at": "2026-11-05T13:30:00+00:00"
     },
     {
       "title": "Palestine Weekly: West Bank on fire – and Gaza’s tents under water",
@@ -1931,7 +2154,9 @@
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-11-06T11:48:27+00:00"
     },
     {
       "title": "Australia issues sanctions targeting Israeli settlers",
@@ -2956,49 +3181,6 @@
       "spoken": "Shell kicks off production at Malaysian gas field."
     },
     {
-      "title": "KOBC, Hyundai Glovis name LNG-powered PCTC in China",
-      "url": "https://lngprime.com/asia/kobc-hyundai-glovis-name-lng-powered-pctc-in-china/200106/",
-      "snippet": "Korea Ocean Business Corporation (KOBC) and Hyundai Glovis have named an LNG dual-fuel PCTC with a capacity of 10,800 ceu in China.",
-      "published_at": "2026-11-17T06:55:26+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 25.4,
-        "recency_multiplier": 0.86
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "geography": [
-          "china",
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-11-16T07:30:00+00:00"
-    },
-    {
       "title": "Europe Has Already Drained 10% of Its Summer Gas Injections",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Europe-Has-Already-Drained-10-of-Its-Summer-Gas-Injections.html",
       "snippet": "Europe has not only entered the heating season with the lowest gas levels in storage sites in decades, but it has also withdrawn in recent weeks 10% of the natural gas injected during the summer filling season, leaving supply vulnerable to potentially extreme cold winter weather. So far into the hea",
@@ -3169,52 +3351,6 @@
       "also_reported_by": []
     },
     {
-      "title": "U.S. LNG Flows Hit Record High as Global Gas Supply Crisis Deepens",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-LNG-Flows-Hit-Record-High-as-Global-Gas-Supply-Crisis-Deepens.html",
-      "snippet": "U.S. LNG flows jumped to an all-time high this weekend as various projects ramp up production and shipments to markets in Europe and Asia that are reeling from the supply shock in the Middle East. Pipeline flows to U.S. LNG facilities surged to a record high of 21.8 billion cubic feet on Saturday, u",
-      "published_at": "2026-11-16T12:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.3,
-        "geo_band": "secondary",
-        "geography": 10,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 12,
-        "speculative": 0,
-        "raw": 42.1,
-        "recency_multiplier": 0.53
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "geography": [
-          "europe"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/0815756dbd577e3d25c66d25340725cb7a3db4b5.mp3",
-      "spoken": "U.S. L N G Flows Hit Record High as Global Gas Supply Crisis Deepens."
-    },
-    {
       "title": "New North Sea Gas Supply Comes Online Amid Growing Political Backlash",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/New-North-Sea-Gas-Supply-Comes-Online-Amid-Growing-Political-Backlash.html",
       "snippet": "Natural gas started flowing from the Jackdaw production platform in the UK North Sea less than a month after Britain approved the project, but the future of a larger proposed oil and gas project, Rosebank, hangs in the balance amid a political backlash. Jackdaw gas will funnel through the existing S",
@@ -3343,55 +3479,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Oil Prices Fall as Fears of a Global Supply Glut Return",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Fears-of-a-Global-Supply-Glut-Return.html",
-      "snippet": "Oil prices began the week with a further loss amid reports that the global oil market is returning to oversupply, even as attacks on tankers in the Strait of Hormuz continue and Iraq is forced to export crude by truck via Syria. Brent crude was trading at $95.24 per barrel at the time of writing, an",
-      "published_at": "2026-11-16T05:25:32+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 24.7,
-        "geo_band": "chokepoint",
-        "geography": 16,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 49.5,
-        "recency_multiplier": 0.44
-      },
-      "matched": {
-        "geopolitics": [
-          "strait of hormuz"
-        ],
-        "oil_macro": [
-          "crude",
-          "brent",
-          "barrel"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/5bf7ea48ed3e5e38cb0233d07bb74cdfb48d4244.mp3",
-      "spoken": "Oil Prices Fall as Fears of a Global Supply Glut Return."
     },
     {
       "title": "HAM delivers its first Mexican LNG station",
@@ -4616,45 +4703,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Global Power Grid Expansion Surges 50% to Record High",
-      "url": "https://oilprice.com/Energy/Energy-General/Global-Power-Grid-Expansion-Surges-50-to-Record-High.html",
-      "snippet": "Utilities built a total of over 21,000 km of new transmission lines last year, the International Renewable Energy Agency reported this week at COP31, citing data from a group called the Utilities for Net Zero Alliance. This is 50% more than the new transmission lines installed during the previous ye",
-      "published_at": "2026-11-12T00:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
-      "tags": [
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.4,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 12,
-        "speculative": 0,
-        "raw": 34.2,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "infrastructure": [
-          "grid",
-          "transmission"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/a8fdbb3bc380054a755e336d303498404bf418c2.mp3",
-      "spoken": "Global Power Grid Expansion Surges 50 percent to Record High."
-    },
-    {
       "title": "Germany Bets Big on Natural Gas to Keep the Lights On",
       "url": "https://oilprice.com/Energy/Energy-General/Germany-Bets-Big-on-Natural-Gas-to-Keep-the-Lights-On.html",
       "snippet": "Gas-fired projects secured all 5.16 gigawatts (GW) of derated capacity in Germany's first capacity auction, with more than half going to developments at existing coal sites. The results show how the search for dependable backup power is giving established generators an advantage, while batteries mis",
@@ -5373,8 +5421,8 @@
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 2,
-      "thread_started_at": "2026-11-06T08:45:00+00:00"
+      "update_count": 3,
+      "thread_started_at": "2026-11-06T07:30:00+00:00"
     },
     {
       "title": "Data Communications Company (DCC) price control consultation: regulatory year 2025 to 2026",
@@ -6413,43 +6461,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Worley on EPC duty at Venture Global's US LNG expansion project",
-      "url": "https://www.offshore-energy.biz/2026/11/06/worley-on-epc-duty-at-venture-globals-us-lng-expansion-project",
-      "snippet": "This award comes ahead of a final investment decision (FID) for Venture Global's LNG expansion project in Louisiana, which is targeted for early 2027.",
-      "published_at": "2026-11-06T11:48:27+00:00",
-      "type": "news",
-      "source": "offshore_energy",
-      "source_name": "Offshore Energy",
-      "authority": 17,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 12.4,
-        "themes": 20.8,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 33.2,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "final investment decision"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Atlantic and Pacific LNG rates rise for third week",
       "url": "https://lngprime.com/americas/atlantic-and-pacific-lng-rates-rise-for-third-week/199626/",
       "snippet": "Atlantic and Pacific spot liquefied natural gas (LNG) shipping rates rose for the third consecutive week, according to Spark Commodities.",
@@ -6528,44 +6539,6 @@
         "infrastructure": [
           "terminal",
           "import terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "The Global Oil Glut Returns as High Prices Crush Demand",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/The-Global-Oil-Glut-Returns-as-High-Prices-Crush-Demand.html",
-      "snippet": "The global crude oil market is moving back towards oversupply, according to analysts from Goldman Sachs and JPMorgan, with demand destruction from high prices causing fears of a deficit to fade and concerns of a glut to rise. “We estimate the global oil market returned to a surplus of 1.1 million ba",
-      "published_at": "2026-11-06T07:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 16,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 24.8,
-        "recency_multiplier": 0.88
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "demand",
-          "demand destruction"
         ]
       },
       "duplicate_count": 0,
@@ -6952,6 +6925,300 @@
       "also_reported_by": []
     },
     {
+      "title": "KOBC, Hyundai Glovis name LNG-powered PCTC in China",
+      "url": "https://lngprime.com/asia/kobc-hyundai-glovis-name-lng-powered-pctc-in-china/200106/",
+      "snippet": "Korea Ocean Business Corporation (KOBC) and Hyundai Glovis have named an LNG dual-fuel PCTC with a capacity of 10,800 ceu in China.",
+      "published_at": "2026-11-17T06:55:26+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 25.4,
+        "recency_multiplier": 0.86
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "geography": [
+          "china",
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-11-16T07:30:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://lngprime.com/americas/china-gas-buys-more-lng-from-venture-global/200142/",
+        "title": "China Gas buys more LNG from Venture Global",
+        "published_at": "2026-11-18T07:33:24+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "U.S. LNG Flows Hit Record High as Global Gas Supply Crisis Deepens",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-LNG-Flows-Hit-Record-High-as-Global-Gas-Supply-Crisis-Deepens.html",
+      "snippet": "U.S. LNG flows jumped to an all-time high this weekend as various projects ramp up production and shipments to markets in Europe and Asia that are reeling from the supply shock in the Middle East. Pipeline flows to U.S. LNG facilities surged to a record high of 21.8 billion cubic feet on Saturday, u",
+      "published_at": "2026-11-16T12:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 9,
+      "tags": [
+        "lng",
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11.3,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 42.1,
+        "recency_multiplier": 0.53
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "infrastructure": [
+          "pipeline"
+        ],
+        "geography": [
+          "europe"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/0815756dbd577e3d25c66d25340725cb7a3db4b5.mp3",
+      "spoken": "U.S. L N G Flows Hit Record High as Global Gas Supply Crisis Deepens.",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://lngprime.com/americas/china-gas-buys-more-lng-from-venture-global/200142/",
+        "title": "China Gas buys more LNG from Venture Global",
+        "published_at": "2026-11-18T07:33:24+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Oil Prices Fall as Fears of a Global Supply Glut Return",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Fears-of-a-Global-Supply-Glut-Return.html",
+      "snippet": "Oil prices began the week with a further loss amid reports that the global oil market is returning to oversupply, even as attacks on tankers in the Strait of Hormuz continue and Iraq is forced to export crude by truck via Syria. Brent crude was trading at $95.24 per barrel at the time of writing, an",
+      "published_at": "2026-11-16T05:25:32+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 24.7,
+        "geo_band": "chokepoint",
+        "geography": 16,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 49.5,
+        "recency_multiplier": 0.44
+      },
+      "matched": {
+        "geopolitics": [
+          "strait of hormuz"
+        ],
+        "oil_macro": [
+          "crude",
+          "brent",
+          "barrel"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/5bf7ea48ed3e5e38cb0233d07bb74cdfb48d4244.mp3",
+      "spoken": "Oil Prices Fall as Fears of a Global Supply Glut Return.",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/TTF-Gas-Bounces-Back-to-86-Euros-as-Hormuz-Risks-Resurface.html",
+        "title": "TTF Gas Bounces Back to 86 Euros as Hormuz Risks Resurface",
+        "published_at": "2026-11-17T14:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Global Power Grid Expansion Surges 50% to Record High",
+      "url": "https://oilprice.com/Energy/Energy-General/Global-Power-Grid-Expansion-Surges-50-to-Record-High.html",
+      "snippet": "Utilities built a total of over 21,000 km of new transmission lines last year, the International Renewable Energy Agency reported this week at COP31, citing data from a group called the Utilities for Net Zero Alliance. This is 50% more than the new transmission lines installed during the previous ye",
+      "published_at": "2026-11-12T00:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 9,
+      "tags": [
+        "infrastructure"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.4,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 34.2,
+        "recency_multiplier": 0.64
+      },
+      "matched": {
+        "infrastructure": [
+          "grid",
+          "transmission"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/a8fdbb3bc380054a755e336d303498404bf418c2.mp3",
+      "spoken": "Global Power Grid Expansion Surges 50 percent to Record High.",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://lngprime.com/americas/china-gas-buys-more-lng-from-venture-global/200142/",
+        "title": "China Gas buys more LNG from Venture Global",
+        "published_at": "2026-11-18T07:33:24+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Worley on EPC duty at Venture Global's US LNG expansion project",
+      "url": "https://www.offshore-energy.biz/2026/11/06/worley-on-epc-duty-at-venture-globals-us-lng-expansion-project",
+      "snippet": "This award comes ahead of a final investment decision (FID) for Venture Global's LNG expansion project in Louisiana, which is targeted for early 2027.",
+      "published_at": "2026-11-06T11:48:27+00:00",
+      "type": "news",
+      "source": "offshore_energy",
+      "source_name": "Offshore Energy",
+      "authority": 17,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 12.4,
+        "themes": 20.8,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 33.2,
+        "recency_multiplier": 0.65
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "final investment decision"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Energy/Energy-General/Global-LNG-Markets-Face-a-Winter-of-Extreme-Uncertainty.html",
+        "title": "Global LNG Markets Face a Winter of Extreme Uncertainty",
+        "published_at": "2026-11-09T17:00:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "The Global Oil Glut Returns as High Prices Crush Demand",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/The-Global-Oil-Glut-Returns-as-High-Prices-Crush-Demand.html",
+      "snippet": "The global crude oil market is moving back towards oversupply, according to analysts from Goldman Sachs and JPMorgan, with demand destruction from high prices causing fears of a deficit to fade and concerns of a glut to rise. “We estimate the global oil market returned to a surplus of 1.1 million ba",
+      "published_at": "2026-11-06T07:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 24.8,
+        "recency_multiplier": 0.88
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "demand",
+          "demand destruction"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Is-Buying-Oil-Again-After-Months-of-Living-Off-Its-Stockpiles.html",
+        "title": "China Is Buying Oil Again After Months of Living Off Its Stockpiles",
+        "published_at": "2026-11-10T12:30:00+00:00"
+      },
+      "hidden": true
+    },
+    {
       "title": "UK sanctions firms over Israeli West Bank settlements",
       "url": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o?at_medium=RSS&at_campaign=rss",
       "snippet": "It marks the first sanctions since the UK announced a tougher approach to Israeli actions in the territory.",
@@ -6962,7 +7229,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 10,
+      "score": 3,
       "tags": [
         "geopolitics"
       ],
@@ -7927,9 +8194,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://lngprime.com/asia/kobc-hyundai-glovis-name-lng-powered-pctc-in-china/200106/",
-        "title": "KOBC, Hyundai Glovis name LNG-powered PCTC in China",
-        "published_at": "2026-11-17T06:55:26+00:00"
+        "url": "https://lngprime.com/americas/china-gas-buys-more-lng-from-venture-global/200142/",
+        "title": "China Gas buys more LNG from Venture Global",
+        "published_at": "2026-11-18T07:33:24+00:00"
       },
       "hidden": true
     },
