@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T23:25:07.757432+00:00",
+  "generated_at": "2026-11-19T23:30:17.140006+00:00",
   "item_count": 314,
   "alert_counts": {
     "critical": 0,
@@ -8,100 +8,100 @@
   },
   "superseded_count": 132,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1133
+        "ms": 1480
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 100597
+        "ms": 84285
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 19608
+        "ms": 25375
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 426
+        "ms": 202
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 421
+        "ms": 219
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 245
+        "ms": 228
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 51,
         "error": null,
-        "ms": 1140
+        "ms": 1166
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 206
+        "ms": 179
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 822
+        "ms": 829
       },
       {
         "id": "rigzone",
-        "ok": true,
-        "count": 20,
-        "error": null,
-        "ms": 334
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20274
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 593
+        "ms": 555
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 36,
         "error": null,
-        "ms": 239
+        "ms": 390
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 145
+        "ms": 159
       }
     ]
   },
@@ -455,7 +455,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 46.8,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.96
       },
       "matched": {
         "geopolitics": [
@@ -1154,7 +1154,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 46.3,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.59
       },
       "matched": {
         "lng": [
@@ -1476,7 +1476,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 30.4,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.84
       },
       "matched": {
         "lng": [
@@ -1488,60 +1488,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Energy crisis reinforces comeback of nuclear power, says IEA",
-      "url": "https://www.world-nuclear-news.org/articles/energy-crisis-reinforces-comeback-of-nuclear-power-says-iea",
-      "snippet": "Unprecedented disruption in the energy world - primarily resulting from the war in the Middle East - is set to reinforce the comeback of nuclear power, according to the International Energy Agency's latest World Energy Outlook , which has revised its forecast for nuclear upwards.",
-      "published_at": "2026-11-19T16:39:51+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 34,
-      "tags": [
-        "geopolitics",
-        "supply_disruption",
-        "nuclear",
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 17.8,
-        "geo_band": "tertiary",
-        "geography": 5,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 36.6,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "geopolitics": [
-          "war"
-        ],
-        "supply_disruption": [
-          "disruption"
-        ],
-        "nuclear": [
-          "nuclear"
-        ],
-        "weather": [
-          "forecast"
-        ],
-        "geography": [
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/1e7f0d6782d3102e239ef56c5dfe9be9710cf5e7.mp3",
-      "spoken": "Energy crisis reinforces comeback of nuclear power, says IEA."
     },
     {
       "title": "Palestine Weekly: West Bank on fire – and Gaza’s tents under water",
@@ -1667,6 +1613,60 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Energy crisis reinforces comeback of nuclear power, says IEA",
+      "url": "https://www.world-nuclear-news.org/articles/energy-crisis-reinforces-comeback-of-nuclear-power-says-iea",
+      "snippet": "Unprecedented disruption in the energy world - primarily resulting from the war in the Middle East - is set to reinforce the comeback of nuclear power, according to the International Energy Agency's latest World Energy Outlook , which has revised its forecast for nuclear upwards.",
+      "published_at": "2026-11-19T16:39:51+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 33,
+      "tags": [
+        "geopolitics",
+        "supply_disruption",
+        "nuclear",
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 17.8,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 36.6,
+        "recency_multiplier": 0.69
+      },
+      "matched": {
+        "geopolitics": [
+          "war"
+        ],
+        "supply_disruption": [
+          "disruption"
+        ],
+        "nuclear": [
+          "nuclear"
+        ],
+        "weather": [
+          "forecast"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/1e7f0d6782d3102e239ef56c5dfe9be9710cf5e7.mp3",
+      "spoken": "Energy crisis reinforces comeback of nuclear power, says IEA."
     },
     {
       "title": "DR Congo’s rival peace efforts fail to halt violence in the east",
