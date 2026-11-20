@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-20T05:14:22.957442+00:00",
+  "generated_at": "2026-11-20T05:19:12.245764+00:00",
   "item_count": 312,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 10
+    "high": 1,
+    "normal": 9
   },
   "superseded_count": 132,
   "sources": {
@@ -17,70 +17,70 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 914
+        "ms": 998
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 60523
+        "ms": 48014
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 4340
+        "ms": 6633
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 414
+        "ms": 21
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 321
+        "ms": 316
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 144
+        "ms": 60
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 51,
         "error": null,
-        "ms": 749
+        "ms": 798
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 160
+        "ms": 114
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 413
+        "ms": 537
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 68
+        "ms": 80
       },
       {
         "id": "oilprice",
@@ -94,18 +94,72 @@
         "ok": true,
         "count": 36,
         "error": null,
-        "ms": 94
+        "ms": 60
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 190
+        "ms": 90
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, BE, AMERCOEUR 1R",
+      "url": "https://umm.nordpoolgroup.com/#/messages/c6affd0c-69ea-4271-85fe-16b8a3b1c86b/1",
+      "snippet": "Published: 20.11.2026 06:14:40 Publisher: Electrabel SA Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Grid connection failure Remarks: New unavailability. This UMM contains multiple capacity values to reflect a situation of RampUp, RampDown or T",
+      "published_at": "2026-11-20T05:14:40+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 72,
+      "tags": [
+        "nuclear",
+        "supply_disruption",
+        "infrastructure"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 20.9,
+        "geography": 0,
+        "event_nature": 20,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 78.8,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "nuclear": [
+          "grid connection"
+        ],
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "infrastructure": [
+          "grid"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [],
+      "first_seen_at": "2026-11-19T22:25:36+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/629ec1bde93efaa4394b5c170db9b5b893a7cbe7.mp3",
+      "spoken": "Unplanned, Unavailability of electricity facilities. Production, BE, Amercoeur 1R."
+    },
     {
       "title": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/drone-attack-on-iraqi-kurdistan-gas-field-triggers-mass-blackout?traffic_source=rss",
@@ -163,52 +217,6 @@
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/5f1f35e394580abf7ec7ceac08723881b7406026.mp3",
       "spoken": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout."
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, IE, Whitegate Power Station - Whitegate Power Station",
-      "url": "https://umm.nordpoolgroup.com/#/messages/00d522ec-697d-4623-a024-312b60ea07b0/8",
-      "snippet": "Published: 19.11.2026 23:25:36 Publisher: Bord Gais Energy Ltd Status: Active Type of Unavailability: Unplanned Reason Code: Foreseen maintenance Reason for the Unavailability: Stage 1 bucket replacement Remarks: Unit declared fully available at 22:17 19/11/26. Production Units Unit Name Unit EIC Ar",
-      "published_at": "2026-11-19T22:25:36+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": false,
-      "score": 56,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 16.8,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 16,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 74.7,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "maintenance"
-        ],
-        "unplanned": [
-          "unplanned"
-        ],
-        "urgency": [
-          "unplanned",
-          "declared"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/db3fcc874002ced32b5d4ebe4d7fd9093f86712e.mp3",
-      "spoken": "Unplanned, Unavailability of electricity facilities. Production, IE, Whitegate Power Station, Whitegate Power Station."
     },
     {
       "title": "What we know so far after Polish gunman opens fire in Krakow main square",
@@ -374,7 +382,7 @@
       "authority": 15,
       "tier": 2,
       "has_magnitude": false,
-      "score": 45,
+      "score": 44,
       "tags": [
         "geopolitics"
       ],
@@ -390,7 +398,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 95,
-        "recency_multiplier": 0.39
+        "recency_multiplier": 0.38
       },
       "matched": {
         "geopolitics": [
@@ -980,7 +988,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 46.8,
-        "recency_multiplier": 0.62
+        "recency_multiplier": 0.61
       },
       "matched": {
         "geopolitics": [
@@ -2324,7 +2332,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 29.2,
-        "recency_multiplier": 0.78
+        "recency_multiplier": 0.77
       },
       "matched": {
         "oil_macro": [
