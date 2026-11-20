@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-20T07:19:37.781837+00:00",
-  "item_count": 311,
+  "generated_at": "2026-11-20T07:24:38.845724+00:00",
+  "item_count": 312,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 8
+    "normal": 9
   },
   "superseded_count": 131,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 980
+        "ms": 1207
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 77348
+        "ms": 78187
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2310
+        "ms": 2513
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 88
+        "ms": 291
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 160
+        "ms": 304
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 120
+        "ms": 172
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 51,
         "error": null,
-        "ms": 746
+        "ms": 761
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 262
+        "ms": 235
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 1363
+        "ms": 551
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 150
+        "ms": 70
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 319
+        "ms": 425
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 36,
         "error": null,
-        "ms": 59
+        "ms": 131
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 81
+        "ms": 163
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": false,
-      "score": 72,
+      "score": 71,
       "tags": [
         "nuclear",
         "supply_disruption",
@@ -274,6 +274,46 @@
       "spoken": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout."
     },
     {
+      "title": "US LNG exports climb to 40 shipments",
+      "url": "https://lngprime.com/americas/us-lng-exports-climb-to-40-shipments/200319/",
+      "snippet": "US liquefied natural gas (LNG) plants sent 40 cargoes during the week ending November 18, up three shipments from the previous week, according to the Energy Information Administration.",
+      "published_at": "2026-11-20T07:20:57+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 56,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 26,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 51.1,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "cargoes",
+          "lng exports"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/3e6bc63af7e027a469e69f23770a5eb6f362d9c9.mp3",
+      "spoken": "US L N G exports climb to 40 shipments."
+    },
+    {
       "title": "What we know so far after Polish gunman opens fire in Krakow main square",
       "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
       "snippet": "At least six people were killed by a gunman in military fatigues who opened fire in Poland's second largest city.",
@@ -365,68 +405,6 @@
       "spoken": "Update. What we know about the global Microsoft outage."
     },
     {
-      "title": "EU Moves to Overhaul Emergency Oil Stockpiles",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Moves-to-Overhaul-Emergency-Oil-Stockpiles.html",
-      "snippet": "The European Union wants countries to stockpile the fuels they actually use, following a nine-month Middle East conflict that has exposed a problem with Europe's emergency oil reserves: having enough oil in storage doesn't necessarily mean having enough diesel or jet fuel. The European Commission is",
-      "published_at": "2026-11-19T19:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 44,
-      "tags": [
-        "regulation",
-        "geopolitics",
-        "supply_disruption",
-        "gas_storage"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 21.1,
-        "geo_band": "secondary",
-        "geography": 10,
-        "event_nature": 20,
-        "urgency": 16,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 75.9,
-        "recency_multiplier": 0.47
-      },
-      "matched": {
-        "regulation": [
-          "european commission"
-        ],
-        "geopolitics": [
-          "conflict"
-        ],
-        "supply_disruption": [
-          "overhaul"
-        ],
-        "gas_storage": [
-          "storage"
-        ],
-        "geography": [
-          "europe",
-          "european",
-          "eu"
-        ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/51405c07e502b97e98bdf456df0c0423faea8b2b.mp3",
-      "spoken": "E U Moves to Overhaul Emergency Oil Stockpiles."
-    },
-    {
       "title": "At least 11 killed in blaze on Thailand’s Phuket island",
       "url": "https://www.aljazeera.com/news/2026/11/16/shophouse-fire-on-thai-resort-island-kills-11?traffic_source=rss",
       "snippet": "Authorities are investigating the cause of the fire, which also injured 16, but have ruled out arson.",
@@ -508,6 +486,68 @@
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/9ec97a0060650595ddeb99ca7b5ee6d32d5491e6.mp3",
       "spoken": "Ohio State suspends fraternity after video shows two people on fire."
+    },
+    {
+      "title": "EU Moves to Overhaul Emergency Oil Stockpiles",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Moves-to-Overhaul-Emergency-Oil-Stockpiles.html",
+      "snippet": "The European Union wants countries to stockpile the fuels they actually use, following a nine-month Middle East conflict that has exposed a problem with Europe's emergency oil reserves: having enough oil in storage doesn't necessarily mean having enough diesel or jet fuel. The European Commission is",
+      "published_at": "2026-11-19T19:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 43,
+      "tags": [
+        "regulation",
+        "geopolitics",
+        "supply_disruption",
+        "gas_storage"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 21.1,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 20,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 75.9,
+        "recency_multiplier": 0.47
+      },
+      "matched": {
+        "regulation": [
+          "european commission"
+        ],
+        "geopolitics": [
+          "conflict"
+        ],
+        "supply_disruption": [
+          "overhaul"
+        ],
+        "gas_storage": [
+          "storage"
+        ],
+        "geography": [
+          "europe",
+          "european",
+          "eu"
+        ],
+        "unplanned": [
+          "emergency"
+        ],
+        "urgency": [
+          "emergency"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/51405c07e502b97e98bdf456df0c0423faea8b2b.mp3",
+      "spoken": "E U Moves to Overhaul Emergency Oil Stockpiles."
     },
     {
       "title": "France awaits verdict six years after police beat Black music producer",
@@ -649,57 +689,6 @@
       "spoken": "Update. Southeast Asian leaders to meet as Trump visit highlights trade disruption."
     },
     {
-      "title": "Another ADNOC Vessel Attacked",
-      "url": "https://www.rigzone.com/news/another_adnoc_vessel_attacked-19-nov-2026-185127-article/?rss=true",
-      "snippet": "ADNOC L S confirmed that one of its vessels was attacked while transiting the Strait of Hormuz on the evening of November 17.",
-      "published_at": "2026-11-19T14:52:59+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 40,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 10.9,
-        "themes": 32,
-        "geo_band": "chokepoint",
-        "geography": 16,
-        "event_nature": 20,
-        "urgency": 16,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 95,
-        "recency_multiplier": 0.33
-      },
-      "matched": {
-        "geopolitics": [
-          "attacked",
-          "strait of hormuz",
-          "vessel attacked"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ],
-        "unplanned": [
-          "attacked"
-        ],
-        "urgency": [
-          "confirmed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/40088e76cc58ff325ab12bdca17a8529b10d1fc3.mp3",
-      "spoken": "Another Adnoc Vessel Attacked."
-    },
-    {
       "title": "Home of Bangladesh’s former leader Muhammad Yunus set on fire",
       "url": "https://www.aljazeera.com/news/2026/11/19/home-of-bangladeshs-former-leader-muhammad-yunus-set-on-fire?traffic_source=rss",
       "snippet": "The blaze broke out during heightened violence before ousted Prime Minister Sheikh Hasina&#039;s planned return.",
@@ -740,6 +729,57 @@
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/ee5dea581cdc457ddf2412276b49c88c7df1666b.mp3",
       "spoken": "Home of Bangladesh’s former leader Muhammad Yunus set on fire."
+    },
+    {
+      "title": "Another ADNOC Vessel Attacked",
+      "url": "https://www.rigzone.com/news/another_adnoc_vessel_attacked-19-nov-2026-185127-article/?rss=true",
+      "snippet": "ADNOC L S confirmed that one of its vessels was attacked while transiting the Strait of Hormuz on the evening of November 17.",
+      "published_at": "2026-11-19T14:52:59+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 39,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.9,
+        "themes": 32,
+        "geo_band": "chokepoint",
+        "geography": 16,
+        "event_nature": 20,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 95,
+        "recency_multiplier": 0.33
+      },
+      "matched": {
+        "geopolitics": [
+          "attacked",
+          "strait of hormuz",
+          "vessel attacked"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "attacked"
+        ],
+        "urgency": [
+          "confirmed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/40088e76cc58ff325ab12bdca17a8529b10d1fc3.mp3",
+      "spoken": "Another Adnoc Vessel Attacked."
     },
     {
       "title": "EU governments approve trade deal with Indonesia to offset Trump tariffs",
@@ -1484,7 +1524,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 46.8,
-        "recency_multiplier": 0.53
+        "recency_multiplier": 0.52
       },
       "matched": {
         "geopolitics": [
@@ -1795,47 +1835,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Six killed in suspected gas explosion at Georgia apartment building",
-      "url": "https://www.aljazeera.com/news/2026/11/19/six-killed-in-suspected-gas-explosion-at-georgia-apartment-building?traffic_source=rss",
-      "snippet": "Georgian Interior Minister Sulkhan Tamazashvili said rescuers had recovered six bodies from the wreckage.",
-      "published_at": "2026-11-19T23:09:48+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 37.9,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "supply_disruption": [
-          "explosion"
-        ],
-        "unplanned": [
-          "explosion"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/b44406431214237ab621e52fa8b14443dbe592c8.mp3",
-      "spoken": "Six killed in suspected gas explosion at Georgia apartment building."
     },
     {
       "title": "Catherine visits Mumbai maternity hospital on the last day of royal trip",
@@ -2346,6 +2345,47 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Six killed in suspected gas explosion at Georgia apartment building",
+      "url": "https://www.aljazeera.com/news/2026/11/19/six-killed-in-suspected-gas-explosion-at-georgia-apartment-building?traffic_source=rss",
+      "snippet": "Georgian Interior Minister Sulkhan Tamazashvili said rescuers had recovered six bodies from the wreckage.",
+      "published_at": "2026-11-19T23:09:48+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 31,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 8.4,
+        "geography": 0,
+        "event_nature": 20,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 37.9,
+        "recency_multiplier": 0.62
+      },
+      "matched": {
+        "supply_disruption": [
+          "explosion"
+        ],
+        "unplanned": [
+          "explosion"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/b44406431214237ab621e52fa8b14443dbe592c8.mp3",
+      "spoken": "Six killed in suspected gas explosion at Georgia apartment building."
     },
     {
       "title": "US Defence Secretary Hegseth reveals military partnership on Venezuela trip",
