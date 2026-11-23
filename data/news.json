@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-11-23T16:56:39.104743+00:00",
+  "generated_at": "2026-11-23T17:03:58.661583+00:00",
   "item_count": 330,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 10
+    "normal": 9
   },
   "superseded_count": 130,
   "sources": {
-    "healthy": 13,
+    "healthy": 12,
     "total": 13,
-    "degraded": false,
+    "degraded": true,
     "detail": [
       {
         "id": "nordpool_umm",
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 711
+        "ms": 890
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 171053
+        "ms": 269794
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2401
+        "ms": 23047
       },
       {
         "id": "ofgem",
         "ok": true,
-        "count": 0,
+        "count": 1,
         "error": null,
-        "ms": 191
+        "ms": 144
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 243
+        "ms": 290
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 134
+        "ms": 207
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 872
+        "ms": 844
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 205
+        "ms": 233
       },
       {
         "id": "lng_prime",
-        "ok": true,
-        "count": 10,
-        "error": null,
-        "ms": 486
+        "ok": false,
+        "count": 0,
+        "error": "ReadTimeout: HTTPSConnectionPool(host='lngprime.com', port=443): Read timed out. (read timeout=20)",
+        "ms": 20323
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 119
+        "ms": 73
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 421
+        "ms": 394
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 34,
         "error": null,
-        "ms": 148
+        "ms": 219
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 142
+        "ms": 156
       }
     ]
   },
@@ -154,7 +154,7 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 1018,
+      "duplicate_count": 1019,
       "also_reported_by": [],
       "first_seen_at": "2026-11-19T22:25:36+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/1d07e19c9700010532a54ec0ab4b9da992a3ed05.mp3",
@@ -381,7 +381,7 @@
         "magnitude": 12,
         "speculative": 0,
         "raw": 40.8,
-        "recency_multiplier": 0.97
+        "recency_multiplier": 0.96
       },
       "matched": {
         "oil_macro": [
@@ -584,12 +584,12 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": true,
-      "score": 42,
+      "score": 41,
       "tags": [
         "oil_macro",
         "infrastructure"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
@@ -600,7 +600,7 @@
         "magnitude": 12,
         "speculative": 0,
         "raw": 49.8,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.66
       },
       "matched": {
         "oil_macro": [
@@ -786,7 +786,7 @@
         "magnitude": 12,
         "speculative": 0,
         "raw": 52.4,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.6
       },
       "matched": {
         "weather": [
@@ -921,7 +921,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 37.9,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.81
       },
       "matched": {
         "supply_disruption": [
@@ -1638,6 +1638,46 @@
       "thread_started_at": "2026-11-10T01:38:49+00:00"
     },
     {
+      "title": "Korean, Slovakian partnership for financing nuclear projects",
+      "url": "https://www.world-nuclear-news.org/articles/korean-slovakian-partnership-for-financing-nuclear-projects",
+      "snippet": "Korea Trade Insurance Corporation has signed a memorandum of understanding with Export-Import Bank of Slovakia to support power and utility projects - including nuclear power plants - and the strengthening of related supply chains.",
+      "published_at": "2026-11-23T16:30:59+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 7.3,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 26.1,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear"
+        ],
+        "geography": [
+          "korea"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "Singapore Shipping orders two LNG-powered PCTCs in China",
       "url": "https://lngprime.com/asia/singapore-shipping-orders-two-lng-powered-pctcs-in-china/200439/",
       "snippet": "Singapore Shipping has ordered two LNG dual-fuel pure and car truck carriers from China's Guangzhou Shipyard International.",
@@ -2157,6 +2197,50 @@
       "also_reported_by": []
     },
     {
+      "title": "America’s Biggest Oil Export Port Faces Thousands of Cyberattack Attempts",
+      "url": "https://oilprice.com/Energy/Energy-General/Americas-Biggest-Oil-Export-Port-Faces-Thousands-of-Cyberattack-Attempts.html",
+      "snippet": "The port that ships most of America's crude oil overseas is now fending off \"hundreds or even thousands\" of attempts to break into its systems every day, Port of Corpus Christi CEO Kent Britton told the Financial Times, as hackers step up a campaign against US ports and the cargo ships that call on ",
+      "published_at": "2026-11-23T17:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 32,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 10,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 23.7,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "lng": [
+          "cargo"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "corpus christi"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
       "title": "COP Crumbles as Oil Nations Reject Fossil Fuel Language",
       "url": "https://www.rigzone.com/news/wire/cop_crumbles_as_oil_nations_reject_fossil_fuel_language-23-nov-2026-185142-article/?rss=true",
       "snippet": "The failure of the United Nations-convened COP31 negotiations in Antalya followed disputes over the shift away from fossil fuels and the role of carbon capture technology.",
@@ -2182,7 +2266,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 39.9,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.6
       },
       "matched": {
         "geopolitics": [
@@ -2688,52 +2772,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Global LNG Markets Face a Winter of Extreme Uncertainty",
-      "url": "https://oilprice.com/Energy/Energy-General/Global-LNG-Markets-Face-a-Winter-of-Extreme-Uncertainty.html",
-      "snippet": "The defining feature of the Northern Hemisphere winter 2026/27 is uncertainty. Liquefied natural gas (LNG) prices are above $30 per million British thermal units (MMBtu), and gas inventories are markedly lower in key markets. Further price rallies are not a foregone conclusion, though. Potent downsi",
-      "published_at": "2026-11-09T17:00:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
-      "tags": [
-        "lng",
-        "gas_storage"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 11.3,
-        "geo_band": "primary",
-        "geography": 16,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 36.1,
-        "recency_multiplier": 0.66
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "gas_storage": [
-          "inventories"
-        ],
-        "geography": [
-          "british"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-11-06T11:48:27+00:00"
-    },
-    {
       "title": "Storms and Drones Disrupt Russia’s Oil Exports",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
       "snippet": "Russia’s oil exports from the Baltic Sea and the Black Sea have suffered loading delays and disruptions this month amid frequent storms and bad weather exacerbated by Ukrainian drone attacks and local alerts of attacks. At Russia’s key Baltic Sea ports, storms and bad weather have already caused del",
@@ -2774,85 +2812,6 @@
       "also_reported_by": [],
       "update_count": 9,
       "thread_started_at": "2026-11-10T18:00:00+00:00"
-    },
-    {
-      "title": "Korean, Slovakian partnership for financing nuclear projects",
-      "url": "https://www.world-nuclear-news.org/articles/korean-slovakian-partnership-for-financing-nuclear-projects",
-      "snippet": "Korea Trade Insurance Corporation has signed a memorandum of understanding with Export-Import Bank of Slovakia to support power and utility projects - including nuclear power plants - and the strengthening of related supply chains.",
-      "published_at": "2026-11-23T13:06:59+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geo_band": "tertiary",
-        "geography": 5,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 26.1,
-        "recency_multiplier": 0.87
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear"
-        ],
-        "geography": [
-          "korea"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
-      "title": "Iran threatens response to any attack amid naval blockade",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-      "snippet": "Iran threatens response to any attack amid naval blockade",
-      "published_at": "2026-11-23T12:25:24+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 27.4,
-        "recency_multiplier": 0.82
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade",
-          "attack"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 14,
-      "thread_started_at": "2026-11-10T05:20:00+00:00"
     },
     {
       "title": "USA Crude Oil Stocks Rise Over 3 Million Barrels WoW",
@@ -3317,6 +3276,45 @@
       "also_reported_by": []
     },
     {
+      "title": "Iran threatens response to any attack amid naval blockade",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
+      "snippet": "Iran threatens response to any attack amid naval blockade",
+      "published_at": "2026-11-23T12:25:24+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 27.4,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "attack"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 14,
+      "thread_started_at": "2026-11-10T05:20:00+00:00"
+    },
+    {
       "title": "Western Australia Offers New Oil, Carbon Storage Exploration Areas",
       "url": "https://www.rigzone.com/news/western_australia_offers_new_oil_carbon_storage_exploration_areas-23-nov-2026-185145-article/?rss=true",
       "snippet": "Western Australia has opened license applications for seven petroleum exploration areas and four areas for greenhouse gas storage exploration.",
@@ -3386,7 +3384,7 @@
         "magnitude": 12,
         "speculative": 0,
         "raw": 36.9,
-        "recency_multiplier": 0.61
+        "recency_multiplier": 0.6
       },
       "matched": {
         "infrastructure": [
