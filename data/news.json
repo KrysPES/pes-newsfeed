@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-23T19:27:53.292794+00:00",
-  "item_count": 329,
+  "generated_at": "2026-11-24T01:33:06.273107+00:00",
+  "item_count": 328,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
-    "normal": 8
+    "high": 2,
+    "normal": 6
   },
-  "superseded_count": 128,
+  "superseded_count": 130,
   "sources": {
     "healthy": 13,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 819
+        "ms": 1491
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 162125
+        "ms": 98367
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 2658
+        "ms": 57732
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 1,
         "error": null,
-        "ms": 125
+        "ms": 656
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 398
+        "ms": 223
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 220
+        "ms": 259
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 753
+        "ms": 940
       },
       {
         "id": "offshore_energy",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 162
+        "ms": 234
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 534
+        "ms": 700
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 63
+        "ms": 3665
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 447
+        "ms": 337
       },
       {
         "id": "bbc_world",
         "ok": true,
-        "count": 32,
+        "count": 34,
         "error": null,
-        "ms": 340
+        "ms": 154
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 192
+        "ms": 209
       }
     ]
   },
@@ -154,52 +154,64 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 1048,
+      "duplicate_count": 1049,
       "also_reported_by": [],
       "first_seen_at": "2026-11-19T22:25:36+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/1d07e19c9700010532a54ec0ab4b9da992a3ed05.mp3",
       "spoken": "Unplanned, Unavailability of electricity facilities. Production, BE, Amercoeur 1R."
     },
     {
-      "title": "New York unveils advanced nuclear master plan",
-      "url": "https://www.world-nuclear-news.org/articles/new-york-unveils-advanced-nuclear-master-plan",
-      "snippet": "Governor Kathy Hochul has announced the completion of the Master Plan for Responsible Advanced Nuclear Development in New York, which sets out a roadmap for the state to achieve its target of creating 5 GW of new nuclear power capacity.",
-      "published_at": "2026-11-23T15:55:07+00:00",
+      "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+      "snippet": "Iran&#039;s Revolutionary Guards say three oil tankers have caught fire after hitting naval mines in the Strait of Hormuz.",
+      "published_at": "2026-11-24T00:00:00+00:00",
       "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 51,
+      "has_magnitude": false,
+      "score": 71,
       "tags": [
-        "nuclear"
+        "geopolitics",
+        "supply_disruption"
       ],
-      "alert": "normal",
-      "nature": "",
+      "alert": "high",
+      "nature": "unplanned",
       "why": {
-        "authority": 13.9,
-        "themes": 7.3,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 16,
-        "magnitude": 12,
+        "authority": 9.5,
+        "themes": 30.6,
+        "geo_band": "chokepoint",
+        "geography": 16,
+        "event_nature": 20,
+        "urgency": 0,
+        "magnitude": 0,
         "speculative": 0,
-        "raw": 49.1,
-        "recency_multiplier": 0.89
+        "raw": 76.1,
+        "recency_multiplier": 1
       },
       "matched": {
-        "nuclear": [
-          "nuclear"
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
         ],
-        "urgency": [
-          "announced"
+        "supply_disruption": [
+          "fire"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ],
+        "unplanned": [
+          "fire"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/5346832ad41e773e986b3404dae7014cc3436738.mp3",
-      "spoken": "New York unveils advanced nuclear master plan."
+      "update_count": 55,
+      "thread_started_at": "2026-11-09T20:10:55+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/b2ffaabeb67318f0ef2f3dd936a92cd58216a22f.mp3",
+      "spoken": "Update. Iran war live. Iran says three ships catch fire after hitting Hormuz mines."
     },
     {
       "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
@@ -257,57 +269,6 @@
       "spoken": "Update. Explosion on Russian ship at Libya port caused by suspected drone attack, officials say."
     },
     {
-      "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-      "snippet": "South Korea has asked Qatar to prioritize LNG supply to the Asian nation when traffic through the Strait of Hormuz normalizes, South Korea’s Ministry of Trade, Industry and Resources said on Monday. Qatar, the world’s second-largest LNG exporter before the Iran war, has struggled to ship LNG carrier",
-      "published_at": "2026-11-23T13:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 50,
-      "tags": [
-        "geopolitics",
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 34.3,
-        "geo_band": "chokepoint",
-        "geography": 16,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 59.1,
-        "recency_multiplier": 0.74
-      },
-      "matched": {
-        "geopolitics": [
-          "war",
-          "strait of hormuz"
-        ],
-        "lng": [
-          "lng",
-          "carrier"
-        ],
-        "geography": [
-          "strait of hormuz",
-          "hormuz"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 39,
-      "thread_started_at": "2026-11-09T20:10:55+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/f05ce824eba82327fbf45ac761c652ee5022125d.mp3",
-      "spoken": "Update. South Korea Asks Qatar for Priority L N G Once Hormuz Reopens."
-    },
-    {
       "title": "Why is the Microsoft outage lasting so long?",
       "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
       "snippet": "Microsoft has said the outage was not caused by a cyber-security incident, but efforts to fix the issues have so far been largely unsuccessful.",
@@ -354,51 +315,44 @@
       "spoken": "Update. What we know about the global Microsoft outage."
     },
     {
-      "title": "Oil Slides Nearly 4% as Returning Supply Outweighs Gulf Attacks",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Slides-Nearly-4-as-Returning-Supply-Outweighs-Gulf-Attacks.html",
-      "snippet": "Crude prices deepened their slide on Monday even as Wall Street rallied on Nvidia's reinstatement of chief executive Jensen Huang, with West Texas Intermediate (WTI) trading at its weakest level since late August. At 10:29 a.m. ET, WTI was down 3.5% at $80.50 per barrel, Brent was down 3.6% at 89.23",
-      "published_at": "2026-11-23T15:51:00+00:00",
+      "title": "Drone attack on Colombia police base injures civilians, including infant",
+      "url": "https://www.aljazeera.com/news/2026/11/23/drone-attack-on-colombia-police-base-injures-civilians-including-infant?traffic_source=rss",
+      "snippet": "Far-right President De la Espriella steps up offensive as rebel groups strike back with drone strikes, roadside bombs.",
+      "published_at": "2026-11-23T23:49:37+00:00",
       "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 45,
+      "has_magnitude": false,
+      "score": 44,
       "tags": [
-        "oil_macro"
+        "geopolitics"
       ],
       "alert": "normal",
       "nature": "",
       "why": {
-        "authority": 8.8,
-        "themes": 16,
-        "geo_band": "tertiary",
-        "geography": 5,
+        "authority": 9.5,
+        "themes": 26.9,
+        "geography": 0,
         "event_nature": 0,
         "urgency": 0,
-        "magnitude": 12,
+        "magnitude": 0,
         "speculative": 0,
-        "raw": 41.8,
-        "recency_multiplier": 0.88
+        "raw": 36.4,
+        "recency_multiplier": 1
       },
       "matched": {
-        "oil_macro": [
-          "crude",
-          "brent",
-          "wti",
-          "barrel"
-        ],
-        "geography": [
-          "gulf"
+        "geopolitics": [
+          "drone",
+          "offensive",
+          "attack"
         ]
       },
       "duplicate_count": 0,
       "also_reported_by": [],
-      "update_count": 5,
-      "thread_started_at": "2026-11-16T07:30:00+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/2ab8d459ee0e29c29af02f5cb64f6cb637d6b6e1.mp3",
-      "spoken": "Update. Oil Slides Nearly 4 percent as Returning Supply Outweighs Gulf Attacks."
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/951b78ea51b57618ae19bdef535eee60dee93382.mp3",
+      "spoken": "Drone attack on Colombia police base injures civilians, including infant."
     },
     {
       "title": "At least 11 killed in blaze on Thailand’s Phuket island",
@@ -847,46 +801,6 @@
       "spoken": "E U governments approve trade deal with Indonesia to offset Trump tariffs."
     },
     {
-      "title": "Explosion at Turkish steel plant kills at least 16 people",
-      "url": "https://www.aljazeera.com/news/2026/11/9/explosion-at-turkish-steel-plant-kills-at-least-16-people?traffic_source=rss",
-      "snippet": "President Erdogan announces an investigation after a crane collapsed into a furnace, triggering the blast near Izmir.",
-      "published_at": "2026-11-09T19:58:40+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 39,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 16.8,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 46.3,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "supply_disruption": [
-          "explosion",
-          "blast"
-        ],
-        "unplanned": [
-          "explosion"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Major fire erupts at a fuel station in Lagos",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/major-fire-erupts-at-a-fuel-station-in-lagos?traffic_source=rss",
       "snippet": "Major fire erupts at a fuel station in Lagos",
@@ -968,6 +882,48 @@
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/18cbd11c783fd99ad258ba63087fce8978333adc.mp3",
       "spoken": "FAA grounds all fights across the US over ‘telecommunication outage’."
+    },
+    {
+      "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+      "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+      "snippet": "Proposed sanctions aim to curb Russian crypto financing and &#039;propaganda&#039; in sports.",
+      "published_at": "2026-11-23T23:26:16+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 9,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 28.5,
+        "recency_multiplier": 0.99
+      },
+      "matched": {
+        "geopolitics": [
+          "sanctions"
+        ],
+        "geography": [
+          "eu"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 10,
+      "thread_started_at": "2026-11-10T18:00:00+00:00"
     },
     {
       "title": "Saudi Arabia intercepts drone, missile as Houthis report attack on Sanaa",
@@ -1135,47 +1091,45 @@
       "thread_started_at": "2026-11-10T11:25:46+00:00"
     },
     {
-      "title": "Verdict delayed in Honduras sex-trafficking case linked to disappearance",
-      "url": "https://www.aljazeera.com/news/2026/11/10/verdict-delayed-in-honduras-sex-trafficking-case-linked-to-disappearance?traffic_source=rss",
-      "snippet": "Angie Pena&#039;s disappearance in 2022 exposed what prosecutors called a sex-trafficking network and state corruption.",
-      "published_at": "2026-11-10T00:57:58+00:00",
+      "title": "New York unveils advanced nuclear master plan",
+      "url": "https://www.world-nuclear-news.org/articles/new-york-unveils-advanced-nuclear-master-plan",
+      "snippet": "Governor Kathy Hochul has announced the completion of the Master Plan for Responsible Advanced Nuclear Development in New York, which sets out a roadmap for the state to achieve its target of creating 5 GW of new nuclear power capacity.",
+      "published_at": "2026-11-23T15:55:07+00:00",
       "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 37,
+      "has_magnitude": true,
+      "score": 36,
       "tags": [
-        "infrastructure",
-        "regulation"
+        "nuclear"
       ],
       "alert": "low",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 9.5,
-        "themes": 10.4,
+        "authority": 13.9,
+        "themes": 7.3,
         "geography": 0,
-        "event_nature": 20,
-        "urgency": 0,
-        "magnitude": 0,
+        "event_nature": 0,
+        "urgency": 16,
+        "magnitude": 12,
         "speculative": 0,
-        "raw": 39.9,
-        "recency_multiplier": 0.71
+        "raw": 49.1,
+        "recency_multiplier": 0.56
       },
       "matched": {
-        "infrastructure": [
-          "network"
+        "nuclear": [
+          "nuclear"
         ],
-        "regulation": [
-          "verdict"
-        ],
-        "unplanned": [
-          "delayed"
+        "urgency": [
+          "announced"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/5346832ad41e773e986b3404dae7014cc3436738.mp3",
+      "spoken": "New York unveils advanced nuclear master plan."
     },
     {
       "title": "Libya’s Oil Output Plunges as Armed Groups Shut Key Pipelines",
@@ -1817,6 +1771,42 @@
         ],
         "unplanned": [
           "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": []
+    },
+    {
+      "title": "America's Refiners Drowned Their Own Gasoline Windfall",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Americas-Refiners-Drowned-Their-Own-Gasoline-Windfall.html",
+      "snippet": "U.S. refiners spent 2026 squeezing less gasoline out of every barrel to chase diesel and jet fuel margins, and they still produced enough gasoline to nearly wipe out their margins on it. Gasoline yields averaged below 45% in the first eight months of the year and fell below the previous five-year lo",
+      "published_at": "2026-11-24T01:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 33,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 4.5,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 25.2,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "oil_macro": [
+          "barrel"
         ]
       },
       "duplicate_count": 0,
@@ -2607,40 +2597,36 @@
       "also_reported_by": []
     },
     {
-      "title": "Turkey steel factory blast kills at least 17 people",
-      "url": "https://www.bbc.co.uk/news/articles/cq2d6d5z9y5jo?at_medium=RSS&at_campaign=rss",
-      "snippet": "Eyewitnesses say the explosion shook the ground, with one believing an earthquake had hit near the Habas Demir Celik plant in Aliaga.",
-      "published_at": "2026-11-09T20:42:04+00:00",
+      "title": "Oil Falls as Trump Signals Iran Talks",
+      "url": "https://www.rigzone.com/news/wire/oil_falls_as_trump_signals_iran_talks-23-nov-2026-185152-article/?rss=true",
+      "snippet": "WTI fell 4.5% as Trump signaled more time for diplomacy with Iran amid rising global oil supplies.",
+      "published_at": "2026-11-23T21:30:14+00:00",
       "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
       "tier": 2,
-      "has_magnitude": false,
-      "score": 32,
+      "has_magnitude": true,
+      "score": 31,
       "tags": [
-        "supply_disruption"
+        "oil_macro"
       ],
       "alert": "low",
-      "nature": "unplanned",
+      "nature": "",
       "why": {
-        "authority": 10.2,
-        "themes": 16.8,
+        "authority": 10.9,
+        "themes": 4.5,
         "geography": 0,
-        "event_nature": 20,
+        "event_nature": 0,
         "urgency": 0,
-        "magnitude": 0,
+        "magnitude": 12,
         "speculative": 0,
-        "raw": 47,
-        "recency_multiplier": 0.51
+        "raw": 27.4,
+        "recency_multiplier": 0.85
       },
       "matched": {
-        "supply_disruption": [
-          "explosion",
-          "blast"
-        ],
-        "unplanned": [
-          "explosion"
+        "oil_macro": [
+          "wti"
         ]
       },
       "duplicate_count": 0,
@@ -2733,6 +2719,53 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Oil Slides Nearly 4% as Returning Supply Outweighs Gulf Attacks",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Slides-Nearly-4-as-Returning-Supply-Outweighs-Gulf-Attacks.html",
+      "snippet": "Crude prices deepened their slide on Monday even as Wall Street rallied on Nvidia's reinstatement of chief executive Jensen Huang, with West Texas Intermediate (WTI) trading at its weakest level since late August. At 10:29 a.m. ET, WTI was down 3.5% at $80.50 per barrel, Brent was down 3.6% at 89.23",
+      "published_at": "2026-11-23T15:51:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 31,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 16,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 41.8,
+        "recency_multiplier": 0.55
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "brent",
+          "wti",
+          "barrel"
+        ],
+        "geography": [
+          "gulf"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 5,
+      "thread_started_at": "2026-11-16T07:30:00+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/2ab8d459ee0e29c29af02f5cb64f6cb637d6b6e1.mp3",
+      "spoken": "Update. Oil Slides Nearly 4 percent as Returning Supply Outweighs Gulf Attacks."
     },
     {
       "title": "USA Crude Oil Stocks Rise Over 3 Million Barrels WoW",
@@ -3115,45 +3148,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Deadly explosion at Iron and steel plant in Turkiye",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/deadly-explosion-at-iron-and-steel-plant-in-turkiye?traffic_source=rss",
-      "snippet": "Deadly explosion at Iron and steel plant in Turkiye",
-      "published_at": "2026-11-09T20:19:18+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 8.4,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 37.9,
-        "recency_multiplier": 0.61
-      },
-      "matched": {
-        "supply_disruption": [
-          "explosion"
-        ],
-        "unplanned": [
-          "explosion"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": []
-    },
-    {
       "title": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "snippet": "As of 4:00 a.m. central time on October 9, the National Oceanic and Atmospheric Administration expects Hurricane Isaias to make landfall on the Gulf Coast late Friday or early Saturday, creating the potential for significant disruptions to energy infrastructure. Hurricane Isaias is the first hurrica",
@@ -3197,48 +3191,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-      "snippet": "Russia’s oil exports from the Baltic Sea and the Black Sea have suffered loading delays and disruptions this month amid frequent storms and bad weather exacerbated by Ukrainian drone attacks and local alerts of attacks. At Russia’s key Baltic Sea ports, storms and bad weather have already caused del",
-      "published_at": "2026-11-23T16:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 9,
-        "geo_band": "tertiary",
-        "geography": 5,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 22.7,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "geopolitics": [
-          "drone"
-        ],
-        "geography": [
-          "russia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 9,
-      "thread_started_at": "2026-11-10T18:00:00+00:00"
-    },
-    {
       "title": "Fuel plates milestone for FRM-II conversion",
       "url": "https://www.world-nuclear-news.org/articles/fuel-plates-milestone-for-frm-ii-conversion",
       "snippet": "Framatome's fabrication of the first depleted uranium fuel plates is a major technical milestone towards the conversion of the FRM II research reactor at Technical University of Munich from highly enriched uranium to high-assay low-enriched uranium fuel.",
@@ -3277,45 +3229,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Iran threatens response to any attack amid naval blockade",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-      "snippet": "Iran threatens response to any attack amid naval blockade",
-      "published_at": "2026-11-23T12:25:24+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "geopolitics"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 9.5,
-        "themes": 17.9,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 27.4,
-        "recency_multiplier": 0.79
-      },
-      "matched": {
-        "geopolitics": [
-          "blockade",
-          "attack"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 14,
-      "thread_started_at": "2026-11-10T05:20:00+00:00"
     },
     {
       "title": "Western Australia Offers New Oil, Carbon Storage Exploration Areas",
@@ -8710,40 +8623,157 @@
       "also_reported_by": []
     },
     {
-      "title": "Scientists Develop Cheap Filter That Could Slash Oil Refining Energy Use by 32%",
-      "url": "https://oilprice.com/Energy/Energy-General/Scientists-Develop-Cheap-Filter-That-Could-Slash-Oil-Refining-Energy-Use-by-32.html",
-      "snippet": "Scientists have made a surprising discovery that could slash the amount of energy used in oil refining by eliminating part of the high-temperature heating process required to separate the fractions of crude oil. The scientific breakthrough has found a simple and inexpensive way to separate crude oil",
-      "published_at": "2026-11-09T23:00:00+00:00",
+      "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
+      "snippet": "South Korea has asked Qatar to prioritize LNG supply to the Asian nation when traffic through the Strait of Hormuz normalizes, South Korea’s Ministry of Trade, Industry and Resources said on Monday. Qatar, the world’s second-largest LNG exporter before the Iran war, has struggled to ship LNG carrier",
+      "published_at": "2026-11-23T13:30:00+00:00",
       "type": "news",
       "source": "oilprice",
       "source_name": "OilPrice.com",
       "authority": 12,
       "tier": 2,
-      "has_magnitude": true,
-      "score": 30,
+      "has_magnitude": false,
+      "score": 15,
       "tags": [
-        "oil_macro"
+        "geopolitics",
+        "lng"
       ],
       "alert": "low",
       "nature": "",
       "why": {
         "authority": 8.8,
-        "themes": 4.5,
-        "geography": 0,
+        "themes": 34.3,
+        "geo_band": "chokepoint",
+        "geography": 16,
         "event_nature": 0,
         "urgency": 0,
-        "magnitude": 12,
+        "magnitude": 0,
         "speculative": 0,
-        "raw": 25.2,
-        "recency_multiplier": 0.86
+        "raw": 59.1,
+        "recency_multiplier": 0.74
       },
       "matched": {
-        "oil_macro": [
-          "crude"
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
         ]
       },
       "duplicate_count": 0,
-      "also_reported_by": []
+      "also_reported_by": [],
+      "update_count": 39,
+      "thread_started_at": "2026-11-09T20:10:55+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/f05ce824eba82327fbf45ac761c652ee5022125d.mp3",
+      "spoken": "Update. South Korea Asks Qatar for Priority L N G Once Hormuz Reopens.",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Storms and Drones Disrupt Russia’s Oil Exports",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
+      "snippet": "Russia’s oil exports from the Baltic Sea and the Black Sea have suffered loading delays and disruptions this month amid frequent storms and bad weather exacerbated by Ukrainian drone attacks and local alerts of attacks. At Russia’s key Baltic Sea ports, storms and bad weather have already caused del",
+      "published_at": "2026-11-23T16:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 9,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 22.7,
+        "recency_multiplier": 0.96
+      },
+      "matched": {
+        "geopolitics": [
+          "drone"
+        ],
+        "geography": [
+          "russia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 9,
+      "thread_started_at": "2026-11-10T18:00:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+        "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+        "published_at": "2026-11-23T23:26:16+00:00"
+      },
+      "hidden": true
+    },
+    {
+      "title": "Iran threatens response to any attack amid naval blockade",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
+      "snippet": "Iran threatens response to any attack amid naval blockade",
+      "published_at": "2026-11-23T12:25:24+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "geopolitics"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 9.5,
+        "themes": 17.9,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 27.4,
+        "recency_multiplier": 0.79
+      },
+      "matched": {
+        "geopolitics": [
+          "blockade",
+          "attack"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 14,
+      "thread_started_at": "2026-11-10T05:20:00+00:00",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Iran war live: Tankers set ablaze in Hormuz as IRGC warns of unrest threat",
@@ -8791,9 +8821,9 @@
       "spoken": "Update. Iran war live. Tankers set ablaze in Hormuz as IRGC warns of unrest threat.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -8903,9 +8933,9 @@
       "spoken": "Update. Russia-bound ship still on fire after attack in Gulf of Finland.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-        "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-        "published_at": "2026-11-23T16:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+        "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+        "published_at": "2026-11-23T23:26:16+00:00"
       },
       "hidden": true
     },
@@ -8966,9 +8996,9 @@
       "spoken": "Update. Tankers hit in Strait of Hormuz as Iran tightens grip on shipping.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9137,9 +9167,9 @@
       "spoken": "Update. Iran’s IRGC downs US drone over Hormuz as efforts to end war remain stalled.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9188,9 +9218,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/d0e65f19e226586ad2eccb094a3f721e58c3c6e9.mp3",
@@ -9246,9 +9276,9 @@
       "spoken": "Update. Tankers Are Being Hit Daily. So Why Is Oil Falling?",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9371,9 +9401,9 @@
       "spoken": "Update. Iran Steps Up Hormuz Tanker Attacks as Oil Prices Slide.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9530,9 +9560,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/7342d0bfd87e514ba11705c06c65bf9fefd0ec57.mp3",
@@ -9577,9 +9607,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9642,9 +9672,9 @@
       "spoken": "Update. Hormuz Oil Exports Could Decline amid Inbound Tanker Shortage.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9809,9 +9839,9 @@
       "spoken": "Update. Oil Prices Steady as Hormuz Tanker Threats Offset Supply Glut Fears.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9872,9 +9902,9 @@
       "spoken": "Update. Iran war live. Saudi-led coalition strikes Yemen. ships on fire in Hormuz.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9919,9 +9949,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -9969,9 +9999,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/0ae6d9319768dd9a26ba31f99ed8b6716f070418.mp3",
@@ -10026,9 +10056,9 @@
       "thread_started_at": "2026-11-10T18:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-        "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-        "published_at": "2026-11-23T16:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+        "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+        "published_at": "2026-11-23T23:26:16+00:00"
       },
       "hidden": true
     },
@@ -10129,9 +10159,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -10229,9 +10259,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -10275,9 +10305,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -10430,9 +10460,9 @@
       "thread_started_at": "2026-11-06T08:32:57+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-        "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-        "published_at": "2026-11-23T16:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+        "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+        "published_at": "2026-11-23T23:26:16+00:00"
       },
       "hidden": true
     },
@@ -10581,9 +10611,9 @@
       "thread_started_at": "2026-11-12T07:33:22+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -10744,9 +10774,9 @@
       "spoken": "Update. T T F Gas Bounces Back to 86 Euros as Hormuz Risks Resurface.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -10790,9 +10820,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -10890,9 +10920,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/3e64cb8bc06da566cccad3fcc1b9d4edcd2a634e.mp3",
@@ -10944,9 +10974,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/0dc577b03976795ef09cdf167cbe487b10e19f41.mp3",
@@ -11199,9 +11229,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/46cba5492784ed934b5d729ac60344552c4fe41c.mp3",
@@ -11259,9 +11289,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/78f74af01219f09c83f876dd0d77c4530c06934e.mp3",
@@ -11308,9 +11338,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -11357,9 +11387,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-        "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-        "published_at": "2026-11-23T16:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+        "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+        "published_at": "2026-11-23T23:26:16+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/ae1b63a90fce4748f9ef38fad60b3b5a38c6e475.mp3",
@@ -11460,9 +11490,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/b661a809a5cd52803fdfc574f71e2bac1c797a8b.mp3",
@@ -11513,9 +11543,9 @@
       "spoken": "Update. Iran braces for natural gas shortages during winter energy imbalance.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -11669,9 +11699,9 @@
       "spoken": "Update. Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-        "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-        "published_at": "2026-11-23T16:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+        "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+        "published_at": "2026-11-23T23:26:16+00:00"
       },
       "hidden": true
     },
@@ -11721,9 +11751,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-        "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-        "published_at": "2026-11-23T16:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+        "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+        "published_at": "2026-11-23T23:26:16+00:00"
       },
       "hidden": true
     },
@@ -12128,9 +12158,9 @@
       "thread_started_at": "2026-11-06T08:32:57+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-        "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-        "published_at": "2026-11-23T16:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+        "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+        "published_at": "2026-11-23T23:26:16+00:00"
       },
       "hidden": true
     },
@@ -12178,9 +12208,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/c7e011fee4e7d91b10504c9809e6e707d076f4d1.mp3",
@@ -12226,9 +12256,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -12275,9 +12305,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -12433,9 +12463,9 @@
       "spoken": "Update. Iran war live. Tehran says tanker hit naval mine, caught fire.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -12487,9 +12517,9 @@
       "thread_started_at": "2026-11-12T06:35:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -12533,9 +12563,9 @@
       "thread_started_at": "2026-11-05T21:08:28+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -12586,9 +12616,9 @@
       "spoken": "Update. Iraq’s Oil Production Soars to 2019 High as Hormuz Flows Surge.",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -12692,9 +12722,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -12738,9 +12768,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/7ed19effff532e6f494f613a54a6372f56e8f6a8.mp3",
@@ -12900,9 +12930,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -13001,9 +13031,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/12bbb70a7b0f9fc60102d1acc14cfe4eed53d117.mp3",
@@ -13101,9 +13131,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/0efe08498700ce72c176d0fd8c50b3a6d83f4ba1.mp3",
@@ -13372,9 +13402,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -13485,9 +13515,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -13686,9 +13716,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/99f540e58888f404751288936b7e6454665bc509.mp3",
@@ -13797,9 +13827,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -13847,9 +13877,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -13904,9 +13934,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -14003,9 +14033,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -14062,9 +14092,9 @@
       "thread_started_at": "2026-11-06T08:32:57+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-        "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-        "published_at": "2026-11-23T16:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+        "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+        "published_at": "2026-11-23T23:26:16+00:00"
       },
       "hidden": true
     },
@@ -14424,9 +14454,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -14582,9 +14612,9 @@
       "thread_started_at": "2026-11-09T01:19:09+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -14635,9 +14665,9 @@
       "thread_started_at": "2026-11-06T08:32:57+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-        "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-        "published_at": "2026-11-23T16:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+        "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+        "published_at": "2026-11-23T23:26:16+00:00"
       },
       "hidden": true
     },
@@ -14731,9 +14761,9 @@
       "thread_started_at": "2026-11-05T13:30:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -14889,9 +14919,9 @@
       "thread_started_at": "2026-11-09T17:16:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -15194,9 +15224,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -15240,9 +15270,9 @@
       "thread_started_at": "2026-11-09T00:00:00+00:00",
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -15290,9 +15320,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade?traffic_source=rss",
-        "title": "Iran threatens response to any attack amid naval blockade",
-        "published_at": "2026-11-23T12:25:24+00:00"
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss",
+        "title": "Iran war live: Iran says three ships catch fire after hitting Hormuz mines",
+        "published_at": "2026-11-24T00:00:00+00:00"
       },
       "hidden": true
     },
@@ -15395,63 +15425,6 @@
         "url": "https://www.aljazeera.com/news/2026/11/10/us-house-begins-vote-on-motion-to-advance-impeachment-of-pete-hegseth?traffic_source=rss",
         "title": "US House begins vote on motion to advance impeachment of Pete Hegseth",
         "published_at": "2026-11-10T22:36:14+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Brent Crashes 7% on Iran Peace Hopes Despite Fresh Saudi Pipeline Attack",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Crashes-7-on-Iran-Peace-Hopes-Despite-Fresh-Saudi-Pipeline-Attack.html",
-      "snippet": "Another round of unconfirmed reports about a potential U.S.-Iran diplomatic breakthrough sent fresh optimism rippling through oil markets on Monday, after Al Arabiya claimed that a Qatari-Pakistani mediation proposal had revived serious negotiations over Tehran's nuclear program. Citing unnamed sour",
-      "published_at": "2026-11-09T20:10:55+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 0,
-      "tags": [
-        "geopolitics",
-        "nuclear",
-        "infrastructure",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 34.5,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 12,
-        "speculative": 0,
-        "raw": 55.3,
-        "recency_multiplier": 0.39
-      },
-      "matched": {
-        "geopolitics": [
-          "attack",
-          "negotiations",
-          "diplomatic"
-        ],
-        "nuclear": [
-          "nuclear"
-        ],
-        "infrastructure": [
-          "pipeline"
-        ],
-        "oil_macro": [
-          "brent"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
-        "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-        "published_at": "2026-11-23T13:30:00+00:00"
       },
       "hidden": true
     }
