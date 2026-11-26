@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T22:00:12.315988+00:00",
+  "generated_at": "2026-11-26T22:05:51.011507+00:00",
   "item_count": 335,
   "alert_counts": {
     "critical": 0,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 721
+        "ms": 689
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 227125
+        "ms": 287164
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 25950
+        "ms": 4592
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 26
+        "ms": 216
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 396
+        "ms": 224
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 98
+        "ms": 70
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 906
+        "ms": 890
       },
       {
         "id": "offshore_energy",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.offshore-energy.biz/feed/",
-        "ms": 25
+        "ms": 119
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 333
+        "ms": 657
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 155
+        "ms": 66
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 421
+        "ms": 415
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 121
+        "ms": 129
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 108
+        "ms": 61
       }
     ]
   },
@@ -154,7 +154,7 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 3219,
+      "duplicate_count": 3226,
       "also_reported_by": [],
       "first_seen_at": "2026-11-19T22:25:36+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/1d07e19c9700010532a54ec0ab4b9da992a3ed05.mp3",
@@ -190,7 +190,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 68.8,
-        "recency_multiplier": 1
+        "recency_multiplier": 0.99
       },
       "matched": {
         "infrastructure": [
@@ -218,6 +218,54 @@
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/df8e7b1862a1b5ea7b3b93c5925e8bb64f3a8958.mp3",
       "spoken": "Norway Pauses Data Center Grid Reservations as Requests Top Peak Demand."
+    },
+    {
+      "title": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
+      "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+      "snippet": "The possible environmental damage is still being assessed by Spain's sea rescue service.",
+      "published_at": "2026-11-26T22:01:22+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 54,
+      "tags": [
+        "lng"
+      ],
+      "alert": "normal",
+      "nature": "unplanned",
+      "why": {
+        "authority": 10.2,
+        "themes": 7.3,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 20,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 47.5,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "lng": [
+          "tanker"
+        ],
+        "geography": [
+          "spain"
+        ],
+        "unplanned": [
+          "damage"
+        ]
+      },
+      "duplicate_count": 1,
+      "also_reported_by": [
+        "OilPrice.com"
+      ],
+      "first_seen_at": "2026-11-26T14:30:00+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/f12611ab34368234c88648e80821c8c156822cdb.mp3",
+      "spoken": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one."
     },
     {
       "title": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
@@ -487,7 +535,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 49.7,
-        "recency_multiplier": 0.76
+        "recency_multiplier": 0.75
       },
       "matched": {
         "supply_disruption": [
@@ -690,52 +738,6 @@
       "spoken": "France awaits verdict six years after police beat Black music producer."
     },
     {
-      "title": "One Crew Member Dies as Diesel Tanker Sinks off Ibiza",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/One-Crew-Member-Dies-as-Diesel-Tanker-Sinks-off-Ibiza.html",
-      "snippet": "One crew member died as a tanker carrying diesel sank off the coast of Ibiza in the early hours on Thursday, local emergency services and authorities said. The Balearic Islands emergency service has activated an emergency plan after the diesel-carrying vessel sank about 25 nautical miles north of Ib",
-      "published_at": "2026-11-26T14:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 42,
-      "tags": [
-        "lng"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 7.3,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 16,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 52,
-        "recency_multiplier": 0.65
-      },
-      "matched": {
-        "lng": [
-          "tanker"
-        ],
-        "unplanned": [
-          "emergency"
-        ],
-        "urgency": [
-          "emergency"
-        ]
-      },
-      "duplicate_count": 1,
-      "also_reported_by": [
-        "BBC World"
-      ],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/c817e6176f80b0d4a83d5b619529ab40c6a7516c.mp3",
-      "spoken": "One Crew Member Dies as Diesel Tanker Sinks off Ibiza."
-    },
-    {
       "title": "Spanish economist to become new European Central Bank chief",
       "url": "https://www.aljazeera.com/news/2026/11/26/spanish-economist-to-become-new-european-central-bank-chief?traffic_source=rss",
       "snippet": "Economist Pablo Hernandez de Cos was announced after a meeting of eurozone leaders.",
@@ -811,7 +813,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 47,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.7
       },
       "matched": {
         "infrastructure": [
@@ -1350,7 +1352,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 59.8,
-        "recency_multiplier": 0.5
+        "recency_multiplier": 0.49
       },
       "matched": {
         "nuclear": [
@@ -1692,7 +1694,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 48.8,
-        "recency_multiplier": 0.58
+        "recency_multiplier": 0.57
       },
       "matched": {
         "lng": [
@@ -1824,7 +1826,7 @@
         "magnitude": 12,
         "speculative": 0,
         "raw": 37.4,
-        "recency_multiplier": 0.71
+        "recency_multiplier": 0.7
       },
       "matched": {
         "oil_macro": [
