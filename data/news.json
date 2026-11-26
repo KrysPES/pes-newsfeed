@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-26T19:58:14.722616+00:00",
-  "item_count": 335,
+  "generated_at": "2026-11-26T20:04:10.740761+00:00",
+  "item_count": 336,
   "alert_counts": {
     "critical": 0,
-    "high": 1,
+    "high": 2,
     "normal": 13
   },
   "superseded_count": 126,
   "sources": {
-    "healthy": 11,
+    "healthy": 12,
     "total": 13,
     "degraded": true,
     "detail": [
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 725
+        "ms": 692
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 121701
+        "ms": 203487
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 22881
+        "ms": 18070
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 355
+        "ms": 180
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 394
+        "ms": 276
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 319
+        "ms": 84
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 837
+        "ms": 838
       },
       {
         "id": "offshore_energy",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.offshore-energy.biz/feed/",
-        "ms": 55
+        "ms": 112
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 555
+        "ms": 601
       },
       {
         "id": "rigzone",
-        "ok": false,
-        "count": 0,
-        "error": "ReadTimeout: HTTPSConnectionPool(host='www.rigzone.com', port=443): Read timed out. (read timeout=20)",
-        "ms": 20069
+        "ok": true,
+        "count": 20,
+        "error": null,
+        "ms": 85
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 402
+        "ms": 345
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 27,
         "error": null,
-        "ms": 130
+        "ms": 145
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 175
+        "ms": 155
       }
     ]
   },
@@ -154,11 +154,70 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 3030,
+      "duplicate_count": 3038,
       "also_reported_by": [],
       "first_seen_at": "2026-11-19T22:25:36+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/1d07e19c9700010532a54ec0ab4b9da992a3ed05.mp3",
       "spoken": "Unplanned, Unavailability of electricity facilities. Production, BE, Amercoeur 1R."
+    },
+    {
+      "title": "Norway Pauses Data Center Grid Reservations as Requests Top Peak Demand",
+      "url": "https://oilprice.com/Energy/Energy-General/Norway-Pauses-Data-Center-Grid-Reservations-as-Requests-Top-Peak-Demand.html",
+      "snippet": "Norway's transmission system operator Statnett paused new grid reservations for data centers on 9 November, the same day the government announced a licensing scheme that will keep out new crypto mining. The grid reservation halt will last until at least August 2027, when a new system is set to come ",
+      "published_at": "2026-11-26T20:00:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 67,
+      "tags": [
+        "infrastructure",
+        "power_system",
+        "supply_disruption",
+        "oil_macro"
+      ],
+      "alert": "high",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 34.1,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 0,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 68.8,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "infrastructure": [
+          "grid",
+          "transmission",
+          "system operator"
+        ],
+        "power_system": [
+          "peak demand"
+        ],
+        "supply_disruption": [
+          "halt"
+        ],
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "norway"
+        ],
+        "urgency": [
+          "announced"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/df8e7b1862a1b5ea7b3b93c5925e8bb64f3a8958.mp3",
+      "spoken": "Norway Pauses Data Center Grid Reservations as Requests Top Peak Demand."
     },
     {
       "title": "Tanker Traffic at Hormuz Ticks Up Despite Intensified Attacks",
@@ -171,7 +230,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 55,
+      "score": 54,
       "tags": [
         "geopolitics",
         "lng"
@@ -221,7 +280,7 @@
       "authority": 14,
       "tier": 2,
       "has_magnitude": false,
-      "score": 51,
+      "score": 50,
       "tags": [
         "supply_disruption",
         "oil_macro"
@@ -304,56 +363,6 @@
       "spoken": "Update. Ukraine drone attack kills five in Russian-occupied Zaporizhia."
     },
     {
-      "title": "Cold Snap Squeezes UK Spare Power Capacity",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Cold-Snap-Squeezes-UK-Spare-Power-Capacity.html",
-      "snippet": "The UK faces a system margin shortfall of more than 2.7 gigawatts (GW) between noon and 8 p.m. local time on Thursday, as the cold snap is reducing the margin of spare capacity for the third day in a row. The UK’s National Energy System Operator (NESO) issued early on Thursday an electricity margin ",
-      "published_at": "2026-11-26T15:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 47,
-      "tags": [
-        "infrastructure",
-        "weather",
-        "oil_macro"
-      ],
-      "alert": "normal",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 22.3,
-        "geo_band": "primary",
-        "geography": 16,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 47,
-        "recency_multiplier": 0.83
-      },
-      "matched": {
-        "infrastructure": [
-          "system operator"
-        ],
-        "weather": [
-          "cold snap"
-        ],
-        "oil_macro": [
-          "spare capacity"
-        ],
-        "geography": [
-          "uk"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/872766fbea97e625a0ddf700b3d6029249ee1c5b.mp3",
-      "spoken": "Cold Snap Squeezes UK Spare Power Capacity."
-    },
-    {
       "title": "One Crew Member Dies as Diesel Tanker Sinks off Ibiza",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/One-Crew-Member-Dies-as-Diesel-Tanker-Sinks-off-Ibiza.html",
       "snippet": "One crew member died as a tanker carrying diesel sank off the coast of Ibiza in the early hours on Thursday, local emergency services and authorities said. The Balearic Islands emergency service has activated an emergency plan after the diesel-carrying vessel sank about 25 nautical miles north of Ib",
@@ -379,7 +388,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 52,
-        "recency_multiplier": 0.77
+        "recency_multiplier": 0.76
       },
       "matched": {
         "lng": [
@@ -445,6 +454,56 @@
       "thread_started_at": "2026-11-24T13:00:00+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/96ef845be4b07adc278083661a5243f940cc90aa.mp3",
       "spoken": "Update. Spanish economist to become new European Central Bank chief."
+    },
+    {
+      "title": "Cold Snap Squeezes UK Spare Power Capacity",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Cold-Snap-Squeezes-UK-Spare-Power-Capacity.html",
+      "snippet": "The UK faces a system margin shortfall of more than 2.7 gigawatts (GW) between noon and 8 p.m. local time on Thursday, as the cold snap is reducing the margin of spare capacity for the third day in a row. The UK’s National Energy System Operator (NESO) issued early on Thursday an electricity margin ",
+      "published_at": "2026-11-26T15:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 46,
+      "tags": [
+        "infrastructure",
+        "weather",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 22.3,
+        "geo_band": "primary",
+        "geography": 16,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 47,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "infrastructure": [
+          "system operator"
+        ],
+        "weather": [
+          "cold snap"
+        ],
+        "oil_macro": [
+          "spare capacity"
+        ],
+        "geography": [
+          "uk"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/872766fbea97e625a0ddf700b3d6029249ee1c5b.mp3",
+      "spoken": "Cold Snap Squeezes UK Spare Power Capacity."
     },
     {
       "title": "Why is the Microsoft outage lasting so long?",
@@ -998,51 +1057,6 @@
       "spoken": "Update. Southeast Asian leaders to meet as Trump visit highlights trade disruption."
     },
     {
-      "title": "Europe Diesel Demand Set to Trail Covid Levels in 2026",
-      "url": "https://www.rigzone.com/news/wire/europe_diesel_demand_set_to_trail_covid_levels_in_2026-26-nov-2026-185178-article/?rss=true",
-      "snippet": "In Italy and France, road diesel consumption saw double-digit percentage drops last month, while Germany's declined by 10 percent year-on-year in the first eight months of 2026.",
-      "published_at": "2026-11-26T15:30:02+00:00",
-      "type": "news",
-      "source": "rigzone",
-      "source_name": "Rigzone",
-      "authority": 15,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 40,
-      "tags": [
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.9,
-        "themes": 4.5,
-        "geo_band": "secondary",
-        "geography": 10,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 12,
-        "speculative": 0,
-        "raw": 37.4,
-        "recency_multiplier": 0.84
-      },
-      "matched": {
-        "oil_macro": [
-          "demand"
-        ],
-        "geography": [
-          "europe",
-          "germany",
-          "france",
-          "italy"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/9417044203167c35c0ca65c98b8118242395fed4.mp3",
-      "spoken": "Europe Diesel Demand Set to Trail Covid Levels in 2026."
-    },
-    {
       "title": "Europe’s hot autumn of protests is a symptom of economic breakdown",
       "url": "https://www.aljazeera.com/opinions/2026/11/23/europes-hot-autumn-of-protests-is-a-symptom-of-economic-breakdown-2?traffic_source=rss",
       "snippet": "European governments beholden to corporate interests no longer have the wellbeing of their nations as a top priority.",
@@ -1131,6 +1145,51 @@
       "spoken": "Home of Bangladesh’s former leader Muhammad Yunus set on fire."
     },
     {
+      "title": "Europe Diesel Demand Set to Trail Covid Levels in 2026",
+      "url": "https://www.rigzone.com/news/wire/europe_diesel_demand_set_to_trail_covid_levels_in_2026-26-nov-2026-185178-article/?rss=true",
+      "snippet": "In Italy and France, road diesel consumption saw double-digit percentage drops last month, while Germany's declined by 10 percent year-on-year in the first eight months of 2026.",
+      "published_at": "2026-11-26T15:30:02+00:00",
+      "type": "news",
+      "source": "rigzone",
+      "source_name": "Rigzone",
+      "authority": 15,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 39,
+      "tags": [
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.9,
+        "themes": 4.5,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 37.4,
+        "recency_multiplier": 0.82
+      },
+      "matched": {
+        "oil_macro": [
+          "demand"
+        ],
+        "geography": [
+          "europe",
+          "germany",
+          "france",
+          "italy"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/9417044203167c35c0ca65c98b8118242395fed4.mp3",
+      "spoken": "Europe Diesel Demand Set to Trail Covid Levels in 2026."
+    },
+    {
       "title": "Jerusalem Daily: Israeli settlers set fire to a Palestinian vehicle",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/jerusalem-daily-israeli-settlers-set-fire-to-a-palestinian-vehicle?traffic_source=rss",
       "snippet": "Al Jazeera’s Ava Warriner has the latest in Jerusalem Daily.",
@@ -1156,7 +1215,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 37.9,
-        "recency_multiplier": 0.82
+        "recency_multiplier": 0.81
       },
       "matched": {
         "supply_disruption": [
@@ -3691,7 +3750,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 22.2,
-        "recency_multiplier": 1
+        "recency_multiplier": 0.99
       },
       "matched": {
         "infrastructure": [
@@ -9155,7 +9214,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 79.5,
-        "recency_multiplier": 0.66
+        "recency_multiplier": 0.65
       },
       "matched": {
         "lng": [
@@ -9199,7 +9258,7 @@
       "authority": 12,
       "tier": 2,
       "has_magnitude": false,
-      "score": 9,
+      "score": 3,
       "tags": [
         "geopolitics",
         "oil_macro"
