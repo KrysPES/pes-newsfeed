@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-27T15:15:17.947659+00:00",
-  "item_count": 337,
+  "generated_at": "2026-11-27T15:19:45.051063+00:00",
+  "item_count": 338,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 5
+    "normal": 6
   },
-  "superseded_count": 132,
+  "superseded_count": 133,
   "sources": {
     "healthy": 12,
     "total": 13,
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 965
+        "ms": 1018
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 226289
+        "ms": 201621
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 11315
+        "ms": 2882
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 224
+        "ms": 65
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 182
+        "ms": 359
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 217
+        "ms": 191
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
-        "count": 48,
+        "count": 49,
         "error": null,
-        "ms": 1083
+        "ms": 1061
       },
       {
         "id": "offshore_energy",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.offshore-energy.biz/feed/",
-        "ms": 136
+        "ms": 84
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 772
+        "ms": 728
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 307
+        "ms": 270
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 445
+        "ms": 442
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 28,
         "error": null,
-        "ms": 99
+        "ms": 163
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 130
+        "ms": 122
       }
     ]
   },
@@ -153,6 +153,50 @@
       "spoken": "Unplanned, Unavailability of electricity facilities. Production, IE, Poolbeg, GU_400324, PBA."
     },
     {
+      "title": "Decommissioning projects in Germany and Switzerland near completion",
+      "url": "https://www.world-nuclear-news.org/articles/decommissioning-projects-in-germany-and-switzerland-near-completion",
+      "snippet": "The dismantling of the steal sphere of the containment vessel has begun at the decommissioned Stade nuclear power plant in Germany. Meanwhile, the demolition of the remaining concrete structure of Switzerland's Saphir research reactor is set to start.",
+      "published_at": "2026-11-27T14:09:46+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 52,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 21.8,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 45.7,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactor",
+          "decommissioning"
+        ],
+        "geography": [
+          "germany"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/7e18baf454e057494c75e4c9749ca3c60f090751.mp3",
+      "spoken": "Decommissioning projects in Germany and Switzerland near completion."
+    },
+    {
       "title": "Bacton terminal site redevelopment re-opener consultation",
       "url": "https://www.ofgem.gov.uk/consultation/bacton-terminal-site-redevelopment-re-opener-consultation",
       "snippet": "Seeking views on our minded-to position on National Gas Transmission’s proposed redevelopment of Bacton Gas Terminal.",
@@ -180,7 +224,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 49.2,
-        "recency_multiplier": 0.91
+        "recency_multiplier": 0.9
       },
       "matched": {
         "infrastructure": [
@@ -684,7 +728,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 36.4,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.84
       },
       "matched": {
         "lng": [
@@ -932,54 +976,6 @@
       "spoken": "E U governments approve trade deal with Indonesia to offset Trump tariffs."
     },
     {
-      "title": "Iraq Delays Up to 30 Million Barrels of Crude Oil Shipments",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Delays-Up-to-30-Million-Barrels-of-Crude-Oil-Shipments.html",
-      "snippet": "Iraq’s SOMO has delayed loadings of crude oil cargoes to the tune of between 20 and 30 million barrels, according to a Bloomberg report citing unnamed sources. The reason for the delays has not been established yet, but the cargoes were supposed to be loaded this month; now, only some of them will b",
-      "published_at": "2026-11-27T08:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 38,
-      "tags": [
-        "oil_macro",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 8.8,
-        "themes": 13.3,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 42.1,
-        "recency_multiplier": 0.69
-      },
-      "matched": {
-        "oil_macro": [
-          "crude",
-          "barrels"
-        ],
-        "lng": [
-          "cargoes"
-        ],
-        "unplanned": [
-          "delayed"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 3,
-      "thread_started_at": "2026-11-23T09:45:00+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/a100c6ae90a30deccc80a7285937f8474bf80af8.mp3",
-      "spoken": "Update. Iraq Delays Up to 30 Million Barrels of Crude Oil Shipments."
-    },
-    {
       "title": "Jerusalem Daily: Israeli settlers set fire to a Palestinian vehicle",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/jerusalem-daily-israeli-settlers-set-fire-to-a-palestinian-vehicle?traffic_source=rss",
       "snippet": "Al Jazeera’s Ava Warriner has the latest in Jerusalem Daily.",
@@ -1102,6 +1098,54 @@
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/18cbd11c783fd99ad258ba63087fce8978333adc.mp3",
       "spoken": "FAA grounds all fights across the US over ‘telecommunication outage’."
+    },
+    {
+      "title": "Iraq Delays Up to 30 Million Barrels of Crude Oil Shipments",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Delays-Up-to-30-Million-Barrels-of-Crude-Oil-Shipments.html",
+      "snippet": "Iraq’s SOMO has delayed loadings of crude oil cargoes to the tune of between 20 and 30 million barrels, according to a Bloomberg report citing unnamed sources. The reason for the delays has not been established yet, but the cargoes were supposed to be loaded this month; now, only some of them will b",
+      "published_at": "2026-11-27T08:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 37,
+      "tags": [
+        "oil_macro",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 8.8,
+        "themes": 13.3,
+        "geography": 0,
+        "event_nature": 20,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 42.1,
+        "recency_multiplier": 0.69
+      },
+      "matched": {
+        "oil_macro": [
+          "crude",
+          "barrels"
+        ],
+        "lng": [
+          "cargoes"
+        ],
+        "unplanned": [
+          "delayed"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 3,
+      "thread_started_at": "2026-11-23T09:45:00+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/a100c6ae90a30deccc80a7285937f8474bf80af8.mp3",
+      "spoken": "Update. Iraq Delays Up to 30 Million Barrels of Crude Oil Shipments."
     },
     {
       "title": "Tokyo Gas to supply rocket fuel from Hitachi LNG terminal",
@@ -1549,53 +1593,6 @@
       "also_reported_by": []
     },
     {
-      "title": "MISC reports lower LNG earnings in Q3",
-      "url": "https://lngprime.com/asia/misc-reports-lower-lng-earnings-in-q3/200648/",
-      "snippet": "Malaysia’s LNG shipping player MISC, a unit of Petronas, said its LNG business posted lower operating profit and revenue in the third quarter of this year. MISC also expects spot LNG carrier rates to remain under pressure in the near term amid ongoing Middle East LNG supply disruptions.",
-      "published_at": "2026-11-27T09:26:33+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "lng",
-        "oil_macro"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 17.2,
-        "geo_band": "tertiary",
-        "geography": 5,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 35.4,
-        "recency_multiplier": 0.75
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "carrier"
-        ],
-        "oil_macro": [
-          "rates"
-        ],
-        "geography": [
-          "middle east"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/aaee72373f050de18d7f08853c494cfe18c86898.mp3",
-      "spoken": "MISC reports lower L N G earnings in Q3."
-    },
-    {
       "title": "Enbridge Eyes $1 Billion Pipeline Deal With Indigenous Communities",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Enbridge-Eyes-1-Billion-Pipeline-Deal-With-Indigenous-Communities.html",
       "snippet": "Canada’s Enbridge is reportedly in talks with a group of Indigenous communities for the sale of a stake in its Line 3 pipeline network, according to the Globe and Mail, which cited unnamed sources. The sale could fetch over $1 billion (C$1.5 billion), the publication also said, adding that this woul",
@@ -1839,6 +1836,53 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "MISC reports lower LNG earnings in Q3",
+      "url": "https://lngprime.com/asia/misc-reports-lower-lng-earnings-in-q3/200648/",
+      "snippet": "Malaysia’s LNG shipping player MISC, a unit of Petronas, said its LNG business posted lower operating profit and revenue in the third quarter of this year. MISC also expects spot LNG carrier rates to remain under pressure in the near term amid ongoing Middle East LNG supply disruptions.",
+      "published_at": "2026-11-27T09:26:33+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 17.2,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 35.4,
+        "recency_multiplier": 0.74
+      },
+      "matched": {
+        "lng": [
+          "lng",
+          "carrier"
+        ],
+        "oil_macro": [
+          "rates"
+        ],
+        "geography": [
+          "middle east"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/aaee72373f050de18d7f08853c494cfe18c86898.mp3",
+      "spoken": "MISC reports lower L N G earnings in Q3."
     },
     {
       "title": "Elenger receives another US LNG shipment via Finnish FSRU",
@@ -2515,54 +2559,6 @@
       "spoken": "Update. Knutsen takes delivery of tenth QatarEnergy L N G carrier."
     },
     {
-      "title": "Australia Passes Landmark Law to Reserve Gas for Domestic Consumers",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Australia-Passes-Landmark-Law-to-Reserve-Gas-for-Domestic-Consumers.html",
-      "snippet": "The Australian parliament today passed a law that would mandate LNG exporters to set aside gas equivalent to up to 20% of their annual export volumes for the domestic market, beginning in 2028. The scheme, a brainchild of the Labor government, aims to make sure Australia does not over-export its gas",
-      "published_at": "2026-11-27T07:30:00+00:00",
-      "type": "news",
-      "source": "oilprice",
-      "source_name": "OilPrice.com",
-      "authority": 12,
-      "tier": 2,
-      "has_magnitude": true,
-      "score": 32,
-      "tags": [
-        "lng",
-        "regulation"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 8.8,
-        "themes": 11,
-        "geo_band": "tertiary",
-        "geography": 5,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 12,
-        "speculative": 0,
-        "raw": 36.7,
-        "recency_multiplier": 0.64
-      },
-      "matched": {
-        "lng": [
-          "lng"
-        ],
-        "regulation": [
-          "mandate"
-        ],
-        "geography": [
-          "australia"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-11-23T11:59:03+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/b264e7ce96383132ed64fbefec1dd0abff1089c8.mp3",
-      "spoken": "Update. Australia Passes Landmark Law to Reserve Gas for Domestic Consumers."
-    },
-    {
       "title": "Egypt detains driver over Cairo fuel tanker fire that killed 31",
       "url": "https://www.aljazeera.com/news/2026/11/26/egypt-detains-driver-over-cairo-fuel-tanker-fire-that-killed-31?traffic_source=rss",
       "snippet": "Prosecutors order drug tests for the 21-year-old suspect, who says he was overtaking when the crash happened.",
@@ -3025,6 +3021,54 @@
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/2e3019a6a5b0cbe711da3aefb4278354f85bc171.mp3",
       "spoken": "Explosion near Syria’s capital kills father and child."
+    },
+    {
+      "title": "Australia Passes Landmark Law to Reserve Gas for Domestic Consumers",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Australia-Passes-Landmark-Law-to-Reserve-Gas-for-Domestic-Consumers.html",
+      "snippet": "The Australian parliament today passed a law that would mandate LNG exporters to set aside gas equivalent to up to 20% of their annual export volumes for the domestic market, beginning in 2028. The scheme, a brainchild of the Labor government, aims to make sure Australia does not over-export its gas",
+      "published_at": "2026-11-27T07:30:00+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": true,
+      "score": 31,
+      "tags": [
+        "lng",
+        "regulation"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 11,
+        "geo_band": "tertiary",
+        "geography": 5,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 12,
+        "speculative": 0,
+        "raw": 36.7,
+        "recency_multiplier": 0.64
+      },
+      "matched": {
+        "lng": [
+          "lng"
+        ],
+        "regulation": [
+          "mandate"
+        ],
+        "geography": [
+          "australia"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-11-23T11:59:03+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/b264e7ce96383132ed64fbefec1dd0abff1089c8.mp3",
+      "spoken": "Update. Australia Passes Landmark Law to Reserve Gas for Domestic Consumers."
     },
     {
       "title": "Hanwha Ocean kicks off work on GasLog LNG carriers",
@@ -8318,7 +8362,9 @@
       "duplicate_count": 0,
       "also_reported_by": [],
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/5209689b9da57fd712f2504de01f027511098211.mp3",
-      "spoken": "Fourth floating L N G terminal put into operation mode to fuel Germany’s energy security."
+      "spoken": "Fourth floating L N G terminal put into operation mode to fuel Germany’s energy security.",
+      "update_count": 2,
+      "thread_started_at": "2026-11-16T07:00:22+00:00"
     },
     {
       "title": "America’s Biggest Grid Operator Races to Keep Up With Data Center Boom",
@@ -8625,56 +8671,6 @@
       "thread_started_at": "2026-11-16T11:10:07+00:00"
     },
     {
-      "title": "Germany’s DET launches Stade FSRU ops",
-      "url": "https://lngprime.com/europe/germanys-det-launches-stade-fsru-ops/200056/",
-      "snippet": "Germany’s LNG import terminal operator DET has officially launched operations at its FSRU-based LNG import facility in Stade.",
-      "published_at": "2026-11-16T09:02:40+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "infrastructure",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 27.9,
-        "geo_band": "secondary",
-        "geography": 10,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 51.1,
-        "recency_multiplier": 0.43
-      },
-      "matched": {
-        "infrastructure": [
-          "terminal",
-          "import terminal"
-        ],
-        "lng": [
-          "lng",
-          "fsru"
-        ],
-        "geography": [
-          "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 1,
-      "thread_started_at": "2026-11-16T07:00:22+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/ee10c3c091c3224d4730397437d495519b2de671.mp3",
-      "spoken": "Update. Germany’s DET launches Stade FSRU ops."
-    },
-    {
       "title": "HAM delivers its first Mexican LNG station",
       "url": "https://lngprime.com/americas/ham-delivers-its-first-mexican-lng-station/200074/",
       "snippet": "Spain’s HAM Group has delivered its first liquefied natural gas (LNG) and compressed natural gas (CNG) refueling station in Mexico to ERG Multi Energeticos.",
@@ -8965,6 +8961,63 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Germany’s DET launches Stade FSRU ops",
+      "url": "https://lngprime.com/europe/germanys-det-launches-stade-fsru-ops/200056/",
+      "snippet": "Germany’s LNG import terminal operator DET has officially launched operations at its FSRU-based LNG import facility in Stade.",
+      "published_at": "2026-11-16T09:02:40+00:00",
+      "type": "news",
+      "source": "lng_prime",
+      "source_name": "LNG Prime",
+      "authority": 18,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 9,
+      "tags": [
+        "infrastructure",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.1,
+        "themes": 27.9,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 51.1,
+        "recency_multiplier": 0.43
+      },
+      "matched": {
+        "infrastructure": [
+          "terminal",
+          "import terminal"
+        ],
+        "lng": [
+          "lng",
+          "fsru"
+        ],
+        "geography": [
+          "germany"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 1,
+      "thread_started_at": "2026-11-16T07:00:22+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/ee10c3c091c3224d4730397437d495519b2de671.mp3",
+      "spoken": "Update. Germany’s DET launches Stade FSRU ops.",
+      "superseded": true,
+      "superseded_by": {
+        "url": "https://www.offshore-energy.biz/2026/11/17/fourth-floating-lng-terminal-put-into-operation-mode-to-fuel-germanys-energy-security",
+        "title": "Fourth floating LNG terminal put into operation mode to fuel Germany’s energy security",
+        "published_at": "2026-11-17T10:41:15+00:00"
+      },
+      "hidden": true
     },
     {
       "title": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
@@ -15182,9 +15235,9 @@
       "also_reported_by": [],
       "superseded": true,
       "superseded_by": {
-        "url": "https://lngprime.com/europe/germanys-det-launches-stade-fsru-ops/200056/",
-        "title": "Germany’s DET launches Stade FSRU ops",
-        "published_at": "2026-11-16T09:02:40+00:00"
+        "url": "https://www.offshore-energy.biz/2026/11/17/fourth-floating-lng-terminal-put-into-operation-mode-to-fuel-germanys-energy-security",
+        "title": "Fourth floating LNG terminal put into operation mode to fuel Germany’s energy security",
+        "published_at": "2026-11-17T10:41:15+00:00"
       },
       "hidden": true,
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/126165e60d056cea3a6bfe2d492cf9a7ec2d1a93.mp3",
