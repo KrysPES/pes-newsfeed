@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-27T23:17:32.646609+00:00",
+  "generated_at": "2026-11-27T23:24:17.554661+00:00",
   "item_count": 335,
   "alert_counts": {
     "critical": 0,
     "high": 0,
-    "normal": 5
+    "normal": 4
   },
   "superseded_count": 129,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 830
+        "ms": 820
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 235859
+        "ms": 280248
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 2,
         "error": null,
-        "ms": 3470
+        "ms": 63117
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 126
+        "ms": 295
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 281
+        "ms": 202
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 33,
         "error": null,
-        "ms": 204
+        "ms": 217
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 870
+        "ms": 922
       },
       {
         "id": "offshore_energy",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.offshore-energy.biz/feed/",
-        "ms": 135
+        "ms": 134
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 352
+        "ms": 665
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 133
+        "ms": 103
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 258
+        "ms": 389
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 116
+        "ms": 272
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 122
+        "ms": 139
       }
     ]
   },
@@ -117,7 +117,7 @@
       "authority": 30,
       "tier": 1,
       "has_magnitude": true,
-      "score": 60,
+      "score": 59,
       "tags": [
         "supply_disruption"
       ],
@@ -132,7 +132,7 @@
         "magnitude": 12,
         "speculative": 0,
         "raw": 86.7,
-        "recency_multiplier": 0.65
+        "recency_multiplier": 0.64
       },
       "matched": {
         "supply_disruption": [
@@ -297,13 +297,13 @@
       "authority": 19,
       "tier": 2,
       "has_magnitude": false,
-      "score": 42,
+      "score": 41,
       "tags": [
         "geopolitics",
         "supply_disruption",
         "nuclear"
       ],
-      "alert": "normal",
+      "alert": "low",
       "nature": "unplanned",
       "why": {
         "authority": 13.9,
@@ -1419,50 +1419,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Decommissioning projects in Germany and Switzerland near completion",
-      "url": "https://www.world-nuclear-news.org/articles/decommissioning-projects-in-germany-and-switzerland-near-completion",
-      "snippet": "The dismantling of the steel sphere of the containment vessel has begun at the decommissioned Stade nuclear power plant in Germany. Meanwhile, the demolition of the remaining concrete structure of Switzerland's Saphir research reactor is set to start.",
-      "published_at": "2026-11-27T14:09:46+00:00",
-      "type": "news",
-      "source": "world_nuclear_news",
-      "source_name": "World Nuclear News",
-      "authority": 19,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "nuclear"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.9,
-        "themes": 21.8,
-        "geo_band": "secondary",
-        "geography": 10,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 45.7,
-        "recency_multiplier": 0.58
-      },
-      "matched": {
-        "nuclear": [
-          "nuclear",
-          "reactor",
-          "decommissioning"
-        ],
-        "geography": [
-          "germany"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/7e18baf454e057494c75e4c9749ca3c60f090751.mp3",
-      "spoken": "Decommissioning projects in Germany and Switzerland near completion."
-    },
-    {
       "title": "Enbridge Eyes $1 Billion Pipeline Deal With Indigenous Communities",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Enbridge-Eyes-1-Billion-Pipeline-Deal-With-Indigenous-Communities.html",
       "snippet": "Canada’s Enbridge is reportedly in talks with a group of Indigenous communities for the sale of a stake in its Line 3 pipeline network, according to the Globe and Mail, which cited unnamed sources. The sale could fetch over $1 billion (C$1.5 billion), the publication also said, adding that this woul",
@@ -1665,6 +1621,50 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Decommissioning projects in Germany and Switzerland near completion",
+      "url": "https://www.world-nuclear-news.org/articles/decommissioning-projects-in-germany-and-switzerland-near-completion",
+      "snippet": "The dismantling of the steel sphere of the containment vessel has begun at the decommissioned Stade nuclear power plant in Germany. Meanwhile, the demolition of the remaining concrete structure of Switzerland's Saphir research reactor is set to start.",
+      "published_at": "2026-11-27T14:09:46+00:00",
+      "type": "news",
+      "source": "world_nuclear_news",
+      "source_name": "World Nuclear News",
+      "authority": 19,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "nuclear"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 13.9,
+        "themes": 21.8,
+        "geo_band": "secondary",
+        "geography": 10,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 45.7,
+        "recency_multiplier": 0.57
+      },
+      "matched": {
+        "nuclear": [
+          "nuclear",
+          "reactor",
+          "decommissioning"
+        ],
+        "geography": [
+          "germany"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/7e18baf454e057494c75e4c9749ca3c60f090751.mp3",
+      "spoken": "Decommissioning projects in Germany and Switzerland near completion."
     },
     {
       "title": "Stockpiling Will Support Oil Prices in 2027, Energy Aspects Says",
@@ -2497,7 +2497,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 49.2,
-        "recency_multiplier": 0.49
+        "recency_multiplier": 0.48
       },
       "matched": {
         "infrastructure": [
