@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-27T05:15:15.352356+00:00",
+  "generated_at": "2026-11-27T05:21:23.922119+00:00",
   "item_count": 337,
   "alert_counts": {
     "critical": 0,
     "high": 1,
-    "normal": 7
+    "normal": 8
   },
   "superseded_count": 130,
   "sources": {
@@ -17,91 +17,91 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 594
+        "ms": 633
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 127727
+        "ms": 141809
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 19083
+        "ms": 73804
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 252
+        "ms": 99
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 42
+        "ms": 317
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 32,
         "error": null,
-        "ms": 256
+        "ms": 65
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 50,
         "error": null,
-        "ms": 777
+        "ms": 837
       },
       {
         "id": "offshore_energy",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.offshore-energy.biz/feed/",
-        "ms": 26
+        "ms": 60
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 326
+        "ms": 365
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 20
+        "ms": 22
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 322
+        "ms": 166
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 31,
         "error": null,
-        "ms": 24
+        "ms": 25
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 26
+        "ms": 30
       }
     ]
   },
@@ -154,11 +154,63 @@
           "unplanned"
         ]
       },
-      "duplicate_count": 3594,
+      "duplicate_count": 3599,
       "also_reported_by": [],
       "first_seen_at": "2026-11-19T22:25:36+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/1d07e19c9700010532a54ec0ab4b9da992a3ed05.mp3",
       "spoken": "Unplanned, Unavailability of electricity facilities. Production, BE, Amercoeur 1R."
+    },
+    {
+      "title": "Oil Prices Climb as Middle East Supply Risks Overshadow Glut Fears",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-as-Middle-East-Supply-Risks-Overshadow-Glut-Fears.html",
+      "snippet": "Crude oil prices were set to book a weekly gain after a string of losses, as increasingly frequent reports about tanker attacks in the Strait of Hormuz undermined expectations of a glut. Data showing lower than pre-war levels of energy commodity exports from the Middle East also contributed, as did ",
+      "published_at": "2026-11-27T05:18:44+00:00",
+      "type": "news",
+      "source": "oilprice",
+      "source_name": "OilPrice.com",
+      "authority": 12,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 60,
+      "tags": [
+        "geopolitics",
+        "lng",
+        "oil_macro"
+      ],
+      "alert": "normal",
+      "nature": "",
+      "why": {
+        "authority": 8.8,
+        "themes": 31.5,
+        "geo_band": "chokepoint",
+        "geography": 16,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 56.3,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "geopolitics": [
+          "war",
+          "strait of hormuz"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "oil_macro": [
+          "crude"
+        ],
+        "geography": [
+          "strait of hormuz",
+          "hormuz"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/2a53ef1e69a61454eaaceb9e5b158dbfcd1c51d8.mp3",
+      "spoken": "Oil Prices Climb as Middle East Supply Risks Overshadow Glut Fears."
     },
     {
       "title": "Standard Chartered: Oil Needs a New Shock to Fall Further",
@@ -187,7 +239,7 @@
         "magnitude": 12,
         "speculative": 0,
         "raw": 50.2,
-        "recency_multiplier": 0.84
+        "recency_multiplier": 0.83
       },
       "matched": {
         "oil_macro": [
@@ -694,7 +746,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 47.5,
-        "recency_multiplier": 0.67
+        "recency_multiplier": 0.66
       },
       "matched": {
         "lng": [
@@ -1450,53 +1502,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Egypt detains driver over Cairo fuel tanker fire that killed 31",
-      "url": "https://www.aljazeera.com/news/2026/11/26/egypt-detains-driver-over-cairo-fuel-tanker-fire-that-killed-31?traffic_source=rss",
-      "snippet": "Prosecutors order drug tests for the 21-year-old suspect, who says he was overtaking when the crash happened.",
-      "published_at": "2026-11-26T21:08:44+00:00",
-      "type": "news",
-      "source": "aljazeera",
-      "source_name": "Al Jazeera",
-      "authority": 13,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 35,
-      "tags": [
-        "supply_disruption",
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "unplanned",
-      "why": {
-        "authority": 9.5,
-        "themes": 12.8,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 42.3,
-        "recency_multiplier": 0.62
-      },
-      "matched": {
-        "supply_disruption": [
-          "fire"
-        ],
-        "lng": [
-          "tanker"
-        ],
-        "unplanned": [
-          "fire"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "update_count": 6,
-      "thread_started_at": "2026-11-25T18:55:23+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/a310de02a1917f42b5ae873a0bdfba216b14e6f0.mp3",
-      "spoken": "Update. Egypt detains driver over Cairo fuel tanker fire that killed 31."
-    },
-    {
       "title": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
       "url": "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations?traffic_source=rss",
       "snippet": "The attack killed a Nepali national, injured several people and sparked a fire, Saudi Energy Ministry says.",
@@ -1524,7 +1529,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 45.1,
-        "recency_multiplier": 0.6
+        "recency_multiplier": 0.59
       },
       "matched": {
         "geopolitics": [
@@ -1750,6 +1755,53 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
+    },
+    {
+      "title": "Egypt detains driver over Cairo fuel tanker fire that killed 31",
+      "url": "https://www.aljazeera.com/news/2026/11/26/egypt-detains-driver-over-cairo-fuel-tanker-fire-that-killed-31?traffic_source=rss",
+      "snippet": "Prosecutors order drug tests for the 21-year-old suspect, who says he was overtaking when the crash happened.",
+      "published_at": "2026-11-26T21:08:44+00:00",
+      "type": "news",
+      "source": "aljazeera",
+      "source_name": "Al Jazeera",
+      "authority": 13,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 34,
+      "tags": [
+        "supply_disruption",
+        "lng"
+      ],
+      "alert": "low",
+      "nature": "unplanned",
+      "why": {
+        "authority": 9.5,
+        "themes": 12.8,
+        "geography": 0,
+        "event_nature": 20,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 42.3,
+        "recency_multiplier": 0.62
+      },
+      "matched": {
+        "supply_disruption": [
+          "fire"
+        ],
+        "lng": [
+          "tanker"
+        ],
+        "unplanned": [
+          "fire"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "update_count": 6,
+      "thread_started_at": "2026-11-25T18:55:23+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/a310de02a1917f42b5ae873a0bdfba216b14e6f0.mp3",
+      "spoken": "Update. Egypt detains driver over Cairo fuel tanker fire that killed 31."
     },
     {
       "title": "TotalEnergies to Acquire Stake in US Gas Assets from Continental",
@@ -2413,7 +2465,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 54.7,
-        "recency_multiplier": 0.44
+        "recency_multiplier": 0.43
       },
       "matched": {
         "geopolitics": [
@@ -3327,50 +3379,6 @@
       "also_reported_by": []
     },
     {
-      "title": "Sasol, ENH ink LNG terminal MoU",
-      "url": "https://lngprime.com/africa/sasol-enh-ink-lng-terminal-mou/199943/",
-      "snippet": "South Africa’s petrochemicals firm Sasol and Mozambique's state-owned oil and gas company ENH signed a memorandum of understanding to assess the feasibility of an FSRU-based liquefied natural gas (LNG) terminal in southern Mozambique.",
-      "published_at": "2026-11-13T05:16:00+00:00",
-      "type": "news",
-      "source": "lng_prime",
-      "source_name": "LNG Prime",
-      "authority": 18,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 31,
-      "tags": [
-        "lng",
-        "infrastructure"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 13.1,
-        "themes": 30,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 43.2,
-        "recency_multiplier": 0.54
-      },
-      "matched": {
-        "lng": [
-          "lng",
-          "fsru",
-          "lng terminal"
-        ],
-        "infrastructure": [
-          "terminal"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/5870e2abba67e4fd61a5453b6d51e652dc2a1e89.mp3",
-      "spoken": "Sasol, ENH ink L N G terminal MoU."
-    },
-    {
       "title": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "snippet": "As of 4:00 a.m. central time on October 9, the National Oceanic and Atmospheric Administration expects Hurricane Isaias to make landfall on the Gulf Coast late Friday or early Saturday, creating the potential for significant disruptions to energy infrastructure. Hurricane Isaias is the first hurrica",
@@ -3414,6 +3422,45 @@
       "also_reported_by": []
     },
     {
+      "title": "Major Thanksgiving storm brings flooding, flight delays across US",
+      "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Almost one million customers in the US had no power on Thursday evening as storms descended on both US coasts, bringing wind gusts, heavy rain and flooding.",
+      "published_at": "2026-11-27T05:15:26+00:00",
+      "type": "news",
+      "source": "bbc_world",
+      "source_name": "BBC World",
+      "authority": 14,
+      "tier": 2,
+      "has_magnitude": false,
+      "score": 30,
+      "tags": [
+        "weather"
+      ],
+      "alert": "low",
+      "nature": "",
+      "why": {
+        "authority": 10.2,
+        "themes": 12.3,
+        "geography": 0,
+        "event_nature": 0,
+        "urgency": 0,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 22.5,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "weather": [
+          "storm",
+          "flooding"
+        ]
+      },
+      "duplicate_count": 0,
+      "also_reported_by": [],
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/94d2e60bc99c64ceef78b129e1aa606565b304ba.mp3",
+      "spoken": "FedEx plane overshoots Miami runway, with flights briefly suspended at airport."
+    },
+    {
       "title": "Global news agency AFP reports cyberattack, shuts down content platform",
       "url": "https://www.aljazeera.com/news/2026/11/27/global-news-agency-afp-reports-cyberattack-shuts-down-content-platform?traffic_source=rss",
       "snippet": "France&#039;s cybersecurity chief urges collective action to combat unprecedented threat levels in the nation.",
@@ -3440,7 +3487,7 @@
         "magnitude": 0,
         "speculative": 0,
         "raw": 26.2,
-        "recency_multiplier": 0.85
+        "recency_multiplier": 0.84
       },
       "matched": {
         "infrastructure": [
@@ -3452,45 +3499,6 @@
       },
       "duplicate_count": 0,
       "also_reported_by": []
-    },
-    {
-      "title": "Major Thanksgiving storm brings flooding, flight delays across US",
-      "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Almost one million customers in the US had no power on Thursday evening as storms descended on both US coasts, bringing wind gusts, heavy rain and flooding.",
-      "published_at": "2026-11-27T00:52:11+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 30,
-      "tags": [
-        "weather"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 12.3,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 22.5,
-        "recency_multiplier": 0.96
-      },
-      "matched": {
-        "weather": [
-          "storm",
-          "flooding"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/94d2e60bc99c64ceef78b129e1aa606565b304ba.mp3",
-      "spoken": "FedEx plane overshoots Miami runway, with flights briefly suspended at airport."
     },
     {
       "title": "Inside Ukraine’s power crisis amid its war with Russia",
