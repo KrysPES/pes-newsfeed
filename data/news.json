@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-28T02:37:47.272889+00:00",
+  "generated_at": "2026-11-28T02:42:37.474475+00:00",
   "item_count": 334,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 5
+    "high": 1,
+    "normal": 4
   },
   "superseded_count": 130,
   "sources": {
@@ -17,95 +17,141 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 1027
+        "ms": 1731
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 119539
+        "ms": 114110
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 22856
+        "ms": 18472
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 4,
         "error": null,
-        "ms": 210
+        "ms": 328
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 207
+        "ms": 82
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 33,
         "error": null,
-        "ms": 345
+        "ms": 346
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 1575
+        "ms": 1539
       },
       {
         "id": "offshore_energy",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.offshore-energy.biz/feed/",
-        "ms": 77
+        "ms": 45
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 793
+        "ms": 408
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 258
+        "ms": 308
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 338
+        "ms": 365
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 22,
         "error": null,
-        "ms": 275
+        "ms": 279
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 218
+        "ms": 245
       }
     ]
   },
   "items": [
+    {
+      "title": "Unplanned, Unavailability of electricity facilities: Production, LV, CHP-1 - Gas Turbine 1",
+      "url": "https://umm.nordpoolgroup.com/#/messages/a6f5748b-c0da-4272-b6b8-c32aa5a99c4f/1",
+      "snippet": "Published: 28.11.2026 03:36:47 Publisher: AS Latvenergo Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Unplanned failure. Production Units Unit Name Unit EIC Area Installed Capacity Available Capacity Unavailable Capacity Fuel Type Power Feed-In ",
+      "published_at": "2026-11-28T02:36:47+00:00",
+      "type": "outage",
+      "source": "nordpool_umm",
+      "source_name": "Nord Pool REMIT UMM",
+      "authority": 30,
+      "tier": 1,
+      "has_magnitude": false,
+      "score": 66,
+      "tags": [
+        "supply_disruption"
+      ],
+      "alert": "high",
+      "nature": "unplanned",
+      "why": {
+        "authority": 21.9,
+        "themes": 8.4,
+        "geography": 0,
+        "event_nature": 20,
+        "urgency": 16,
+        "magnitude": 0,
+        "speculative": 0,
+        "raw": 66.3,
+        "recency_multiplier": 1
+      },
+      "matched": {
+        "supply_disruption": [
+          "unplanned"
+        ],
+        "unplanned": [
+          "unplanned",
+          "failure"
+        ],
+        "urgency": [
+          "unplanned"
+        ]
+      },
+      "duplicate_count": 5,
+      "also_reported_by": [],
+      "first_seen_at": "2026-11-27T12:06:49+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/ad600a762ecb67d69cc2901b87a4042d5f09124c.mp3",
+      "spoken": "Unplanned, Unavailability of electricity facilities. Production, LV, CHP-1, Gas Turbine 1."
+    },
     {
       "title": "Iran war live: Italy says drone in deadly Kuwait attack was made in Iran",
       "url": "https://www.aljazeera.com/news/liveblog/2026/11/28/iran-war-live-italy-says-drone-in-deadly-kuwait-attack-was-made-in-iran?traffic_source=rss",
@@ -151,54 +197,6 @@
       "thread_started_at": "2026-11-14T20:00:00+00:00",
       "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/70414c38be0f4f4ca2b355a66073e1e3243853a4.mp3",
       "spoken": "Update. Iran war live. Italy says drone in deadly Kuwait attack was made in Iran."
-    },
-    {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Olkiluoto 3 - B3",
-      "url": "https://umm.nordpoolgroup.com/#/messages/916a06ae-c9c2-4f06-be06-79d5105c9694/3",
-      "snippet": "Published: 27.11.2026 16:40:17 Publisher: PD Power Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: OL3 net power output is limited to approximately 440 MW due to fault investigation until 30 November 2026 at 01:00.&#xa;Short test is performed a",
-      "published_at": "2026-11-27T15:40:17+00:00",
-      "type": "outage",
-      "source": "nordpool_umm",
-      "source_name": "Nord Pool REMIT UMM",
-      "authority": 30,
-      "tier": 1,
-      "has_magnitude": true,
-      "score": 50,
-      "tags": [
-        "supply_disruption"
-      ],
-      "alert": "normal",
-      "nature": "unplanned",
-      "why": {
-        "authority": 21.9,
-        "themes": 16.8,
-        "geography": 0,
-        "event_nature": 20,
-        "urgency": 16,
-        "magnitude": 12,
-        "speculative": 0,
-        "raw": 86.7,
-        "recency_multiplier": 0.5
-      },
-      "matched": {
-        "supply_disruption": [
-          "unplanned",
-          "fault"
-        ],
-        "unplanned": [
-          "unplanned",
-          "fault",
-          "failure"
-        ],
-        "urgency": [
-          "unplanned"
-        ]
-      },
-      "duplicate_count": 4,
-      "also_reported_by": [],
-      "first_seen_at": "2026-11-27T12:06:49+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/d99a33c4a6b7f30e284cdb3283e20d822813fc27.mp3",
-      "spoken": "Unplanned, Unavailability of electricity facilities. Production, FI, Olkiluoto 3, B3."
     },
     {
       "title": "At least 11 killed in blaze on Thailand’s Phuket island",
