@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-28T11:29:34.696052+00:00",
-  "item_count": 335,
+  "generated_at": "2026-11-28T11:34:44.072076+00:00",
+  "item_count": 334,
   "alert_counts": {
     "critical": 0,
-    "high": 0,
-    "normal": 6
+    "high": 1,
+    "normal": 5
   },
-  "superseded_count": 130,
+  "superseded_count": 129,
   "sources": {
     "healthy": 12,
     "total": 13,
@@ -17,129 +17,131 @@
         "ok": true,
         "count": 80,
         "error": null,
-        "ms": 984
+        "ms": 1273
       },
       {
         "id": "entsoe_outages",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 100527
+        "ms": 110445
       },
       {
         "id": "gie_agsi",
         "ok": true,
         "count": 3,
         "error": null,
-        "ms": 3622
+        "ms": 2536
       },
       {
         "id": "ofgem",
         "ok": true,
         "count": 0,
         "error": null,
-        "ms": 120
+        "ms": 412
       },
       {
         "id": "ec_energy",
         "ok": true,
         "count": 30,
         "error": null,
-        "ms": 435
+        "ms": 204
       },
       {
         "id": "eia_today",
         "ok": true,
         "count": 33,
         "error": null,
-        "ms": 99
+        "ms": 74
       },
       {
         "id": "world_nuclear_news",
         "ok": true,
         "count": 52,
         "error": null,
-        "ms": 856
+        "ms": 964
       },
       {
         "id": "offshore_energy",
         "ok": false,
         "count": 0,
         "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.offshore-energy.biz/feed/",
-        "ms": 41
+        "ms": 118
       },
       {
         "id": "lng_prime",
         "ok": true,
         "count": 10,
         "error": null,
-        "ms": 336
+        "ms": 575
       },
       {
         "id": "rigzone",
         "ok": true,
         "count": 20,
         "error": null,
-        "ms": 151
+        "ms": 136
       },
       {
         "id": "oilprice",
         "ok": true,
         "count": 15,
         "error": null,
-        "ms": 306
+        "ms": 321
       },
       {
         "id": "bbc_world",
         "ok": true,
         "count": 24,
         "error": null,
-        "ms": 149
+        "ms": 48
       },
       {
         "id": "aljazeera",
         "ok": true,
         "count": 25,
         "error": null,
-        "ms": 74
+        "ms": 171
       }
     ]
   },
   "items": [
     {
-      "title": "Unplanned, Unavailability of electricity facilities: Production, LV, CHP-1",
-      "url": "https://umm.nordpoolgroup.com/#/messages/ecd38b6b-cb63-4f5f-87a7-3279d6d42c8b/2",
-      "snippet": "Published: 28.11.2026 09:17:04 Publisher: AS Latvenergo Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: Failure of Gas Turbine 1, reason unknown. Remarks: Updated event stop time and available capacity output. Production Units Unit Name Unit EIC A",
-      "published_at": "2026-11-28T08:17:04+00:00",
+      "title": "Unplanned, Unavailability of electricity facilities: Production, FI, Olkiluoto 3 - B3",
+      "url": "https://umm.nordpoolgroup.com/#/messages/916a06ae-c9c2-4f06-be06-79d5105c9694/4",
+      "snippet": "Published: 28.11.2026 12:30:23 Publisher: PD Power Oy Status: Active Type of Unavailability: Unplanned Reason Code: Failure Reason for the Unavailability: OL3 net power output is limited to approximately 440 MW due to fault investigation until 30 November 2026 at 01:00.&#xa;Short test is performed a",
+      "published_at": "2026-11-28T11:30:23+00:00",
       "type": "outage",
       "source": "nordpool_umm",
       "source_name": "Nord Pool REMIT UMM",
       "authority": 30,
       "tier": 1,
-      "has_magnitude": false,
-      "score": 62,
+      "has_magnitude": true,
+      "score": 75,
       "tags": [
         "supply_disruption"
       ],
-      "alert": "normal",
+      "alert": "high",
       "nature": "unplanned",
       "why": {
         "authority": 21.9,
-        "themes": 8.4,
+        "themes": 16.8,
         "geography": 0,
         "event_nature": 20,
         "urgency": 16,
-        "magnitude": 0,
+        "magnitude": 12,
         "speculative": 0,
-        "raw": 66.3,
-        "recency_multiplier": 0.91
+        "raw": 86.7,
+        "recency_multiplier": 1
       },
       "matched": {
         "supply_disruption": [
-          "unplanned"
+          "unplanned",
+          "fault"
         ],
         "unplanned": [
           "unplanned",
+          "fault",
           "failure"
         ],
         "urgency": [
@@ -148,9 +150,9 @@
       },
       "duplicate_count": 4,
       "also_reported_by": [],
-      "first_seen_at": "2026-11-27T15:40:17+00:00",
-      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/e09a75f4e79252849505c2f21cbbfb23513b97e7.mp3",
-      "spoken": "Unplanned, Unavailability of electricity facilities. Production, LV, CHP-1."
+      "first_seen_at": "2026-11-28T02:46:36+00:00",
+      "audio_url": "https://kimeobcaeuhnhxxwygxh.supabase.co/storage/v1/object/public/squawk-audio/fa26198dc8373fbbb4c22807899de17481b3437e.mp3",
+      "spoken": "Unplanned, Unavailability of electricity facilities. Production, FI, Olkiluoto 3, B3."
     },
     {
       "title": "Ten students killed and over 100 injured in explosion in Afghanistan, official says",
@@ -15788,50 +15790,6 @@
         "url": "https://lngprime.com/americas/sefe-tourmaline-seal-eight-year-gas-supply-deal/200251/",
         "title": "SEFE, Tourmaline seal eight-year gas supply deal",
         "published_at": "2026-11-19T09:08:46+00:00"
-      },
-      "hidden": true
-    },
-    {
-      "title": "Watch: Cruise ship seen sinking after collision with cargo ship in New Orleans",
-      "url": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&at_campaign=rss",
-      "snippet": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday.",
-      "published_at": "2026-11-14T11:30:10+00:00",
-      "type": "news",
-      "source": "bbc_world",
-      "source_name": "BBC World",
-      "authority": 14,
-      "tier": 2,
-      "has_magnitude": false,
-      "score": 0,
-      "tags": [
-        "lng"
-      ],
-      "alert": "low",
-      "nature": "",
-      "why": {
-        "authority": 10.2,
-        "themes": 14.6,
-        "geography": 0,
-        "event_nature": 0,
-        "urgency": 0,
-        "magnitude": 0,
-        "speculative": 0,
-        "raw": 24.8,
-        "recency_multiplier": 1
-      },
-      "matched": {
-        "lng": [
-          "cargo",
-          "tanker"
-        ]
-      },
-      "duplicate_count": 0,
-      "also_reported_by": [],
-      "superseded": true,
-      "superseded_by": {
-        "url": "https://www.bbc.co.uk/news/articles/cwe89y2r5j20o?at_medium=RSS&at_campaign=rss",
-        "title": "New Orleans port files $1m lawsuit over 'miracle on the Mississippi' tanker collision",
-        "published_at": "2026-11-15T14:33:59+00:00"
       },
       "hidden": true
     }
